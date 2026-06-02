@@ -1,0 +1,26 @@
+{
+  "title": "🎰 个人足彩记录",
+  "subtitle": "本站站长在 2026 世界杯期间的足彩投入流水。纯个人娱乐，量力而行。",
+  "budget": {
+    "cap": 1000,
+    "unit": 2,
+    "currency": "CNY",
+    "note": "本届世界杯总投入上限 1000 元，每倍按中国体彩 / 竞彩标准 2 元计。"
+  },
+  "bets": [
+    {
+      "id": "champion-2026",
+      "type": "champion",
+      "title": "冠军单（3 票单关）",
+      "matchLabel": "2026 美加墨世界杯冠军",
+      "date": "2026-06-02",
+      "stakeMultiplier": 1,
+      "lines": [
+        { "pick": "ESP", "multiplier": 25, "odds": null, "result": null, "note": null },
+        { "pick": "FRA", "multiplier": 15, "odds": null, "result": null, "note": null },
+        { "pick": "ARG", "multiplier": 10, "odds": null, "result": null, "note": null }
+      ],
+      "note": "三票独立单关，任意一队夺冠即对应那票中奖；赔率开赛前后再补登。"
+    }
+  ]
+}
