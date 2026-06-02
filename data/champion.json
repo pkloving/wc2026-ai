@@ -1,0 +1,32 @@
+{
+  "title": "🏆 AI 冠亚军预测",
+  "subtitle": "在 2026 世界杯开赛前，我用同样的 prompt 让每个大模型预测冠亚军。",
+  "promptDate": "2026-05",
+  "entries": [
+    {
+      "models": ["DeepSeek-V4", "豆包", "Claude Opus 4.8"],
+      "champion": "ESP",
+      "runnerUp": "FRA",
+      "note": "三票同投：西班牙冠军、法国亚军"
+    },
+    {
+      "models": ["GPT-5 mini"],
+      "champion": "BRA",
+      "runnerUp": "FRA",
+      "note": null
+    },
+    {
+      "models": ["Kimi"],
+      "champion": "FRA",
+      "runnerUp": "ESP",
+      "note": null
+    },
+    {
+      "models": ["MiniMax-M3"],
+      "isAuthor": true,
+      "champion": "FRA",
+      "runnerUp": "ENG",
+      "note": "本站作者使用模型"
+    }
+  ]
+}
