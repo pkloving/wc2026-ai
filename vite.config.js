@@ -9,6 +9,7 @@ const pages = [
 export default defineConfig({
   root: '.',
   publicDir: 'public',
+  plugins: [],
   server: {
     port: 5173,
     open: false,
