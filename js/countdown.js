@@ -40,26 +40,6 @@ function renderChips(d) {
   `;
 }
 
-export async function mountCountdown(elId, targetIso) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  const target = targetIso || '2026-06-11T22:00:00Z';
-  el.innerHTML = `
-    <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">距开幕</div>
-    <div id="${elId}-chips" class="animate-fade-in"></div>
-  `;
-  const chips = document.getElementById(`${elId}-chips`);
-  const tick = () => {
-    const d = diff(target);
-    chips.innerHTML = renderChips(d);
-    if (d.days === 0 && d.hours === 0 && d.mins === 0 && d.secs === 0) {
-      chips.innerHTML = '<div class="text-2xl font-bold text-gold animate-pulse-slow">🏆 世界杯开幕！</div>';
-    }
-  };
-  tick();
-  setInterval(tick, 1000);
-}
-
 export async function mountNextMatchCountdown(elId) {
   const el = document.getElementById(elId);
   if (!el) return;
@@ -79,7 +59,7 @@ export async function mountNextMatchCountdown(elId) {
   const home = tMap.get(next.home);
   const away = tMap.get(next.away);
   el.innerHTML = `
-    <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">距下场</div>
+    <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">距下场比赛</div>
     <div class="text-sm sm:text-base text-white mb-2 flex items-center gap-2">
       ${home?.flag || '🏳️'} <span>${home?.name || next.home}</span>
       <span class="text-slate-400 mx-1">vs</span>
