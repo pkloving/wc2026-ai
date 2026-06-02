@@ -4,7 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>球队 · WC 2026 · AI 预测</title>
+  <meta name="description" content="2026 美加墨世界杯全部 48 支球队信息。" />
+  <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://flagcdn.com" crossorigin />
+  <link rel="dns-prefetch" href="https://flagcdn.com" />
+  <style>
+    html,body{margin:0;padding:0;background:#f8fafc;color:#0B1F3A;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    body{display:flex;flex-direction:column;min-height:100vh}
+    .sk{position:relative;overflow:hidden;background:rgba(15,23,42,.08);border-radius:.5rem}
+    .sk::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(15,23,42,.12),transparent);animation:sk 1.4s infinite}
+    @keyframes sk{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+  </style>
 </head>
 <body class="min-h-screen flex flex-col">
   <div id="app-header"></div>
@@ -12,90 +23,30 @@
     <div class="mb-6">
       <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Teams</div>
       <h1 class="text-3xl sm:text-4xl font-black">48 支球队</h1>
-      <p class="text-slate-500 text-sm mt-2">12 个小组 · 6 大洲足联</p>
+      <p class="text-slate-500 text-sm mt-2">按所属足联筛选 · 包含分组与已赛战绩</p>
     </div>
 
-    <div class="card p-4 mb-6 flex flex-wrap items-center gap-2">
-      <span class="text-sm text-slate-500">筛选：</span>
+    <div class="card p-3 mb-6 flex flex-wrap items-center gap-2">
+      <span class="text-xs text-slate-500 mr-1">足联：</span>
       <button data-conf="" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white">全部</button>
-      <button data-conf="UEFA" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">UEFA 欧洲</button>
-      <button data-conf="CONMEBOL" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONMEBOL 南美</button>
-      <button data-conf="CONCACAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONCACAF 中北美</button>
-      <button data-conf="CAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CAF 非洲</button>
-      <button data-conf="AFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">AFC 亚洲</button>
-      <button data-conf="OFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">OFC 大洋洲</button>
+      <button data-conf="UEFA" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">UEFA (欧洲)</button>
+      <button data-conf="CONMEBOL" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONMEBOL (南美)</button>
+      <button data-conf="CONCACAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONCACAF (北美)</button>
+      <button data-conf="AFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">AFC (亚洲)</button>
+      <button data-conf="CAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CAF (非洲)</button>
+      <button data-conf="OFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">OFC (大洋洲)</button>
     </div>
 
-    <div id="teams-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3"></div>
+    <div id="teams-grid" class="grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4" aria-busy="true">
+      <div class="card p-4 flex flex-col items-center"><div class="sk w-12 h-12 rounded-full"></div><div class="sk h-4 w-20 mt-2"></div><div class="sk h-3 w-16 mt-1"></div></div>
+      <div class="card p-4 flex flex-col items-center"><div class="sk w-12 h-12 rounded-full"></div><div class="sk h-4 w-20 mt-2"></div><div class="sk h-3 w-16 mt-1"></div></div>
+      <div class="card p-4 flex flex-col items-center"><div class="sk w-12 h-12 rounded-full"></div><div class="sk h-4 w-20 mt-2"></div><div class="sk h-3 w-16 mt-1"></div></div>
+      <div class="card p-4 flex flex-col items-center"><div class="sk w-12 h-12 rounded-full"></div><div class="sk h-4 w-20 mt-2"></div><div class="sk h-3 w-16 mt-1"></div></div>
+      <div class="card p-4 flex flex-col items-center"><div class="sk w-12 h-12 rounded-full"></div><div class="sk h-4 w-20 mt-2"></div><div class="sk h-3 w-16 mt-1"></div></div>
+    </div>
   </main>
   <div id="app-footer"></div>
   <script type="module" src="/js/main.js"></script>
-  <script type="module">
-    import { getTeams, getGroups, getMatches, getResults } from '/js/data.js';
-    import { teamChip } from '/js/util.js';
-
-    const [teams, groups, matches, results] = await Promise.all([
-      getTeams(), getGroups(), getMatches(), getResults(),
-    ]);
-    const resultMap = new Map(results.map((r) => [r.matchId, r]));
-
-    // 球队属于哪个组
-    const groupByTeam = new Map();
-    for (const g of groups) for (const c of g.teams) groupByTeam.set(c, g.id);
-
-    // 该队已赛场次 / 战绩
-    const teamStats = new Map();
-    teams.forEach((t) => teamStats.set(t.code, { played: 0, win: 0, draw: 0, lose: 0, gf: 0, ga: 0 }));
-    for (const m of matches) {
-      const r = resultMap.get(m.id);
-      if (!r) continue;
-      const h = teamStats.get(m.home);
-      const a = teamStats.get(m.away);
-      if (!h || !a) continue;
-      h.played += 1; a.played += 1;
-      h.gf += r.homeScore; h.ga += r.awayScore;
-      a.gf += r.awayScore; a.ga += r.homeScore;
-      if (r.homeScore > r.awayScore) { h.win += 1; a.lose += 1; }
-      else if (r.homeScore < r.awayScore) { a.win += 1; h.lose += 1; }
-      else { h.draw += 1; a.draw += 1; }
-    }
-
-    let activeConf = '';
-    function render() {
-      const realTeams = teams.filter((t) => !t.placeholder);
-      const list = activeConf ? realTeams.filter((t) => t.confederation === activeConf) : realTeams;
-      const el = document.getElementById('teams-grid');
-      el.innerHTML = list.map((t) => {
-        const s = teamStats.get(t.code);
-        const group = groupByTeam.get(t.code);
-        return `
-          <div class="card p-4 flex flex-col items-center text-center">
-            ${teamChip(t, 'lg')}
-            <div class="font-bold mt-2">${t.name}</div>
-            <div class="text-xs text-slate-500 mt-1">${t.nameEn}</div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs flex-wrap justify-center">
-              ${group ? `<span class="badge badge-ink">${group} 组</span>` : ''}
-              <span class="badge badge-slate">${t.confederation}</span>
-            </div>
-            ${s.played > 0 ? `<div class="mt-2 text-xs text-slate-500">${s.played} 场 · ${s.win}胜${s.draw}平${s.lose}负</div>` : ''}
-          </div>
-        `;
-      }).join('');
-    }
-
-    document.querySelectorAll('.conf-btn').forEach((b) => {
-      b.addEventListener('click', () => {
-        activeConf = b.dataset.conf;
-        document.querySelectorAll('.conf-btn').forEach((x) => {
-          x.classList.remove('bg-ink', 'text-white');
-          x.classList.add('bg-slate-100', 'hover:bg-slate-200');
-        });
-        b.classList.remove('bg-slate-100', 'hover:bg-slate-200');
-        b.classList.add('bg-ink', 'text-white');
-        render();
-      });
-    });
-    render();
-  </script>
+  <script type="module" src="/js/pages/teams.js"></script>
 </body>
 </html>

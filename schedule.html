@@ -5,7 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>完整赛程 · WC 2026 · AI 预测</title>
   <meta name="description" content="2026 世界杯全部 104 场比赛，支持按日期/小组/阶段/状态筛选。" />
+  <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://flagcdn.com" crossorigin />
+  <link rel="dns-prefetch" href="https://flagcdn.com" />
+  <style>
+    html,body{margin:0;padding:0;background:#f8fafc;color:#0B1F3A;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    body{display:flex;flex-direction:column;min-height:100vh}
+    .sk{position:relative;overflow:hidden;background:rgba(15,23,42,.08);border-radius:.5rem}
+    .sk::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(15,23,42,.12),transparent);animation:sk 1.4s infinite}
+    @keyframes sk{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+  </style>
 </head>
 <body class="min-h-screen flex flex-col">
   <div id="app-header"></div>
@@ -46,148 +56,29 @@
           <label class="text-xs text-slate-500 mb-1 block">状态</label>
           <select id="f-status" class="input">
             <option value="">全部</option>
-            <option value="scheduled">未开赛</option>
             <option value="finished">已结束</option>
+            <option value="scheduled">未开赛</option>
           </select>
         </div>
         <div>
-          <label class="text-xs text-slate-500 mb-1 block">球队（输入代码）</label>
-          <input id="f-team" placeholder="如 MEX / BRA" class="input" />
+          <label class="text-xs text-slate-500 mb-1 block">球队 (3 字母代码)</label>
+          <input id="f-team" class="input" placeholder="如 ARG / BRA" />
         </div>
       </div>
-      <div class="flex items-center justify-between mt-3 text-xs text-slate-500">
-        <span id="f-count">加载中…</span>
+      <div class="mt-3 flex items-center justify-between text-xs text-slate-500">
+        <span id="f-count">—</span>
         <button id="f-reset" class="text-ink hover:text-gold">重置</button>
       </div>
     </div>
 
-    <div id="schedule-list"></div>
+    <div id="schedule-list" aria-busy="true">
+      <div class="card p-4 mb-3"><div class="sk h-3 w-16 mb-3"></div><div class="sk h-5 w-full mb-2"></div><div class="sk h-5 w-3/4"></div></div>
+      <div class="card p-4 mb-3"><div class="sk h-3 w-16 mb-3"></div><div class="sk h-5 w-full mb-2"></div><div class="sk h-5 w-3/4"></div></div>
+      <div class="card p-4 mb-3"><div class="sk h-3 w-16 mb-3"></div><div class="sk h-5 w-full mb-2"></div><div class="sk h-5 w-3/4"></div></div>
+    </div>
   </main>
   <div id="app-footer"></div>
   <script type="module" src="/js/main.js"></script>
-  <script type="module">
-    import { getMatches, getResults, getTeams } from '/js/data.js';
-    import { fmtDate, STAGE_LABEL, teamChip } from '/js/util.js';
-
-    const [matches, results, teams] = await Promise.all([getMatches(), getResults(), getTeams()]);
-    const resultMap = new Map(results.map((r) => [r.matchId, r]));
-    const teamMap = new Map(teams.map((t) => [t.code, t]));
-
-    const state = { stage: '', group: '', status: '', team: '' };
-
-    function applyFilters() {
-      return matches.filter((m) => {
-        if (state.stage && m.stage !== state.stage) return false;
-        if (state.group && m.group !== state.group) return false;
-        const r = resultMap.get(m.id);
-        const mStatus = r ? 'finished' : 'scheduled';
-        if (state.status && mStatus !== state.status) return false;
-        if (state.team) {
-          const q = state.team.trim().toUpperCase();
-          if (m.home !== q && m.away !== q) return false;
-        }
-        return true;
-      });
-    }
-
-    function groupByDate(list) {
-      const m = new Map();
-      for (const x of list) {
-        const d = new Date(x.date);
-        // 使用北京时区 (UTC+8) 进行分组，避免 0/3/6 点的比赛被归到前一天
-        const beijing = new Date(d.getTime() + 8 * 3600 * 1000);
-        const key = beijing.toISOString().slice(0, 10);
-        if (!m.has(key)) m.set(key, []);
-        m.get(key).push(x);
-      }
-      return [...m.entries()].sort();
-    }
-
-    function render() {
-      const list = applyFilters();
-      document.getElementById('f-count').textContent = `共 ${list.length} 场`;
-      const grouped = groupByDate(list);
-      const el = document.getElementById('schedule-list');
-      if (list.length === 0) {
-        el.innerHTML = '<div class="text-slate-500 text-sm">无匹配比赛</div>';
-        return;
-      }
-      el.innerHTML = grouped.map(([date, ms]) => {
-        // date 是北京时区日期键（YYYY-MM-DD），按北京时区解析避免跨时区偏差
-        const [yy, mm, dd] = date.split('-').map(Number);
-        const d = new Date(yy, mm - 1, dd);
-        const weekday = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][d.getDay()];
-        const cardsHtml = ms.map((m) => {
-          const home = teamMap.get(m.home);
-          const away = teamMap.get(m.away);
-          const r = resultMap.get(m.id);
-          const stageBadge = m.stage === 'group'
-            ? `<span class="badge badge-ink">${m.group} 组</span>`
-            : `<span class="badge badge-gold">${STAGE_LABEL[m.stage] || m.stage}</span>`;
-          const statusBadge = r
-            ? `<span class="badge badge-pitch">已结束</span>`
-            : `<span class="badge badge-slate">未开赛</span>`;
-          const score = r
-            ? `<div class="text-2xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>`
-            : '<div class="text-slate-400 text-sm">待开赛</div>';
-          return `
-            <a href="/match.html?id=${m.id}" class="card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:-translate-y-0.5 transition-transform block">
-              <div class="flex flex-col items-center justify-center w-10 sm:w-12 text-xs text-slate-500 font-semibold">
-                ${fmtDate(m.date).time}
-              </div>
-              <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-2 mb-2 text-xs">
-                    ${stageBadge}${statusBadge}
-                  </div>
-                  <div class="flex items-center justify-between gap-3">
-                    <div class="flex-1 flex items-center gap-2 min-w-0">
-                      ${teamChip(home, 'sm')}
-                      <span class="font-semibold truncate">${home?.name || m.home}</span>
-                    </div>
-                    <div class="px-2 text-slate-300 font-bold">vs</div>
-                    <div class="flex-1 flex items-center justify-end gap-2 min-w-0">
-                      <span class="font-semibold truncate">${away?.name || m.away}</span>
-                      ${teamChip(away, 'sm')}
-                    </div>
-                  </div>
-                </div>
-              <div class="text-center w-16 sm:w-20">${score}</div>
-            </a>
-          `;
-        }).join('');
-        return `
-          <section class="mb-8">
-            <div class="flex items-baseline gap-3 mb-3">
-              <h2 class="text-lg font-bold">${d.getMonth() + 1} 月 ${d.getDate()} 日</h2>
-              <span class="text-xs text-slate-500">${weekday}</span>
-              <span class="text-xs text-slate-400">${ms.length} 场</span>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-3">${cardsHtml}</div>
-          </section>
-        `;
-      }).join('');
-    }
-
-    ['f-stage', 'f-group', 'f-status'].forEach((id) => {
-      document.getElementById(id).addEventListener('change', (e) => {
-        state[id.slice(2)] = e.target.value;
-        render();
-      });
-    });
-    document.getElementById('f-team').addEventListener('input', (e) => {
-      state.team = e.target.value;
-      render();
-    });
-    document.getElementById('f-reset').addEventListener('click', () => {
-      state.stage = ''; state.group = ''; state.status = ''; state.team = '';
-      document.getElementById('f-stage').value = '';
-      document.getElementById('f-group').value = '';
-      document.getElementById('f-status').value = '';
-      document.getElementById('f-team').value = '';
-      render();
-    });
-
-    render();
-  </script>
+  <script type="module" src="/js/pages/schedule.js"></script>
 </body>
 </html>
