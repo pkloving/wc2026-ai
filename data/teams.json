@@ -1,0 +1,444 @@
+[
+  {
+    "code": "ARG",
+    "name": "阿根廷",
+    "nameEn": "Argentina",
+    "confederation": "CONMEBOL",
+    "flag": "🇦🇷",
+    "iso2": "ar",
+    "color": "#75AADB"
+  },
+  {
+    "code": "AUS",
+    "name": "澳大利亚",
+    "nameEn": "Australia",
+    "confederation": "AFC",
+    "flag": "🇦🇺",
+    "iso2": "au",
+    "color": "#00008B"
+  },
+  {
+    "code": "AUT",
+    "name": "奥地利",
+    "nameEn": "Austria",
+    "confederation": "UEFA",
+    "flag": "🇦🇹",
+    "iso2": "at",
+    "color": "#ED2939"
+  },
+  {
+    "code": "BEL",
+    "name": "比利时",
+    "nameEn": "Belgium",
+    "confederation": "UEFA",
+    "flag": "🇧🇪",
+    "iso2": "be",
+    "color": "#FAE042"
+  },
+  {
+    "code": "BIH",
+    "name": "波黑",
+    "nameEn": "Bosnia-Herzegovina",
+    "confederation": "UEFA",
+    "flag": "🇧🇦",
+    "iso2": "ba",
+    "color": "#002395"
+  },
+  {
+    "code": "BRA",
+    "name": "巴西",
+    "nameEn": "Brazil",
+    "confederation": "CONMEBOL",
+    "flag": "🇧🇷",
+    "iso2": "br",
+    "color": "#009C3B"
+  },
+  {
+    "code": "CAN",
+    "name": "加拿大",
+    "nameEn": "Canada",
+    "confederation": "CONCACAF",
+    "flag": "🇨🇦",
+    "iso2": "ca",
+    "color": "#FF0000"
+  },
+  {
+    "code": "CIV",
+    "name": "科特迪瓦",
+    "nameEn": "Ivory Coast",
+    "confederation": "CAF",
+    "flag": "🇨🇮",
+    "iso2": "ci",
+    "color": "#F77F00"
+  },
+  {
+    "code": "COD",
+    "name": "刚果（金）",
+    "nameEn": "Congo DR",
+    "confederation": "CAF",
+    "flag": "🇨🇩",
+    "iso2": "cd",
+    "color": "#007FFF"
+  },
+  {
+    "code": "COL",
+    "name": "哥伦比亚",
+    "nameEn": "Colombia",
+    "confederation": "CONMEBOL",
+    "flag": "🇨🇴",
+    "iso2": "co",
+    "color": "#FCD116"
+  },
+  {
+    "code": "CPV",
+    "name": "佛得角",
+    "nameEn": "Cape Verde Islands",
+    "confederation": "CAF",
+    "flag": "🇨🇻",
+    "iso2": "cv",
+    "color": "#003893"
+  },
+  {
+    "code": "CRO",
+    "name": "克罗地亚",
+    "nameEn": "Croatia",
+    "confederation": "UEFA",
+    "flag": "🇭🇷",
+    "iso2": "hr",
+    "color": "#171796"
+  },
+  {
+    "code": "CUW",
+    "name": "库拉索",
+    "nameEn": "Curaçao",
+    "confederation": "CONCACAF",
+    "flag": "🇨🇼",
+    "iso2": "cw",
+    "color": "#002B7F"
+  },
+  {
+    "code": "CZE",
+    "name": "捷克",
+    "nameEn": "Czechia",
+    "confederation": "UEFA",
+    "flag": "🇨🇿",
+    "iso2": "cz",
+    "color": "#11457E"
+  },
+  {
+    "code": "DZA",
+    "name": "阿尔及利亚",
+    "nameEn": "Algeria",
+    "confederation": "CAF",
+    "flag": "🇩🇿",
+    "iso2": "dz",
+    "color": "#006233"
+  },
+  {
+    "code": "ECU",
+    "name": "厄瓜多尔",
+    "nameEn": "Ecuador",
+    "confederation": "CONMEBOL",
+    "flag": "🇪🇨",
+    "iso2": "ec",
+    "color": "#FFD100"
+  },
+  {
+    "code": "EGY",
+    "name": "埃及",
+    "nameEn": "Egypt",
+    "confederation": "CAF",
+    "flag": "🇪🇬",
+    "iso2": "eg",
+    "color": "#CE1126"
+  },
+  {
+    "code": "ENG",
+    "name": "英格兰",
+    "nameEn": "England",
+    "confederation": "UEFA",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "iso2": "gb-eng",
+    "color": "#CF142B"
+  },
+  {
+    "code": "ESP",
+    "name": "西班牙",
+    "nameEn": "Spain",
+    "confederation": "UEFA",
+    "flag": "🇪🇸",
+    "iso2": "es",
+    "color": "#AA151B"
+  },
+  {
+    "code": "FRA",
+    "name": "法国",
+    "nameEn": "France",
+    "confederation": "UEFA",
+    "flag": "🇫🇷",
+    "iso2": "fr",
+    "color": "#0055A4"
+  },
+  {
+    "code": "GER",
+    "name": "德国",
+    "nameEn": "Germany",
+    "confederation": "UEFA",
+    "flag": "🇩🇪",
+    "iso2": "de",
+    "color": "#000000"
+  },
+  {
+    "code": "GHA",
+    "name": "加纳",
+    "nameEn": "Ghana",
+    "confederation": "CAF",
+    "flag": "🇬🇭",
+    "iso2": "gh",
+    "color": "#006B3F"
+  },
+  {
+    "code": "HAI",
+    "name": "海地",
+    "nameEn": "Haiti",
+    "confederation": "CONCACAF",
+    "flag": "🇭🇹",
+    "iso2": "ht",
+    "color": "#00209F"
+  },
+  {
+    "code": "IRN",
+    "name": "伊朗",
+    "nameEn": "Iran",
+    "confederation": "AFC",
+    "flag": "🇮🇷",
+    "iso2": "ir",
+    "color": "#239F40"
+  },
+  {
+    "code": "IRQ",
+    "name": "伊拉克",
+    "nameEn": "Iraq",
+    "confederation": "AFC",
+    "flag": "🇮🇶",
+    "iso2": "iq",
+    "color": "#CE1126"
+  },
+  {
+    "code": "JOR",
+    "name": "约旦",
+    "nameEn": "Jordan",
+    "confederation": "AFC",
+    "flag": "🇯🇴",
+    "iso2": "jo",
+    "color": "#000000"
+  },
+  {
+    "code": "JPN",
+    "name": "日本",
+    "nameEn": "Japan",
+    "confederation": "AFC",
+    "flag": "🇯🇵",
+    "iso2": "jp",
+    "color": "#BC002D"
+  },
+  {
+    "code": "KOR",
+    "name": "韩国",
+    "nameEn": "South Korea",
+    "confederation": "AFC",
+    "flag": "🇰🇷",
+    "iso2": "kr",
+    "color": "#003478"
+  },
+  {
+    "code": "KSA",
+    "name": "沙特阿拉伯",
+    "nameEn": "Saudi Arabia",
+    "confederation": "AFC",
+    "flag": "🇸🇦",
+    "iso2": "sa",
+    "color": "#006C35"
+  },
+  {
+    "code": "MAR",
+    "name": "摩洛哥",
+    "nameEn": "Morocco",
+    "confederation": "CAF",
+    "flag": "🇲🇦",
+    "iso2": "ma",
+    "color": "#C1272D"
+  },
+  {
+    "code": "MEX",
+    "name": "墨西哥",
+    "nameEn": "Mexico",
+    "confederation": "CONCACAF",
+    "flag": "🇲🇽",
+    "iso2": "mx",
+    "color": "#006847"
+  },
+  {
+    "code": "NED",
+    "name": "荷兰",
+    "nameEn": "Netherlands",
+    "confederation": "UEFA",
+    "flag": "🇳🇱",
+    "iso2": "nl",
+    "color": "#FF6F00"
+  },
+  {
+    "code": "NOR",
+    "name": "挪威",
+    "nameEn": "Norway",
+    "confederation": "UEFA",
+    "flag": "🇳🇴",
+    "iso2": "no",
+    "color": "#EF2B2D"
+  },
+  {
+    "code": "NZL",
+    "name": "新西兰",
+    "nameEn": "New Zealand",
+    "confederation": "OFC",
+    "flag": "🇳🇿",
+    "iso2": "nz",
+    "color": "#00247D"
+  },
+  {
+    "code": "PAN",
+    "name": "巴拿马",
+    "nameEn": "Panama",
+    "confederation": "CONCACAF",
+    "flag": "🇵🇦",
+    "iso2": "pa",
+    "color": "#DA121A"
+  },
+  {
+    "code": "PAR",
+    "name": "巴拉圭",
+    "nameEn": "Paraguay",
+    "confederation": "CONMEBOL",
+    "flag": "🇵🇾",
+    "iso2": "py",
+    "color": "#D52B1E"
+  },
+  {
+    "code": "POR",
+    "name": "葡萄牙",
+    "nameEn": "Portugal",
+    "confederation": "UEFA",
+    "flag": "🇵🇹",
+    "iso2": "pt",
+    "color": "#006600"
+  },
+  {
+    "code": "QAT",
+    "name": "卡塔尔",
+    "nameEn": "Qatar",
+    "confederation": "AFC",
+    "flag": "🇶🇦",
+    "iso2": "qa",
+    "color": "#8D1B3D"
+  },
+  {
+    "code": "RSA",
+    "name": "南非",
+    "nameEn": "South Africa",
+    "confederation": "CAF",
+    "flag": "🇿🇦",
+    "iso2": "za",
+    "color": "#007749"
+  },
+  {
+    "code": "SCO",
+    "name": "苏格兰",
+    "nameEn": "Scotland",
+    "confederation": "UEFA",
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "iso2": "gb-sct",
+    "color": "#0065BD"
+  },
+  {
+    "code": "SEN",
+    "name": "塞内加尔",
+    "nameEn": "Senegal",
+    "confederation": "CAF",
+    "flag": "🇸🇳",
+    "iso2": "sn",
+    "color": "#00853F"
+  },
+  {
+    "code": "SUI",
+    "name": "瑞士",
+    "nameEn": "Switzerland",
+    "confederation": "UEFA",
+    "flag": "🇨🇭",
+    "iso2": "ch",
+    "color": "#D52B1E"
+  },
+  {
+    "code": "SWE",
+    "name": "瑞典",
+    "nameEn": "Sweden",
+    "confederation": "UEFA",
+    "flag": "🇸🇪",
+    "iso2": "se",
+    "color": "#006AA7"
+  },
+  {
+    "code": "TUN",
+    "name": "突尼斯",
+    "nameEn": "Tunisia",
+    "confederation": "CAF",
+    "flag": "🇹🇳",
+    "iso2": "tn",
+    "color": "#E70013"
+  },
+  {
+    "code": "TUR",
+    "name": "土耳其",
+    "nameEn": "Turkey",
+    "confederation": "UEFA",
+    "flag": "🇹🇷",
+    "iso2": "tr",
+    "color": "#E30A17"
+  },
+  {
+    "code": "URU",
+    "name": "乌拉圭",
+    "nameEn": "Uruguay",
+    "confederation": "CONMEBOL",
+    "flag": "🇺🇾",
+    "iso2": "uy",
+    "color": "#0038A8"
+  },
+  {
+    "code": "USA",
+    "name": "美国",
+    "nameEn": "United States",
+    "confederation": "CONCACAF",
+    "flag": "🇺🇸",
+    "iso2": "us",
+    "color": "#002868"
+  },
+  {
+    "code": "UZB",
+    "name": "乌兹别克斯坦",
+    "nameEn": "Uzbekistan",
+    "confederation": "AFC",
+    "flag": "🇺🇿",
+    "iso2": "uz",
+    "color": "#1EB53A"
+  },
+  {
+    "code": "TBD",
+    "name": "待定",
+    "nameEn": "TBD",
+    "confederation": "FIFA",
+    "flag": "🏳️",
+    "iso2": "",
+    "color": "#6B7280",
+    "placeholder": true
+  }
+]

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 预测总览 · WC 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="flex-1 container-page py-8">
+    <div class="mb-6">
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">AI Predictions</div>
+      <h1 class="text-3xl sm:text-4xl font-black">⭐ AI 预测总览</h1>
+      <p class="text-slate-500 text-sm mt-2">每场比赛前，我都会拿同样的 prompt 问几个大模型。这里是它们当时的原始回答 + 实际结果对账。</p>
+    </div>
+
+    <!-- 冠亚军预测 -->
+    <section class="mb-8" id="champion-section"></section>
+
+    <!-- 模型仪表盘 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold mb-3">📊 各模型命中率</h2>
+      <div id="model-dashboard" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+    </section>
+
+    <!-- 筛选 -->
+    <div class="card p-4 mb-6 flex flex-wrap items-center gap-3">
+      <span class="text-sm text-slate-500">筛选：</span>
+      <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white">全部</button>
+      <button data-filter="finished" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">仅已结束</button>
+      <button data-filter="pending" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">仅待开赛</button>
+      <button data-filter="hit" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">✅ 比分命中</button>
+      <button data-filter="winner" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">⚠️ 胜负命中</button>
+      <button data-filter="miss" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">❌ 未中</button>
+      <span class="text-xs text-slate-500 ml-auto" id="filter-count"></span>
+    </div>
+
+    <div id="prediction-list" class="space-y-3"></div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module">
+    import { getMatches, getResults, getTeams, getPredictions } from '/js/data.js';
+    import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '/js/util.js';
+    import { renderChampionSection } from '/js/champion.js';
+
+    const [matches, results, teams, predictions] = await Promise.all([
+      getMatches(), getResults(), getTeams(), getPredictions(),
+    ]);
+    const teamMap = new Map(teams.map((t) => [t.code, t]));
+    const resultMap = new Map(results.map((r) => [r.matchId, r]));
+    function computeModelStats() {
+      const stats = new Map();
+      for (const p of predictions) {
+        const r = resultMap.get(p.matchId);
+        for (const m of p.models) {
+          if (!stats.has(m.model)) {
+            stats.set(m.model, { model: m.model, total: 0, scoreHit: 0, winnerHit: 0, miss: 0 });
+          }
+          const s = stats.get(m.model);
+          s.total += 1;
+          if (!r) continue;
+          const ph = m.predictedHome, pa = m.predictedAway;
+          if (ph === r.homeScore && pa === r.awayScore) {
+            s.scoreHit += 1; s.winnerHit += 1;
+          } else {
+            const pw = ph > pa ? 'home' : ph < pa ? 'away' : 'draw';
+            const rw = r.homeScore > r.awayScore ? 'home' : r.homeScore < r.awayScore ? 'away' : 'draw';
+            if (pw === rw) s.winnerHit += 1; else s.miss += 1;
+          }
+        }
+      }
+      return [...stats.values()].sort((a, b) => b.scoreHit / Math.max(1, b.total) - a.scoreHit / Math.max(1, a.total));
+    }
+
+    function renderDashboard() {
+      const stats = computeModelStats();
+      const el = document.getElementById('model-dashboard');
+      if (stats.length === 0) {
+        el.innerHTML = '<div class="col-span-full text-slate-500 text-sm">暂无 AI 预测数据</div>';
+        return;
+      }
+      el.innerHTML = stats.map((s) => {
+        const finished = s.scoreHit + s.winnerHit + s.miss;
+        const scorePct = finished > 0 ? Math.round((s.scoreHit / finished) * 100) : 0;
+        const winnerPct = finished > 0 ? Math.round((s.winnerHit / finished) * 100) : 0;
+        return `
+          <div class="card p-4">
+            <div class="font-semibold truncate">${s.model}</div>
+            <div class="mt-2 grid grid-cols-2 gap-2 text-sm">
+              <div>
+                <div class="text-xs text-slate-500">比分命中</div>
+                <div class="text-2xl font-black text-pitch tabular-nums">${scorePct}%</div>
+                <div class="text-xs text-slate-400">${s.scoreHit} / ${finished}</div>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">胜负命中</div>
+                <div class="text-2xl font-black text-gold tabular-nums">${winnerPct}%</div>
+                <div class="text-xs text-slate-400">${s.winnerHit} / ${finished}</div>
+              </div>
+            </div>
+            <div class="mt-3 w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+              <div class="bg-pitch h-full" style="width:${scorePct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ---- 列表 ----
+    let activeFilter = 'all';
+    function applyFilter(list) {
+      return list.filter((p) => {
+        const r = resultMap.get(p.matchId);
+        if (activeFilter === 'all') return true;
+        if (activeFilter === 'finished') return !!r;
+        if (activeFilter === 'pending') return !r;
+        if (!r) return false;
+        // hit / winner / miss: 看最高命中级别（按 best-of）
+        const hits = p.models.map((m) => hitBadge(r, m));
+        if (activeFilter === 'hit') return hits.some((h) => h.tone === 'badge-pitch');
+        if (activeFilter === 'winner') return hits.some((h) => h.tone === 'badge-gold');
+        if (activeFilter === 'miss') return hits.every((h) => h.tone === 'badge-flame');
+        return true;
+      });
+    }
+
+    function renderList() {
+      const enriched = predictions
+        .map((p) => {
+          const m = matches.find((x) => x.id === p.matchId);
+          if (!m) return null;
+          return { match: m, result: resultMap.get(m.id), prediction: p };
+        })
+        .filter(Boolean)
+        .sort((a, b) => new Date(b.match.date) - new Date(a.match.date));
+
+      const filtered = applyFilter(enriched);
+      document.getElementById('filter-count').textContent = `共 ${filtered.length} 条预测`;
+
+      const el = document.getElementById('prediction-list');
+      if (filtered.length === 0) {
+        el.innerHTML = '<div class="text-slate-500 text-sm">无匹配记录</div>';
+        return;
+      }
+      el.innerHTML = filtered.map(({ match, result, prediction }) => {
+        const home = teamMap.get(match.home);
+        const away = teamMap.get(match.away);
+        const stageBadge = match.stage === 'group'
+          ? `<span class="badge badge-ink">${match.group} 组</span>`
+          : `<span class="badge badge-gold">${STAGE_LABEL[match.stage] || match.stage}</span>`;
+        const d = fmtDate(match.date);
+        const score = result
+          ? `<span class="font-black text-2xl tabular-nums">${result.homeScore} - ${result.awayScore}</span>`
+          : '<span class="text-slate-400 text-sm">待开赛</span>';
+        const modelChips = prediction.models.map((m) => {
+          const badge = hitBadge(result, m);
+          return `<span class="badge ${badge.tone}">${m.model.split(' ')[0]} ${m.predictedHome}-${m.predictedAway}</span>`;
+        }).join(' ');
+        return `
+          <a href="/match.html?id=${match.id}" class="card p-5 hover:-translate-y-0.5 transition-transform block">
+            <div class="flex items-center gap-2 text-xs mb-3 flex-wrap">
+              ${stageBadge}
+              <span class="text-slate-500">${d.date} ${d.time}</span>
+              <span class="ml-auto text-slate-400">${prediction.models.length} 个模型预测</span>
+            </div>
+            <div class="grid grid-cols-[1fr_auto_1fr] gap-3 items-center">
+              <div class="flex items-center gap-2 min-w-0">
+                ${teamChip(home, 'md')}
+                <div class="min-w-0">
+                  <div class="font-bold truncate">${home?.name || match.home}</div>
+                </div>
+              </div>
+              <div class="px-3">${score}</div>
+              <div class="flex items-center gap-2 min-w-0 justify-end">
+                <div class="min-w-0 text-right">
+                  <div class="font-bold truncate">${away?.name || match.away}</div>
+                </div>
+                ${teamChip(away, 'md')}
+              </div>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-1.5">${modelChips}</div>
+            <div class="mt-3 text-xs text-slate-400">点击查看每个模型的聊天截图与详细复盘 →</div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    document.querySelectorAll('.filter-btn').forEach((b) => {
+      b.addEventListener('click', () => {
+        activeFilter = b.dataset.filter;
+        document.querySelectorAll('.filter-btn').forEach((x) => {
+          x.classList.remove('bg-ink', 'text-white');
+          x.classList.add('bg-slate-100', 'hover:bg-slate-200');
+        });
+        b.classList.remove('bg-slate-100', 'hover:bg-slate-200');
+        b.classList.add('bg-ink', 'text-white');
+        renderList();
+      });
+    });
+
+    renderChampionSection('champion-section');
+    renderDashboard();
+    renderList();
+  </script>
+</body>
+</html>

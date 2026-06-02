@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-slate-50 text-ink font-display;
+  }
+  ::selection {
+    @apply bg-gold/40 text-ink;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:text-white hover:bg-ink/60 transition-colors;
+  }
+  .nav-link-active {
+    @apply bg-gold/20 text-gold;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-cardHover transition-shadow duration-200;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+  .badge-gold { @apply bg-gold/15 text-yellow-800; }
+  .badge-pitch { @apply bg-pitch/10 text-pitch; }
+  .badge-flame { @apply bg-flame/10 text-flame; }
+  .badge-ink { @apply bg-ink/10 text-ink; }
+  .badge-slate { @apply bg-slate-200 text-slate-700; }
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-white hover:bg-night;
+  }
+  .btn-ghost {
+    @apply btn text-ink hover:bg-ink/5;
+  }
+  .input {
+    @apply w-full px-3 py-2 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold/60;
+  }
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-slate-300 rounded-full; }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background:
+      radial-gradient(ellipse at top left, rgba(212, 175, 55, 0.18), transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(230, 57, 70, 0.18), transparent 50%),
+      linear-gradient(135deg, #0B1F3A 0%, #081428 100%);
+  }
+  .text-gradient-gold {
+    background: linear-gradient(90deg, #D4AF37, #F5D67B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .flag {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla",
+      "EmojiOne", sans-serif;
+    font-variant-emoji: emoji;
+    line-height: 1;
+  }
+  .code-pill {
+    @apply inline-flex items-center justify-center font-black tracking-wider;
+    background: linear-gradient(135deg, #0B1F3A, #1A3461);
+    color: #D4AF37;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+  }
+  .flag-frame {
+    @apply relative inline-flex items-center justify-center overflow-hidden rounded-md font-black tracking-wider flex-shrink-0;
+    background: linear-gradient(135deg, #0B1F3A, #1A3461);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+  .flag-frame .flag-img {
+    @apply absolute inset-0 w-full h-full;
+    object-fit: cover;
+  }
+  .flag-frame .flag-code {
+    @apply relative z-10 text-white text-[9px] font-black px-1;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    line-height: 1;
+  }
+  .flag-frame-fallback {
+    @apply text-gold;
+    color: #D4AF37;
+  }
+  .flag-frame-fallback .flag-code {
+    @apply text-gold;
+    color: #D4AF37;
+    text-shadow: none;
+  }
+}

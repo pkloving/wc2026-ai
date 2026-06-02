@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>比赛详情 · WC 2026 · AI 预测</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="flex-1 container-page py-8">
+    <a href="/predictions.html" class="text-sm text-ink hover:text-gold">← 返回 AI 预测总览</a>
+    <div id="match-header" class="mt-4 mb-8"></div>
+    <div id="match-result" class="mb-10"></div>
+    <h2 class="text-2xl font-bold mb-4">🤖 AI 大模型预测 <span class="text-sm font-normal text-slate-500" id="model-count"></span></h2>
+    <div id="model-list" class="space-y-6"></div>
+  </main>
+  <div id="app-footer"></div>
+
+  <!-- 灯箱 -->
+  <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/80 items-center justify-center p-4 cursor-zoom-out" onclick="this.classList.add('hidden')">
+    <img id="lightbox-img" class="max-w-full max-h-full rounded-lg shadow-2xl" alt="" />
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module">
+    // 灯箱交互
+    document.body.addEventListener('click', (e) => {
+      const btn = e.target.closest('.shot-btn');
+      if (!btn) return;
+      const img = btn.querySelector('img');
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      if (img && img.src && !img.style.display) {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt || '';
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+      }
+    });
+  </script>
+  <script type="module">
+    import { getMatches, getResults, getPredictions, getTeams } from '/js/data.js';
+    import { fmtDate, STAGE_LABEL, hitBadge, escapeHtml, teamChip } from '/js/util.js';
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    if (!id) {
+      document.querySelector('main').innerHTML = '<div class="text-slate-500">缺少比赛 ID</div>';
+    } else {
+      const [matches, results, predictions, teams] = await Promise.all([
+        getMatches(), getResults(), getPredictions(), getTeams(),
+      ]);
+      const m = matches.find((x) => x.id === id);
+      if (!m) {
+        document.querySelector('main').innerHTML = '<div class="text-slate-500">未找到该比赛</div>';
+      } else {
+        const r = results.find((x) => x.matchId === id) || null;
+        const p = predictions.find((x) => x.matchId === id) || null;
+        const teamMap = new Map(teams.map((t) => [t.code, t]));
+        const home = teamMap.get(m.home);
+        const away = teamMap.get(m.away);
+        const d = fmtDate(m.date);
+
+        const stageBadge = m.stage === 'group'
+          ? `<span class="badge badge-ink">${m.group} 组</span>`
+          : `<span class="badge badge-gold">${STAGE_LABEL[m.stage] || m.stage}</span>`;
+
+        const headerEl = document.getElementById('match-header');
+        headerEl.innerHTML = `
+          <div class="flex items-center gap-2 text-xs mb-3">
+            ${stageBadge}
+            <span class="text-slate-500">${d.date} ${d.time}</span>
+            <span class="text-slate-400">· ${m.venue || ''}</span>
+          </div>
+          <div class="card p-6 sm:p-8">
+            <div class="grid grid-cols-[1fr_auto_1fr] gap-4 sm:gap-6 items-center">
+              <div class="flex flex-col items-center">
+                ${teamChip(home, 'xl')}
+                <div class="font-bold text-lg sm:text-xl mt-3">${home?.name || m.home}</div>
+                <div class="text-xs text-slate-400 mt-1">${m.home}</div>
+              </div>
+              <div class="text-center">
+                ${r
+                  ? `<div class="text-5xl sm:text-6xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>
+                     <div class="text-xs text-slate-400 mt-1">${r.wentToPenalties ? '点球 ' + r.penaltyScore.home + '-' + r.penaltyScore.away : '已结束'}</div>`
+                  : `<div class="text-3xl sm:text-4xl font-black text-slate-300">vs</div>
+                     <div class="text-xs text-slate-400 mt-1">待开赛</div>`}
+              </div>
+              <div class="flex flex-col items-center">
+                ${teamChip(away, 'xl')}
+                <div class="font-bold text-lg sm:text-xl mt-3">${away?.name || m.away}</div>
+                <div class="text-xs text-slate-400 mt-1">${m.away}</div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        const resultEl = document.getElementById('match-result');
+        if (r && r.scorers && r.scorers.length > 0) {
+          resultEl.innerHTML = `
+            <div class="card p-5">
+              <h3 class="text-sm font-semibold text-slate-500 mb-3">⚽ 进球者</h3>
+              <div class="grid sm:grid-cols-2 gap-2 text-sm">
+                ${r.scorers.map((s) => `
+                  <div class="flex items-center gap-2 p-2 rounded-lg bg-slate-50">
+                    <span class="font-mono text-slate-500 text-xs w-8 text-right">${s.minute}'</span>
+                    <span class="font-semibold flex-1">${escapeHtml(s.player)}</span>
+                    ${s.team === m.home ? `<span class="text-xs text-slate-400">${home?.name || m.home}</span>` : `<span class="text-xs text-slate-400">${away?.name || m.away}</span>`}
+                    ${s.type === 'penalty' ? '<span class="badge badge-gold">点球</span>' : ''}
+                    ${s.type === 'og' ? '<span class="badge badge-flame">乌龙</span>' : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        } else if (r) {
+          resultEl.innerHTML = '';
+        } else {
+          resultEl.innerHTML = '';
+        }
+
+        const listEl = document.getElementById('model-list');
+        if (!p || p.models.length === 0) {
+          listEl.innerHTML = '<div class="card p-8 text-center text-slate-500">这场比赛还没有 AI 预测记录。<br><br>开赛前我会拿同样的 prompt 问几个大模型，把聊天截图放这里。</div>';
+        } else {
+          document.getElementById('model-count').textContent = `（${p.models.length} 个模型）`;
+          listEl.innerHTML = p.models.map((m, i) => {
+            const badge = hitBadge(r, m);
+            const ph = m.predictedHome, pa = m.predictedAway;
+            const pw = ph > pa ? '主胜' : ph < pa ? '客胜' : '平局';
+            const rw = r ? (r.homeScore > r.awayScore ? '主胜' : r.homeScore < r.awayScore ? '客胜' : '平局') : '—';
+            const winnerMatch = r && ((ph > pa && r.homeScore > r.awayScore) || (ph < pa && r.homeScore < r.awayScore) || (ph === pa && r.homeScore === r.awayScore));
+            const scoreMatch = r && ph === r.homeScore && pa === r.awayScore;
+            const screenshots = m.screenshots || [];
+            const shotsHtml = screenshots.length > 0
+              ? `<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3">
+                  ${screenshots.map((s) => `
+                    <button type="button" class="shot-btn block w-full group" data-src="${s}">
+                      <div class="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center text-slate-400 text-xs border border-slate-200 group-hover:border-gold group-hover:scale-[1.02] transition-all">
+                        <img src="${s}" alt="AI 聊天截图" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'p-3 text-center\\'>📷<br>${s.split('/').pop()}<br><span class=\\'text-flame text-[10px]\\'>未上传</span></div>'" />
+                      </div>
+                    </button>
+                  `).join('')}
+                </div>
+                <div class="text-xs text-slate-400 mt-2">点击图片放大查看</div>`
+              : `<div class="mt-3 p-4 rounded-lg bg-slate-50 border border-dashed border-slate-200 text-center text-sm text-slate-500">📷 该模型聊天截图未上传<br><span class="text-xs text-slate-400">放到 <code>public/assets/predictions/${p.matchId}/${m.model.toLowerCase().replace(/\\W+/g, '-')}.png</code> 即可</span></div>`;
+            return `
+              <article class="card p-5 sm:p-6">
+                <div class="flex items-start justify-between gap-3 mb-3 flex-wrap">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-2xl">🤖</span>
+                      <h3 class="text-xl font-bold">${escapeHtml(m.model)}</h3>
+                      <span class="badge ${badge.tone}">${badge.label}</span>
+                    </div>
+                    ${m.prompt ? `<div class="text-xs text-slate-500 mt-2"><span class="text-slate-400">Prompt：</span>${escapeHtml(m.prompt)}</div>` : ''}
+                  </div>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-3 mt-3">
+                  <div class="p-3 rounded-lg bg-slate-50">
+                    <div class="text-xs text-slate-500 mb-1">预测比分</div>
+                    <div class="text-2xl font-black tabular-nums">${ph} - ${pa}</div>
+                    <div class="text-xs text-slate-500 mt-1">${pw}</div>
+                  </div>
+                  <div class="p-3 rounded-lg bg-slate-50">
+                    <div class="text-xs text-slate-500 mb-1">实际比分</div>
+                    <div class="text-2xl font-black tabular-nums">${r ? `${r.homeScore} - ${r.awayScore}` : '—'}</div>
+                    <div class="text-xs text-slate-500 mt-1">${rw}</div>
+                  </div>
+                  <div class="p-3 rounded-lg bg-slate-50">
+                    <div class="text-xs text-slate-500 mb-1">命中</div>
+                    <div class="text-sm font-semibold">
+                      ${scoreMatch ? '<span class="text-pitch">✅ 比分一致</span>' : winnerMatch ? '<span class="text-gold">⚠️ 胜负一致</span>' : r ? '<span class="text-flame">❌ 未中</span>' : '—'}
+                    </div>
+                    ${m.note ? `<div class="text-xs text-slate-500 mt-1">${escapeHtml(m.note)}</div>` : ''}
+                  </div>
+                </div>
+                ${shotsHtml}
+              </article>
+            `;
+          }).join('');
+        }
+      }
+    }
+  </script>
+</body>
+</html>

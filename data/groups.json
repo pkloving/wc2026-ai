@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A",
+    "name": "A 组",
+    "teams": [
+      "MEX",
+      "RSA",
+      "KOR",
+      "CZE"
+    ]
+  },
+  {
+    "id": "B",
+    "name": "B 组",
+    "teams": [
+      "CAN",
+      "QAT",
+      "SUI",
+      "BIH"
+    ]
+  },
+  {
+    "id": "C",
+    "name": "C 组",
+    "teams": [
+      "BRA",
+      "MAR",
+      "HAI",
+      "SCO"
+    ]
+  },
+  {
+    "id": "D",
+    "name": "D 组",
+    "teams": [
+      "USA",
+      "PAR",
+      "AUS",
+      "TUR"
+    ]
+  },
+  {
+    "id": "E",
+    "name": "E 组",
+    "teams": [
+      "GER",
+      "CUW",
+      "CIV",
+      "ECU"
+    ]
+  },
+  {
+    "id": "F",
+    "name": "F 组",
+    "teams": [
+      "NED",
+      "JPN",
+      "TUN",
+      "SWE"
+    ]
+  },
+  {
+    "id": "G",
+    "name": "G 组",
+    "teams": [
+      "BEL",
+      "EGY",
+      "IRN",
+      "NZL"
+    ]
+  },
+  {
+    "id": "H",
+    "name": "H 组",
+    "teams": [
+      "ESP",
+      "CPV",
+      "KSA",
+      "URU"
+    ]
+  },
+  {
+    "id": "I",
+    "name": "I 组",
+    "teams": [
+      "FRA",
+      "SEN",
+      "IRQ",
+      "NOR"
+    ]
+  },
+  {
+    "id": "J",
+    "name": "J 组",
+    "teams": [
+      "ARG",
+      "DZA",
+      "AUT",
+      "JOR"
+    ]
+  },
+  {
+    "id": "K",
+    "name": "K 组",
+    "teams": [
+      "POR",
+      "COD",
+      "UZB",
+      "COL"
+    ]
+  },
+  {
+    "id": "L",
+    "name": "L 组",
+    "teams": [
+      "ENG",
+      "CRO",
+      "GHA",
+      "PAN"
+    ]
+  }
+]

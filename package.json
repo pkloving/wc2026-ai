@@ -1,0 +1,23 @@
+{
+  "name": "wc2026-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "2026 世界杯 + AI 预测 静态网页",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "update:result": "node scripts/update-result.js",
+    "update:prediction": "node scripts/add-prediction.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10",
+    "tailwindcss": "^3.4.14",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.6"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generated": "2026-06-01T08:58:30Z",
+    "source": "wheniskickoff.com"
+  },
+  "count": 12,
+  "data": [
+    {
+      "group": "A",
+      "teams": [
+        "MEX",
+        "RSA",
+        "KOR",
+        "CZE"
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        "CAN",
+        "QAT",
+        "SUI",
+        "BIH"
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        "BRA",
+        "MAR",
+        "HAI",
+        "SCO"
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        "USA",
+        "PAR",
+        "AUS",
+        "TUR"
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        "GER",
+        "CUW",
+        "CIV",
+        "ECU"
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        "NED",
+        "JPN",
+        "TUN",
+        "SWE"
+      ]
+    },
+    {
+      "group": "G",
+      "teams": [
+        "BEL",
+        "EGY",
+        "IRN",
+        "NZL"
+      ]
+    },
+    {
+      "group": "H",
+      "teams": [
+        "ESP",
+        "CPV",
+        "KSA",
+        "URU",
+        "URY"
+      ]
+    },
+    {
+      "group": "I",
+      "teams": [
+        "FRA",
+        "SEN",
+        "IRQ",
+        "NOR"
+      ]
+    },
+    {
+      "group": "J",
+      "teams": [
+        "ARG",
+        "DZA",
+        "AUT",
+        "JOR"
+      ]
+    },
+    {
+      "group": "K",
+      "teams": [
+        "POR",
+        "COD",
+        "UZB",
+        "COL"
+      ]
+    },
+    {
+      "group": "L",
+      "teams": [
+        "ENG",
+        "CRO",
+        "GHA",
+        "PAN"
+      ]
+    }
+  ]
+}
