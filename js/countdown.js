@@ -20,14 +20,17 @@ function diff(target) {
 }
 
 function renderChips(d) {
+  // > 1 天时秒级粒度无意义，直接隐藏
+  const showSecs = d.days === 0;
+  const items = [
+    ['天', d.days],
+    ['时', d.hours],
+    ['分', d.mins],
+  ];
+  if (showSecs) items.push(['秒', d.secs]);
   return `
     <div class="flex flex-wrap gap-2">
-      ${[
-        ['天', d.days],
-        ['时', d.hours],
-        ['分', d.mins],
-        ['秒', d.secs],
-      ].map(([u, v]) => `
+      ${items.map(([u, v]) => `
         <div class="flex-1 min-w-[52px] sm:min-w-[64px] bg-white/10 backdrop-blur rounded-lg sm:rounded-xl px-2 py-1.5 sm:px-3 sm:py-2 text-center">
           <div class="text-xl sm:text-3xl font-bold tabular-nums text-white leading-none">${pad(v)}</div>
           <div class="text-[10px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">${u}</div>
