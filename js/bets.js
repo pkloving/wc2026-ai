@@ -148,22 +148,25 @@ export async function renderBetsPage() {
   const betsHtml = (betsData.bets || []).length === 0
     ? renderEmpty()
     : betsData.bets.map((b) => renderBetCard(b, teamMap, unit)).join('');
-  const summary = `
-    <div class="card p-4 mb-6 bg-amber-50/60 border border-amber-200">
-      <p class="text-xs text-amber-800">
-        ⚠️ 纯个人娱乐记录。竞彩有风险，投注需谨慎，未满 18 周岁请勿参与。
-        站点不对投注结果负责，金额仅作流水记录，不构成任何投资建议。
-      </p>
+  const disclaimerHtml = `
+    <div class="card p-4 mb-6 bg-slate-100 border-l-4 border-flame">
+      <div class="flex items-start gap-3">
+        <div class="text-2xl shrink-0">🧪</div>
+        <div class="text-sm text-slate-700 leading-relaxed">
+          <p class="font-bold text-flame mb-1">本页为「足彩玩法」沙盘推演 / 模拟数据</p>
+          <p>${betsData.disclaimer || '本页面所有金额、倍数、球队选择、命中结果均为虚构/模拟数据，不构成任何投注建议。竞彩有风险，未满 18 周岁请勿参与。'}</p>
+        </div>
+      </div>
     </div>
   `;
   root.innerHTML = `
     <section class="mb-6">
-      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Lottery</div>
-      <h1 class="text-3xl sm:text-4xl font-black">${betsData.title || '🎰 个人足彩'}</h1>
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Lottery Simulation</div>
+      <h1 class="text-3xl sm:text-4xl font-black">${betsData.title || '🧪 个人足彩模拟'}</h1>
       <p class="text-slate-500 text-sm mt-2">${betsData.subtitle || ''}</p>
     </section>
+    ${disclaimerHtml}
     ${renderBudgetCard(betsData.budget, spent)}
-    ${summary}
     <div>${betsHtml}</div>
   `;
 }

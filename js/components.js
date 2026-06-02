@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { href: '/predictions.html', label: 'AI 预测', key: 'predictions' },
   { href: '/stats.html', label: '统计', key: 'stats' },
   { href: '/teams.html', label: '球队', key: 'teams' },
-  { href: '/bets.html', label: '足彩', key: 'bets' },
+  { href: '/bets.html', label: '足彩模拟', key: 'bets' },
   { href: '/about.html', label: '关于', key: 'about' },
 ];
 
@@ -61,7 +61,7 @@ export function mountFooter() {
             <li><a class="hover:text-gold" href="/standings.html">积分榜</a></li>
             <li><a class="hover:text-gold" href="/predictions.html">AI 预测总览</a></li>
             <li><a class="hover:text-gold" href="/stats.html">AI 准确率榜</a></li>
-            <li><a class="hover:text-gold" href="/bets.html">个人足彩记录</a></li>
+            <li><a class="hover:text-gold" href="/bets.html">个人足彩模拟</a></li>
           </ul>
         </div>
         <div>
