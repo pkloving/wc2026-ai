@@ -74,13 +74,50 @@ export function mountFooter() {
         </div>
       </div>
       <div class="border-t border-white/10">
-        <div class="container-page py-4 text-xs text-slate-500 flex flex-wrap items-center gap-2 justify-between">
-          <span>© 2026 WC 2026 AI 预测 · 非商业项目</span>
+        <div class="container-page py-4 text-xs text-slate-500 flex flex-col sm:flex-row sm:items-center gap-2 justify-between">
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>© 2026 WC 2026 AI 预测 · 非商业项目</span>
+            <a id="beian-link" class="hover:text-gold hidden" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+              <span id="beian-icon">🛡</span> <span id="beian-no">—</span>
+            </a>
+            <a id="beian-gongan" class="hover:text-gold hidden" href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer">
+              <span id="beian-gongan-icon">⚠️</span> <span id="beian-gongan-no">—</span>
+            </a>
+          </div>
           <span>本页所有 AI 预测内容仅代表大模型当时输出，不代表事实</span>
         </div>
       </div>
     </footer>
   `;
+}
+
+/**
+ * 配置备案号：拿到工信部备案号后调用
+ *
+ *   <script type="module">
+ *     import { mountBeian } from '/js/components.js';
+ *     mountBeian({ icp: '京ICP备2024xxxxxx号-1', gongan: '京公网安备 11010xxxxxxxxx号' });
+ *   </script>
+ *
+ * 不传就不显示，整站非侵入。
+ */
+export function mountBeian({ icp, gongan } = {}) {
+  if (icp) {
+    const a = document.getElementById('beian-link');
+    const no = document.getElementById('beian-no');
+    if (a && no) {
+      no.textContent = icp;
+      a.classList.remove('hidden');
+    }
+  }
+  if (gongan) {
+    const a = document.getElementById('beian-gongan');
+    const no = document.getElementById('beian-gongan-no');
+    if (a && no) {
+      no.textContent = gongan;
+      a.classList.remove('hidden');
+    }
+  }
 }
 
 export function getActiveKeyFromPath() {
