@@ -17,11 +17,11 @@
       "date": "2026-06-02",
       "stakeMultiplier": 1,
       "lines": [
-        { "pick": "ESP", "multiplier": 25, "odds": null, "result": null, "note": null },
-        { "pick": "FRA", "multiplier": 15, "odds": null, "result": null, "note": null },
-        { "pick": "ARG", "multiplier": 10, "odds": null, "result": null, "note": null }
+        { "pick": "ESP", "multiplier": 25, "odds": -4.75, "result": null, "note": null },
+        { "pick": "FRA", "multiplier": 15, "odds": -5, "result": null, "note": null },
+        { "pick": "ARG", "multiplier": 10, "odds": -8.5, "result": null, "note": null }
       ],
-      "note": "三票独立单关，假设任意一队夺冠即对应那票「模拟中奖」；赔率开赛前后再补登。"
+      "note": "三票独立单关，假设任意一队夺冠即对应那票「模拟中奖」；赔率已补登（亚洲盘：负号代表需投入金额/中奖 1）。"
     }
   ]
 }
