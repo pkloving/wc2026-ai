@@ -288,6 +288,15 @@
     "color": "#FF6F00"
   },
   {
+    "code": "NIR",
+    "name": "北爱尔兰",
+    "nameEn": "Northern Ireland",
+    "confederation": "UEFA",
+    "flag": "🇬🇧",
+    "iso2": "gb-nir",
+    "color": "#006633"
+  },
+  {
     "code": "NOR",
     "name": "挪威",
     "nameEn": "Norway",
@@ -322,6 +331,15 @@
     "flag": "🇵🇾",
     "iso2": "py",
     "color": "#D52B1E"
+  },
+  {
+    "code": "PER",
+    "name": "秘鲁",
+    "nameEn": "Peru",
+    "confederation": "CONMEBOL",
+    "flag": "🇵🇪",
+    "iso2": "pe",
+    "color": "#D91023"
   },
   {
     "code": "POR",

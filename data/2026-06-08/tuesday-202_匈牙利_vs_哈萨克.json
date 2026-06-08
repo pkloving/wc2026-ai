@@ -1,0 +1,24 @@
+{
+  "basic": {
+    "mid": "2040187",
+    "code": "周二202",
+    "league": "国际赛",
+    "home": "匈牙利",
+    "away": "哈萨克",
+    "kickoff": "2026-06-10 01:00",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040187",
+    "scraped_at": "2026-06-08T05:56:18.856Z",
+    "sale_status": "待开售"
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": []
+  },
+  "recent_10": [
+    { "team": "匈牙利", "wins": 5, "winPct": 50, "draws": 3, "drawPct": 30, "losses": 2, "lossPct": 20, "gf": 16, "ga": 12 },
+    { "team": "哈萨克", "wins": 3, "winPct": 30, "draws": 3, "drawPct": 30, "losses": 4, "lossPct": 40, "gf": 10, "ga": 12 }
+  ]
+}

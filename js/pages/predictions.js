@@ -140,7 +140,7 @@ boot(async () => {
             </div>
           </div>
           <div class="mt-4 flex flex-wrap gap-1.5">${modelChips}</div>
-          <div class="mt-3 text-xs text-slate-400">点击查看每个模型的聊天截图与详细复盘 →</div>
+          <div class="mt-3 text-xs text-slate-400">点击查看每个模型的详细复盘 →</div>
         </a>
       `;
     }).join('');

@@ -7,3 +7,6 @@ dist/
 *.log
 .env
 .env.local
+预测.md
+每日执行.md
+records/

@@ -5,7 +5,7 @@
 ## 🎯 项目目标
 
 - 展示 2026 世界杯全部 104 场比赛的赛程、比分、积分榜
-- 记录我**事先**用 GPT-4o / Claude / Gemini / DeepSeek 等大模型对每场比赛的预测（包括聊天截图）
+- 记录我**事先**用 GPT-4o / Claude / Gemini / DeepSeek 等大模型对每场比赛的预测
 - 每场比赛结束后 5 分钟内更新比分 + 命中情况
 - 通过累计数据，看哪个 AI 最会押比分
 
@@ -24,7 +24,7 @@ wc2026-ai/
 ├─ predictions.html / stats.html / teams.html / about.html
 ├─ match.html?id=Mxxx  (单场详情)
 ├─ data/             # matches / results / predictions / teams / groups (源数据)
-├─ public/assets/predictions/<matchId>/  # AI 聊天截图（手工上传）
+├─ public/assets/predictions/<matchId>/  # AI
 ├─ js/               # 组件、数据、渲染逻辑
 ├─ css/main.css      # Tailwind 入口
 ├─ scripts/          # 数据维护脚本
@@ -62,6 +62,7 @@ node scripts/update-result.js M002 1 1 \
 ```
 
 淘汰赛加时 / 点球：
+
 ```bash
 node scripts/update-result.js M088 1 1 --penalties=4:3
 ```
@@ -78,6 +79,7 @@ public/assets/predictions/M002/
 ```
 
 或用脚本自动复制：
+
 ```bash
 node scripts/add-prediction.js M002 \
   --model=Claude --home=1 --away=1 --winner=draw \
@@ -89,6 +91,7 @@ node scripts/add-prediction.js M002 \
 
 用 `add-prediction.js` 时会自动追加到 `data/predictions.json`。
 也可以直接编辑 `data/predictions.json`：
+
 ```json
 {
   "matchId": "M002",
@@ -115,12 +118,12 @@ git add . && git commit -m "update: M002 result" && git push
 
 ## 🧮 命中判定规则
 
-| 情况 | 标记 |
-|---|---|
+| 情况                            | 标记                |
+| ------------------------------- | ------------------- |
 | 预测比分 == 实际比分（90 分钟） | ✅ 比分命中（绿色） |
-| 胜负方向一致 + 比分不一致 | ⚠️ 胜负命中（金色） |
-| 胜负方向不一致 | ❌ 未中（红色） |
-| 比赛未开赛 | 灰色 chip |
+| 胜负方向一致 + 比分不一致       | ⚠️ 胜负命中（金色） |
+| 胜负方向不一致                  | ❌ 未中（红色）     |
+| 比赛未开赛                      | 灰色 chip           |
 
 淘汰赛以 90 分钟比分判定；点球大战单独展示。
 

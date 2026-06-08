@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-06-08T06:21:51.100Z",
+  "total_dates": 1,
+  "dates": {
+    "2026-06-08": {
+      "count": 14,
+      "matches": [
+        {
+          "file": "2026-06-08/friday-003_加拿大_vs_波黑.json",
+          "scraped_at": "2026-06-08T05:58:49.678Z",
+          "mid": "2040164",
+          "code": "周五003",
+          "league": "世界杯",
+          "home": "加拿大",
+          "away": "波黑",
+          "kickoff": "2026-06-13 03:00",
+          "spf": {
+            "home": 1.59,
+            "draw": 3.38,
+            "away": 4.9
+          },
+          "handicap": -1,
+          "rqspf": {
+            "home": 2.95,
+            "draw": 3.3,
+            "away": 2.05
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/friday-004_美国_vs_巴拉圭.json",
+          "scraped_at": "2026-06-08T05:59:31.541Z",
+          "mid": "2040165",
+          "code": "周五004",
+          "league": "世界杯",
+          "home": "美国",
+          "away": "巴拉圭",
+          "kickoff": "2026-06-13 09:00",
+          "spf": {
+            "home": 1.87,
+            "draw": 3.02,
+            "away": 3.8
+          },
+          "handicap": -1,
+          "rqspf": {
+            "home": 3.95,
+            "draw": 3.4,
+            "away": 1.72
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/monday-201_荷兰_vs_乌兹别克.json",
+          "scraped_at": "2026-06-08T05:51:21.856Z",
+          "mid": "2040145",
+          "code": "周一201",
+          "league": "国际赛",
+          "home": "荷兰",
+          "away": "乌兹别克",
+          "kickoff": "2026-06-09 02:45",
+          "spf": {
+            "home": 1.14,
+            "draw": 5.85,
+            "away": 12.5
+          },
+          "handicap": -2,
+          "rqspf": {
+            "home": 2.78,
+            "draw": 3.55,
+            "away": 2.05
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/monday-202_法国_vs_北爱尔兰.json",
+          "scraped_at": "2026-06-08T05:52:38.001Z",
+          "mid": "2040146",
+          "code": "周一202",
+          "league": "国际赛",
+          "home": "法国",
+          "away": "北爱尔兰",
+          "kickoff": "2026-06-09 03:10",
+          "spf": null,
+          "handicap": -2,
+          "rqspf": {
+            "home": 1.95,
+            "draw": 3.6,
+            "away": 2.95
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/monday-203_秘鲁_vs_西班牙.json",
+          "scraped_at": "2026-06-08T05:53:31.612Z",
+          "mid": "2040147",
+          "code": "周一203",
+          "league": "国际赛",
+          "home": "秘鲁",
+          "away": "西班牙",
+          "kickoff": "2026-06-09 10:00",
+          "spf": null,
+          "handicap": -2,
+          "rqspf": {
+            "home": 2.68,
+            "draw": 3.6,
+            "away": 2.09
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/saturday-005_卡塔尔_vs_瑞士.json",
+          "scraped_at": "2026-06-08T06:00:17.044Z",
+          "mid": "2040166",
+          "code": "周六005",
+          "league": "世界杯",
+          "home": "卡塔尔",
+          "away": "瑞士",
+          "kickoff": "2026-06-14 03:00",
+          "spf": null,
+          "handicap": null,
+          "rqspf": {
+            "home": 1.98,
+            "draw": 3.85,
+            "away": 2.74
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/saturday-006_巴西_vs_摩洛哥.json",
+          "scraped_at": "2026-06-08T06:08:00.000Z",
+          "mid": "2040167",
+          "code": "周六006",
+          "league": "世界杯",
+          "home": "巴西",
+          "away": "摩洛哥",
+          "kickoff": "2026-06-14 06:00",
+          "spf": {
+            "home": 1.55,
+            "draw": 3.45,
+            "away": 5.15
+          },
+          "handicap": -1,
+          "rqspf": {
+            "home": 2.8,
+            "draw": 3.26,
+            "away": 2.15
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/thursday-001_墨西哥_vs_南非_揭幕战.json",
+          "scraped_at": "2026-06-08T05:54:18.698Z",
+          "mid": "2040162",
+          "code": "周四001",
+          "league": "世界杯",
+          "home": "墨西哥",
+          "away": "南非",
+          "kickoff": "2026-06-12 03:00",
+          "spf": {
+            "home": 1.34,
+            "draw": 3.92,
+            "away": 7.85
+          },
+          "handicap": -1,
+          "rqspf": {
+            "home": 2.25,
+            "draw": 3.18,
+            "away": 2.7
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/thursday-002_韩国_vs_捷克.json",
+          "scraped_at": "2026-06-08T05:54:59.184Z",
+          "mid": "2040163",
+          "code": "周四002",
+          "league": "世界杯",
+          "home": "韩国",
+          "away": "捷克",
+          "kickoff": "2026-06-12 10:00",
+          "spf": {
+            "home": 2.43,
+            "draw": 2.84,
+            "away": 2.74
+          },
+          "handicap": -1,
+          "rqspf": {
+            "home": 5.8,
+            "draw": 4.05,
+            "away": 1.41
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-08/tuesday-201_中国_vs_泰国.json",
+          "scraped_at": "2026-06-08T05:55:38.184Z",
+          "mid": "2040186",
+          "code": "周二201",
+          "league": "国际赛",
+          "home": "中国",
+          "away": "泰国",
+          "kickoff": "2026-06-09 19:35",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-08/tuesday-202_匈牙利_vs_哈萨克.json",
+          "scraped_at": "2026-06-08T05:56:18.856Z",
+          "mid": "2040187",
+          "code": "周二202",
+          "league": "国际赛",
+          "home": "匈牙利",
+          "away": "哈萨克",
+          "kickoff": "2026-06-10 01:00",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-08/tuesday-203_阿根廷_vs_冰岛.json",
+          "scraped_at": "2026-06-08T05:57:00.234Z",
+          "mid": "2040188",
+          "code": "周二203",
+          "league": "国际赛",
+          "home": "阿根廷",
+          "away": "冰岛",
+          "kickoff": "2026-06-10 08:30",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-08/wednesday-201_葡萄牙_vs_尼日利亚.json",
+          "scraped_at": "2026-06-08T05:57:36.522Z",
+          "mid": "2040189",
+          "code": "周三201",
+          "league": "国际赛",
+          "home": "葡萄牙",
+          "away": "尼日利亚",
+          "kickoff": "2026-06-11 03:45",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-08/wednesday-202_英格兰_vs_哥斯达黎加.json",
+          "scraped_at": "2026-06-08T05:58:08.767Z",
+          "mid": "2040190",
+          "code": "周三202",
+          "league": "国际赛",
+          "home": "英格兰",
+          "away": "哥斯达",
+          "kickoff": "2026-06-11 04:00",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        }
+      ]
+    }
+  },
+  "total_matches": 14
+}

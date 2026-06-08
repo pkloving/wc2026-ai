@@ -100,7 +100,7 @@ boot(async () => {
 
   const listEl = document.getElementById('model-list');
   if (!p || p.models.length === 0) {
-    listEl.innerHTML = '<div class="card p-8 text-center text-slate-500">这场比赛还没有 AI 预测记录。<br><br>开赛前我会拿同样的 prompt 问几个大模型，把聊天截图放这里。</div>';
+    listEl.innerHTML = '<div class="card p-8 text-center text-slate-500">这场比赛还没有 AI 预测记录。<br><br>开赛前我会拿同样的 prompt 问几个大模型。</div>';
   } else {
     document.getElementById('model-count').textContent = `（${p.models.length} 个模型）`;
     listEl.innerHTML = p.models.map((m) => {
@@ -111,18 +111,6 @@ boot(async () => {
       const winnerMatch = r && ((ph > pa && r.homeScore > r.awayScore) || (ph < pa && r.homeScore < r.awayScore) || (ph === pa && r.homeScore === r.awayScore));
       const scoreMatch = r && ph === r.homeScore && pa === r.awayScore;
       const screenshots = m.screenshots || [];
-      const shotsHtml = screenshots.length > 0
-        ? `<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3">
-            ${screenshots.map((s) => `
-              <button type="button" class="shot-btn block w-full group" data-src="${s}">
-                <div class="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center text-slate-400 text-xs border border-slate-200 group-hover:border-gold group-hover:scale-[1.02] transition-all">
-                  <img src="${s}" alt="AI 聊天截图" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'p-3 text-center\\'>📷<br>${s.split('/').pop()}<br><span class=\\'text-flame text-[10px]\\'>未上传</span></div>'" />
-                </div>
-              </button>
-            `).join('')}
-          </div>
-          <div class="text-xs text-slate-400 mt-2">点击图片放大查看</div>`
-        : `<div class="mt-3 p-4 rounded-lg bg-slate-50 border border-dashed border-slate-200 text-center text-sm text-slate-500">📷 该模型聊天截图未上传<br><span class="text-xs text-slate-400">放到 <code>public/assets/predictions/${p.matchId}/${m.model.toLowerCase().replace(/\\W+/g, '-')}.png</code> 即可</span></div>`;
       return `
         <article class="card p-5 sm:p-6">
           <div class="flex items-start justify-between gap-3 mb-3 flex-wrap">
@@ -154,7 +142,6 @@ boot(async () => {
               ${m.note ? `<div class="text-xs text-slate-500 mt-1">${escapeHtml(m.note)}</div>` : ''}
             </div>
           </div>
-          ${shotsHtml}
         </article>
       `;
     }).join('');

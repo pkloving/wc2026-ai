@@ -18,6 +18,12 @@ function safeNum(n, d = 0) {
 }
 
 function betCost(bet, unit) {
+  // 串关格式：直接取 totalCost（或 unitCost × combinations × stakeMultiplier）
+  if (bet.totalCost != null) return safeNum(bet.totalCost);
+  if (Array.isArray(bet.picks) && bet.unitCost != null && bet.combinations != null) {
+    return safeNum(bet.unitCost) * safeNum(bet.combinations) * safeNum(bet.stakeMultiplier, 1);
+  }
+  // 单关格式：lines × multiplier
   const lines = bet.lines || [];
   return lines.reduce((sum, ln) => sum + lineCost(ln, unit), 0) * safeNum(bet.stakeMultiplier, 1);
 }
@@ -89,6 +95,89 @@ function renderLineRow(line, teamMap, unit) {
   `;
 }
 
+function pickAccent(pickType) {
+  if (pickType === 'home') return 'text-pitch';
+  if (pickType === 'away') return 'text-flame';
+  if (pickType === 'draw') return 'text-gold';
+  return 'text-slate-700';
+}
+
+function hcapText(n) {
+  if (n == null) return '';
+  return n > 0 ? `+${n}` : `${n}`;
+}
+
+function renderParlayCard(bet, teamMap) {
+  const picks = bet.picks || [];
+  const totalCost = safeNum(bet.totalCost, 0);
+  const combinations = safeNum(bet.combinations, picks.length || 1);
+  const maxReturn = bet.maxReturn;
+  const badge = lineStatusBadge(bet.result);
+  const parlayLabel = (bet.parlayType || []).map((t) => t.replace('x', '×')).join(' + ') || '串关';
+  const date = bet.date ? fmtDate(bet.date) : null;
+  const typeLabel = TYPE_LABEL[bet.type] || TYPE_LABEL.other;
+  const note = bet.note
+    ? `<p class="text-xs text-slate-500 mt-3 italic">📝 ${escapeHtml(bet.note)}</p>`
+    : '';
+  const pickRows = picks.map((p, i) => {
+    const home = teamMap.get(p.home);
+    const away = teamMap.get(p.away);
+    const homeName = home?.name || p.home;
+    const awayName = away?.name || p.away;
+    const accent = pickAccent(p.pick);
+    return `
+      <div class="flex items-center gap-2 text-sm py-1.5 border-b border-slate-100 last:border-0">
+        <span class="text-[11px] text-slate-400 font-mono shrink-0 w-4">${i + 1}</span>
+        <span class="font-mono text-[11px] text-slate-500 shrink-0 w-12">${escapeHtml(p.match || '')}</span>
+        ${teamChip(home, 'xs')}
+        <span class="font-semibold truncate">${escapeHtml(homeName)}<span class="text-slate-400"> ${hcapText(p.handicap)}</span></span>
+        <span class="text-slate-400 text-[11px]">vs</span>
+        ${teamChip(away, 'xs')}
+        <span class="font-semibold truncate">${escapeHtml(awayName)}</span>
+        <span class="ml-auto ${accent} font-bold whitespace-nowrap">→ ${escapeHtml(p.pickLabel || '')}</span>
+        <span class="text-slate-500 tabular-nums whitespace-nowrap">@ ${p.odds}</span>
+      </div>
+    `;
+  }).join('');
+  return `
+    <div class="card p-5 mb-4">
+      <div class="flex items-start justify-between gap-2 flex-wrap mb-3">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="badge badge-gold">${typeLabel}</span>
+            <h3 class="text-lg font-bold">${escapeHtml(bet.title || '串关')}</h3>
+          </div>
+          <div class="text-xs text-slate-500 mt-1">
+            ${bet.matchLabel ? escapeHtml(bet.matchLabel) + ' · ' : ''}${date ? `${date.date} ${date.time}` : ''}
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="text-xs text-slate-500">投入</div>
+          <div class="text-xl font-black tabular-nums">${fmtMoney(totalCost)}</div>
+          <div class="text-[11px] text-slate-400">${picks.length} 选号 · ${combinations} 注</div>
+        </div>
+      </div>
+      <div class="rounded-lg bg-slate-100 px-3 py-2 mb-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-600">
+        <span>🎲 过关方式: <b class="text-ink">${escapeHtml(parlayLabel)}</b></span>
+        <span>倍数: <b class="text-ink">${safeNum(bet.stakeMultiplier, 1)}</b></span>
+        ${maxReturn != null ? `<span>最高可能固定奖金: <b class="text-ink">${fmtMoney(maxReturn)}</b></span>` : ''}
+        <span class="badge ${badge.tone}">${badge.label}</span>
+      </div>
+      <div class="rounded-lg bg-slate-50 p-2">
+        ${pickRows}
+      </div>
+      ${note}
+    </div>
+  `;
+}
+
+function renderBet(bet, teamMap, unit) {
+  if (Array.isArray(bet.picks) && bet.picks.length > 0) {
+    return renderParlayCard(bet, teamMap);
+  }
+  return renderBetCard(bet, teamMap, unit);
+}
+
 function renderBetCard(bet, teamMap, unit) {
   const lines = bet.lines || [];
   const cost = betCost(bet, unit);
@@ -147,7 +236,7 @@ export async function renderBetsPage() {
   const spent = totalSpent(betsData.bets || [], unit);
   const betsHtml = (betsData.bets || []).length === 0
     ? renderEmpty()
-    : betsData.bets.map((b) => renderBetCard(b, teamMap, unit)).join('');
+    : betsData.bets.map((b) => renderBet(b, teamMap, unit)).join('');
   const disclaimerHtml = `
     <div class="card p-4 mb-6 bg-slate-100 border-l-4 border-flame">
       <div class="flex items-start gap-3">
