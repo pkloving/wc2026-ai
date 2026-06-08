@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>关于 · WC 2026 · AI 预测</title>
-  <meta name="description" content="WC 2026 AI 预测站点说明 + 命中判定规则 + 免责声明。" />
+  <title data-i18n-attr="title:meta.about.title">关于 · WC 2026 · AI 预测</title>
+  <meta name="description" data-i18n-attr="content:meta.about.description" content="WC 2026 AI 预测站点说明 + 命中判定规则 + 免责声明。" />
   <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
@@ -23,72 +23,72 @@
   <div id="app-header"></div>
   <main class="flex-1 container-page py-8">
     <div class="max-w-3xl">
-      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">About</div>
-      <h1 class="text-3xl sm:text-4xl font-black mb-6">关于这个站点</h1>
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="about.kicker">About</div>
+      <h1 class="text-3xl sm:text-4xl font-black mb-6" data-i18n="about.title">关于这个站点</h1>
 
       <div class="prose prose-slate max-w-none">
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">🎯 目的</h2>
-          <p>这是一个静态站点，把 2026 美加墨世界杯的赛程、比分，跟我事先问各大 AI 大模型的预测记录放在一起对比。世界杯期间，每场比赛结束后我都会来更新比分和命中情况。</p>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.goal.title">🎯 目的</h2>
+          <p data-i18n="about.goal.body">这是一个静态站点，把 2026 美加墨世界杯的赛程、比分，跟我事先问各大 AI 大模型的预测记录放在一起对比。世界杯期间，每场比赛结束后我都会来更新比分和命中情况。</p>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">🧪 实验设计</h2>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.experiment.title">🧪 实验设计</h2>
           <ol class="list-decimal pl-6 space-y-2 text-slate-700">
-            <li>每场比赛开赛前 24 小时内，用<b>同一个 prompt</b>（见每场 AI 预测页）问几个大模型。</li>
-            <li>比赛结束后，更新比分 → 系统自动判定每个模型是 ✅ 比分命中 / ⚠️ 胜负命中 / ❌ 未中。</li>
-            <li>所有比赛结束后，统计页会给出每个模型的最终战绩。</li>
+            <li data-i18n-html="about.experiment.li1">每场比赛开赛前 24 小时内，用<b>同一个 prompt</b>（见每场 AI 预测页）问几个大模型。</li>
+            <li data-i18n-html="about.experiment.li2">比赛结束后，更新比分 → 系统自动判定每个模型是 ✅ 比分命中 / ⚠️ 胜负命中 / ❌ 未中。</li>
+            <li data-i18n-html="about.experiment.li3">所有比赛结束后，统计页会给出每个模型的最终战绩。</li>
           </ol>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">🤖 对比的 AI 模型</h2>
-          <p>暂定：<b>MiniMax-M3</b>、<b>Claude Opus 4.8</b>、<b>GPT-5 mini</b>、<b>DeepSeek-V4</b>、<b>Kimi</b>。</p>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.models.title">🤖 对比的 AI 模型</h2>
+          <p data-i18n-html="about.models.body">暂定：<b>MiniMax-M3</b>、<b>Claude Opus 4.8</b>、<b>GPT-5 mini</b>、<b>DeepSeek-V4</b>、<b>Kimi</b>。</p>
         </div>
 
         <div class="mb-6" id="champion-section" aria-busy="true"><div class="card p-6"><div class="sk h-5 w-1/3 mb-3"></div><div class="sk h-4 w-full mb-2"></div><div class="sk h-4 w-2/3"></div></div></div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">📊 命中判定规则</h2>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.rules.title">📊 命中判定规则</h2>
           <ul class="list-disc pl-6 space-y-1 text-slate-700">
-            <li><b>比分命中</b>：预测比分 == 实际比分（包括 90 分钟比分，淘汰赛不算加时/点球）</li>
-            <li><b>胜负命中</b>：胜平负方向一致，但比分不完全一致</li>
-            <li><b>未中</b>：胜平负方向不一致</li>
+            <li data-i18n-html="about.rules.li1"><b>比分命中</b>：预测比分 == 实际比分（包括 90 分钟比分，淘汰赛不算加时/点球）</li>
+            <li data-i18n-html="about.rules.li2"><b>胜负命中</b>：胜平负方向一致，但比分不完全一致</li>
+            <li data-i18n-html="about.rules.li3"><b>未中</b>：胜平负方向不一致</li>
           </ul>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">🛠 技术栈</h2>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.stack.title">🛠 技术栈</h2>
           <ul class="list-disc pl-6 space-y-1 text-slate-700">
-            <li>Vite + 原生 HTML/CSS/JS（多页面）</li>
-            <li>Tailwind CSS</li>
-            <li>Chart.js（统计页图表）</li>
-            <li>纯静态、可部署到 GitHub Pages / Vercel / Netlify</li>
+            <li data-i18n="about.stack.li1">Vite + 原生 HTML/CSS/JS（多页面）</li>
+            <li data-i18n="about.stack.li2">Tailwind CSS</li>
+            <li data-i18n="about.stack.li3">Chart.js（统计页图表）</li>
+            <li data-i18n="about.stack.li4">纯静态、可部署到 GitHub Pages / Vercel / Netlify</li>
           </ul>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">📁 项目结构</h2>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.structure.title">📁 项目结构</h2>
           <pre class="text-xs bg-slate-50 p-4 rounded-lg overflow-x-auto scrollbar-thin">wc2026-ai/
 ├─ index.html / schedule.html / standings.html / results.html
 ├─ predictions.html / stats.html / teams.html / about.html
 ├─ match.html?id=Mxxx  (单场详情)
 ├─ data/             # matches / results / predictions / teams / groups
 ├─ public/data/      # 同上，作为 Vite 静态资源
-├─ public/assets/predictions/&lt;matchId&gt;/  
+├─ public/assets/predictions/&lt;matchId&gt;
 ├─ js/               # 组件、数据、渲染逻辑
 ├─ css/main.css      # Tailwind 入口
 └─ scripts/          # generate-matches / update-result / add-prediction</pre>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">🧪 个人足彩模拟</h2>
-          <p>另开了一个 <a class="text-ink font-bold hover:text-gold" href="/bets.html">足彩模拟专栏</a>，把「如果按 1000 元预算、每倍 2 元玩世界杯冠军，会怎么选、怎么结算」做成纯虚构的<a class="text-ink font-bold hover:text-gold" href="/bets.html">沙盘推演</a>。<b>所有金额、倍数、选项、命中结果均为站长编造的模拟数据</b>，与任何真实投注无关。</p>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.bets.title">🧪 个人足彩模拟</h2>
+          <p data-i18n-html="about.bets.body">另开了一个 <a class="text-ink font-bold hover:text-gold" href="/bets.html">足彩模拟专栏</a>，把「如果按 1000 元预算、每倍 2 元玩世界杯冠军，会怎么选、怎么结算」做成纯虚构的<a class="text-ink font-bold hover:text-gold" href="/bets.html">沙盘推演</a>。<b>所有金额、倍数、选项、命中结果均为站长编造的模拟数据</b>，与任何真实投注无关。</p>
         </div>
 
         <div class="card p-6 mb-6">
-          <h2 class="text-xl font-bold mb-3">⚠️ 免责声明</h2>
-          <p class="text-slate-600">本站所有 AI 预测内容仅代表大模型当时的输出，不代表任何事实或建议。比分和 AI 预测由我手动录入，AI 截图均为本人本地对话记录，请勿用作任何决策依据。「个人足彩模拟」专栏为<b>虚构/沙盘推演</b>，所有数据均为站长编造，<b>不构成任何投注建议</b>；本站不鼓励、不引导任何形式的博彩行为；竞彩有风险，未满 18 周岁请勿参与。</p>
+          <h2 class="text-xl font-bold mb-3" data-i18n="about.disclaimer.title">⚠️ 免责声明</h2>
+          <p class="text-slate-600" data-i18n-html="about.disclaimer.body">本站所有 AI 预测内容仅代表大模型当时的输出，不代表任何事实或建议。比分和 AI 预测由我手动录入，请勿用作任何决策依据。「个人足彩模拟」专栏为<b>虚构/沙盘推演</b>，所有数据均为站长编造，<b>不构成任何投注建议</b>；本站不鼓励、不引导任何形式的博彩行为；竞彩有风险，未满 18 周岁请勿参与。</p>
         </div>
       </div>
     </div>

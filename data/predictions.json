@@ -4,7 +4,6 @@
     "models": [
       {
         "model": "deepseek",
-        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -13,7 +12,6 @@
       },
       {
         "model": "claude",
-        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -22,7 +20,6 @@
       },
       {
         "model": "MiniMax",
-        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -31,7 +28,6 @@
       },
       {
         "model": "Kimi",
-        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 1,
         "predictedWinner": "home",
@@ -40,7 +36,6 @@
       },
       {
         "model": "GPT-5 mini",
-        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -54,7 +49,6 @@
     "models": [
       {
         "model": "deepseek",
-        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "away",
@@ -63,7 +57,6 @@
       },
       {
         "model": "claude",
-        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 1,
         "predictedWinner": "draw",
@@ -72,7 +65,6 @@
       },
       {
         "model": "MiniMax",
-        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 1,
         "predictedWinner": "draw",
@@ -81,7 +73,6 @@
       },
       {
         "model": "Kimi",
-        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 1,
         "predictedWinner": "draw",
@@ -90,7 +81,6 @@
       },
       {
         "model": "GPT-5 mini",
-        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
@@ -104,7 +94,6 @@
     "models": [
       {
         "model": "deepseek",
-        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -113,7 +102,6 @@
       },
       {
         "model": "claude",
-        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -122,7 +110,6 @@
       },
       {
         "model": "MiniMax",
-        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -131,7 +118,6 @@
       },
       {
         "model": "Kimi",
-        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 1,
         "predictedWinner": "home",
@@ -140,7 +126,6 @@
       },
       {
         "model": "GPT-5 mini",
-        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
@@ -154,7 +139,6 @@
     "models": [
       {
         "model": "deepseek",
-        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -163,7 +147,6 @@
       },
       {
         "model": "claude",
-        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -172,7 +155,6 @@
       },
       {
         "model": "MiniMax",
-        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -181,7 +163,6 @@
       },
       {
         "model": "Kimi",
-        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
@@ -190,7 +171,6 @@
       },
       {
         "model": "GPT-5 mini",
-        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",

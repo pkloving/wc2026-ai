@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WC 2026 · AI 预测 — 首页</title>
-  <meta name="description" content="2026 美加墨世界杯赛程、AI 大模型预测记录、命中率统计。" />
+  <title data-i18n-attr="title:meta.home.title">WC 2026 · AI 预测 — 首页</title>
+  <meta name="description" data-i18n-attr="content:meta.home.description" content="2026 美加墨世界杯赛程、AI 大模型预测记录、命中率统计。" />
   <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3Cpath d='M32 4a28 28 0 0 1 0 56 28 28 0 0 1 0-56zm0 6a22 22 0 0 0 0 44 22 22 0 0 0 0-44z' fill='%230B1F3A'/%3E%3Cpolygon points='32,12 38,28 54,28 41,38 46,54 32,44 18,54 23,38 10,28 26,28' fill='%23E63946'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
@@ -27,27 +27,27 @@
     <section class="gradient-hero text-white">
       <div class="container-page py-12 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-semibold mb-4 animate-fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-semibold mb-4 animate-fade-in" data-i18n="home.hero.badge">
             🏆 2026 美加墨世界杯
           </div>
           <h1 class="text-4xl sm:text-6xl font-black leading-tight tracking-tight">
-            AI 大模型，<br>
-            押得准吗？<br>
-            <span class="text-gradient-gold">让数据说话</span>
+            <span data-i18n="home.hero.title1">AI 大模型，</span><br>
+            <span data-i18n="home.hero.title2">押得准吗？</span><br>
+            <span class="text-gradient-gold" data-i18n="home.hero.title3">让数据说话</span>
           </h1>
-          <p class="mt-5 text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed">
-            48 支球队 · 104 场比赛 · 12 个小组。我把每场比赛前问 GPT、Claude、Gemini、DeepSeek 等大模型的聊天记录截图全部留档，赛后 1 分钟更新比分 + 命中情况。
+          <p class="mt-5 text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed" data-i18n="home.hero.body">
+            48 支球队 · 104 场比赛 · 12 个小组。我把每场比赛前问 GPT、Claude、Gemini、DeepSeek 等大模型的预测录入，赛后 更新比分 + 命中情况。
           </p>
           <div class="mt-7 flex flex-wrap gap-3">
-            <a href="/schedule.html" class="btn-primary">查看赛程 →</a>
-            <a href="/predictions.html" class="btn bg-white/10 text-white hover:bg-white/20">⭐ AI 预测</a>
-            <a href="/stats.html" class="btn-ghost bg-white/5 text-white hover:bg-white/10">准确率榜</a>
+            <a href="/schedule.html" class="btn-primary" data-i18n="home.hero.cta1">查看赛程 →</a>
+            <a href="/predictions.html" class="btn bg-white/10 text-white hover:bg-white/20" data-i18n="home.hero.cta2">⭐ AI 预测</a>
+            <a href="/stats.html" class="btn-ghost bg-white/5 text-white hover:bg-white/10" data-i18n="home.hero.cta3">准确率榜</a>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4">
           <div class="card bg-white/5 backdrop-blur p-5 sm:p-6 border border-white/10">
             <div id="countdown-next" class="text-slate-100" aria-busy="true">
-              <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">距下场比赛</div>
+              <div class="text-xs uppercase tracking-widest text-slate-400 mb-2" data-i18n="countdown.title">距下场比赛</div>
               <div class="sk h-3 w-3/4 mb-2"></div>
               <div class="flex flex-wrap gap-2">
                 <div class="flex-1 min-w-[52px] sm:min-w-[64px] bg-white/10 rounded-lg sm:rounded-xl px-2 py-1.5 sm:px-3 sm:py-2 text-center">
@@ -73,10 +73,10 @@
     <section class="container-page py-12 sm:py-16">
       <div class="flex items-end justify-between mb-6">
         <div>
-          <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Today</div>
-          <h2 class="text-2xl sm:text-3xl font-bold">今日 / 即将开赛</h2>
+          <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="home.today.kicker">Today</div>
+          <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="home.today.title">今日 / 即将开赛</h2>
         </div>
-        <a href="/schedule.html" class="text-sm text-ink hover:text-gold">完整赛程 →</a>
+        <a href="/schedule.html" class="text-sm text-ink hover:text-gold" data-i18n="home.today.more">完整赛程 →</a>
       </div>
       <div id="today-matches" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" aria-busy="true">
         <div class="card p-4"><div class="sk h-3 w-16 mb-3"></div><div class="sk h-5 w-full mb-2"></div><div class="sk h-5 w-3/4 mb-3"></div><div class="sk h-3 w-1/2"></div></div>
@@ -89,10 +89,10 @@
     <section class="container-page pb-12 sm:pb-16">
       <div class="flex items-end justify-between mb-6">
         <div>
-          <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">AI Predictions</div>
-          <h2 class="text-2xl sm:text-3xl font-bold">⭐ AI 预测速览</h2>
+          <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="home.ai.kicker">AI Predictions</div>
+          <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="home.ai.title">⭐ AI 预测速览</h2>
         </div>
-        <a href="/predictions.html" class="text-sm text-ink hover:text-gold">查看全部 →</a>
+        <a href="/predictions.html" class="text-sm text-ink hover:text-gold" data-i18n="home.ai.more">查看全部 →</a>
       </div>
       <div id="ai-overview" class="grid lg:grid-cols-3 gap-4" aria-busy="true">
         <div class="card p-5"><div class="sk h-3 w-20 mb-2"></div><div class="sk h-6 w-full mb-1"></div><div class="sk h-6 w-2/3 mb-3"></div><div class="sk h-5 w-1/2"></div></div>
@@ -106,23 +106,23 @@
       <div class="container-page py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <a href="/schedule.html" class="card p-5 hover:-translate-y-0.5 transition-transform">
           <div class="text-2xl">📅</div>
-          <div class="mt-2 font-semibold">完整赛程</div>
-          <div class="text-xs text-slate-500 mt-1">104 场，按日期/小组/阶段筛选</div>
+          <div class="mt-2 font-semibold" data-i18n="home.cards.schedule.title">完整赛程</div>
+          <div class="text-xs text-slate-500 mt-1" data-i18n="home.cards.schedule.desc">104 场，按日期/小组/阶段筛选</div>
         </a>
         <a href="/standings.html" class="card p-5 hover:-translate-y-0.5 transition-transform">
           <div class="text-2xl">📊</div>
-          <div class="mt-2 font-semibold">积分榜</div>
-          <div class="text-xs text-slate-500 mt-1">12 组，每组前 2 + 8 个最佳第 3</div>
+          <div class="mt-2 font-semibold" data-i18n="home.cards.standings.title">积分榜</div>
+          <div class="text-xs text-slate-500 mt-1" data-i18n="home.cards.standings.desc">12 组，每组前 2 + 8 个最佳第 3</div>
         </a>
         <a href="/predictions.html" class="card p-5 hover:-translate-y-0.5 transition-transform">
           <div class="text-2xl">🤖</div>
-          <div class="mt-2 font-semibold">AI 预测</div>
-          <div class="text-xs text-slate-500 mt-1">多模型对比</div>
+          <div class="mt-2 font-semibold" data-i18n="home.cards.predictions.title">AI 预测</div>
+          <div class="text-xs text-slate-500 mt-1" data-i18n="home.cards.predictions.desc">多模型对比</div>
         </a>
         <a href="/stats.html" class="card p-5 hover:-translate-y-0.5 transition-transform">
           <div class="text-2xl">🎯</div>
-          <div class="mt-2 font-semibold">准确率榜</div>
-          <div class="text-xs text-slate-500 mt-1">哪个大模型最会押比分？</div>
+          <div class="mt-2 font-semibold" data-i18n="home.cards.stats.title">准确率榜</div>
+          <div class="text-xs text-slate-500 mt-1" data-i18n="home.cards.stats.desc">哪个大模型最会押比分？</div>
         </a>
       </div>
     </section>

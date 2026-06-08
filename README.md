@@ -1,6 +1,6 @@
 # 2026 世界杯 + AI 预测 静态网页
 
-> 静态站点：聚合 2026 美加墨世界杯赛程、比分、积分榜，以及**多 AI 大模型预测聊天记录**的留档与命中统计。
+> 静态站点：聚合 2026 美加墨世界杯赛程、比分、积分榜，以及**多 AI 大模型预测与命中统计**。
 
 ## 🎯 项目目标
 
@@ -67,16 +67,9 @@ node scripts/update-result.js M002 1 1 \
 node scripts/update-result.js M088 1 1 --penalties=4:3
 ```
 
-### 2. 上传 AI 预测截图
+### 2. 录入 AI 预测
 
-把聊天记录截图放到 `public/assets/predictions/<matchId>/`，例如：
-
-```
-public/assets/predictions/M002/
-├─ gpt-1.png
-├─ claude-1.png
-└─ deepseek-1.png
-```
+把AI预测放到 `public/assets/predictions/<matchId>/`
 
 或用脚本自动复制：
 
@@ -84,7 +77,6 @@ public/assets/predictions/M002/
 node scripts/add-prediction.js M002 \
   --model=Claude --home=1 --away=1 --winner=draw \
   --prompt="Predict KOR vs DEN" \
-  --shot=~/Desktop/screenshots/claude-kor-den.png
 ```
 
 ### 3. 同步到 `predictions.json` 关联
@@ -98,7 +90,6 @@ node scripts/add-prediction.js M002 \
   "models": [
     {
       "model": "GPT-4o",
-      "prompt": "请预测韩国 vs 丹麦",
       "predictedHome": 2,
       "predictedAway": 0,
       "predictedWinner": "home",
@@ -131,7 +122,7 @@ git add . && git commit -m "update: M002 result" && git push
 
 - `data/matches.json` — 全部 104 场比赛元信息
 - `data/results.json` — 比赛结果（比分、进球者、点球）
-- `data/predictions.json` — 每场比赛 × 每模型的预测 + 截图路径
+- `data/predictions.json` — 每场比赛 × 每模型的预测
 - `data/teams.json` — 48 队信息（含旗帜、所属足联）
 - `data/groups.json` — 12 个小组配置
 

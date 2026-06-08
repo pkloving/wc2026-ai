@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>积分榜 · WC 2026 · AI 预测</title>
-  <meta name="description" content="2026 世界杯 12 个小组积分榜 + 8 个最佳第 3 名晋级榜。" />
+  <title data-i18n-attr="title:meta.standings.title">积分榜 · WC 2026 · AI 预测</title>
+  <meta name="description" data-i18n-attr="content:meta.standings.description" content="2026 世界杯 12 个小组积分榜 + 8 个最佳第 3 名晋级榜。" />
   <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
@@ -23,9 +23,9 @@
   <div id="app-header"></div>
   <main class="flex-1 container-page py-8">
     <div class="mb-6">
-      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Standings</div>
-      <h1 class="text-3xl sm:text-4xl font-black">积分榜</h1>
-      <p class="text-slate-500 text-sm mt-2">12 组，每组前 2 + 8 个成绩最佳的第 3 名晋级 32 强淘汰赛</p>
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="standings.kicker">Standings</div>
+      <h1 class="text-3xl sm:text-4xl font-black" data-i18n="standings.title">积分榜</h1>
+      <p class="text-slate-500 text-sm mt-2" data-i18n="standings.subtitle">12 组，每组前 2 + 8 个成绩最佳的第 3 名晋级 32 强淘汰赛</p>
     </div>
 
     <div class="card p-3 mb-6 overflow-x-auto scrollbar-thin">
@@ -39,8 +39,8 @@
     </div>
 
     <div class="mt-10">
-      <h2 class="text-xl font-bold mb-3">8 个最佳第 3 名</h2>
-      <p class="text-xs text-slate-500 mb-3">FIFA 规则：积分 → 净胜球 → 进球 → 公平竞赛分</p>
+      <h2 class="text-xl font-bold mb-3" data-i18n="standings.thirds.title">8 个最佳第 3 名</h2>
+      <p class="text-xs text-slate-500 mb-3" data-i18n="standings.thirds.subtitle">FIFA 规则：积分 → 净胜球 → 进球 → 公平竞赛分</p>
       <div id="third-place-table" aria-busy="true">
         <div class="card p-8"><div class="sk h-4 w-1/2 mb-3"></div><div class="sk h-4 w-full mb-2"></div></div>
       </div>

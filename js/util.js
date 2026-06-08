@@ -1,36 +1,25 @@
-export function fmtDate(iso, opts = {}) {
-  const d = new Date(iso);
-  const date = d.toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit', ...opts.date });
-  const time = d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', hour12: false });
-  return { date, time, raw: d };
-}
+// js/util.js
+// ---------------------------------------------------------------
+// 通用工具函数（i18n-aware）
+// 日期/时间/球队展示等使用 js/i18n.js 的 locale 设置。
+// ---------------------------------------------------------------
+import {
+  formatDate as _fmtDate,
+  formatDateShort as _fmtDateShort,
+  formatWeekday as _fmtWeekday,
+  formatRelative as _relTime,
+  teamName as _teamName,
+  stageLabel as _stageLabel,
+  hitLabel as _hitLabel,
+  t,
+} from './i18n.js';
 
-export function fmtDateShort(iso) {
-  const d = new Date(iso);
-  return d.toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' });
-}
-
-export function fmtWeekday(iso) {
-  const d = new Date(iso);
-  const map = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-  return map[d.getDay()];
-}
-
-export function relTime(target) {
-  const now = Date.now();
-  const t = new Date(target).getTime();
-  const diff = t - now;
-  const abs = Math.abs(diff);
-  const days = Math.floor(abs / 86400000);
-  const hours = Math.floor((abs % 86400000) / 3600000);
-  const mins = Math.floor((abs % 3600000) / 60000);
-  const future = diff > 0;
-  const parts = [];
-  if (days) parts.push(`${days} 天`);
-  if (hours) parts.push(`${hours} 小时`);
-  parts.push(`${mins} 分`);
-  return (future ? '还有 ' : '已过 ') + parts.join(' ');
-}
+// 保留原命名，向后兼容
+export function fmtDate(iso, opts) { return _fmtDate(iso, opts); }
+export function fmtDateShort(iso) { return _fmtDateShort(iso); }
+export function fmtWeekday(iso) { return _fmtWeekday(iso); }
+export function relTime(target) { return _relTime(target); }
+export function teamDisplayName(team) { return _teamName(team); }
 
 export function groupBy(arr, keyFn) {
   const out = new Map();
@@ -45,35 +34,40 @@ export function groupBy(arr, keyFn) {
 export function teamFlag(team) {
   if (!team) return { code: '🏳️', label: '?', tone: 'slate' };
   const code = team.flag || '🏳️';
-  // 检测是否为真正的 emoji flag（regional indicator 序列）
   const hasFlag = /\p{Regional_Indicator}/u.test(code);
   if (hasFlag) return { code, label: team.code, tone: 'emoji' };
   return { code, label: team.code, tone: 'text' };
 }
 
 export function flagOrCode(team) {
-  // 返回首选项：flag emoji 若可能失败则用 code 方块
   if (!team) return { primary: '🏳️', secondary: '?', isText: false };
   if (!team.flag) return { primary: team.code, secondary: team.name, isText: true };
-  // 用 object 判断 emoji 是否会被识别
   return { primary: team.flag, secondary: team.code, isText: false };
 }
 
 export function teamChip(team, size = 'md') {
   const sc = sizeClass(size);
   if (!team) {
-    return `<span class="flag-frame ${sc} flag-frame-fallback" title="未知球队">?</span>`;
+    return `<span class="flag-frame ${sc} flag-frame-fallback" title="?">?</span>`;
   }
   const iso = (team.iso2 || '').toLowerCase();
   const placeholder = team.placeholder || !iso;
   if (placeholder) {
     const colors = team.color ? `background:linear-gradient(135deg, ${team.color}, ${team.color}cc);` : 'background:linear-gradient(135deg,#94a3b8,#64748b);';
-    return `<span class="flag-frame ${sc} flag-frame-fallback" style="${colors}" title="${team.name}"><span class="flag-code">${team.code}</span></span>`;
+    return `<span class="flag-frame ${sc} flag-frame-fallback" style="${colors}" title="${escapeAttr(_teamName(team))}"><span class="flag-code">${team.code}</span></span>`;
   }
-  const fallback = `this.parentElement.classList.add('flag-frame-fallback');var s='background:linear-gradient(135deg, ${team.color || '%230B1F3A'}, ${team.color ? team.color + 'cc' : '%231A3461'};';this.parentElement.setAttribute('style',s);this.insertAdjacentHTML('afterend','<span class=&quot;flag-code&quot;>${team.code}</span>');this.remove();`;
-  return `<span class="flag-frame ${sc}" title="${team.name}">
-    <img class="flag-img" src="https://flagcdn.com/w80/${iso}.png" srcset="https://flagcdn.com/w160/${iso}.png 2x" alt="${team.name}" loading="lazy" referrerpolicy="no-referrer" onerror="${fallback}" />
+  const fallback = `this.parentElement.classList.add('flag-frame-fallback');var s='background:linear-gradient(135deg, ${team.color || '#0B1F3A'}, ${team.color ? team.color + 'cc' : '#1A3461'};';this.parentElement.setAttribute('style',s);this.insertAdjacentHTML('afterend','<span class=&quot;flag-code&quot;>${team.code}</span>');this.remove();`;
+  return `<span class="flag-frame ${sc}" title="${escapeAttr(_teamName(team))}">
+    <img class="flag-img" src="https://flagcdn.com/w80/${iso}.png" srcset="https://flagcdn.com/w160/${iso}.png 2x" alt="${escapeAttr(_teamName(team))}" loading="lazy" referrerpolicy="no-referrer" onerror="${fallback}" />
   </span>`;
+}
+
+function escapeAttr(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 }
 
 function sizeClass(size) {
@@ -108,25 +102,14 @@ export function escapeHtml(s) {
 }
 
 export function hitBadge(result, prediction) {
-  if (!result) return { label: '待开赛', tone: 'badge-slate' };
-  if (!prediction) return { label: '无预测', tone: 'badge-slate' };
-  const ph = safeNumber(prediction.predictedHome);
-  const pa = safeNumber(prediction.predictedAway);
-  const rh = safeNumber(result.homeScore);
-  const ra = safeNumber(result.awayScore);
-  if (ph === rh && pa === ra) return { label: '✅ 比分命中', tone: 'badge-pitch' };
-  const pw = ph > pa ? 'home' : ph < pa ? 'away' : 'draw';
-  const rw = rh > ra ? 'home' : rh < ra ? 'away' : 'draw';
-  if (pw === rw) return { label: '⚠️ 胜负命中', tone: 'badge-gold' };
-  return { label: '❌ 未中', tone: 'badge-flame' };
+  return _hitLabel(result, prediction);
 }
 
-export const STAGE_LABEL = {
-  group: '小组赛',
-  r32: '1/16 决赛',
-  r16: '1/8 决赛',
-  qf: '1/4 决赛',
-  sf: '半决赛',
-  third: '三四名决赛',
-  final: '决赛',
-};
+// 兼容旧调用：直接给一个 stage code 返回 label
+export function stageLabel(stage) { return _stageLabel(stage); }
+
+// 旧的 STAGE_LABEL 常量：保留导出（一些图表会直接用）
+export const STAGE_LABEL = new Proxy({}, {
+  get(_, stage) { return _stageLabel(stage); },
+  has() { return true; },
+});

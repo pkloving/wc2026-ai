@@ -50,6 +50,34 @@
   }
   .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
   .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-slate-300 rounded-full; }
+
+  /* ----- Language switcher (header dropdown) ----- */
+  .lang-switcher { display: inline-flex; }
+  .lang-btn {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md
+           text-xs font-semibold text-slate-200
+           border border-white/10 bg-white/5
+           hover:text-white hover:bg-white/10 hover:border-white/20
+           focus:outline-none focus:ring-2 focus:ring-gold/40;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .lang-btn[aria-expanded="true"] {
+    @apply bg-white/10 text-white border-white/20;
+  }
+  .lang-menu {
+    @apply min-w-[140px] bg-night border border-white/10 rounded-lg
+           shadow-xl overflow-hidden;
+    /* hidden by default, opened by components.js via removing .hidden */
+  }
+  .lang-menu .lang-option {
+    @apply block w-full text-left px-3 py-2 text-xs
+           text-slate-200 hover:bg-white/10 hover:text-white
+           focus:outline-none focus:bg-white/10;
+    transition: background-color 0.12s ease, color 0.12s ease;
+  }
+  .lang-menu .lang-option.is-active {
+    @apply text-gold font-semibold bg-gold/10;
+  }
 }
 
 @layer utilities {

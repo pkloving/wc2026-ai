@@ -1,5 +1,6 @@
-// 倒计时：到开幕 + 到下一场比赛
-import { getMatches, getResults } from './data.js';
+// 倒计时：到下一场比赛
+import { getMatches, getResults, getTeams } from './data.js';
+import { t, teamDisplayName } from './i18n.js';
 
 function pad(n) {
   return String(n).padStart(2, '0');
@@ -7,8 +8,8 @@ function pad(n) {
 
 function diff(target) {
   const now = Date.now();
-  const t = new Date(target).getTime();
-  let d = Math.max(0, t - now);
+  const t0 = new Date(target).getTime();
+  let d = Math.max(0, t0 - now);
   const days = Math.floor(d / 86400000);
   d -= days * 86400000;
   const hours = Math.floor(d / 3600000);
@@ -19,15 +20,19 @@ function diff(target) {
   return { days, hours, mins, secs };
 }
 
+function unitLabels() {
+  return [t('countdown.day'), t('countdown.hour'), t('countdown.minute')];
+}
+
 function renderChips(d) {
-  // > 1 天时秒级粒度无意义，直接隐藏
   const showSecs = d.days === 0;
+  const labels = unitLabels();
   const items = [
-    ['天', d.days],
-    ['时', d.hours],
-    ['分', d.mins],
+    [labels[0], d.days],
+    [labels[1], d.hours],
+    [labels[2], d.mins],
   ];
-  if (showSecs) items.push(['秒', d.secs]);
+  if (showSecs) items.push([t('countdown.second'), d.secs]);
   return `
     <div class="flex flex-wrap gap-2">
       ${items.map(([u, v]) => `
@@ -43,7 +48,7 @@ function renderChips(d) {
 export async function mountNextMatchCountdown(elId) {
   const el = document.getElementById(elId);
   if (!el) return;
-  const [matches, results] = await Promise.all([getMatches(), getResults()]);
+  const [matches, results, teams] = await Promise.all([getMatches(), getResults(), getTeams()]);
   const resultMap = new Map(results.map((r) => [r.matchId, r]));
   const now = Date.now();
   const next = matches
@@ -51,19 +56,18 @@ export async function mountNextMatchCountdown(elId) {
     .sort((a, b) => new Date(a.date) - new Date(b.date))[0];
 
   if (!next) {
-    el.innerHTML = `<div class="text-slate-400 text-sm">所有比赛均已结束</div>`;
+    el.innerHTML = `<div class="text-slate-400 text-sm">${t('countdown.allOver')}</div>`;
     return;
   }
-  const teams = await import('./data.js').then((m) => m.getTeams());
   const tMap = new Map(teams.map((t) => [t.code, t]));
   const home = tMap.get(next.home);
   const away = tMap.get(next.away);
+  const homeSpan = `${home?.flag || '🏳️'} <span>${escapeHtml(teamDisplayName(home) || next.home)}</span>`;
+  const awaySpan = `<span>${escapeHtml(teamDisplayName(away) || next.away)}</span> ${away?.flag || '🏳️'}`;
   el.innerHTML = `
-    <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">距下场比赛</div>
+    <div class="text-xs uppercase tracking-widest text-slate-400 mb-2">${t('countdown.title')}</div>
     <div class="text-sm sm:text-base text-white mb-2 flex items-center gap-2">
-      ${home?.flag || '🏳️'} <span>${home?.name || next.home}</span>
-      <span class="text-slate-400 mx-1">vs</span>
-      <span>${away?.name || next.away}</span> ${away?.flag || '🏳️'}
+      ${homeSpan} <span class="text-slate-400 mx-1">${t('common.vs')}</span> ${awaySpan}
     </div>
     <div id="${elId}-chips"></div>
   `;
@@ -74,4 +78,11 @@ export async function mountNextMatchCountdown(elId) {
   };
   tick();
   setInterval(tick, 1000);
+}
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 }

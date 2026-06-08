@@ -1,5 +1,6 @@
 import { getMatches, getResults, getTeams } from '../data.js';
-import { fmtDate, STAGE_LABEL, teamChip } from '../util.js';
+import { fmtDate, stageLabel, teamChip, teamDisplayName } from '../util.js';
+import { t, formatMonthDayCN, formatWeekdayCN } from '../i18n.js';
 import { boot } from '../page-boot.js';
 
 boot(async () => {
@@ -39,31 +40,32 @@ boot(async () => {
 
   function render() {
     const list = applyFilters();
-    document.getElementById('f-count').textContent = `共 ${list.length} 场`;
+    document.getElementById('f-count').textContent = t('schedule.count', { n: list.length });
     const grouped = groupByDate(list);
     const el = document.getElementById('schedule-list');
     if (list.length === 0) {
-      el.innerHTML = '<div class="text-slate-500 text-sm">无匹配比赛</div>';
+      el.innerHTML = `<div class="text-slate-500 text-sm">${t('schedule.empty')}</div>`;
       return;
     }
     el.innerHTML = grouped.map(([date, ms]) => {
-      // date 是北京时区日期键（YYYY-MM-DD），按北京时区解析避免跨时区偏差
+      // date 是北京时区日期键（YYYY-MM-DD）
       const [yy, mm, dd] = date.split('-').map(Number);
       const d = new Date(yy, mm - 1, dd);
-      const weekday = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][d.getDay()];
+      const weekday = formatWeekdayCN(date);
+      const dateLabel = formatMonthDayCN(date);
       const cardsHtml = ms.map((m) => {
         const home = teamMap.get(m.home);
         const away = teamMap.get(m.away);
         const r = resultMap.get(m.id);
         const stageBadge = m.stage === 'group'
-          ? `<span class="badge badge-ink">${m.group} 组</span>`
-          : `<span class="badge badge-gold">${STAGE_LABEL[m.stage] || m.stage}</span>`;
+          ? `<span class="badge badge-ink">${m.group} ${t('stage.groupShort')}</span>`
+          : `<span class="badge badge-gold">${stageLabel(m.stage)}</span>`;
         const statusBadge = r
-          ? `<span class="badge badge-pitch">已结束</span>`
-          : `<span class="badge badge-slate">未开赛</span>`;
+          ? `<span class="badge badge-pitch">${t('schedule.status.finishedShort')}</span>`
+          : `<span class="badge badge-slate">${t('schedule.status.scheduledShort')}</span>`;
         const score = r
           ? `<div class="text-2xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>`
-          : '<div class="text-slate-400 text-sm">待开赛</div>';
+          : `<div class="text-slate-400 text-sm">${t('common.pending')}</div>`;
         return `
           <a href="/match.html?id=${m.id}" class="card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:-translate-y-0.5 transition-transform block">
             <div class="flex flex-col items-center justify-center w-10 sm:w-12 text-xs text-slate-500 font-semibold">
@@ -76,11 +78,11 @@ boot(async () => {
                 <div class="flex items-center justify-between gap-3">
                   <div class="flex-1 flex items-center gap-2 min-w-0">
                     ${teamChip(home, 'sm')}
-                    <span class="font-semibold truncate">${home?.name || m.home}</span>
+                    <span class="font-semibold truncate">${teamDisplayName(home) || m.home}</span>
                   </div>
-                  <div class="px-2 text-slate-300 font-bold">vs</div>
+                  <div class="px-2 text-slate-300 font-bold">${t('common.vs')}</div>
                   <div class="flex-1 flex items-center justify-end gap-2 min-w-0">
-                    <span class="font-semibold truncate">${away?.name || m.away}</span>
+                    <span class="font-semibold truncate">${teamDisplayName(away) || m.away}</span>
                     ${teamChip(away, 'sm')}
                   </div>
                 </div>
@@ -92,9 +94,9 @@ boot(async () => {
       return `
         <section class="mb-8">
           <div class="flex items-baseline gap-3 mb-3">
-            <h2 class="text-lg font-bold">${d.getMonth() + 1} 月 ${d.getDate()} 日</h2>
+            <h2 class="text-lg font-bold">${dateLabel}</h2>
             <span class="text-xs text-slate-500">${weekday}</span>
-            <span class="text-xs text-slate-400">${ms.length} 场</span>
+            <span class="text-xs text-slate-400">${t('schedule.dayCount', { n: ms.length })}</span>
           </div>
           <div class="grid lg:grid-cols-2 gap-3">${cardsHtml}</div>
         </section>

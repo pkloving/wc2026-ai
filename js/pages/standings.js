@@ -1,5 +1,6 @@
 import { getMatches, getResults, getTeams, getGroups } from '../data.js';
-import { teamChip } from '../util.js';
+import { teamChip, teamDisplayName } from '../util.js';
+import { t, getLocale } from '../i18n.js';
 import { boot } from '../page-boot.js';
 
 boot(async () => {
@@ -71,7 +72,7 @@ boot(async () => {
   function renderTabs() {
     const el = document.getElementById('group-tabs');
     el.innerHTML = groups.map((g) => `
-      <button data-id="${g.id}" class="px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${g.id === activeGroup ? 'bg-ink text-white' : 'text-slate-600 hover:bg-slate-100'}">${g.name}</button>
+      <button data-id="${g.id}" class="px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${g.id === activeGroup ? 'bg-ink text-white' : 'text-slate-600 hover:bg-slate-100'}">${getLocale() === 'zh-CN' ? g.id + ' 组' : 'Group ' + g.id}</button>
     `).join('');
     el.querySelectorAll('button').forEach((b) => {
       b.addEventListener('click', () => {
@@ -87,7 +88,7 @@ boot(async () => {
     const el = document.getElementById('standings-table');
     const hasData = table.some((t) => t.played > 0);
     if (!hasData) {
-      el.innerHTML = `<div class="card p-8 text-center text-slate-500">该小组暂无已结束比赛</div>`;
+      el.innerHTML = `<div class="card p-8 text-center text-slate-500">${t('standings.empty')}</div>`;
       return;
     }
     el.innerHTML = `
@@ -97,16 +98,16 @@ boot(async () => {
             <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
               <tr>
                 <th class="px-3 py-3 text-left">#</th>
-                <th class="px-3 py-3 text-left">球队</th>
-                <th class="px-2 py-3 text-center" title="已赛场次">场</th>
-                <th class="px-2 py-3 text-center" title="胜">胜</th>
-                <th class="px-2 py-3 text-center" title="平">平</th>
-                <th class="px-2 py-3 text-center" title="负">负</th>
-                <th class="px-2 py-3 text-center" title="进球">进</th>
-                <th class="px-2 py-3 text-center" title="失球">失</th>
-                <th class="px-2 py-3 text-center" title="净胜球">净</th>
-                <th class="px-3 py-3 text-center font-bold">积分</th>
-                <th class="px-3 py-3 text-left">状态</th>
+                <th class="px-3 py-3 text-left">${t('standings.col.team')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.played')}">${t('standings.col.played')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.win')}">${t('standings.col.win')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.draw')}">${t('standings.col.draw')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.lose')}">${t('standings.col.lose')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.gf')}">${t('standings.col.gf')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.ga')}">${t('standings.col.ga')}</th>
+                <th class="px-2 py-3 text-center" title="${t('standings.col.gd')}">${t('standings.col.gd')}</th>
+                <th class="px-3 py-3 text-center font-bold">${t('standings.col.pts')}</th>
+                <th class="px-3 py-3 text-left">${t('standings.col.status')}</th>
               </tr>
             </thead>
             <tbody>
@@ -116,7 +117,7 @@ boot(async () => {
                   <td class="px-3 py-3">
                     <div class="flex items-center gap-2">
                       ${teamChip(t.team, 'sm')}
-                      <span class="font-semibold">${t.team?.name || t.code}</span>
+                      <span class="font-semibold">${teamDisplayName(t.team) || t.code}</span>
                     </div>
                   </td>
                   <td class="px-2 py-3 text-center tabular-nums">${t.played}</td>
@@ -128,7 +129,7 @@ boot(async () => {
                   <td class="px-2 py-3 text-center tabular-nums font-semibold ${t.gd > 0 ? 'text-pitch' : t.gd < 0 ? 'text-flame' : ''}">${t.gd > 0 ? '+' : ''}${t.gd}</td>
                   <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${t.pts}</td>
                   <td class="px-3 py-3">
-                    ${t.status === 'qualify' ? '<span class="badge badge-pitch">晋级</span>' : ''}
+                    ${t.status === 'qualify' ? `<span class="badge badge-pitch">${t('common.qualify')}</span>` : ''}
                   </td>
                 </tr>
               `).join('')}
@@ -143,7 +144,7 @@ boot(async () => {
     const thirds = computeBestThirds();
     const el = document.getElementById('third-place-table');
     if (thirds.length === 0) {
-      el.innerHTML = '<div class="card p-6 text-center text-slate-500 text-sm">需要更多比赛结束后才能计算</div>';
+      el.innerHTML = `<div class="card p-6 text-center text-slate-500 text-sm">${t('standings.thirds.empty')}</div>`;
       return;
     }
     el.innerHTML = `
@@ -153,25 +154,25 @@ boot(async () => {
             <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
               <tr>
                 <th class="px-3 py-3 text-left">#</th>
-                <th class="px-3 py-3 text-left">组</th>
-                <th class="px-3 py-3 text-left">球队</th>
-                <th class="px-2 py-3 text-center">场</th>
-                <th class="px-2 py-3 text-center">进</th>
-                <th class="px-2 py-3 text-center">失</th>
-                <th class="px-2 py-3 text-center">净</th>
-                <th class="px-3 py-3 text-center">积分</th>
-                <th class="px-3 py-3 text-left">状态</th>
+                <th class="px-3 py-3 text-left">${t('standings.col.group')}</th>
+                <th class="px-3 py-3 text-left">${t('standings.col.team')}</th>
+                <th class="px-2 py-3 text-center">${t('standings.col.played')}</th>
+                <th class="px-2 py-3 text-center">${t('standings.col.gf')}</th>
+                <th class="px-2 py-3 text-center">${t('standings.col.ga')}</th>
+                <th class="px-2 py-3 text-center">${t('standings.col.gd')}</th>
+                <th class="px-3 py-3 text-center">${t('standings.col.pts')}</th>
+                <th class="px-3 py-3 text-left">${t('standings.col.status')}</th>
               </tr>
             </thead>
             <tbody>
               ${thirds.map((t, i) => `
                 <tr class="border-t border-slate-100 ${i < 8 ? 'bg-pitch/5' : ''}">
                   <td class="px-3 py-3 text-slate-400 font-semibold">${i + 1}</td>
-                  <td class="px-3 py-3 font-semibold">${t.group}</td>
+                  <td class="px-3 py-3 font-semibold">${getLocale() === 'zh-CN' ? t.group + ' 组' : 'Group ' + t.group}</td>
                   <td class="px-3 py-3">
                     <div class="flex items-center gap-2">
                       ${teamChip(t.team, 'sm')}
-                      <span class="font-semibold">${t.team?.name || t.code}</span>
+                      <span class="font-semibold">${teamDisplayName(t.team) || t.code}</span>
                     </div>
                   </td>
                   <td class="px-2 py-3 text-center tabular-nums">${t.played}</td>
@@ -180,7 +181,7 @@ boot(async () => {
                   <td class="px-2 py-3 text-center tabular-nums font-semibold ${t.gd > 0 ? 'text-pitch' : t.gd < 0 ? 'text-flame' : ''}">${t.gd > 0 ? '+' : ''}${t.gd}</td>
                   <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${t.pts}</td>
                   <td class="px-3 py-3">
-                    ${i < 8 ? '<span class="badge badge-pitch">晋级</span>' : '<span class="badge badge-slate">出局</span>'}
+                    ${i < 8 ? `<span class="badge badge-pitch">${t('common.qualify')}</span>` : `<span class="badge badge-slate">${t('common.eliminated')}</span>`}
                   </td>
                 </tr>
               `).join('')}

@@ -1,5 +1,6 @@
 import { getMatches, getResults, getTeams, getPredictions } from '../data.js';
-import { STAGE_LABEL, hitBadge, teamChip } from '../util.js';
+import { stageLabel, hitBadge, teamChip, teamDisplayName } from '../util.js';
+import { t, getLocale } from '../i18n.js';
 import { boot } from '../page-boot.js';
 
 boot(async () => {
@@ -67,13 +68,20 @@ boot(async () => {
     const s = modelStats.get(k);
     return s.finished > 0 ? Math.round((s.winnerHit / s.finished) * 100) : 0;
   });
+  const isEn = getLocale() === 'en-US';
+  const fmtMonthDay = (iso) => {
+    if (isEn) {
+      return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: '2-digit' });
+    }
+    return new Date(iso).toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' });
+  };
   new Chart(document.getElementById('chart-accuracy'), {
     type: 'bar',
     data: {
       labels,
       datasets: [
-        { label: '比分命中 %', data: scorePct, backgroundColor: '#0E7C3A' },
-        { label: '胜负命中 %', data: winnerPct, backgroundColor: '#D4AF37' },
+        { label: t('stats.chart.scorePct'), data: scorePct, backgroundColor: '#0E7C3A' },
+        { label: t('stats.chart.winnerPct'), data: winnerPct, backgroundColor: '#D4AF37' },
       ],
     },
     options: {
@@ -110,10 +118,10 @@ boot(async () => {
   new Chart(document.getElementById('chart-stages'), {
     type: 'bar',
     data: {
-      labels: stages.map((s) => STAGE_LABEL[s] || s),
+      labels: stages.map((s) => stageLabel(s)),
       datasets: [
-        { label: '比分命中 %', data: stages.map((s) => stageStats.get(s).total ? Math.round((stageStats.get(s).score / stageStats.get(s).total) * 100) : 0), backgroundColor: '#0E7C3A' },
-        { label: '胜负命中 %', data: stages.map((s) => stageStats.get(s).total ? Math.round((stageStats.get(s).winner / stageStats.get(s).total) * 100) : 0), backgroundColor: '#D4AF37' },
+        { label: t('stats.chart.scorePct'), data: stages.map((s) => stageStats.get(s).total ? Math.round((stageStats.get(s).score / stageStats.get(s).total) * 100) : 0), backgroundColor: '#0E7C3A' },
+        { label: t('stats.chart.winnerPct'), data: stages.map((s) => stageStats.get(s).total ? Math.round((stageStats.get(s).winner / stageStats.get(s).total) * 100) : 0), backgroundColor: '#D4AF37' },
       ],
     },
     options: {
@@ -142,7 +150,7 @@ boot(async () => {
         const rw = r.homeScore > r.awayScore ? 'home' : r.homeScore < r.awayScore ? 'away' : 'draw';
         if (pw === rw) cs.winner += 1;
       }
-      cs.x.push(new Date(m.date).toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' }));
+      cs.x.push(fmtMonthDay(m.date));
       cs.y.push(Math.round((cs.winner / cs.total) * 100));
     }
   }
@@ -151,7 +159,7 @@ boot(async () => {
     type: 'line',
     data: {
       datasets: [...cumStats.entries()].map(([model, s], i) => ({
-        label: `${model}（胜负%）`,
+        label: `${model}${t('stats.chart.timelineSuffix')}`,
         data: s.x.map((x, j) => ({ x, y: s.y[j] })),
         borderColor: palette[i % palette.length],
         backgroundColor: palette[i % palette.length] + '20',
@@ -172,7 +180,7 @@ boot(async () => {
   const keyList = sorted.filter((m) => keyStages.includes(m.stage));
   const el = document.getElementById('key-matches');
   if (keyList.length === 0) {
-    el.innerHTML = '<div class="col-span-full text-slate-500 text-sm">关键比赛（半决赛 / 三四名 / 决赛）开始后自动展示</div>';
+    el.innerHTML = `<div class="col-span-full text-slate-500 text-sm">${t('stats.keyMatches.empty')}</div>`;
   } else {
     el.innerHTML = keyList.map((m) => {
       const r = resultMap.get(m.id);
@@ -185,15 +193,15 @@ boot(async () => {
       }).join(' ') : '';
       return `
         <a href="/match.html?id=${m.id}" class="card p-5 hover:-translate-y-0.5 transition-transform block">
-          <div class="text-xs text-slate-500 mb-2">${STAGE_LABEL[m.stage] || m.stage}</div>
+          <div class="text-xs text-slate-500 mb-2">${stageLabel(m.stage)}</div>
           <div class="flex items-center justify-between gap-2">
             <div class="flex items-center gap-2 min-w-0">
               ${teamChip(home, 'sm')}
-              <div class="font-semibold truncate">${home?.name || m.home}</div>
+              <div class="font-semibold truncate">${teamDisplayName(home) || m.home}</div>
             </div>
             <div class="text-2xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>
             <div class="flex items-center gap-2 min-w-0">
-              <div class="font-semibold truncate">${away?.name || m.away}</div>
+              <div class="font-semibold truncate">${teamDisplayName(away) || m.away}</div>
               ${teamChip(away, 'sm')}
             </div>
           </div>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI 预测总览 · WC 2026</title>
-  <meta name="description" content="每场比赛前我都会拿同样的 prompt 问几个大模型。这里是它们当时的原始回答 + 实际结果对账。" />
+  <title data-i18n-attr="title:meta.predictions.title">AI 预测总览 · WC 2026</title>
+  <meta name="description" data-i18n-attr="content:meta.predictions.description" content="每场比赛前我都会拿同样的 prompt 问几个大模型。这里是它们当时的原始回答 + 实际结果对账。" />
   <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
@@ -23,9 +23,9 @@
   <div id="app-header"></div>
   <main class="flex-1 container-page py-8">
     <div class="mb-6">
-      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">AI Predictions</div>
-      <h1 class="text-3xl sm:text-4xl font-black">⭐ AI 预测总览</h1>
-      <p class="text-slate-500 text-sm mt-2">每场比赛前，我都会拿同样的 prompt 问几个大模型。这里是它们当时的原始回答 + 实际结果对账。</p>
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="predictions.kicker">AI Predictions</div>
+      <h1 class="text-3xl sm:text-4xl font-black" data-i18n="predictions.title">⭐ AI 预测总览</h1>
+      <p class="text-slate-500 text-sm mt-2" data-i18n="predictions.subtitle">每场比赛前，我都会拿同样的 prompt 问几个大模型。这里是它们当时的原始回答 + 实际结果对账。</p>
     </div>
 
     <!-- 冠亚军预测 -->
@@ -33,7 +33,7 @@
 
     <!-- 模型仪表盘 -->
     <section class="mb-8">
-      <h2 class="text-lg font-bold mb-3">📊 各模型命中率</h2>
+      <h2 class="text-lg font-bold mb-3" data-i18n="predictions.dashboard.title">📊 各模型命中率</h2>
       <div id="model-dashboard" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3" aria-busy="true">
         <div class="card p-4"><div class="sk h-4 w-2/3 mb-2"></div><div class="sk h-8 w-1/2"></div></div>
         <div class="card p-4"><div class="sk h-4 w-2/3 mb-2"></div><div class="sk h-8 w-1/2"></div></div>
@@ -44,13 +44,13 @@
 
     <!-- 筛选 -->
     <div class="card p-4 mb-6 flex flex-wrap items-center gap-3">
-      <span class="text-sm text-slate-500">筛选：</span>
-      <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white">全部</button>
-      <button data-filter="finished" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">仅已结束</button>
-      <button data-filter="pending" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">仅待开赛</button>
-      <button data-filter="hit" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">✅ 比分命中</button>
-      <button data-filter="winner" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">⚠️ 胜负命中</button>
-      <button data-filter="miss" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">❌ 未中</button>
+      <span class="text-sm text-slate-500" data-i18n="predictions.filter.label">筛选：</span>
+      <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white" data-i18n="predictions.filter.all">全部</button>
+      <button data-filter="finished" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.finished">仅已结束</button>
+      <button data-filter="pending" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.pending">仅待开赛</button>
+      <button data-filter="hit" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.hit">✅ 比分命中</button>
+      <button data-filter="winner" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.winner">⚠️ 胜负命中</button>
+      <button data-filter="miss" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.miss">❌ 未中</button>
       <span class="text-xs text-slate-500 ml-auto" id="filter-count">—</span>
     </div>
 

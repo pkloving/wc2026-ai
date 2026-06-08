@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>球队 · WC 2026 · AI 预测</title>
-  <meta name="description" content="2026 美加墨世界杯全部 48 支球队信息。" />
+  <title data-i18n-attr="title:meta.teams.title">球队 · WC 2026 · AI 预测</title>
+  <meta name="description" data-i18n-attr="content:meta.teams.description" content="2026 美加墨世界杯全部 48 支球队信息。" />
   <meta name="theme-color" content="#0B1F3A" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
@@ -23,20 +23,20 @@
   <div id="app-header"></div>
   <main class="flex-1 container-page py-8">
     <div class="mb-6">
-      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Teams</div>
-      <h1 class="text-3xl sm:text-4xl font-black">48 支球队</h1>
-      <p class="text-slate-500 text-sm mt-2">按所属足联筛选 · 包含分组与已赛战绩</p>
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1" data-i18n="teams.kicker">Teams</div>
+      <h1 class="text-3xl sm:text-4xl font-black" data-i18n="teams.title">48 支球队</h1>
+      <p class="text-slate-500 text-sm mt-2" data-i18n="teams.subtitle">按所属足联筛选 · 包含分组与已赛战绩</p>
     </div>
 
     <div class="card p-3 mb-6 flex flex-wrap items-center gap-2">
-      <span class="text-xs text-slate-500 mr-1">足联：</span>
-      <button data-conf="" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white">全部</button>
-      <button data-conf="UEFA" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">UEFA (欧洲)</button>
-      <button data-conf="CONMEBOL" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONMEBOL (南美)</button>
-      <button data-conf="CONCACAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CONCACAF (北美)</button>
-      <button data-conf="AFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">AFC (亚洲)</button>
-      <button data-conf="CAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">CAF (非洲)</button>
-      <button data-conf="OFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200">OFC (大洋洲)</button>
+      <span class="text-xs text-slate-500 mr-1" data-i18n="teams.filter.label">足联：</span>
+      <button data-conf="" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white" data-i18n="teams.filter.all">全部</button>
+      <button data-conf="UEFA" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.UEFA">UEFA (欧洲)</button>
+      <button data-conf="CONMEBOL" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.CONMEBOL">CONMEBOL (南美)</button>
+      <button data-conf="CONCACAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.CONCACAF">CONCACAF (北美)</button>
+      <button data-conf="AFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.AFC">AFC (亚洲)</button>
+      <button data-conf="CAF" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.CAF">CAF (非洲)</button>
+      <button data-conf="OFC" class="conf-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="conf.OFC">OFC (大洋洲)</button>
     </div>
 
     <div id="teams-grid" class="grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4" aria-busy="true">

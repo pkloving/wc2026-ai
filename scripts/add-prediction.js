@@ -27,10 +27,7 @@ for (let i = 1; i < args.length; i += 1) {
   if (!m) continue;
   const key = m[1];
   const val = m[2];
-  if (key === 'shot') {
-    opts.screenshots = opts.screenshots || [];
-    opts.screenshots.push(val);
-  } else if (key === 'home') {
+  if (key === 'home') {
     opts.predictedHome = parseInt(val, 10);
   } else if (key === 'away') {
     opts.predictedAway = parseInt(val, 10);
@@ -53,32 +50,13 @@ if (!entry) { entry = { matchId, models: [] }; data.push(entry); }
 const mi = entry.models.findIndex((m) => m.model === opts.model);
 const modelEntry = {
   model: opts.model,
-  prompt: opts.prompt || '',
   predictedHome: opts.predictedHome,
   predictedAway: opts.predictedAway,
   predictedWinner: opts.winner || (opts.predictedHome > opts.predictedAway ? 'home' : opts.predictedHome < opts.predictedAway ? 'away' : 'draw'),
-  screenshots: opts.screenshots || [],
   note: opts.note || '',
 };
 if (mi >= 0) entry.models[mi] = modelEntry; else entry.models.push(modelEntry);
 
 fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n', 'utf-8');
-
-// 复制截图到 public/assets/predictions
-if (opts.screenshots && opts.screenshots.length > 0) {
-  for (const s of opts.screenshots) {
-    const src = path.resolve(s);
-    if (!fs.existsSync(src)) {
-      console.warn(`⚠️  截图不存在：${src}（请手动放到 public/assets/predictions/${matchId}/）`);
-      continue;
-    }
-    const filename = path.basename(src);
-    const destDir = path.join(__dirname, '../public/assets/predictions', matchId);
-    fs.mkdirSync(destDir, { recursive: true });
-    const dest = path.join(destDir, filename);
-    fs.copyFileSync(src, dest);
-    console.log(`📷 已复制 ${filename} → public/assets/predictions/${matchId}/`);
-  }
-}
 
 console.log(`✅ ${matchId} · ${opts.model} · ${opts.predictedHome}-${opts.predictedAway} 已记录`);

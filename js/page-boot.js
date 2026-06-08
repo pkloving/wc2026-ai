@@ -13,6 +13,8 @@
  *  - 错误时把占位元素替换成错误提示
  */
 
+import { t } from './i18n.js';
+
 export function boot(initFn, options = {}) {
   const { errorTarget, removeBusy = true } = options;
   (async () => {
@@ -22,7 +24,7 @@ export function boot(initFn, options = {}) {
       console.error('[page-boot] init failed:', err);
       if (errorTarget) {
         const el = typeof errorTarget === 'string' ? document.getElementById(errorTarget) : errorTarget;
-        if (el) el.innerHTML = `<div class="card p-6 text-center text-flame">页面加载出错：${escapeHtml(err?.message || String(err))}</div>`;
+        if (el) el.innerHTML = `<div class="card p-6 text-center text-flame">${t('stats.error', { msg: escapeHtml(err?.message || String(err)) })}</div>`;
       }
     } finally {
       if (removeBusy) {

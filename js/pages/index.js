@@ -1,6 +1,7 @@
 import { mountNextMatchCountdown } from '../countdown.js';
 import { getMatches, getResults, getPredictions, getTeams } from '../data.js';
-import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '../util.js';
+import { fmtDate, stageLabel, hitBadge, teamChip, teamDisplayName } from '../util.js';
+import { t } from '../i18n.js';
 
 (async () => {
   try {
@@ -25,12 +26,14 @@ import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '../util.js';
     if (todayEl) {
       todayEl.removeAttribute('aria-busy');
       todayEl.innerHTML = upcoming.length === 0
-        ? '<div class="col-span-full text-slate-500 text-sm">暂无即将开赛的比赛</div>'
+        ? `<div class="col-span-full text-slate-500 text-sm">${t('home.today.empty')}</div>`
         : upcoming.map((m) => {
             const home = teamMap.get(m.home);
             const away = teamMap.get(m.away);
             const r = resultMap.get(m.id);
-            const stageBadge = m.stage === 'group' ? `<span class="badge badge-ink">${m.group} 组</span>` : `<span class="badge badge-gold">${STAGE_LABEL[m.stage] || m.stage}</span>`;
+            const stageBadge = m.stage === 'group'
+              ? `<span class="badge badge-ink">${m.group} ${t('stage.groupShort')}</span>`
+              : `<span class="badge badge-gold">${stageLabel(m.stage)}</span>`;
             const d = fmtDate(m.date);
             return `
               <a href="/match.html?id=${m.id}" class="card p-4 hover:-translate-y-0.5 transition-transform block">
@@ -41,11 +44,11 @@ import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '../util.js';
                 <div class="flex items-center justify-between gap-2">
                   <div class="flex-1 flex items-center gap-2 min-w-0">
                     ${teamChip(home, 'sm')}
-                    <span class="font-semibold truncate">${home?.name || m.home}</span>
+                    <span class="font-semibold truncate">${teamDisplayName(home) || m.home}</span>
                   </div>
-                  <div class="px-2 text-slate-300 font-bold text-sm">vs</div>
+                  <div class="px-2 text-slate-300 font-bold text-sm">${t('common.vs')}</div>
                   <div class="flex-1 flex items-center justify-end gap-2 min-w-0">
-                    <span class="font-semibold truncate">${away?.name || m.away}</span>
+                    <span class="font-semibold truncate">${teamDisplayName(away) || m.away}</span>
                     ${teamChip(away, 'sm')}
                   </div>
                 </div>
@@ -62,7 +65,7 @@ import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '../util.js';
     if (aiEl) {
       aiEl.removeAttribute('aria-busy');
       if (sample.length === 0) {
-        aiEl.innerHTML = '<div class="col-span-full text-slate-500 text-sm">暂无 AI 预测记录</div>';
+        aiEl.innerHTML = `<div class="col-span-full text-slate-500 text-sm">${t('home.ai.empty')}</div>`;
       } else {
         aiEl.innerHTML = sample.map((p) => {
           const m = matches.find((x) => x.id === p.matchId);
@@ -74,21 +77,23 @@ import { fmtDate, STAGE_LABEL, hitBadge, teamChip } from '../util.js';
             const badge = hitBadge(r, mm);
             return `<span class="badge ${badge.tone}">${mm.model.split(' ')[0]} ${mm.predictedHome}-${mm.predictedAway}</span>`;
           }).join(' ');
-          const score = r ? `${r.homeScore} - ${r.awayScore}` : '<span class="text-slate-400">待开赛</span>';
+          const score = r
+            ? `${r.homeScore} - ${r.awayScore}`
+            : `<span class="text-slate-400">${t('common.pending')}</span>`;
           return `
             <a href="/match.html?id=${m.id}" class="card p-5 hover:-translate-y-0.5 transition-transform block">
               <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
-                <span>${m.group ? m.group + ' 组 · ' : ''}${STAGE_LABEL[m.stage] || ''}</span>
-                <span>${r ? '已结束' : '待开赛'}</span>
+                <span>${m.group ? m.group + ' ' + t('stage.groupShort') + ' · ' : ''}${stageLabel(m.stage)}</span>
+                <span>${r ? t('home.ai.finished') : t('home.ai.pending')}</span>
               </div>
               <div class="flex items-center justify-between gap-2">
                 <div class="flex items-center gap-2 min-w-0">
                   ${teamChip(home, 'sm')}
-                  <span class="font-semibold truncate">${home?.name || m.home}</span>
+                  <span class="font-semibold truncate">${teamDisplayName(home) || m.home}</span>
                 </div>
                 <div class="text-2xl font-bold tabular-nums">${score}</div>
                 <div class="flex items-center gap-2 min-w-0">
-                  <span class="font-semibold truncate">${away?.name || m.away}</span>
+                  <span class="font-semibold truncate">${teamDisplayName(away) || m.away}</span>
                   ${teamChip(away, 'sm')}
                 </div>
               </div>
