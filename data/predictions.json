@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "matchId": "M001",
+    "models": [
+      {
+        "model": "deepseek",
+        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场平"
+      },
+      {
+        "model": "claude",
+        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场主胜"
+      },
+      {
+        "model": "Kimi",
+        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平"
+      },
+      {
+        "model": "GPT-5 mini",
+        "prompt": "请预测 MEX vs RSA 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场平"
+      }
+    ]
+  },
+  {
+    "matchId": "M002",
+    "models": [
+      {
+        "model": "deepseek",
+        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-0（备选 2-1），半场平；首场比分方向与客胜结论不一致，仅作记录"
+      },
+      {
+        "model": "claude",
+        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 1-0），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1），半场平"
+      },
+      {
+        "model": "GPT-5 mini",
+        "prompt": "请预测 KOR vs CZE 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-1），半场平"
+      }
+    ]
+  },
+  {
+    "matchId": "M003",
+    "models": [
+      {
+        "model": "deepseek",
+        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场主胜"
+      },
+      {
+        "model": "claude",
+        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 2-0），半场平"
+      },
+      {
+        "model": "GPT-5 mini",
+        "prompt": "请预测 CAN vs BIH 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-1），半场平"
+      }
+    ]
+  },
+  {
+    "matchId": "M004",
+    "models": [
+      {
+        "model": "deepseek",
+        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 3-1），半场平"
+      },
+      {
+        "model": "claude",
+        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 1-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平"
+      },
+      {
+        "model": "Kimi",
+        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场平"
+      },
+      {
+        "model": "GPT-5 mini",
+        "prompt": "请预测 USA vs PAR 的全场比分与半场结果",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场主胜"
+      }
+    ]
+  }
+]
