@@ -7,15 +7,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "update:result": "node scripts/update-result.js",
-    "update:prediction": "node scripts/add-prediction.js"
+    "update:prediction": "node scripts/add-prediction.js",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
-    "vite": "^6.0.0",
-    "tailwindcss": "^3.4.14",
+    "@cloudflare/vite-plugin": "^1.40.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49"
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "vite": "^6.0.0",
+    "wrangler": "^4.98.0"
   },
   "dependencies": {
     "chart.js": "^4.4.6"

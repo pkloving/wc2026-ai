@@ -11,3 +11,9 @@ dist/
 records/
 data/odds/
 data/odds_history/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
