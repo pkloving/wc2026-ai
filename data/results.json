@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "matchId": "2040145",
+    "homeScore": 2,
+    "awayScore": 1,
+    "scorers": [],
+    "wentToPenalties": false,
+    "penaltyScore": null
+  },
+  {
+    "matchId": "2040146",
+    "homeScore": 3,
+    "awayScore": 1,
+    "scorers": [],
+    "wentToPenalties": false,
+    "penaltyScore": null
+  }
+]

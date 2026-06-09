@@ -1,0 +1,24 @@
+{
+  "basic": {
+    "mid": "2040190",
+    "code": "周三202",
+    "league": "国际赛",
+    "home": "英格兰",
+    "away": "哥斯达",
+    "kickoff": "2026-06-11 04:00",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040190",
+    "scraped_at": "2026-06-08T05:58:08.767Z",
+    "sale_status": "待开售"
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": []
+  },
+  "recent_10": [
+    { "team": "英格兰", "wins": 7, "winPct": 70, "draws": 1, "drawPct": 10, "losses": 2, "lossPct": 20, "gf": 22, "ga": 5 },
+    { "team": "哥斯达", "wins": 1, "winPct": 10, "draws": 6, "drawPct": 60, "losses": 3, "lossPct": 30, "gf": 13, "ga": 18 }
+  ]
+}

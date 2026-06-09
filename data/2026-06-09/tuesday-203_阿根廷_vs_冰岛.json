@@ -1,0 +1,24 @@
+{
+  "basic": {
+    "mid": "2040188",
+    "code": "周二203",
+    "league": "国际赛",
+    "home": "阿根廷",
+    "away": "冰岛",
+    "kickoff": "2026-06-10 08:30",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040188",
+    "scraped_at": "2026-06-08T05:57:00.234Z",
+    "sale_status": "待开售"
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": []
+  },
+  "recent_10": [
+    { "team": "阿根廷", "wins": 8, "winPct": 80, "draws": 1, "drawPct": 10, "losses": 1, "lossPct": 10, "gf": 23, "ga": 3 },
+    { "team": "冰岛", "wins": 2, "winPct": 20, "draws": 3, "drawPct": 30, "losses": 5, "lossPct": 50, "gf": 16, "ga": 19 }
+  ]
+}

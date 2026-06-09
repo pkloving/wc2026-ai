@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T06:21:51.100Z",
-  "total_dates": 1,
+  "generated_at": "2026-06-09T01:49:58.273Z",
+  "total_dates": 2,
   "dates": {
     "2026-06-08": {
       "count": 14,
@@ -262,7 +262,140 @@
           "sale_status": "待开售"
         }
       ]
+    },
+    "2026-06-09": {
+      "count": 8,
+      "matches": [
+        {
+          "file": "2026-06-09/monday-201_荷兰_vs_乌兹别克.json",
+          "scraped_at": "2026-06-08T05:51:21.856Z",
+          "mid": "2040145",
+          "code": "周一201",
+          "league": "国际赛",
+          "home": "荷兰",
+          "away": "乌兹别克",
+          "kickoff": "2026-06-09 02:45",
+          "spf": {
+            "home": 1.14,
+            "draw": 5.85,
+            "away": 12.5
+          },
+          "handicap": -2,
+          "rqspf": {
+            "home": 2.78,
+            "draw": 3.55,
+            "away": 2.05
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-09/monday-202_法国_vs_北爱尔兰.json",
+          "scraped_at": "2026-06-08T05:52:38.001Z",
+          "mid": "2040146",
+          "code": "周一202",
+          "league": "国际赛",
+          "home": "法国",
+          "away": "北爱尔兰",
+          "kickoff": "2026-06-09 03:10",
+          "spf": null,
+          "handicap": -2,
+          "rqspf": {
+            "home": 1.95,
+            "draw": 3.6,
+            "away": 2.95
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-09/monday-203_秘鲁_vs_西班牙.json",
+          "scraped_at": "2026-06-08T05:53:31.612Z",
+          "mid": "2040147",
+          "code": "周一203",
+          "league": "国际赛",
+          "home": "秘鲁",
+          "away": "西班牙",
+          "kickoff": "2026-06-09 10:00",
+          "spf": null,
+          "handicap": -2,
+          "rqspf": {
+            "home": 2.68,
+            "draw": 3.6,
+            "away": 2.09
+          },
+          "sale_status": "在售"
+        },
+        {
+          "file": "2026-06-09/tuesday-201_中国_vs_泰国.json",
+          "scraped_at": "2026-06-08T05:55:38.184Z",
+          "mid": "2040186",
+          "code": "周二201",
+          "league": "国际赛",
+          "home": "中国",
+          "away": "泰国",
+          "kickoff": "2026-06-09 19:35",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-09/tuesday-202_匈牙利_vs_哈萨克.json",
+          "scraped_at": "2026-06-08T05:56:18.856Z",
+          "mid": "2040187",
+          "code": "周二202",
+          "league": "国际赛",
+          "home": "匈牙利",
+          "away": "哈萨克",
+          "kickoff": "2026-06-10 01:00",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-09/tuesday-203_阿根廷_vs_冰岛.json",
+          "scraped_at": "2026-06-08T05:57:00.234Z",
+          "mid": "2040188",
+          "code": "周二203",
+          "league": "国际赛",
+          "home": "阿根廷",
+          "away": "冰岛",
+          "kickoff": "2026-06-10 08:30",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-09/wednesday-201_葡萄牙_vs_尼日利亚.json",
+          "scraped_at": "2026-06-08T05:57:36.522Z",
+          "mid": "2040189",
+          "code": "周三201",
+          "league": "国际赛",
+          "home": "葡萄牙",
+          "away": "尼日利亚",
+          "kickoff": "2026-06-11 03:45",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        },
+        {
+          "file": "2026-06-09/wednesday-202_英格兰_vs_哥斯达黎加.json",
+          "scraped_at": "2026-06-08T05:58:08.767Z",
+          "mid": "2040190",
+          "code": "周三202",
+          "league": "国际赛",
+          "home": "英格兰",
+          "away": "哥斯达",
+          "kickoff": "2026-06-11 04:00",
+          "spf": null,
+          "handicap": null,
+          "rqspf": null,
+          "sale_status": "待开售"
+        }
+      ]
     }
   },
-  "total_matches": 14
+  "total_matches": 22
 }
