@@ -126,6 +126,60 @@
     "color": "#11457E"
   },
   {
+    "code": "CHN",
+    "name": "中国",
+    "nameEn": "China",
+    "confederation": "AFC",
+    "flag": "🇨🇳",
+    "iso2": "cn",
+    "color": "#DE2910"
+  },
+  {
+    "code": "THA",
+    "name": "泰国",
+    "nameEn": "Thailand",
+    "confederation": "AFC",
+    "flag": "🇹🇭",
+    "iso2": "th",
+    "color": "#A51931"
+  },
+  {
+    "code": "HUN",
+    "name": "匈牙利",
+    "nameEn": "Hungary",
+    "confederation": "UEFA",
+    "flag": "🇭🇺",
+    "iso2": "hu",
+    "color": "#CE2939"
+  },
+  {
+    "code": "KAZ",
+    "name": "哈萨克斯坦",
+    "nameEn": "Kazakhstan",
+    "confederation": "UEFA",
+    "flag": "🇰🇿",
+    "iso2": "kz",
+    "color": "#00AFCA"
+  },
+  {
+    "code": "ISL",
+    "name": "冰岛",
+    "nameEn": "Iceland",
+    "confederation": "UEFA",
+    "flag": "🇮🇸",
+    "iso2": "is",
+    "color": "#02529C"
+  },
+  {
+    "code": "ALG",
+    "name": "阿尔及利亚",
+    "nameEn": "Algeria",
+    "confederation": "CAF",
+    "flag": "🇩🇿",
+    "iso2": "dz",
+    "color": "#006233"
+  },
+  {
     "code": "DZA",
     "name": "阿尔及利亚",
     "nameEn": "Algeria",

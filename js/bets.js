@@ -104,6 +104,15 @@ function hcapText(n) {
 }
 
 function renderParlayCard(bet, teamMap) {
+  // R-004 #6：串关套餐展开规则
+  // picks 长度 = 选号个数；parlayType = 套餐（如 ["2x1", "3x1"]）；
+  // combinations = 系统按 parlayType 自动展开后的"注数"，**不要手填**。
+  // 常见套餐注数公式：
+  //   "3场-2关"   → C(3,2) = 3 注 2×1
+  //   "3场-2,3关" → C(3,2) + C(3,3) = 3+1 = 4 注（最常见，6-8 那张票就是）
+  //   "3场-3关"   → C(3,3) = 1 注 3×1
+  //   "4场-2,3,4关" → C(4,2)+C(4,3)+C(4,4) = 6+4+1 = 11 注
+  // 出票时如果发现 combinations 与 picks+parlayType 对不上，**直接报错**。
   const picks = bet.picks || [];
   const totalCost = safeNum(bet.totalCost, 0);
   const combinations = safeNum(bet.combinations, picks.length || 1);
@@ -212,6 +221,20 @@ function renderEmpty() {
   return `<div class="text-slate-500 text-sm">${t('bets.empty')}</div>`;
 }
 
+// 排序：未中的（lost）放最后；其他保持原顺序（一般 JSON 里按时间倒序）
+function sortBetsForDisplay(bets) {
+  const rank = (r) => (r === 'lost' ? 2 : r === 'won' ? 0 : 1); // pending/null 中间，won 最前，lost 最后
+  return [...(bets || [])]
+    .map((b, i) => ({ b, i }))
+    .sort((a, b2) => {
+      const ra = rank(a.b.result);
+      const rb = rank(b2.b.result);
+      if (ra !== rb) return ra - rb;
+      return a.i - b2.i; // 同分组内保持原顺序（时间倒序）
+    })
+    .map((x) => x.b);
+}
+
 function escapeHtml(s) {
   if (s == null) return '';
   return String(s)
@@ -230,9 +253,10 @@ export async function renderBetsPage() {
   const teamMap = new Map(teams.map((t) => [t.code, t]));
   const unit = safeNum(betsData.budget?.unit, 2);
   const spent = totalSpent(betsData.bets || [], unit);
-  const betsHtml = (betsData.bets || []).length === 0
+  const orderedBets = sortBetsForDisplay(betsData.bets || []);
+  const betsHtml = (orderedBets || []).length === 0
     ? renderEmpty()
-    : betsData.bets.map((b) => renderBet(b, teamMap, unit)).join('');
+    : orderedBets.map((b) => renderBet(b, teamMap, unit)).join('');
   const disclaimerHtml = `
     <div class="card p-4 mb-6 bg-slate-100 border-l-4 border-flame">
       <div class="flex items-start gap-3">

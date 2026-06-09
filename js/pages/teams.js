@@ -31,7 +31,9 @@ boot(async () => {
 
   let activeConf = '';
   function render() {
-    const realTeams = teams.filter((t) => !t.placeholder);
+    // 只显示世界杯 48 强：必须出现在 groups.json 某个组里
+    // 过滤掉国际赛/友谊赛对手（如 CHN/THA/HUN/KAZ/ISL/ALG/PER/NIR 等）
+    const realTeams = teams.filter((t) => !t.placeholder && groupByTeam.has(t.code));
     const list = activeConf ? realTeams.filter((t) => t.confederation === activeConf) : realTeams;
     const el = document.getElementById('teams-grid');
     el.innerHTML = list.map((t) => {

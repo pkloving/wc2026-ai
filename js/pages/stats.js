@@ -14,13 +14,16 @@ boot(async () => {
   const resultMap = new Map(results.map((r) => [r.matchId, r]));
   const teamMap = new Map(teams.map((t) => [t.code, t]));
 
-  // 速览
-  const finished = results.length;
+  // 速览（只统计世界杯正赛：results 里可能混入国际赛/热身赛等其它赛事，需按 matches.json 的 id 过滤）
+  const matchIds = new Set(matches.map((m) => m.id));
+  const wcResults = results.filter((r) => matchIds.has(r.matchId));
+  const finished = wcResults.length;
+  const wcResultMap = new Map(wcResults.map((r) => [r.matchId, r]));
   const predictedMatchIds = new Set(predictions.map((p) => p.matchId));
-  const finishedPredicted = [...predictedMatchIds].filter((id) => resultMap.has(id));
+  const finishedPredicted = [...predictedMatchIds].filter((id) => wcResultMap.has(id));
   let totalPreds = 0, totalWinner = 0;
   for (const p of predictions) {
-    const r = resultMap.get(p.matchId);
+    const r = wcResultMap.get(p.matchId);
     if (!r) continue;
     for (const m of p.models) {
       totalPreds += 1;
