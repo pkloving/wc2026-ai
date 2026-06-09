@@ -93,7 +93,15 @@ boot(async () => {
         return { match: m, result: resultMap.get(m.id), prediction: p };
       })
       .filter(Boolean)
-      .sort((a, b) => new Date(b.match.date) - new Date(a.match.date));
+      .sort((a, b) => {
+        // 待开赛置顶，组内按开赛时间升序；其余按时间降序
+        const aS = a.match.status === 'scheduled' ? 0 : 1;
+        const bS = b.match.status === 'scheduled' ? 0 : 1;
+        if (aS !== bS) return aS - bS;
+        return aS === 0
+          ? new Date(a.match.date) - new Date(b.match.date)
+          : new Date(b.match.date) - new Date(a.match.date);
+      });
 
     const filtered = applyFilter(enriched);
     document.getElementById('filter-count').textContent = t('predictions.summary', { n: filtered.length });
