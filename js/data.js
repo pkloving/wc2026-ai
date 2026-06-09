@@ -1,5 +1,11 @@
+// Vite glob：构建时把 data/results/<mid>.json 全部打包进来（per-mid 单一来源）
+// 用 import.meta.glob + eager 保证同步可用，无需 async 加载
+const resultModules = import.meta.glob('../data/results/*.json', { eager: true });
+const resultsData = Object.values(resultModules)
+  .map((m) => m.default || m)
+  .sort((a, b) => String(a.matchId).localeCompare(String(b.matchId)));
+
 import matchesData from '../data/matches.json';
-import resultsData from '../data/results.json';
 import predictionsData from '../data/predictions.json';
 import teamsData from '../data/teams.json';
 import groupsData from '../data/groups.json';

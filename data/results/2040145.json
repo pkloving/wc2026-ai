@@ -1,0 +1,13 @@
+{
+  "matchId": "2040145",
+  "homeScore": 2,
+  "awayScore": 1,
+  "halfTime": { "home": 1, "away": 0 },
+  "scorers": [
+    { "team": "NED", "player": "C. Gakpo", "minute": 32, "type": "penalty" },
+    { "team": "UZB", "player": "I. Sergeev", "minute": 92, "type": "goal" },
+    { "team": "NED", "player": "C. Gakpo", "minute": 98, "type": "penalty" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

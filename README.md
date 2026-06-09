@@ -121,12 +121,12 @@ git add . && git commit -m "update: M002 result" && git push
 ## 🗂 关键数据文件
 
 - `data/matches.json` — 全部 104 场比赛元信息
-- `data/results.json` — 比赛结果（比分、进球者、点球）
+- `data/results/<matchId>.json` — 比赛结果（比分、半场、进球者、点球），per-mid 单一来源
 - `data/predictions.json` — 每场比赛 × 每模型的预测
 - `data/teams.json` — 48 队信息（含旗帜、所属足联）
 - `data/groups.json` — 12 个小组配置
 
-> 💡 Vite 在构建时会把这 5 个 JSON 直接打包进 JS，所以**改 data/ 后 Vite 会自动热更新**。
+> 💡 Vite 在构建时会把这 5 个 JSON 直接打包进 JS；`data/results/*.json` 走 `import.meta.glob` 全部打包。**改 data/ 后 Vite 会自动热更新**。
 
 ## 🎨 主题色
 

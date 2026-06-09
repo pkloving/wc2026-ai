@@ -8,8 +8,6 @@ dist/
 .env
 .env.local
 预测.md
-每日执行.md
 records/
 data/odds/
 data/odds_history/
-data/results/
