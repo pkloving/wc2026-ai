@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T05:28:25.368Z",
+  "generated_at": "2026-06-15T09:13:23.605Z",
   "total": 32,
   "by_status": {
     "scheduled": [
@@ -32,44 +32,6 @@
         "scraped_at": "2026-06-08T05:58:08.767Z",
         "history_snapshots": 0,
         "odds_file": "odds/2040190.json"
-      },
-      {
-        "mid": "2040191",
-        "code": "周一013",
-        "league": "世界杯",
-        "home": "西班牙",
-        "away": "佛得角",
-        "kickoff": "2026-06-16 00:00",
-        "status": "scheduled",
-        "spf": {
-          "home": 1.61,
-          "draw": 4.4,
-          "away": 3.56
-        },
-        "handicap": -2,
-        "rqspf": null,
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040191.json"
-      },
-      {
-        "mid": "2040196",
-        "code": "周二018",
-        "league": "世界杯",
-        "home": "伊拉克",
-        "away": "挪威",
-        "kickoff": "2026-06-17 06:00",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": 2,
-        "rqspf": {
-          "home": 2.09,
-          "draw": 3.89,
-          "away": 2.54
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040196.json"
       }
     ],
     "on_sale": [
@@ -139,7 +101,26 @@
         "odds_file": "odds/2040188.json"
       },
       {
-        "mid": "2040192",
+        "mid": "2040174",
+        "code": "周一013",
+        "league": "世界杯",
+        "home": "西班牙",
+        "away": "佛得角",
+        "kickoff": "2026-06-16 00:00",
+        "status": "on_sale",
+        "spf": null,
+        "handicap": -2,
+        "rqspf": {
+          "home": 1.54,
+          "draw": 4.55,
+          "away": 3.85
+        },
+        "scraped_at": "2026-06-15T11:26:00.000Z",
+        "history_snapshots": 0,
+        "odds_file": "2026-06-15/周一013_西班牙_vs_佛得角.json"
+      },
+      {
+        "mid": "2040175",
         "code": "周一014",
         "league": "世界杯",
         "home": "比利时",
@@ -147,22 +128,22 @@
         "kickoff": "2026-06-16 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.42,
-          "draw": 3.87,
-          "away": 6
+          "home": 1.41,
+          "draw": 3.92,
+          "away": 6.05
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.45,
-          "draw": 3.32,
-          "away": 2.38
+          "home": 2.35,
+          "draw": 3.4,
+          "away": 2.44
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040192.json"
+        "odds_file": "2026-06-15/周一014_比利时_vs_埃及.json"
       },
       {
-        "mid": "2040193",
+        "mid": "2040176",
         "code": "周一015",
         "league": "世界杯",
         "home": "沙特阿拉伯",
@@ -170,22 +151,22 @@
         "kickoff": "2026-06-16 06:00",
         "status": "on_sale",
         "spf": {
-          "home": 7.65,
-          "draw": 4.25,
+          "home": 7.5,
+          "draw": 4.3,
           "away": 1.31
         },
         "handicap": 1,
         "rqspf": {
-          "home": 2.84,
+          "home": 2.87,
           "draw": 3.3,
-          "away": 2.11
+          "away": 2.09
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040193.json"
+        "odds_file": "2026-06-15/周一015_沙特阿拉伯_vs_乌拉圭.json"
       },
       {
-        "mid": "2040194",
+        "mid": "2040177",
         "code": "周一016",
         "league": "世界杯",
         "home": "伊朗",
@@ -205,10 +186,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040194.json"
+        "odds_file": "2026-06-15/周一016_伊朗_vs_新西兰.json"
       },
       {
-        "mid": "2040195",
+        "mid": "2040178",
         "code": "周二017",
         "league": "世界杯",
         "home": "法国",
@@ -216,22 +197,41 @@
         "kickoff": "2026-06-17 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.33,
-          "draw": 4.15,
-          "away": 7.3
+          "home": 1.31,
+          "draw": 4.23,
+          "away": 7.7
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.2,
-          "draw": 3.25,
-          "away": 2.72
+          "home": 2.12,
+          "draw": 3.37,
+          "away": 2.77
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040195.json"
+        "odds_file": "2026-06-15/周二017_法国_vs_塞内加尔.json"
       },
       {
-        "mid": "2040197",
+        "mid": "2040179",
+        "code": "周二018",
+        "league": "世界杯",
+        "home": "伊拉克",
+        "away": "挪威",
+        "kickoff": "2026-06-17 06:00",
+        "status": "on_sale",
+        "spf": null,
+        "handicap": 2,
+        "rqspf": {
+          "home": 2.16,
+          "draw": 3.89,
+          "away": 2.44
+        },
+        "scraped_at": "2026-06-15T11:26:00.000Z",
+        "history_snapshots": 0,
+        "odds_file": "2026-06-15/周二018_伊拉克_vs_挪威.json"
+      },
+      {
+        "mid": "2040180",
         "code": "周二019",
         "league": "世界杯",
         "home": "阿根廷",
@@ -245,16 +245,16 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.35,
+          "home": 1.9,
+          "draw": 3.5,
           "away": 3.15
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040197.json"
+        "odds_file": "2026-06-15/周二019_阿根廷_vs_阿尔及利亚.json"
       },
       {
-        "mid": "2040198",
+        "mid": "2040181",
         "code": "周二020",
         "league": "世界杯",
         "home": "奥地利",
@@ -274,10 +274,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040198.json"
+        "odds_file": "2026-06-15/周二020_奥地利_vs_约旦.json"
       },
       {
-        "mid": "2040199",
+        "mid": "2040182",
         "code": "周三021",
         "league": "世界杯",
         "home": "葡萄牙",
@@ -285,22 +285,22 @@
         "kickoff": "2026-06-18 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.14,
-          "draw": 5.7,
-          "away": 13
+          "home": 1.13,
+          "draw": 5.86,
+          "away": 13.5
         },
-        "handicap": -2,
+        "handicap": -1,
         "rqspf": {
-          "home": 2.7,
-          "draw": 3.93,
-          "away": 1.98
+          "home": 2.66,
+          "draw": 3.94,
+          "away": 2
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040199.json"
+        "odds_file": "2026-06-15/周三021_葡萄牙_vs_刚果(金).json"
       },
       {
-        "mid": "2040200",
+        "mid": "2040183",
         "code": "周三022",
         "league": "世界杯",
         "home": "英格兰",
@@ -320,10 +320,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040200.json"
+        "odds_file": "2026-06-15/周三022_英格兰_vs_克罗地亚.json"
       },
       {
-        "mid": "2040201",
+        "mid": "2040184",
         "code": "周三023",
         "league": "世界杯",
         "home": "加纳",
@@ -335,7 +335,7 @@
           "draw": 3,
           "away": 3.5
         },
-        "handicap": -1,
+        "handicap": 1,
         "rqspf": {
           "home": 4.25,
           "draw": 3.52,
@@ -343,10 +343,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040201.json"
+        "odds_file": "2026-06-15/周三023_加纳_vs_巴拿马.json"
       },
       {
-        "mid": "2040202",
+        "mid": "2040185",
         "code": "周三024",
         "league": "世界杯",
         "home": "乌兹别克斯坦",
@@ -366,7 +366,7 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040202.json"
+        "odds_file": "2026-06-15/周三024_乌兹别克斯坦_vs_哥伦比亚.json"
       }
     ],
     "in_progress": [],
@@ -1147,26 +1147,26 @@
         "odds_file": "odds/2040173.json"
       },
       {
-        "mid": "2040191",
+        "mid": "2040174",
         "code": "周一013",
         "league": "世界杯",
         "home": "西班牙",
         "away": "佛得角",
         "kickoff": "2026-06-16 00:00",
-        "status": "scheduled",
-        "spf": {
-          "home": 1.61,
-          "draw": 4.4,
-          "away": 3.56
-        },
+        "status": "on_sale",
+        "spf": null,
         "handicap": -2,
-        "rqspf": null,
+        "rqspf": {
+          "home": 1.54,
+          "draw": 4.55,
+          "away": 3.85
+        },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040191.json"
+        "odds_file": "2026-06-15/周一013_西班牙_vs_佛得角.json"
       },
       {
-        "mid": "2040192",
+        "mid": "2040175",
         "code": "周一014",
         "league": "世界杯",
         "home": "比利时",
@@ -1174,22 +1174,22 @@
         "kickoff": "2026-06-16 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.42,
-          "draw": 3.87,
-          "away": 6
+          "home": 1.41,
+          "draw": 3.92,
+          "away": 6.05
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.45,
-          "draw": 3.32,
-          "away": 2.38
+          "home": 2.35,
+          "draw": 3.4,
+          "away": 2.44
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040192.json"
+        "odds_file": "2026-06-15/周一014_比利时_vs_埃及.json"
       },
       {
-        "mid": "2040193",
+        "mid": "2040176",
         "code": "周一015",
         "league": "世界杯",
         "home": "沙特阿拉伯",
@@ -1197,22 +1197,22 @@
         "kickoff": "2026-06-16 06:00",
         "status": "on_sale",
         "spf": {
-          "home": 7.65,
-          "draw": 4.25,
+          "home": 7.5,
+          "draw": 4.3,
           "away": 1.31
         },
         "handicap": 1,
         "rqspf": {
-          "home": 2.84,
+          "home": 2.87,
           "draw": 3.3,
-          "away": 2.11
+          "away": 2.09
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040193.json"
+        "odds_file": "2026-06-15/周一015_沙特阿拉伯_vs_乌拉圭.json"
       },
       {
-        "mid": "2040194",
+        "mid": "2040177",
         "code": "周一016",
         "league": "世界杯",
         "home": "伊朗",
@@ -1232,10 +1232,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040194.json"
+        "odds_file": "2026-06-15/周一016_伊朗_vs_新西兰.json"
       },
       {
-        "mid": "2040195",
+        "mid": "2040178",
         "code": "周二017",
         "league": "世界杯",
         "home": "法国",
@@ -1243,41 +1243,41 @@
         "kickoff": "2026-06-17 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.33,
-          "draw": 4.15,
-          "away": 7.3
+          "home": 1.31,
+          "draw": 4.23,
+          "away": 7.7
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.2,
-          "draw": 3.25,
-          "away": 2.72
+          "home": 2.12,
+          "draw": 3.37,
+          "away": 2.77
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040195.json"
+        "odds_file": "2026-06-15/周二017_法国_vs_塞内加尔.json"
       },
       {
-        "mid": "2040196",
+        "mid": "2040179",
         "code": "周二018",
         "league": "世界杯",
         "home": "伊拉克",
         "away": "挪威",
         "kickoff": "2026-06-17 06:00",
-        "status": "scheduled",
+        "status": "on_sale",
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 2.09,
+          "home": 2.16,
           "draw": 3.89,
-          "away": 2.54
+          "away": 2.44
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040196.json"
+        "odds_file": "2026-06-15/周二018_伊拉克_vs_挪威.json"
       },
       {
-        "mid": "2040197",
+        "mid": "2040180",
         "code": "周二019",
         "league": "世界杯",
         "home": "阿根廷",
@@ -1291,16 +1291,16 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.35,
+          "home": 1.9,
+          "draw": 3.5,
           "away": 3.15
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040197.json"
+        "odds_file": "2026-06-15/周二019_阿根廷_vs_阿尔及利亚.json"
       },
       {
-        "mid": "2040198",
+        "mid": "2040181",
         "code": "周二020",
         "league": "世界杯",
         "home": "奥地利",
@@ -1320,10 +1320,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040198.json"
+        "odds_file": "2026-06-15/周二020_奥地利_vs_约旦.json"
       },
       {
-        "mid": "2040199",
+        "mid": "2040182",
         "code": "周三021",
         "league": "世界杯",
         "home": "葡萄牙",
@@ -1331,22 +1331,22 @@
         "kickoff": "2026-06-18 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.14,
-          "draw": 5.7,
-          "away": 13
+          "home": 1.13,
+          "draw": 5.86,
+          "away": 13.5
         },
-        "handicap": -2,
+        "handicap": -1,
         "rqspf": {
-          "home": 2.7,
-          "draw": 3.93,
-          "away": 1.98
+          "home": 2.66,
+          "draw": 3.94,
+          "away": 2
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040199.json"
+        "odds_file": "2026-06-15/周三021_葡萄牙_vs_刚果(金).json"
       },
       {
-        "mid": "2040200",
+        "mid": "2040183",
         "code": "周三022",
         "league": "世界杯",
         "home": "英格兰",
@@ -1366,10 +1366,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040200.json"
+        "odds_file": "2026-06-15/周三022_英格兰_vs_克罗地亚.json"
       },
       {
-        "mid": "2040201",
+        "mid": "2040184",
         "code": "周三023",
         "league": "世界杯",
         "home": "加纳",
@@ -1381,7 +1381,7 @@
           "draw": 3,
           "away": 3.5
         },
-        "handicap": -1,
+        "handicap": 1,
         "rqspf": {
           "home": 4.25,
           "draw": 3.52,
@@ -1389,10 +1389,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040201.json"
+        "odds_file": "2026-06-15/周三023_加纳_vs_巴拿马.json"
       },
       {
-        "mid": "2040202",
+        "mid": "2040185",
         "code": "周三024",
         "league": "世界杯",
         "home": "乌兹别克斯坦",
@@ -1412,7 +1412,7 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040202.json"
+        "odds_file": "2026-06-15/周三024_乌兹别克斯坦_vs_哥伦比亚.json"
       }
     ]
   },
@@ -1864,26 +1864,26 @@
     ],
     "2026-06-16": [
       {
-        "mid": "2040191",
+        "mid": "2040174",
         "code": "周一013",
         "league": "世界杯",
         "home": "西班牙",
         "away": "佛得角",
         "kickoff": "2026-06-16 00:00",
-        "status": "scheduled",
-        "spf": {
-          "home": 1.61,
-          "draw": 4.4,
-          "away": 3.56
-        },
+        "status": "on_sale",
+        "spf": null,
         "handicap": -2,
-        "rqspf": null,
+        "rqspf": {
+          "home": 1.54,
+          "draw": 4.55,
+          "away": 3.85
+        },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040191.json"
+        "odds_file": "2026-06-15/周一013_西班牙_vs_佛得角.json"
       },
       {
-        "mid": "2040192",
+        "mid": "2040175",
         "code": "周一014",
         "league": "世界杯",
         "home": "比利时",
@@ -1891,22 +1891,22 @@
         "kickoff": "2026-06-16 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.42,
-          "draw": 3.87,
-          "away": 6
+          "home": 1.41,
+          "draw": 3.92,
+          "away": 6.05
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.45,
-          "draw": 3.32,
-          "away": 2.38
+          "home": 2.35,
+          "draw": 3.4,
+          "away": 2.44
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040192.json"
+        "odds_file": "2026-06-15/周一014_比利时_vs_埃及.json"
       },
       {
-        "mid": "2040193",
+        "mid": "2040176",
         "code": "周一015",
         "league": "世界杯",
         "home": "沙特阿拉伯",
@@ -1914,22 +1914,22 @@
         "kickoff": "2026-06-16 06:00",
         "status": "on_sale",
         "spf": {
-          "home": 7.65,
-          "draw": 4.25,
+          "home": 7.5,
+          "draw": 4.3,
           "away": 1.31
         },
         "handicap": 1,
         "rqspf": {
-          "home": 2.84,
+          "home": 2.87,
           "draw": 3.3,
-          "away": 2.11
+          "away": 2.09
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040193.json"
+        "odds_file": "2026-06-15/周一015_沙特阿拉伯_vs_乌拉圭.json"
       },
       {
-        "mid": "2040194",
+        "mid": "2040177",
         "code": "周一016",
         "league": "世界杯",
         "home": "伊朗",
@@ -1949,12 +1949,12 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040194.json"
+        "odds_file": "2026-06-15/周一016_伊朗_vs_新西兰.json"
       }
     ],
     "2026-06-17": [
       {
-        "mid": "2040195",
+        "mid": "2040178",
         "code": "周二017",
         "league": "世界杯",
         "home": "法国",
@@ -1962,41 +1962,41 @@
         "kickoff": "2026-06-17 03:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.33,
-          "draw": 4.15,
-          "away": 7.3
+          "home": 1.31,
+          "draw": 4.23,
+          "away": 7.7
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.2,
-          "draw": 3.25,
-          "away": 2.72
+          "home": 2.12,
+          "draw": 3.37,
+          "away": 2.77
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040195.json"
+        "odds_file": "2026-06-15/周二017_法国_vs_塞内加尔.json"
       },
       {
-        "mid": "2040196",
+        "mid": "2040179",
         "code": "周二018",
         "league": "世界杯",
         "home": "伊拉克",
         "away": "挪威",
         "kickoff": "2026-06-17 06:00",
-        "status": "scheduled",
+        "status": "on_sale",
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 2.09,
+          "home": 2.16,
           "draw": 3.89,
-          "away": 2.54
+          "away": 2.44
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040196.json"
+        "odds_file": "2026-06-15/周二018_伊拉克_vs_挪威.json"
       },
       {
-        "mid": "2040197",
+        "mid": "2040180",
         "code": "周二019",
         "league": "世界杯",
         "home": "阿根廷",
@@ -2010,16 +2010,16 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.35,
+          "home": 1.9,
+          "draw": 3.5,
           "away": 3.15
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040197.json"
+        "odds_file": "2026-06-15/周二019_阿根廷_vs_阿尔及利亚.json"
       },
       {
-        "mid": "2040198",
+        "mid": "2040181",
         "code": "周二020",
         "league": "世界杯",
         "home": "奥地利",
@@ -2039,12 +2039,12 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040198.json"
+        "odds_file": "2026-06-15/周二020_奥地利_vs_约旦.json"
       }
     ],
     "2026-06-18": [
       {
-        "mid": "2040199",
+        "mid": "2040182",
         "code": "周三021",
         "league": "世界杯",
         "home": "葡萄牙",
@@ -2052,22 +2052,22 @@
         "kickoff": "2026-06-18 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.14,
-          "draw": 5.7,
-          "away": 13
+          "home": 1.13,
+          "draw": 5.86,
+          "away": 13.5
         },
-        "handicap": -2,
+        "handicap": -1,
         "rqspf": {
-          "home": 2.7,
-          "draw": 3.93,
-          "away": 1.98
+          "home": 2.66,
+          "draw": 3.94,
+          "away": 2
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040199.json"
+        "odds_file": "2026-06-15/周三021_葡萄牙_vs_刚果(金).json"
       },
       {
-        "mid": "2040200",
+        "mid": "2040183",
         "code": "周三022",
         "league": "世界杯",
         "home": "英格兰",
@@ -2087,10 +2087,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040200.json"
+        "odds_file": "2026-06-15/周三022_英格兰_vs_克罗地亚.json"
       },
       {
-        "mid": "2040201",
+        "mid": "2040184",
         "code": "周三023",
         "league": "世界杯",
         "home": "加纳",
@@ -2102,7 +2102,7 @@
           "draw": 3,
           "away": 3.5
         },
-        "handicap": -1,
+        "handicap": 1,
         "rqspf": {
           "home": 4.25,
           "draw": 3.52,
@@ -2110,10 +2110,10 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040201.json"
+        "odds_file": "2026-06-15/周三023_加纳_vs_巴拿马.json"
       },
       {
-        "mid": "2040202",
+        "mid": "2040185",
         "code": "周三024",
         "league": "世界杯",
         "home": "乌兹别克斯坦",
@@ -2133,7 +2133,7 @@
         },
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 0,
-        "odds_file": "odds/2040202.json"
+        "odds_file": "2026-06-15/周三024_乌兹别克斯坦_vs_哥伦比亚.json"
       }
     ]
   }
