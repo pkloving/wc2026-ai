@@ -10,6 +10,810 @@
   },
   "bets": [
     {
+      "id": "bet-2026-06-14-img11",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 3×1 + 4×1）",
+      "matchLabel": "周日009 + 周日010 + 周日011 + 周日012 比分（赔率时点 18:44）",
+      "date": "2026-06-14T18:44:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1", "3x1", "4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/11.jpg）",
+      "picks": [
+        {
+          "match": "周日009",
+          "home": "GER",
+          "away": "COL",
+          "kickoff": "2026-06-15 01:00",
+          "play": "bf",
+          "pick": "4:0",
+          "pickLabel": "4:0",
+          "odds": null
+        },
+        {
+          "match": "周日009",
+          "home": "GER",
+          "away": "COL",
+          "kickoff": "2026-06-15 01:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040171",
+          "match": "周日010",
+          "home": "NED",
+          "away": "JPN",
+          "kickoff": "2026-06-15 04:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040171",
+          "match": "周日010",
+          "home": "NED",
+          "away": "JPN",
+          "kickoff": "2026-06-15 04:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "match": "周日011",
+          "home": "CIV",
+          "away": "ECU",
+          "kickoff": "2026-06-15 07:00",
+          "play": "bf",
+          "pick": "0:0",
+          "pickLabel": "0:0",
+          "odds": null
+        },
+        {
+          "match": "周日011",
+          "home": "CIV",
+          "away": "ECU",
+          "kickoff": "2026-06-15 07:00",
+          "play": "bf",
+          "pick": "0:1",
+          "pickLabel": "0:1",
+          "odds": null
+        },
+        {
+          "match": "周日012",
+          "home": "SWE",
+          "away": "TUN",
+          "kickoff": "2026-06-15 10:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "match": "周日012",
+          "home": "SWE",
+          "away": "TUN",
+          "kickoff": "2026-06-15 10:00",
+          "play": "bf",
+          "pick": "1:0",
+          "pickLabel": "1:0",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 72,
+      "totalCost": 144,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "纯自嗨 4 场比分大包围（4 选 2+3+4 关全包 = 24+32+16=72 注）"
+    },
+    {
+      "id": "bet-2026-06-13-img9",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 4×1）",
+      "matchLabel": "周六005 + 周六006 + 周六007 + 周六008 比分（赔率时点 20:34）",
+      "date": "2026-06-13T20:34:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1", "4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/9.jpg）",
+      "picks": [
+        {
+          "mid": "2040166",
+          "match": "周六005",
+          "home": "QAT",
+          "away": "SUI",
+          "kickoff": "2026-06-14 03:00",
+          "play": "bf",
+          "pick": "1:3",
+          "pickLabel": "1:3",
+          "odds": null
+        },
+        {
+          "mid": "2040166",
+          "match": "周六005",
+          "home": "QAT",
+          "away": "SUI",
+          "kickoff": "2026-06-14 03:00",
+          "play": "bf",
+          "pick": "0:3",
+          "pickLabel": "0:3",
+          "odds": null
+        },
+        {
+          "mid": "2040167",
+          "match": "周六006",
+          "home": "BRA",
+          "away": "MAR",
+          "kickoff": "2026-06-14 06:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040167",
+          "match": "周六006",
+          "home": "BRA",
+          "away": "MAR",
+          "kickoff": "2026-06-14 06:00",
+          "play": "bf",
+          "pick": "1:0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040167",
+          "match": "周六006",
+          "home": "BRA",
+          "away": "MAR",
+          "kickoff": "2026-06-14 06:00",
+          "play": "bf",
+          "pick": "2:1",
+          "pickLabel": "2:1",
+          "odds": null
+        },
+        {
+          "match": "周六007",
+          "home": "HAI",
+          "away": "SCO",
+          "kickoff": "2026-06-14 09:00",
+          "play": "bf",
+          "pick": "1:2",
+          "pickLabel": "1:2",
+          "odds": null
+        },
+        {
+          "match": "周六007",
+          "home": "HAI",
+          "away": "SCO",
+          "kickoff": "2026-06-14 09:00",
+          "play": "bf",
+          "pick": "0:3",
+          "pickLabel": "0:3",
+          "odds": null
+        },
+        {
+          "match": "周六007",
+          "home": "HAI",
+          "away": "SCO",
+          "kickoff": "2026-06-14 09:00",
+          "play": "bf",
+          "pick": "1:3",
+          "pickLabel": "1:3",
+          "odds": null
+        },
+        {
+          "match": "周六008",
+          "home": "AUS",
+          "away": "TUR",
+          "kickoff": "2026-06-14 12:00",
+          "play": "bf",
+          "pick": "1:2",
+          "pickLabel": "1:2",
+          "odds": null
+        },
+        {
+          "match": "周六008",
+          "home": "AUS",
+          "away": "TUR",
+          "kickoff": "2026-06-14 12:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 73,
+      "totalCost": 146,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "4 场比分大包围（2×3×3×2=36 选 2+4 关 = 37+36=73 注，146 元）"
+    },
+    {
+      "id": "bet-2026-06-13-img10",
+      "type": "match",
+      "title": "[混合] 串关（2×1 + 4×1）",
+      "matchLabel": "周六005 bqc 负负 + 周六006 让-1 平 + 周六007 bqc 负负 + 周六008 zjqs{3,2}（赔率时点 20:25）",
+      "date": "2026-06-13T20:25:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1", "4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/10.jpg）",
+      "picks": [
+        {
+          "mid": "2040166",
+          "match": "周六005",
+          "home": "QAT",
+          "away": "SUI",
+          "kickoff": "2026-06-14 03:00",
+          "play": "bqc",
+          "pick": "lose-lose",
+          "pickLabel": "负-负",
+          "odds": null
+        },
+        {
+          "mid": "2040167",
+          "match": "周六006",
+          "home": "BRA",
+          "away": "MAR",
+          "kickoff": "2026-06-14 06:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "draw",
+          "pickLabel": "平(-1)",
+          "odds": null
+        },
+        {
+          "match": "周六007",
+          "home": "HAI",
+          "away": "SCO",
+          "kickoff": "2026-06-14 09:00",
+          "play": "bqc",
+          "pick": "lose-lose",
+          "pickLabel": "负-负",
+          "odds": null
+        },
+        {
+          "match": "周六008",
+          "home": "AUS",
+          "away": "TUR",
+          "kickoff": "2026-06-14 12:00",
+          "play": "zjqs",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "match": "周六008",
+          "home": "AUS",
+          "away": "TUR",
+          "kickoff": "2026-06-14 12:00",
+          "play": "zjqs",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 11,
+      "totalCost": 22,
+      "maxReturn": null,
+      "result": "won",
+      "actualReturn": 11.53,
+      "note": "全小场博弈，2×1=9 注 + 4×1=2 注 = 11 注 22 元（部分中：返 11.53 元）"
+    },
+    {
+      "id": "bet-2026-06-12-img5",
+      "type": "match",
+      "title": "[混合] 4 场串关（4×1 ×2倍）",
+      "matchLabel": "周四001 bqc 胜胜 + 周四002{让-1 主胜, 胜平负 主胜} + 周五003 让-1 主胜 + 周五004 让-1 主胜（赔率时点 19:03）",
+      "date": "2026-06-12T19:03:00",
+      "stakeMultiplier": 2,
+      "parlayType": ["4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/5.jpg）",
+      "picks": [
+        {
+          "mid": "2040162",
+          "match": "周四001",
+          "home": "MEX",
+          "away": "RSA",
+          "kickoff": "2026-06-12 03:00",
+          "play": "bqc",
+          "pick": "win-win",
+          "pickLabel": "胜-胜",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜(-1)",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 8,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周002 双玩法同场 = 2 组合 × 2 元 × 2 倍 = 8 元（注：违反 R-004 #2 同场不同玩法）"
+    },
+    {
+      "id": "bet-2026-06-12-img6",
+      "type": "match",
+      "title": "[比分] 4 场串关（4×1）",
+      "matchLabel": "周四001 bf 2:0 + 周四002 bf 1:1 + 周五003 bf 2:0 + 周五004 bf{1:0,1:1}（赔率时点 17:13）",
+      "date": "2026-06-12T17:13:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/6.jpg）",
+      "picks": [
+        {
+          "mid": "2040162",
+          "match": "周四001",
+          "home": "MEX",
+          "away": "RSA",
+          "kickoff": "2026-06-12 03:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "bf",
+          "pick": "1:0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周004 比分 2 选项 → 2 注 4 元"
+    },
+    {
+      "id": "bet-2026-06-12-img1",
+      "type": "match",
+      "title": "[比分] 单关（×2倍）",
+      "matchLabel": "周五003 bf 1:3（赔率时点 16:18）",
+      "date": "2026-06-12T16:18:00",
+      "stakeMultiplier": 2,
+      "parlayType": [],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/1.png）",
+      "picks": [
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "1:3",
+          "pickLabel": "1:3",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "单关 ×2倍 = 4 元"
+    },
+    {
+      "id": "bet-2026-06-12-img2a",
+      "type": "match",
+      "title": "[比分] 串关（2×1）",
+      "matchLabel": "周五003 bf{1:0,0:1,1:2} + 周五004 bf 2:1（赔率时点 16:17）",
+      "date": "2026-06-12T16:17:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/2.png 第1张）",
+      "picks": [
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "1:0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "0:1",
+          "pickLabel": "0:1",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "1:2",
+          "pickLabel": "1:2",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "bf",
+          "pick": "2:1",
+          "pickLabel": "2:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 3,
+      "totalCost": 6,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周003 比分 3 选 × 周004 比分 1 选 = 3 注 6 元"
+    },
+    {
+      "id": "bet-2026-06-12-img2b",
+      "type": "match",
+      "title": "[混合] 串关（2×1）",
+      "matchLabel": "周五003 bf{1:0,0:1,1:2} + 周五004 胜平负 主胜（赔率时点 16:17）",
+      "date": "2026-06-12T16:17:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/2.png 第2张）",
+      "picks": [
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "1:0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "0:1",
+          "pickLabel": "0:1",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bf",
+          "pick": "1:2",
+          "pickLabel": "1:2",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 3,
+      "totalCost": 6,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周003 比分 3 选 × 周004 spf 主胜 = 3 注 6 元"
+    },
+    {
+      "id": "bet-2026-06-12-img4",
+      "type": "match",
+      "title": "[混合] 串关（2×1 ×3倍）",
+      "matchLabel": "周五003 zjqs 2 + 周五004 bf 2:1（赔率时点 15:30）",
+      "date": "2026-06-12T15:30:00",
+      "stakeMultiplier": 3,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/4.png）",
+      "picks": [
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "zjqs",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "bf",
+          "pick": "2:1",
+          "pickLabel": "2:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 6,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "2 场单注 × 3 倍 = 6 元"
+    },
+    {
+      "id": "bet-2026-06-12-img3",
+      "type": "match",
+      "title": "[混合] 串关（2×1 ×2倍）",
+      "matchLabel": "周五003 bqc{胜-平,负-平} + 周五004 spf 主胜（赔率时点 15:08）",
+      "date": "2026-06-12T15:08:00",
+      "stakeMultiplier": 2,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/3.png）",
+      "picks": [
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bqc",
+          "pick": "win-draw",
+          "pickLabel": "胜-平",
+          "odds": null
+        },
+        {
+          "mid": "2040164",
+          "match": "周五003",
+          "home": "CAN",
+          "away": "BIH",
+          "kickoff": "2026-06-13 03:00",
+          "play": "bqc",
+          "pick": "lose-draw",
+          "pickLabel": "负-平",
+          "odds": null
+        },
+        {
+          "mid": "2040165",
+          "match": "周五004",
+          "home": "USA",
+          "away": "PAR",
+          "kickoff": "2026-06-13 09:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 8,
+      "maxReturn": null,
+      "result": "won",
+      "actualReturn": 107.88,
+      "note": "周003 bqc 2 选 × 周004 spf 1 选 = 2 注 × 2 倍 = 8 元"
+    },
+    {
+      "id": "bet-2026-06-11-img7",
+      "type": "match",
+      "title": "[总进球] 串关（2×1）",
+      "matchLabel": "周四001 zjqs{3,2} + 周四002 zjqs{2,3}（赔率时点 16:58）",
+      "date": "2026-06-11T16:58:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/7.jpg）",
+      "picks": [
+        {
+          "mid": "2040162",
+          "match": "周四001",
+          "home": "MEX",
+          "away": "RSA",
+          "kickoff": "2026-06-12 03:00",
+          "play": "zjqs",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040162",
+          "match": "周四001",
+          "home": "MEX",
+          "away": "RSA",
+          "kickoff": "2026-06-12 03:00",
+          "play": "zjqs",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "zjqs",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "zjqs",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 4,
+      "totalCost": 8,
+      "maxReturn": null,
+      "result": "won",
+      "actualReturn": 24,
+      "note": "周001 总进球 2 选 × 周002 总进球 2 选 = 4 注 8 元"
+    },
+    {
+      "id": "bet-2026-06-11-img8",
+      "type": "match",
+      "title": "[比分] 串关（2×1 ×5倍）",
+      "matchLabel": "周四001 bf 2:0 + 周四002 bf 1:1（赔率时点 16:56）",
+      "date": "2026-06-11T16:56:00",
+      "stakeMultiplier": 5,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（data/temp/8.jpg）",
+      "picks": [
+        {
+          "mid": "2040162",
+          "match": "周四001",
+          "home": "MEX",
+          "away": "RSA",
+          "kickoff": "2026-06-12 03:00",
+          "play": "bf",
+          "pick": "2:0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040163",
+          "match": "周四002",
+          "home": "KOR",
+          "away": "CZE",
+          "kickoff": "2026-06-12 10:00",
+          "play": "bf",
+          "pick": "1:1",
+          "pickLabel": "1:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 10,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "1 注 × 5 倍 = 10 元（重锤 2 场比分）"
+    },
+    {
       "id": "champion-2026-sim",
       "type": "champion",
       "title": "[模拟] 冠军单（3 票单关）",
@@ -127,7 +931,7 @@
       "combinations": 4,
       "totalCost": 8,
       "maxReturn": 64.3,
-      "result": null,
+      "result": "lost",
       "note": "纯AI推荐单，详细理由 4 条见 records/2026-06-09.md 1.4"
     },
     {
@@ -294,6 +1098,58 @@
       "maxReturn": 644.42,
       "result": null,
       "note": "纯自嗨，挑了些双方差距明显的"
+    },
+    {
+      "id": "spf-3way-parlay-2026-06-15",
+      "type": "match",
+      "title": "[spf] 强队串关（2×1 + 3×1 · 比利时/法国/阿根廷）",
+      "matchLabel": "周一014 + 周二017 + 周二019 spf 主胜（赔率时点 2026-06-15 14:00）",
+      "date": "2026-06-15T14:00:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1", "3x1"],
+      "isActual": true,
+      "source": "modeling/artifacts/predict_unplayed.json (2026-06-15T05:28)",
+      "picks": [
+        {
+          "mid": "2040192",
+          "match": "周一014",
+          "home": "BEL",
+          "away": "EGY",
+          "kickoff": "2026-06-16 03:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.42
+        },
+        {
+          "mid": "2040195",
+          "match": "周二017",
+          "home": "FRA",
+          "away": "SEN",
+          "kickoff": "2026-06-17 03:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.33
+        },
+        {
+          "mid": "2040197",
+          "match": "周二019",
+          "home": "ARG",
+          "away": "DZA",
+          "kickoff": "2026-06-17 09:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.26
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 4,
+      "totalCost": 8,
+      "maxReturn": 30.94,
+      "result": "pending",
+      "note": "R-008 试水（3 场 conf=3 大热门 spf 2×1+3×1）；赛前 30 分钟复核大名单"
     }
   ]
 }
