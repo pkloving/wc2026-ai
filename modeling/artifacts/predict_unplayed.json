@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T07:50:20.533Z",
+  "generated_at": "2026-06-15T10:32:53.023Z",
   "source": "data/matches_status.json (status !== finished && league === \"世界杯\")",
   "scope": "世界杯正赛（data/matches.json M001-M104），不含国际赛热身",
   "models_used": [
@@ -10,25 +10,25 @@
   "input_count": 12,
   "predictions": [
     {
-      "mid": "2040191",
+      "mid": "2040174",
       "code": "周一013",
       "home": "西班牙",
       "away": "佛得角",
       "kickoff": "2026-06-16 00:00",
       "handicap": -2,
-      "spf": {
-        "home": 1.61,
-        "draw": 4.4,
-        "away": 3.56
+      "spf": null,
+      "rqspf": {
+        "home": 1.54,
+        "draw": 4.55,
+        "away": 3.85
       },
-      "rqspf": null,
-      "status": "scheduled",
+      "status": "on_sale",
       "recommendations": {
         "win": {
-          "pick": "home",
-          "confidence": 2,
-          "label": "适中",
-          "rationale": "适中（主胜 赔率 1.61，p0 55%）"
+          "pick": null,
+          "confidence": 0,
+          "label": null,
+          "rationale": "spf 未开售，无法判断胜平负"
         },
         "handicap": {
           "verdict": "skip",
@@ -57,21 +57,21 @@
       }
     },
     {
-      "mid": "2040192",
+      "mid": "2040175",
       "code": "周一014",
       "home": "比利时",
       "away": "埃及",
       "kickoff": "2026-06-16 03:00",
       "handicap": -1,
       "spf": {
-        "home": 1.42,
-        "draw": 3.87,
-        "away": 6
+        "home": 1.41,
+        "draw": 3.92,
+        "away": 6.05
       },
       "rqspf": {
-        "home": 2.45,
-        "draw": 3.32,
-        "away": 2.38
+        "home": 2.35,
+        "draw": 3.4,
+        "away": 2.44
       },
       "status": "on_sale",
       "recommendations": {
@@ -79,7 +79,7 @@
           "pick": "home",
           "confidence": 3,
           "label": "大热门",
-          "rationale": "大热门（主胜 赔率 1.42，p0 62%）"
+          "rationale": "大热门（主胜 赔率 1.41，p0 63%）"
         },
         "handicap": {
           "verdict": "skip",
@@ -108,21 +108,21 @@
       }
     },
     {
-      "mid": "2040193",
+      "mid": "2040176",
       "code": "周一015",
       "home": "沙特阿拉伯",
       "away": "乌拉圭",
       "kickoff": "2026-06-16 06:00",
       "handicap": 1,
       "spf": {
-        "home": 7.65,
-        "draw": 4.25,
+        "home": 7.5,
+        "draw": 4.3,
         "away": 1.31
       },
       "rqspf": {
-        "home": 2.84,
+        "home": 2.87,
         "draw": 3.3,
-        "away": 2.11
+        "away": 2.09
       },
       "status": "on_sale",
       "recommendations": {
@@ -159,7 +159,7 @@
       }
     },
     {
-      "mid": "2040194",
+      "mid": "2040177",
       "code": "周一016",
       "home": "伊朗",
       "away": "新西兰",
@@ -210,21 +210,21 @@
       }
     },
     {
-      "mid": "2040195",
+      "mid": "2040178",
       "code": "周二017",
       "home": "法国",
       "away": "塞内加尔",
       "kickoff": "2026-06-17 03:00",
       "handicap": -1,
       "spf": {
-        "home": 1.33,
-        "draw": 4.15,
-        "away": 7.3
+        "home": 1.31,
+        "draw": 4.23,
+        "away": 7.7
       },
       "rqspf": {
-        "home": 2.2,
-        "draw": 3.25,
-        "away": 2.72
+        "home": 2.12,
+        "draw": 3.37,
+        "away": 2.77
       },
       "status": "on_sale",
       "recommendations": {
@@ -232,7 +232,7 @@
           "pick": "home",
           "confidence": 3,
           "label": "大热门",
-          "rationale": "大热门（主胜 赔率 1.33，p0 67%）"
+          "rationale": "大热门（主胜 赔率 1.31，p0 68%）"
         },
         "handicap": {
           "verdict": "skip",
@@ -261,7 +261,7 @@
       }
     },
     {
-      "mid": "2040196",
+      "mid": "2040179",
       "code": "周二018",
       "home": "伊拉克",
       "away": "挪威",
@@ -269,11 +269,11 @@
       "handicap": 2,
       "spf": null,
       "rqspf": {
-        "home": 2.09,
+        "home": 2.16,
         "draw": 3.89,
-        "away": 2.54
+        "away": 2.44
       },
-      "status": "scheduled",
+      "status": "on_sale",
       "recommendations": {
         "win": {
           "pick": null,
@@ -308,7 +308,7 @@
       }
     },
     {
-      "mid": "2040197",
+      "mid": "2040180",
       "code": "周二019",
       "home": "阿根廷",
       "away": "阿尔及利亚",
@@ -320,8 +320,8 @@
         "away": 9.2
       },
       "rqspf": {
-        "home": 1.95,
-        "draw": 3.35,
+        "home": 1.9,
+        "draw": 3.5,
         "away": 3.15
       },
       "status": "on_sale",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "mid": "2040198",
+      "mid": "2040181",
       "code": "周二020",
       "home": "奥地利",
       "away": "约旦",
@@ -410,21 +410,21 @@
       }
     },
     {
-      "mid": "2040199",
+      "mid": "2040182",
       "code": "周三021",
       "home": "葡萄牙",
       "away": "刚果(金)",
       "kickoff": "2026-06-18 01:00",
-      "handicap": -2,
+      "handicap": -1,
       "spf": {
-        "home": 1.14,
-        "draw": 5.7,
-        "away": 13
+        "home": 1.13,
+        "draw": 5.86,
+        "away": 13.5
       },
       "rqspf": {
-        "home": 2.7,
-        "draw": 3.93,
-        "away": 1.98
+        "home": 2.66,
+        "draw": 3.94,
+        "away": 2
       },
       "status": "on_sale",
       "recommendations": {
@@ -432,12 +432,12 @@
           "pick": "home",
           "confidence": 3,
           "label": "大热门",
-          "rationale": "大热门（主胜 赔率 1.14，p0 78%）"
+          "rationale": "大热门（主胜 赔率 1.13，p0 78%）"
         },
         "handicap": {
           "verdict": "skip",
-          "reason": "让-2 样本不足（0 < 3）",
-          "sample_win_rate": null
+          "reason": "让-1 样本主胜率 43% < 55%",
+          "sample_win_rate": 0.429
         },
         "score_top3": [
           {
@@ -461,7 +461,7 @@
       }
     },
     {
-      "mid": "2040200",
+      "mid": "2040183",
       "code": "周三022",
       "home": "英格兰",
       "away": "克罗地亚",
@@ -512,12 +512,12 @@
       }
     },
     {
-      "mid": "2040201",
+      "mid": "2040184",
       "code": "周三023",
       "home": "加纳",
       "away": "巴拿马",
       "kickoff": "2026-06-18 07:00",
-      "handicap": -1,
+      "handicap": 1,
       "spf": {
         "home": 1.96,
         "draw": 3,
@@ -537,9 +537,9 @@
           "rationale": "适中（主胜 赔率 1.96，p0 45%）"
         },
         "handicap": {
-          "verdict": "skip",
-          "reason": "让-1 样本主胜率 43% < 55%",
-          "sample_win_rate": 0.429
+          "verdict": "chase",
+          "reason": "让1 样本主胜率 67% >= 55%",
+          "sample_win_rate": 0.667
         },
         "score_top3": [
           {
@@ -563,7 +563,7 @@
       }
     },
     {
-      "mid": "2040202",
+      "mid": "2040185",
       "code": "周三024",
       "home": "乌兹别克斯坦",
       "away": "哥伦比亚",

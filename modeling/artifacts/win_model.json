@@ -1,6 +1,6 @@
 {
   "model_type": "rule_based_with_confidence",
-  "generated_at": "2026-06-15T07:50:19.010Z",
+  "generated_at": "2026-06-15T10:32:51.217Z",
   "source": "modeling/data/01_matches_with_odds.json",
   "n_samples": 12,
   "rules": {

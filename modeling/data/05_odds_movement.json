@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T07:50:17.924Z",
+  "generated_at": "2026-06-15T10:32:49.774Z",
   "source": "data/odds_history/<mid>.json",
   "note": "n = 抓取快照次数；delta = last - open；range = max - min；fav_drift = 主流向是否切换",
   "total": 15,

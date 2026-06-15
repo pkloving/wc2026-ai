@@ -1,6 +1,6 @@
 {
   "model_type": "poisson_independent",
-  "generated_at": "2026-06-15T07:50:19.513Z",
+  "generated_at": "2026-06-15T10:32:51.785Z",
   "source": "modeling/data/01_matches_with_odds.json",
   "n_samples": 12,
   "global_lambda_home": 2.333,
