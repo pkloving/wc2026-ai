@@ -82,16 +82,28 @@ boot(async () => {
       } else if (activeFilter === 'pending') {
         if (r) return false;
       } else if (r) {
-        const hits = p.models.map((m) => hitBadge(r, m));
-        if (activeFilter === 'hit' && !hits.some((h) => h.tone === 'badge-pitch')) return false;
-        if (activeFilter === 'winner' && !hits.some((h) => h.tone === 'badge-gold')) return false;
-        if (activeFilter === 'miss' && !hits.every((h) => h.tone === 'badge-flame')) return false;
+        // 命中/胜负/未中 筛选：与模型筛选组合
+        // 选了具体模型 → 按该模型的单模型命中情况判断
+        // 没选具体模型 → 按"全场任一模型命中"或"全场全模型未中"判断
+        if (activeModelFilter !== '__all__') {
+          const model = p.prediction.models.find((m) => m.model === activeModelFilter);
+          if (!model) return false;
+          const badge = hitBadge(r, model);
+          if (activeFilter === 'hit' && badge.tone !== 'badge-pitch') return false;
+          if (activeFilter === 'winner' && badge.tone !== 'badge-gold') return false;
+          if (activeFilter === 'miss' && badge.tone !== 'badge-flame') return false;
+        } else {
+          const hits = p.prediction.models.map((m) => hitBadge(r, m));
+          if (activeFilter === 'hit' && !hits.some((h) => h.tone === 'badge-pitch')) return false;
+          if (activeFilter === 'winner' && !hits.some((h) => h.tone === 'badge-gold')) return false;
+          if (activeFilter === 'miss' && !hits.every((h) => h.tone === 'badge-flame')) return false;
+        }
       } else {
         return false;
       }
-      // 模型筛选
-      if (activeModelFilter !== '__all__') {
-        const hasModel = p.models.some((m) => m.model === activeModelFilter);
+      // 模型筛选（仅在状态筛选不涉及单模型命中时生效）
+      if (['all', 'finished', 'pending'].includes(activeFilter) && activeModelFilter !== '__all__') {
+        const hasModel = p.prediction.models.some((m) => m.model === activeModelFilter);
         if (!hasModel) return false;
       }
       return true;
@@ -157,8 +169,8 @@ boot(async () => {
         : `<span class="text-slate-400 text-sm">${t('common.pending')}</span>`;
       const modelChips = prediction.models.map((m) => {
         const badge = hitBadge(result, m);
-        const dim = activeModelFilter !== '__all__' && m.model !== activeModelFilter;
-        return `<span class="badge ${badge.tone} ${dim ? 'opacity-30' : ''}">${m.model.split(' ')[0]} ${m.predictedHome}-${m.predictedAway}</span>`;
+        const hide = activeModelFilter !== '__all__' && m.model !== activeModelFilter;
+        return `<span class="badge ${badge.tone} ${hide ? 'hidden' : ''}">${m.model.split(' ')[0]} ${m.predictedHome}-${m.predictedAway}</span>`;
       }).join(' ');
       return `
         <a href="/match.html?id=${match.id}" class="card p-5 hover:-translate-y-0.5 transition-transform block">
