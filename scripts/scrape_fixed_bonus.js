@@ -142,6 +142,18 @@ function parseSingleList(singleList) {
   return map;
 }
 
+// 比较两组赔率 {home, draw, away} 是否一致（用于去重 history 快照）
+function sameOdds(a, b) {
+  if (!a || !b) return false;
+  return a.home === b.home && a.draw === b.draw && a.away === b.away;
+}
+
+// 取 history 数组最后一个快照
+function lastOf(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) return null;
+  return arr[arr.length - 1];
+}
+
 async function fetchMatch(mid) {
   const url = `${API}?clientCode=3001&matchId=${mid}`;
   try {
@@ -170,16 +182,30 @@ function getLatestTime(arr) {
 async function main() {
   console.log(`Scraping ${MATCHES.length} matches...`);
   const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
+  // mid → 完赛状态 查表（用于跳过已完赛）
+  const statusByMid = new Map(statusDoc.matches.map((m) => [m.mid, m]));
+
+  // 统计：appended / skipped(unchanged) / skipped(finished) / no_data
+  const stats = { appended: 0, unchanged: 0, finished: 0, nodata: 0, error: 0 };
 
   for (const mid of MATCHES) {
     const list = MAIN_LIST[mid];
     if (!list) {
       console.warn(`  No main list data for ${mid}, skipping`);
+      stats.nodata += 1;
+      continue;
+    }
+    // 跳过已完赛：避免浪费 API，且不需要再为"赔率变动"积累
+    const st = statusByMid.get(mid);
+    if (st && st.status === 'finished') {
+      console.log(`  ${mid} (${list.code}): 跳过（已完赛 ${st.final_score || ''}）`);
+      stats.finished += 1;
       continue;
     }
     const apiData = await fetchMatch(mid);
     if (apiData.error) {
       console.error(`  ${mid} (${list.code}): ${apiData.error}`);
+      stats.error += 1;
       continue;
     }
 
@@ -234,20 +260,35 @@ async function main() {
     );
 
     // 写入 odds_history/<mid>.json
+    // 规则：① 保留第一次抓到的赔率（永远不删） ② 同场赔率未变则不追加 ③ 后续未完赛会再抓
     const histFile = path.join(HIST_DIR, `${mid}.json`);
     let hist = { mid, spf_history: [], rqspf_history: [] };
     if (fs.existsSync(histFile)) {
       hist = JSON.parse(fs.readFileSync(histFile, 'utf8'));
+      // 兜底：旧文件可能没有空数组
+      hist.spf_history = Array.isArray(hist.spf_history) ? hist.spf_history : [];
+      hist.rqspf_history = Array.isArray(hist.rqspf_history) ? hist.rqspf_history : [];
     }
-    // 追加本次快照
     const now = new Date().toISOString();
+    let spfAppended = false, rqAppended = false;
     if (spf) {
-      hist.spf_history.push({ time: now, ...spf });
+      const prev = lastOf(hist.spf_history);
+      // 首次 OR 与上次赔率不一致 → 追加
+      if (!prev || !sameOdds(prev, spf)) {
+        hist.spf_history.push({ time: now, ...spf });
+        spfAppended = true;
+      }
     }
     if (odds.rqspf_latest) {
-      hist.rqspf_history.push({ time: now, ...odds.rqspf_latest });
+      const prev = lastOf(hist.rqspf_history);
+      if (!prev || !sameOdds(prev, odds.rqspf_latest)) {
+        hist.rqspf_history.push({ time: now, ...odds.rqspf_latest });
+        rqAppended = true;
+      }
     }
     fs.writeFileSync(histFile, JSON.stringify(hist, null, 2), 'utf8');
+    if (spfAppended || rqAppended) stats.appended += 1;
+    else stats.unchanged += 1;
 
     // 更新 status
     const statusEntry = statusDoc.matches.find(m => m.mid === mid);
@@ -264,13 +305,14 @@ async function main() {
     const spfStr = spf ? `${spf.home}/${spf.draw}/${spf.away}` : 'null';
     const rqspfStr = odds.rqspf_latest ? `${odds.rqspf_latest.home}/${odds.rqspf_latest.draw}/${odds.rqspf_latest.away}` : 'null';
     const singleStr = Object.entries(single).filter(([k, v]) => v).map(([k]) => k).join(',') || 'none';
-    console.log(`  ${mid} (${list.code}): spf=${spfStr} rqspf=${rqspfStr} h=${odds.handicap} single=[${singleStr}]`);
+    const histTag = spfAppended || rqAppended ? '✓' : '·';
+    console.log(`  ${histTag} ${mid} (${list.code}): spf=${spfStr} rqspf=${rqspfStr} h=${odds.handicap} single=[${singleStr}]`);
   }
 
   // 写回 status
   fs.writeFileSync(STATUS_PATH, JSON.stringify(statusDoc, null, 2), 'utf8');
   console.log(`\nUpdated matches_status.json`);
-  console.log(`Done.`);
+  console.log(`Done.  appended=${stats.appended}  unchanged=${stats.unchanged}  finished=${stats.finished}  error=${stats.error}  no_data=${stats.nodata}`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

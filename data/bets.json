@@ -16,11 +16,7 @@
       "matchLabel": "周日009 + 周日010 + 周日011 + 周日012 比分（赔率时点 18:44）",
       "date": "2026-06-14T18:44:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1",
-        "3x1",
-        "4x1"
-      ],
+      "parlayType": ["2x1", "3x1", "4x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/11.jpg）",
       "picks": [
@@ -121,10 +117,7 @@
       "matchLabel": "周六005 + 周六006 + 周六007 + 周六008 比分（赔率时点 20:34）",
       "date": "2026-06-13T20:34:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1",
-        "4x1"
-      ],
+      "parlayType": ["2x1", "4x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/9.jpg）",
       "picks": [
@@ -248,10 +241,7 @@
       "matchLabel": "周六005 bqc 负负 + 周六006 让-1 平 + 周六007 bqc 负负 + 周六008 zjqs{3,2}（赔率时点 20:25）",
       "date": "2026-06-13T20:25:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1",
-        "4x1"
-      ],
+      "parlayType": ["2x1", "4x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/10.jpg）",
       "picks": [
@@ -324,9 +314,7 @@
       "matchLabel": "周四001 bqc 胜胜 + 周四002{让-1 主胜, 胜平负 主胜} + 周五003 让-1 主胜 + 周五004 让-1 主胜（赔率时点 19:03）",
       "date": "2026-06-12T19:03:00",
       "stakeMultiplier": 2,
-      "parlayType": [
-        "4x1"
-      ],
+      "parlayType": ["4x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/5.jpg）",
       "picks": [
@@ -403,9 +391,7 @@
       "matchLabel": "周四001 bf 2:0 + 周四002 bf 1:1 + 周五003 bf 2:0 + 周五004 bf{1:0,1:1}（赔率时点 17:13）",
       "date": "2026-06-12T17:13:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "4x1"
-      ],
+      "parlayType": ["4x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/6.jpg）",
       "picks": [
@@ -509,9 +495,7 @@
       "matchLabel": "周五003 bf{1:0,0:1,1:2} + 周五004 bf 2:1（赔率时点 16:17）",
       "date": "2026-06-12T16:17:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/2.png 第1张）",
       "picks": [
@@ -574,9 +558,7 @@
       "matchLabel": "周五003 bf{1:0,0:1,1:2} + 周五004 胜平负 主胜（赔率时点 16:17）",
       "date": "2026-06-12T16:17:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/2.png 第2张）",
       "picks": [
@@ -639,9 +621,7 @@
       "matchLabel": "周五003 zjqs 2 + 周五004 bf 2:1（赔率时点 15:30）",
       "date": "2026-06-12T15:30:00",
       "stakeMultiplier": 3,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/4.png）",
       "picks": [
@@ -682,9 +662,7 @@
       "matchLabel": "周五003 bqc{胜-平,负-平} + 周五004 spf 主胜（赔率时点 15:08）",
       "date": "2026-06-12T15:08:00",
       "stakeMultiplier": 2,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/3.png）",
       "picks": [
@@ -737,9 +715,7 @@
       "matchLabel": "周四001 zjqs{3,2} + 周四002 zjqs{2,3}（赔率时点 16:58）",
       "date": "2026-06-11T16:58:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/7.jpg）",
       "picks": [
@@ -803,9 +779,7 @@
       "matchLabel": "周四001 bf 2:0 + 周四002 bf 1:1（赔率时点 16:56）",
       "date": "2026-06-11T16:56:00",
       "stakeMultiplier": 5,
-      "parlayType": [
-        "2x1"
-      ],
+      "parlayType": ["2x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（data/temp/8.jpg）",
       "picks": [
@@ -878,10 +852,7 @@
       "matchLabel": "周一 201/202/203 让球胜平负（赔率时点 11:40-11:41）",
       "date": "2026-06-08T11:55:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1",
-        "3x1"
-      ],
+      "parlayType": ["2x1", "3x1"],
       "picks": [
         {
           "match": "周一201",
@@ -925,10 +896,7 @@
       "matchLabel": "周二 201 spf + 周二 202 bqc + 周二 203 rqspf（赔率时点 14:20）",
       "date": "2026-06-09T14:30:00",
       "stakeMultiplier": 1,
-      "parlayType": [
-        "2x1",
-        "3x1"
-      ],
+      "parlayType": ["2x1", "3x1"],
       "picks": [
         {
           "match": "周二201",
@@ -973,10 +941,7 @@
       "matchLabel": "周一014 + 周二017 + 周二019 + 周四001 + 周日010 让球-1（赔率时点 16:10）",
       "date": "2026-06-09T16:13:00",
       "stakeMultiplier": 4,
-      "parlayType": [
-        "3x1",
-        "5x1"
-      ],
+      "parlayType": ["3x1", "5x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（票号见 records/2026-06-09.md 段二补）",
       "picks": [
@@ -1055,10 +1020,7 @@
       "matchLabel": "周二017 spf + 周二019 spf + 周四001 spf + 周六006 spf + 周六007 spf + 周日010 rqspf（赔率时点 15:50）",
       "date": "2026-06-09T15:53:00",
       "stakeMultiplier": 7,
-      "parlayType": [
-        "5x1",
-        "6x1"
-      ],
+      "parlayType": ["5x1", "6x1"],
       "isActual": true,
       "source": "竞彩 APP 截图（票号见 records/2026-06-09.md 段二补）",
       "picks": [
@@ -1144,9 +1106,7 @@
       "matchLabel": "周一014 + 周二017 + 周二019 spf 主胜（赔率时点 2026-06-15 14:00，3×1 × 50 倍）",
       "date": "2026-06-15T14:00:00",
       "stakeMultiplier": 50,
-      "parlayType": [
-        "3x1"
-      ],
+      "parlayType": ["3x1"],
       "isActual": true,
       "source": "modeling/artifacts/predict_unplayed.json (2026-06-15T05:28)",
       "picks": [
@@ -1198,9 +1158,7 @@
       "matchLabel": "周一014 rqspf 让-1 主胜 + 周一015 rqspf 让+1 主胜 + 周一016 rqspf 让-1 主胜（赔率时点 2026-06-15 14:00，3×1 × 25 倍）",
       "date": "2026-06-15T14:00:00",
       "stakeMultiplier": 25,
-      "parlayType": [
-        "3x1"
-      ],
+      "parlayType": ["3x1"],
       "isActual": true,
       "source": "data/matches_status.json rqspf 字段 (2026-06-15T11:26)",
       "picks": [
@@ -1251,13 +1209,11 @@
     {
       "id": "mix-4way-parlay-2026-06-15",
       "type": "match",
-      "title": "[mix] 4 场混合串关（4×1 × 5 倍 · 西班牙-2/比利时spf/沙特bf/伊朗spf）",
-      "matchLabel": "周一013 西班牙-2 胜 + 周一014 比利时胜 + 周一015 沙特 0:1 乌拉圭 + 周一016 伊朗胜（赔率时点 2026-06-15 14:00，4×1 × 5 倍）",
+      "title": "[mix] 4 场混合串关（4×1 × 2 组合 · 5 倍 · 西班牙-2/比利时spf/沙特bf×2/伊朗spf）",
+      "matchLabel": "周一013 西班牙-2 胜 + 周一014 比利时胜 + 周一015 沙特 0:1 或 0:2 乌拉圭 + 周一016 伊朗胜（赔率时点 2026-06-15 14:00，4×1 × 2 组合 × 5 倍）",
       "date": "2026-06-15T14:00:00",
       "stakeMultiplier": 5,
-      "parlayType": [
-        "4x1"
-      ],
+      "parlayType": ["4x1"],
       "isActual": true,
       "source": "data/matches_status.json spf 字段 + 用户自定义 bf 比分 + rqspf 让-2 (null 待补)",
       "picks": [
@@ -1296,6 +1252,17 @@
           "odds": null
         },
         {
+          "mid": "2040193",
+          "match": "周一015",
+          "home": "KSA",
+          "away": "URU",
+          "kickoff": "2026-06-16 06:00",
+          "play": "bf",
+          "pick": "0-2",
+          "pickLabel": "0:2（沙特 0 球 · 乌拉圭 2 球）",
+          "odds": null
+        },
+        {
           "mid": "2040194",
           "match": "周一016",
           "home": "IRN",
@@ -1308,11 +1275,11 @@
         }
       ],
       "unitCost": 2,
-      "combinations": 1,
-      "totalCost": 10,
+      "combinations": 2,
+      "totalCost": 20,
       "maxReturn": null,
       "result": "pending",
-      "note": "⚠️ 2 项赔率 null：(1) 2040191 rqspf 让-2 主胜 = null (spf 已开，rqspf 待开售)；(2) 沙特 0:1 bf 比分赔率未拉（matches_status.json 仅存 spf/rqspf 字段）。出票前必须补抓 sporttery.cn bf 表 + 等 rqspf 开售后录入实际赔率。R-004 #2 不同场不同玩法串关 OK (rqspf+spf+bf+spf)"
+      "note": "⚠️ 3 项赔率 null：(1) 2040191 rqspf 让-2 主胜 = null (spf 已开，rqspf 待开售)；(2) 沙特 0:1 bf 比分赔率未拉；(3) 沙特 0:2 bf 比分赔率未拉（matches_status.json 仅存 spf/rqspf 字段）。出票前必须补抓 sporttery.cn bf 表 + 等 rqspf 开售后录入实际赔率。R-004 #2 不同场不同玩法串关 OK (rqspf+spf+bf×2+spf)。沙特 0:1/0:2 共 2 注 → combinations=2 → totalCost=2×2×5=20 元"
     }
   ]
 }

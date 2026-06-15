@@ -9,6 +9,7 @@
 - 随着小组赛继续完赛，重跑 `npm run modeling:all` 即可自然扩展样本。
 - 模型**不接入 Vite 站点前端**，`predict_unplayed.json` 是独立产物（避免污染构建）。
 - **范围硬限制**：训练仅吸收"世界杯正赛"完赛样本（`league === "世界杯"`），预测仅对"世界杯正赛"未完赛场次（M001-M104）出推荐；竞彩开的国际赛热身盘（`league === "国际赛"`）一律忽略。
+- **赔率变动（movement）特征已占位**：02*feature_records.json 每场带 33 个 `mov*\*` 字段（spf/rqspf 各 13 维 + 综合 3 维 + 重复 1 项），但**当前快照多 n=1 → 多数 delta=0**。等抓取侧把"开赛前多次采样"提频后自动激活，模型侧不需要再改。详细见下方"赔率变动（movement）特征"一节。
 
 ## 📁 目录结构
 
@@ -19,6 +20,7 @@ modeling/
 │   ├── 02_feature_records.json
 │   ├── 03_implied_probability.json
 │   ├── 04_handicap_table.json
+│   ├── 05_odds_movement.json        # 赔率变动明细（开盘 → 收盘）
 │   └── international_warmup.json
 ├── artifacts/                  # 建模后产物（用户硬要求 2）
 │   ├── win_model.json
@@ -58,19 +60,55 @@ npm run modeling:predict   # 3：对未开赛出推荐
 
 ### 产物（按 `modeling:all` 顺序产出）
 
-| 文件                          | 类型     | 说明                                                   |
-| ----------------------------- | -------- | ------------------------------------------------------ |
-| `data/01_matches_with_odds.json` | 原始 + 衍生 | 完赛场次合并后完整记录（含 `derived.*` 衍生特征）      |
-| `data/02_feature_records.json`   | 特征     | 25+ 维机器可读特征                                     |
-| `data/03_implied_probability.json` | P0 反推 | 赔率 → 市场隐含概率（去 vig）+ 实际命中                 |
-| `data/04_handicap_table.json`    | 分组统计 | 按 handicap 档位聚合的实际主胜/走/负率                  |
-| `artifacts/win_model.json`       | 模型参数 | 胜平负规则阈值 + 校准命中率 + 信心度映射                |
-| `artifacts/handicap_model.json`  | 模型参数 | 让球盘路倾向表 + chase/skip 判定阈值                    |
-| `artifacts/score_model.json`     | 模型参数 | Poisson 全局 λ + 三档调系数                              |
-| `artifacts/score_top3_sample.json` | 样本回放 | 每场完赛用模型反推的 Top-3 比分（赛后比对用）           |
-| `artifacts/predict_unplayed.json` | 预测   | 全部**世界杯正赛**未开赛场次的胜平负 + 让球 + Top-3 比分推荐（国际赛热身忽略）|
+| 文件                               | 类型        | 说明                                                                           |
+| ---------------------------------- | ----------- | ------------------------------------------------------------------------------ |
+| `data/01_matches_with_odds.json`   | 原始 + 衍生 | 完赛场次合并后完整记录（含 `derived.*` 衍生特征）                              |
+| `data/02_feature_records.json`     | 特征        | 25+ 维机器可读特征                                                             |
+| `data/03_implied_probability.json` | P0 反推     | 赔率 → 市场隐含概率（去 vig）+ 实际命中                                        |
+| `data/04_handicap_table.json`      | 分组统计    | 按 handicap 档位聚合的实际主胜/走/负率                                         |
+| `data/05_odds_movement.json`       | 变动明细    | 赔率开盘 → 收盘 / delta / range / 主流向漂移（见下文）                         |
+| `artifacts/win_model.json`         | 模型参数    | 胜平负规则阈值 + 校准命中率 + 信心度映射                                       |
+| `artifacts/handicap_model.json`    | 模型参数    | 让球盘路倾向表 + chase/skip 判定阈值                                           |
+| `artifacts/score_model.json`       | 模型参数    | Poisson 全局 λ + 三档调系数                                                    |
+| `artifacts/score_top3_sample.json` | 样本回放    | 每场完赛用模型反推的 Top-3 比分（赛后比对用）                                  |
+| `artifacts/predict_unplayed.json`  | 预测        | 全部**世界杯正赛**未开赛场次的胜平负 + 让球 + Top-3 比分推荐（国际赛热身忽略） |
 
 ## 🧠 模型一览
+
+### 0. 赔率变动（movement）特征
+
+> 这不是独立模型，而是 3 个模型可共用的衍生特征。**已实现 + 落盘**，但**目前多数场次 n=1 → 字段全 0**，等抓取侧把"开赛前多次采样"提频后自动激活。
+
+**输入**：`data/odds_history/<mid>.json`
+
+```json
+{ "spf_history":   [{"time": "...", "home": 1.34, "draw": 3.92, "away": 7.85}, ...],
+  "rqspf_history": [...] }
+```
+
+**特征维度**（spf / rqspf 各 1 组 + 综合 3 项，共 33 维落到 02_feature_records.json）：
+
+| 维度                    | 含义                                  | 用途（待激活）                           |
+| ----------------------- | ------------------------------------- | ---------------------------------------- |
+| `n`                     | 快照次数                              | 至少 ≥2 才有 delta 意义                  |
+| `open_*`                | 首次抓取的赔率（开盘）                | 对照基准                                 |
+| `last_*`                | 最近一次赔率                          | 当前赔率（≠ matches_status.json 的 spf） |
+| `delta_*`               | `last - open`                         | 升/降方向与绝对幅度                      |
+| `range_*`               | `max - min`（按 home/draw/away 分算） | 波动幅度                                 |
+| `fav_open` / `fav_last` | p0 最大方向（home/draw/away）         | 主流向                                   |
+| `fav_drift`             | 主流向是否切换（0 稳定 / 1 切换）     | 异动信号                                 |
+| `p0_open` / `p0_last`   | 反推 P0 的开盘 / 最新                 | 概率侧 delta                             |
+| `p0_delta_*`            | `p0_last - p0_open`（home/draw/away） | 概率漂移                                 |
+| `summary.total_n`       | spf + rqspf 快照总数                  |                                          |
+| `summary.any_drift`     | 任一侧主流向切换过                    |                                          |
+| `summary.max_abs_delta` | 所有 delta 中 max(\|.\|)              |                                          |
+
+**激活路线图**：
+
+1. 当前 02/03/04 训练脚本**没读** mov\_\*（数据稀疏会引入噪声），保持训练侧不依赖 movement。
+2. 抓取侧把 `data/odds_history/<mid>.json` 的快照数提到 ≥3 后，02 训练脚本可加一条规则：`mov_spf_fav_drift === 1` 时把胜平负信心度从 ⭐⭐ 降为 ⭐。
+3. 让球 chase 侧可加：`mov_rqspf_p0_delta_home < -0.05`（主胜概率反推下降）时取消 chase。
+4. 比分 Poisson 可加：把 `range` 当 λ 调系数（异动场次 λ 放大）。
 
 ### 1. 胜平负模型（`win_model.json`）
 
@@ -96,10 +134,12 @@ npm run modeling:predict   # 3：对未开赛出推荐
 ## ✅ 自检 / 验证
 
 `modeling:predict` 跑完会做：
+
 1. **mid 自检**：每条 `predictions[].mid` 必须在 `matches_status.json` 找得到，找不到立即 exit 1（避免幻觉 mid）。
 2. **确定性**：3 个训练脚本无随机过程，重跑 `modeling:all` 产物应逐字节一致。
 
 手动抽查：
+
 ```bash
 # 看推荐 JSON
 cat modeling/artifacts/predict_unplayed.json | head -60
@@ -111,6 +151,7 @@ node -e "JSON.parse(require('fs').readFileSync('modeling/artifacts/predict_unpla
 ## 🔄 赛后回填（持续扩展）
 
 当 `data/results/` 新增一场完赛结果时：
+
 1. 重跑 `npm run modeling:all` 即可
 2. 样本自动扩展，模型参数重新校准
 3. `predict_unplayed.json` 自动剔除已开赛场次，只对真正的未开赛出推荐
@@ -125,12 +166,12 @@ node -e "JSON.parse(require('fs').readFileSync('modeling/artifacts/predict_unpla
 
 > 用 `01_matches_with_odds.json` 的 12 场完赛样本 + 同一套 predict 函数做的自测，**只作"基线快照"**，不外推到 100% 命中率。
 
-| 模型          | 命中率       | 样本           | 备注 |
-| ------------- | ------------ | -------------- | ---- |
-| 胜平负（spf_min_odds 方向）| 4/8 = **50%** | 8 场有 spf（4 场 spf=null 已 skip）| 与市场隐含持平 |
-| 让球 chase  | 2/3 = **67%** | 3 场让+1（其他档位样本不足 skip）| 与 chase 阈值 55% 一致 |
-| 比分 Top-1   | 2/12 = 17%  | 12 场 | 简版 Poisson 命中率有限，仅作"参考倾向" |
-| 比分 Top-3   | 4/12 = 33%  | 12 场 | 同上 |
+| 模型                        | 命中率        | 样本                                | 备注                                    |
+| --------------------------- | ------------- | ----------------------------------- | --------------------------------------- |
+| 胜平负（spf_min_odds 方向） | 4/8 = **50%** | 8 场有 spf（4 场 spf=null 已 skip） | 与市场隐含持平                          |
+| 让球 chase                  | 2/3 = **67%** | 3 场让+1（其他档位样本不足 skip）   | 与 chase 阈值 55% 一致                  |
+| 比分 Top-1                  | 2/12 = 17%    | 12 场                               | 简版 Poisson 命中率有限，仅作"参考倾向" |
+| 比分 Top-3                  | 4/12 = 33%    | 12 场                               | 同上                                    |
 
 **重要发现**（样本内的反向价值信号，12 场）：
 

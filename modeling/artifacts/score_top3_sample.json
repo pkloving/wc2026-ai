@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T05:46:01.920Z",
+  "generated_at": "2026-06-15T07:50:19.516Z",
   "note": "每场样本用实际 spf 赔率驱动 Poisson，Top-3 是模型给该场的最佳 3 个比分概率",
   "total": 12,
   "samples": [

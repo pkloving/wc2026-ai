@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T05:46:00.150Z",
+  "generated_at": "2026-06-15T07:50:17.925Z",
   "note": "3 场国际赛热身，不进主建模（避免污染世界杯特征）",
   "total": 3,
   "matches": [
@@ -74,7 +74,96 @@
           "vig": 0.1292072491096783
         },
         "spf_hit": true,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.14,
+              "draw": 5.85,
+              "away": 12.5
+            },
+            "last": {
+              "home": 1.14,
+              "draw": 5.85,
+              "away": 12.5
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.7775615669261197,
+              "p0_draw": 0.15152481817021818,
+              "p0_away": 0.0709136149036621,
+              "vig": 0.12813315339631148
+            },
+            "p0_last": {
+              "p0_home": 0.7775615669261197,
+              "p0_draw": 0.15152481817021818,
+              "p0_away": 0.0709136149036621,
+              "vig": 0.12813315339631148
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 3,
+            "open": {
+              "home": 2.62,
+              "draw": 3.85,
+              "away": 2.05
+            },
+            "last": {
+              "home": 2.78,
+              "draw": 3.55,
+              "away": 2.05
+            },
+            "delta": {
+              "home": 0.16,
+              "draw": -0.3,
+              "away": 0
+            },
+            "range": {
+              "home": 0.16,
+              "draw": 0.3,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.33800132759469814,
+              "p0_draw": 0.23001648786963874,
+              "p0_away": 0.43198218453566306,
+              "vig": 0.12922452710201737
+            },
+            "p0_last": {
+              "p0_home": 0.3185528878772625,
+              "p0_draw": 0.24945831783064498,
+              "p0_away": 0.4319887942920926,
+              "vig": 0.1292072491096783
+            },
+            "p0_delta_home": -0.019,
+            "p0_delta_draw": 0.019,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 4,
+            "any_drift": 0,
+            "max_abs_delta": 0.3
+          }
+        }
       }
     },
     {
@@ -145,7 +234,70 @@
           "vig": 0.1295813414457483
         },
         "spf_hit": null,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 3,
+            "open": {
+              "home": 1.92,
+              "draw": 3.9,
+              "away": 2.85
+            },
+            "last": {
+              "home": 1.95,
+              "draw": 3.6,
+              "away": 2.95
+            },
+            "delta": {
+              "home": 0.03,
+              "draw": -0.3,
+              "away": 0.1
+            },
+            "range": {
+              "home": 0.03,
+              "draw": 0.3,
+              "away": 0.1
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.4616822429906542,
+              "p0_draw": 0.22728971962616823,
+              "p0_away": 0.3110280373831775,
+              "vig": 0.128120782726046
+            },
+            "p0_last": {
+              "p0_home": 0.4539916639948702,
+              "p0_draw": 0.24591215133055466,
+              "p0_away": 0.30009618467457516,
+              "vig": 0.1295813414457483
+            },
+            "p0_delta_home": -0.008,
+            "p0_delta_draw": 0.019,
+            "p0_delta_away": -0.011
+          },
+          "summary": {
+            "total_n": 3,
+            "any_drift": 0,
+            "max_abs_delta": 0.3
+          }
+        }
       }
     },
     {
@@ -216,7 +368,70 @@
           "vig": 0.12938100565751798
         },
         "spf_hit": null,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 3,
+            "open": {
+              "home": 2.68,
+              "draw": 3.85,
+              "away": 2.02
+            },
+            "last": {
+              "home": 2.68,
+              "draw": 3.6,
+              "away": 2.09
+            },
+            "delta": {
+              "home": 0,
+              "draw": -0.25,
+              "away": 0.07
+            },
+            "range": {
+              "home": 0,
+              "draw": 0.25,
+              "away": 0.07
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.33081510596122266,
+              "p0_draw": 0.23028168414963032,
+              "p0_away": 0.43890320988914694,
+              "vig": 0.1279240930489638
+            },
+            "p0_last": {
+              "p0_home": 0.3303883512198548,
+              "p0_draw": 0.24595577257478085,
+              "p0_away": 0.4236558762053642,
+              "vig": 0.12938100565751798
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0.016,
+            "p0_delta_away": -0.015
+          },
+          "summary": {
+            "total_n": 3,
+            "any_drift": 0,
+            "max_abs_delta": 0.25
+          }
+        }
       }
     }
   ]

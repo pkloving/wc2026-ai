@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T05:46:03.047Z",
+  "generated_at": "2026-06-15T07:50:20.533Z",
   "source": "data/matches_status.json (status !== finished && league === \"世界杯\")",
   "scope": "世界杯正赛（data/matches.json M001-M104），不含国际赛热身",
   "models_used": [

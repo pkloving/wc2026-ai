@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T05:46:00.141Z",
+  "generated_at": "2026-06-15T07:50:17.913Z",
   "source": "data/matches_status.json + data/results/*.json",
   "total": 12,
   "matches": [
@@ -55,7 +55,96 @@
           "vig": 0.12923571605243644
         },
         "spf_hit": true,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.34,
+              "draw": 3.92,
+              "away": 7.85
+            },
+            "last": {
+              "home": 1.34,
+              "draw": 3.92,
+              "away": 7.85
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.6611406889854288,
+              "p0_draw": 0.22600217429603947,
+              "p0_away": 0.1128571367185318,
+              "vig": 0.12875923256459143
+            },
+            "p0_last": {
+              "p0_home": 0.6611406889854288,
+              "p0_draw": 0.22600217429603947,
+              "p0_away": 0.1128571367185318,
+              "vig": 0.12875923256459143
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 2.25,
+              "draw": 3.18,
+              "away": 2.7
+            },
+            "last": {
+              "home": 2.25,
+              "draw": 3.18,
+              "away": 2.7
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.3935643564356435,
+              "p0_draw": 0.27846534653465344,
+              "p0_away": 0.32797029702970293,
+              "vig": 0.12928022361984626
+            },
+            "p0_last": {
+              "p0_home": 0.3935643564356435,
+              "p0_draw": 0.27846534653465344,
+              "p0_away": 0.32797029702970293,
+              "vig": 0.12928022361984626
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -110,7 +199,96 @@
           "vig": 0.12854723150639025
         },
         "spf_hit": true,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 2.43,
+              "draw": 2.84,
+              "away": 2.74
+            },
+            "last": {
+              "home": 2.43,
+              "draw": 2.84,
+              "away": 2.74
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.364631460568858,
+              "p0_draw": 0.31199100323321305,
+              "p0_away": 0.32337753619792886,
+              "vig": 0.12859881345082913
+            },
+            "p0_last": {
+              "p0_home": 0.364631460568858,
+              "p0_draw": 0.31199100323321305,
+              "p0_away": 0.32337753619792886,
+              "vig": 0.12859881345082913
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 5.8,
+              "draw": 4.05,
+              "away": 1.41
+            },
+            "last": {
+              "home": 5.8,
+              "draw": 4.05,
+              "away": 1.41
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.15277499097074523,
+              "p0_draw": 0.21878887595810426,
+              "p0_away": 0.6284361330711505,
+              "vig": 0.12854723150639025
+            },
+            "p0_last": {
+              "p0_home": 0.15277499097074523,
+              "p0_draw": 0.21878887595810426,
+              "p0_away": 0.6284361330711505,
+              "vig": 0.12854723150639025
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -165,7 +343,96 @@
           "vig": 0.12981823192654107
         },
         "spf_hit": false,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.59,
+              "draw": 3.38,
+              "away": 4.9
+            },
+            "last": {
+              "home": 1.59,
+              "draw": 3.38,
+              "away": 4.9
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.5571328614871228,
+              "p0_draw": 0.2620832099895046,
+              "p0_away": 0.1807839285233725,
+              "vig": 0.12887043842880463
+            },
+            "p0_last": {
+              "p0_home": 0.5571328614871228,
+              "p0_draw": 0.2620832099895046,
+              "p0_away": 0.1807839285233725,
+              "vig": 0.12887043842880463
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 2.95,
+              "draw": 3.3,
+              "away": 2.05
+            },
+            "last": {
+              "home": 2.95,
+              "draw": 3.3,
+              "away": 2.05
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.30003326311120965,
+              "p0_draw": 0.2682115533872935,
+              "p0_away": 0.4317551835014969,
+              "vig": 0.12981823192654107
+            },
+            "p0_last": {
+              "p0_home": 0.30003326311120965,
+              "p0_draw": 0.2682115533872935,
+              "p0_away": 0.4317551835014969,
+              "vig": 0.12981823192654107
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -220,7 +487,96 @@
           "vig": 0.12867755285805815
         },
         "spf_hit": true,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.87,
+              "draw": 3.02,
+              "away": 3.8
+            },
+            "last": {
+              "home": 1.87,
+              "draw": 3.02,
+              "away": 3.8
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.47363946280138997,
+              "p0_draw": 0.29328006471476803,
+              "p0_away": 0.23308047248384192,
+              "vig": 0.12904308084018168
+            },
+            "p0_last": {
+              "p0_home": 0.47363946280138997,
+              "p0_draw": 0.29328006471476803,
+              "p0_away": 0.23308047248384192,
+              "vig": 0.12904308084018168
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 3.95,
+              "draw": 3.4,
+              "away": 1.72
+            },
+            "last": {
+              "home": 3.95,
+              "draw": 3.4,
+              "away": 1.72
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.2243019331083154,
+              "p0_draw": 0.2605860693464253,
+              "p0_away": 0.5151119975452593,
+              "vig": 0.12867755285805815
+            },
+            "p0_last": {
+              "p0_home": 0.2243019331083154,
+              "p0_draw": 0.2605860693464253,
+              "p0_away": 0.5151119975452593,
+              "vig": 0.12867755285805815
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -266,7 +622,70 @@
           "vig": 0.12975426844039983
         },
         "spf_hit": null,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 1.98,
+              "draw": 3.85,
+              "away": 2.74
+            },
+            "last": {
+              "home": 1.98,
+              "draw": 3.85,
+              "away": 2.74
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.4470445646093605,
+              "p0_draw": 0.22990863322767105,
+              "p0_away": 0.3230468021629685,
+              "vig": 0.12975426844039983
+            },
+            "p0_last": {
+              "p0_home": 0.4470445646093605,
+              "p0_draw": 0.22990863322767105,
+              "p0_away": 0.3230468021629685,
+              "vig": 0.12975426844039983
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 1,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -321,7 +740,96 @@
           "vig": 0.1290076024702933
         },
         "spf_hit": false,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.55,
+              "draw": 3.45,
+              "away": 5.15
+            },
+            "last": {
+              "home": 1.55,
+              "draw": 3.45,
+              "away": 5.15
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.5713481791140766,
+              "p0_draw": 0.2566926601816866,
+              "p0_away": 0.17195916070423667,
+              "vig": 0.12919112006790212
+            },
+            "p0_last": {
+              "p0_home": 0.5713481791140766,
+              "p0_draw": 0.2566926601816866,
+              "p0_away": 0.17195916070423667,
+              "vig": 0.12919112006790212
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 2.8,
+              "draw": 3.26,
+              "away": 2.15
+            },
+            "last": {
+              "home": 2.8,
+              "draw": 3.26,
+              "away": 2.15
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.3163334386424155,
+              "p0_draw": 0.2716974319628109,
+              "p0_away": 0.41196912939477365,
+              "vig": 0.1290076024702933
+            },
+            "p0_last": {
+              "p0_home": 0.3163334386424155,
+              "p0_draw": 0.2716974319628109,
+              "p0_away": 0.41196912939477365,
+              "vig": 0.1290076024702933
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -367,7 +875,96 @@
           "vig": 0.1297332809851972
         },
         "spf_hit": null,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 7.65,
+              "draw": 4.25,
+              "away": 1.31
+            },
+            "last": {
+              "home": 7.65,
+              "draw": 4.25,
+              "away": 1.31
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.11574483124226896,
+              "p0_draw": 0.20834069623608412,
+              "p0_away": 0.6759144725216469,
+              "vig": 0.129371850521379
+            },
+            "p0_last": {
+              "p0_home": 0.11574483124226896,
+              "p0_draw": 0.20834069623608412,
+              "p0_away": 0.6759144725216469,
+              "vig": 0.129371850521379
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 2.81,
+              "draw": 3.35,
+              "away": 2.11
+            },
+            "last": {
+              "home": 2.81,
+              "draw": 3.35,
+              "away": 2.11
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.3154017428863376,
+              "p0_draw": 0.26456086492853986,
+              "p0_away": 0.4200373921851226,
+              "vig": 0.12831299809666308
+            },
+            "p0_last": {
+              "p0_home": 0.3154017428863376,
+              "p0_draw": 0.26456086492853986,
+              "p0_away": 0.4200373921851226,
+              "vig": 0.12831299809666308
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -413,7 +1010,96 @@
           "vig": 0.1296619515797599
         },
         "spf_hit": null,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 5.15,
+              "draw": 3.45,
+              "away": 1.55
+            },
+            "last": {
+              "home": 5.15,
+              "draw": 3.45,
+              "away": 1.55
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.17195916070423667,
+              "p0_draw": 0.2566926601816866,
+              "p0_away": 0.5713481791140766,
+              "vig": 0.12919112006790212
+            },
+            "p0_last": {
+              "p0_home": 0.17195916070423667,
+              "p0_draw": 0.2566926601816866,
+              "p0_away": 0.5713481791140766,
+              "vig": 0.12919112006790212
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 2.11,
+              "draw": 3.25,
+              "away": 2.88
+            },
+            "last": {
+              "home": 2.11,
+              "draw": 3.25,
+              "away": 2.88
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.4198382546211364,
+              "p0_draw": 0.27257191300018396,
+              "p0_away": 0.30758983237867976,
+              "vig": 0.12884817920362934
+            },
+            "p0_last": {
+              "p0_home": 0.4198382546211364,
+              "p0_draw": 0.27257191300018396,
+              "p0_away": 0.30758983237867976,
+              "vig": 0.12884817920362934
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -459,7 +1145,70 @@
           "vig": 0.1103879015068876
         },
         "spf_hit": null,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 1.94,
+              "draw": 4.6,
+              "away": 2.52
+            },
+            "last": {
+              "home": 1.94,
+              "draw": 4.6,
+              "away": 2.52
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.45629172439853893,
+              "p0_draw": 0.1924360750724273,
+              "p0_away": 0.3512722005290339,
+              "vig": 0.12968061869899605
+            },
+            "p0_last": {
+              "p0_home": 0.45629172439853893,
+              "p0_draw": 0.1924360750724273,
+              "p0_away": 0.3512722005290339,
+              "vig": 0.12968061869899605
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 1,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -514,7 +1263,96 @@
           "vig": 0.12877583465818754
         },
         "spf_hit": false,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.72,
+              "draw": 3.3,
+              "away": 4.1
+            },
+            "last": {
+              "home": 1.72,
+              "draw": 3.3,
+              "away": 4.1
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.5152715362937009,
+              "p0_draw": 0.26856577043186836,
+              "p0_away": 0.21616269327443066,
+              "vig": 0.12832809089190267
+            },
+            "p0_last": {
+              "p0_home": 0.5152715362937009,
+              "p0_draw": 0.26856577043186836,
+              "p0_away": 0.21616269327443066,
+              "vig": 0.12832809089190267
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 3.42,
+              "draw": 3.42,
+              "away": 1.84
+            },
+            "last": {
+              "home": 3.42,
+              "draw": 3.42,
+              "away": 1.84
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.2591549295774648,
+              "p0_draw": 0.2591549295774648,
+              "p0_away": 0.48169014084507045,
+              "vig": 0.12827358250699206
+            },
+            "p0_last": {
+              "p0_home": 0.2591549295774648,
+              "p0_draw": 0.2591549295774648,
+              "p0_away": 0.48169014084507045,
+              "vig": 0.12827358250699206
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -569,7 +1407,96 @@
           "vig": 0.122334455667789
         },
         "spf_hit": false,
-        "rqspf_hit": true
+        "rqspf_hit": true,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 3.36,
+              "draw": 2.65,
+              "away": 2.2
+            },
+            "last": {
+              "home": 3.36,
+              "draw": 2.65,
+              "away": 2.2
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.2634909156648287,
+              "p0_draw": 0.3340865949561602,
+              "p0_away": 0.4024224893790111,
+              "vig": 0.1295229927305399
+            },
+            "p0_last": {
+              "p0_home": 0.2634909156648287,
+              "p0_draw": 0.3340865949561602,
+              "p0_away": 0.4024224893790111,
+              "vig": 0.1295229927305399
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 1.51,
+              "draw": 3.6,
+              "away": 5.3
+            },
+            "last": {
+              "home": 1.51,
+              "draw": 3.6,
+              "away": 5.3
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.5867339094068083,
+              "p0_draw": 0.2461022786678557,
+              "p0_away": 0.16716381192533594,
+              "vig": 0.12870867868993585
+            },
+            "p0_last": {
+              "p0_home": 0.5867339094068083,
+              "p0_draw": 0.2461022786678557,
+              "p0_away": 0.16716381192533594,
+              "vig": 0.12870867868993585
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     },
     {
@@ -661,7 +1588,96 @@
           "vig": 0.13956766917293217
         },
         "spf_hit": true,
-        "rqspf_hit": false
+        "rqspf_hit": false,
+        "movement": {
+          "spf": {
+            "n": 1,
+            "open": {
+              "home": 1.74,
+              "draw": 3.1,
+              "away": 4.3
+            },
+            "last": {
+              "home": 1.74,
+              "draw": 3.1,
+              "away": 4.3
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "home",
+            "fav_last": "home",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.5086621384415783,
+              "p0_draw": 0.2855071357704343,
+              "p0_away": 0.2058307257879875,
+              "vig": 0.12985142837433483
+            },
+            "p0_last": {
+              "p0_home": 0.5086621384415783,
+              "p0_draw": 0.2855071357704343,
+              "p0_away": 0.2058307257879875,
+              "vig": 0.12985142837433483
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "rqspf": {
+            "n": 1,
+            "open": {
+              "home": 3.55,
+              "draw": 3.3,
+              "away": 1.84
+            },
+            "last": {
+              "home": 3.55,
+              "draw": 3.3,
+              "away": 1.84
+            },
+            "delta": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "range": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            },
+            "fav_open": "away",
+            "fav_last": "away",
+            "fav_drift": 0,
+            "p0_open": {
+              "p0_home": 0.24968131913318806,
+              "p0_draw": 0.268596570582672,
+              "p0_away": 0.48172211028413997,
+              "vig": 0.12819870474493866
+            },
+            "p0_last": {
+              "p0_home": 0.24968131913318806,
+              "p0_draw": 0.268596570582672,
+              "p0_away": 0.48172211028413997,
+              "vig": 0.12819870474493866
+            },
+            "p0_delta_home": 0,
+            "p0_delta_draw": 0,
+            "p0_delta_away": 0
+          },
+          "summary": {
+            "total_n": 2,
+            "any_drift": 0,
+            "max_abs_delta": 0
+          }
+        }
       }
     }
   ]
