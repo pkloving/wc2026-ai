@@ -1,0 +1,28 @@
+{
+  "model_type": "poisson_independent",
+  "generated_at": "2026-06-15T05:28:28.961Z",
+  "source": "modeling/data/01_matches_with_odds.json",
+  "n_samples": 12,
+  "global_lambda_home": 2.333,
+  "global_lambda_away": 0.833,
+  "tier_adjustment": {
+    "strong_fav": {
+      "home_mult": 1.3,
+      "away_mult": 0.8
+    },
+    "balanced": {
+      "home_mult": 1,
+      "away_mult": 1
+    },
+    "weak_fav": {
+      "home_mult": 0.8,
+      "away_mult": 1.2
+    }
+  },
+  "tier_thresholds": {
+    "strong_fav_p0": 0.6,
+    "weak_fav_p0": 0.3
+  },
+  "score_grid_max": 5,
+  "formula": "P(h,a) = Poisson(h; λ_h) * Poisson(a; λ_a) ; h,a ∈ [0,5]，>5 归\"其他\""
+}

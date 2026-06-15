@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-06-15T05:28:27.332Z",
+  "note": "3 场国际赛热身，不进主建模（避免污染世界杯特征）",
+  "total": 3,
+  "matches": [
+    {
+      "mid": "2040145",
+      "code": "周一201",
+      "league": "国际赛",
+      "home": "荷兰",
+      "away": "乌兹别克",
+      "kickoff": "2026-06-09 02:45",
+      "kickoff_iso": "2026-06-09T02:45:00+08:00",
+      "handicap": -2,
+      "spf": {
+        "home": 1.14,
+        "draw": 5.85,
+        "away": 12.5
+      },
+      "rqspf": {
+        "home": 2.78,
+        "draw": 3.55,
+        "away": 2.05
+      },
+      "scraped_at": "2026-06-08T05:51:21.856Z",
+      "final_score": {
+        "matchId": "2040145",
+        "homeScore": 2,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 1,
+          "away": 0
+        },
+        "scorers": [
+          {
+            "team": "NED",
+            "player": "C. Gakpo",
+            "minute": 32,
+            "type": "penalty"
+          },
+          {
+            "team": "UZB",
+            "player": "I. Sergeev",
+            "minute": 92,
+            "type": "goal"
+          },
+          {
+            "team": "NED",
+            "player": "C. Gakpo",
+            "minute": 98,
+            "type": "penalty"
+          }
+        ],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": {
+          "p0_home": 0.7775615669261197,
+          "p0_draw": 0.15152481817021818,
+          "p0_away": 0.0709136149036621,
+          "vig": 0.12813315339631148
+        },
+        "rqspf_implied": {
+          "p0_home": 0.3185528878772625,
+          "p0_draw": 0.24945831783064498,
+          "p0_away": 0.4319887942920926,
+          "vig": 0.1292072491096783
+        },
+        "spf_hit": true,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040146",
+      "code": "周一202",
+      "league": "国际赛",
+      "home": "法国",
+      "away": "北爱尔兰",
+      "kickoff": "2026-06-09 03:10",
+      "kickoff_iso": "2026-06-09T03:10:00+08:00",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.6,
+        "away": 2.95
+      },
+      "scraped_at": "2026-06-08T05:52:38.001Z",
+      "final_score": {
+        "matchId": "2040146",
+        "homeScore": 3,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 1,
+          "away": 0
+        },
+        "scorers": [
+          {
+            "team": "FRA",
+            "player": "M. Olise",
+            "minute": 43,
+            "type": "goal"
+          },
+          {
+            "team": "FRA",
+            "player": "M. Olise",
+            "minute": 49,
+            "type": "goal"
+          },
+          {
+            "team": "NIR",
+            "player": "P. Kelly",
+            "minute": 64,
+            "type": "goal"
+          },
+          {
+            "team": "FRA",
+            "player": "M. Olise",
+            "minute": 75,
+            "type": "goal"
+          }
+        ],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 3,
+        "away_goals": 1,
+        "total_goals": 4,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.4539916639948702,
+          "p0_draw": 0.24591215133055466,
+          "p0_away": 0.30009618467457516,
+          "vig": 0.1295813414457483
+        },
+        "spf_hit": null,
+        "rqspf_hit": false
+      }
+    },
+    {
+      "mid": "2040147",
+      "code": "周一203",
+      "league": "国际赛",
+      "home": "秘鲁",
+      "away": "西班牙",
+      "kickoff": "2026-06-09 10:00",
+      "kickoff_iso": "2026-06-09T10:00:00+08:00",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 2.68,
+        "draw": 3.6,
+        "away": 2.09
+      },
+      "scraped_at": "2026-06-08T05:53:31.612Z",
+      "final_score": {
+        "matchId": "2040147",
+        "homeScore": 1,
+        "awayScore": 3,
+        "halfTime": {
+          "home": 0,
+          "away": 2
+        },
+        "scorers": [
+          {
+            "team": "ESP",
+            "player": "M. Oyarzabal",
+            "minute": 2,
+            "type": "goal"
+          },
+          {
+            "team": "ESP",
+            "player": "Pedri",
+            "minute": 32,
+            "type": "goal"
+          },
+          {
+            "team": "ESP",
+            "player": "P. Gallese",
+            "minute": 53,
+            "type": "og"
+          },
+          {
+            "team": "PER",
+            "player": "J. Vélez",
+            "minute": 66,
+            "type": "goal"
+          }
+        ],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 3,
+        "total_goals": 4,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.3303883512198548,
+          "p0_draw": 0.24595577257478085,
+          "p0_away": 0.4236558762053642,
+          "vig": 0.12938100565751798
+        },
+        "spf_hit": null,
+        "rqspf_hit": true
+      }
+    }
+  ]
+}

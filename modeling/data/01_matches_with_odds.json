@@ -1,0 +1,668 @@
+{
+  "generated_at": "2026-06-15T05:28:27.328Z",
+  "source": "data/matches_status.json + data/results/*.json",
+  "total": 12,
+  "matches": [
+    {
+      "mid": "2040162",
+      "code": "周四001",
+      "league": "世界杯",
+      "home": "墨西哥",
+      "away": "南非",
+      "kickoff": "2026-06-12 03:00",
+      "kickoff_iso": "2026-06-12T03:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.26,
+        "draw": 4.45,
+        "away": 9
+      },
+      "rqspf": {
+        "home": 2,
+        "draw": 3.25,
+        "away": 3.11
+      },
+      "scraped_at": "2026-06-11T12:25:40.000Z",
+      "final_score": {
+        "matchId": "2040162",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": 1,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": {
+          "p0_home": 0.702668561503237,
+          "p0_draw": 0.1989578398863098,
+          "p0_away": 0.09837359861045318,
+          "vig": 0.12948100588550027
+        },
+        "rqspf_implied": {
+          "p0_home": 0.442777351878217,
+          "p0_draw": 0.2724783703865951,
+          "p0_away": 0.2847442777351878,
+          "vig": 0.12923571605243644
+        },
+        "spf_hit": true,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040163",
+      "code": "周四002",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "捷克",
+      "kickoff": "2026-06-12 10:00",
+      "kickoff_iso": "2026-06-12T10:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 2.49,
+        "draw": 2.75,
+        "away": 2.75
+      },
+      "rqspf": {
+        "home": 5.8,
+        "draw": 4.05,
+        "away": 1.41
+      },
+      "scraped_at": "2026-06-11T12:25:50.000Z",
+      "final_score": {
+        "matchId": "2040163",
+        "homeScore": 2,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 0,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "draw",
+        "spf_implied": {
+          "p0_home": 0.3557567917205692,
+          "p0_draw": 0.3221216041397154,
+          "p0_away": 0.3221216041397154,
+          "vig": 0.12887915297553842
+        },
+        "rqspf_implied": {
+          "p0_home": 0.15277499097074523,
+          "p0_draw": 0.21878887595810426,
+          "p0_away": 0.6284361330711505,
+          "vig": 0.12854723150639025
+        },
+        "spf_hit": true,
+        "rqspf_hit": false
+      }
+    },
+    {
+      "mid": "2040164",
+      "code": "周五003",
+      "league": "世界杯",
+      "home": "加拿大",
+      "away": "波黑",
+      "kickoff": "2026-06-13 03:00",
+      "kickoff_iso": "2026-06-13T03:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.62,
+        "draw": 3.32,
+        "away": 4.75
+      },
+      "rqspf": {
+        "home": 2.95,
+        "draw": 3.3,
+        "away": 2.05
+      },
+      "scraped_at": "2026-06-12T12:30:00.000Z",
+      "final_score": {
+        "matchId": "2040164",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 0,
+          "away": 1
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": {
+          "p0_home": 0.5467455293065311,
+          "p0_draw": 0.26678546911945195,
+          "p0_away": 0.1864690015740169,
+          "vig": 0.1290150856838661
+        },
+        "rqspf_implied": {
+          "p0_home": 0.30003326311120965,
+          "p0_draw": 0.2682115533872935,
+          "p0_away": 0.4317551835014969,
+          "vig": 0.12981823192654107
+        },
+        "spf_hit": false,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040165",
+      "code": "周五004",
+      "league": "世界杯",
+      "home": "美国",
+      "away": "巴拉圭",
+      "kickoff": "2026-06-13 09:00",
+      "kickoff_iso": "2026-06-13T09:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.79,
+        "draw": 3.25,
+        "away": 3.8
+      },
+      "rqspf": {
+        "home": 3.95,
+        "draw": 3.4,
+        "away": 1.72
+      },
+      "scraped_at": "2026-06-12T12:30:10.000Z",
+      "final_score": {
+        "matchId": "2040165",
+        "homeScore": 4,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 3,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 4,
+        "away_goals": 1,
+        "total_goals": 5,
+        "score_diff": 3,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": {
+          "p0_home": 0.4946034161677246,
+          "p0_draw": 0.2724123430585314,
+          "p0_away": 0.23298424077374394,
+          "vig": 0.1295094203062448
+        },
+        "rqspf_implied": {
+          "p0_home": 0.2243019331083154,
+          "p0_draw": 0.2605860693464253,
+          "p0_away": 0.5151119975452593,
+          "vig": 0.12867755285805815
+        },
+        "spf_hit": true,
+        "rqspf_hit": false
+      }
+    },
+    {
+      "mid": "2040166",
+      "code": "周六005",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "瑞士",
+      "kickoff": "2026-06-14 03:00",
+      "kickoff_iso": "2026-06-14T03:00:00+08:00",
+      "handicap": 2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.98,
+        "draw": 3.85,
+        "away": 2.74
+      },
+      "scraped_at": "2026-06-13T12:30:20.000Z",
+      "final_score": {
+        "matchId": "2040166",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 0,
+          "away": 1
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.4470445646093605,
+          "p0_draw": 0.22990863322767105,
+          "p0_away": 0.3230468021629685,
+          "vig": 0.12975426844039983
+        },
+        "spf_hit": null,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040167",
+      "code": "周六006",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "kickoff": "2026-06-14 06:00",
+      "kickoff_iso": "2026-06-14T06:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.5,
+        "draw": 3.6,
+        "away": 5.4
+      },
+      "rqspf": {
+        "home": 2.8,
+        "draw": 3.26,
+        "away": 2.15
+      },
+      "scraped_at": "2026-06-13T12:30:30.000Z",
+      "final_score": {
+        "matchId": "2040167",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 1,
+          "away": 1
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": {
+          "p0_home": 0.5901639344262295,
+          "p0_draw": 0.24590163934426232,
+          "p0_away": 0.1639344262295082,
+          "vig": 0.12962962962962954
+        },
+        "rqspf_implied": {
+          "p0_home": 0.3163334386424155,
+          "p0_draw": 0.2716974319628109,
+          "p0_away": 0.41196912939477365,
+          "vig": 0.1290076024702933
+        },
+        "spf_hit": false,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040168",
+      "code": "周六007",
+      "league": "世界杯",
+      "home": "海地",
+      "away": "苏格兰",
+      "kickoff": "2026-06-14 09:00",
+      "kickoff_iso": "2026-06-14T09:00:00+08:00",
+      "handicap": 1,
+      "spf": null,
+      "rqspf": {
+        "home": 7.4,
+        "draw": 4.12,
+        "away": 1.33
+      },
+      "scraped_at": "2026-06-13T12:30:40.000Z",
+      "final_score": {
+        "matchId": "2040168",
+        "homeScore": 0,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 0,
+          "away": 1
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 1,
+        "total_goals": 1,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.1196168488701058,
+          "p0_draw": 0.21484579651426775,
+          "p0_away": 0.6655373546156264,
+          "vig": 0.1297332809851972
+        },
+        "spf_hit": null,
+        "rqspf_hit": false
+      }
+    },
+    {
+      "mid": "2040169",
+      "code": "周六008",
+      "league": "世界杯",
+      "home": "澳大利亚",
+      "away": "土耳其",
+      "kickoff": "2026-06-14 12:00",
+      "kickoff_iso": "2026-06-14T12:00:00+08:00",
+      "handicap": 1,
+      "spf": null,
+      "rqspf": {
+        "home": 5.55,
+        "draw": 3.78,
+        "away": 1.46
+      },
+      "scraped_at": "2026-06-13T12:30:50.000Z",
+      "final_score": {
+        "matchId": "2040169",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": 1,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.15949920233058196,
+          "p0_draw": 0.23418533675521955,
+          "p0_away": 0.6063154609141984,
+          "vig": 0.1296619515797599
+        },
+        "spf_hit": null,
+        "rqspf_hit": false
+      }
+    },
+    {
+      "mid": "2040170",
+      "code": "周日009",
+      "league": "世界杯",
+      "home": "德国",
+      "away": "库拉索",
+      "kickoff": "2026-06-15 01:00",
+      "kickoff_iso": "2026-06-15T01:00:00+08:00",
+      "handicap": -3,
+      "spf": null,
+      "rqspf": {
+        "home": 1.71,
+        "draw": 4.1,
+        "away": 3.55
+      },
+      "scraped_at": "2026-06-14T12:30:00.000Z",
+      "final_score": {
+        "matchId": "2040170",
+        "homeScore": 7,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 3,
+          "away": 1
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 7,
+        "away_goals": 1,
+        "total_goals": 8,
+        "score_diff": 6,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": {
+          "p0_home": 0.5266585855661896,
+          "p0_draw": 0.21965516617516692,
+          "p0_away": 0.25368624825864344,
+          "vig": 0.1103879015068876
+        },
+        "spf_hit": null,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040171",
+      "code": "周日010",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "日本",
+      "kickoff": "2026-06-15 04:00",
+      "kickoff_iso": "2026-06-15T04:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.86,
+        "draw": 3.33,
+        "away": 3.43
+      },
+      "rqspf": {
+        "home": 3.4,
+        "draw": 3.4,
+        "away": 1.85
+      },
+      "scraped_at": "2026-06-14T12:30:10.000Z",
+      "final_score": {
+        "matchId": "2040171",
+        "homeScore": 2,
+        "awayScore": 2,
+        "halfTime": {
+          "home": 0,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 2,
+        "total_goals": 4,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": {
+          "p0_home": 0.47600175032818653,
+          "p0_draw": 0.2658748515346628,
+          "p0_away": 0.2581233981371507,
+          "vig": 0.12947989840682395
+        },
+        "rqspf_implied": {
+          "p0_home": 0.2605633802816902,
+          "p0_draw": 0.2605633802816902,
+          "p0_away": 0.4788732394366197,
+          "vig": 0.12877583465818754
+        },
+        "spf_hit": false,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040172",
+      "code": "周日011",
+      "league": "世界杯",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "kickoff": "2026-06-15 07:00",
+      "kickoff_iso": "2026-06-15T07:00:00+08:00",
+      "handicap": 1,
+      "spf": {
+        "home": 3.15,
+        "draw": 2.65,
+        "away": 2.3
+      },
+      "rqspf": {
+        "home": 1.62,
+        "draw": 3.6,
+        "away": 4.4
+      },
+      "scraped_at": "2026-06-14T12:30:20.000Z",
+      "final_score": {
+        "matchId": "2040172",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": 0,
+          "away": 0
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": {
+          "p0_home": 0.28103746397694523,
+          "p0_draw": 0.3340634005763689,
+          "p0_away": 0.3848991354466859,
+          "vig": 0.12960141672200742
+        },
+        "rqspf_implied": {
+          "p0_home": 0.5499999999999999,
+          "p0_draw": 0.2475,
+          "p0_away": 0.20249999999999999,
+          "vig": 0.122334455667789
+        },
+        "spf_hit": false,
+        "rqspf_hit": true
+      }
+    },
+    {
+      "mid": "2040173",
+      "code": "周日012",
+      "league": "世界杯",
+      "home": "瑞典",
+      "away": "突尼斯",
+      "kickoff": "2026-06-15 10:00",
+      "kickoff_iso": "2026-06-15T10:00:00+08:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.67,
+        "draw": 3.35,
+        "away": 4.3
+      },
+      "rqspf": {
+        "home": 2.85,
+        "draw": 3.2,
+        "away": 2.1
+      },
+      "scraped_at": "2026-06-15T11:26:00.000Z",
+      "final_score": {
+        "matchId": "2040173",
+        "homeScore": 5,
+        "awayScore": 1,
+        "halfTime": {
+          "home": 2,
+          "away": 1
+        },
+        "scorers": [
+          {
+            "team": "SWE",
+            "player": "Yasin Ayari",
+            "minute": 7,
+            "type": "goal"
+          },
+          {
+            "team": "SWE",
+            "player": "Alexander Isak",
+            "minute": 30,
+            "type": "goal"
+          },
+          {
+            "team": "TUN",
+            "player": "Omar Rekik",
+            "minute": 43,
+            "type": "goal"
+          },
+          {
+            "team": "SWE",
+            "player": "Viktor Gyökeres",
+            "minute": 59,
+            "type": "goal"
+          },
+          {
+            "team": "SWE",
+            "player": "Mattias Svanberg",
+            "minute": 84,
+            "type": "goal"
+          },
+          {
+            "team": "SWE",
+            "player": "Yasin Ayari",
+            "minute": 96,
+            "type": "goal"
+          }
+        ],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 5,
+        "away_goals": 1,
+        "total_goals": 6,
+        "score_diff": 4,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": {
+          "p0_home": 0.5299755339305753,
+          "p0_draw": 0.2641967587056897,
+          "p0_away": 0.20582770736373504,
+          "vig": 0.12986799743103172
+        },
+        "rqspf_implied": {
+          "p0_home": 0.30790378006872854,
+          "p0_draw": 0.27422680412371137,
+          "p0_away": 0.41786941580756015,
+          "vig": 0.13956766917293217
+        },
+        "spf_hit": true,
+        "rqspf_hit": false
+      }
+    }
+  ]
+}

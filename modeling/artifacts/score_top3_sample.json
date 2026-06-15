@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-06-15T05:28:28.964Z",
+  "note": "每场样本用实际 spf 赔率驱动 Poisson，Top-3 是模型给该场的最佳 3 个比分概率",
+  "total": 12,
+  "samples": [
+    {
+      "mid": "2040162",
+      "home": "墨西哥",
+      "away": "南非",
+      "tier": "strong_fav",
+      "lambda_home": 3.033,
+      "lambda_away": 0.667,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.125,
+      "top3": [
+        {
+          "score": "3-0",
+          "prob": 0.126
+        },
+        {
+          "score": "2-0",
+          "prob": 0.125
+        },
+        {
+          "score": "4-0",
+          "prob": 0.096
+        }
+      ]
+    },
+    {
+      "mid": "2040163",
+      "home": "韩国",
+      "away": "捷克",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "2-1",
+      "actual_score_prob": 0.099,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040164",
+      "home": "加拿大",
+      "away": "波黑",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040165",
+      "home": "美国",
+      "away": "巴拉圭",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "4-1",
+      "actual_score_prob": 0.045,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040166",
+      "home": "卡塔尔",
+      "away": "瑞士",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040167",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040168",
+      "home": "海地",
+      "away": "苏格兰",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "0-1",
+      "actual_score_prob": 0.036,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040169",
+      "home": "澳大利亚",
+      "away": "土耳其",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.119,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040170",
+      "home": "德国",
+      "away": "库拉索",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "7-1",
+      "actual_score_prob": 0.003,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040171",
+      "home": "荷兰",
+      "away": "日本",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "2-2",
+      "actual_score_prob": 0.041,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    },
+    {
+      "mid": "2040172",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "tier": "weak_fav",
+      "lambda_home": 1.867,
+      "lambda_away": 1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.108,
+      "top3": [
+        {
+          "score": "1-0",
+          "prob": 0.108
+        },
+        {
+          "score": "1-1",
+          "prob": 0.108
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1
+        }
+      ]
+    },
+    {
+      "mid": "2040173",
+      "home": "瑞典",
+      "away": "突尼斯",
+      "tier": "balanced",
+      "lambda_home": 2.333,
+      "lambda_away": 0.833,
+      "actual_score": "5-1",
+      "actual_score_prob": 0.021,
+      "top3": [
+        {
+          "score": "2-0",
+          "prob": 0.119
+        },
+        {
+          "score": "1-0",
+          "prob": 0.102
+        },
+        {
+          "score": "2-1",
+          "prob": 0.099
+        }
+      ]
+    }
+  ]
+}

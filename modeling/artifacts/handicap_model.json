@@ -1,0 +1,146 @@
+{
+  "model_type": "handicap_table_lookup",
+  "generated_at": "2026-06-15T05:28:28.707Z",
+  "source": "modeling/data/04_handicap_table.json",
+  "n_samples": 12,
+  "by_handicap": {
+    "1": {
+      "n": 3,
+      "home_win_rate": 0.667,
+      "draw_rate": 0.333,
+      "home_lose_rate": 0,
+      "samples": [
+        {
+          "mid": "2040168",
+          "home": "海地",
+          "away": "苏格兰",
+          "handicap": 1,
+          "final": "0-1",
+          "result": "draw"
+        },
+        {
+          "mid": "2040169",
+          "home": "澳大利亚",
+          "away": "土耳其",
+          "handicap": 1,
+          "final": "2-0",
+          "result": "home_win"
+        },
+        {
+          "mid": "2040172",
+          "home": "科特迪瓦",
+          "away": "厄瓜多尔",
+          "handicap": 1,
+          "final": "1-0",
+          "result": "home_win"
+        }
+      ]
+    },
+    "2": {
+      "n": 1,
+      "home_win_rate": 1,
+      "draw_rate": 0,
+      "home_lose_rate": 0,
+      "samples": [
+        {
+          "mid": "2040166",
+          "home": "卡塔尔",
+          "away": "瑞士",
+          "handicap": 2,
+          "final": "1-1",
+          "result": "home_win"
+        }
+      ]
+    },
+    "-1": {
+      "n": 7,
+      "home_win_rate": 0.429,
+      "draw_rate": 0.143,
+      "home_lose_rate": 0.429,
+      "samples": [
+        {
+          "mid": "2040162",
+          "home": "墨西哥",
+          "away": "南非",
+          "handicap": -1,
+          "final": "2-0",
+          "result": "home_win"
+        },
+        {
+          "mid": "2040163",
+          "home": "韩国",
+          "away": "捷克",
+          "handicap": -1,
+          "final": "2-1",
+          "result": "draw"
+        },
+        {
+          "mid": "2040164",
+          "home": "加拿大",
+          "away": "波黑",
+          "handicap": -1,
+          "final": "1-1",
+          "result": "home_lose"
+        },
+        {
+          "mid": "2040165",
+          "home": "美国",
+          "away": "巴拉圭",
+          "handicap": -1,
+          "final": "4-1",
+          "result": "home_win"
+        },
+        {
+          "mid": "2040167",
+          "home": "巴西",
+          "away": "摩洛哥",
+          "handicap": -1,
+          "final": "1-1",
+          "result": "home_lose"
+        },
+        {
+          "mid": "2040171",
+          "home": "荷兰",
+          "away": "日本",
+          "handicap": -1,
+          "final": "2-2",
+          "result": "home_lose"
+        },
+        {
+          "mid": "2040173",
+          "home": "瑞典",
+          "away": "突尼斯",
+          "handicap": -1,
+          "final": "5-1",
+          "result": "home_win"
+        }
+      ]
+    },
+    "-3": {
+      "n": 1,
+      "home_win_rate": 1,
+      "draw_rate": 0,
+      "home_lose_rate": 0,
+      "samples": [
+        {
+          "mid": "2040170",
+          "home": "德国",
+          "away": "库拉索",
+          "handicap": -3,
+          "final": "7-1",
+          "result": "home_win"
+        }
+      ]
+    }
+  },
+  "verdict_thresholds": {
+    "chase_min_win_rate": 0.55,
+    "min_samples": 3
+  },
+  "decision_logic": {
+    "chase": "主胜率 >= 55% 且样本 >= 3",
+    "skip": "主胜率 < 55% 或样本不足",
+    "not_applicable": "handicap === 0（无让球）"
+  },
+  "rule_of_thumb": "让+1（3 场）：主胜率 67% / 走 33% / 主负 0%\n  让+2（1 场）：主胜率 100% / 走 0% / 主负 0%\n  让-1（7 场）：主胜率 43% / 走 14% / 主负 43%\n  让-3（1 场）：主胜率 100% / 走 0% / 主负 0%"
+}

@@ -1,0 +1,37 @@
+{
+  "model_type": "rule_based_with_confidence",
+  "generated_at": "2026-06-15T05:28:28.455Z",
+  "source": "modeling/data/01_matches_with_odds.json",
+  "n_samples": 12,
+  "rules": {
+    "fav_threshold": 1.5,
+    "moderate_threshold": 2.5,
+    "long_shot_threshold": 4,
+    "draw_threshold": 3.3
+  },
+  "calibration": {
+    "fav_overall_hit_rate": 0.5,
+    "home_win_rate": 0.583,
+    "home_strong_hit_rate": 1,
+    "home_moderate_hit_rate": 0.5,
+    "home_weak_hit_rate": 1,
+    "draw_low_odds_hit_rate": 0,
+    "draw_high_odds_hit_rate": 0.6,
+    "away_low_odds_hit_rate": 0,
+    "away_long_shot_hit_rate": 0
+  },
+  "confidence_mapping": {
+    "strong_fav": 3,
+    "moderate": 2,
+    "long_shot": 1
+  },
+  "decision_logic": {
+    "pick": "spf_min_odds_direction（p0 最大那个）",
+    "confidence_rules": [
+      "spf 最低赔率 < 1.5 → ⭐⭐⭐",
+      "spf 最低赔率 1.5-2.5 → ⭐⭐",
+      "spf 最低赔率 >= 2.5 → ⭐",
+      "平局赔率 < 3.3 时不推荐平局（样本提示低赔平局假信号多）"
+    ]
+  }
+}
