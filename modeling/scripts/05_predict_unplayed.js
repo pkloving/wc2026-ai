@@ -3,12 +3,16 @@
  * Step 5 · 对未开赛场次出推荐
  *
  * 输入：
- *   - data/matches_status.json（过滤 status !== "finished"）
+ *   - data/matches_status.json（过滤 status !== "finished" && league === "世界杯"）
  *   - modeling/artifacts/win_model.json
  *   - modeling/artifacts/handicap_model.json
  *   - modeling/artifacts/score_model.json
  *
  * 输出：modeling/artifacts/predict_unplayed.json
+ *
+ * 关注范围：**仅世界杯正赛**（`data/matches.json` 的 M001-M104）。
+ * 竞彩对国际赛热身也开了盘（league="国际赛"），本脚本硬过滤掉，
+ * 训练侧也只吸收 league="世界杯" 标签的完赛样本。
  *
  * 每场未开赛比赛 3 件事：
  *   1. 胜平负推荐：win_model 规则打分
@@ -32,8 +36,12 @@ const winModel = JSON.parse(fs.readFileSync(WIN_MODEL, 'utf-8'));
 const handiModel = JSON.parse(fs.readFileSync(HANDI_MODEL, 'utf-8'));
 const scoreModel = JSON.parse(fs.readFileSync(SCORE_MODEL, 'utf-8'));
 
-const candidates = status.matches.filter((m) => m.status !== 'finished');
-console.log(`未开赛/进行中：${candidates.length} 场`);
+// 仅对世界杯正赛未完赛场次出推荐；竞彩开的国际赛热身盘（league="国际赛"）一律忽略。
+// "世界杯"=正赛、"国际赛"=热身——竞彩 league 标签即正赛/热身分流。
+const candidates = status.matches.filter(
+  (m) => m.status !== 'finished' && m.league === '世界杯'
+);
+console.log(`未开赛/进行中（仅世界杯正赛）：${candidates.length} 场`);
 
 // ---- 工具 ----
 function logFactorial(k) {
@@ -159,7 +167,8 @@ const predictions = candidates.map((m) => {
 
 const out = {
   generated_at: new Date().toISOString(),
-  source: 'data/matches_status.json (status !== finished)',
+  source: 'data/matches_status.json (status !== finished && league === "世界杯")',
+  scope: '世界杯正赛（data/matches.json M001-M104），不含国际赛热身',
   models_used: [
     'modeling/artifacts/win_model.json',
     'modeling/artifacts/handicap_model.json',

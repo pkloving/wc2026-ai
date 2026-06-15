@@ -13,9 +13,10 @@
  *   - 04_handicap_table.json         按 handicap 分组的实际盘路结算表
  *   - international_warmup.json      3 场国际赛（不进主建模，留档）
  *
- * 跨联赛过滤：默认只取 league === "世界杯"（竞彩官方为 2026 世界杯开的盘口，
- * 含 6-12 起的 8-9 场热身赛性质世界杯盘）。3 场国际赛热身（2040145-2040147）
- * 单独落 international_warmup.json。
+ * 跨联赛过滤：默认只取 league === "世界杯" 的完赛样本。
+ * 竞彩官方在 6-12 起开始挂世界杯正赛盘（对应 data/matches.json 的 M001-M104），
+ * 训练侧只吸收这部分——避免被 6-09 的 3 场国际赛热身（2040145-2040147）节奏污染。
+ * 那 3 场国际赛热身单独落 international_warmup.json 留档，不进主建模。
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,10 +42,11 @@ for (const f of resultFiles) {
 
 // ---- 2. 过滤完赛 + 分桶 ----
 const finishedAll = status.matches.filter((m) => m.status === 'finished');
+// "世界杯"=正赛、"国际赛"=热身——竞彩 league 标签即正赛/热身分流，主建模只吸收前者
 const wcFinished = finishedAll.filter((m) => m.league === '世界杯');
 const internationalFinished = finishedAll.filter((m) => m.league === '国际赛');
 
-console.log(`完赛总数: ${finishedAll.length}（世界杯 ${wcFinished.length} + 国际赛 ${internationalFinished.length}）`);
+console.log(`完赛总数: ${finishedAll.length}（世界杯正赛 ${wcFinished.length} + 国际赛 ${internationalFinished.length}）`);
 
 // ---- 3. 合并 + 衍生特征 ----
 function impliedProbs(odds) {

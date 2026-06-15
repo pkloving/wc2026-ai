@@ -4,10 +4,11 @@
 
 ## ⚠️ 局限性
 
-- **样本极少**：当前仅 **8 场**竞彩官方标注"世界杯"标签的完赛样本（来自 `data/matches_status.json`）。3 场国际赛热身（2040145-2040147）剔除避免节奏污染，但留档在 `data/international_warmup.json`。
-- 8 场不足以做严格统计建模，**所有"命中率""主胜率"仅作参考倾向**。
-- 随着 6-12 起更多世界杯盘完赛，重跑 `npm run modeling:all` 即可自然扩展样本。
+- **样本极少**：当前仅 **12 场**世界杯正赛完赛样本（M001-M012，来自 `data/matches_status.json` 的 `league === "世界杯"` 标签）。3 场国际赛热身（2040145-2040147，6-09 友谊赛）剔除避免节奏污染，但留档在 `modeling/data/international_warmup.json`。
+- 12 场不足以做严格统计建模，**所有"命中率""主胜率"仅作参考倾向**。
+- 随着小组赛继续完赛，重跑 `npm run modeling:all` 即可自然扩展样本。
 - 模型**不接入 Vite 站点前端**，`predict_unplayed.json` 是独立产物（避免污染构建）。
+- **范围硬限制**：训练仅吸收"世界杯正赛"完赛样本（`league === "世界杯"`），预测仅对"世界杯正赛"未完赛场次（M001-M104）出推荐；竞彩开的国际赛热身盘（`league === "国际赛"`）一律忽略。
 
 ## 📁 目录结构
 
@@ -67,7 +68,7 @@ npm run modeling:predict   # 3：对未开赛出推荐
 | `artifacts/handicap_model.json`  | 模型参数 | 让球盘路倾向表 + chase/skip 判定阈值                    |
 | `artifacts/score_model.json`     | 模型参数 | Poisson 全局 λ + 三档调系数                              |
 | `artifacts/score_top3_sample.json` | 样本回放 | 每场完赛用模型反推的 Top-3 比分（赛后比对用）           |
-| `artifacts/predict_unplayed.json` | 预测   | 全部未开赛场次的胜平负 + 让球 + Top-3 比分推荐          |
+| `artifacts/predict_unplayed.json` | 预测   | 全部**世界杯正赛**未开赛场次的胜平负 + 让球 + Top-3 比分推荐（国际赛热身忽略）|
 
 ## 🧠 模型一览
 
@@ -88,7 +89,7 @@ npm run modeling:predict   # 3：对未开赛出推荐
 
 - **简化假设**：主客进球独立同分布 Poisson。
 - **参数**：
-  - 全局 λ_home / λ_away 从 11 场样本均值估算
+  - 全局 λ_home / λ_away 从 12 场样本均值估算
   - 三档调系数：强队（p0_home > 0.6）λ_home × 1.3 / λ_away × 0.8；弱队反向；均衡保持
 - **输出**：跑 0-5 网格归一化，Top-3 高概率比分。
 
@@ -120,20 +121,20 @@ node -e "JSON.parse(require('fs').readFileSync('modeling/artifacts/predict_unpla
 - 接入 `js/data.js` 的 import 流会被 Vite 静态打包进前端，污染 dist
 - 如果未来要在 `predictions.html` 上展示，把 `predict_unplayed.json` 复制为 `public/assets/predict_unplayed.json`，前端 `fetch` 即可（**不在当前任务范围**）
 
-## 🧪 11 场样本回测基线（2026-06-15 截止）
+## 🧪 12 场样本回测基线（2026-06-15 截止）
 
-> 用 `01_matches_with_odds.json` 的 11 场完赛样本 + 同一套 predict 函数做的自测，**只作"基线快照"**，不外推到 100% 命中率。
+> 用 `01_matches_with_odds.json` 的 12 场完赛样本 + 同一套 predict 函数做的自测，**只作"基线快照"**，不外推到 100% 命中率。
 
 | 模型          | 命中率       | 样本           | 备注 |
 | ------------- | ------------ | -------------- | ---- |
-| 胜平负（spf_min_odds 方向）| 3/7 = **43%** | 7 场有 spf（4 场 spf=null 已 skip）| 低于市场隐含 50% —— 11 场样本提示"低赔热门"在世界杯热身盘里偏反向 |
+| 胜平负（spf_min_odds 方向）| 4/8 = **50%** | 8 场有 spf（4 场 spf=null 已 skip）| 与市场隐含持平 |
 | 让球 chase  | 2/3 = **67%** | 3 场让+1（其他档位样本不足 skip）| 与 chase 阈值 55% 一致 |
-| 比分 Top-1   | 3/11 = 27%  | 11 场 | 简版 Poisson 命中率有限，仅作"参考倾向" |
-| 比分 Top-3   | 4/11 = 36%  | 11 场 | 同上 |
+| 比分 Top-1   | 2/12 = 17%  | 12 场 | 简版 Poisson 命中率有限，仅作"参考倾向" |
+| 比分 Top-3   | 4/12 = 33%  | 12 场 | 同上 |
 
-**重要发现**（样本内的反向价值信号）：
+**重要发现**（样本内的反向价值信号，12 场）：
 
-- 高赔平局（spf.draw ≥ 3.3）命中 3/4 = **75%** —— 平局赔率高时反而真平
+- 高赔平局（spf.draw ≥ 3.3）命中 3/5 = **60%** —— 平局赔率高时反而真平
 - 低赔客胜（spf.away < 4）命中 0/4 = **0%** —— 市场被诱多
 - 大热门主胜（spf.home < 1.5）1/1 = 100%（样本太小，参考有限）
 
@@ -141,4 +142,4 @@ node -e "JSON.parse(require('fs').readFileSync('modeling/artifacts/predict_unpla
 
 - **赔率历史**：当前 `data/odds_history/<mid>.json` 没数据（`01_prepare_data` 不会读），所以赔率变动时序特征暂未引入。等 6-15 起有数据后再迭代。
 - **跨日模型漂移**：每天赔率有变动，建议每天 18:00 跑一次 `modeling:all` 拿最新推荐。
-- **正赛未开**：目前 `data/matches.json` 的 M001-M104 全 scheduled，真正的世界杯正赛还没开。当前样本是竞彩官方标"世界杯"的热身盘（6-12 起的 8 场），样本不纯。
+- **正赛进度**：M001-M012 已完赛（6-11 ~ 6-15 北京时间），M013-M024 已在售未完赛（6-15 ~ 6-18），M025+ 仍未挂盘。当前 12 场样本均为小组赛首轮，淘汰赛风格未采样。

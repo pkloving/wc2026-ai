@@ -1,6 +1,6 @@
 {
   "model_type": "handicap_table_lookup",
-  "generated_at": "2026-06-15T05:28:28.707Z",
+  "generated_at": "2026-06-15T05:46:01.654Z",
   "source": "modeling/data/04_handicap_table.json",
   "n_samples": 12,
   "by_handicap": {
