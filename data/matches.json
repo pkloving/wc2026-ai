@@ -1,123 +1,135 @@
 [
   {
     "id": "M001",
+    "mid": "2040162",
     "stage": "group",
     "group": "A",
     "date": "2026-06-11T19:00:00Z",
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "MEX",
     "away": "RSA",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M002",
+    "mid": "2040163",
     "stage": "group",
     "group": "A",
     "date": "2026-06-12T02:00:00Z",
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "KOR",
     "away": "CZE",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M003",
+    "mid": "2040164",
     "stage": "group",
     "group": "B",
     "date": "2026-06-12T19:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "CAN",
     "away": "BIH",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M004",
+    "mid": "2040165",
     "stage": "group",
     "group": "D",
     "date": "2026-06-13T01:00:00Z",
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "USA",
     "away": "PAR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M005",
+    "mid": "2040166",
     "stage": "group",
     "group": "B",
     "date": "2026-06-13T19:00:00Z",
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "QAT",
     "away": "SUI",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M006",
+    "mid": "2040167",
     "stage": "group",
     "group": "C",
     "date": "2026-06-13T22:00:00Z",
     "venue": "NRG Stadium, Houston, TX",
     "home": "BRA",
     "away": "MAR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M007",
+    "mid": "2040168",
     "stage": "group",
     "group": "C",
     "date": "2026-06-14T01:00:00Z",
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "HAI",
     "away": "SCO",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M008",
+    "mid": "2040169",
     "stage": "group",
     "group": "D",
     "date": "2026-06-14T04:00:00Z",
     "venue": "Lumen Field, Seattle, WA",
     "home": "AUS",
     "away": "TUR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M009",
+    "mid": "2040170",
     "stage": "group",
     "group": "E",
     "date": "2026-06-14T17:00:00Z",
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "GER",
     "away": "CUW",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M010",
+    "mid": "2040171",
     "stage": "group",
     "group": "F",
     "date": "2026-06-14T20:00:00Z",
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "NED",
     "away": "JPN",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M011",
+    "mid": "2040172",
     "stage": "group",
     "group": "E",
     "date": "2026-06-14T23:00:00Z",
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "CIV",
     "away": "ECU",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M012",
+    "mid": "2040173",
     "stage": "group",
     "group": "F",
     "date": "2026-06-15T02:00:00Z",
     "venue": "Estadio Azteca, Mexico City",
     "home": "SWE",
     "away": "TUN",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M013",
