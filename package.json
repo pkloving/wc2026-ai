@@ -9,7 +9,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "update:result": "node scripts/update-result.js",
-    "update:prediction": "node scripts/add-prediction.js"
+    "update:prediction": "node scripts/add-prediction.js",
+    "modeling:prepare": "node modeling/scripts/01_prepare_data.js",
+    "modeling:train": "node modeling/scripts/02_train_win_model.js && node modeling/scripts/03_train_handicap_model.js && node modeling/scripts/04_train_score_model.js",
+    "modeling:predict": "node modeling/scripts/05_predict_unplayed.js",
+    "modeling:all": "npm run modeling:prepare && npm run modeling:train && npm run modeling:predict"
   },
   "devDependencies": {
     "vite": "^6.0.0",

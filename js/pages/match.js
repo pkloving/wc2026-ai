@@ -1,4 +1,4 @@
-import { getMatches, getResults, getPredictions, getTeams } from '../data.js';
+import { getMatches, getResults, getPredictions, getTeams, getResultForMatch } from '../data.js';
 import { fmtDate, STAGE_LABEL, hitBadge, escapeHtml, teamChip } from '../util.js';
 import { t, teamDisplayName } from '../i18n.js';
 import { boot } from '../page-boot.js';
@@ -34,7 +34,7 @@ boot(async () => {
     document.querySelector('main').innerHTML = `<div class="text-slate-500">${escapeHtml(t('match.notFound'))}</div>`;
     return;
   }
-  const r = results.find((x) => x.matchId === id) || null;
+  const r = getResultForMatch(m, results) || null;
   const p = predictions.find((x) => x.matchId === id) || null;
   const teamMap = new Map(teams.map((t) => [t.code, t]));
   const home = teamMap.get(m.home);

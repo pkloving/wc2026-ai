@@ -1,4 +1,4 @@
-import { getMatches, getResults, getTeams, getGroups } from '../data.js';
+import { getMatches, getResults, getTeams, getGroups, getResultForMatch } from '../data.js';
 import { teamChip, teamDisplayName } from '../util.js';
 import { t, getLocale } from '../i18n.js';
 import { boot } from '../page-boot.js';
@@ -7,7 +7,6 @@ boot(async () => {
   const [matches, results, teams, groups] = await Promise.all([
     getMatches(), getResults(), getTeams(), getGroups(),
   ]);
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
   const teamMap = new Map(teams.map((t) => [t.code, t]));
 
   // 算每组积分榜
@@ -23,7 +22,7 @@ boot(async () => {
     const idx = new Map(table.map((t, i) => [t.code, i]));
     const groupMatches = matches.filter((m) => m.group === groupId);
     for (const m of groupMatches) {
-      const r = resultMap.get(m.id);
+      const r = getResultForMatch(m, results);
       if (!r) continue;
       const hi = idx.get(m.home);
       const ai = idx.get(m.away);
@@ -107,30 +106,26 @@ boot(async () => {
                 <th class="px-2 py-3 text-center" title="${t('standings.col.ga')}">${t('standings.col.ga')}</th>
                 <th class="px-2 py-3 text-center" title="${t('standings.col.gd')}">${t('standings.col.gd')}</th>
                 <th class="px-3 py-3 text-center font-bold">${t('standings.col.pts')}</th>
-                <th class="px-3 py-3 text-left">${t('standings.col.status')}</th>
               </tr>
             </thead>
             <tbody>
-              ${table.map((t, i) => `
-                <tr class="border-t border-slate-100 ${t.status === 'qualify' ? 'bg-pitch/5' : ''}">
+              ${table.map((row, i) => `
+                <tr class="border-t border-slate-100">
                   <td class="px-3 py-3 text-slate-400 font-semibold">${i + 1}</td>
                   <td class="px-3 py-3">
                     <div class="flex items-center gap-2">
-                      ${teamChip(t.team, 'sm')}
-                      <span class="font-semibold">${teamDisplayName(t.team) || t.code}</span>
+                      ${teamChip(row.team, 'sm')}
+                      <span class="font-semibold">${teamDisplayName(row.team) || row.code}</span>
                     </div>
                   </td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.played}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.win}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.draw}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.lose}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.gf}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.ga}</td>
-                  <td class="px-2 py-3 text-center tabular-nums font-semibold ${t.gd > 0 ? 'text-pitch' : t.gd < 0 ? 'text-flame' : ''}">${t.gd > 0 ? '+' : ''}${t.gd}</td>
-                  <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${t.pts}</td>
-                  <td class="px-3 py-3">
-                    ${t.status === 'qualify' ? `<span class="badge badge-pitch">${t('common.qualify')}</span>` : ''}
-                  </td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.played}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.win}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.draw}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.lose}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.gf}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.ga}</td>
+                  <td class="px-2 py-3 text-center tabular-nums font-semibold ${row.gd > 0 ? 'text-pitch' : row.gd < 0 ? 'text-flame' : ''}">${row.gd > 0 ? '+' : ''}${row.gd}</td>
+                  <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${row.pts}</td>
                 </tr>
               `).join('')}
             </tbody>
@@ -161,28 +156,24 @@ boot(async () => {
                 <th class="px-2 py-3 text-center">${t('standings.col.ga')}</th>
                 <th class="px-2 py-3 text-center">${t('standings.col.gd')}</th>
                 <th class="px-3 py-3 text-center">${t('standings.col.pts')}</th>
-                <th class="px-3 py-3 text-left">${t('standings.col.status')}</th>
               </tr>
             </thead>
             <tbody>
-              ${thirds.map((t, i) => `
+              ${thirds.map((row, i) => `
                 <tr class="border-t border-slate-100 ${i < 8 ? 'bg-pitch/5' : ''}">
                   <td class="px-3 py-3 text-slate-400 font-semibold">${i + 1}</td>
-                  <td class="px-3 py-3 font-semibold">${getLocale() === 'zh-CN' ? t.group + ' 组' : 'Group ' + t.group}</td>
+                  <td class="px-3 py-3 font-semibold">${getLocale() === 'zh-CN' ? row.group + ' 组' : 'Group ' + row.group}</td>
                   <td class="px-3 py-3">
                     <div class="flex items-center gap-2">
-                      ${teamChip(t.team, 'sm')}
-                      <span class="font-semibold">${teamDisplayName(t.team) || t.code}</span>
+                      ${teamChip(row.team, 'sm')}
+                      <span class="font-semibold">${teamDisplayName(row.team) || row.code}</span>
                     </div>
                   </td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.played}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.gf}</td>
-                  <td class="px-2 py-3 text-center tabular-nums">${t.ga}</td>
-                  <td class="px-2 py-3 text-center tabular-nums font-semibold ${t.gd > 0 ? 'text-pitch' : t.gd < 0 ? 'text-flame' : ''}">${t.gd > 0 ? '+' : ''}${t.gd}</td>
-                  <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${t.pts}</td>
-                  <td class="px-3 py-3">
-                    ${i < 8 ? `<span class="badge badge-pitch">${t('common.qualify')}</span>` : `<span class="badge badge-slate">${t('common.eliminated')}</span>`}
-                  </td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.played}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.gf}</td>
+                  <td class="px-2 py-3 text-center tabular-nums">${row.ga}</td>
+                  <td class="px-2 py-3 text-center tabular-nums font-semibold ${row.gd > 0 ? 'text-pitch' : row.gd < 0 ? 'text-flame' : ''}">${row.gd > 0 ? '+' : ''}${row.gd}</td>
+                  <td class="px-3 py-3 text-center font-black text-lg tabular-nums">${row.pts}</td>
                 </tr>
               `).join('')}
             </tbody>

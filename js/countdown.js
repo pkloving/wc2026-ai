@@ -1,5 +1,5 @@
 // 倒计时：到下一场比赛
-import { getMatches, getResults, getTeams } from './data.js';
+import { getMatches, getResults, getTeams, getResultForMatch } from './data.js';
 import { t, teamDisplayName } from './i18n.js';
 
 function pad(n) {
@@ -49,10 +49,10 @@ export async function mountNextMatchCountdown(elId) {
   const el = document.getElementById(elId);
   if (!el) return;
   const [matches, results, teams] = await Promise.all([getMatches(), getResults(), getTeams()]);
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
+  const resultFor = (m) => getResultForMatch(m, results);
   const now = Date.now();
   const next = matches
-    .filter((m) => !resultMap.has(m.id) && new Date(m.date).getTime() > now)
+    .filter((m) => !resultFor(m) && new Date(m.date).getTime() > now)
     .sort((a, b) => new Date(a.date) - new Date(b.date))[0];
 
   if (!next) {

@@ -51,6 +51,10 @@
       <button data-filter="hit" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.hit">✅ 比分命中</button>
       <button data-filter="winner" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.winner">⚠️ 胜负命中</button>
       <button data-filter="miss" class="filter-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-100 hover:bg-slate-200" data-i18n="predictions.filter.miss">❌ 未中</button>
+      <span class="w-px h-5 bg-slate-200 mx-1"></span>
+      <span class="text-sm text-slate-500" data-i18n="predictions.modelFilter.label">模型：</span>
+      <button data-model="__all__" class="model-btn px-3 py-1.5 rounded-lg text-sm font-semibold bg-ink text-white" data-i18n="predictions.filter.all">全部</button>
+      <span id="model-filter-chips" class="contents"></span>
       <span class="text-xs text-slate-500 ml-auto" id="filter-count">—</span>
     </div>
 

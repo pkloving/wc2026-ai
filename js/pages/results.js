@@ -12,7 +12,8 @@ boot(async () => {
 
   const list = results
     .map((r) => {
-      const m = matches.find((x) => x.id === r.matchId);
+      // results 里的 matchId 是竞彩 mid（2040xxx），matches.json 里同时存在 m.id（M001）和 m.mid（2040xxx）
+      const m = matches.find((x) => x.mid === r.matchId || x.id === r.matchId);
       return m ? { match: m, result: r, prediction: predMap.get(m.id) } : null;
     })
     .filter(Boolean)
@@ -29,10 +30,6 @@ boot(async () => {
         ? `<span class="badge badge-ink">${match.group} ${t('stage.groupShort')}</span>`
         : `<span class="badge badge-gold">${stageLabel(match.stage)}</span>`;
       const d = fmtDate(match.date);
-      const scorersHtml = result.scorers && result.scorers.length > 0
-        ? `<div class="mt-3 text-xs text-slate-600 space-y-1">${result.scorers.map((s) => `<div class="flex items-center gap-2"><span class="font-mono text-slate-400">${s.minute}'</span><span class="font-semibold">${escapeHtml(s.player)}</span>${s.type === 'penalty' ? `<span class="badge badge-gold">${t('common.penalty')}</span>` : ''}${s.type === 'og' ? `<span class="badge badge-flame">${t('common.og')}</span>` : ''}</div>`).join('')}</div>`
-        : '';
-      const pensHtml = result.wentToPenalties ? `<div class="mt-2 text-xs text-flame font-semibold">${t('common.wentToPenalties')}：${result.penaltyScore.home} - ${result.penaltyScore.away}</div>` : '';
       const predChips = prediction ? prediction.models.slice(0, 4).map((mm) => {
         const badge = hitBadge(result, mm);
         return `<span class="badge ${badge.tone}">${mm.model.split(' ')[0]} ${mm.predictedHome}-${mm.predictedAway}</span>`;
@@ -58,8 +55,6 @@ boot(async () => {
               ${teamChip(away, 'md')}
             </div>
           </div>
-          ${scorersHtml}
-          ${pensHtml}
           ${predChips ? `<div class="mt-3 flex flex-wrap gap-1.5 text-xs">${predChips}</div>` : ''}
           <div class="mt-3 text-xs text-slate-400 truncate">${match.venue || ''}</div>
         </a>

@@ -46,10 +46,23 @@ export function teamMap(teamsArr = teams) {
   return m;
 }
 
+// 通过 match 对象（同时兼容 m.id 与 m.mid）查结果。
+// matches.json 的 id 是 M001 这种自定义 id；results/<mid>.json 的 matchId 是竞彩 2040xxx。
+// 所以统一走 match.mid（已加）作为优先 key，没 mid 时退回 m.id。
+export function getResultForMatch(match, resultsArr = results) {
+  if (!match) return null;
+  const keys = [match.mid, match.id].filter(Boolean);
+  for (const k of keys) {
+    const r = resultsArr.find((x) => String(x.matchId) === String(k));
+    if (r) return r;
+  }
+  return null;
+}
+
 export function getMatchById(id) {
   const m = matchesData.find((x) => x.id === id);
   if (!m) return null;
-  const r = resultsData.find((x) => x.matchId === id) || null;
+  const r = getResultForMatch(m);
   const p = predictionsData.find((x) => x.matchId === id) || null;
   return { match: m, result: r, prediction: p };
 }

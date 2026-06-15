@@ -1,5 +1,5 @@
 import { mountNextMatchCountdown } from '../countdown.js';
-import { getMatches, getResults, getPredictions, getTeams } from '../data.js';
+import { getMatches, getResults, getPredictions, getTeams, getResultForMatch } from '../data.js';
 import { fmtDate, stageLabel, hitBadge, teamChip, teamDisplayName } from '../util.js';
 import { t } from '../i18n.js';
 
@@ -13,7 +13,7 @@ import { t } from '../i18n.js';
       getTeams(),
       mountNextMatchCountdown('countdown-next'),
     ]);
-    const resultMap = new Map(results.map((r) => [r.matchId, r]));
+    const resultFor = (m) => getResultForMatch(m, results);
     const teamMap = new Map(teams.map((t) => [t.code, t]));
 
     // 3) 今日 / 即将开赛
@@ -30,7 +30,7 @@ import { t } from '../i18n.js';
         : upcoming.map((m) => {
             const home = teamMap.get(m.home);
             const away = teamMap.get(m.away);
-            const r = resultMap.get(m.id);
+            const r = resultFor(m);
             const stageBadge = m.stage === 'group'
               ? `<span class="badge badge-ink">${m.group} ${t('stage.groupShort')}</span>`
               : `<span class="badge badge-gold">${stageLabel(m.stage)}</span>`;
@@ -72,7 +72,7 @@ import { t } from '../i18n.js';
           if (!m) return '';
           const home = teamMap.get(m.home);
           const away = teamMap.get(m.away);
-          const r = resultMap.get(m.id);
+          const r = resultFor(m);
           const chipsHtml = p.models.slice(0, 4).map((mm) => {
             const badge = hitBadge(r, mm);
             return `<span class="badge ${badge.tone}">${mm.model.split(' ')[0]} ${mm.predictedHome}-${mm.predictedAway}</span>`;

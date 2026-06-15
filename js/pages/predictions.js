@@ -1,4 +1,4 @@
-import { getMatches, getResults, getTeams, getPredictions } from '../data.js';
+import { getMatches, getResults, getTeams, getPredictions, getResultForMatch } from '../data.js';
 import { fmtDate, stageLabel, hitBadge, teamChip, teamDisplayName } from '../util.js';
 import { t } from '../i18n.js';
 import { renderChampionSection } from '../champion.js';
@@ -9,11 +9,12 @@ boot(async () => {
     getMatches(), getResults(), getTeams(), getPredictions(),
   ]);
   const teamMap = new Map(teams.map((t) => [t.code, t]));
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
+  const resultFor = (m) => getResultForMatch(m, results);
   function computeModelStats() {
     const stats = new Map();
     for (const p of predictions) {
-      const r = resultMap.get(p.matchId);
+      const m = matches.find((x) => x.id === p.matchId);
+      const r = m ? resultFor(m) : null;
       for (const m of p.models) {
         if (!stats.has(m.model)) {
           stats.set(m.model, { model: m.model, total: 0, scoreHit: 0, winnerHit: 0, miss: 0 });
@@ -70,19 +71,52 @@ boot(async () => {
 
   // ---- 列表 ----
   let activeFilter = 'all';
+  let activeModelFilter = '__all__';
   function applyFilter(list) {
     return list.filter((p) => {
-      const r = resultMap.get(p.matchId);
-      if (activeFilter === 'all') return true;
-      if (activeFilter === 'finished') return !!r;
-      if (activeFilter === 'pending') return !r;
-      if (!r) return false;
-      const hits = p.models.map((m) => hitBadge(r, m));
-      if (activeFilter === 'hit') return hits.some((h) => h.tone === 'badge-pitch');
-      if (activeFilter === 'winner') return hits.some((h) => h.tone === 'badge-gold');
-      if (activeFilter === 'miss') return hits.every((h) => h.tone === 'badge-flame');
+      const r = p.result;
+      if (activeFilter === 'all') {
+        // 全部：不做状态筛选
+      } else if (activeFilter === 'finished') {
+        if (!r) return false;
+      } else if (activeFilter === 'pending') {
+        if (r) return false;
+      } else if (r) {
+        const hits = p.models.map((m) => hitBadge(r, m));
+        if (activeFilter === 'hit' && !hits.some((h) => h.tone === 'badge-pitch')) return false;
+        if (activeFilter === 'winner' && !hits.some((h) => h.tone === 'badge-gold')) return false;
+        if (activeFilter === 'miss' && !hits.every((h) => h.tone === 'badge-flame')) return false;
+      } else {
+        return false;
+      }
+      // 模型筛选
+      if (activeModelFilter !== '__all__') {
+        const hasModel = p.models.some((m) => m.model === activeModelFilter);
+        if (!hasModel) return false;
+      }
       return true;
     });
+  }
+
+  // 收集所有出现过的模型名，按出现频次排序
+  function getAllModels() {
+    const counts = new Map();
+    for (const p of predictions) {
+      for (const m of p.models) {
+        counts.set(m.model, (counts.get(m.model) || 0) + 1);
+      }
+    }
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([model]) => model);
+  }
+
+  function renderModelChips() {
+    const models = getAllModels();
+    const el = document.getElementById('model-filter-chips');
+    if (!el) return;
+    el.innerHTML = models.map((m) => {
+      const active = activeModelFilter === m;
+      return `<button data-model="${escapeHtml(m)}" class="model-btn px-3 py-1.5 rounded-lg text-sm font-semibold ${active ? 'bg-pitch text-white' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}">${escapeHtml(m)}</button>`;
+    }).join('');
   }
 
   function renderList() {
@@ -90,7 +124,7 @@ boot(async () => {
       .map((p) => {
         const m = matches.find((x) => x.id === p.matchId);
         if (!m) return null;
-        return { match: m, result: resultMap.get(m.id), prediction: p };
+        return { match: m, result: resultFor(m), prediction: p };
       })
       .filter(Boolean)
       .sort((a, b) => {
@@ -123,7 +157,8 @@ boot(async () => {
         : `<span class="text-slate-400 text-sm">${t('common.pending')}</span>`;
       const modelChips = prediction.models.map((m) => {
         const badge = hitBadge(result, m);
-        return `<span class="badge ${badge.tone}">${m.model.split(' ')[0]} ${m.predictedHome}-${m.predictedAway}</span>`;
+        const dim = activeModelFilter !== '__all__' && m.model !== activeModelFilter;
+        return `<span class="badge ${badge.tone} ${dim ? 'opacity-30' : ''}">${m.model.split(' ')[0]} ${m.predictedHome}-${m.predictedAway}</span>`;
       }).join(' ');
       return `
         <a href="/match.html?id=${match.id}" class="card p-5 hover:-translate-y-0.5 transition-transform block">
@@ -167,7 +202,44 @@ boot(async () => {
     });
   });
 
+  // 模型筛选：使用事件代理（chips 是动态渲染的）
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.model-btn');
+    if (!btn) return;
+    const m = btn.dataset.model;
+    activeModelFilter = m || '__all__';
+    // 重置"全部"按钮样式
+    document.querySelectorAll('.model-btn').forEach((x) => {
+      if (x.dataset.model === '__all__') {
+        x.classList.toggle('bg-ink', activeModelFilter === '__all__');
+        x.classList.toggle('text-white', activeModelFilter === '__all__');
+        x.classList.toggle('bg-slate-100', activeModelFilter !== '__all__');
+        x.classList.toggle('hover:bg-slate-200', activeModelFilter !== '__all__');
+        x.classList.toggle('text-slate-700', activeModelFilter !== '__all__');
+      } else {
+        const active = x.dataset.model === activeModelFilter;
+        x.classList.toggle('bg-pitch', active);
+        x.classList.toggle('text-white', active);
+        x.classList.toggle('bg-slate-100', !active);
+        x.classList.toggle('hover:bg-slate-200', !active);
+        x.classList.toggle('text-slate-700', !active);
+      }
+    });
+    renderList();
+  });
+
   renderChampionSection('champion-section');
   renderDashboard();
+  renderModelChips();
   renderList();
 }, { errorTarget: 'prediction-list' });
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}

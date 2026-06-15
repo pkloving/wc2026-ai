@@ -1,12 +1,12 @@
-import { getMatches, getResults, getTeams } from '../data.js';
+import { getMatches, getResults, getTeams, getResultForMatch } from '../data.js';
 import { fmtDate, stageLabel, teamChip, teamDisplayName } from '../util.js';
 import { t, formatMonthDayCN, formatWeekdayCN } from '../i18n.js';
 import { boot } from '../page-boot.js';
 
 boot(async () => {
   const [matches, results, teams] = await Promise.all([getMatches(), getResults(), getTeams()]);
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
   const teamMap = new Map(teams.map((t) => [t.code, t]));
+  const resultFor = (m) => getResultForMatch(m, results);
 
   const state = { stage: '', group: '', status: '', team: '' };
 
@@ -14,8 +14,8 @@ boot(async () => {
     return matches.filter((m) => {
       if (state.stage && m.stage !== state.stage) return false;
       if (state.group && m.group !== state.group) return false;
-      const r = resultMap.get(m.id);
-      const mStatus = r ? 'finished' : 'scheduled';
+      const r = resultFor(m);
+      const mStatus = r ? 'finished' : (m.status === 'finished' ? 'finished' : 'scheduled');
       if (state.status && mStatus !== state.status) return false;
       if (state.team) {
         const q = state.team.trim().toUpperCase();
@@ -56,7 +56,7 @@ boot(async () => {
       const cardsHtml = ms.map((m) => {
         const home = teamMap.get(m.home);
         const away = teamMap.get(m.away);
-        const r = resultMap.get(m.id);
+        const r = resultFor(m);
         const stageBadge = m.stage === 'group'
           ? `<span class="badge badge-ink">${m.group} ${t('stage.groupShort')}</span>`
           : `<span class="badge badge-gold">${stageLabel(m.stage)}</span>`;

@@ -1,4 +1,4 @@
-import { getTeams, getGroups, getMatches, getResults } from '../data.js';
+import { getTeams, getGroups, getMatches, getResults, getResultForMatch } from '../data.js';
 import { teamChip } from '../util.js';
 import { boot } from '../page-boot.js';
 
@@ -6,7 +6,7 @@ boot(async () => {
   const [teams, groups, matches, results] = await Promise.all([
     getTeams(), getGroups(), getMatches(), getResults(),
   ]);
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
+  const resultFor = (m) => getResultForMatch(m, results);
 
   // 球队属于哪个组
   const groupByTeam = new Map();
@@ -16,7 +16,7 @@ boot(async () => {
   const teamStats = new Map();
   teams.forEach((t) => teamStats.set(t.code, { played: 0, win: 0, draw: 0, lose: 0, gf: 0, ga: 0 }));
   for (const m of matches) {
-    const r = resultMap.get(m.id);
+    const r = resultFor(m);
     if (!r) continue;
     const h = teamStats.get(m.home);
     const a = teamStats.get(m.away);

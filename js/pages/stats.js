@@ -1,4 +1,4 @@
-import { getMatches, getResults, getTeams, getPredictions } from '../data.js';
+import { getMatches, getResults, getTeams, getPredictions, getResultForMatch } from '../data.js';
 import { stageLabel, hitBadge, teamChip, teamDisplayName } from '../util.js';
 import { t, getLocale } from '../i18n.js';
 import { boot } from '../page-boot.js';
@@ -11,19 +11,28 @@ boot(async () => {
   const [matches, results, teams, predictions] = await Promise.all([
     getMatches(), getResults(), getTeams(), getPredictions(),
   ]);
-  const resultMap = new Map(results.map((r) => [r.matchId, r]));
+  const resultFor = (m) => getResultForMatch(m, results);
   const teamMap = new Map(teams.map((t) => [t.code, t]));
 
-  // 速览（只统计世界杯正赛：results 里可能混入国际赛/热身赛等其它赛事，需按 matches.json 的 id 过滤）
-  const matchIds = new Set(matches.map((m) => m.id));
-  const wcResults = results.filter((r) => matchIds.has(r.matchId));
+  // 速览（只统计世界杯正赛：results 里可能混入国际赛/热身赛等其它赛事，按 matches.json 的 id/mid 过滤）
+  const matchByResultId = new Map();
+  for (const m of matches) {
+    if (m.mid) matchByResultId.set(String(m.mid), m);
+    if (m.id) matchByResultId.set(String(m.id), m);
+  }
+  const wcResults = results.filter((r) => matchByResultId.has(String(r.matchId)));
   const finished = wcResults.length;
-  const wcResultMap = new Map(wcResults.map((r) => [r.matchId, r]));
+  const resultMap = new Map(wcResults.map((r) => [r.matchId, r]));
   const predictedMatchIds = new Set(predictions.map((p) => p.matchId));
-  const finishedPredicted = [...predictedMatchIds].filter((id) => wcResultMap.has(id));
+  const finishedPredicted = [...predictedMatchIds].filter((id) => {
+    const m = matches.find((x) => x.id === id);
+    return m ? !!resultFor(m) : false;
+  });
   let totalPreds = 0, totalWinner = 0;
   for (const p of predictions) {
-    const r = wcResultMap.get(p.matchId);
+    const m = matches.find((x) => x.id === p.matchId);
+    if (!m) continue;
+    const r = resultFor(m);
     if (!r) continue;
     for (const m of p.models) {
       totalPreds += 1;
@@ -46,7 +55,9 @@ boot(async () => {
   // 1. AI 模型准确率榜
   const modelStats = new Map();
   for (const p of predictions) {
-    const r = resultMap.get(p.matchId);
+    const m = matches.find((x) => x.id === p.matchId);
+    if (!m) continue;
+    const r = resultFor(m);
     for (const m of p.models) {
       if (!modelStats.has(m.model)) modelStats.set(m.model, { scoreHit: 0, winnerHit: 0, total: 0, finished: 0 });
       const s = modelStats.get(m.model);
@@ -103,8 +114,9 @@ boot(async () => {
   const stageStats = new Map(stages.map((s) => [s, { score: 0, winner: 0, total: 0 }]));
   for (const p of predictions) {
     const m = matches.find((x) => x.id === p.matchId);
-    const r = resultMap.get(p.matchId);
-    if (!m || !r) continue;
+    if (!m) continue;
+    const r = resultFor(m);
+    if (!r) continue;
     const s = stageStats.get(m.stage);
     if (!s) continue;
     for (const mm of p.models) {
@@ -136,12 +148,13 @@ boot(async () => {
   });
 
   // 3. 进展时间线
-  const sorted = matches.filter((m) => resultMap.has(m.id)).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const sorted = matches.filter((m) => !!resultFor(m)).sort((a, b) => new Date(a.date) - new Date(b.date));
   const cumStats = new Map();
   for (const m of sorted) {
     const p = predictions.find((x) => x.matchId === m.id);
     if (!p) continue;
-    const r = resultMap.get(m.id);
+    const r = resultFor(m);
+    if (!r) continue;
     for (const mm of p.models) {
       if (!cumStats.has(mm.model)) cumStats.set(mm.model, { x: [], y: [], score: 0, winner: 0, total: 0 });
       const cs = cumStats.get(mm.model);
@@ -186,7 +199,7 @@ boot(async () => {
     el.innerHTML = `<div class="col-span-full text-slate-500 text-sm">${t('stats.keyMatches.empty')}</div>`;
   } else {
     el.innerHTML = keyList.map((m) => {
-      const r = resultMap.get(m.id);
+      const r = resultFor(m);
       const p = predictions.find((x) => x.matchId === m.id);
       const home = teamMap.get(m.home);
       const away = teamMap.get(m.away);
@@ -202,7 +215,7 @@ boot(async () => {
               ${teamChip(home, 'sm')}
               <div class="font-semibold truncate">${teamDisplayName(home) || m.home}</div>
             </div>
-            <div class="text-2xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>
+            <div class="text-2xl font-black tabular-nums">${r ? `${r.homeScore} - ${r.awayScore}` : '—'}</div>
             <div class="flex items-center gap-2 min-w-0">
               <div class="font-semibold truncate">${teamDisplayName(away) || m.away}</div>
               ${teamChip(away, 'sm')}
