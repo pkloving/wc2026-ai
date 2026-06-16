@@ -31,10 +31,11 @@ const totalHome = matches.reduce((a, m) => a + m.derived.home_goals, 0);
 const totalAway = matches.reduce((a, m) => a + m.derived.away_goals, 0);
 const lambdaHome = totalHome / n;
 const lambdaAway = totalAway / n;
+const lambdaTotal = lambdaHome + lambdaAway;
 
 console.log(`输入：${n} 场`);
 console.log(`  总进球：主 ${totalHome} / 客 ${totalAway}`);
-console.log(`  全局 λ_home = ${lambdaHome.toFixed(2)}, λ_away = ${lambdaAway.toFixed(2)}`);
+console.log(`  全局 λ_home = ${lambdaHome.toFixed(2)}, λ_away = ${lambdaAway.toFixed(2)}, λ_total = ${lambdaTotal.toFixed(2)}`);
 
 // Poisson PMF
 function logFactorial(k) {
@@ -56,27 +57,39 @@ function tierOf(p0Home) {
   return 'balanced';
 }
 
-const tierAdjust = {
-  strong_fav: { home_mult: 1.3, away_mult: 0.8 },
-  balanced:   { home_mult: 1.0, away_mult: 1.0 },
-  weak_fav:   { home_mult: 0.8, away_mult: 1.2 },
-};
+// v2 公式：赔率概率加权分配总进球期望到主/客
+// λ_home = λ_total × p0_home / (p0_home + p0_away)
+// λ_away = λ_total × p0_away / (p0_home + p0_away)
+// 注：分母忽略 p0_draw（赔率市场的"主客对立"信号更强），保持与 score_model.json artifact 一致
+function lambdasFor(p0Home, p0Away) {
+  if (p0Home === null || p0Away === null || p0Home + p0Away <= 0) {
+    return { lh: lambdaHome, la: lambdaAway };
+  }
+  const denom = p0Home + p0Away;
+  return {
+    lh: lambdaTotal * (p0Home / denom),
+    la: lambdaTotal * (p0Away / denom),
+  };
+}
+
+// 旧 v1 tier 调整逻辑已废弃（artifact 是 v2 概率加权）；保留为参考注释以备回滚：
+// const tierAdjust = {
+//   strong_fav: { home_mult: 1.3, away_mult: 0.8 },
+//   balanced:   { home_mult: 1.0, away_mult: 1.0 },
+//   weak_fav:   { home_mult: 0.8, away_mult: 1.2 },
+// };
 
 const model = {
-  model_type: 'poisson_independent',
+  model_type: 'poisson_probability_weighted',
   generated_at: new Date().toISOString(),
   source: 'modeling/data/01_matches_with_odds.json',
   n_samples: n,
+  global_lambda_total: round(lambdaTotal),
   global_lambda_home: round(lambdaHome),
   global_lambda_away: round(lambdaAway),
-  tier_adjustment: {
-    strong_fav: { home_mult: tierAdjust.strong_fav.home_mult, away_mult: tierAdjust.strong_fav.away_mult },
-    balanced:   { home_mult: tierAdjust.balanced.home_mult, away_mult: tierAdjust.balanced.away_mult },
-    weak_fav:   { home_mult: tierAdjust.weak_fav.home_mult, away_mult: tierAdjust.weak_fav.away_mult },
-  },
-  tier_thresholds: { strong_fav_p0: 0.6, weak_fav_p0: 0.3 },
   score_grid_max: 5,
-  formula: 'P(h,a) = Poisson(h; λ_h) * Poisson(a; λ_a) ; h,a ∈ [0,5]，>5 归"其他"',
+  formula: 'λ_home = λ_total × p0_home / (p0_home + p0_away)；λ_away = λ_total × p0_away / (p0_home + p0_away)',
+  note: 'v2: 用赔率概率比例分配进球期望，确保比分方向与胜负预测一致（修复 v1 客队热门时 λ_home > λ_away 的矛盾）',
 };
 
 if (!fs.existsSync(path.dirname(OUT_FILE))) fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
@@ -84,11 +97,11 @@ fs.writeFileSync(OUT_FILE, JSON.stringify(model, null, 2) + '\n', 'utf-8');
 
 // 给每场样本算 Top-3（用 spf 实际赔率驱动），落 sample 辅助表
 const sampleTop3 = matches.map((m) => {
-  const p0Home = m.derived.spf_implied?.p0_home ?? null;
+  const p0 = m.derived.spf_implied;
+  const p0Home = p0?.p0_home ?? null;
+  const p0Away = p0?.p0_away ?? null;
   const tier = tierOf(p0Home);
-  const adj = tierAdjust[tier];
-  const lh = lambdaHome * adj.home_mult;
-  const la = lambdaAway * adj.away_mult;
+  const { lh, la } = lambdasFor(p0Home, p0Away);
   const grid = [];
   let total = 0;
   for (let h = 0; h <= 5; h += 1) {

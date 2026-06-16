@@ -112,15 +112,22 @@ function predictHandicap(m) {
 
 // ---- 3. 比分 Top-3 ----
 function predictScore(m) {
-  const p0 = m.spf ? impliedProbs(m.spf).p0_home : null;
-  let tier = 'balanced';
-  if (p0 !== null) {
-    if (p0 > scoreModel.tier_thresholds.strong_fav_p0) tier = 'strong_fav';
-    else if (p0 < scoreModel.tier_thresholds.weak_fav_p0) tier = 'weak_fav';
+  const imp = m.spf ? impliedProbs(m.spf) : null;
+  const p0Home = imp?.p0_home ?? null;
+  const p0Away = imp?.p0_away ?? null;
+  // v2 概率加权公式（与 score_model.json artifact 一致）：
+  //   λ_home = λ_total × p0_home / (p0_home + p0_away)
+  //   λ_away = λ_total × p0_away / (p0_home + p0_away)
+  let lh, la;
+  if (p0Home === null || p0Away === null || p0Home + p0Away <= 0) {
+    lh = scoreModel.global_lambda_home;
+    la = scoreModel.global_lambda_away;
+  } else {
+    const denom = p0Home + p0Away;
+    const total = scoreModel.global_lambda_total;
+    lh = total * (p0Home / denom);
+    la = total * (p0Away / denom);
   }
-  const adj = scoreModel.tier_adjustment[tier];
-  const lh = scoreModel.global_lambda_home * adj.home_mult;
-  const la = scoreModel.global_lambda_away * adj.away_mult;
   const max = scoreModel.score_grid_max;
   const grid = [];
   let total = 0;
@@ -134,7 +141,6 @@ function predictScore(m) {
   for (const g of grid) g.p = g.p / total;
   grid.sort((x, y) => y.p - x.p);
   return {
-    tier,
     lambda_home: round(lh),
     lambda_away: round(la),
     top3: grid.slice(0, 3).map((g) => ({ score: `${g.h}-${g.a}`, prob: round(g.p) })),
@@ -161,7 +167,7 @@ const predictions = candidates.map((m) => {
       handicap: { verdict: handi.verdict, reason: handi.reason, sample_win_rate: handi.sample_win_rate ?? null },
       score_top3: score.top3,
     },
-    score_meta: { tier: score.tier, lambda_home: score.lambda_home, lambda_away: score.lambda_away },
+    score_meta: { lambda_home: score.lambda_home, lambda_away: score.lambda_away },
   };
 });
 

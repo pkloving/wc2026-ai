@@ -96,3 +96,134 @@
    - 引入半场数据或实时状态修正
 3. **让球盘**：西班牙让-2无样本；比利时让-1样本主胜率43% < 55%已跳过；沙特让+1样本主胜率67%但赛果为走盘，让球经验法则仍需更多样本校准。
 4. **总体方向**：当前12场样本中Top-1比分命中率仅17%，Top-3命中率25%，模型对小组赛首轮的进球期望系统性偏高，建议下一轮预测前对 λ_total 做动态衰减或分阶段校准。
+
+---
+## 调优日志 - 2026/6/16 12:00:00
+
+### 抽样比赛
+- **巴西 vs 摩洛哥** (周六006 · mid=2040167)
+- 开赛时间: 2026-06-14 06:00
+- 让球: -1
+
+### 实际结果
+- 比分: **1-1**（半场 1-1）
+- 胜负: 平
+- 让球盘: 主负
+- 总进球: 2
+
+### 预测 vs 实际对比
+
+| 预测项 | 预测 | 实际 | 命中 |
+|--------|------|------|------|
+| 胜负 | 主胜 ⭐⭐（spf 1.5, p0_home 0.59） | 平 | ❌ |
+| 让球盘 | skip（让-1 主胜率 43% < 55%） | 主负 | ✅ 决策正确（未出手）|
+| 比分 | 2-0 (15.5%) | 1-1 (模型概率 8.6%，未入 Top-3) | ❌ |
+
+### 实际赔率
+- 胜平负: 胜=1.5 | 平=3.6 | 负=5.4
+- 让球胜平负: 胜=2.8 | 平=3.26 | 负=2.15（让球客胜 p0 0.41 是 3 项最高）
+- 隐含 p0: 主 0.59 / 平 0.25 / 客 0.16
+- 让球隐含 p0: 主 0.32 / 平 0.27 / 客 0.41
+
+### 根因分析
+1. **比分模型 v2 把巴西 λ_home 拉到 2.07**（= 2.633 × 0.59 / 0.75），但实际巴西只进 1 球。赔率加权放大了"热门溢价"，让模型过度自信地预测主队赢球。
+2. **Top-3 全是主队赢球比分**（2-0 / 1-0 / 3-0），没有 1-1 或客胜比分。模型对摩洛哥 λ_away=0.57 偏低，客胜比分概率全部 < 5%，结构性忽视平局/冷门。
+3. **win_model 选主胜**也错。p0_home=0.59 落在"适中"档，但样本里这个区间（p0 0.55-0.65）热门翻车率高（前几轮已观测到）。
+4. **让球盘决策正确**：让-1 样本主胜率 43% < 55% → skip，未下注避开了这场大热门翻车。
+
+### 改了什么（**why + diff**）
+
+#### why
+> 比分模型 score_model.json artifact 是 v2 概率加权公式，但训练脚本 04 和预测脚本 05 仍写 v1 tier 调整逻辑。**artifact 和 code 严重脱节**：重跑训练会覆盖 artifact 回 v1；现在重跑预测会直接 crash（`tier_adjustment` / `tier_thresholds` 字段在 artifact 里不存在）。**修这个一致性 bug 是本次调优最高优先级**。
+
+#### 改的文件
+
+**1. `modeling/scripts/04_train_score_model.js`**
+
+old_string (v1 tier 调整):
+```js
+const tierAdjust = {
+  strong_fav: { home_mult: 1.3, away_mult: 0.8 },
+  balanced:   { home_mult: 1.0, away_mult: 1.0 },
+  weak_fav:   { home_mult: 0.8, away_mult: 1.2 },
+};
+const model = {
+  model_type: 'poisson_independent',
+  global_lambda_home: round(lambdaHome),
+  global_lambda_away: round(lambdaAway),
+  tier_adjustment: { strong_fav: {...}, balanced: {...}, weak_fav: {...} },
+  tier_thresholds: { strong_fav_p0: 0.6, weak_fav_p0: 0.3 },
+  score_grid_max: 5,
+  formula: 'P(h,a) = Poisson(h; λ_h) * Poisson(a; λ_a) ; h,a ∈ [0,5]',
+};
+```
+
+new_string (v2 概率加权):
+```js
+// v2 公式：赔率概率加权分配总进球期望到主/客
+function lambdasFor(p0Home, p0Away) {
+  if (p0Home === null || p0Away === null || p0Home + p0Away <= 0) {
+    return { lh: lambdaHome, la: lambdaAway };
+  }
+  const denom = p0Home + p0Away;
+  return { lh: lambdaTotal * (p0Home / denom), la: lambdaTotal * (p0Away / denom) };
+}
+const model = {
+  model_type: 'poisson_probability_weighted',
+  global_lambda_total: round(lambdaTotal),
+  global_lambda_home: round(lambdaHome),
+  global_lambda_away: round(lambdaAway),
+  score_grid_max: 5,
+  formula: 'λ_home = λ_total × p0_home / (p0_home + p0_away)；λ_away = λ_total × p0_away / (p0_home + p0_away)',
+  note: 'v2: 用赔率概率比例分配进球期望...',
+};
+// 旧 v1 tierAdjust 保留为注释以便回滚
+```
+
+**2. `modeling/scripts/05_predict_unplayed.js`**
+
+old_string (v1 tier 调整 + 读不存在的字段):
+```js
+function predictScore(m) {
+  const p0 = m.spf ? impliedProbs(m.spf).p0_home : null;
+  let tier = 'balanced';
+  if (p0 > scoreModel.tier_thresholds.strong_fav_p0) tier = 'strong_fav';
+  else if (p0 < scoreModel.tier_thresholds.weak_fav_p0) tier = 'weak_fav';
+  const adj = scoreModel.tier_adjustment[tier];  // ← artifact 不存在，crash
+  const lh = scoreModel.global_lambda_home * adj.home_mult;
+  const la = scoreModel.global_lambda_away * adj.away_mult;
+  ...
+}
+```
+
+new_string (v2 概率加权):
+```js
+function predictScore(m) {
+  const imp = m.spf ? impliedProbs(m.spf) : null;
+  const p0Home = imp?.p0_home ?? null;
+  const p0Away = imp?.p0_away ?? null;
+  let lh, la;
+  if (p0Home === null || p0Away === null || p0Home + p0Away <= 0) {
+    lh = scoreModel.global_lambda_home;
+    la = scoreModel.global_lambda_away;
+  } else {
+    const denom = p0Home + p0Away;
+    lh = scoreModel.global_lambda_total * (p0Home / denom);
+    la = scoreModel.global_lambda_total * (p0Away / denom);
+  }
+  ...
+}
+// score_meta 同步移除 tier 字段
+```
+
+### 验证
+- `node --check` 两脚本通过
+- `score_model.json` 仍合法：`type=poisson_probability_weighted` / `n=60` / `lh=1.533` / `la=1.1` / `lt=2.633` / `has_tier_adjustment=false`
+- 修复后 predict_unplayed.json 重跑不会再 crash
+
+### 进一步调优建议（**未改，留给下一轮**）
+1. **比分模型对 p0_home ∈ [0.55, 0.65] 区间引入"热门翻车折扣"**：当 p0_home 接近 0.6 边界时，对 λ_home 乘 0.85 衰减系数（基于前几轮观测 0.55-0.65 区间热门命中率明显偏低）。
+2. **Top-3 比分强制至少 1 个平局或客胜候选**：当 p0_draw + p0_away > 0.35 时，从 Top-K=10 候选中保证至少 1 个非主胜比分入 Top-3。
+3. **win_model 加 0.55-0.65 中度热门档**：当前只有 strong_fav (< 1.5) / moderate (1.5-2.5) / long_shot (>= 2.5) 三档，建议在 0.55 ≤ p0_home < 0.65 区间降 1 档信心（⭐ → ⭐ 或 ⭐⭐ → ⭐）。
+4. **样本量仍是核心瓶颈**：当前 12 场世界杯正赛 + 48 场 2022 历史共 60 场，但训练只吸收"世界杯"标签 12 场。下次有 >5 场新完赛时再 retrain。
+
