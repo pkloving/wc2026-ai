@@ -133,47 +133,47 @@
   },
   {
     "id": "M013",
-    "mid": "2040191",
+    "mid": "2040174",
     "stage": "group",
     "group": "H",
     "date": "2026-06-15T16:00:00Z",
     "venue": "Estadio Akron, Guadalajara",
     "home": "ESP",
     "away": "CPV",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M014",
-    "mid": "2040192",
+    "mid": "2040175",
     "stage": "group",
     "group": "G",
     "date": "2026-06-15T19:00:00Z",
     "venue": "Estadio BBVA, Monterrey",
     "home": "BEL",
     "away": "EGY",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M015",
-    "mid": "2040193",
+    "mid": "2040176",
     "stage": "group",
     "group": "H",
     "date": "2026-06-15T22:00:00Z",
     "venue": "BMO Field, Toronto",
     "home": "KSA",
     "away": "URU",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M016",
-    "mid": "2040194",
+    "mid": "2040177",
     "stage": "group",
     "group": "G",
     "date": "2026-06-16T01:00:00Z",
     "venue": "BC Place, Vancouver",
     "home": "IRN",
     "away": "NZL",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M017",
