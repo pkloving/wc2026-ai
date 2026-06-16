@@ -483,7 +483,7 @@
       "home": "西班牙",
       "away": "佛得角",
       "kickoff": "2026-06-16 00:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": -2,
       "rqspf": {
@@ -507,7 +507,7 @@
       "home": "比利时",
       "away": "埃及",
       "kickoff": "2026-06-16 03:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.41,
         "draw": 3.92,
@@ -536,7 +536,7 @@
       "home": "沙特阿拉伯",
       "away": "乌拉圭",
       "kickoff": "2026-06-16 06:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 7.5,
         "draw": 4.3,
@@ -565,7 +565,7 @@
       "home": "伊朗",
       "away": "新西兰",
       "kickoff": "2026-06-16 09:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.59,
         "draw": 3.28,
