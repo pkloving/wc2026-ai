@@ -1,0 +1,25 @@
+{
+  "matchId": "2040177",
+  "homeScore": 2,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "home",
+      "player": "Jahanbakhsh",
+      "minute": 12,
+      "type": "goal"
+    },
+    {
+      "team": "home",
+      "player": "Taremi",
+      "minute": 68,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

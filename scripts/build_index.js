@@ -41,7 +41,7 @@ const index = {
 let totalHistory = 0;
 for (const m of statusDoc.matches) {
   // 历史快照数
-  const histFile = path.join(DATA_DIR, m.history_file);
+  const histFile = m.history_file ? path.join(DATA_DIR, m.history_file) : null;
   let histCount = 0;
   if (fs.existsSync(histFile)) {
     const h = JSON.parse(fs.readFileSync(histFile, 'utf8'));

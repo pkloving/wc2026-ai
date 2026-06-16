@@ -1,0 +1,25 @@
+{
+  "matchId": "2040176",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "home",
+      "player": "Amri",
+      "minute": 41,
+      "type": "goal"
+    },
+    {
+      "team": "away",
+      "player": "Araujo",
+      "minute": 80,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

@@ -1,8 +1,8 @@
 {
   "model_type": "rule_based_with_confidence",
-  "generated_at": "2026-06-15T10:32:51.217Z",
+  "generated_at": "2026-06-16T01:08:59.417Z",
   "source": "modeling/data/01_matches_with_odds.json",
-  "n_samples": 12,
+  "n_samples": 60,
   "rules": {
     "fav_threshold": 1.5,
     "moderate_threshold": 2.5,
@@ -11,7 +11,7 @@
   },
   "calibration": {
     "fav_overall_hit_rate": 0.5,
-    "home_win_rate": 0.583,
+    "home_win_rate": 0.433,
     "home_strong_hit_rate": 1,
     "home_moderate_hit_rate": 0.5,
     "home_weak_hit_rate": 1,

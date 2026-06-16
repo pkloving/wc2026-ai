@@ -1,29 +1,30 @@
 {
-  "generated_at": "2026-06-15T10:32:51.789Z",
-  "note": "每场样本用实际 spf 赔率驱动 Poisson，Top-3 是模型给该场的最佳 3 个比分概率",
-  "total": 12,
+  "generated_at": "2026-06-16T01:08:59.947Z",
+  "note": "v2: 每场样本用 spf 赔率概率比例分配 λ，Top-3 是模型给该场的最佳 3 个比分概率",
+  "total": 60,
   "samples": [
     {
       "mid": "2040162",
       "home": "墨西哥",
       "away": "南非",
-      "tier": "strong_fav",
-      "lambda_home": 3.033,
-      "lambda_away": 0.667,
+      "p0_home": 0.702668561503237,
+      "p0_away": 0.09837359861045318,
+      "lambda_home": 2.31,
+      "lambda_away": 0.323,
       "actual_score": "2-0",
-      "actual_score_prob": 0.125,
+      "actual_score_prob": 0.198,
       "top3": [
         {
-          "score": "3-0",
-          "prob": 0.126
-        },
-        {
           "score": "2-0",
-          "prob": 0.125
+          "prob": 0.198
         },
         {
-          "score": "4-0",
-          "prob": 0.096
+          "score": "1-0",
+          "prob": 0.171
+        },
+        {
+          "score": "3-0",
+          "prob": 0.152
         }
       ]
     },
@@ -31,23 +32,24 @@
       "mid": "2040163",
       "home": "韩国",
       "away": "捷克",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.3557567917205692,
+      "p0_away": 0.3221216041397154,
+      "lambda_home": 1.382,
+      "lambda_away": 1.251,
       "actual_score": "2-1",
-      "actual_score_prob": 0.099,
+      "actual_score_prob": 0.086,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
+          "score": "1-1",
+          "prob": 0.125
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.1
         },
         {
-          "score": "2-1",
-          "prob": 0.099
+          "score": "0-1",
+          "prob": 0.09
         }
       ]
     },
@@ -55,23 +57,24 @@
       "mid": "2040164",
       "home": "加拿大",
       "away": "波黑",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.5467455293065311,
+      "p0_away": 0.1864690015740169,
+      "lambda_home": 1.964,
+      "lambda_away": 0.67,
       "actual_score": "1-1",
-      "actual_score_prob": 0.085,
+      "actual_score_prob": 0.096,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
-        },
-        {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.143
         },
         {
-          "score": "2-1",
-          "prob": 0.099
+          "score": "2-0",
+          "prob": 0.141
+        },
+        {
+          "score": "1-1",
+          "prob": 0.096
         }
       ]
     },
@@ -79,23 +82,24 @@
       "mid": "2040165",
       "home": "美国",
       "away": "巴拉圭",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.4946034161677246,
+      "p0_away": 0.23298424077374394,
+      "lambda_home": 1.79,
+      "lambda_away": 0.843,
       "actual_score": "4-1",
-      "actual_score_prob": 0.045,
+      "actual_score_prob": 0.026,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
-        },
-        {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.13
         },
         {
-          "score": "2-1",
-          "prob": 0.099
+          "score": "2-0",
+          "prob": 0.116
+        },
+        {
+          "score": "1-1",
+          "prob": 0.11
         }
       ]
     },
@@ -103,23 +107,24 @@
       "mid": "2040166",
       "home": "卡塔尔",
       "away": "瑞士",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
       "actual_score": "1-1",
-      "actual_score_prob": 0.085,
+      "actual_score_prob": 0.122,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
+          "score": "1-1",
+          "prob": 0.122
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.111
         },
         {
           "score": "2-1",
-          "prob": 0.099
+          "prob": 0.093
         }
       ]
     },
@@ -127,23 +132,24 @@
       "mid": "2040167",
       "home": "巴西",
       "away": "摩洛哥",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.5901639344262295,
+      "p0_away": 0.1639344262295082,
+      "lambda_home": 2.061,
+      "lambda_away": 0.572,
       "actual_score": "1-1",
-      "actual_score_prob": 0.085,
+      "actual_score_prob": 0.086,
       "top3": [
         {
           "score": "2-0",
-          "prob": 0.119
+          "prob": 0.155
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.151
         },
         {
-          "score": "2-1",
-          "prob": 0.099
+          "score": "3-0",
+          "prob": 0.107
         }
       ]
     },
@@ -151,23 +157,24 @@
       "mid": "2040168",
       "home": "海地",
       "away": "苏格兰",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
       "actual_score": "0-1",
-      "actual_score_prob": 0.036,
+      "actual_score_prob": 0.079,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
+          "score": "1-1",
+          "prob": 0.122
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.111
         },
         {
           "score": "2-1",
-          "prob": 0.099
+          "prob": 0.093
         }
       ]
     },
@@ -175,23 +182,24 @@
       "mid": "2040169",
       "home": "澳大利亚",
       "away": "土耳其",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
       "actual_score": "2-0",
-      "actual_score_prob": 0.119,
+      "actual_score_prob": 0.085,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
+          "score": "1-1",
+          "prob": 0.122
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.111
         },
         {
           "score": "2-1",
-          "prob": 0.099
+          "prob": 0.093
         }
       ]
     },
@@ -199,23 +207,24 @@
       "mid": "2040170",
       "home": "德国",
       "away": "库拉索",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
       "actual_score": "7-1",
-      "actual_score_prob": 0.003,
+      "actual_score_prob": 0,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
+          "score": "1-1",
+          "prob": 0.122
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.111
         },
         {
           "score": "2-1",
-          "prob": 0.099
+          "prob": 0.093
         }
       ]
     },
@@ -223,23 +232,24 @@
       "mid": "2040171",
       "home": "荷兰",
       "away": "日本",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.47600175032818653,
+      "p0_away": 0.2581233981371507,
+      "lambda_home": 1.707,
+      "lambda_away": 0.926,
       "actual_score": "2-2",
-      "actual_score_prob": 0.041,
+      "actual_score_prob": 0.045,
       "top3": [
         {
-          "score": "2-0",
-          "prob": 0.119
-        },
-        {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.124
         },
         {
-          "score": "2-1",
-          "prob": 0.099
+          "score": "1-1",
+          "prob": 0.115
+        },
+        {
+          "score": "2-0",
+          "prob": 0.106
         }
       ]
     },
@@ -247,23 +257,24 @@
       "mid": "2040172",
       "home": "科特迪瓦",
       "away": "厄瓜多尔",
-      "tier": "weak_fav",
-      "lambda_home": 1.867,
-      "lambda_away": 1,
+      "p0_home": 0.28103746397694523,
+      "p0_away": 0.3848991354466859,
+      "lambda_home": 1.111,
+      "lambda_away": 1.522,
       "actual_score": "1-0",
-      "actual_score_prob": 0.108,
+      "actual_score_prob": 0.08,
       "top3": [
         {
-          "score": "1-0",
-          "prob": 0.108
-        },
-        {
           "score": "1-1",
-          "prob": 0.108
+          "prob": 0.122
         },
         {
-          "score": "2-0",
-          "prob": 0.1
+          "score": "0-1",
+          "prob": 0.11
+        },
+        {
+          "score": "1-2",
+          "prob": 0.093
         }
       ]
     },
@@ -271,23 +282,1224 @@
       "mid": "2040173",
       "home": "瑞典",
       "away": "突尼斯",
-      "tier": "balanced",
-      "lambda_home": 2.333,
-      "lambda_away": 0.833,
+      "p0_home": 0.5299755339305753,
+      "p0_away": 0.20582770736373504,
+      "lambda_home": 1.897,
+      "lambda_away": 0.737,
       "actual_score": "5-1",
-      "actual_score_prob": 0.021,
+      "actual_score_prob": 0.011,
       "top3": [
         {
+          "score": "1-0",
+          "prob": 0.138
+        },
+        {
           "score": "2-0",
-          "prob": 0.119
+          "prob": 0.131
+        },
+        {
+          "score": "1-1",
+          "prob": 0.102
+        }
+      ]
+    },
+    {
+      "mid": "2022001",
+      "home": "卡塔尔",
+      "away": "厄瓜多尔",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
         },
         {
           "score": "1-0",
-          "prob": 0.102
+          "prob": 0.111
         },
         {
           "score": "2-1",
-          "prob": 0.099
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022002",
+      "home": "塞内加尔",
+      "away": "荷兰",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022003",
+      "home": "卡塔尔",
+      "away": "塞内加尔",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-3",
+      "actual_score_prob": 0.025,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022004",
+      "home": "荷兰",
+      "away": "厄瓜多尔",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.122,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022005",
+      "home": "厄瓜多尔",
+      "away": "塞内加尔",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-2",
+      "actual_score_prob": 0.067,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022006",
+      "home": "荷兰",
+      "away": "卡塔尔",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022007",
+      "home": "英格兰",
+      "away": "伊朗",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "6-2",
+      "actual_score_prob": 0.001,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022008",
+      "home": "美国",
+      "away": "威尔士",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.122,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022009",
+      "home": "威尔士",
+      "away": "伊朗",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022010",
+      "home": "英格兰",
+      "away": "美国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022011",
+      "home": "威尔士",
+      "away": "英格兰",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-3",
+      "actual_score_prob": 0.016,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022012",
+      "home": "伊朗",
+      "away": "美国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-1",
+      "actual_score_prob": 0.079,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022013",
+      "home": "阿根廷",
+      "away": "沙特阿拉伯",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-2",
+      "actual_score_prob": 0.067,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022014",
+      "home": "墨西哥",
+      "away": "波兰",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022015",
+      "home": "波兰",
+      "away": "沙特阿拉伯",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022016",
+      "home": "阿根廷",
+      "away": "墨西哥",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022017",
+      "home": "波兰",
+      "away": "阿根廷",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022018",
+      "home": "沙特阿拉伯",
+      "away": "墨西哥",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-2",
+      "actual_score_prob": 0.067,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022019",
+      "home": "丹麦",
+      "away": "突尼斯",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022020",
+      "home": "法国",
+      "away": "澳大利亚",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "4-1",
+      "actual_score_prob": 0.018,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022021",
+      "home": "突尼斯",
+      "away": "澳大利亚",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-1",
+      "actual_score_prob": 0.079,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022022",
+      "home": "法国",
+      "away": "丹麦",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-1",
+      "actual_score_prob": 0.093,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022023",
+      "home": "澳大利亚",
+      "away": "丹麦",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022024",
+      "home": "突尼斯",
+      "away": "法国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022025",
+      "home": "德国",
+      "away": "日本",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-2",
+      "actual_score_prob": 0.067,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022026",
+      "home": "西班牙",
+      "away": "哥斯达黎加",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "7-0",
+      "actual_score_prob": 0,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022027",
+      "home": "日本",
+      "away": "哥斯达黎加",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-1",
+      "actual_score_prob": 0.079,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022028",
+      "home": "西班牙",
+      "away": "德国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-1",
+      "actual_score_prob": 0.122,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022029",
+      "home": "日本",
+      "away": "西班牙",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-1",
+      "actual_score_prob": 0.093,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022030",
+      "home": "哥斯达黎加",
+      "away": "德国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-4",
+      "actual_score_prob": 0.005,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022031",
+      "home": "摩洛哥",
+      "away": "克罗地亚",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022032",
+      "home": "比利时",
+      "away": "加拿大",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022033",
+      "home": "比利时",
+      "away": "摩洛哥",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022034",
+      "home": "克罗地亚",
+      "away": "加拿大",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "4-1",
+      "actual_score_prob": 0.018,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022035",
+      "home": "克罗地亚",
+      "away": "比利时",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022036",
+      "home": "加拿大",
+      "away": "摩洛哥",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-2",
+      "actual_score_prob": 0.067,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022037",
+      "home": "瑞士",
+      "away": "喀麦隆",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022038",
+      "home": "巴西",
+      "away": "塞尔维亚",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022039",
+      "home": "喀麦隆",
+      "away": "塞尔维亚",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "3-3",
+      "actual_score_prob": 0.01,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022040",
+      "home": "巴西",
+      "away": "瑞士",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022041",
+      "home": "塞尔维亚",
+      "away": "瑞士",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-3",
+      "actual_score_prob": 0.019,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022042",
+      "home": "喀麦隆",
+      "away": "巴西",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "1-0",
+      "actual_score_prob": 0.111,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022043",
+      "home": "乌拉圭",
+      "away": "韩国",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-0",
+      "actual_score_prob": 0.072,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022044",
+      "home": "葡萄牙",
+      "away": "加纳",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "3-2",
+      "actual_score_prob": 0.026,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022045",
+      "home": "韩国",
+      "away": "加纳",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-3",
+      "actual_score_prob": 0.019,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022046",
+      "home": "葡萄牙",
+      "away": "乌拉圭",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-0",
+      "actual_score_prob": 0.085,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022047",
+      "home": "加纳",
+      "away": "乌拉圭",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "0-2",
+      "actual_score_prob": 0.044,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
+        }
+      ]
+    },
+    {
+      "mid": "2022048",
+      "home": "韩国",
+      "away": "葡萄牙",
+      "p0_home": null,
+      "p0_away": null,
+      "lambda_home": 1.533,
+      "lambda_away": 1.1,
+      "actual_score": "2-1",
+      "actual_score_prob": 0.093,
+      "top3": [
+        {
+          "score": "1-1",
+          "prob": 0.122
+        },
+        {
+          "score": "1-0",
+          "prob": 0.111
+        },
+        {
+          "score": "2-1",
+          "prob": 0.093
         }
       ]
     }

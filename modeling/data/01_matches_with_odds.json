@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-15T10:32:49.763Z",
+  "generated_at": "2026-06-16T01:08:58.241Z",
   "source": "data/matches_status.json + data/results/*.json",
-  "total": 12,
+  "total": 60,
   "matches": [
     {
       "mid": "2040162",
@@ -1676,6 +1676,3558 @@
             "total_n": 2,
             "any_drift": 0,
             "max_abs_delta": 0
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022001",
+      "code": "2022-A1",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-20 23:00",
+      "kickoff_iso": "2022-11-20T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022001",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022002",
+      "code": "2022-A2",
+      "league": "世界杯",
+      "home": "塞内加尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-21 23:00",
+      "kickoff_iso": "2022-11-21T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022002",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022003",
+      "code": "2022-A3",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-25 23:00",
+      "kickoff_iso": "2022-11-25T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022003",
+        "homeScore": 1,
+        "awayScore": 3,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 3,
+        "total_goals": 4,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022004",
+      "code": "2022-A4",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-26 23:00",
+      "kickoff_iso": "2022-11-26T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022004",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022005",
+      "code": "2022-A5",
+      "league": "世界杯",
+      "home": "厄瓜多尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-29 23:00",
+      "kickoff_iso": "2022-11-29T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022005",
+        "homeScore": 1,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 2,
+        "total_goals": 3,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022006",
+      "code": "2022-A6",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "卡塔尔",
+      "kickoff": "2022-11-29 23:00",
+      "kickoff_iso": "2022-11-29T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022006",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022007",
+      "code": "2022-B1",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "伊朗",
+      "kickoff": "2022-11-21 20:00",
+      "kickoff_iso": "2022-11-21T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022007",
+        "homeScore": 6,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 6,
+        "away_goals": 2,
+        "total_goals": 8,
+        "score_diff": 4,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022008",
+      "code": "2022-B2",
+      "league": "世界杯",
+      "home": "美国",
+      "away": "威尔士",
+      "kickoff": "2022-11-22 02:00",
+      "kickoff_iso": "2022-11-22T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022008",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022009",
+      "code": "2022-B3",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "伊朗",
+      "kickoff": "2022-11-25 17:00",
+      "kickoff_iso": "2022-11-25T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022009",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022010",
+      "code": "2022-B4",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "美国",
+      "kickoff": "2022-11-26 03:00",
+      "kickoff_iso": "2022-11-26T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022010",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022011",
+      "code": "2022-B5",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "英格兰",
+      "kickoff": "2022-11-30 03:00",
+      "kickoff_iso": "2022-11-30T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022011",
+        "homeScore": 0,
+        "awayScore": 3,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 3,
+        "total_goals": 3,
+        "score_diff": -3,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022012",
+      "code": "2022-B6",
+      "league": "世界杯",
+      "home": "伊朗",
+      "away": "美国",
+      "kickoff": "2022-11-30 03:00",
+      "kickoff_iso": "2022-11-30T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022012",
+        "homeScore": 0,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 1,
+        "total_goals": 1,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022013",
+      "code": "2022-C1",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-22 17:00",
+      "kickoff_iso": "2022-11-22T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022013",
+        "homeScore": 1,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 2,
+        "total_goals": 3,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022014",
+      "code": "2022-C2",
+      "league": "世界杯",
+      "home": "墨西哥",
+      "away": "波兰",
+      "kickoff": "2022-11-22 23:00",
+      "kickoff_iso": "2022-11-22T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022014",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022015",
+      "code": "2022-C3",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-26 20:00",
+      "kickoff_iso": "2022-11-26T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022015",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022016",
+      "code": "2022-C4",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "墨西哥",
+      "kickoff": "2022-11-27 03:00",
+      "kickoff_iso": "2022-11-27T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022016",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022017",
+      "code": "2022-C5",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "阿根廷",
+      "kickoff": "2022-11-30 23:00",
+      "kickoff_iso": "2022-11-30T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022017",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022018",
+      "code": "2022-C6",
+      "league": "世界杯",
+      "home": "沙特阿拉伯",
+      "away": "墨西哥",
+      "kickoff": "2022-11-30 23:00",
+      "kickoff_iso": "2022-11-30T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022018",
+        "homeScore": 1,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 2,
+        "total_goals": 3,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022019",
+      "code": "2022-D1",
+      "league": "世界杯",
+      "home": "丹麦",
+      "away": "突尼斯",
+      "kickoff": "2022-11-22 20:00",
+      "kickoff_iso": "2022-11-22T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022019",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022020",
+      "code": "2022-D2",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-23 02:00",
+      "kickoff_iso": "2022-11-23T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022020",
+        "homeScore": 4,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 4,
+        "away_goals": 1,
+        "total_goals": 5,
+        "score_diff": 3,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022021",
+      "code": "2022-D3",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-26 17:00",
+      "kickoff_iso": "2022-11-26T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022021",
+        "homeScore": 0,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 1,
+        "total_goals": 1,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022022",
+      "code": "2022-D4",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "丹麦",
+      "kickoff": "2022-11-27 00:00",
+      "kickoff_iso": "2022-11-27T00:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022022",
+        "homeScore": 2,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022023",
+      "code": "2022-D5",
+      "league": "世界杯",
+      "home": "澳大利亚",
+      "away": "丹麦",
+      "kickoff": "2022-11-30 23:00",
+      "kickoff_iso": "2022-11-30T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022023",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022024",
+      "code": "2022-D6",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "法国",
+      "kickoff": "2022-11-30 23:00",
+      "kickoff_iso": "2022-11-30T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022024",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022025",
+      "code": "2022-E1",
+      "league": "世界杯",
+      "home": "德国",
+      "away": "日本",
+      "kickoff": "2022-11-23 20:00",
+      "kickoff_iso": "2022-11-23T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022025",
+        "homeScore": 1,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 2,
+        "total_goals": 3,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022026",
+      "code": "2022-E2",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-24 02:00",
+      "kickoff_iso": "2022-11-24T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022026",
+        "homeScore": 7,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 7,
+        "away_goals": 0,
+        "total_goals": 7,
+        "score_diff": 7,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022027",
+      "code": "2022-E3",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-27 17:00",
+      "kickoff_iso": "2022-11-27T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022027",
+        "homeScore": 0,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 1,
+        "total_goals": 1,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022028",
+      "code": "2022-E4",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "德国",
+      "kickoff": "2022-11-28 03:00",
+      "kickoff_iso": "2022-11-28T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022028",
+        "homeScore": 1,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 1,
+        "total_goals": 2,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022029",
+      "code": "2022-E5",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "西班牙",
+      "kickoff": "2022-12-02 03:00",
+      "kickoff_iso": "2022-12-02T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022029",
+        "homeScore": 2,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022030",
+      "code": "2022-E6",
+      "league": "世界杯",
+      "home": "哥斯达黎加",
+      "away": "德国",
+      "kickoff": "2022-12-02 03:00",
+      "kickoff_iso": "2022-12-02T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022030",
+        "homeScore": 2,
+        "awayScore": 4,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 4,
+        "total_goals": 6,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022031",
+      "code": "2022-F1",
+      "league": "世界杯",
+      "home": "摩洛哥",
+      "away": "克罗地亚",
+      "kickoff": "2022-11-23 17:00",
+      "kickoff_iso": "2022-11-23T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022031",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022032",
+      "code": "2022-F2",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "加拿大",
+      "kickoff": "2022-11-24 02:00",
+      "kickoff_iso": "2022-11-24T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022032",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022033",
+      "code": "2022-F3",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "摩洛哥",
+      "kickoff": "2022-11-27 20:00",
+      "kickoff_iso": "2022-11-27T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022033",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022034",
+      "code": "2022-F4",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "加拿大",
+      "kickoff": "2022-11-28 00:00",
+      "kickoff_iso": "2022-11-28T00:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022034",
+        "homeScore": 4,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 4,
+        "away_goals": 1,
+        "total_goals": 5,
+        "score_diff": 3,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022035",
+      "code": "2022-F5",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "比利时",
+      "kickoff": "2022-12-01 23:00",
+      "kickoff_iso": "2022-12-01T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022035",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022036",
+      "code": "2022-F6",
+      "league": "世界杯",
+      "home": "加拿大",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-01 23:00",
+      "kickoff_iso": "2022-12-01T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022036",
+        "homeScore": 1,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 2,
+        "total_goals": 3,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022037",
+      "code": "2022-G1",
+      "league": "世界杯",
+      "home": "瑞士",
+      "away": "喀麦隆",
+      "kickoff": "2022-11-24 17:00",
+      "kickoff_iso": "2022-11-24T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022037",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022038",
+      "code": "2022-G2",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-25 02:00",
+      "kickoff_iso": "2022-11-25T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022038",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022039",
+      "code": "2022-G3",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-28 17:00",
+      "kickoff_iso": "2022-11-28T17:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022039",
+        "homeScore": 3,
+        "awayScore": 3,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 3,
+        "away_goals": 3,
+        "total_goals": 6,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022040",
+      "code": "2022-G4",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "瑞士",
+      "kickoff": "2022-11-29 03:00",
+      "kickoff_iso": "2022-11-29T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022040",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022041",
+      "code": "2022-G5",
+      "league": "世界杯",
+      "home": "塞尔维亚",
+      "away": "瑞士",
+      "kickoff": "2022-12-03 03:00",
+      "kickoff_iso": "2022-12-03T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022041",
+        "homeScore": 2,
+        "awayScore": 3,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 3,
+        "total_goals": 5,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022042",
+      "code": "2022-G6",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "巴西",
+      "kickoff": "2022-12-03 03:00",
+      "kickoff_iso": "2022-12-03T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022042",
+        "homeScore": 1,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 1,
+        "away_goals": 0,
+        "total_goals": 1,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022043",
+      "code": "2022-H1",
+      "league": "世界杯",
+      "home": "乌拉圭",
+      "away": "韩国",
+      "kickoff": "2022-11-24 20:00",
+      "kickoff_iso": "2022-11-24T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022043",
+        "homeScore": 0,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 0,
+        "total_goals": 0,
+        "score_diff": 0,
+        "actual_winner": "draw",
+        "actual_handicap_result": "draw",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022044",
+      "code": "2022-H2",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "加纳",
+      "kickoff": "2022-11-25 02:00",
+      "kickoff_iso": "2022-11-25T02:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022044",
+        "homeScore": 3,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 3,
+        "away_goals": 2,
+        "total_goals": 5,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022045",
+      "code": "2022-H3",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "加纳",
+      "kickoff": "2022-11-28 20:00",
+      "kickoff_iso": "2022-11-28T20:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022045",
+        "homeScore": 2,
+        "awayScore": 3,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 3,
+        "total_goals": 5,
+        "score_diff": -1,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022046",
+      "code": "2022-H4",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "乌拉圭",
+      "kickoff": "2022-11-29 03:00",
+      "kickoff_iso": "2022-11-29T03:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022046",
+        "homeScore": 2,
+        "awayScore": 0,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 0,
+        "total_goals": 2,
+        "score_diff": 2,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022047",
+      "code": "2022-H5",
+      "league": "世界杯",
+      "home": "加纳",
+      "away": "乌拉圭",
+      "kickoff": "2022-12-02 23:00",
+      "kickoff_iso": "2022-12-02T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022047",
+        "homeScore": 0,
+        "awayScore": 2,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 0,
+        "away_goals": 2,
+        "total_goals": 2,
+        "score_diff": -2,
+        "actual_winner": "away",
+        "actual_handicap_result": "home_lose",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
+          }
+        }
+      }
+    },
+    {
+      "mid": "2022048",
+      "code": "2022-H6",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-02 23:00",
+      "kickoff_iso": "2022-12-02T23:00:00+08:00",
+      "handicap": null,
+      "spf": null,
+      "rqspf": null,
+      "scraped_at": null,
+      "final_score": {
+        "matchId": "2022048",
+        "homeScore": 2,
+        "awayScore": 1,
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "scorers": [],
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
+      "derived": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "score_diff": 1,
+        "actual_winner": "home",
+        "actual_handicap_result": "home_win",
+        "spf_implied": null,
+        "rqspf_implied": null,
+        "spf_hit": null,
+        "rqspf_hit": null,
+        "movement": {
+          "spf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "rqspf": {
+            "n": 0,
+            "open": null,
+            "last": null,
+            "delta": null,
+            "range": null,
+            "fav_open": null,
+            "fav_last": null,
+            "fav_drift": null,
+            "p0_open": null,
+            "p0_last": null,
+            "p0_delta_home": null,
+            "p0_delta_draw": null,
+            "p0_delta_away": null
+          },
+          "summary": {
+            "total_n": 0,
+            "any_drift": 0,
+            "max_abs_delta": null
           }
         }
       }

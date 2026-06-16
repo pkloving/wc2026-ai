@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T10:32:53.023Z",
+  "generated_at": "2026-06-16T01:09:01.133Z",
   "source": "data/matches_status.json (status !== finished && league === \"世界杯\")",
   "scope": "世界杯正赛（data/matches.json M001-M104），不含国际赛热身",
   "models_used": [
@@ -37,23 +37,22 @@
         },
         "score_top3": [
           {
-            "score": "2-0",
-            "prob": 0.119
+            "score": "1-1",
+            "prob": 0.122
           },
           {
             "score": "1-0",
-            "prob": 0.102
+            "prob": 0.111
           },
           {
             "score": "2-1",
-            "prob": 0.099
+            "prob": 0.093
           }
         ]
       },
       "score_meta": {
-        "tier": "balanced",
-        "lambda_home": 2.333,
-        "lambda_away": 0.833
+        "lambda_home": 1.533,
+        "lambda_away": 1.1
       }
     },
     {
@@ -88,23 +87,22 @@
         },
         "score_top3": [
           {
-            "score": "3-0",
-            "prob": 0.126
-          },
-          {
             "score": "2-0",
-            "prob": 0.125
+            "prob": 0.168
           },
           {
-            "score": "4-0",
-            "prob": 0.096
+            "score": "1-0",
+            "prob": 0.157
+          },
+          {
+            "score": "3-0",
+            "prob": 0.119
           }
         ]
       },
       "score_meta": {
-        "tier": "strong_fav",
-        "lambda_home": 3.033,
-        "lambda_away": 0.666
+        "lambda_home": 2.135,
+        "lambda_away": 0.498
       }
     },
     {
@@ -139,23 +137,22 @@
         },
         "score_top3": [
           {
-            "score": "1-0",
-            "prob": 0.108
+            "score": "0-2",
+            "prob": 0.186
           },
           {
-            "score": "1-1",
-            "prob": 0.108
+            "score": "0-1",
+            "prob": 0.166
           },
           {
-            "score": "2-0",
-            "prob": 0.1
+            "score": "0-3",
+            "prob": 0.139
           }
         ]
       },
       "score_meta": {
-        "tier": "weak_fav",
-        "lambda_home": 1.866,
-        "lambda_away": 1
+        "lambda_home": 0.392,
+        "lambda_away": 2.241
       }
     },
     {
@@ -191,22 +188,21 @@
         "score_top3": [
           {
             "score": "2-0",
-            "prob": 0.119
+            "prob": 0.147
           },
           {
             "score": "1-0",
-            "prob": 0.102
+            "prob": 0.147
           },
           {
-            "score": "2-1",
+            "score": "3-0",
             "prob": 0.099
           }
         ]
       },
       "score_meta": {
-        "tier": "balanced",
-        "lambda_home": 2.333,
-        "lambda_away": 0.833
+        "lambda_home": 2.007,
+        "lambda_away": 0.626
       }
     },
     {
@@ -241,23 +237,22 @@
         },
         "score_top3": [
           {
-            "score": "3-0",
-            "prob": 0.126
-          },
-          {
             "score": "2-0",
-            "prob": 0.125
+            "prob": 0.187
           },
           {
-            "score": "4-0",
-            "prob": 0.096
+            "score": "1-0",
+            "prob": 0.166
+          },
+          {
+            "score": "3-0",
+            "prob": 0.14
           }
         ]
       },
       "score_meta": {
-        "tier": "strong_fav",
-        "lambda_home": 3.033,
-        "lambda_away": 0.666
+        "lambda_home": 2.25,
+        "lambda_away": 0.383
       }
     },
     {
@@ -288,23 +283,22 @@
         },
         "score_top3": [
           {
-            "score": "2-0",
-            "prob": 0.119
+            "score": "1-1",
+            "prob": 0.122
           },
           {
             "score": "1-0",
-            "prob": 0.102
+            "prob": 0.111
           },
           {
             "score": "2-1",
-            "prob": 0.099
+            "prob": 0.093
           }
         ]
       },
       "score_meta": {
-        "tier": "balanced",
-        "lambda_home": 2.333,
-        "lambda_away": 0.833
+        "lambda_home": 1.533,
+        "lambda_away": 1.1
       }
     },
     {
@@ -339,23 +333,22 @@
         },
         "score_top3": [
           {
-            "score": "3-0",
-            "prob": 0.126
-          },
-          {
             "score": "2-0",
-            "prob": 0.125
+            "prob": 0.199
           },
           {
-            "score": "4-0",
-            "prob": 0.096
+            "score": "1-0",
+            "prob": 0.172
+          },
+          {
+            "score": "3-0",
+            "prob": 0.153
           }
         ]
       },
       "score_meta": {
-        "tier": "strong_fav",
-        "lambda_home": 3.033,
-        "lambda_away": 0.666
+        "lambda_home": 2.316,
+        "lambda_away": 0.317
       }
     },
     {
@@ -390,23 +383,22 @@
         },
         "score_top3": [
           {
-            "score": "3-0",
-            "prob": 0.126
-          },
-          {
             "score": "2-0",
-            "prob": 0.125
+            "prob": 0.201
           },
           {
-            "score": "4-0",
-            "prob": 0.096
+            "score": "1-0",
+            "prob": 0.173
+          },
+          {
+            "score": "3-0",
+            "prob": 0.156
           }
         ]
       },
       "score_meta": {
-        "tier": "strong_fav",
-        "lambda_home": 3.033,
-        "lambda_away": 0.666
+        "lambda_home": 2.327,
+        "lambda_away": 0.306
       }
     },
     {
@@ -441,23 +433,22 @@
         },
         "score_top3": [
           {
-            "score": "3-0",
-            "prob": 0.126
-          },
-          {
             "score": "2-0",
-            "prob": 0.125
+            "prob": 0.22
           },
           {
-            "score": "4-0",
-            "prob": 0.096
+            "score": "1-0",
+            "prob": 0.181
+          },
+          {
+            "score": "3-0",
+            "prob": 0.178
           }
         ]
       },
       "score_meta": {
-        "tier": "strong_fav",
-        "lambda_home": 3.033,
-        "lambda_away": 0.666
+        "lambda_home": 2.43,
+        "lambda_away": 0.203
       }
     },
     {
@@ -493,22 +484,21 @@
         "score_top3": [
           {
             "score": "2-0",
-            "prob": 0.119
+            "prob": 0.152
           },
           {
             "score": "1-0",
-            "prob": 0.102
+            "prob": 0.149
           },
           {
-            "score": "2-1",
-            "prob": 0.099
+            "score": "3-0",
+            "prob": 0.103
           }
         ]
       },
       "score_meta": {
-        "tier": "balanced",
-        "lambda_home": 2.333,
-        "lambda_away": 0.833
+        "lambda_home": 2.039,
+        "lambda_away": 0.594
       }
     },
     {
@@ -543,23 +533,22 @@
         },
         "score_top3": [
           {
-            "score": "2-0",
-            "prob": 0.119
-          },
-          {
             "score": "1-0",
-            "prob": 0.102
+            "prob": 0.122
           },
           {
-            "score": "2-1",
-            "prob": 0.099
+            "score": "1-1",
+            "prob": 0.116
+          },
+          {
+            "score": "2-0",
+            "prob": 0.103
           }
         ]
       },
       "score_meta": {
-        "tier": "balanced",
-        "lambda_home": 2.333,
-        "lambda_away": 0.833
+        "lambda_home": 1.688,
+        "lambda_away": 0.945
       }
     },
     {
@@ -594,23 +583,22 @@
         },
         "score_top3": [
           {
-            "score": "1-0",
-            "prob": 0.108
+            "score": "0-2",
+            "prob": 0.199
           },
           {
-            "score": "1-1",
-            "prob": 0.108
+            "score": "0-1",
+            "prob": 0.172
           },
           {
-            "score": "2-0",
-            "prob": 0.1
+            "score": "0-3",
+            "prob": 0.153
           }
         ]
       },
       "score_meta": {
-        "tier": "weak_fav",
-        "lambda_home": 1.866,
-        "lambda_away": 1
+        "lambda_home": 0.318,
+        "lambda_away": 2.315
       }
     }
   ]

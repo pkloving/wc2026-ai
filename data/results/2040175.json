@@ -1,0 +1,19 @@
+{
+  "matchId": "2040175",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "away",
+      "player": "Egypt.Shol",
+      "minute": 19,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}
