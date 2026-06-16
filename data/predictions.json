@@ -1138,5 +1138,365 @@
         "note": "全场客胜 0-2（备选 1-2），半场客胜"
       }
     ]
+  },
+  {
+    "matchId": "M025",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场平"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 1-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场主胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M026",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场主胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M027",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场主胜"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场主胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M028",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-1（备选 1-0），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场平"
+      }
+    ]
+  },
+  {
+    "matchId": "M029",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场主胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M030",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 0-0），半场平"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-1（备选 0-1），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-1），半场客胜"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-1），半场平/负"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场客胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M031",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0），半场主胜"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 2-0），半场主胜"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0），半场主胜"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 2-0），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0），半场主胜"
+      }
+    ]
+  },
+  {
+    "matchId": "M032",
+    "models": [
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场主胜"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-1（备选 1-0），半场平"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 0-0），半场平"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 0-0），半场平/平"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场主胜"
+      }
+    ]
   }
 ]
