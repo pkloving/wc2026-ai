@@ -1207,9 +1207,125 @@
       "note": "R-008 改 + 自定义 2 单：3 场让球 3×1 × 25 倍（25×2×1 = 50 元，maxRet=1083.04）。⚠️ 单笔 50 元超 10% 仓位红线（46.14 元），R-002 偏离 +8.4% 已在 records 段四写明"
     },
     {
-      "id": "mix-4way-parlay-2026-06-15",
-      "type": "match",
-      "title": "[mix] 4 场混合串关（4×1 × 2 组合 · 5 倍 · 西班牙-2/比利时spf/沙特bf×2/伊朗spf）",
+          "id": "mixed-3x1-spf-zjq-2026-06-16",
+          "type": "match",
+          "title": "[混合] 3 场串关（3×1 · 法国平/伊拉克3球/阿根廷2球）",
+          "matchLabel": "周二017 spf 平 + 周二018 zjq 3 + 周二019 zjq 2（赔率时点 2026-06-16 17:03，3×1 × 1 倍）",
+          "date": "2026-06-16T17:03:00",
+          "stakeMultiplier": 1,
+          "parlayType": ["3x1"],
+          "isActual": true,
+          "source": "竞彩 APP 截图（2026-06-16 17:03）",
+          "picks": [
+            {
+              "mid": "2040178",
+              "match": "周二017",
+              "home": "FRA",
+              "away": "SEN",
+              "kickoff": "2026-06-17 03:00",
+              "play": "spf",
+              "pick": "draw",
+              "pickLabel": "平",
+              "odds": 4.23
+            },
+            {
+              "mid": "2040179",
+              "match": "周二018",
+              "home": "IRQ",
+              "away": "NOR",
+              "kickoff": "2026-06-17 06:00",
+              "play": "zjq",
+              "pick": "3",
+              "pickLabel": "3 球",
+              "odds": 3.45
+            },
+            {
+              "mid": "2040180",
+              "match": "周二019",
+              "home": "ARG",
+              "away": "ALG",
+              "kickoff": "2026-06-17 09:00",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2 球",
+              "odds": 3.4
+            }
+          ],
+          "unitCost": 2,
+          "combinations": 1,
+          "totalCost": 2,
+          "maxReturn": 49.62,
+          "result": null,
+          "note": "3 场 3×1 × 1 倍 = 1×2 = 2 元。⚠️ bqc 半全场数据未拉（bqc_latest=null），本场不含 bqc 没问题"
+        },
+        {
+          "id": "bf-bqc-rqspf-parlay-2026-06-16",
+          "type": "match",
+          "title": "[混合] 4 场串关（3×1 + 4×1 · 5 注 · 法国3:0/伊拉克0:2/阿根廷胜胜/奥地利让-1主胜）",
+          "matchLabel": "周二017 bf 3:0 + 周二018 bf 0:2 + 周二019 bqc 胜胜 + 周二020 rqspf 让-1 主胜（赔率时点 2026-06-16 21:03，3×1+4×1 × 1 倍）",
+          "date": "2026-06-16T21:03:00",
+          "stakeMultiplier": 1,
+          "parlayType": ["3x1", "4x1"],
+          "isActual": true,
+          "source": "竞彩 APP 截图（2026-06-16 21:03）",
+          "picks": [
+            {
+              "mid": "2040178",
+              "match": "周二017",
+              "home": "FRA",
+              "away": "SEN",
+              "kickoff": "2026-06-17 03:00",
+              "play": "bf",
+              "pick": "3:0",
+              "pickLabel": "3:0",
+              "odds": 8.5
+            },
+            {
+              "mid": "2040179",
+              "match": "周二018",
+              "home": "IRQ",
+              "away": "NOR",
+              "kickoff": "2026-06-17 06:00",
+              "play": "bf",
+              "pick": "0:2",
+              "pickLabel": "0:2",
+              "odds": 5.6
+            },
+            {
+              "mid": "2040180",
+              "match": "周二019",
+              "home": "ARG",
+              "away": "ALG",
+              "kickoff": "2026-06-17 09:00",
+              "play": "bqc",
+              "pick": "win-win",
+              "pickLabel": "胜-胜",
+              "odds": null
+            },
+            {
+              "mid": "2040181",
+              "match": "周二020",
+              "home": "AUT",
+              "away": "JOR",
+              "kickoff": "2026-06-17 12:00",
+              "play": "rqspf",
+              "handicap": -1,
+              "pick": "home",
+              "pickLabel": "主胜（让-1）",
+              "odds": 1.79
+            }
+          ],
+          "unitCost": 2,
+          "combinations": 5,
+          "totalCost": 10,
+          "maxReturn": null,
+          "result": null,
+          "note": "4 场 3×1 + 4×1 = C(4,3)+C(4,4) = 4+1 = 5 注 × 2 元 = 10 元。⚠️ bqc 赔率 null（数据未拉），无法精确计算 maxReturn；估算全中 4×1 = 8.5×5.6×?×1.79 ≈ 85.5×?（bqc 赔率待补）"
+        },
+        {
+          "id": "mix-4way-parlay-2026-06-15",
+          "type": "match",
+          "title": "[mix] 4 场混合串关（4×1 × 2 组合 · 5 倍 · 西班牙-2/比利时spf/沙特bf×2/伊朗spf）",
       "matchLabel": "周一013 西班牙-2 胜 + 周一014 比利时胜 + 周一015 沙特 0:1 或 0:2 乌拉圭 + 周一016 伊朗胜（赔率时点 2026-06-15 14:00，4×1 × 2 组合 × 5 倍）",
       "date": "2026-06-15T14:00:00",
       "stakeMultiplier": 5,
