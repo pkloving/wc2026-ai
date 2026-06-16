@@ -227,3 +227,139 @@ function predictScore(m) {
 3. **win_model 加 0.55-0.65 中度热门档**：当前只有 strong_fav (< 1.5) / moderate (1.5-2.5) / long_shot (>= 2.5) 三档，建议在 0.55 ≤ p0_home < 0.65 区间降 1 档信心（⭐ → ⭐ 或 ⭐⭐ → ⭐）。
 4. **样本量仍是核心瓶颈**：当前 12 场世界杯正赛 + 48 场 2022 历史共 60 场，但训练只吸收"世界杯"标签 12 场。下次有 >5 场新完赛时再 retrain。
 
+---
+## 调优日志 - 2026/6/16 12:30:00 (R-010 新算法首推)
+
+### 触发
+用户反馈："模型推荐要考虑2个方向，单关爆冷比分 / 比分的2串1（一个高倍率+一个低倍率） & 胜负（包括让球）/进球数3串1，要求整体倍率大于8。以这个前提来调优算法"
+
+### 触犯的场景
+6-15 抽样 2040167 巴西 vs 摩洛哥后，6-16 records/2026-06-16.md 沿用 R-007 §1 "K≥0.10 决策顺序" + R-008 "串关为底/单关为顶"：
+- 6-17 4 场建模 K 全部 < 0.10（FRA +0.030 / ARG +0.052 / AUT +0.045）
+- 全部让球 verdict=skip（让-1 样本主胜率 43% < 55%）
+- 全场不推单关 → 段一全玩法预测表全部 ✗
+- 但 R-008 又要求"默认配 4 注 × 2 元 = 8 元串关试水" → 矛盾
+- 6-16 推荐 4 场 4 注 × 2 元 = 8 元 (3 场 spf 串关 2×1+3×1)，全部 spf 大热门乘积 1.998×2=3.99 ✗ < 8 整体倍率
+
+### why 一句话
+R-007 K≥0.10 决策顺序 + R-008 串关为底 互相冲突 + 没有整体倍率约束 + bf/zjq 玩法被浪费 → 引入 R-010 全新推荐算法（两方向 + 整体 > 8）。
+
+### 改了什么
+
+#### 1. 新增 `modeling/scripts/06_recommend_parlays.js`（284 行）
+**why**：新推荐算法需要从 predict_unplayed.json + data/odds/<mid>.json 取输入（spf/rqspf/bf/zjq 4 玩法），输出双方向候选。
+
+**核心 TUNING 常量**（算法调优改这里）：
+```js
+const TUNING = {
+  VIG: 0.13,
+  MIN_OVERALL_ODDS: 8,           // 整体倍率硬规则
+  NEXT_DAY: '2026-06-17',
+  MAX_PICK_ODDS: 35,             // 避免 7+球 50x 污染
+  ZJQ_MAX_GOALS: 5,              // 6+球不参与
+  ZJQ_MIN_PROB: 0.15,            // 0 球/4+球不参与 (避免 3 场 0 球配 0 球极端)
+  SINGLE_OUTSIDER_MIN_ODDS: 12,
+  SINGLE_OUTSIDER_PROB_RANGE: [0.04, 0.12],
+  PAIR_HIGH_ODDS: 12,
+  PAIR_LOW_ODDS: [5, 12],
+  PARLAY3_REQUIRE_SPF_OR_RQSPF: true,
+  PARLAY3_REQUIRE_ZJQ: true,
+};
+```
+
+**算法步骤**：
+1. NEXT_DAY 过滤（保留 6-17 4 场，跳过 6-16 4 场 + 6-18 4 场）
+2. 收集每场 picks: spf (argmax p0) / rqspf (argmax p0) / bf 全 30+ 比分 / zjq 全 0-5 球
+3. 方向 A 单关爆冷: bf pick, odds > 12, prob 4-12% → top 5
+4. 方向 A 2串1 高+低: 2 场不同 mid, 1 高 (odds>12) + 1 低 (5-12), total > 8 → top 5
+5. 方向 B 3串1: 3 场不同 mid, 至少 1 spf/rqspf + 至少 1 zjq, total > 8 → top 8
+6. 整体倍率校验: A min + B min 都 > 8
+
+#### 2. 新增 `modeling/artifacts/recommend_parlays.json`（自动生成，92 行）
+**why**：算法输出存档，6-17 完赛可对照"算法推荐 vs 实际"。
+
+**首推结果**（6-17 4 场 6 月 17 日 6-17 03:00-12:00 北京时间）：
+- 方向 A 单关爆冷 top 1: bf 4:1 @ 22 (ARG vs DZA, prob 4.0%)
+- 方向 A 2串1 高+低 top 1: bf 1:5@28 (IRQ) × bf 0:0@11 (ARG) = 308
+- 方向 B 3串1 top 1: rqspf 主胜 2.16 (IRQ) × zjq 4球 5.8 (FRA) × zjq 4球 5.5 (ARG) = 68.9
+- 整体倍率校验: pass=true (A min=19, B min=57.1, 阈值=8)
+
+#### 3. 重写 `records/2026-06-16.md`（R-010 模板）
+**why**：6-17 推荐从 4 注 8 元 → 3 注 6 元（方向 A 单关 2 + 方向 A 2串1 2 + 方向 B 3串1 2），整体 > 8 全部满足。
+
+**段一改两段式**：
+- 段一: 推荐算法说明 (R-010 新规则) - 替换原 P0 vs P vs K 对照表
+- 段二: 原推荐 (方向 A 单关 + 方向 A 2串1 + 方向 B 3串1 top 1) - 替换原 1.1/1.2/1.3 spf 决策
+
+**段二实际下注**：
+```json
+[
+  { "id": "dirA-single-2040180-bf-4-1-22", "stake": 2, "odds": 22 },
+  { "id": "dirA-parlay2-1x5-0x0-308", "stake": 2, "totalOdds": 308 },
+  { "id": "dirB-parlay3-rqspf-zjq4-zjq4-68.9", "stake": 2, "totalOdds": 68.9 }
+]
+```
+
+#### 4. 追加 `records/reflections.md` 的 R-010
+**why**：R-007 §1 K≥0.10 决策顺序 + R-008 串关为底 已撤回 → 正式归档，列出 R-010 全部规则、TUNING 常量、已知局限。
+
+### 验证
+- `node --check modeling/scripts/06_recommend_parlays.js` ✅
+- `node modeling/scripts/06_recommend_parlays.js` 输出 4 场 6-17 比赛 → 5 单关 + 5 2串1 + 8 3串1 候选
+- `recommend_parlays.json` 合法：direction_a.singles=5, direction_a.pairs_2x1=5, direction_b.parlays_3x1=8
+- `overall_check.pass=true`, A min=19, B min=57.1 (均 > 8)
+- records/2026-06-16.md 段二 cost = 6 元 = 3 注 × 2 元 (2+2+2)
+
+### git diff 摘要
+```
+modeling/scripts/06_recommend_parlays.js  | +284 (新增, R-010 算法)
+modeling/artifacts/recommend_parlays.json  | +92  (新增, 算法输出)
+records/reflections.md                    | +90  (R-010 段)
+records/2026-06-16.md                     | 重写 (R-010 模板, 段一/段二/段三都改)
+4 files changed, 0 deletions(-)
+```
+
+### 已知 bug fix (调试中遇到)
+1. **NEXT_DAY 过滤未生效**：第一次跑用 `matches.flatMap` 引用了未过滤的 matches 列表 → 改为 `matchesFinal.flatMap` 修
+2. **方向 B 3串1 选中 0 球配 0 球**：0 球赔率 11-19x, 3 场 0 球同时中概率 0.1% × 5000x = fair bet 但实际是赌博型 → 加 `ZJQ_MIN_PROB=0.15` 限制
+3. **zjq 7+球 50x 污染方向 B**：7+球赔率 30, 单场 7+球概率 < 5%, 拖高 3串1 总赔率到 4700+ → 加 `MAX_PICK_ODDS=35` + `ZJQ_MAX_GOALS=5` 限制
+
+### 建议的 commit message
+```
+feat(modeling): add R-010 two-direction parlay recommender
+
+User feedback (2026-06-16 12:30): drop R-007 K≥0.10 decision order
+and R-008 "parlay-first/single-top" structure. New algorithm has two
+directions:
+  - Direction A (比分玩法): single outsider bet (odds>12) / 2-leg parlay
+    (one high+one low, total>8)
+  - Direction B (胜负+让球/进球数 3-leg parlay): 3 distinct matches,
+    ≥1 spf/rqspf + ≥1 zjq, total>8
+Hard rule: all recommendations must have combined odds > 8.
+
+New artifacts:
+  - modeling/scripts/06_recommend_parlays.js (TUNING-driven, 284 lines)
+  - modeling/artifacts/recommend_parlays.json (algorithm output)
+
+records/2026-06-16.md rewritten with R-010 template:
+  - 段一 = R-010 algorithm spec
+  - 段二 = 3 bets × 2元 = 6元 (dirA single + dirA 2-leg + dirB 3-leg)
+  - 段三 = full-method verdict for R-010 first run
+
+records/reflections.md: R-010 added, R-007 §1/§2 + R-008 marked retracted.
+
+Bugs fixed during dev:
+  - NEXT_DAY filter used unfiltered `matches` list, included 6-16/6-18
+  - 3-leg parlay picked 3×0-goal (zjq 0球) combos, fair bet but gambling
+  - zjq 7+球 @50x polluted 3-leg total to 4700+
+
+TUNING constants (top of 06_recommend_parlays.js):
+  MIN_OVERALL_ODDS=8 / MAX_PICK_ODDS=35 / ZJQ_MAX_GOALS=5 / ZJQ_MIN_PROB=0.15
+```
+
+### 进一步调优建议 (R-010 局限)
+1. **加 MIN_EV 过滤**：当前偏向"找高赔率组合", 6-17 全部 EV < 1 (反价值) → 后续可加 `MIN_EV=1.0` 只推正价值
+2. **加 MAX_PAIR_ODDS=200 限制**：方向 A 2串1 308x 是 fair bet 赌博型
+3. **bqc 半全场数据补**：当前 bqc 全空, 等数据补上后扩展玩法
+4. **加 "价值 bet" 识别**: 6-17 4:1 @ 22 实际概率可能 6-8% (modeling 估 4%) → 配 04_train_win.js 加 0.55-0.65 区间降档 (上轮已提)
+
