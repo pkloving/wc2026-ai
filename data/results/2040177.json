@@ -1,7 +1,7 @@
 {
   "matchId": "2040177",
   "homeScore": 2,
-  "awayScore": 0,
+  "awayScore": 2,
   "halfTime": {
     "home": 1,
     "away": 0
@@ -17,6 +17,18 @@
       "team": "home",
       "player": "Taremi",
       "minute": 68,
+      "type": "goal"
+    },
+    {
+      "team": "away",
+      "player": "NZL",
+      "minute": null,
+      "type": "goal"
+    },
+    {
+      "team": "away",
+      "player": "NZL",
+      "minute": null,
       "type": "goal"
     }
   ],
