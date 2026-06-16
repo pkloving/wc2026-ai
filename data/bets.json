@@ -1148,7 +1148,7 @@
       "combinations": 1,
       "totalCost": 100,
       "maxReturn": 237.96,
-      "result": "pending",
+      "result": "lost",
       "note": "R-008 改：3 场 conf=3 大热门 spf 3×1 × 50 倍（50×2×1 = 100 元，maxRet=238.10）"
     },
     {
@@ -1203,7 +1203,7 @@
       "combinations": 1,
       "totalCost": 50,
       "maxReturn": 1081.97,
-      "result": "pending",
+      "result": "lost",
       "note": "R-008 改 + 自定义 2 单：3 场让球 3×1 × 25 倍（25×2×1 = 50 元，maxRet=1083.04）。⚠️ 单笔 50 元超 10% 仓位红线（46.14 元），R-002 偏离 +8.4% 已在 records 段四写明"
     },
     {
@@ -1278,7 +1278,7 @@
       "combinations": 2,
       "totalCost": 20,
       "maxReturn": null,
-      "result": "pending",
+      "result": "lost",
       "note": "⚠️ 3 项赔率 null：(1) 2040191 rqspf 让-2 主胜 = null (spf 已开，rqspf 待开售)；(2) 沙特 0:1 bf 比分赔率未拉；(3) 沙特 0:2 bf 比分赔率未拉（matches_status.json 仅存 spf/rqspf 字段）。出票前必须补抓 sporttery.cn bf 表 + 等 rqspf 开售后录入实际赔率。R-004 #2 不同场不同玩法串关 OK (rqspf+spf+bf×2+spf)。沙特 0:1/0:2 共 2 注 → combinations=2 → totalCost=2×2×5=20 元"
     }
   ]
