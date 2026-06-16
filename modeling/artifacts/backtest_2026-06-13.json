@@ -1,0 +1,470 @@
+{
+  "generated_at": "2026-06-16T07:05:57.420Z",
+  "target_date": "2026-06-13",
+  "unit_stake": 2,
+  "source": "data/odds/<mid>.json + data/results/<mid>.json (2 场 2026-06-13)",
+  "algorithm": "R-010 (v3 two-direction parlays)",
+  "tuning": {
+    "VIG": 0.13,
+    "MIN_OVERALL_ODDS": 8,
+    "MAX_PICK_ODDS": 35,
+    "ZJQ_MAX_GOALS": 5,
+    "ZJQ_MIN_PROB": 0.15,
+    "SINGLE_OUTSIDER_MIN_ODDS": 12,
+    "SINGLE_OUTSIDER_PROB_RANGE": [
+      0.04,
+      0.12
+    ],
+    "PAIR_HIGH_ODDS": 12,
+    "PAIR_HIGH_PROB": [
+      0.03,
+      0.15
+    ],
+    "PAIR_LOW_ODDS": [
+      5,
+      12
+    ],
+    "PAIR_LOW_PROB": [
+      0.07,
+      0.2
+    ],
+    "PARLAY3_MIN_DISTINCT_MATCHES": 3,
+    "PARLAY3_REQUIRE_SPF_OR_RQSPF": true,
+    "PARLAY3_REQUIRE_ZJQ": true,
+    "PARLAY3_KEEP_TOP": 8,
+    "BF_EXCLUDE_AGGREGATE": true,
+    "INCLUDE_BQC": false
+  },
+  "matches": [
+    {
+      "mid": "2040164",
+      "code": "周五003",
+      "home": "加拿大",
+      "away": "波黑",
+      "kickoff": "2026-06-13 03:00",
+      "handicap": -1,
+      "pickCount": 36,
+      "actual": {
+        "score": "1:1",
+        "winner": "draw",
+        "handicapResult": "away_win",
+        "totalGoals": 2
+      }
+    },
+    {
+      "mid": "2040165",
+      "code": "周五004",
+      "home": "美国",
+      "away": "巴拉圭",
+      "kickoff": "2026-06-13 09:00",
+      "handicap": -1,
+      "pickCount": 36,
+      "actual": {
+        "score": "4:1",
+        "winner": "home",
+        "handicapResult": "home_win",
+        "totalGoals": 5
+      }
+    }
+  ],
+  "direction_a": {
+    "singles": [
+      {
+        "play": "bf",
+        "pick": "0:2",
+        "pickLabel": "0:2",
+        "odds": 17,
+        "prob": 0.0521,
+        "probSource": "bf_implied",
+        "mid": "2040165",
+        "code": "周五004",
+        "home": "美国",
+        "away": "巴拉圭",
+        "kickoff": "2026-06-13 09:00"
+      },
+      {
+        "play": "bf",
+        "pick": "2:2",
+        "pickLabel": "2:2",
+        "odds": 16,
+        "prob": 0.0553,
+        "probSource": "bf_implied",
+        "mid": "2040164",
+        "code": "周五003",
+        "home": "加拿大",
+        "away": "波黑",
+        "kickoff": "2026-06-13 03:00"
+      },
+      {
+        "play": "bf",
+        "pick": "3:0",
+        "pickLabel": "3:0",
+        "odds": 16,
+        "prob": 0.0553,
+        "probSource": "bf_implied",
+        "mid": "2040165",
+        "code": "周五004",
+        "home": "美国",
+        "away": "巴拉圭",
+        "kickoff": "2026-06-13 09:00"
+      },
+      {
+        "play": "bf",
+        "pick": "3:1",
+        "pickLabel": "3:1",
+        "odds": 16,
+        "prob": 0.0553,
+        "probSource": "bf_implied",
+        "mid": "2040165",
+        "code": "周五004",
+        "home": "美国",
+        "away": "巴拉圭",
+        "kickoff": "2026-06-13 09:00"
+      },
+      {
+        "play": "bf",
+        "pick": "2:2",
+        "pickLabel": "2:2",
+        "odds": 15,
+        "prob": 0.059,
+        "probSource": "bf_implied",
+        "mid": "2040165",
+        "code": "周五004",
+        "home": "美国",
+        "away": "巴拉圭",
+        "kickoff": "2026-06-13 09:00"
+      }
+    ],
+    "pairs_2x1": [
+      {
+        "high": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "4:0",
+          "odds": 27,
+          "prob": 0.0328
+        },
+        "low": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "1:2",
+          "odds": 10.5,
+          "prob": 0.0843
+        },
+        "totalOdds": 283.5,
+        "totalProb": 0.0028
+      },
+      {
+        "high": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "0:2",
+          "odds": 26,
+          "prob": 0.034
+        },
+        "low": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "1:2",
+          "odds": 10.5,
+          "prob": 0.0843
+        },
+        "totalOdds": 273,
+        "totalProb": 0.0029
+      },
+      {
+        "high": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "4:0",
+          "odds": 27,
+          "prob": 0.0328
+        },
+        "low": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "0:1",
+          "odds": 8.75,
+          "prob": 0.1011
+        },
+        "totalOdds": 236.25,
+        "totalProb": 0.0033
+      },
+      {
+        "high": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "0:2",
+          "odds": 26,
+          "prob": 0.034
+        },
+        "low": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "0:1",
+          "odds": 8.75,
+          "prob": 0.1011
+        },
+        "totalOdds": 227.5,
+        "totalProb": 0.0034
+      },
+      {
+        "high": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "4:0",
+          "odds": 27,
+          "prob": 0.0328
+        },
+        "low": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "2:0",
+          "odds": 8,
+          "prob": 0.1106
+        },
+        "totalOdds": 216,
+        "totalProb": 0.0036
+      }
+    ]
+  },
+  "direction_b": {
+    "parlays_3x1": []
+  },
+  "hit_stats": {
+    "direction_a": {
+      "singles": [
+        {
+          "mid": "2040165",
+          "code": "周五004",
+          "predicted": "0:2",
+          "actual": "4:1",
+          "odds": 17,
+          "fairProb": 0.0521,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "mid": "2040164",
+          "code": "周五003",
+          "predicted": "2:2",
+          "actual": "1:1",
+          "odds": 16,
+          "fairProb": 0.0553,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "mid": "2040165",
+          "code": "周五004",
+          "predicted": "3:0",
+          "actual": "4:1",
+          "odds": 16,
+          "fairProb": 0.0553,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "mid": "2040165",
+          "code": "周五004",
+          "predicted": "3:1",
+          "actual": "4:1",
+          "odds": 16,
+          "fairProb": 0.0553,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "mid": "2040165",
+          "code": "周五004",
+          "predicted": "2:2",
+          "actual": "4:1",
+          "odds": 15,
+          "fairProb": 0.059,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        }
+      ],
+      "pairs": [
+        {
+          "high": {
+            "mid": "2040164",
+            "code": "周五003",
+            "predicted": "4:0",
+            "actual": "1:1",
+            "hit": false,
+            "odds": 27
+          },
+          "low": {
+            "mid": "2040165",
+            "code": "周五004",
+            "predicted": "1:2",
+            "actual": "4:1",
+            "hit": false,
+            "odds": 10.5
+          },
+          "totalOdds": 283.5,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040164",
+            "code": "周五003",
+            "predicted": "0:2",
+            "actual": "1:1",
+            "hit": false,
+            "odds": 26
+          },
+          "low": {
+            "mid": "2040165",
+            "code": "周五004",
+            "predicted": "1:2",
+            "actual": "4:1",
+            "hit": false,
+            "odds": 10.5
+          },
+          "totalOdds": 273,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040164",
+            "code": "周五003",
+            "predicted": "4:0",
+            "actual": "1:1",
+            "hit": false,
+            "odds": 27
+          },
+          "low": {
+            "mid": "2040165",
+            "code": "周五004",
+            "predicted": "0:1",
+            "actual": "4:1",
+            "hit": false,
+            "odds": 8.75
+          },
+          "totalOdds": 236.25,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040164",
+            "code": "周五003",
+            "predicted": "0:2",
+            "actual": "1:1",
+            "hit": false,
+            "odds": 26
+          },
+          "low": {
+            "mid": "2040165",
+            "code": "周五004",
+            "predicted": "0:1",
+            "actual": "4:1",
+            "hit": false,
+            "odds": 8.75
+          },
+          "totalOdds": 227.5,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040164",
+            "code": "周五003",
+            "predicted": "4:0",
+            "actual": "1:1",
+            "hit": false,
+            "odds": 27
+          },
+          "low": {
+            "mid": "2040165",
+            "code": "周五004",
+            "predicted": "2:0",
+            "actual": "4:1",
+            "hit": false,
+            "odds": 8
+          },
+          "totalOdds": 216,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        }
+      ]
+    },
+    "direction_b": {
+      "parlays": []
+    }
+  },
+  "summary": {
+    "unitStake": 2,
+    "direction_a_singles": {
+      "name": "方向A 单关爆冷",
+      "total": 5,
+      "hits": 0,
+      "hitRate": 0,
+      "totalCost": 10,
+      "totalReturn": 0,
+      "totalPnl": -10,
+      "roi": -1
+    },
+    "direction_a_pairs": {
+      "name": "方向A 2串1 高+低",
+      "total": 5,
+      "hits": 0,
+      "hitRate": 0,
+      "totalCost": 10,
+      "totalReturn": 0,
+      "totalPnl": -10,
+      "roi": -1
+    },
+    "direction_b_parlays": {
+      "name": "方向B 3串1 胜负+进球数",
+      "total": 0,
+      "hits": 0,
+      "hitRate": null,
+      "totalCost": 0,
+      "totalReturn": 0,
+      "totalPnl": 0,
+      "roi": null
+    },
+    "totalCost": 20,
+    "totalReturn": 0,
+    "totalPnl": -20,
+    "totalRoi": -1
+  },
+  "notes": {
+    "direction_b_empty_reason": "只 2 场比赛, 不足 3 场, 方向 B 跳过"
+  }
+}

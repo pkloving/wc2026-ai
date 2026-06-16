@@ -1,0 +1,1019 @@
+{
+  "generated_at": "2026-06-16T07:04:54.803Z",
+  "target_date": "2026-06-15",
+  "unit_stake": 2,
+  "source": "data/odds/<mid>.json + data/results/<mid>.json (4 场 2026-06-15)",
+  "algorithm": "R-011 (v1 主流3串1+bf2串1+主流单关)",
+  "tuning": {
+    "VIG": 0.13,
+    "UNIT_STAKE": 2,
+    "PAIR2_BF_ODDS_RANGE": [
+      5,
+      15
+    ],
+    "PAIR2_BF_PROB_RANGE": [
+      0.05,
+      0.2
+    ],
+    "PAIR2_BF_BET_COUNT": 4,
+    "PAIR2_BF_MIN_OVERALL_ODDS": 25,
+    "PAIR2_BF_MAX_OVERALL_ODDS": 250,
+    "PAIR2_BF_EXCLUDE_AGGREGATE": true,
+    "PAIR2_BF_TOP_N_PER_MATCH": 2,
+    "PARLAY3_MIN_DISTINCT_MATCHES": 3,
+    "PARLAY3_REQUIRE_SPF_OR_RQSPF": 1,
+    "PARLAY3_REQUIRE_ZJQ": 1,
+    "PARLAY3_MIN_OVERALL_ODDS": 15,
+    "PARLAY3_MAX_OVERALL_ODDS": 100,
+    "PARLAY3_KEEP_TOP": 3,
+    "PARLAY3_PERMUTATIONS_LIMIT": 2000,
+    "SINGLE_MAIN_ODDS_RANGE": [
+      1.4,
+      2.5
+    ],
+    "SINGLE_MAIN_MIN_PROB": 0.4,
+    "SINGLE_MAIN_KEEP_TOP": 1,
+    "SINGLE_MAIN_PREFER_RQSPF": true,
+    "HANDICAP_DEEP_HOME": 2,
+    "HANDICAP_DEEP_AWAY": -2,
+    "ZJQ_PROB_MIN": 0.15,
+    "ZJQ_MAX_ODDS": 12,
+    "ZJQ_MAX_GOALS": 5,
+    "BF_EXCLUDE_AGGREGATE": true,
+    "NORMALIZE_SCORE": true
+  },
+  "matches": [
+    {
+      "mid": "2040170",
+      "code": "周日009",
+      "home": "德国",
+      "away": "库拉索",
+      "kickoff": "2026-06-15 01:00",
+      "handicap": -3,
+      "picks": {
+        "spf": null,
+        "rqspf": {
+          "play": "rqspf",
+          "pick": "away",
+          "pickLabel": "客胜",
+          "odds": 2.52,
+          "prob": 0.3513,
+          "reason": "handicap=-3 大盘口选客胜(让)"
+        },
+        "bf": [
+          {
+            "play": "bf",
+            "pick": "03:00",
+            "pickLabel": "03:00",
+            "odds": 5.5,
+            "prob": 0.1609
+          },
+          {
+            "play": "bf",
+            "pick": "04:00",
+            "pickLabel": "04:00",
+            "odds": 5.75,
+            "prob": 0.1539
+          },
+          {
+            "play": "bf",
+            "pick": "05:00",
+            "pickLabel": "05:00",
+            "odds": 7,
+            "prob": 0.1264
+          },
+          {
+            "play": "bf",
+            "pick": "02:00",
+            "pickLabel": "02:00",
+            "odds": 7.25,
+            "prob": 0.1221
+          },
+          {
+            "play": "bf",
+            "pick": "03:01",
+            "pickLabel": "03:01",
+            "odds": 13,
+            "prob": 0.0681
+          },
+          {
+            "play": "bf",
+            "pick": "01:00",
+            "pickLabel": "01:00",
+            "odds": 14,
+            "prob": 0.0632
+          },
+          {
+            "play": "bf",
+            "pick": "04:01",
+            "pickLabel": "04:01",
+            "odds": 14,
+            "prob": 0.0632
+          },
+          {
+            "play": "bf",
+            "pick": "02:01",
+            "pickLabel": "02:01",
+            "odds": 15,
+            "prob": 0.059
+          }
+        ],
+        "zjq": {
+          "play": "zjq",
+          "pick": "4",
+          "pickLabel": "4球",
+          "odds": 4.2,
+          "prob": 0.2107
+        }
+      },
+      "actual": {
+        "score": "7:1",
+        "winner": "home",
+        "handicapResult": "home_win",
+        "totalGoals": 8
+      }
+    },
+    {
+      "mid": "2040171",
+      "code": "周日010",
+      "home": "荷兰",
+      "away": "日本",
+      "kickoff": "2026-06-15 04:00",
+      "handicap": -1,
+      "picks": {
+        "spf": {
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.72,
+          "prob": 0.5153
+        },
+        "rqspf": {
+          "play": "rqspf",
+          "pick": "away",
+          "pickLabel": "客胜",
+          "odds": 1.84,
+          "prob": 0.4817,
+          "reason": "argmax p0 (handicap=-1)"
+        },
+        "bf": [
+          {
+            "play": "bf",
+            "pick": "01:01",
+            "pickLabel": "01:01",
+            "odds": 6,
+            "prob": 0.1475
+          },
+          {
+            "play": "bf",
+            "pick": "01:00",
+            "pickLabel": "01:00",
+            "odds": 6.4,
+            "prob": 0.1383
+          },
+          {
+            "play": "bf",
+            "pick": "02:01",
+            "pickLabel": "02:01",
+            "odds": 7,
+            "prob": 0.1264
+          },
+          {
+            "play": "bf",
+            "pick": "02:00",
+            "pickLabel": "02:00",
+            "odds": 7.5,
+            "prob": 0.118
+          },
+          {
+            "play": "bf",
+            "pick": "00:00",
+            "pickLabel": "00:00",
+            "odds": 10,
+            "prob": 0.0885
+          },
+          {
+            "play": "bf",
+            "pick": "00:01",
+            "pickLabel": "00:01",
+            "odds": 10.5,
+            "prob": 0.0843
+          },
+          {
+            "play": "bf",
+            "pick": "01:02",
+            "pickLabel": "01:02",
+            "odds": 11.5,
+            "prob": 0.077
+          },
+          {
+            "play": "bf",
+            "pick": "03:01",
+            "pickLabel": "03:01",
+            "odds": 13.5,
+            "prob": 0.0656
+          },
+          {
+            "play": "bf",
+            "pick": "02:02",
+            "pickLabel": "02:02",
+            "odds": 14,
+            "prob": 0.0632
+          },
+          {
+            "play": "bf",
+            "pick": "03:00",
+            "pickLabel": "03:00",
+            "odds": 14,
+            "prob": 0.0632
+          }
+        ],
+        "zjq": {
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2球",
+          "odds": 3.3,
+          "prob": 0.2682
+        }
+      },
+      "actual": {
+        "score": "2:2",
+        "winner": "draw",
+        "handicapResult": "away_win",
+        "totalGoals": 4
+      }
+    },
+    {
+      "mid": "2040172",
+      "code": "周日011",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "kickoff": "2026-06-15 07:00",
+      "handicap": 1,
+      "picks": {
+        "spf": {
+          "play": "spf",
+          "pick": "away",
+          "pickLabel": "客胜",
+          "odds": 2.2,
+          "prob": 0.4024
+        },
+        "rqspf": {
+          "play": "rqspf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.51,
+          "prob": 0.5867,
+          "reason": "argmax p0 (handicap=1)"
+        },
+        "bf": [
+          {
+            "play": "bf",
+            "pick": "01:01",
+            "pickLabel": "01:01",
+            "odds": 5,
+            "prob": 0.177
+          },
+          {
+            "play": "bf",
+            "pick": "00:01",
+            "pickLabel": "00:01",
+            "odds": 5.2,
+            "prob": 0.1702
+          },
+          {
+            "play": "bf",
+            "pick": "00:00",
+            "pickLabel": "00:00",
+            "odds": 6,
+            "prob": 0.1475
+          },
+          {
+            "play": "bf",
+            "pick": "01:00",
+            "pickLabel": "01:00",
+            "odds": 7,
+            "prob": 0.1264
+          },
+          {
+            "play": "bf",
+            "pick": "01:02",
+            "pickLabel": "01:02",
+            "odds": 8.25,
+            "prob": 0.1073
+          },
+          {
+            "play": "bf",
+            "pick": "00:02",
+            "pickLabel": "00:02",
+            "odds": 8.5,
+            "prob": 0.1041
+          },
+          {
+            "play": "bf",
+            "pick": "02:01",
+            "pickLabel": "02:01",
+            "odds": 11,
+            "prob": 0.0805
+          },
+          {
+            "play": "bf",
+            "pick": "02:00",
+            "pickLabel": "02:00",
+            "odds": 14,
+            "prob": 0.0632
+          }
+        ],
+        "zjq": {
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2球",
+          "odds": 3,
+          "prob": 0.295
+        }
+      },
+      "actual": {
+        "score": "1:0",
+        "winner": "home",
+        "handicapResult": "home_win",
+        "totalGoals": 1
+      }
+    },
+    {
+      "mid": "2040173",
+      "code": "周日012",
+      "home": "瑞典",
+      "away": "突尼斯",
+      "kickoff": "2026-06-15 10:00",
+      "handicap": -1,
+      "picks": {
+        "spf": {
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": 1.74,
+          "prob": 0.5087
+        },
+        "rqspf": {
+          "play": "rqspf",
+          "pick": "away",
+          "pickLabel": "客胜",
+          "odds": 1.84,
+          "prob": 0.4817,
+          "reason": "argmax p0 (handicap=-1)"
+        },
+        "bf": [
+          {
+            "play": "bf",
+            "pick": "01:00",
+            "pickLabel": "01:00",
+            "odds": 5.6,
+            "prob": 0.158
+          },
+          {
+            "play": "bf",
+            "pick": "01:01",
+            "pickLabel": "01:01",
+            "odds": 5.7,
+            "prob": 0.1553
+          },
+          {
+            "play": "bf",
+            "pick": "02:01",
+            "pickLabel": "02:01",
+            "odds": 7,
+            "prob": 0.1264
+          },
+          {
+            "play": "bf",
+            "pick": "02:00",
+            "pickLabel": "02:00",
+            "odds": 7.5,
+            "prob": 0.118
+          },
+          {
+            "play": "bf",
+            "pick": "00:00",
+            "pickLabel": "00:00",
+            "odds": 8,
+            "prob": 0.1106
+          },
+          {
+            "play": "bf",
+            "pick": "00:01",
+            "pickLabel": "00:01",
+            "odds": 9.5,
+            "prob": 0.0932
+          },
+          {
+            "play": "bf",
+            "pick": "01:02",
+            "pickLabel": "01:02",
+            "odds": 12.5,
+            "prob": 0.0708
+          },
+          {
+            "play": "bf",
+            "pick": "03:00",
+            "pickLabel": "03:00",
+            "odds": 14,
+            "prob": 0.0632
+          },
+          {
+            "play": "bf",
+            "pick": "03:01",
+            "pickLabel": "03:01",
+            "odds": 14.5,
+            "prob": 0.061
+          }
+        ],
+        "zjq": {
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2球",
+          "odds": 3.15,
+          "prob": 0.2809
+        }
+      },
+      "actual": {
+        "score": "5:1",
+        "winner": "home",
+        "handicapResult": "home_win",
+        "totalGoals": 6
+      }
+    }
+  ],
+  "direction_a": {
+    "pairs_2x1": [
+      {
+        "high": {
+          "mid": "2040170",
+          "code": "周日009",
+          "play": "bf",
+          "pick": "04:00",
+          "odds": 5.75,
+          "prob": 0.1539
+        },
+        "low": {
+          "mid": "2040171",
+          "code": "周日010",
+          "play": "bf",
+          "pick": "01:00",
+          "odds": 6.4,
+          "prob": 0.1383
+        },
+        "totalOdds": 36.8,
+        "totalProb": 0.0213
+      },
+      {
+        "high": {
+          "mid": "2040171",
+          "code": "周日010",
+          "play": "bf",
+          "pick": "01:00",
+          "odds": 6.4,
+          "prob": 0.1383
+        },
+        "low": {
+          "mid": "2040173",
+          "code": "周日012",
+          "play": "bf",
+          "pick": "01:00",
+          "odds": 5.6,
+          "prob": 0.158
+        },
+        "totalOdds": 35.84,
+        "totalProb": 0.0219
+      },
+      {
+        "high": {
+          "mid": "2040170",
+          "code": "周日009",
+          "play": "bf",
+          "pick": "03:00",
+          "odds": 5.5,
+          "prob": 0.1609
+        },
+        "low": {
+          "mid": "2040171",
+          "code": "周日010",
+          "play": "bf",
+          "pick": "01:00",
+          "odds": 6.4,
+          "prob": 0.1383
+        },
+        "totalOdds": 35.2,
+        "totalProb": 0.0223
+      },
+      {
+        "high": {
+          "mid": "2040170",
+          "code": "周日009",
+          "play": "bf",
+          "pick": "04:00",
+          "odds": 5.75,
+          "prob": 0.1539
+        },
+        "low": {
+          "mid": "2040171",
+          "code": "周日010",
+          "play": "bf",
+          "pick": "01:01",
+          "odds": 6,
+          "prob": 0.1475
+        },
+        "totalOdds": 34.5,
+        "totalProb": 0.0227
+      }
+    ]
+  },
+  "direction_b": {
+    "parlays_3x1": [
+      {
+        "picks": [
+          {
+            "mid": "2040170",
+            "code": "周日009",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.52,
+            "prob": 0.3513
+          },
+          {
+            "mid": "2040171",
+            "code": "周日010",
+            "play": "zjq",
+            "pick": "2",
+            "pickLabel": "2球",
+            "odds": 3.3,
+            "prob": 0.2682
+          },
+          {
+            "mid": "2040173",
+            "code": "周日012",
+            "play": "zjq",
+            "pick": "2",
+            "pickLabel": "2球",
+            "odds": 3.15,
+            "prob": 0.2809
+          }
+        ],
+        "totalOdds": 26.1954,
+        "totalProb": 0.0265,
+        "ev": 0.6933
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040173",
+            "code": "周日012",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 1.84,
+            "prob": 0.4817
+          },
+          {
+            "mid": "2040170",
+            "code": "周日009",
+            "play": "zjq",
+            "pick": "4",
+            "pickLabel": "4球",
+            "odds": 4.2,
+            "prob": 0.2107
+          },
+          {
+            "mid": "2040171",
+            "code": "周日010",
+            "play": "zjq",
+            "pick": "2",
+            "pickLabel": "2球",
+            "odds": 3.3,
+            "prob": 0.2682
+          }
+        ],
+        "totalOdds": 25.5024,
+        "totalProb": 0.0272,
+        "ev": 0.6942
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040170",
+            "code": "周日009",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.52,
+            "prob": 0.3513
+          },
+          {
+            "mid": "2040171",
+            "code": "周日010",
+            "play": "zjq",
+            "pick": "2",
+            "pickLabel": "2球",
+            "odds": 3.3,
+            "prob": 0.2682
+          },
+          {
+            "mid": "2040172",
+            "code": "周日011",
+            "play": "zjq",
+            "pick": "2",
+            "pickLabel": "2球",
+            "odds": 3,
+            "prob": 0.295
+          }
+        ],
+        "totalOdds": 24.948,
+        "totalProb": 0.0278,
+        "ev": 0.6934
+      }
+    ]
+  },
+  "direction_c": {
+    "singles": [
+      {
+        "play": "rqspf",
+        "pick": "home",
+        "pickLabel": "主胜",
+        "odds": 1.51,
+        "prob": 0.5867,
+        "reason": "argmax p0 (handicap=1)",
+        "mid": "2040172",
+        "code": "周日011",
+        "home": "科特迪瓦",
+        "away": "厄瓜多尔",
+        "kickoff": "2026-06-15 07:00",
+        "_source": "rqspf"
+      }
+    ]
+  },
+  "hit_stats": {
+    "direction_a": {
+      "pairs": [
+        {
+          "high": {
+            "mid": "2040170",
+            "code": "周日009",
+            "predicted": "04:00",
+            "actual": "7:1",
+            "hit": false,
+            "odds": 5.75,
+            "prob": 0.1539
+          },
+          "low": {
+            "mid": "2040171",
+            "code": "周日010",
+            "predicted": "01:00",
+            "actual": "2:2",
+            "hit": false,
+            "odds": 6.4,
+            "prob": 0.1383
+          },
+          "totalOdds": 36.8,
+          "totalProb": 0.0213,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040171",
+            "code": "周日010",
+            "predicted": "01:00",
+            "actual": "2:2",
+            "hit": false,
+            "odds": 6.4,
+            "prob": 0.1383
+          },
+          "low": {
+            "mid": "2040173",
+            "code": "周日012",
+            "predicted": "01:00",
+            "actual": "5:1",
+            "hit": false,
+            "odds": 5.6,
+            "prob": 0.158
+          },
+          "totalOdds": 35.84,
+          "totalProb": 0.0219,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040170",
+            "code": "周日009",
+            "predicted": "03:00",
+            "actual": "7:1",
+            "hit": false,
+            "odds": 5.5,
+            "prob": 0.1609
+          },
+          "low": {
+            "mid": "2040171",
+            "code": "周日010",
+            "predicted": "01:00",
+            "actual": "2:2",
+            "hit": false,
+            "odds": 6.4,
+            "prob": 0.1383
+          },
+          "totalOdds": 35.2,
+          "totalProb": 0.0223,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "high": {
+            "mid": "2040170",
+            "code": "周日009",
+            "predicted": "04:00",
+            "actual": "7:1",
+            "hit": false,
+            "odds": 5.75,
+            "prob": 0.1539
+          },
+          "low": {
+            "mid": "2040171",
+            "code": "周日010",
+            "predicted": "01:01",
+            "actual": "2:2",
+            "hit": false,
+            "odds": 6,
+            "prob": 0.1475
+          },
+          "totalOdds": 34.5,
+          "totalProb": 0.0227,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        }
+      ]
+    },
+    "direction_b": {
+      "parlays": [
+        {
+          "picks": [
+            {
+              "mid": "2040170",
+              "code": "周日009",
+              "play": "rqspf",
+              "pick": "away",
+              "pickLabel": "客胜",
+              "predicted": "客胜",
+              "odds": 2.52,
+              "prob": 0.3513,
+              "actual": {
+                "score": "7:1",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 8
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040171",
+              "code": "周日010",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2球",
+              "predicted": "2球",
+              "odds": 3.3,
+              "prob": 0.2682,
+              "actual": {
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040173",
+              "code": "周日012",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2球",
+              "predicted": "2球",
+              "odds": 3.15,
+              "prob": 0.2809,
+              "actual": {
+                "score": "5:1",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 6
+              },
+              "hit": false
+            }
+          ],
+          "totalOdds": 26.1954,
+          "totalProb": 0.0265,
+          "ev": 0.6933,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "picks": [
+            {
+              "mid": "2040173",
+              "code": "周日012",
+              "play": "rqspf",
+              "pick": "away",
+              "pickLabel": "客胜",
+              "predicted": "客胜",
+              "odds": 1.84,
+              "prob": 0.4817,
+              "actual": {
+                "score": "5:1",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 6
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040170",
+              "code": "周日009",
+              "play": "zjq",
+              "pick": "4",
+              "pickLabel": "4球",
+              "predicted": "4球",
+              "odds": 4.2,
+              "prob": 0.2107,
+              "actual": {
+                "score": "7:1",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 8
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040171",
+              "code": "周日010",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2球",
+              "predicted": "2球",
+              "odds": 3.3,
+              "prob": 0.2682,
+              "actual": {
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4
+              },
+              "hit": false
+            }
+          ],
+          "totalOdds": 25.5024,
+          "totalProb": 0.0272,
+          "ev": 0.6942,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        },
+        {
+          "picks": [
+            {
+              "mid": "2040170",
+              "code": "周日009",
+              "play": "rqspf",
+              "pick": "away",
+              "pickLabel": "客胜",
+              "predicted": "客胜",
+              "odds": 2.52,
+              "prob": 0.3513,
+              "actual": {
+                "score": "7:1",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 8
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040171",
+              "code": "周日010",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2球",
+              "predicted": "2球",
+              "odds": 3.3,
+              "prob": 0.2682,
+              "actual": {
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4
+              },
+              "hit": false
+            },
+            {
+              "mid": "2040172",
+              "code": "周日011",
+              "play": "zjq",
+              "pick": "2",
+              "pickLabel": "2球",
+              "predicted": "2球",
+              "odds": 3,
+              "prob": 0.295,
+              "actual": {
+                "score": "1:0",
+                "winner": "home",
+                "handicapResult": "home_win",
+                "totalGoals": 1
+              },
+              "hit": false
+            }
+          ],
+          "totalOdds": 24.948,
+          "totalProb": 0.0278,
+          "ev": 0.6934,
+          "hit": false,
+          "return": 0,
+          "cost": 2,
+          "pnl": -2
+        }
+      ]
+    },
+    "direction_c": {
+      "singles": [
+        {
+          "mid": "2040172",
+          "code": "周日011",
+          "play": "rqspf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "predicted": "主胜",
+          "actual": {
+            "score": "1:0",
+            "winner": "home",
+            "handicapResult": "home_win",
+            "totalGoals": 1
+          },
+          "odds": 1.51,
+          "fairProb": 0.5867,
+          "hit": true,
+          "return": 3.02,
+          "cost": 2,
+          "pnl": 1.02
+        }
+      ]
+    }
+  },
+  "summary": {
+    "unitStake": 2,
+    "direction_a_pairs": {
+      "name": "方向A bf 2串1",
+      "total": 4,
+      "hits": 0,
+      "hitRate": 0,
+      "totalCost": 8,
+      "totalReturn": 0,
+      "totalPnl": -8,
+      "roi": -1
+    },
+    "direction_b_parlays": {
+      "name": "方向B spf/rqspf+zjq 3串1",
+      "total": 3,
+      "hits": 0,
+      "hitRate": 0,
+      "totalCost": 6,
+      "totalReturn": 0,
+      "totalPnl": -6,
+      "roi": -1
+    },
+    "direction_c_singles": {
+      "name": "方向C 主流单关",
+      "total": 1,
+      "hits": 1,
+      "hitRate": 1,
+      "totalCost": 2,
+      "totalReturn": 3.02,
+      "totalPnl": 1.02,
+      "roi": 0.51
+    },
+    "totalCost": 16,
+    "totalReturn": 3.02,
+    "totalPnl": -12.98,
+    "totalRoi": -0.8112
+  },
+  "notes": {
+    "direction_b_empty_reason": "方向 B 有推荐, 见 direction_b.parlays_3x1",
+    "direction_c_pick_strategy": "优先 rqspf (让球盘 prob 更高)"
+  }
+}
