@@ -119,6 +119,20 @@ if (fs.existsSync(resultFile)) {
 
 fs.writeFileSync(resultFile, JSON.stringify(merged, null, 2) + '\n', 'utf-8');
 
+// 同时更新 matches_status.json 的 status 为 finished
+const statusFile = path.join(__dirname, '..', 'data', 'matches_status.json');
+if (fs.existsSync(statusFile)) {
+  const status = JSON.parse(fs.readFileSync(statusFile, 'utf-8'));
+  const idx = status.matches.findIndex(m => m.mid === matchId);
+  if (idx !== -1 && status.matches[idx].status !== 'finished') {
+    status.matches[idx].status = 'finished';
+    fs.writeFileSync(statusFile, JSON.stringify(status, null, 2) + '\n', 'utf-8');
+    console.log(`${matchId} matches_status.json -> finished`);
+  }
+}
+
+
+
 console.log(`✅ ${matchId} 已写入 ${path.relative(process.cwd(), resultFile)}`);
 console.log(`   比分：${homeScore}-${awayScore}（半场 ${halfTime.home}-${halfTime.away}）`);
 if (wentToPenalties) console.log(`   点球：${penaltyScore.home}-${penaltyScore.away}`);
