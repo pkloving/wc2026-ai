@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T09:37:46.519Z",
+  "generated_at": "2026-06-17T18:46:11.276Z",
   "total": 80,
   "by_status": {
     "scheduled": [],
@@ -1409,6 +1409,7 @@
           "draw": 3.45,
           "away": 2.81
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.535Z",
         "history_snapshots": 17,
         "odds_file": "odds/2040178.json",
@@ -1429,6 +1430,7 @@
           "draw": 3.88,
           "away": 2.29
         },
+        "final_score": "1-4",
         "scraped_at": "2026-06-17T05:53:05.557Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040179.json",
@@ -1453,6 +1455,7 @@
           "draw": 3.17,
           "away": 2.98
         },
+        "final_score": "3-0",
         "scraped_at": "2026-06-17T05:53:05.576Z",
         "history_snapshots": 9,
         "odds_file": "odds/2040180.json",
@@ -1477,6 +1480,7 @@
           "draw": 3.9,
           "away": 3.21
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.594Z",
         "history_snapshots": 8,
         "odds_file": "odds/2040181.json",
@@ -2796,6 +2800,7 @@
           "draw": 3.45,
           "away": 2.81
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.535Z",
         "history_snapshots": 17,
         "odds_file": "odds/2040178.json",
@@ -2816,6 +2821,7 @@
           "draw": 3.88,
           "away": 2.29
         },
+        "final_score": "1-4",
         "scraped_at": "2026-06-17T05:53:05.557Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040179.json",
@@ -2840,6 +2846,7 @@
           "draw": 3.17,
           "away": 2.98
         },
+        "final_score": "3-0",
         "scraped_at": "2026-06-17T05:53:05.576Z",
         "history_snapshots": 9,
         "odds_file": "odds/2040180.json",
@@ -2864,6 +2871,7 @@
           "draw": 3.9,
           "away": 3.21
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.594Z",
         "history_snapshots": 8,
         "odds_file": "odds/2040181.json",
@@ -3571,6 +3579,7 @@
           "draw": 3.45,
           "away": 2.81
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.535Z",
         "history_snapshots": 17,
         "odds_file": "odds/2040178.json",
@@ -3591,6 +3600,7 @@
           "draw": 3.88,
           "away": 2.29
         },
+        "final_score": "1-4",
         "scraped_at": "2026-06-17T05:53:05.557Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040179.json",
@@ -3615,6 +3625,7 @@
           "draw": 3.17,
           "away": 2.98
         },
+        "final_score": "3-0",
         "scraped_at": "2026-06-17T05:53:05.576Z",
         "history_snapshots": 9,
         "odds_file": "odds/2040180.json",
@@ -3639,6 +3650,7 @@
           "draw": 3.9,
           "away": 3.21
         },
+        "final_score": "3-1",
         "scraped_at": "2026-06-17T05:53:05.594Z",
         "history_snapshots": 8,
         "odds_file": "odds/2040181.json",

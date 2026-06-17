@@ -820,6 +820,8 @@
       "bf_scraped_at": "2026-06-15T14:57:57+08:00",
       "zjq_scraped_at": "2026-06-08T10:02:19+08:00",
       "bqc_scraped_at": "2026-06-15T11:26:42+08:00",
+      "final_score": "3-1",
+      "result_file": "results/2040178.json",
       "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
@@ -852,6 +854,8 @@
       "bf_scraped_at": "2026-06-15T12:00:55+08:00",
       "zjq_scraped_at": "2026-06-15T12:00:21+08:00",
       "bqc_scraped_at": "2026-06-15T12:00:40+08:00",
+      "final_score": "1-4",
+      "result_file": "results/2040179.json",
       "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
@@ -888,6 +892,8 @@
       "bf_scraped_at": "2026-06-15T12:14:00+08:00",
       "zjq_scraped_at": "2026-06-08T10:02:19+08:00",
       "bqc_scraped_at": "2026-06-14T13:25:12+08:00",
+      "final_score": "3-0",
+      "result_file": "results/2040180.json",
       "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
@@ -925,6 +931,8 @@
       "bf_scraped_at": "2026-06-08T10:02:19+08:00",
       "zjq_scraped_at": "2026-06-08T10:02:19+08:00",
       "bqc_scraped_at": "2026-06-08T10:02:19+08:00",
+      "final_score": "3-1",
+      "result_file": "results/2040181.json",
       "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
