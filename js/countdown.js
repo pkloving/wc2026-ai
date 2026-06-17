@@ -25,14 +25,14 @@ function unitLabels() {
 }
 
 function renderChips(d) {
-  const showSecs = d.days === 0;
+  const underOneDay = d.days === 0;
   const labels = unitLabels();
-  const items = [
-    [labels[0], d.days],
-    [labels[1], d.hours],
-    [labels[2], d.mins],
-  ];
-  if (showSecs) items.push([t('countdown.second'), d.secs]);
+  const items = [];
+  // 不足 1 天时不展示「00 天」，改为时/分/秒
+  if (!underOneDay) items.push([labels[0], d.days]);
+  items.push([labels[1], d.hours]);
+  items.push([labels[2], d.mins]);
+  if (underOneDay) items.push([t('countdown.second'), d.secs]);
   return `
     <div class="flex flex-wrap gap-2">
       ${items.map(([u, v]) => `

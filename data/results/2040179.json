@@ -1,0 +1,43 @@
+{
+  "matchId": "2040179",
+  "homeScore": 1,
+  "awayScore": 4,
+  "halfTime": {
+    "home": 1,
+    "away": 2
+  },
+  "scorers": [
+    {
+      "team": "NOR",
+      "player": "E. Haaland",
+      "minute": 9,
+      "type": "goal"
+    },
+    {
+      "team": "IRQ",
+      "player": "艾门侯赛因",
+      "minute": 39,
+      "type": "goal"
+    },
+    {
+      "team": "NOR",
+      "player": "E. Haaland",
+      "minute": 43,
+      "type": "goal"
+    },
+    {
+      "team": "NOR",
+      "player": "L. Oestigaard",
+      "minute": 76,
+      "type": "goal"
+    },
+    {
+      "team": "NOR",
+      "player": "艾门侯赛因(乌龙)",
+      "minute": 90,
+      "type": "og"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

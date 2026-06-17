@@ -177,47 +177,47 @@
   },
   {
     "id": "M017",
-    "mid": "2040195",
+    "mid": "2040178",
     "stage": "group",
     "group": "I",
     "date": "2026-06-16T19:00:00Z",
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "FRA",
     "away": "SEN",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M018",
-    "mid": "2040196",
+    "mid": "2040179",
     "stage": "group",
     "group": "I",
     "date": "2026-06-16T22:00:00Z",
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "IRQ",
     "away": "NOR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M019",
-    "mid": "2040197",
+    "mid": "2040180",
     "stage": "group",
     "group": "J",
     "date": "2026-06-17T01:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "ARG",
     "away": "DZA",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M020",
-    "mid": "2040198",
+    "mid": "2040181",
     "stage": "group",
     "group": "J",
     "date": "2026-06-17T04:00:00Z",
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "AUT",
     "away": "JOR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M021",

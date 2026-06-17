@@ -1,39 +1,8 @@
 {
-  "generated_at": "2026-06-16T01:08:18.287Z",
+  "generated_at": "2026-06-17T09:37:46.519Z",
   "total": 80,
   "by_status": {
-    "scheduled": [
-      {
-        "mid": "2040189",
-        "code": "周三201",
-        "league": "国际赛",
-        "home": "葡萄牙",
-        "away": "尼日利亚",
-        "kickoff": "2026-06-11 03:45",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:57:36.522Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040189.json"
-      },
-      {
-        "mid": "2040190",
-        "code": "周三202",
-        "league": "国际赛",
-        "home": "英格兰",
-        "away": "哥斯达",
-        "kickoff": "2026-06-11 04:00",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:58:08.767Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040190.json"
-      }
-    ],
+    "scheduled": [],
     "on_sale": [
       {
         "mid": "2040186",
@@ -45,18 +14,19 @@
         "status": "on_sale",
         "spf": {
           "home": 1.75,
-          "draw": 3.28,
-          "away": 3.95
+          "draw": 3.14,
+          "away": 4.18
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.66,
-          "draw": 3.26,
-          "away": 1.82
+          "home": 3.82,
+          "draw": 3.11,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-09T13:13:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040186.json"
+        "scraped_at": "2026-06-17T05:53:05.302Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040186.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040187",
@@ -67,19 +37,20 @@
         "kickoff": "2026-06-10 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.17,
-          "draw": 5.35,
-          "away": 11.5
+          "home": 1.19,
+          "draw": 5.3,
+          "away": 10
         },
         "handicap": -2,
         "rqspf": {
-          "home": 3.11,
-          "draw": 3.45,
-          "away": 1.93
+          "home": 3.45,
+          "draw": 3.35,
+          "away": 1.85
         },
-        "scraped_at": "2026-06-09T13:50:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040187.json"
+        "scraped_at": "2026-06-17T05:53:05.358Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040187.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040188",
@@ -92,189 +63,58 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.24,
-          "draw": 3.45,
+          "home": 2.34,
+          "draw": 3.23,
           "away": 2.55
         },
-        "scraped_at": "2026-06-09T14:20:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040188.json"
+        "scraped_at": "2026-06-17T05:53:05.429Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040188.json",
+        "is_finished_odds": false
       },
       {
-        "mid": "2040174",
-        "code": "周一013",
-        "league": "世界杯",
-        "home": "西班牙",
-        "away": "佛得角",
-        "kickoff": "2026-06-16 00:00",
+        "mid": "2040189",
+        "code": "周三201",
+        "league": "国际赛",
+        "home": "葡萄牙",
+        "away": "尼日利亚",
+        "kickoff": "2026-06-11 03:45",
+        "status": "on_sale",
+        "spf": {
+          "home": 1.18,
+          "draw": 5.5,
+          "away": 10
+        },
+        "handicap": -2,
+        "rqspf": {
+          "home": 3.25,
+          "draw": 3.55,
+          "away": 1.85
+        },
+        "scraped_at": "2026-06-17T05:53:05.486Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040189.json",
+        "is_finished_odds": false
+      },
+      {
+        "mid": "2040190",
+        "code": "周三202",
+        "league": "国际赛",
+        "home": "英格兰",
+        "away": "哥斯达",
+        "kickoff": "2026-06-11 04:00",
         "status": "on_sale",
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.54,
-          "draw": 4.55,
-          "away": 3.85
+          "home": 2.08,
+          "draw": 3.6,
+          "away": 2.7
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040174.json"
-      },
-      {
-        "mid": "2040175",
-        "code": "周一014",
-        "league": "世界杯",
-        "home": "比利时",
-        "away": "埃及",
-        "kickoff": "2026-06-16 03:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.41,
-          "draw": 3.92,
-          "away": 6.05
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 2.35,
-          "draw": 3.4,
-          "away": 2.44
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 13,
-        "odds_file": "odds/2040175.json"
-      },
-      {
-        "mid": "2040176",
-        "code": "周一015",
-        "league": "世界杯",
-        "home": "沙特阿拉伯",
-        "away": "乌拉圭",
-        "kickoff": "2026-06-16 06:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 7.5,
-          "draw": 4.3,
-          "away": 1.31
-        },
-        "handicap": 1,
-        "rqspf": {
-          "home": 2.87,
-          "draw": 3.3,
-          "away": 2.09
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040176.json"
-      },
-      {
-        "mid": "2040177",
-        "code": "周一016",
-        "league": "世界杯",
-        "home": "伊朗",
-        "away": "新西兰",
-        "kickoff": "2026-06-16 09:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.59,
-          "draw": 3.28,
-          "away": 5.1
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 3.11,
-          "draw": 3.2,
-          "away": 2.02
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040177.json"
-      },
-      {
-        "mid": "2040178",
-        "code": "周二017",
-        "league": "世界杯",
-        "home": "法国",
-        "away": "塞内加尔",
-        "kickoff": "2026-06-17 03:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.31,
-          "draw": 4.23,
-          "away": 7.7
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 2.12,
-          "draw": 3.37,
-          "away": 2.77
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 15,
-        "odds_file": "odds/2040178.json"
-      },
-      {
-        "mid": "2040179",
-        "code": "周二018",
-        "league": "世界杯",
-        "home": "伊拉克",
-        "away": "挪威",
-        "kickoff": "2026-06-17 06:00",
-        "status": "on_sale",
-        "spf": null,
-        "handicap": 2,
-        "rqspf": {
-          "home": 2.16,
-          "draw": 3.89,
-          "away": 2.44
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040179.json"
-      },
-      {
-        "mid": "2040180",
-        "code": "周二019",
-        "league": "世界杯",
-        "home": "阿根廷",
-        "away": "阿尔及利亚",
-        "kickoff": "2026-06-17 09:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.26,
-          "draw": 4.4,
-          "away": 9.2
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 1.9,
-          "draw": 3.5,
-          "away": 3.15
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 7,
-        "odds_file": "odds/2040180.json"
-      },
-      {
-        "mid": "2040181",
-        "code": "周二020",
-        "league": "世界杯",
-        "home": "奥地利",
-        "away": "约旦",
-        "kickoff": "2026-06-17 12:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.21,
-          "draw": 5.15,
-          "away": 9.2
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 1.79,
-          "draw": 3.56,
-          "away": 3.45
-        },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040181.json"
+        "scraped_at": "2026-06-17T05:53:05.509Z",
+        "history_snapshots": 1,
+        "odds_file": "odds/2040190.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040182",
@@ -289,15 +129,16 @@
           "draw": 5.86,
           "away": 13.5
         },
-        "handicap": -1,
+        "handicap": -2,
         "rqspf": {
-          "home": 2.66,
-          "draw": 3.94,
-          "away": 2
+          "home": 2.61,
+          "draw": 3.98,
+          "away": 2.02
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040182.json"
+        "scraped_at": "2026-06-17T05:53:05.619Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040182.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040183",
@@ -308,19 +149,20 @@
         "kickoff": "2026-06-18 04:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.53,
-          "draw": 3.5,
-          "away": 5.25
+          "home": 1.52,
+          "draw": 3.55,
+          "away": 5.27
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.84,
-          "draw": 3.2,
-          "away": 2.15
+          "home": 2.73,
+          "draw": 3.22,
+          "away": 2.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040183.json"
+        "scraped_at": "2026-06-17T05:53:05.639Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040183.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040184",
@@ -331,19 +173,20 @@
         "kickoff": "2026-06-18 07:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.96,
+          "home": 2.03,
           "draw": 3,
-          "away": 3.5
+          "away": 3.29
         },
-        "handicap": 1,
+        "handicap": -1,
         "rqspf": {
-          "home": 4.25,
-          "draw": 3.52,
-          "away": 1.64
+          "home": 4.37,
+          "draw": 3.63,
+          "away": 1.6
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040184.json"
+        "scraped_at": "2026-06-17T05:53:05.664Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040184.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040185",
@@ -354,19 +197,20 @@
         "kickoff": "2026-06-18 10:00",
         "status": "on_sale",
         "spf": {
-          "home": 9.1,
-          "draw": 4.55,
-          "away": 1.25
+          "home": 9.65,
+          "draw": 4.85,
+          "away": 1.22
         },
         "handicap": 1,
         "rqspf": {
-          "home": 3.12,
-          "draw": 3.44,
-          "away": 1.93
+          "home": 3.4,
+          "draw": 3.46,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040185.json"
+        "scraped_at": "2026-06-17T05:53:05.689Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040185.json",
+        "is_finished_odds": false
       }
     ],
     "in_progress": [],
@@ -382,8 +226,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.344Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022007",
@@ -396,8 +241,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.264Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022002",
@@ -410,8 +256,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.486Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022008",
@@ -424,8 +271,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.450Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022013",
@@ -438,8 +286,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.701Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022019",
@@ -452,8 +301,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.896Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022014",
@@ -466,8 +316,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.881Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022020",
@@ -480,8 +331,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.052Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022031",
@@ -494,8 +346,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.948Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022025",
@@ -508,8 +361,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.996Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022026",
@@ -522,8 +376,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.135Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022032",
@@ -536,8 +391,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.167Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022037",
@@ -550,8 +406,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.988Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022043",
@@ -564,8 +421,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.989Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022038",
@@ -578,8 +436,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.187Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022044",
@@ -592,8 +451,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.155Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022009",
@@ -606,8 +466,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.577Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022003",
@@ -620,8 +481,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.622Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022010",
@@ -634,8 +496,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.179Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022021",
@@ -648,8 +511,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.184Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022015",
@@ -662,8 +526,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.362Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022004",
@@ -676,8 +541,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.795Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022022",
@@ -690,8 +556,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.518Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022016",
@@ -704,8 +571,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.483Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022027",
@@ -718,8 +586,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.292Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022033",
@@ -732,8 +601,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.311Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022034",
@@ -746,8 +616,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.485Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022028",
@@ -760,8 +631,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.440Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022039",
@@ -774,8 +646,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.358Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022045",
@@ -788,8 +661,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.359Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022040",
@@ -802,8 +676,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.491Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022046",
@@ -816,8 +691,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.520Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022005",
@@ -830,8 +706,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.960Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022006",
@@ -844,8 +721,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.101Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022011",
@@ -858,8 +736,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.329Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022012",
@@ -872,8 +751,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.487Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022017",
@@ -886,8 +766,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.602Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022018",
@@ -900,8 +781,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.728Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022023",
@@ -914,8 +796,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.654Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022024",
@@ -928,8 +811,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.776Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022035",
@@ -942,8 +826,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.656Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022036",
@@ -956,8 +841,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.806Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022029",
@@ -970,8 +856,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.660Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022030",
@@ -984,8 +871,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.802Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022047",
@@ -998,8 +886,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.882Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022048",
@@ -1012,8 +901,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:07.130Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022041",
@@ -1026,8 +916,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.699Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022042",
@@ -1040,8 +931,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.849Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2040145",
@@ -1058,14 +950,15 @@
         },
         "handicap": -2,
         "rqspf": {
-          "home": 2.78,
-          "draw": 3.55,
-          "away": 2.05
+          "home": 2.65,
+          "draw": 3.34,
+          "away": 2.21
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-08T05:51:21.856Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040145.json"
+        "scraped_at": "2026-06-17T05:49:56.298Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040145.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040146",
@@ -1078,14 +971,15 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.6,
-          "away": 2.95
+          "home": 1.82,
+          "draw": 3.96,
+          "away": 3.05
         },
         "final_score": "3-1",
-        "scraped_at": "2026-06-08T05:52:38.001Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040146.json"
+        "scraped_at": "2026-06-17T05:49:56.430Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040146.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040147",
@@ -1096,16 +990,17 @@
         "kickoff": "2026-06-09 10:00",
         "status": "finished",
         "spf": null,
-        "handicap": -2,
+        "handicap": 2,
         "rqspf": {
-          "home": 2.68,
-          "draw": 3.6,
-          "away": 2.09
+          "home": 2.38,
+          "draw": 3.4,
+          "away": 2.41
         },
         "final_score": "1-3",
-        "scraped_at": "2026-06-08T05:53:31.612Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040147.json"
+        "scraped_at": "2026-06-17T05:49:56.641Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040147.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040162",
@@ -1127,9 +1022,10 @@
           "away": 3.11
         },
         "final_score": "2-0",
-        "scraped_at": "2026-06-11T12:25:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040162.json"
+        "scraped_at": "2026-06-17T05:49:56.810Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040162.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040163",
@@ -1146,14 +1042,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 5.8,
-          "draw": 4.05,
-          "away": 1.41
+          "home": 6.25,
+          "draw": 4,
+          "away": 1.39
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-11T12:25:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040163.json"
+        "scraped_at": "2026-06-17T05:49:56.829Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040163.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040164",
@@ -1170,14 +1067,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.95,
-          "draw": 3.3,
-          "away": 2.05
+          "home": 3.58,
+          "draw": 2.9,
+          "away": 1.98
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-12T12:30:00.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040164.json"
+        "scraped_at": "2026-06-17T05:49:56.855Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040164.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040165",
@@ -1194,14 +1092,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.95,
-          "draw": 3.4,
-          "away": 1.72
+          "home": 4.02,
+          "draw": 3.08,
+          "away": 1.8
         },
         "final_score": "4-1",
-        "scraped_at": "2026-06-12T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040165.json"
+        "scraped_at": "2026-06-17T05:49:56.878Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040165.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040166",
@@ -1214,14 +1113,15 @@
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 1.98,
-          "draw": 3.85,
-          "away": 2.74
+          "home": 2.35,
+          "draw": 3.42,
+          "away": 2.43
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:20.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040166.json"
+        "scraped_at": "2026-06-17T05:49:56.911Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040166.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040167",
@@ -1238,14 +1138,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.8,
-          "draw": 3.26,
-          "away": 2.15
+          "home": 2.95,
+          "draw": 2.91,
+          "away": 2.24
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:30.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040167.json"
+        "scraped_at": "2026-06-17T05:49:56.939Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040167.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040168",
@@ -1255,17 +1156,22 @@
         "away": "苏格兰",
         "kickoff": "2026-06-14 09:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 7.4,
           "draw": 4.12,
           "away": 1.33
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.7,
+          "draw": 3.75,
+          "away": 2.03
+        },
         "final_score": "0-1",
-        "scraped_at": "2026-06-13T12:30:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040168.json"
+        "scraped_at": "2026-06-17T05:49:56.957Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040168.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040169",
@@ -1275,17 +1181,22 @@
         "away": "土耳其",
         "kickoff": "2026-06-14 12:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 5.55,
           "draw": 3.78,
           "away": 1.46
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.28,
+          "draw": 2.95,
+          "away": 2.84
+        },
         "final_score": "2-0",
-        "scraped_at": "2026-06-13T12:30:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040169.json"
+        "scraped_at": "2026-06-17T05:49:56.981Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040169.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040170",
@@ -1298,14 +1209,15 @@
         "spf": null,
         "handicap": -3,
         "rqspf": {
-          "home": 1.71,
-          "draw": 4.1,
-          "away": 3.55
+          "home": 1.65,
+          "draw": 4.85,
+          "away": 3.15
         },
         "final_score": "7-1",
-        "scraped_at": "2026-06-14T12:30:00.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040170.json"
+        "scraped_at": "2026-06-17T05:49:57.027Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040170.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040171",
@@ -1322,14 +1234,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.4,
+          "home": 4,
           "draw": 3.4,
-          "away": 1.85
+          "away": 1.71
         },
         "final_score": "2-2",
-        "scraped_at": "2026-06-14T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040171.json"
+        "scraped_at": "2026-06-17T05:49:57.070Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040171.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040172",
@@ -1346,14 +1259,15 @@
         },
         "handicap": 1,
         "rqspf": {
-          "home": 1.62,
-          "draw": 3.6,
-          "away": 4.4
+          "home": 1.45,
+          "draw": 3.8,
+          "away": 5.65
         },
         "final_score": "1-0",
-        "scraped_at": "2026-06-14T12:30:20.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040172.json"
+        "scraped_at": "2026-06-17T05:49:57.107Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040172.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040173",
@@ -1377,7 +1291,196 @@
         "final_score": "5-1",
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 2,
-        "odds_file": "odds/2040173.json"
+        "odds_file": "odds/2040173.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040174",
+        "code": "周一013",
+        "league": "世界杯",
+        "home": "西班牙",
+        "away": "佛得角",
+        "kickoff": "2026-06-16 00:00",
+        "status": "finished",
+        "spf": null,
+        "handicap": -2,
+        "rqspf": {
+          "home": 1.46,
+          "draw": 4.7,
+          "away": 4.32
+        },
+        "final_score": "0-0",
+        "scraped_at": "2026-06-17T05:49:57.168Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040174.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040175",
+        "code": "周一014",
+        "league": "世界杯",
+        "home": "比利时",
+        "away": "埃及",
+        "kickoff": "2026-06-16 03:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.43,
+          "draw": 3.85,
+          "away": 5.86
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 2.35,
+          "draw": 3.42,
+          "away": 2.43
+        },
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.235Z",
+        "history_snapshots": 15,
+        "odds_file": "odds/2040175.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040176",
+        "code": "周一015",
+        "league": "世界杯",
+        "home": "沙特阿拉伯",
+        "away": "乌拉圭",
+        "kickoff": "2026-06-16 06:00",
+        "status": "finished",
+        "spf": {
+          "home": 7.2,
+          "draw": 4.3,
+          "away": 1.32
+        },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.83,
+          "draw": 3.1,
+          "away": 2.21
+        },
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.256Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040176.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040177",
+        "code": "周一016",
+        "league": "世界杯",
+        "home": "伊朗",
+        "away": "新西兰",
+        "kickoff": "2026-06-16 09:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.55,
+          "draw": 3.38,
+          "away": 5.3
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 2.87,
+          "draw": 3.3,
+          "away": 2.09
+        },
+        "final_score": "2-2",
+        "scraped_at": "2026-06-17T05:49:57.494Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040177.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040178",
+        "code": "周二017",
+        "league": "世界杯",
+        "home": "法国",
+        "away": "塞内加尔",
+        "kickoff": "2026-06-17 03:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.32,
+          "draw": 4.2,
+          "away": 7.45
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 2.07,
+          "draw": 3.45,
+          "away": 2.81
+        },
+        "scraped_at": "2026-06-17T05:53:05.535Z",
+        "history_snapshots": 17,
+        "odds_file": "odds/2040178.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040179",
+        "code": "周二018",
+        "league": "世界杯",
+        "home": "伊拉克",
+        "away": "挪威",
+        "kickoff": "2026-06-17 06:00",
+        "status": "finished",
+        "spf": null,
+        "handicap": 2,
+        "rqspf": {
+          "home": 2.3,
+          "draw": 3.88,
+          "away": 2.29
+        },
+        "scraped_at": "2026-06-17T05:53:05.557Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040179.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040180",
+        "code": "周二019",
+        "league": "世界杯",
+        "home": "阿根廷",
+        "away": "阿尔及利亚",
+        "kickoff": "2026-06-17 09:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.29,
+          "draw": 4.2,
+          "away": 8.6
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 2.09,
+          "draw": 3.17,
+          "away": 2.98
+        },
+        "scraped_at": "2026-06-17T05:53:05.576Z",
+        "history_snapshots": 9,
+        "odds_file": "odds/2040180.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040181",
+        "code": "周二020",
+        "league": "世界杯",
+        "home": "奥地利",
+        "away": "约旦",
+        "kickoff": "2026-06-17 12:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.25,
+          "draw": 4.75,
+          "away": 8.4
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 1.78,
+          "draw": 3.9,
+          "away": 3.21
+        },
+        "scraped_at": "2026-06-17T05:53:05.594Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040181.json",
+        "is_finished_odds": true
       }
     ],
     "cancelled": [],
@@ -1400,14 +1503,15 @@
         },
         "handicap": -2,
         "rqspf": {
-          "home": 2.78,
-          "draw": 3.55,
-          "away": 2.05
+          "home": 2.65,
+          "draw": 3.34,
+          "away": 2.21
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-08T05:51:21.856Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040145.json"
+        "scraped_at": "2026-06-17T05:49:56.298Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040145.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040146",
@@ -1420,14 +1524,15 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.6,
-          "away": 2.95
+          "home": 1.82,
+          "draw": 3.96,
+          "away": 3.05
         },
         "final_score": "3-1",
-        "scraped_at": "2026-06-08T05:52:38.001Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040146.json"
+        "scraped_at": "2026-06-17T05:49:56.430Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040146.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040147",
@@ -1438,16 +1543,17 @@
         "kickoff": "2026-06-09 10:00",
         "status": "finished",
         "spf": null,
-        "handicap": -2,
+        "handicap": 2,
         "rqspf": {
-          "home": 2.68,
-          "draw": 3.6,
-          "away": 2.09
+          "home": 2.38,
+          "draw": 3.4,
+          "away": 2.41
         },
         "final_score": "1-3",
-        "scraped_at": "2026-06-08T05:53:31.612Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040147.json"
+        "scraped_at": "2026-06-17T05:49:56.641Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040147.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040186",
@@ -1459,18 +1565,19 @@
         "status": "on_sale",
         "spf": {
           "home": 1.75,
-          "draw": 3.28,
-          "away": 3.95
+          "draw": 3.14,
+          "away": 4.18
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.66,
-          "draw": 3.26,
-          "away": 1.82
+          "home": 3.82,
+          "draw": 3.11,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-09T13:13:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040186.json"
+        "scraped_at": "2026-06-17T05:53:05.302Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040186.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040187",
@@ -1481,19 +1588,20 @@
         "kickoff": "2026-06-10 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.17,
-          "draw": 5.35,
-          "away": 11.5
+          "home": 1.19,
+          "draw": 5.3,
+          "away": 10
         },
         "handicap": -2,
         "rqspf": {
-          "home": 3.11,
-          "draw": 3.45,
-          "away": 1.93
+          "home": 3.45,
+          "draw": 3.35,
+          "away": 1.85
         },
-        "scraped_at": "2026-06-09T13:50:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040187.json"
+        "scraped_at": "2026-06-17T05:53:05.358Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040187.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040188",
@@ -1506,13 +1614,14 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.24,
-          "draw": 3.45,
+          "home": 2.34,
+          "draw": 3.23,
           "away": 2.55
         },
-        "scraped_at": "2026-06-09T14:20:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040188.json"
+        "scraped_at": "2026-06-17T05:53:05.429Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040188.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040189",
@@ -1521,13 +1630,22 @@
         "home": "葡萄牙",
         "away": "尼日利亚",
         "kickoff": "2026-06-11 03:45",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:57:36.522Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040189.json"
+        "status": "on_sale",
+        "spf": {
+          "home": 1.18,
+          "draw": 5.5,
+          "away": 10
+        },
+        "handicap": -2,
+        "rqspf": {
+          "home": 3.25,
+          "draw": 3.55,
+          "away": 1.85
+        },
+        "scraped_at": "2026-06-17T05:53:05.486Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040189.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040190",
@@ -1536,13 +1654,18 @@
         "home": "英格兰",
         "away": "哥斯达",
         "kickoff": "2026-06-11 04:00",
-        "status": "scheduled",
+        "status": "on_sale",
         "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:58:08.767Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040190.json"
+        "handicap": -2,
+        "rqspf": {
+          "home": 2.08,
+          "draw": 3.6,
+          "away": 2.7
+        },
+        "scraped_at": "2026-06-17T05:53:05.509Z",
+        "history_snapshots": 1,
+        "odds_file": "odds/2040190.json",
+        "is_finished_odds": false
       }
     ],
     "世界杯": [
@@ -1557,8 +1680,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.344Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022007",
@@ -1571,8 +1695,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.264Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022002",
@@ -1585,8 +1710,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.486Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022008",
@@ -1599,8 +1725,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.450Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022013",
@@ -1613,8 +1740,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.701Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022019",
@@ -1627,8 +1755,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.896Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022014",
@@ -1641,8 +1770,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.881Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022020",
@@ -1655,8 +1785,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.052Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022031",
@@ -1669,8 +1800,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.948Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022025",
@@ -1683,8 +1815,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.996Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022026",
@@ -1697,8 +1830,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.135Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022032",
@@ -1711,8 +1845,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.167Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022037",
@@ -1725,8 +1860,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.988Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022043",
@@ -1739,8 +1875,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.989Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022038",
@@ -1753,8 +1890,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.187Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022044",
@@ -1767,8 +1905,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.155Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022009",
@@ -1781,8 +1920,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.577Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022003",
@@ -1795,8 +1935,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.622Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022010",
@@ -1809,8 +1950,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.179Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022021",
@@ -1823,8 +1965,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.184Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022015",
@@ -1837,8 +1980,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.362Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022004",
@@ -1851,8 +1995,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.795Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022022",
@@ -1865,8 +2010,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.518Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022016",
@@ -1879,8 +2025,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.483Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022027",
@@ -1893,8 +2040,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.292Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022033",
@@ -1907,8 +2055,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.311Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022034",
@@ -1921,8 +2070,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.485Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022028",
@@ -1935,8 +2085,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.440Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022039",
@@ -1949,8 +2100,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.358Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022045",
@@ -1963,8 +2115,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.359Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022040",
@@ -1977,8 +2130,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.491Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022046",
@@ -1991,8 +2145,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.520Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022005",
@@ -2005,8 +2160,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.960Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022006",
@@ -2019,8 +2175,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.101Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022011",
@@ -2033,8 +2190,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.329Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022012",
@@ -2047,8 +2205,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.487Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022017",
@@ -2061,8 +2220,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.602Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022018",
@@ -2075,8 +2235,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.728Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022023",
@@ -2089,8 +2250,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.654Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022024",
@@ -2103,8 +2265,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.776Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022035",
@@ -2117,8 +2280,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.656Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022036",
@@ -2131,8 +2295,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.806Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022029",
@@ -2145,8 +2310,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.660Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022030",
@@ -2159,8 +2325,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.802Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022047",
@@ -2173,8 +2340,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.882Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022048",
@@ -2187,8 +2355,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:07.130Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022041",
@@ -2201,8 +2370,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.699Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022042",
@@ -2215,8 +2385,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.849Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2040162",
@@ -2238,9 +2409,10 @@
           "away": 3.11
         },
         "final_score": "2-0",
-        "scraped_at": "2026-06-11T12:25:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040162.json"
+        "scraped_at": "2026-06-17T05:49:56.810Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040162.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040163",
@@ -2257,14 +2429,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 5.8,
-          "draw": 4.05,
-          "away": 1.41
+          "home": 6.25,
+          "draw": 4,
+          "away": 1.39
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-11T12:25:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040163.json"
+        "scraped_at": "2026-06-17T05:49:56.829Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040163.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040164",
@@ -2281,14 +2454,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.95,
-          "draw": 3.3,
-          "away": 2.05
+          "home": 3.58,
+          "draw": 2.9,
+          "away": 1.98
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-12T12:30:00.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040164.json"
+        "scraped_at": "2026-06-17T05:49:56.855Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040164.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040165",
@@ -2305,14 +2479,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.95,
-          "draw": 3.4,
-          "away": 1.72
+          "home": 4.02,
+          "draw": 3.08,
+          "away": 1.8
         },
         "final_score": "4-1",
-        "scraped_at": "2026-06-12T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040165.json"
+        "scraped_at": "2026-06-17T05:49:56.878Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040165.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040166",
@@ -2325,14 +2500,15 @@
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 1.98,
-          "draw": 3.85,
-          "away": 2.74
+          "home": 2.35,
+          "draw": 3.42,
+          "away": 2.43
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:20.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040166.json"
+        "scraped_at": "2026-06-17T05:49:56.911Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040166.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040167",
@@ -2349,14 +2525,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.8,
-          "draw": 3.26,
-          "away": 2.15
+          "home": 2.95,
+          "draw": 2.91,
+          "away": 2.24
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:30.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040167.json"
+        "scraped_at": "2026-06-17T05:49:56.939Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040167.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040168",
@@ -2366,17 +2543,22 @@
         "away": "苏格兰",
         "kickoff": "2026-06-14 09:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 7.4,
           "draw": 4.12,
           "away": 1.33
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.7,
+          "draw": 3.75,
+          "away": 2.03
+        },
         "final_score": "0-1",
-        "scraped_at": "2026-06-13T12:30:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040168.json"
+        "scraped_at": "2026-06-17T05:49:56.957Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040168.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040169",
@@ -2386,17 +2568,22 @@
         "away": "土耳其",
         "kickoff": "2026-06-14 12:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 5.55,
           "draw": 3.78,
           "away": 1.46
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.28,
+          "draw": 2.95,
+          "away": 2.84
+        },
         "final_score": "2-0",
-        "scraped_at": "2026-06-13T12:30:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040169.json"
+        "scraped_at": "2026-06-17T05:49:56.981Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040169.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040170",
@@ -2409,14 +2596,15 @@
         "spf": null,
         "handicap": -3,
         "rqspf": {
-          "home": 1.71,
-          "draw": 4.1,
-          "away": 3.55
+          "home": 1.65,
+          "draw": 4.85,
+          "away": 3.15
         },
         "final_score": "7-1",
-        "scraped_at": "2026-06-14T12:30:00.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040170.json"
+        "scraped_at": "2026-06-17T05:49:57.027Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040170.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040171",
@@ -2433,14 +2621,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.4,
+          "home": 4,
           "draw": 3.4,
-          "away": 1.85
+          "away": 1.71
         },
         "final_score": "2-2",
-        "scraped_at": "2026-06-14T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040171.json"
+        "scraped_at": "2026-06-17T05:49:57.070Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040171.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040172",
@@ -2457,14 +2646,15 @@
         },
         "handicap": 1,
         "rqspf": {
-          "home": 1.62,
-          "draw": 3.6,
-          "away": 4.4
+          "home": 1.45,
+          "draw": 3.8,
+          "away": 5.65
         },
         "final_score": "1-0",
-        "scraped_at": "2026-06-14T12:30:20.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040172.json"
+        "scraped_at": "2026-06-17T05:49:57.107Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040172.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040173",
@@ -2488,7 +2678,8 @@
         "final_score": "5-1",
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 2,
-        "odds_file": "odds/2040173.json"
+        "odds_file": "odds/2040173.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040174",
@@ -2497,17 +2688,19 @@
         "home": "西班牙",
         "away": "佛得角",
         "kickoff": "2026-06-16 00:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.54,
-          "draw": 4.55,
-          "away": 3.85
+          "home": 1.46,
+          "draw": 4.7,
+          "away": 4.32
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040174.json"
+        "final_score": "0-0",
+        "scraped_at": "2026-06-17T05:49:57.168Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040174.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040175",
@@ -2516,21 +2709,23 @@
         "home": "比利时",
         "away": "埃及",
         "kickoff": "2026-06-16 03:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.41,
-          "draw": 3.92,
-          "away": 6.05
+          "home": 1.43,
+          "draw": 3.85,
+          "away": 5.86
         },
         "handicap": -1,
         "rqspf": {
           "home": 2.35,
-          "draw": 3.4,
-          "away": 2.44
+          "draw": 3.42,
+          "away": 2.43
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 13,
-        "odds_file": "odds/2040175.json"
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.235Z",
+        "history_snapshots": 15,
+        "odds_file": "odds/2040175.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040176",
@@ -2539,21 +2734,23 @@
         "home": "沙特阿拉伯",
         "away": "乌拉圭",
         "kickoff": "2026-06-16 06:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 7.5,
+          "home": 7.2,
           "draw": 4.3,
-          "away": 1.31
+          "away": 1.32
         },
         "handicap": 1,
         "rqspf": {
-          "home": 2.87,
-          "draw": 3.3,
-          "away": 2.09
+          "home": 2.83,
+          "draw": 3.1,
+          "away": 2.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040176.json"
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.256Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040176.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040177",
@@ -2562,21 +2759,23 @@
         "home": "伊朗",
         "away": "新西兰",
         "kickoff": "2026-06-16 09:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.59,
-          "draw": 3.28,
-          "away": 5.1
+          "home": 1.55,
+          "draw": 3.38,
+          "away": 5.3
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.11,
-          "draw": 3.2,
-          "away": 2.02
+          "home": 2.87,
+          "draw": 3.3,
+          "away": 2.09
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040177.json"
+        "final_score": "2-2",
+        "scraped_at": "2026-06-17T05:49:57.494Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040177.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040178",
@@ -2585,21 +2784,22 @@
         "home": "法国",
         "away": "塞内加尔",
         "kickoff": "2026-06-17 03:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.31,
-          "draw": 4.23,
-          "away": 7.7
+          "home": 1.32,
+          "draw": 4.2,
+          "away": 7.45
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.12,
-          "draw": 3.37,
-          "away": 2.77
+          "home": 2.07,
+          "draw": 3.45,
+          "away": 2.81
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 15,
-        "odds_file": "odds/2040178.json"
+        "scraped_at": "2026-06-17T05:53:05.535Z",
+        "history_snapshots": 17,
+        "odds_file": "odds/2040178.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040179",
@@ -2608,17 +2808,18 @@
         "home": "伊拉克",
         "away": "挪威",
         "kickoff": "2026-06-17 06:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 2.16,
-          "draw": 3.89,
-          "away": 2.44
+          "home": 2.3,
+          "draw": 3.88,
+          "away": 2.29
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040179.json"
+        "scraped_at": "2026-06-17T05:53:05.557Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040179.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040180",
@@ -2627,21 +2828,22 @@
         "home": "阿根廷",
         "away": "阿尔及利亚",
         "kickoff": "2026-06-17 09:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.26,
-          "draw": 4.4,
-          "away": 9.2
+          "home": 1.29,
+          "draw": 4.2,
+          "away": 8.6
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.9,
-          "draw": 3.5,
-          "away": 3.15
+          "home": 2.09,
+          "draw": 3.17,
+          "away": 2.98
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 7,
-        "odds_file": "odds/2040180.json"
+        "scraped_at": "2026-06-17T05:53:05.576Z",
+        "history_snapshots": 9,
+        "odds_file": "odds/2040180.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040181",
@@ -2650,21 +2852,22 @@
         "home": "奥地利",
         "away": "约旦",
         "kickoff": "2026-06-17 12:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.21,
-          "draw": 5.15,
-          "away": 9.2
+          "home": 1.25,
+          "draw": 4.75,
+          "away": 8.4
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.79,
-          "draw": 3.56,
-          "away": 3.45
+          "home": 1.78,
+          "draw": 3.9,
+          "away": 3.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040181.json"
+        "scraped_at": "2026-06-17T05:53:05.594Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040181.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040182",
@@ -2679,15 +2882,16 @@
           "draw": 5.86,
           "away": 13.5
         },
-        "handicap": -1,
+        "handicap": -2,
         "rqspf": {
-          "home": 2.66,
-          "draw": 3.94,
-          "away": 2
+          "home": 2.61,
+          "draw": 3.98,
+          "away": 2.02
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040182.json"
+        "scraped_at": "2026-06-17T05:53:05.619Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040182.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040183",
@@ -2698,19 +2902,20 @@
         "kickoff": "2026-06-18 04:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.53,
-          "draw": 3.5,
-          "away": 5.25
+          "home": 1.52,
+          "draw": 3.55,
+          "away": 5.27
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.84,
-          "draw": 3.2,
-          "away": 2.15
+          "home": 2.73,
+          "draw": 3.22,
+          "away": 2.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040183.json"
+        "scraped_at": "2026-06-17T05:53:05.639Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040183.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040184",
@@ -2721,19 +2926,20 @@
         "kickoff": "2026-06-18 07:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.96,
+          "home": 2.03,
           "draw": 3,
-          "away": 3.5
+          "away": 3.29
         },
-        "handicap": 1,
+        "handicap": -1,
         "rqspf": {
-          "home": 4.25,
-          "draw": 3.52,
-          "away": 1.64
+          "home": 4.37,
+          "draw": 3.63,
+          "away": 1.6
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040184.json"
+        "scraped_at": "2026-06-17T05:53:05.664Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040184.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040185",
@@ -2744,19 +2950,20 @@
         "kickoff": "2026-06-18 10:00",
         "status": "on_sale",
         "spf": {
-          "home": 9.1,
-          "draw": 4.55,
-          "away": 1.25
+          "home": 9.65,
+          "draw": 4.85,
+          "away": 1.22
         },
         "handicap": 1,
         "rqspf": {
-          "home": 3.12,
-          "draw": 3.44,
-          "away": 1.93
+          "home": 3.4,
+          "draw": 3.46,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040185.json"
+        "scraped_at": "2026-06-17T05:53:05.689Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040185.json",
+        "is_finished_odds": false
       }
     ]
   },
@@ -2777,14 +2984,15 @@
         },
         "handicap": -2,
         "rqspf": {
-          "home": 2.78,
-          "draw": 3.55,
-          "away": 2.05
+          "home": 2.65,
+          "draw": 3.34,
+          "away": 2.21
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-08T05:51:21.856Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040145.json"
+        "scraped_at": "2026-06-17T05:49:56.298Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040145.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040146",
@@ -2797,14 +3005,15 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.95,
-          "draw": 3.6,
-          "away": 2.95
+          "home": 1.82,
+          "draw": 3.96,
+          "away": 3.05
         },
         "final_score": "3-1",
-        "scraped_at": "2026-06-08T05:52:38.001Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040146.json"
+        "scraped_at": "2026-06-17T05:49:56.430Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040146.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040147",
@@ -2815,16 +3024,17 @@
         "kickoff": "2026-06-09 10:00",
         "status": "finished",
         "spf": null,
-        "handicap": -2,
+        "handicap": 2,
         "rqspf": {
-          "home": 2.68,
-          "draw": 3.6,
-          "away": 2.09
+          "home": 2.38,
+          "draw": 3.4,
+          "away": 2.41
         },
         "final_score": "1-3",
-        "scraped_at": "2026-06-08T05:53:31.612Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040147.json"
+        "scraped_at": "2026-06-17T05:49:56.641Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040147.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040186",
@@ -2836,18 +3046,19 @@
         "status": "on_sale",
         "spf": {
           "home": 1.75,
-          "draw": 3.28,
-          "away": 3.95
+          "draw": 3.14,
+          "away": 4.18
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.66,
-          "draw": 3.26,
-          "away": 1.82
+          "home": 3.82,
+          "draw": 3.11,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-09T13:13:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040186.json"
+        "scraped_at": "2026-06-17T05:53:05.302Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040186.json",
+        "is_finished_odds": false
       }
     ],
     "2026-06-10": [
@@ -2860,19 +3071,20 @@
         "kickoff": "2026-06-10 01:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.17,
-          "draw": 5.35,
-          "away": 11.5
+          "home": 1.19,
+          "draw": 5.3,
+          "away": 10
         },
         "handicap": -2,
         "rqspf": {
-          "home": 3.11,
-          "draw": 3.45,
-          "away": 1.93
+          "home": 3.45,
+          "draw": 3.35,
+          "away": 1.85
         },
-        "scraped_at": "2026-06-09T13:50:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040187.json"
+        "scraped_at": "2026-06-17T05:53:05.358Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040187.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040188",
@@ -2885,13 +3097,14 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.24,
-          "draw": 3.45,
+          "home": 2.34,
+          "draw": 3.23,
           "away": 2.55
         },
-        "scraped_at": "2026-06-09T14:20:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040188.json"
+        "scraped_at": "2026-06-17T05:53:05.429Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040188.json",
+        "is_finished_odds": false
       }
     ],
     "2026-06-11": [
@@ -2902,13 +3115,22 @@
         "home": "葡萄牙",
         "away": "尼日利亚",
         "kickoff": "2026-06-11 03:45",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:57:36.522Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040189.json"
+        "status": "on_sale",
+        "spf": {
+          "home": 1.18,
+          "draw": 5.5,
+          "away": 10
+        },
+        "handicap": -2,
+        "rqspf": {
+          "home": 3.25,
+          "draw": 3.55,
+          "away": 1.85
+        },
+        "scraped_at": "2026-06-17T05:53:05.486Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040189.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040190",
@@ -2917,13 +3139,18 @@
         "home": "英格兰",
         "away": "哥斯达",
         "kickoff": "2026-06-11 04:00",
-        "status": "scheduled",
+        "status": "on_sale",
         "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "scraped_at": "2026-06-08T05:58:08.767Z",
-        "history_snapshots": 0,
-        "odds_file": "odds/2040190.json"
+        "handicap": -2,
+        "rqspf": {
+          "home": 2.08,
+          "draw": 3.6,
+          "away": 2.7
+        },
+        "scraped_at": "2026-06-17T05:53:05.509Z",
+        "history_snapshots": 1,
+        "odds_file": "odds/2040190.json",
+        "is_finished_odds": false
       }
     ],
     "2026-06-12": [
@@ -2947,9 +3174,10 @@
           "away": 3.11
         },
         "final_score": "2-0",
-        "scraped_at": "2026-06-11T12:25:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040162.json"
+        "scraped_at": "2026-06-17T05:49:56.810Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040162.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040163",
@@ -2966,14 +3194,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 5.8,
-          "draw": 4.05,
-          "away": 1.41
+          "home": 6.25,
+          "draw": 4,
+          "away": 1.39
         },
         "final_score": "2-1",
-        "scraped_at": "2026-06-11T12:25:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040163.json"
+        "scraped_at": "2026-06-17T05:49:56.829Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040163.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-13": [
@@ -2992,14 +3221,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.95,
-          "draw": 3.3,
-          "away": 2.05
+          "home": 3.58,
+          "draw": 2.9,
+          "away": 1.98
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-12T12:30:00.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040164.json"
+        "scraped_at": "2026-06-17T05:49:56.855Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040164.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040165",
@@ -3016,14 +3246,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.95,
-          "draw": 3.4,
-          "away": 1.72
+          "home": 4.02,
+          "draw": 3.08,
+          "away": 1.8
         },
         "final_score": "4-1",
-        "scraped_at": "2026-06-12T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040165.json"
+        "scraped_at": "2026-06-17T05:49:56.878Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040165.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-14": [
@@ -3038,14 +3269,15 @@
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 1.98,
-          "draw": 3.85,
-          "away": 2.74
+          "home": 2.35,
+          "draw": 3.42,
+          "away": 2.43
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:20.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040166.json"
+        "scraped_at": "2026-06-17T05:49:56.911Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040166.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040167",
@@ -3062,14 +3294,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.8,
-          "draw": 3.26,
-          "away": 2.15
+          "home": 2.95,
+          "draw": 2.91,
+          "away": 2.24
         },
         "final_score": "1-1",
-        "scraped_at": "2026-06-13T12:30:30.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040167.json"
+        "scraped_at": "2026-06-17T05:49:56.939Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040167.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040168",
@@ -3079,17 +3312,22 @@
         "away": "苏格兰",
         "kickoff": "2026-06-14 09:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 7.4,
           "draw": 4.12,
           "away": 1.33
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.7,
+          "draw": 3.75,
+          "away": 2.03
+        },
         "final_score": "0-1",
-        "scraped_at": "2026-06-13T12:30:40.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040168.json"
+        "scraped_at": "2026-06-17T05:49:56.957Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040168.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040169",
@@ -3099,17 +3337,22 @@
         "away": "土耳其",
         "kickoff": "2026-06-14 12:00",
         "status": "finished",
-        "spf": null,
-        "handicap": 1,
-        "rqspf": {
+        "spf": {
           "home": 5.55,
           "draw": 3.78,
           "away": 1.46
         },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.28,
+          "draw": 2.95,
+          "away": 2.84
+        },
         "final_score": "2-0",
-        "scraped_at": "2026-06-13T12:30:50.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040169.json"
+        "scraped_at": "2026-06-17T05:49:56.981Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040169.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-15": [
@@ -3124,14 +3367,15 @@
         "spf": null,
         "handicap": -3,
         "rqspf": {
-          "home": 1.71,
-          "draw": 4.1,
-          "away": 3.55
+          "home": 1.65,
+          "draw": 4.85,
+          "away": 3.15
         },
         "final_score": "7-1",
-        "scraped_at": "2026-06-14T12:30:00.000Z",
-        "history_snapshots": 1,
-        "odds_file": "odds/2040170.json"
+        "scraped_at": "2026-06-17T05:49:57.027Z",
+        "history_snapshots": 2,
+        "odds_file": "odds/2040170.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040171",
@@ -3148,14 +3392,15 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.4,
+          "home": 4,
           "draw": 3.4,
-          "away": 1.85
+          "away": 1.71
         },
         "final_score": "2-2",
-        "scraped_at": "2026-06-14T12:30:10.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040171.json"
+        "scraped_at": "2026-06-17T05:49:57.070Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040171.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040172",
@@ -3172,14 +3417,15 @@
         },
         "handicap": 1,
         "rqspf": {
-          "home": 1.62,
-          "draw": 3.6,
-          "away": 4.4
+          "home": 1.45,
+          "draw": 3.8,
+          "away": 5.65
         },
         "final_score": "1-0",
-        "scraped_at": "2026-06-14T12:30:20.000Z",
-        "history_snapshots": 2,
-        "odds_file": "odds/2040172.json"
+        "scraped_at": "2026-06-17T05:49:57.107Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040172.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040173",
@@ -3203,7 +3449,8 @@
         "final_score": "5-1",
         "scraped_at": "2026-06-15T11:26:00.000Z",
         "history_snapshots": 2,
-        "odds_file": "odds/2040173.json"
+        "odds_file": "odds/2040173.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-16": [
@@ -3214,17 +3461,19 @@
         "home": "西班牙",
         "away": "佛得角",
         "kickoff": "2026-06-16 00:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 1.54,
-          "draw": 4.55,
-          "away": 3.85
+          "home": 1.46,
+          "draw": 4.7,
+          "away": 4.32
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040174.json"
+        "final_score": "0-0",
+        "scraped_at": "2026-06-17T05:49:57.168Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040174.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040175",
@@ -3233,21 +3482,23 @@
         "home": "比利时",
         "away": "埃及",
         "kickoff": "2026-06-16 03:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.41,
-          "draw": 3.92,
-          "away": 6.05
+          "home": 1.43,
+          "draw": 3.85,
+          "away": 5.86
         },
         "handicap": -1,
         "rqspf": {
           "home": 2.35,
-          "draw": 3.4,
-          "away": 2.44
+          "draw": 3.42,
+          "away": 2.43
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 13,
-        "odds_file": "odds/2040175.json"
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.235Z",
+        "history_snapshots": 15,
+        "odds_file": "odds/2040175.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040176",
@@ -3256,21 +3507,23 @@
         "home": "沙特阿拉伯",
         "away": "乌拉圭",
         "kickoff": "2026-06-16 06:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 7.5,
+          "home": 7.2,
           "draw": 4.3,
-          "away": 1.31
+          "away": 1.32
         },
         "handicap": 1,
         "rqspf": {
-          "home": 2.87,
-          "draw": 3.3,
-          "away": 2.09
+          "home": 2.83,
+          "draw": 3.1,
+          "away": 2.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040176.json"
+        "final_score": "1-1",
+        "scraped_at": "2026-06-17T05:49:57.256Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040176.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040177",
@@ -3279,21 +3532,23 @@
         "home": "伊朗",
         "away": "新西兰",
         "kickoff": "2026-06-16 09:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.59,
-          "draw": 3.28,
-          "away": 5.1
+          "home": 1.55,
+          "draw": 3.38,
+          "away": 5.3
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.11,
-          "draw": 3.2,
-          "away": 2.02
+          "home": 2.87,
+          "draw": 3.3,
+          "away": 2.09
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040177.json"
+        "final_score": "2-2",
+        "scraped_at": "2026-06-17T05:49:57.494Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040177.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-17": [
@@ -3304,21 +3559,22 @@
         "home": "法国",
         "away": "塞内加尔",
         "kickoff": "2026-06-17 03:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.31,
-          "draw": 4.23,
-          "away": 7.7
+          "home": 1.32,
+          "draw": 4.2,
+          "away": 7.45
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.12,
-          "draw": 3.37,
-          "away": 2.77
+          "home": 2.07,
+          "draw": 3.45,
+          "away": 2.81
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 15,
-        "odds_file": "odds/2040178.json"
+        "scraped_at": "2026-06-17T05:53:05.535Z",
+        "history_snapshots": 17,
+        "odds_file": "odds/2040178.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040179",
@@ -3327,17 +3583,18 @@
         "home": "伊拉克",
         "away": "挪威",
         "kickoff": "2026-06-17 06:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": null,
         "handicap": 2,
         "rqspf": {
-          "home": 2.16,
-          "draw": 3.89,
-          "away": 2.44
+          "home": 2.3,
+          "draw": 3.88,
+          "away": 2.29
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 3,
-        "odds_file": "odds/2040179.json"
+        "scraped_at": "2026-06-17T05:53:05.557Z",
+        "history_snapshots": 4,
+        "odds_file": "odds/2040179.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040180",
@@ -3346,21 +3603,22 @@
         "home": "阿根廷",
         "away": "阿尔及利亚",
         "kickoff": "2026-06-17 09:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.26,
-          "draw": 4.4,
-          "away": 9.2
+          "home": 1.29,
+          "draw": 4.2,
+          "away": 8.6
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.9,
-          "draw": 3.5,
-          "away": 3.15
+          "home": 2.09,
+          "draw": 3.17,
+          "away": 2.98
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 7,
-        "odds_file": "odds/2040180.json"
+        "scraped_at": "2026-06-17T05:53:05.576Z",
+        "history_snapshots": 9,
+        "odds_file": "odds/2040180.json",
+        "is_finished_odds": true
       },
       {
         "mid": "2040181",
@@ -3369,21 +3627,22 @@
         "home": "奥地利",
         "away": "约旦",
         "kickoff": "2026-06-17 12:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.21,
-          "draw": 5.15,
-          "away": 9.2
+          "home": 1.25,
+          "draw": 4.75,
+          "away": 8.4
         },
         "handicap": -1,
         "rqspf": {
-          "home": 1.79,
-          "draw": 3.56,
-          "away": 3.45
+          "home": 1.78,
+          "draw": 3.9,
+          "away": 3.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040181.json"
+        "scraped_at": "2026-06-17T05:53:05.594Z",
+        "history_snapshots": 8,
+        "odds_file": "odds/2040181.json",
+        "is_finished_odds": true
       }
     ],
     "2026-06-18": [
@@ -3400,15 +3659,16 @@
           "draw": 5.86,
           "away": 13.5
         },
-        "handicap": -1,
+        "handicap": -2,
         "rqspf": {
-          "home": 2.66,
-          "draw": 3.94,
-          "away": 2
+          "home": 2.61,
+          "draw": 3.98,
+          "away": 2.02
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 6,
-        "odds_file": "odds/2040182.json"
+        "scraped_at": "2026-06-17T05:53:05.619Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040182.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040183",
@@ -3419,19 +3679,20 @@
         "kickoff": "2026-06-18 04:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.53,
-          "draw": 3.5,
-          "away": 5.25
+          "home": 1.52,
+          "draw": 3.55,
+          "away": 5.27
         },
         "handicap": -1,
         "rqspf": {
-          "home": 2.84,
-          "draw": 3.2,
-          "away": 2.15
+          "home": 2.73,
+          "draw": 3.22,
+          "away": 2.21
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040183.json"
+        "scraped_at": "2026-06-17T05:53:05.639Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040183.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040184",
@@ -3442,19 +3703,20 @@
         "kickoff": "2026-06-18 07:00",
         "status": "on_sale",
         "spf": {
-          "home": 1.96,
+          "home": 2.03,
           "draw": 3,
-          "away": 3.5
+          "away": 3.29
         },
-        "handicap": 1,
+        "handicap": -1,
         "rqspf": {
-          "home": 4.25,
-          "draw": 3.52,
-          "away": 1.64
+          "home": 4.37,
+          "draw": 3.63,
+          "away": 1.6
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 4,
-        "odds_file": "odds/2040184.json"
+        "scraped_at": "2026-06-17T05:53:05.664Z",
+        "history_snapshots": 6,
+        "odds_file": "odds/2040184.json",
+        "is_finished_odds": false
       },
       {
         "mid": "2040185",
@@ -3465,19 +3727,20 @@
         "kickoff": "2026-06-18 10:00",
         "status": "on_sale",
         "spf": {
-          "home": 9.1,
-          "draw": 4.55,
-          "away": 1.25
+          "home": 9.65,
+          "draw": 4.85,
+          "away": 1.22
         },
         "handicap": 1,
         "rqspf": {
-          "home": 3.12,
-          "draw": 3.44,
-          "away": 1.93
+          "home": 3.4,
+          "draw": 3.46,
+          "away": 1.83
         },
-        "scraped_at": "2026-06-15T11:26:00.000Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040185.json"
+        "scraped_at": "2026-06-17T05:53:05.689Z",
+        "history_snapshots": 7,
+        "odds_file": "odds/2040185.json",
+        "is_finished_odds": false
       }
     ],
     "2022-11-20": [
@@ -3492,8 +3755,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.344Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-21": [
@@ -3508,8 +3772,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.264Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022002",
@@ -3522,8 +3787,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.486Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-25": [
@@ -3538,8 +3804,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.187Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022044",
@@ -3552,8 +3819,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.155Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022009",
@@ -3566,8 +3834,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.577Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022003",
@@ -3580,8 +3849,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.622Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-26": [
@@ -3596,8 +3866,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.179Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022021",
@@ -3610,8 +3881,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.184Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022015",
@@ -3624,8 +3896,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.362Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022004",
@@ -3638,8 +3911,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.795Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-29": [
@@ -3654,8 +3928,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.491Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022046",
@@ -3668,8 +3943,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.520Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022005",
@@ -3682,8 +3958,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:58.960Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022006",
@@ -3696,8 +3973,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.101Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-22": [
@@ -3712,8 +3990,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:49:59.450Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022013",
@@ -3726,8 +4005,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.701Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022019",
@@ -3740,8 +4020,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.896Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022014",
@@ -3754,8 +4035,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.881Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-30": [
@@ -3770,8 +4052,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.329Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022012",
@@ -3784,8 +4067,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:00.487Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022017",
@@ -3798,8 +4082,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.602Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022018",
@@ -3812,8 +4097,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.728Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022023",
@@ -3826,8 +4112,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.654Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022024",
@@ -3840,8 +4127,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.776Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-27": [
@@ -3856,8 +4144,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.518Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022016",
@@ -3870,8 +4159,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:01.483Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022027",
@@ -3884,8 +4174,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.292Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022033",
@@ -3898,8 +4189,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.311Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-23": [
@@ -3914,8 +4206,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.052Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022031",
@@ -3928,8 +4221,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.948Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022025",
@@ -3942,8 +4236,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:02.996Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-24": [
@@ -3958,8 +4253,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.135Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022032",
@@ -3972,8 +4268,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.167Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022037",
@@ -3986,8 +4283,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.988Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022043",
@@ -4000,8 +4298,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.989Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-11-28": [
@@ -4016,8 +4315,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.485Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022028",
@@ -4030,8 +4330,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.440Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022039",
@@ -4044,8 +4345,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.358Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022045",
@@ -4058,8 +4360,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.359Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-12-02": [
@@ -4074,8 +4377,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.660Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022030",
@@ -4088,8 +4392,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:03.802Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022047",
@@ -4102,8 +4407,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:06.882Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022048",
@@ -4116,8 +4422,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:07.130Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-12-01": [
@@ -4132,8 +4439,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.656Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022036",
@@ -4146,8 +4454,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:04.806Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ],
     "2022-12-03": [
@@ -4162,8 +4471,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.699Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       },
       {
         "mid": "2022042",
@@ -4176,8 +4486,9 @@
         "spf": null,
         "handicap": null,
         "rqspf": null,
-        "scraped_at": null,
-        "history_snapshots": 0
+        "scraped_at": "2026-06-17T05:50:05.849Z",
+        "history_snapshots": 0,
+        "is_finished_odds": true
       }
     ]
   }

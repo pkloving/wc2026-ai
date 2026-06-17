@@ -1,0 +1,37 @@
+{
+  "matchId": "2040181",
+  "homeScore": 3,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "AUT",
+      "player": "R. Schmid",
+      "minute": 21,
+      "type": "goal"
+    },
+    {
+      "team": "JOR",
+      "player": "Ali Olwan",
+      "minute": 50,
+      "type": "goal"
+    },
+    {
+      "team": "AUT",
+      "player": "亚赞阿拉布(乌龙)",
+      "minute": 76,
+      "type": "og"
+    },
+    {
+      "team": "AUT",
+      "player": "Arnautović",
+      "minute": 90,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

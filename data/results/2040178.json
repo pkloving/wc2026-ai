@@ -1,0 +1,37 @@
+{
+  "matchId": "2040178",
+  "homeScore": 3,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "FRA",
+      "player": "K. Mbappé",
+      "minute": 66,
+      "type": "goal"
+    },
+    {
+      "team": "FRA",
+      "player": "Barcola",
+      "minute": 82,
+      "type": "goal"
+    },
+    {
+      "team": "FRA",
+      "player": "K. Mbappé",
+      "minute": 90,
+      "type": "goal"
+    },
+    {
+      "team": "SEN",
+      "player": "I. Mbaye",
+      "minute": 90,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

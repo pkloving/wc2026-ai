@@ -1,0 +1,31 @@
+{
+  "matchId": "2040180",
+  "homeScore": 3,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "ARG",
+      "player": "Messi",
+      "minute": 17,
+      "type": "goal"
+    },
+    {
+      "team": "ARG",
+      "player": "Messi",
+      "minute": 60,
+      "type": "goal"
+    },
+    {
+      "team": "ARG",
+      "player": "Messi",
+      "minute": 76,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}
