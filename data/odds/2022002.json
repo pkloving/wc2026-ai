@@ -1,0 +1,31 @@
+{
+  "basic": {
+    "mid": "2022002",
+    "code": "2022-A2",
+    "league": "世界杯",
+    "home": "塞内加尔",
+    "away": "荷兰",
+    "kickoff": "2022-11-21 23:00",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2022002",
+    "scraped_at": "2026-06-17T05:49:58.486Z",
+    "sale_status": "待开售",
+    "single_supported": {},
+    "is_cancel": 0,
+    "is_finished_odds": true
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": [],
+    "bf_latest": null,
+    "zjq_latest": null,
+    "bqc_latest": null
+  },
+  "source": {
+    "api": "getFixedBonusV1.qry",
+    "fetched_at": "2026-06-17T05:49:58.486Z",
+    "snapshot_time": null
+  }
+}

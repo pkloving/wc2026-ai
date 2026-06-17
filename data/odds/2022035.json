@@ -1,0 +1,31 @@
+{
+  "basic": {
+    "mid": "2022035",
+    "code": "2022-F5",
+    "league": "世界杯",
+    "home": "克罗地亚",
+    "away": "比利时",
+    "kickoff": "2022-12-01 23:00",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2022035",
+    "scraped_at": "2026-06-17T05:50:04.656Z",
+    "sale_status": "待开售",
+    "single_supported": {},
+    "is_cancel": 0,
+    "is_finished_odds": true
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": [],
+    "bf_latest": null,
+    "zjq_latest": null,
+    "bqc_latest": null
+  },
+  "source": {
+    "api": "getFixedBonusV1.qry",
+    "fetched_at": "2026-06-17T05:50:04.656Z",
+    "snapshot_time": null
+  }
+}

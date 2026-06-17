@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-06-17T09:19:29.126Z",
+  "target_date": "2026-06-13",
+  "source": "data/odds/<mid>.json (2 场)",
+  "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
+  "summary": {
+    "total": 2,
+    "rqspf_hit": "2/2",
+    "bf_hit": "1/2",
+    "direction_a_3x1": "0/0",
+    "direction_b_2x1": "0/0"
+  },
+  "matches": [
+    {
+      "mid": "2040164",
+      "code": "周五003",
+      "home": "加拿大",
+      "away": "波黑",
+      "handicap": -1,
+      "spf": {
+        "home": 1.62,
+        "draw": 3.32,
+        "away": 4.75
+      },
+      "rqspf": {
+        "home": 3.58,
+        "draw": 2.9,
+        "away": 1.98
+      },
+      "style": "势均",
+      "star": "戴维斯",
+      "cold": "-",
+      "pre_analysis": "加拿大东道主+球星, 赔率客胜低但有东道主保底, 买2边(让胜+让负)",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "加拿大东道主+球星, 赔率客胜低但有东道主保底, 买2边(让胜+让负)"
+      },
+      "bf_picks": [
+        {
+          "score": "1:1",
+          "odds": 4.75,
+          "prob": 0.18630647414997673,
+          "tier": "low"
+        },
+        {
+          "score": "0:0",
+          "odds": 9.5,
+          "prob": 0.09315323707498836,
+          "tier": "mid"
+        },
+        {
+          "score": "2:2",
+          "odds": 20,
+          "prob": 0.044247787610619475,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "1:1",
+        "winner": "draw",
+        "handicapResult": "away_win"
+      }
+    },
+    {
+      "mid": "2040165",
+      "code": "周五004",
+      "home": "美国",
+      "away": "巴拉圭",
+      "handicap": -1,
+      "spf": {
+        "home": 1.79,
+        "draw": 3.25,
+        "away": 3.8
+      },
+      "rqspf": {
+        "home": 4.02,
+        "draw": 3.08,
+        "away": 1.8
+      },
+      "style": "势均",
+      "star": "普利西奇",
+      "cold": "美国:2022平英格兰",
+      "pre_analysis": "美国东道主+球星, 赔率客胜低但有东道主保底, 买2边(让胜+让负)",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "美国东道主+球星, 赔率客胜低但有东道主保底, 买2边(让胜+让负)"
+      },
+      "bf_picks": [
+        {
+          "score": "2:0",
+          "odds": 6,
+          "prob": 0.1474926253687316,
+          "tier": "low"
+        },
+        {
+          "score": "1:2",
+          "odds": 16,
+          "prob": 0.05530973451327434,
+          "tier": "mid"
+        },
+        {
+          "score": "2:2",
+          "odds": 20,
+          "prob": 0.044247787610619475,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "4:1",
+        "winner": "home",
+        "handicapResult": "home_win"
+      }
+    }
+  ],
+  "direction_a": {
+    "parlays_3x1": []
+  },
+  "direction_b": {
+    "pairs_2x1": []
+  }
+}
