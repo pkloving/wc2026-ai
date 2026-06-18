@@ -147,7 +147,8 @@ export default async function handler(req, res) {
   if (handleOptions(req, res)) return;
 
   const requestUrl = new URL(req.url || '/', 'http://localhost');
-  const route = requestUrl.pathname.replace(/^\/api\/?/, '').replace(/\/+$/, '');
+  const segments = requestUrl.pathname.split('?')[0].split('/').filter(Boolean);
+  const route = segments[0] === 'api' ? segments.slice(1).join('/') : segments.join('/');
 
   try {
     if (route === 'chat') {
