@@ -1,11 +1,13 @@
 import handler from '../[...route].js';
 
 export default async function (req, res) {
-  // Ensure pathname is set so the catch-all dispatches correctly
+  // Ensure pathname includes the api/auth prefix so the catch-all routes correctly
   try {
-    await handler(new Request(req.url || '/api/auth/send-otp', { method: req.method, headers: req.headers }), res);
+    if (!req.url.includes('/api/auth')) {
+      req.url = '/api/auth' + (req.url === '/' ? '' : req.url);
+    }
+    return handler(req, res);
   } catch (err) {
-    // fallback: call handler directly
-    await handler(req, res);
+    return handler(req, res);
   }
 }

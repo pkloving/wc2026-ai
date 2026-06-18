@@ -2,8 +2,11 @@ import handler from '../[...route].js';
 
 export default async function (req, res) {
   try {
-    await handler(new Request(req.url || '/api/auth/logout', { method: req.method, headers: req.headers }), res);
+    if (!req.url.includes('/api/auth')) {
+      req.url = '/api/auth' + (req.url === '/' ? '' : req.url);
+    }
+    return handler(req, res);
   } catch (err) {
-    await handler(req, res);
+    return handler(req, res);
   }
 }
