@@ -30,13 +30,34 @@ const OUT_FILE = resolve(OUT_DIR, 'index.json');
 /* chunk builders                                                     */
 /* ------------------------------------------------------------------ */
 
+function readResult(mid) {
+  const file = resolve(ROOT, `data/results/${mid}.json`);
+  if (!existsSync(file)) return null;
+  return JSON.parse(readFileSync(file, 'utf8'));
+}
+
+// 半全场（HAFU）结果：从主队视角，半场/全场各取 胜/平/负
+function htftLabel(r) {
+  if (!r || r.halfTime == null) return null;
+  const sym = (h, a) => (h > a ? '胜' : h < a ? '负' : '平');
+  const half = sym(r.halfTime.home, r.halfTime.away);
+  const full = sym(r.homeScore, r.awayScore);
+  return `${half}${full}（半场 ${r.halfTime.home}-${r.halfTime.away}、全场 ${r.homeScore}-${r.awayScore}）`;
+}
+
 function chunkMatch(m) {
   // 比赛总览：来自 matches_status.json
   const spf = m.spf ? `胜 ${m.spf.home} / 平 ${m.spf.draw} / 负 ${m.spf.away}` : '暂无';
   const rq = m.rqspf
     ? `让球 ${m.handicap >= 0 ? '+' + m.handicap : m.handicap}：让胜 ${m.rqspf.home} / 让平 ${m.rqspf.draw} / 让负 ${m.rqspf.away}`
     : '暂无';
-  const fin = m.final_score ? `完赛比分 ${m.final_score}` : '未完赛';
+  let fin = m.final_score ? `完赛比分 ${m.final_score}` : '未完赛';
+  // 终场比赛：补上半场比分与半全场（HAFU）结果，方便 RAG 直接命中
+  if (m.status === 'finished') {
+    const r = readResult(m.mid);
+    const htft = htftLabel(r);
+    if (htft) fin += `\n半场比分 ${r.halfTime.home}-${r.halfTime.away}\n半全场：${htft}`;
+  }
   return {
     id: `match:${m.mid}`,
     type: 'match',
@@ -67,18 +88,19 @@ function chunkOddsDetail(mid) {
   };
 }
 
-function chunkResult(mid) {
-  const file = resolve(ROOT, `data/results/${mid}.json`);
-  if (!existsSync(file)) return null;
-  const r = JSON.parse(readFileSync(file, 'utf8'));
+function chunkResult(m) {
+  const r = readResult(m.mid);
+  if (!r) return null;
   const scorerStr = r.scorers?.length
     ? r.scorers.map((s) => `${s.team} ${s.player} ${s.type==='penalty'?'(点)':''} ${s.minute}'`).join('; ')
     : '无';
+  const htft = htftLabel(r);
   return {
-    id: `result:${mid}`,
+    id: `result:${m.mid}`,
     type: 'result',
-    text: `完赛 ${mid}\n比分：${r.homeScore} - ${r.awayScore}\n半场：${r.halfTime?.home ?? '-'} - ${r.halfTime?.away ?? '-'}\n进球：${scorerStr}\n点球大战：${r.wentToPenalties ? `是 ${r.penaltyScore}` : '否'}`,
-    meta: { id: mid, type: 'result' },
+    // 带上队名/赛事/code，否则只有数字 mid，按"加拿大 波黑 半全场"这类自然语言根本检索不到
+    text: `完赛结果【${m.code}】${m.league} | ${m.home} vs ${m.away}\n比分：${r.homeScore} - ${r.awayScore}\n半场：${r.halfTime?.home ?? '-'} - ${r.halfTime?.away ?? '-'}\n半全场：${htft ?? '未知'}\n进球：${scorerStr}\n点球大战：${r.wentToPenalties ? `是 ${r.penaltyScore}` : '否'}`,
+    meta: { id: m.mid, code: m.code, home: m.home, away: m.away, type: 'result' },
   };
 }
 
@@ -269,7 +291,7 @@ async function main() {
   // 3) results
   let resultCount = 0;
   for (const m of matches) {
-    const c = chunkResult(m.mid);
+    const c = chunkResult(m);
     if (c) { chunks.push(c); resultCount++; }
   }
   console.log(`  - ${resultCount} result chunks`);
