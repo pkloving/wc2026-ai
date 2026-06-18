@@ -99,7 +99,7 @@ const matches = readJson(path.join(DATA_DIR, 'matches.json'));
 const groups = readJson(path.join(DATA_DIR, 'groups.json'));
 const matchesStatus = readJson(path.join(DATA_DIR, 'matches_status.json'));
 
-// ============== 静态知识（从 12_r013_user_rules.js 提取）==============
+// ============== 静态知识（球队画像，历史上从 r013 规则提取，现独立维护）==============
 // 注意：这里用中文队名做 key；下方会通过 teamsBase 的中文名映射到 code
 
 // 队伍分档（中文名）

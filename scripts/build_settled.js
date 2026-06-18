@@ -15,7 +15,7 @@
  *   node scripts/build_settled.js --incremental  # 增量：只更新有结果但未在表里的 mid
  *
  * 设计要点：
- *   - 增量更新是 modeling 回测脚本的第一步（见 12_r013_user_rules.js 顶部 import）
+ *   - 增量更新是 modeling 回测/拟合脚本的第一步（31_tight_anti_value.js / 33_fit_strategy.js 启动时 spawn）
  *   - 每场含 5 玩法（spf/rqspf/bf/zjq/bqc）initial/last，便于找赔率变化规律
  *   - 比分「其它」档位判定（2026-06-18 用户提醒）：
  *       胜其它 = 主队赢且主队进球 >= 6

@@ -1,12 +1,12 @@
 {
   "date": "2026-06-21",
-  "generated_at": "2026-06-18T09:32:38.915Z",
+  "generated_at": "2026-06-18T09:40:52.619Z",
   "source_31": "predict_31",
-  "source_r013": null,
   "match_count": 12,
   "matches": [
     {
       "code": "周四025",
+      "mid": "2040235",
       "home": "捷克",
       "away": "南非",
       "kickoff": "2026-06-19 00:00",
@@ -40,12 +40,11 @@
           "odds": 40,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周四026",
+      "mid": "2040236",
       "home": "瑞士",
       "away": "波黑",
       "kickoff": "2026-06-19 03:00",
@@ -79,12 +78,11 @@
           "odds": 10.5,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周四027",
+      "mid": "2040237",
       "home": "加拿大",
       "away": "卡塔尔",
       "kickoff": "2026-06-19 06:00",
@@ -118,12 +116,11 @@
           "odds": 5,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周四028",
+      "mid": "2040238",
       "home": "墨西哥",
       "away": "韩国",
       "kickoff": "2026-06-19 09:00",
@@ -157,12 +154,11 @@
           "odds": 5.2,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周五029",
+      "mid": "2040239",
       "home": "美国",
       "away": "澳大利亚",
       "kickoff": "2026-06-20 03:00",
@@ -196,12 +192,11 @@
           "odds": 10.5,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周五030",
+      "mid": "2040240",
       "home": "苏格兰",
       "away": "摩洛哥",
       "kickoff": "2026-06-20 06:00",
@@ -235,12 +230,11 @@
           "odds": 9,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周五031",
+      "mid": "2040241",
       "home": "巴西",
       "away": "海地",
       "kickoff": "2026-06-20 08:30",
@@ -270,12 +264,11 @@
           "odds": 21,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周五032",
+      "mid": "2040242",
       "home": "土耳其",
       "away": "巴拉圭",
       "kickoff": "2026-06-20 11:00",
@@ -309,12 +302,11 @@
           "odds": 50,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周六033",
+      "mid": "2040243",
       "home": "荷兰",
       "away": "瑞典",
       "kickoff": "2026-06-21 01:00",
@@ -348,12 +340,11 @@
           "odds": 13,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周六034",
+      "mid": "2040244",
       "home": "德国",
       "away": "科特迪瓦",
       "kickoff": "2026-06-21 04:00",
@@ -387,12 +378,11 @@
           "odds": 14,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周六035",
+      "mid": "2040245",
       "home": "厄瓜多尔",
       "away": "库拉索",
       "kickoff": "2026-06-21 08:00",
@@ -422,12 +412,11 @@
           "odds": 50,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     },
     {
       "code": "周六036",
+      "mid": "2040246",
       "home": "突尼斯",
       "away": "日本",
       "kickoff": "2026-06-21 12:00",
@@ -461,9 +450,7 @@
           "odds": 11,
           "tier": "推荐"
         }
-      ],
-      "reason": "",
-      "rqspf_direction": ""
+      ]
     }
   ],
   "parlays_3x1": [
