@@ -37,7 +37,7 @@
     },
     "matches": [
       {
-        "mid": "2040200",
+        "mid": "2040183",
         "match_id": "M022",
         "stage": "group",
         "group": "L",
@@ -46,7 +46,12 @@
         "role": "home",
         "opponent_code": "CRO",
         "opponent_name": "克罗地亚",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 4,
+        "score_opp": 2,
+        "half_my": 2,
+        "half_opp": 2,
+        "result": "win"
       },
       {
         "match_id": "M046",
@@ -72,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

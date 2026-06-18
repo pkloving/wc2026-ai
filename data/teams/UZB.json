@@ -34,7 +34,24 @@
     },
     "matches": [
       {
-        "mid": "2040202",
+        "mid": "2040145",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-09T02:45:00+08:00",
+        "venue": null,
+        "role": "away",
+        "opponent_code": "NED",
+        "opponent_name": "荷兰",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 2,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
+      },
+      {
+        "mid": "2040185",
         "match_id": "M024",
         "stage": "group",
         "group": "K",
@@ -43,7 +60,12 @@
         "role": "home",
         "opponent_code": "COL",
         "opponent_name": "哥伦比亚",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       },
       {
         "match_id": "M045",
@@ -69,5 +91,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

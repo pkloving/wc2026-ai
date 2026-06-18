@@ -36,7 +36,7 @@
     },
     "matches": [
       {
-        "mid": "2040199",
+        "mid": "2040182",
         "match_id": "M021",
         "stage": "group",
         "group": "K",
@@ -45,7 +45,12 @@
         "role": "home",
         "opponent_code": "COD",
         "opponent_name": "刚果（金）",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 1,
+        "result": "draw"
       },
       {
         "match_id": "M045",
@@ -71,5 +76,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

@@ -36,7 +36,7 @@
     },
     "matches": [
       {
-        "mid": "2040200",
+        "mid": "2040183",
         "match_id": "M022",
         "stage": "group",
         "group": "L",
@@ -45,7 +45,12 @@
         "role": "away",
         "opponent_code": "ENG",
         "opponent_name": "英格兰",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 4,
+        "half_my": 2,
+        "half_opp": 2,
+        "result": "lose"
       },
       {
         "match_id": "M047",
@@ -71,5 +76,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

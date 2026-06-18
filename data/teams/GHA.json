@@ -34,7 +34,7 @@
     },
     "matches": [
       {
-        "mid": "2040201",
+        "mid": "2040184",
         "match_id": "M023",
         "stage": "group",
         "group": "L",
@@ -43,7 +43,12 @@
         "role": "home",
         "opponent_code": "PAN",
         "opponent_name": "巴拿马",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 0,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M046",
@@ -69,5 +74,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

@@ -387,6 +387,86 @@ for (const g of groups) {
   }
 }
 
+// ============== 合并 matchesStatus → matches（按 mid 错位修复）==============
+// 背景：matches.json 用 mid 2040199-2040202 标 6-18 完赛 4 场，但 sporttery 实际 mid 是
+//       2040182-2040185（与 data/results/*.json 一致）。matches.json 是手工录入，迁移期
+//       留下错位。matchesStatus.json 才是权威完赛数据源。
+// 这里按 (home_code, away_code) 配对，把 matchesStatus 的真 mid + status 覆盖到 matches 条目。
+// 并把 matchesStatus 里有但 matches.json 没有的 mid（排除 TBD/历史 2022 赛事）补进 matches。
+const _msByMid = new Map(matchesStatus.matches.map(ms => [ms.mid, ms]));
+const _msByCodePair = new Map();
+for (const ms of matchesStatus.matches) {
+  const homeZh = normalizeName(ms.home);
+  const awayZh = normalizeName(ms.away);
+  const hc = nameToCode[homeZh] || (teamsBase.find(t => t.name === homeZh) || {}).code;
+  const ac = nameToCode[awayZh] || (teamsBase.find(t => t.name === awayZh) || {}).code;
+  if (!hc || !ac) continue;
+  const key = `${hc}|${ac}`;
+  // 同一对阵可能多次出现（不预期），后者覆盖前者
+  _msByCodePair.set(key, ms);
+}
+
+const _matchesByIdSet = new Set(matches.filter(m => m.mid).map(m => m.mid));
+let _mergedCount = 0;
+let _appendedCount = 0;
+const _mergedPairs = new Set();
+const _appendedMids = new Set();
+// 1) 更新已有 matches 条目：按 (home, away) 配对
+for (const m of matches) {
+  if (!m.home || !m.away) continue;
+  const key = `${m.home}|${m.away}`;
+  const ms = _msByCodePair.get(key);
+  if (!ms || _mergedPairs.has(key)) continue;
+  // 配对命中：覆盖 mid + status
+  if (m.mid !== ms.mid) {
+    _matchesByIdSet.delete(m.mid);  // 旧 mid 移除
+    m.mid = ms.mid;
+    _matchesByIdSet.add(ms.mid);    // 新 mid 加入
+    _mergedCount++;
+  }
+  if (ms.status && m.status !== ms.status) {
+    m.status = ms.status;
+  }
+  _mergedPairs.add(key);
+  _appendedMids.add(ms.mid);
+}
+// 2) 追加 matches.json 没有的 mid（如 2040182-2040185 已通过配对覆盖；2040186-2040190 还没补）
+//    排除 2022 历史赛事（mid 以 2022 开头）和未定义对阵
+for (const ms of matchesStatus.matches) {
+  if (ms.mid.startsWith('2022')) continue;
+  if (!ms.home || !ms.away) continue;
+  if (_matchesByIdSet.has(ms.mid)) continue;
+  const homeZh = normalizeName(ms.home);
+  const awayZh = normalizeName(ms.away);
+  const hc = nameToCode[homeZh] || (teamsBase.find(t => t.name === homeZh) || {}).code;
+  const ac = nameToCode[awayZh] || (teamsBase.find(t => t.name === awayZh) || {}).code;
+  if (!hc || !ac) continue;
+  // kickoff "2026-06-18 01:00" 北京时间 → 转 ISO（视为 +08:00）
+  const kickoffToIso = (ko) => {
+    if (!ko) return null;
+    const m = ko.match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})$/);
+    if (!m) return null;
+    return `${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:00+08:00`;
+  };
+  matches.push({
+    id: null,  // 暂未排入 M 系列
+    mid: ms.mid,
+    stage: 'group',
+    group: null,
+    date: kickoffToIso(ms.kickoff),
+    venue: null,
+    home: hc,
+    away: ac,
+    status: ms.status,
+    league: ms.league
+  });
+  _appendedCount++;
+}
+
+if (_mergedCount > 0 || _appendedCount > 0) {
+  console.log(`  [merge] matchesStatus 覆盖 mid: ${_mergedCount} 场, 追加新 mid: ${_appendedCount} 场`);
+}
+
 // ============== 构建每队的 2026 比赛列表 ==============
 // matches 里 home/away 是 code；status 是 'finished' 等
 // 对已完赛场次，读取 data/results/{mid}.json 拿比分
