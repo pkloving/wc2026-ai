@@ -36,6 +36,18 @@
     },
     "matches": [
       {
+        "mid": "2040188",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-10T09:00:00+08:00",
+        "venue": null,
+        "role": "home",
+        "opponent_code": "ISL",
+        "opponent_name": "冰岛",
+        "status": "on_sale"
+      },
+      {
         "mid": "2040180",
         "match_id": "M019",
         "stage": "group",
@@ -76,5 +88,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

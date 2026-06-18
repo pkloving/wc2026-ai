@@ -1498,5 +1498,881 @@
         "note": "全场主胜 2-1（备选 1-1），半场主胜"
       }
     ]
+  },
+  {
+    "matchId": "M036",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 1-2），半场平 — 日本控球与边路效率占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场平/负"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-3）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-2）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M037",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 2-1），半场胜 — 西班牙控场碾压，沙特难破门"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 2-0），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M038",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平 — 伊朗防反顽强，比利时下半场打开"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M039",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场胜 — 乌拉圭整体实力与经验明显占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M040",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-1），半场平 — 埃及个人能力更强，新西兰有反扑"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场平/负"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 0-0）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-2）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-3）"
+      }
+    ]
+  },
+  {
+    "matchId": "M041",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 3-0），半场胜 — 阿根廷锋线犀利，奥地利能进球"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M042",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 3,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-1（备选 2-0），半场胜 — 法国攻击群火力压制"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 2-0），半场胜/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M043",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1），半场平 — 哈兰德 vs 塞内加尔身体流，势均力敌"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场平/胜"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M044",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-1），半场平 — 阿尔及利亚技术更细腻，约旦能咬住上半场"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场平/负"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 1-2）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-1）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M045",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1），半场胜 — 葡萄牙整体实力压制"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M047",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 1-2），半场平 — 克罗地亚中场掌控"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M049",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场平 — 瑞士经验略胜，加拿大有反扑（与 Kimi 平局分歧）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M050",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 1-0），半场胜 — 波黑实力明显占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M052",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-3），半场负 — 巴西技术碾压"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 3,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-3（备选 0-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M053",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-1），半场平 — 墨西哥效率更高"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M054",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-1），半场平 — 韩国整体节奏占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M055",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 0-2），半场平 — 德国阵容深度更强"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-3）"
+      }
+    ]
+  },
+  {
+    "matchId": "M056",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场负 — 科特迪瓦个人能力强"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M057",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场负 — 荷兰控传压制"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M058",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1），半场平 — 瑞典身体流克制日本（与 Kimi 分歧）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M059",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-1），半场平 — 土耳其主场技术占优（与 Kimi 平局分歧）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-2）"
+      }
+    ]
+  },
+  {
+    "matchId": "M060",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1），半场平 — 巴拉圭防守反击更稳"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M033",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 2-0），半场平 — 荷兰控球与进攻组织更强"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1）"
+      }
+    ]
+  },
+  {
+    "matchId": "M034",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场胜 — 德国整体实力压制"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 3-0）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-1）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 3-1）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M035",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场胜 — 厄瓜多尔实力明显高于库拉索"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-1）"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      },
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0）"
+      }
+    ]
+  },
+  {
+    "matchId": "M046",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-1），半场胜 — 英格兰阵容深度占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1"
+      }
+    ]
+  },
+  {
+    "matchId": "M048",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平 — 哥伦比亚技术更细腻"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0"
+      }
+    ]
+  },
+  {
+    "matchId": "M051",
+    "models": [
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场胜 — 摩洛哥实力明显占优"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0"
+      }
+    ]
   }
 ]

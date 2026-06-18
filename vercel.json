@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
@@ -13,11 +13,29 @@
       ]
     },
     {
-      "source": "/data/(.*)",
+      "source": "/data/odds/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=300, s-maxage=600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/data/results/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=7200, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/data/embeddings/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800"
         }
       ]
     },

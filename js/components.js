@@ -91,6 +91,7 @@ export function mountHeader(activeKey = '') {
         <div class="flex-1"></div>
         <a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" target="_blank" rel="noopener" class="hidden sm:inline text-xs text-slate-300 hover:text-gold">${t('nav.fifa')} ↗</a>
         ${langSwitcherHtml()}
+        <button type="button" data-auth-btn class="inline-flex items-center gap-1.5 rounded-full bg-gold text-ink text-xs font-bold px-3 py-1.5 hover:opacity-90 transition whitespace-nowrap">${t('nav.login')}</button>
       </div>
       <div class="md:hidden border-t border-white/10 overflow-x-auto scrollbar-thin">
         <div class="container-page flex items-center gap-1 py-2 whitespace-nowrap">${navHtml}</div>

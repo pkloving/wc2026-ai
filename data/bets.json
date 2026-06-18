@@ -1398,6 +1398,195 @@
       "maxReturn": null,
       "result": "lost",
       "note": "⚠️ 3 项赔率 null：(1) 2040191 rqspf 让-2 主胜 = null (spf 已开，rqspf 待开售)；(2) 沙特 0:1 bf 比分赔率未拉；(3) 沙特 0:2 bf 比分赔率未拉（matches_status.json 仅存 spf/rqspf 字段）。出票前必须补抓 sporttery.cn bf 表 + 等 rqspf 开售后录入实际赔率。R-004 #2 不同场不同玩法串关 OK (rqspf+spf+bf×2+spf)。沙特 0:1/0:2 共 2 注 → combinations=2 → totalCost=2×2×5=20 元"
+    },
+    {
+      "id": "bf-2x1-3x1-parlay-2026-06-17-imgA",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 3×1 · 20 注 · 葡萄牙/英格兰/乌兹别克比分）",
+      "matchLabel": "周三021 bf{3:0,4:0} + 周三022 bf{1:1,3:1} + 周三024 bf{0:2,0:3}（赔率时点 2026-06-17 19:01）",
+      "date": "2026-06-17T19:01:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1", "3x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-17 19:01）",
+      "picks": [
+        {
+          "mid": "2040182",
+          "match": "周三021",
+          "home": "POR",
+          "away": "COD",
+          "kickoff": "2026-06-18 01:00",
+          "play": "bf",
+          "pick": "3-0",
+          "pickLabel": "3:0",
+          "odds": null
+        },
+        {
+          "mid": "2040182",
+          "match": "周三021",
+          "home": "POR",
+          "away": "COD",
+          "kickoff": "2026-06-18 01:00",
+          "play": "bf",
+          "pick": "4-0",
+          "pickLabel": "4:0",
+          "odds": null
+        },
+        {
+          "mid": "2040183",
+          "match": "周三022",
+          "home": "ENG",
+          "away": "CRO",
+          "kickoff": "2026-06-18 04:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040183",
+          "match": "周三022",
+          "home": "ENG",
+          "away": "CRO",
+          "kickoff": "2026-06-18 04:00",
+          "play": "bf",
+          "pick": "3-1",
+          "pickLabel": "3:1",
+          "odds": null
+        },
+        {
+          "mid": "2040185",
+          "match": "周三024",
+          "home": "UZB",
+          "away": "COL",
+          "kickoff": "2026-06-18 10:00",
+          "play": "bf",
+          "pick": "0-2",
+          "pickLabel": "0:2",
+          "odds": null
+        },
+        {
+          "mid": "2040185",
+          "match": "周三024",
+          "home": "UZB",
+          "away": "COL",
+          "kickoff": "2026-06-18 10:00",
+          "play": "bf",
+          "pick": "0-3",
+          "pickLabel": "0:3",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "3 场比分大包围（每场 2 选）。结算：021葡 1-1（3:0/4:0 全错）/ 022英 4-2（1:1/3:1 全错）/ 024乌 vs 哥未完赛 — 至少 2 场已错 → 全 lost"
+    },
+    {
+      "id": "rqspf-3x1-4x1-parlay-2026-06-17-imgB",
+      "type": "match",
+      "title": "[让球] 串关（3×1 + 4×1 · 28 注 · 葡/英/加纳/乌兹别克让球）",
+      "matchLabel": "周三021 rqspf{-2 主负,主胜} + 周三022 rqspf{-1 主胜,主负} + 周三023 rqspf{-1 主负,主胜} + 周三024 rqspf{+1 主负}（赔率时点 2026-06-17 19:13）",
+      "date": "2026-06-17T19:13:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["3x1", "4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-17 19:13）",
+      "picks": [
+        {
+          "mid": "2040182",
+          "match": "周三021",
+          "home": "POR",
+          "away": "COD",
+          "kickoff": "2026-06-18 01:00",
+          "play": "rqspf",
+          "handicap": -2,
+          "pick": "away",
+          "pickLabel": "主负（让-2）",
+          "odds": null
+        },
+        {
+          "mid": "2040182",
+          "match": "周三021",
+          "home": "POR",
+          "away": "COD",
+          "kickoff": "2026-06-18 01:00",
+          "play": "rqspf",
+          "handicap": -2,
+          "pick": "home",
+          "pickLabel": "主胜（让-2）",
+          "odds": null
+        },
+        {
+          "mid": "2040183",
+          "match": "周三022",
+          "home": "ENG",
+          "away": "CRO",
+          "kickoff": "2026-06-18 04:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜（让-1）",
+          "odds": null
+        },
+        {
+          "mid": "2040183",
+          "match": "周三022",
+          "home": "ENG",
+          "away": "CRO",
+          "kickoff": "2026-06-18 04:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负（让-1）",
+          "odds": null
+        },
+        {
+          "mid": "2040184",
+          "match": "周三023",
+          "home": "GHA",
+          "away": "PAN",
+          "kickoff": "2026-06-18 07:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负（让-1）",
+          "odds": null
+        },
+        {
+          "mid": "2040184",
+          "match": "周三023",
+          "home": "GHA",
+          "away": "PAN",
+          "kickoff": "2026-06-18 07:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜（让-1）",
+          "odds": null
+        },
+        {
+          "mid": "2040185",
+          "match": "周三024",
+          "home": "UZB",
+          "away": "COL",
+          "kickoff": "2026-06-18 10:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "away",
+          "pickLabel": "主负（让+1）",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 28,
+      "totalCost": 56,
+      "maxReturn": null,
+      "result": "won",
+      "actualReturn": 21.92,
+      "note": "021 2选 / 022 2选 / 023 2选 / 024 1选。结算：021葡 1-1 让-2 = 客胜 ✅ / 022英 4-2 让-1 = 主胜 ✅ / 023加纳 1-0 让-1 = 平 ❌ / 024乌 vs 哥未完赛 → 已 1 腿错，全 lost 已定。等 024 完赛正式改 lost"
     }
   ]
 }

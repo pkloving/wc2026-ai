@@ -37,6 +37,23 @@
     },
     "matches": [
       {
+        "mid": "2040145",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-09T02:45:00+08:00",
+        "venue": null,
+        "role": "home",
+        "opponent_code": "UZB",
+        "opponent_name": "乌兹别克斯坦",
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "win"
+      },
+      {
         "mid": "2040171",
         "match_id": "M010",
         "stage": "group",
@@ -77,5 +94,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

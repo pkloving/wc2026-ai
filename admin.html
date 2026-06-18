@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WC2026 AI 管理后台</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'PingFang SC', system-ui, -apple-system, sans-serif; background: #f8fafc; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+    .card { background: #fff; border-radius: .75rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+    .table th, .table td { padding: .5rem .75rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+    .table th { background: #f1f5f9; font-weight: 600; color: #475569; }
+    .table tr:hover { background: #f8fafc; }
+    .btn { background: #0B1F3A; color: #D4AF37; border: none; padding: .5rem 1rem; border-radius: .5rem; font-size: .875rem; font-weight: 600; cursor: pointer; }
+    .btn:hover { background: #1e3a8a; }
+    .btn-secondary { background: #f1f5f9; color: #0B1F3A; }
+    .btn-secondary:hover { background: #e2e8f0; }
+    .btn-sm { padding: .25rem .5rem; font-size: .75rem; }
+    .input { border: 1px solid #e2e8f0; border-radius: .5rem; padding: .5rem .75rem; font-size: .875rem; width: 100%; }
+    .input:focus { outline: none; border-color: #D4AF37; box-shadow: 0 0 0 3px rgba(212,175,55,.15); }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: .7rem; font-weight: 600; }
+    .badge-green { background: #dcfce7; color: #166534; }
+    .badge-yellow { background: #fef9c3; color: #713f12; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+    .key-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; }
+    pre.code { background: #0B1F3A; color: #e2e8f0; padding: 1rem; border-radius: .5rem; overflow-x: auto; font-size: .75rem; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .stat { background: #fff; border-radius: .5rem; padding: 1rem; border: 1px solid #e2e8f0; }
+    .stat-value { font-size: 1.5rem; font-weight: 700; color: #0B1F3A; }
+    .stat-label { font-size: .75rem; color: #64748b; margin-top: .25rem; }
+    .toast { position: fixed; bottom: 2rem; right: 2rem; background: #0B1F3A; color: #D4AF37; padding: .75rem 1.25rem; border-radius: .5rem; box-shadow: 0 10px 30px -5px rgba(0,0,0,.3); z-index: 200; }
+    .toast.error { background: #991b1b; color: #fff; }
+    @media (max-width: 768px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;">
+      <h1 style="font-size:1.5rem;font-weight:700;color:#0B1F3A;">⚙️ WC2026 AI 管理后台</h1>
+      <a href="/" style="color:#64748b;text-decoration:none;font-size:.875rem;">← 返回站点</a>
+    </header>
+
+    <!-- 登录门 -->
+    <div id="login-gate" class="card" style="max-width:400px;margin:4rem auto;">
+      <h2 style="font-size:1.1rem;font-weight:600;margin-bottom:1rem;">🔐 输入 ADMIN_KEY</h2>
+      <p style="font-size:.875rem;color:#64748b;margin-bottom:1rem;">从 Vercel Environment Variables 或 .env 里查 <code>ADMIN_KEY</code>。</p>
+      <input id="admin-key" type="password" class="input" placeholder="admin key" />
+      <button id="admin-login" class="btn" style="width:100%;margin-top:1rem;">进入</button>
+    </div>
+
+    <!-- 主面板 -->
+    <div id="dashboard" hidden>
+      <div class="stats" id="stats"></div>
+
+      <!-- 计费策略说明 -->
+      <div class="card" style="border-left:4px solid #D4AF37;">
+        <h2 style="font-size:1.1rem;font-weight:600;margin-bottom:1rem;">💰 费用策略与积分说明</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+
+          <div>
+            <div style="font-size:.8rem;font-weight:700;color:#0B1F3A;margin-bottom:.5rem;">📋 积分消耗规则</div>
+            <table style="width:100%;font-size:.8rem;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#f1f5f9;">
+                  <th style="padding:.3rem .5rem;text-align:left;border:1px solid #e2e8f0;">操作</th>
+                  <th style="padding:.3rem .5rem;text-align:right;border:1px solid #e2e8f0;">消耗</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">普通聊天（纯 RAG）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ 1 积分/次</td></tr>
+                <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">联网搜索（伤停/首发/新闻等）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ +1 积分（叠加）</td></tr>
+                <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">📊 出今日推荐单（AI 解读）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ 10 积分/次</td></tr>
+                <tr style="background:#fef9c3;"><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;"><b>🆓 新用户注册</b></td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;"><b>自动到账 3 积分</b></td></tr>
+              </tbody>
+            </table>
+            <p style="font-size:.7rem;color:#94a3b8;margin-top:.4rem;">错误自动退款。积分不足时 402，用户无法继续对话。</p>
+          </div>
+
+          <div>
+            <div style="font-size:.8rem;font-weight:700;color:#0B1F3A;margin-bottom:.5rem;">🎫 给用户充值的两种方式</div>
+            <div style="font-size:.8rem;line-height:1.7;">
+              <p><b>方式 A（直接充值，推荐）</b>：在下方「快速充值」填邮箱+积分数→点「直接充值」，积分秒到账，无需用户操作。</p>
+              <p style="margin-top:.5rem;"><b>方式 B（License Key）</b>：在下方「License Key 发放」生成 key → 复制发给用户 → 用户在 chatbot 点「兑换 key」。</p>
+              <p style="margin-top:.5rem;background:#fef9c3;padding:.4rem;border-radius:.3rem;font-size:.7rem;"><b>区别</b>：直接充值适合熟人/深度用户；License Key 适合公开售卖（用户自己输 key，更正式）。</p>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:.8rem;font-weight:700;color:#0B1F3A;margin-bottom:.5rem;">🤖 今日推荐单怎么更新</div>
+            <div style="font-size:.8rem;line-height:1.7;">
+              <p>Vercel 上不跑 modeling（serverless 限制），需要你本地生成后 push。</p>
+              <p style="margin-top:.5rem;"><b>每日流程</b>：</p>
+              <ol style="margin:.3rem 0 .3rem 1rem;padding:0;">
+                <li><code>node modeling/scripts/31_tight_anti_value.js &lt;YYYY-MM-DD&gt; --predict</code></li>
+                <li><code>node scripts/build_chat_predict.js &lt;YYYY-MM-DD&gt;</code></li>
+                <li><code>git add &amp;&amp; git commit &amp;&amp; git push</code></li>
+              </ol>
+              <p style="background:#f1f5f9;padding:.4rem;border-radius:.3rem;font-size:.7rem;">推荐单通常在 <b>17:00</b> 左右赔率收敛后生成。如果当天没有未完赛比赛，文件可能为空，用户点按钮会看到友好提示（不扣积分）。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 当前项目数据（admin 登录后看到） -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem;">
+          <h2 style="font-size:1.1rem;font-weight:600;margin:0;">📊 当前项目数据</h2>
+          <div style="display:flex;gap:.5rem;align-items:center;font-size:.75rem;color:#64748b;">
+            <span data-data-status>加载中…</span>
+            <button class="btn btn-sm" data-data-refresh>刷新</button>
+          </div>
+        </div>
+        <p style="font-size:.75rem;color:#94a3b8;margin:0 0 1rem;">
+          直接从部署的本地文件渲染（data/ + modeling/artifacts/），
+          包含已完赛汇总、5 玩法频率、最新推荐单、ROI 规律。所有数据为 git 仓库快照，更新需要本地跑建模脚本后 push。
+        </p>
+        <div data-data-body>加载中…</div>
+      </div>
+
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <h2 style="font-size:1.1rem;font-weight:600;">👥 用户列表</h2>
+          <button class="btn btn-sm" id="refresh">刷新</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>邮箱</th>
+              <th>余额</th>
+              <th>已用</th>
+              <th>累计充值</th>
+              <th>注册时间</th>
+              <th>最后活跃</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="users-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:1.1rem;font-weight:600;margin-bottom:1rem;">⚡ 快速充值</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;">
+          <input id="grant-email" class="input" placeholder="用户邮箱" />
+          <input id="grant-credits" class="input" type="number" placeholder="积分数" min="1" />
+          <button class="btn" id="grant-btn">直接充值</button>
+        </div>
+        <p style="font-size:.75rem;color:#94a3b8;margin-top:.5rem;">不需要 license key，直接给该邮箱加积分（不可撤销）</p>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:1.1rem;font-weight:600;margin-bottom:1rem;">🎫 License Key 发放</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;">
+          <input id="lic-credits" class="input" type="number" placeholder="每个 key 的积分数" min="1" value="50" />
+          <button class="btn" id="lic-btn">生成新 key</button>
+        </div>
+        <div id="lic-result" style="margin-top:1rem;"></div>
+        <h3 style="font-size:.95rem;font-weight:600;margin-top:1.5rem;margin-bottom:.5rem;">最近 key</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>积分</th>
+              <th>状态</th>
+              <th>创建时间</th>
+              <th>使用者</th>
+            </tr>
+          </thead>
+          <tbody id="lic-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:1.1rem;font-weight:600;margin-bottom:1rem;">📊 API 状态</h2>
+        <pre class="code" id="health-output">加载中…</pre>
+        <button class="btn btn-sm btn-secondary" id="check-health" style="margin-top:.5rem;">重新检查</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script type="module" src="/js/pages/admin.js"></script>
+</body>
+</html>

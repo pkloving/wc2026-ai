@@ -224,10 +224,35 @@ function predictScore(m, homeTeam, awayTeam) {
   }
   for (const g of grid) g.p = g.p / total;
   grid.sort((x, y) => y.p - x.p);
+  // v3 平局保护：用 spf 隐含 p0_max 判定（不靠 grid 概率猜测），
+  //  p0_max ∈ [mid_fav_p0_low, mid_fav_p0_high) 时，Top-3 末位替换为最高概率 h==a 平局比分
+  const top3 = [];
+  let drawInserted = false;
+  if (imp && scoreModel.mid_fav_topk_force_draw) {
+    const range = scoreModel.mid_fav_p0_range || [0.40, 0.60];
+    const [low, high] = range;
+    const p0max = Math.max(imp.p0_home, imp.p0_draw, imp.p0_away);
+    if (p0max >= low && p0max < high) {
+      // 找最高概率的平局比分
+      const drawScores = grid.filter((g) => g.h === g.a);
+      const topDraw = drawScores[0] || null;
+      // 当前 Top-3 是否已经含平局
+      const top3HasDraw = grid.slice(0, 3).some((g) => g.h === g.a);
+      if (!top3HasDraw && topDraw) {
+        // Top-3 前 2 + 最高概率平局
+        top3.push(grid[0], grid[1], topDraw);
+        drawInserted = true;
+      }
+    }
+  }
+  if (!drawInserted) {
+    for (let i = 0; i < 3 && i < grid.length; i += 1) top3.push(grid[i]);
+  }
   return {
     lambda_home: lh,
     lambda_away: la,
-    top3: grid.slice(0, 3).map((g) => ({ score: `${g.h}-${g.a}`, prob: round(g.p) })),
+    top3: top3.map((g) => ({ score: `${g.h}-${g.a}`, prob: round(g.p) })),
+    draw_protection: drawInserted ? 'v3_applied' : 'none',
   };
 }
 
@@ -260,7 +285,7 @@ const predictions = candidates.map((m) => {
       handicap: { verdict: handi.verdict, reason: handi.reason, sample_win_rate: handi.sample_win_rate ?? null },
       score_top3: score.top3,
     },
-    score_meta: { lambda_home: score.lambda_home, lambda_away: score.lambda_away },
+    score_meta: { lambda_home: score.lambda_home, lambda_away: score.lambda_away, draw_protection: score.draw_protection },
   };
 });
 

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚽ 模拟记录 · WC 2026 · AI 预测</title>
+  <meta name="description" content="即将上线：记录你的每一笔竞彩预测，自动算命中率、ROI、串关命中，跟踪自己的水平。WC2026 AI 玩家专属工具。" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <style>
+    html,body{margin:0;padding:0;background:#f8fafc;color:#0B1F3A;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    body{display:flex;flex-direction:column;min-height:100vh}
+    .hero {
+      background: linear-gradient(135deg, #0B1F3A 0%, #1e3a5f 100%);
+      color: white; padding: 4rem 1.5rem 3rem; text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 900; margin: 0 0 .5rem; }
+    .hero h1 .gold { color: #D4AF37; }
+    .hero p.tagline { font-size: 1.1rem; opacity: .9; max-width: 640px; margin: 0 auto 1.5rem; }
+    .hero-img {
+      max-width: 880px; width: 100%; height: auto; border-radius: 1rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,.4); margin: 0 auto;
+      display: block;
+    }
+    .badge-soon {
+      display: inline-block; background: #D4AF37; color: #0B1F3A;
+      padding: .3rem 1rem; border-radius: 9999px; font-weight: 700;
+      font-size: .85rem; letter-spacing: .05em; margin-bottom: 1rem;
+    }
+    .container-page { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .feature-grid {
+      display: grid; gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .feature {
+      background: white; border: 1px solid #e2e8f0; border-radius: .75rem;
+      padding: 1.5rem; transition: transform .2s, box-shadow .2s;
+    }
+    .feature:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+    .feature-icon { font-size: 2.25rem; margin-bottom: .5rem; }
+    .feature h3 { margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 700; }
+    .feature p { color: #64748b; font-size: .9rem; line-height: 1.6; margin: 0; }
+    .feature ul { margin: .5rem 0 0; padding-left: 1.2rem; color: #64748b; font-size: .85rem; line-height: 1.7; }
+    .cta {
+      background: linear-gradient(135deg, #D4AF37 0%, #f4d35e 100%);
+      border-radius: 1rem; padding: 2.5rem 2rem; text-align: center;
+      color: #0B1F3A; margin-top: 3rem;
+    }
+    .cta h2 { font-size: 1.75rem; font-weight: 800; margin: 0 0 .5rem; }
+    .cta p { margin: 0 0 1.25rem; opacity: .9; }
+    .btn-primary {
+      display: inline-block; background: #0B1F3A; color: white;
+      padding: .8rem 2rem; border-radius: .5rem; font-weight: 700;
+      text-decoration: none; transition: background .15s;
+    }
+    .btn-primary:hover { background: #1e3a5f; }
+    .timeline {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;
+      margin-top: 2rem;
+    }
+    .timeline-step {
+      background: white; border: 2px solid #e2e8f0; border-radius: .75rem;
+      padding: 1.25rem; text-align: center; position: relative;
+    }
+    .timeline-step .num {
+      display: inline-block; width: 32px; height: 32px; line-height: 32px;
+      background: #D4AF37; color: #0B1F3A; border-radius: 50%;
+      font-weight: 800; margin-bottom: .5rem;
+    }
+    .timeline-step h4 { margin: 0 0 .25rem; font-size: 1rem; }
+    .timeline-step p { margin: 0; color: #64748b; font-size: .8rem; line-height: 1.5; }
+    .faq {
+      max-width: 720px; margin: 3rem auto 0;
+    }
+    .faq h2 { text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
+    .faq-item {
+      background: white; border: 1px solid #e2e8f0; border-radius: .5rem;
+      padding: 1rem 1.25rem; margin-bottom: .5rem;
+    }
+    .faq-item b { display: block; margin-bottom: .25rem; }
+    .faq-item p { margin: 0; color: #475569; font-size: .9rem; line-height: 1.6; }
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+
+  <header class="hero">
+    <span class="badge-soon">即将上线 · v0.4</span>
+    <h1>⚽ 你的 <span class="gold">足球预测账本</span></h1>
+    <p class="tagline">记录每一笔预测 · 自动算命中率 / ROI / 串关命中 · 让你看清自己到底是真懂球还是靠运气</p>
+    <img
+      class="hero-img"
+      src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=A%20modern%20sleek%20mobile%20dashboard%20UI%20for%20a%20football%20betting%20tracker%20app%2C%20dark%20navy%20blue%20background%20with%20gold%20accents%2C%20showing%20a%20soccer%20pitch%20miniature%2C%20a%20phone%20mockup%20with%20statistics%20charts%2C%20prediction%20slip%20with%20odds%20numbers%2C%20hit%20rate%20gauge%2C%20ROI%20indicator%2C%20clean%20minimal%20infographic%20style%2C%20professional%20data%20visualization%2C%20soft%20lighting%2C%208k%20quality&image_size=landscape_16_9"
+      alt="WC2026 模拟记录功能预览"
+      loading="eager"
+    />
+  </header>
+
+  <main class="flex-1 container-page">
+
+    <h2 style="text-align:center;font-size:1.75rem;font-weight:800;margin:0 0 .5rem;">🛠️ 三大核心能力</h2>
+    <p style="text-align:center;color:#64748b;margin:0 0 2rem;">v0.4 计划交付的功能，每一项都已经有原型设计</p>
+
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">📝</div>
+        <h3>快速录入</h3>
+        <p>3 步完成一笔预测：选比赛 → 选玩法（胜平负/让球/比分/总进球/半全场）→ 选方向。手机端友好，5 秒搞定。</p>
+        <ul>
+          <li>支持单关、2串1、3串1、混合过关</li>
+          <li>赔率自动从本站赔率库抓取</li>
+          <li>本地草稿+云端同步（需登录）</li>
+        </ul>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>自动算账</h3>
+        <p>完赛 1 小时内自动结算：单关命中、串关几中几、净盈利、命中率、连胜连败、模式识别。</p>
+        <ul>
+          <li>按玩法维度拆（spf / rqspf / bf / zjq / bqc）</li>
+          <li>按联赛/球队拆 ROI</li>
+          <li>发现你的"擅长方向"</li>
+        </ul>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🏆</div>
+        <h3>排行 + 战绩</h3>
+        <p>跟其他玩家比 ROI、命中率、连胜天数。生成可分享的战绩卡：你在世界杯周期到底赚了多少。</p>
+        <ul>
+          <li>排行榜（按月/按周）</li>
+          <li>成就徽章（连中 5 场 / ROI &gt; 15% 等）</li>
+          <li>战绩卡可分享到微信/朋友圈</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-step">
+        <div class="num">1</div>
+        <h4>录入预测</h4>
+        <p>选比赛 → 选玩法 → 选方向 → 选串关/单关</p>
+      </div>
+      <div class="timeline-step">
+        <div class="num">2</div>
+        <h4>等待开赛</h4>
+        <p>系统自动从完赛数据拉结果</p>
+      </div>
+      <div class="timeline-step">
+        <div class="num">3</div>
+        <h4>查看账单</h4>
+        <p>命中 / 未中 / ROI / 排行榜 / 分享</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2>❓ 常见问题</h2>
+      <div class="faq-item">
+        <b>Q: 跟 AI 聊天扣的积分是同一套吗？</b>
+        <p>A: 不互通。聊天扣 1 积分/次，模拟记录是按 <b>预测条数</b> 独立计费（计划：每条预测 0.5 积分，套餐包月更划算）。</p>
+      </div>
+      <div class="faq-item">
+        <b>Q: 我的数据安全吗？</b>
+        <p>A: 存在 Upstash Redis（加密传输 + 7 天自动备份），账号用邮箱 OTP，不记密码。导出/删除随时可申请。</p>
+      </div>
+      <div class="faq-item">
+        <b>Q: 什么时候上线？</b>
+        <p>A: 世界杯已经开打，v0.4 正在加紧开发，目标在淘汰赛阶段开放内测。想优先体验可<a href="/contact.html">联系站长</a>登记，名额开通会第一时间通知。</p>
+      </div>
+      <div class="faq-item">
+        <b>Q: 我现在能试用吗？</b>
+        <p>A: 还没开放测试，但你可以<a href="/contact.html">联系站长</a>登记意向，开通后第一时间通知。</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>🎯 想第一时间用上？</h2>
+      <p>留言告诉我们你最想要的功能，v0.4 优先级会参考用户投票</p>
+      <a class="btn-primary" href="/contact.html">📬 联系站长 · 登记意向</a>
+    </div>
+
+  </main>
+
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

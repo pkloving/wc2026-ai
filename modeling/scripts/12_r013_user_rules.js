@@ -29,9 +29,27 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
+import { spawnSync } from 'node:child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.join(__dirname, '..', '..');
+
+// ============== 入口前增量更新赛果汇总 ==============
+// 跑回测/预测前，先把 data/results/ 里新增的完赛比赛拼到 data/settled_matches.json
+// 这样后续模型要找"赔率变化 → 命中"规律时，能拿到完整数据
+// 失败不阻塞建模（仅 warning）
+try {
+  const r = spawnSync('node', [path.join(PROJECT_ROOT, 'scripts', 'build_settled.js'), '--incremental'], {
+    cwd: PROJECT_ROOT, encoding: 'utf-8', timeout: 30_000,
+  });
+  if (r.status === 0) {
+    process.stdout.write(r.stdout || '');
+  } else {
+    process.stderr.write(`⚠️  build_settled 退出码 ${r.status}：${r.stderr || ''}\n`);
+  }
+} catch (e) {
+  process.stderr.write(`⚠️  build_settled 调用失败：${e.message}\n`);
+}
 
 // ============== CLI ==============
 // 用法:

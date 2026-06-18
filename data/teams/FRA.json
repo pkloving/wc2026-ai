@@ -36,6 +36,23 @@
     },
     "matches": [
       {
+        "mid": "2040146",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-09T03:10:00+08:00",
+        "venue": null,
+        "role": "home",
+        "opponent_code": "NIR",
+        "opponent_name": "北爱尔兰",
+        "status": "finished",
+        "score_my": 3,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "win"
+      },
+      {
         "mid": "2040178",
         "match_id": "M017",
         "stage": "group",
@@ -76,5 +93,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

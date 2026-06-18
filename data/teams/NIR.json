@@ -22,7 +22,25 @@
     "group": null,
     "stage": "group",
     "standings": null,
-    "matches": []
+    "matches": [
+      {
+        "mid": "2040146",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-09T03:10:00+08:00",
+        "venue": null,
+        "role": "away",
+        "opponent_code": "FRA",
+        "opponent_name": "法国",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
+      }
+    ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }

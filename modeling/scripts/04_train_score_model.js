@@ -98,6 +98,20 @@ if (!fs.existsSync(path.dirname(OUT_FILE))) fs.mkdirSync(path.dirname(OUT_FILE),
 fs.writeFileSync(OUT_FILE, JSON.stringify(model, null, 2) + '\n', 'utf-8');
 
 // 给每场样本算 Top-3（用 spf 实际赔率驱动），落 sample 辅助表
+// v3 平局保护：p0_max ∈ [0.40, 0.60) 时 Top-3 强制含 1 个平局
+function applyV3DrawProtection(grid, p0) {
+  if (!model.mid_fav_topk_force_draw || !p0) return grid.slice(0, 3);
+  const [low, high] = model.mid_fav_p0_range || [0.40, 0.60];
+  const p0max = Math.max(p0.p0_home, p0.p0_draw, p0.p0_away);
+  if (p0max < low || p0max >= high) return grid.slice(0, 3);
+  const top3HasDraw = grid.slice(0, 3).some((g) => g.h === g.a);
+  if (top3HasDraw) return grid.slice(0, 3);
+  const drawScores = grid.filter((g) => g.h === g.a);
+  const topDraw = drawScores[0];
+  if (!topDraw) return grid.slice(0, 3);
+  return [grid[0], grid[1], topDraw];
+}
+
 const sampleTop3 = matches.map((m) => {
   const p0 = m.derived.spf_implied;
   const p0Home = p0?.p0_home ?? null;
@@ -116,10 +130,17 @@ const sampleTop3 = matches.map((m) => {
   // 归一化
   for (const g of grid) g.p = g.p / total;
   grid.sort((x, y) => y.p - x.p);
-  const top3 = grid.slice(0, 3).map((g) => ({
+  // v3 平局保护后的 Top-3
+  const top3Raw = grid.slice(0, 3);
+  const top3Protected = applyV3DrawProtection(grid, p0);
+  const top3 = top3Protected.map((g) => ({
     score: `${g.h}-${g.a}`,
     prob: round(g.p),
   }));
+  // 内容比较判定是否真的触发了保护（避免 slice 引用变化误判）
+  const rawScores = top3Raw.map((g) => `${g.h}-${g.a}`).join(',');
+  const protectedScores = top3Protected.map((g) => `${g.h}-${g.a}`).join(',');
+  const drawProtectionApplied = rawScores !== protectedScores;
   return {
     mid: m.mid,
     home: m.home,
@@ -131,13 +152,16 @@ const sampleTop3 = matches.map((m) => {
     actual_score_prob: round(
       poissonPmf(m.derived.home_goals, lh) * poissonPmf(m.derived.away_goals, la) / total
     ),
+    top3_raw: top3Raw.map((g) => `${g.h}-${g.a}`),
+    top3_v3: top3.map((t) => t.score),
+    draw_protection_applied: drawProtectionApplied,
     top3,
   };
 });
 
 fs.writeFileSync(SAMPLE_FILE, JSON.stringify({
   generated_at: new Date().toISOString(),
-  note: '每场样本用实际 spf 赔率驱动 Poisson，Top-3 是模型给该场的最佳 3 个比分概率',
+  note: '每场样本用实际 spf 赔率驱动 Poisson，Top-3 是模型给该场的最佳 3 个比分概率。v3 (2026-06-18): p0_max ∈ [0.40, 0.60) 区间 Top-3 末位替换为最高概率平局 (draw_protection_applied=true 标记)',
   total: sampleTop3.length,
   samples: sampleTop3,
 }, null, 2) + '\n', 'utf-8');
@@ -145,14 +169,20 @@ fs.writeFileSync(SAMPLE_FILE, JSON.stringify({
 console.log('---- 样本回放 Top-3 命中情况 ----');
 let inTop3 = 0;
 let inTop1 = 0;
+let inTop3V3 = 0;
+let drawProtected = 0;
 for (const s of sampleTop3) {
   const top1 = s.top3[0].score;
-  const top3List = s.top3.map((t) => t.score);
+  const top3List = s.top3_v3;
   if (top1 === s.actual_score) inTop1 += 1;
-  if (top3List.includes(s.actual_score)) inTop3 += 1;
+  if (top3List.includes(s.actual_score)) inTop3V3 += 1;
+  if (s.top3_raw.includes(s.actual_score)) inTop3 += 1;
+  if (s.draw_protection_applied) drawProtected += 1;
 }
 console.log(`  Top-1 命中：${inTop1}/${sampleTop3.length}（${(inTop1 / sampleTop3.length * 100).toFixed(0)}%）`);
-console.log(`  Top-3 命中：${inTop3}/${sampleTop3.length}（${(inTop3 / sampleTop3.length * 100).toFixed(0)}%）`);
+console.log(`  Top-3 命中（v3 实施前）：${inTop3}/${sampleTop3.length}（${(inTop3 / sampleTop3.length * 100).toFixed(0)}%）`);
+console.log(`  Top-3 命中（v3 实施后）：${inTop3V3}/${sampleTop3.length}（${(inTop3V3 / sampleTop3.length * 100).toFixed(0)}%）`);
+console.log(`  v3 平局保护触发：${drawProtected}/${sampleTop3.length} 场`);
 console.log(`落盘 ${path.relative(path.join(__dirname, '..', '..'), OUT_FILE)} + score_top3_sample.json`);
 
 function round(n) { return Math.round(n * 1000) / 1000; }

@@ -1,0 +1,601 @@
+{
+  "generated_at": "2026-06-18T06:52:46.124Z",
+  "play": "rqspf",
+  "count": 27,
+  "rows": [
+    {
+      "mid": "2040145",
+      "code": "周一201",
+      "home": "荷兰",
+      "away": "乌兹别克",
+      "kickoff": "2026-06-09 02:45",
+      "handicap": -2,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.62,
+        "draw": 3.85,
+        "away": 2.05
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.301Z",
+        "home": 2.65,
+        "draw": 3.34,
+        "away": 2.21
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040146",
+      "code": "周一202",
+      "home": "法国",
+      "away": "北爱尔兰",
+      "kickoff": "2026-06-09 03:10",
+      "handicap": -2,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 1.92,
+        "draw": 3.9,
+        "away": 2.85
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.431Z",
+        "home": 1.82,
+        "draw": 3.96,
+        "away": 3.05
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040147",
+      "code": "周一203",
+      "home": "秘鲁",
+      "away": "西班牙",
+      "kickoff": "2026-06-09 10:00",
+      "handicap": 2,
+      "final_score": "1:3",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.68,
+        "draw": 3.85,
+        "away": 2.02
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.642Z",
+        "home": 2.38,
+        "draw": 3.4,
+        "away": 2.41
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040162",
+      "code": "周四001",
+      "home": "墨西哥",
+      "away": "南非",
+      "kickoff": "2026-06-12 03:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.25,
+        "draw": 3.18,
+        "away": 2.7
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.811Z",
+        "home": 2,
+        "draw": 3.25,
+        "away": 3.11
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040163",
+      "code": "周四002",
+      "home": "韩国",
+      "away": "捷克",
+      "kickoff": "2026-06-12 10:00",
+      "handicap": -1,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 5.8,
+        "draw": 4.05,
+        "away": 1.41
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.830Z",
+        "home": 6.25,
+        "draw": 4,
+        "away": 1.39
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040164",
+      "code": "周五003",
+      "home": "加拿大",
+      "away": "波黑",
+      "kickoff": "2026-06-13 03:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.95,
+        "draw": 3.3,
+        "away": 2.05
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.855Z",
+        "home": 3.58,
+        "draw": 2.9,
+        "away": 1.98
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040165",
+      "code": "周五004",
+      "home": "美国",
+      "away": "巴拉圭",
+      "kickoff": "2026-06-13 09:00",
+      "handicap": -1,
+      "final_score": "4:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 3.95,
+        "draw": 3.4,
+        "away": 1.72
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.879Z",
+        "home": 4.02,
+        "draw": 3.08,
+        "away": 1.8
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040166",
+      "code": "周六005",
+      "home": "卡塔尔",
+      "away": "瑞士",
+      "kickoff": "2026-06-14 03:00",
+      "handicap": 2,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 1.98,
+        "draw": 3.85,
+        "away": 2.74
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.912Z",
+        "home": 2.35,
+        "draw": 3.42,
+        "away": 2.43
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040167",
+      "code": "周六006",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "kickoff": "2026-06-14 06:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.8,
+        "draw": 3.26,
+        "away": 2.15
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.940Z",
+        "home": 2.95,
+        "draw": 2.91,
+        "away": 2.24
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040168",
+      "code": "周六007",
+      "home": "海地",
+      "away": "苏格兰",
+      "kickoff": "2026-06-14 09:00",
+      "handicap": 1,
+      "final_score": "0:1",
+      "initial": {
+        "time": "2026-06-09T07:52:20.369Z",
+        "home": 2.81,
+        "draw": 3.35,
+        "away": 2.11
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.958Z",
+        "home": 2.7,
+        "draw": 3.75,
+        "away": 2.03
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040169",
+      "code": "周六008",
+      "home": "澳大利亚",
+      "away": "土耳其",
+      "kickoff": "2026-06-14 12:00",
+      "handicap": 1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2026-06-09T07:52:20.391Z",
+        "home": 2.11,
+        "draw": 3.25,
+        "away": 2.88
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.982Z",
+        "home": 2.28,
+        "draw": 2.95,
+        "away": 2.84
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040170",
+      "code": "周日009",
+      "home": "德国",
+      "away": "库拉索",
+      "kickoff": "2026-06-15 01:00",
+      "handicap": -3,
+      "final_score": "7:1",
+      "initial": {
+        "time": "2026-06-09T07:52:20.405Z",
+        "home": 1.94,
+        "draw": 4.6,
+        "away": 2.52
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.028Z",
+        "home": 1.65,
+        "draw": 4.85,
+        "away": 3.15
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040171",
+      "code": "周日010",
+      "home": "荷兰",
+      "away": "日本",
+      "kickoff": "2026-06-15 04:00",
+      "handicap": -1,
+      "final_score": "2:2",
+      "initial": {
+        "time": "2026-06-09T07:52:20.420Z",
+        "home": 3.42,
+        "draw": 3.42,
+        "away": 1.84
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.070Z",
+        "home": 4,
+        "draw": 3.4,
+        "away": 1.71
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040172",
+      "code": "周日011",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "kickoff": "2026-06-15 07:00",
+      "handicap": 1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2026-06-09T07:52:20.438Z",
+        "home": 1.51,
+        "draw": 3.6,
+        "away": 5.3
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.108Z",
+        "home": 1.45,
+        "draw": 3.8,
+        "away": 5.65
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040173",
+      "code": "周日012",
+      "home": "瑞典",
+      "away": "突尼斯",
+      "kickoff": "2026-06-15 10:00",
+      "handicap": -1,
+      "final_score": "5:1",
+      "initial": {
+        "time": "2026-06-09T07:52:20.536Z",
+        "home": 3.55,
+        "draw": 3.3,
+        "away": 1.84
+      },
+      "last": {
+        "time": "2026-06-09T07:52:20.536Z",
+        "home": 3.55,
+        "draw": 3.3,
+        "away": 1.84
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040174",
+      "code": "周一013",
+      "home": "西班牙",
+      "away": "佛得角",
+      "kickoff": "2026-06-16 00:00",
+      "handicap": -2,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2026-06-08T10:02:19+08:00",
+        "home": 1.85,
+        "draw": 4,
+        "away": 2.95
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.220Z",
+        "home": 1.46,
+        "draw": 4.7,
+        "away": 4.32
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040175",
+      "code": "周一014",
+      "home": "比利时",
+      "away": "埃及",
+      "kickoff": "2026-06-16 03:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.65,
+        "draw": 3.15,
+        "away": 2.3
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.236Z",
+        "home": 2.35,
+        "draw": 3.42,
+        "away": 2.43
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040176",
+      "code": "周一015",
+      "home": "沙特阿拉伯",
+      "away": "乌拉圭",
+      "kickoff": "2026-06-16 06:00",
+      "handicap": 1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08T10:02:19+08:00",
+        "home": 2.95,
+        "draw": 3.3,
+        "away": 2.05
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.285Z",
+        "home": 2.83,
+        "draw": 3.1,
+        "away": 2.21
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040177",
+      "code": "周一016",
+      "home": "伊朗",
+      "away": "新西兰",
+      "kickoff": "2026-06-16 09:00",
+      "handicap": -1,
+      "final_score": "2:2",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 3.1,
+        "draw": 3.1,
+        "away": 2.07
+      },
+      "last": {
+        "time": "2026-06-17T05:49:57.495Z",
+        "home": 2.87,
+        "draw": 3.3,
+        "away": 2.09
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040178",
+      "code": "周二017",
+      "home": "法国",
+      "away": "塞内加尔",
+      "kickoff": "2026-06-17 03:00",
+      "handicap": -1,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.35,
+        "draw": 3.2,
+        "away": 2.56
+      },
+      "last": {
+        "time": "2026-06-17T05:44:19.948Z",
+        "home": 2.07,
+        "draw": 3.45,
+        "away": 2.81
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040179",
+      "code": "周二018",
+      "home": "伊拉克",
+      "away": "挪威",
+      "kickoff": "2026-06-17 06:00",
+      "handicap": 2,
+      "final_score": "1:4",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.03,
+        "draw": 3.89,
+        "away": 2.64
+      },
+      "last": {
+        "time": "2026-06-17T05:44:19.976Z",
+        "home": 2.3,
+        "draw": 3.88,
+        "away": 2.29
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040180",
+      "code": "周二019",
+      "home": "阿根廷",
+      "away": "阿尔及利亚",
+      "kickoff": "2026-06-17 09:00",
+      "handicap": -1,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.07,
+        "draw": 3.25,
+        "away": 2.95
+      },
+      "last": {
+        "time": "2026-06-17T05:44:20.000Z",
+        "home": 2.09,
+        "draw": 3.17,
+        "away": 2.98
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040181",
+      "code": "周二020",
+      "home": "奥地利",
+      "away": "约旦",
+      "kickoff": "2026-06-17 12:00",
+      "handicap": -1,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 1.86,
+        "draw": 3.45,
+        "away": 3.32
+      },
+      "last": {
+        "time": "2026-06-17T05:44:20.034Z",
+        "home": 1.78,
+        "draw": 3.9,
+        "away": 3.21
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040182",
+      "code": "周三021",
+      "home": "葡萄牙",
+      "away": "刚果(金)",
+      "kickoff": "2026-06-18 01:00",
+      "handicap": -2,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.86,
+        "draw": 3.75,
+        "away": 1.95
+      },
+      "last": {
+        "time": "2026-06-18T01:23:14.627Z",
+        "home": 2.47,
+        "draw": 3.92,
+        "away": 2.13
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040183",
+      "code": "周三022",
+      "home": "英格兰",
+      "away": "克罗地亚",
+      "kickoff": "2026-06-18 04:00",
+      "handicap": -1,
+      "final_score": "4:2",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 2.94,
+        "draw": 3.2,
+        "away": 2.1
+      },
+      "last": {
+        "time": "2026-06-18T01:23:14.647Z",
+        "home": 2.98,
+        "draw": 3,
+        "away": 2.17
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040184",
+      "code": "周三023",
+      "home": "加纳",
+      "away": "巴拿马",
+      "kickoff": "2026-06-18 07:00",
+      "handicap": -1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 4.25,
+        "draw": 3.4,
+        "away": 1.67
+      },
+      "last": {
+        "time": "2026-06-18T01:23:14.677Z",
+        "home": 4.2,
+        "draw": 3.7,
+        "away": 1.61
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040185",
+      "code": "周三024",
+      "home": "乌兹别克斯坦",
+      "away": "哥伦比亚",
+      "kickoff": "2026-06-18 10:00",
+      "handicap": 1,
+      "final_score": "1:3",
+      "initial": {
+        "time": "2026-06-08 10:02:19",
+        "home": 3.02,
+        "draw": 3.3,
+        "away": 2.02
+      },
+      "last": {
+        "time": "2026-06-18T01:23:14.694Z",
+        "home": 3.37,
+        "draw": 3.58,
+        "away": 1.81
+      },
+      "result": "away"
+    }
+  ]
+}

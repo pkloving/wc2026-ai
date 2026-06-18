@@ -24,7 +24,20 @@
     "group": null,
     "stage": "group",
     "standings": null,
-    "matches": []
+    "matches": [
+      {
+        "mid": "2040186",
+        "match_id": null,
+        "stage": "group",
+        "group": null,
+        "date": "2026-06-09T19:35:00+08:00",
+        "venue": null,
+        "role": "away",
+        "opponent_code": "CHN",
+        "opponent_name": "中国",
+        "status": "on_sale"
+      }
+    ]
   },
-  "_updated_at": "2026-06-18T06:50:06.853Z"
+  "_updated_at": "2026-06-18T07:05:31.450Z"
 }
