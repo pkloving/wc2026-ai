@@ -1,4 +1,4 @@
-import { handleRoute } from './router.js';
+import { handleRoute } from '../router.js';
 
 export const config = { runtime: 'nodejs', maxDuration: 60 };
 
