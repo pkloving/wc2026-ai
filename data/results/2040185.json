@@ -1,0 +1,37 @@
+{
+  "matchId": "2040185",
+  "homeScore": 1,
+  "awayScore": 3,
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "UZB",
+      "player": "FAYZULLAEV",
+      "minute": 60,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "MUNOZ",
+      "minute": 40,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "DIAZ",
+      "minute": 65,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "CAMPAZ",
+      "minute": 99,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

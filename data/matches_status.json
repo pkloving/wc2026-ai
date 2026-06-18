@@ -1066,7 +1066,7 @@
       "home": "乌兹别克斯坦",
       "away": "哥伦比亚",
       "kickoff": "2026-06-18 10:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 9.65,
         "draw": 4.85,
@@ -1087,7 +1087,7 @@
       "bf_scraped_at": "2026-06-13T12:18:39+08:00",
       "zjq_scraped_at": "2026-06-08T10:02:19+08:00",
       "bqc_scraped_at": "2026-06-08T10:02:19+08:00",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
         "HAFU": true,

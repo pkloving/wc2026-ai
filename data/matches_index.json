@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T04:03:43.018Z",
+  "generated_at": "2026-06-18T06:50:07.204Z",
   "total": 80,
   "by_status": {
     "scheduled": [],
@@ -114,30 +114,6 @@
         "scraped_at": "2026-06-18T01:23:14.599Z",
         "history_snapshots": 1,
         "odds_file": "odds/2040190.json",
-        "is_finished_odds": false
-      },
-      {
-        "mid": "2040185",
-        "code": "周三024",
-        "league": "世界杯",
-        "home": "乌兹别克斯坦",
-        "away": "哥伦比亚",
-        "kickoff": "2026-06-18 10:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 9.65,
-          "draw": 4.85,
-          "away": 1.22
-        },
-        "handicap": 1,
-        "rqspf": {
-          "home": 3.37,
-          "draw": 3.58,
-          "away": 1.81
-        },
-        "scraped_at": "2026-06-18T01:23:14.693Z",
-        "history_snapshots": 5,
-        "odds_file": "odds/2040185.json",
         "is_finished_odds": false
       }
     ],
@@ -1487,6 +1463,30 @@
         "scraped_at": "2026-06-18T01:23:14.676Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040184.json",
+        "is_finished_odds": true
+      },
+      {
+        "mid": "2040185",
+        "code": "周三024",
+        "league": "世界杯",
+        "home": "乌兹别克斯坦",
+        "away": "哥伦比亚",
+        "kickoff": "2026-06-18 10:00",
+        "status": "finished",
+        "spf": {
+          "home": 9.65,
+          "draw": 4.85,
+          "away": 1.22
+        },
+        "handicap": 1,
+        "rqspf": {
+          "home": 3.37,
+          "draw": 3.58,
+          "away": 1.81
+        },
+        "scraped_at": "2026-06-18T01:23:14.693Z",
+        "history_snapshots": 5,
+        "odds_file": "odds/2040185.json",
         "is_finished_odds": true
       }
     ],
@@ -2962,7 +2962,7 @@
         "home": "乌兹别克斯坦",
         "away": "哥伦比亚",
         "kickoff": "2026-06-18 10:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 9.65,
           "draw": 4.85,
@@ -2977,7 +2977,7 @@
         "scraped_at": "2026-06-18T01:23:14.693Z",
         "history_snapshots": 5,
         "odds_file": "odds/2040185.json",
-        "is_finished_odds": false
+        "is_finished_odds": true
       }
     ]
   },
@@ -3746,7 +3746,7 @@
         "home": "乌兹别克斯坦",
         "away": "哥伦比亚",
         "kickoff": "2026-06-18 10:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 9.65,
           "draw": 4.85,
@@ -3761,7 +3761,7 @@
         "scraped_at": "2026-06-18T01:23:14.693Z",
         "history_snapshots": 5,
         "odds_file": "odds/2040185.json",
-        "is_finished_odds": false
+        "is_finished_odds": true
       }
     ],
     "2022-11-20": [
