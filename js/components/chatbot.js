@@ -276,6 +276,7 @@ async function streamChat({ messages, mode = 'chat', onToken, onMeta, onError, o
   let buf = '';
   let currentEvent = '';
   let currentData = '';
+  let doneCalled = false;
   const flush = () => {
     if (!currentEvent) return;
     try {
@@ -283,7 +284,7 @@ async function streamChat({ messages, mode = 'chat', onToken, onMeta, onError, o
       if (currentEvent === 'token') onToken?.(payload.content || '');
       else if (currentEvent === 'meta') onMeta?.(payload);
       else if (currentEvent === 'error') onError?.(payload.message || 'unknown error');
-      else if (currentEvent === 'done') onDone?.(payload);
+      else if (currentEvent === 'done') { doneCalled = true; onDone?.(payload); }
     } catch { /* ignore */ }
     currentEvent = ''; currentData = '';
   };
@@ -301,7 +302,7 @@ async function streamChat({ messages, mode = 'chat', onToken, onMeta, onError, o
     }
   }
   flush();
-  onDone?.({ ok: true });
+  if (!doneCalled) onDone?.({ ok: true });
 }
 
 /* ----- mount ----- */
