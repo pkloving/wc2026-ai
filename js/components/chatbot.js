@@ -382,6 +382,15 @@ export function mountChatbot({ auth } = {}) {
     }
   }
 
+  // 仅刷新推荐/建议按钮的显隐，不重建消息列表（重建会清掉未入 history 的推荐对话）
+  function refreshControls() {
+    const u = auth?.getUser?.();
+    if (!u) return;
+    // 积分 < 10 隐藏推荐按钮（避免点了扣成负数）
+    if (recommendRow) recommendRow.style.display = u.credits < 10 ? 'none' : '';
+    suggestionsEl.style.display = u.credits <= 0 ? 'none' : '';
+  }
+
   function renderHistory() {
     msgsEl.innerHTML = '';
     const u = auth?.getUser?.();
@@ -400,16 +409,7 @@ export function mountChatbot({ auth } = {}) {
       return;
     }
     form.style.display = '';
-    if (recommendRow) recommendRow.style.display = '';
-    if (u.credits < 10) {
-      // 积分 < 10 隐藏推荐按钮（避免点了扣成负数）
-      if (recommendRow) recommendRow.style.display = 'none';
-    }
-    if (u.credits <= 0) {
-      suggestionsEl.style.display = 'none';
-    } else {
-      suggestionsEl.style.display = '';
-    }
+    refreshControls();
     if (history.length === 0) {
       msgsEl.innerHTML = WELCOME_HTML;
     } else {
@@ -567,7 +567,7 @@ export function mountChatbot({ auth } = {}) {
           if (cur) {
             cur.credits = m.credits_remaining;
             renderHeader();
-            renderHistory(); // 刷新按钮显隐
+            refreshControls(); // 只刷新按钮显隐，避免重建消息列表清掉推荐对话
             if (m.credits_remaining <= 0) showLowCredits();
           }
         }
