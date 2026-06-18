@@ -144,6 +144,9 @@ export async function handleRoute(req, res) {
   applyCors(res);
   if (handleOptions(req, res)) return;
 
+  const proto = String(req.headers['x-forwarded-proto'] || 'https').split(',')[0].trim();
+  const host = req.headers['x-forwarded-host'] || req.headers.host;
+  const origin = host ? `${proto}://${host}` : '';
   const requestUrl = new URL(req.url || '/', 'http://localhost');
   const segments = requestUrl.pathname.split('?')[0].split('/').filter(Boolean);
   const route = segments[0] === 'api' ? segments.slice(1).join('/') : segments.join('/');
@@ -193,7 +196,7 @@ export async function handleRoute(req, res) {
         spent += COST_MESSAGE;
         const [emb] = await embedTexts([lastUser.content]);
         const queryVec = emb.embedding;
-        const chunks = searchIndex(queryVec, 6);
+        const chunks = await searchIndex(queryVec, 6, origin);
         const ragContext = chunksToContext(chunks, 0.2);
 
         let webContext = '';

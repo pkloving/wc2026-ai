@@ -7,7 +7,7 @@
  * Source: data/matches_status.json + data/odds/<mid>.json + data/results/<mid>.json
  *         + data/teams/*.json + modeling/artifacts/recommend_*.json
  *         + modeling/artifacts/predict_*.json
- * Output: data/embeddings/index.json
+ * Output: public/data/embeddings/index.json (served statically at /data/embeddings/index.json)
  *
  * Requires SILICONFLOW_API_KEY in .env (or process.env).
  */
@@ -21,7 +21,9 @@ import { env } from '../lib/env.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(here, '..');
-const OUT_DIR = resolve(ROOT, 'data/embeddings');
+// Output lives under public/ so vite ships it to dist/ and serves it at
+// /data/embeddings/index.json (the chat API fetches it at runtime on Vercel).
+const OUT_DIR = resolve(ROOT, 'public/data/embeddings');
 const OUT_FILE = resolve(OUT_DIR, 'index.json');
 
 /* ------------------------------------------------------------------ */
