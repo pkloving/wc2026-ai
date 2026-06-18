@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-17T09:19:29.126Z",
+  "generated_at": "2026-06-18T00:12:59.967Z",
   "target_date": "2026-06-13",
   "source": "data/odds/<mid>.json (2 场)",
   "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
   "summary": {
     "total": 2,
     "rqspf_hit": "2/2",
-    "bf_hit": "1/2",
+    "bf_hit": "0/2",
     "direction_a_3x1": "0/0",
-    "direction_b_2x1": "0/0"
+    "direction_b_2x1": "0/1"
   },
   "matches": [
     {
@@ -41,9 +41,9 @@
       },
       "bf_picks": [
         {
-          "score": "1:1",
-          "odds": 4.75,
-          "prob": 0.18630647414997673,
+          "score": "2:0",
+          "odds": 6.6,
+          "prob": 0.13408420488066508,
           "tier": "low"
         },
         {
@@ -81,7 +81,7 @@
         "draw": 3.08,
         "away": 1.8
       },
-      "style": "势均",
+      "style": "中vs弱",
       "star": "普利西奇",
       "cold": "美国:2022平英格兰",
       "pre_analysis": "美国东道主+球星, 赔率客胜低但有东道主保底, 买2边(让胜+让负)",
@@ -101,15 +101,15 @@
           "tier": "low"
         },
         {
-          "score": "1:2",
-          "odds": 16,
-          "prob": 0.05530973451327434,
+          "score": "3:1",
+          "odds": 14,
+          "prob": 0.06321112515802782,
           "tier": "mid"
         },
         {
-          "score": "2:2",
-          "odds": 20,
-          "prob": 0.044247787610619475,
+          "score": "3:0",
+          "odds": 18.5,
+          "prob": 0.04783544606553457,
           "tier": "high"
         }
       ],
@@ -124,6 +124,26 @@
     "parlays_3x1": []
   },
   "direction_b": {
-    "pairs_2x1": []
+    "pairs_2x1": [
+      {
+        "a": {
+          "mid": "2040164",
+          "code": "周五003",
+          "play": "bf",
+          "pick": "0:0",
+          "tier": "mid",
+          "odds": 9.5
+        },
+        "b": {
+          "mid": "2040165",
+          "code": "周五004",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 14
+        },
+        "totalOdds": 133
+      }
+    ]
   }
 }

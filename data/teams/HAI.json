@@ -1,0 +1,78 @@
+{
+  "code": "HAI",
+  "name": "海地",
+  "nameEn": "Haiti",
+  "confederation": "CONCACAF",
+  "flag": "🇭🇹",
+  "iso2": "ht",
+  "color": "#00209F",
+  "meta": {
+    "tier": "weak",
+    "style": "弱队/身体",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "C",
+    "stage": "group",
+    "standings": {
+      "position": 4,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 0,
+      "ga": 1,
+      "gd": -1,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040168",
+        "match_id": "M007",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-14T01:00:00Z",
+        "venue": "Lincoln Financial Field, Philadelphia, PA",
+        "role": "home",
+        "opponent_code": "SCO",
+        "opponent_name": "苏格兰",
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
+      },
+      {
+        "match_id": "M031",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-20T00:30:00Z",
+        "venue": "BMO Field, Toronto",
+        "role": "away",
+        "opponent_code": "BRA",
+        "opponent_name": "巴西",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M051",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-24T22:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "away",
+        "opponent_code": "MAR",
+        "opponent_name": "摩洛哥",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

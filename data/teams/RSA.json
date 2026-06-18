@@ -1,0 +1,78 @@
+{
+  "code": "RSA",
+  "name": "南非",
+  "nameEn": "South Africa",
+  "confederation": "CAF",
+  "flag": "🇿🇦",
+  "iso2": "za",
+  "color": "#007749",
+  "meta": {
+    "tier": "weak",
+    "style": "身体对抗",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "A",
+    "stage": "group",
+    "standings": {
+      "position": 4,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 0,
+      "ga": 2,
+      "gd": -2,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040162",
+        "match_id": "M001",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-11T19:00:00Z",
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "role": "away",
+        "opponent_code": "MEX",
+        "opponent_name": "墨西哥",
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 2,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
+      },
+      {
+        "match_id": "M025",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-18T16:00:00Z",
+        "venue": "Levi's Stadium, Santa Clara, CA",
+        "role": "away",
+        "opponent_code": "CZE",
+        "opponent_name": "捷克",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M054",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-25T01:00:00Z",
+        "venue": "NRG Stadium, Houston, TX",
+        "role": "home",
+        "opponent_code": "KOR",
+        "opponent_name": "韩国",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

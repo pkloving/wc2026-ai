@@ -1,0 +1,80 @@
+{
+  "code": "CAN",
+  "name": "加拿大",
+  "nameEn": "Canada",
+  "confederation": "CONCACAF",
+  "flag": "🇨🇦",
+  "iso2": "ca",
+  "color": "#FF0000",
+  "meta": {
+    "tier": "second",
+    "style": "东道主/边路冲击",
+    "stars": [
+      "阿方索·戴维斯"
+    ],
+    "has_scorer_star": true,
+    "is_host": true,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 首秀/小组赛未出线",
+    "cold_history": "2022 首次参加世界杯"
+  },
+  "wc2026": {
+    "group": "B",
+    "stage": "group",
+    "standings": {
+      "position": 2,
+      "played": 1,
+      "win": 0,
+      "draw": 1,
+      "lose": 0,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "pts": 1
+    },
+    "matches": [
+      {
+        "mid": "2040164",
+        "match_id": "M003",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-12T19:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "home",
+        "opponent_code": "BIH",
+        "opponent_name": "波黑",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "draw"
+      },
+      {
+        "match_id": "M027",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-18T22:00:00Z",
+        "venue": "Gillette Stadium, Foxborough, MA",
+        "role": "home",
+        "opponent_code": "QAT",
+        "opponent_name": "卡塔尔",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M049",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-24T19:00:00Z",
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "role": "away",
+        "opponent_code": "SUI",
+        "opponent_name": "瑞士",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

@@ -52,6 +52,71 @@ if (fs.existsSync(historyDir)) {
   }
 }
 
+// ---- 1b. 读 data/teams 球队属性（tier / style / stars / is_host 等）----
+// matches_status.json 的 home/away 是中文名，data/teams/*.json 的主键是 3 位代码，
+// 用 _index.json 的 by_name 字段做中文 → 代码 的映射；对常见中文缩写再兜底一层。
+const teamsIndexPath = path.join(DATA_DIR, 'teams', '_index.json');
+const teamsIndex = fs.existsSync(teamsIndexPath)
+  ? JSON.parse(fs.readFileSync(teamsIndexPath, 'utf-8'))
+  : { by_code: {}, by_name: {}, by_tier: {}, hosts: [], name_variants_to_code: {} };
+const TEAMS_DIR = path.join(DATA_DIR, 'teams');
+const teamDocs = new Map(); // code -> doc
+for (const code of Object.keys(teamsIndex.by_code || {})) {
+  const f = path.join(TEAMS_DIR, `${code}.json`);
+  if (!fs.existsSync(f)) continue;
+  try {
+    teamDocs.set(code, JSON.parse(fs.readFileSync(f, 'utf-8')));
+  } catch (_) { /* 单文件损坏不影响其他 */ }
+}
+// 中文名 → code 的双层查找：先精确 by_name，再查 name_variants_to_code
+const nameToCode = new Map();
+for (const [zh, code] of Object.entries(teamsIndex.by_name || {})) nameToCode.set(zh, code);
+for (const [variant, code] of Object.entries(teamsIndex.name_variants_to_code || {})) nameToCode.set(variant, code);
+// 常见缩写兜底（竞彩赔率文档里有时会用短名）
+const NAME_SHORTCUTS = {
+  '沙特阿拉伯': 'KSA', '沙特': 'KSA',
+  '乌兹别克斯坦': 'UZB', '乌兹别克': 'UZB',
+  '刚果（金）': 'COD', '刚果(金)': 'COD', '民主刚果': 'COD',
+  '哥斯达黎加': 'CRC', '哥斯达': 'CRC',
+  '哈萨克斯坦': 'KAZ', '哈萨克': 'KAZ',
+  '尼日利亚': 'NGA',
+  '威尔士': 'WAL',
+  '波兰': 'POL',
+  '丹麦': 'DEN',
+  '喀麦隆': 'CMR',
+  '塞尔维亚': 'SRB',
+};
+for (const [zh, code] of Object.entries(NAME_SHORTCUTS)) {
+  if (!nameToCode.has(zh)) nameToCode.set(zh, code);
+}
+function resolveTeam(zhName) {
+  if (!zhName) return { code: null, doc: null, tier: null, stars: null, has_scorer_star: null, is_host: null, style: null, confederation: null, fifa_rank: null };
+  const code = nameToCode.get(zhName) || null;
+  const doc = code ? teamDocs.get(code) || null : null;
+  const meta = doc && doc.meta ? doc.meta : {};
+  return {
+    code,
+    doc: doc ? { name: doc.name, nameEn: doc.nameEn, flag: doc.flag } : null,
+    tier: meta.tier || null,
+    stars: Array.isArray(meta.stars) ? meta.stars : [],
+    has_scorer_star: !!meta.has_scorer_star,
+    is_host: !!meta.is_host,
+    style: meta.style || null,
+    confederation: doc && doc.confederation ? doc.confederation : null,
+    fifa_rank: meta.fifa_rank ?? null,
+  };
+}
+const TIER_NUM = { top: 1, second: 2, defensive: 3, weak: 3, unknown: 2.5 };
+function tierNum(t) { return t && TIER_NUM[t] !== undefined ? TIER_NUM[t] : 2.5; }
+console.log(`球队索引：共 ${teamDocs.size} 支球队有属性（data/teams/*.json）`);
+const unresolved = new Set();
+for (const m of status.matches) {
+  [m.home, m.away].forEach((name) => {
+    if (!nameToCode.has(name)) unresolved.add(name);
+  });
+}
+if (unresolved.size) console.log(`  ⚠️ 未在 data/teams 里找到中文映射：${[...unresolved].join('、')}（对应记录 team 字段留 null）`);
+
 // ---- 2. 过滤完赛 + 分桶 ----
 const finishedAll = status.matches.filter((m) => m.status === 'finished');
 // "世界杯"=正赛、"国际赛"=热身——竞彩 league 标签即正赛/热身分流，主建模只吸收前者
@@ -154,6 +219,44 @@ function computeOddsMovement(mid) {
   }
   const spf = summarizeSeries(h.spf_history);
   const rqspf = summarizeSeries(h.rqspf_history);
+
+  // bf / zjq / bqc：dict 类型赔率的 first vs latest 对比
+  function summarizeDictSeries(series) {
+    if (!Array.isArray(series) || series.length === 0) {
+      return { n: 0, open: null, last: null, deltas: null, n_changed: null, biggest_drop: null, biggest_rise: null };
+    }
+    const open = series[0];
+    const last = series[series.length - 1];
+    const oKeys = Object.keys(open.odds || {});
+    const lKeys = Object.keys(last.odds || {});
+    const commonKeys = oKeys.filter(k => k in (last.odds || {}));
+    const deltas = {};
+    let biggestDrop = null;
+    let biggestRise = null;
+    for (const k of commonKeys) {
+      const d = round((last.odds[k] || 0) - (open.odds[k] || 0));
+      deltas[k] = d;
+      // 只追踪有意义的变动（|d| >= 0.1 才计入，避免浮点噪声）
+      if (Math.abs(d) >= 0.1) {
+        if (biggestDrop === null || d < biggestDrop.val) biggestDrop = { key: k, val: d };
+        if (biggestRise === null || d > biggestRise.val) biggestRise = { key: k, val: d };
+      }
+    }
+    const nChanged = Object.values(deltas).filter(v => Math.abs(v) >= 0.1).length;
+    return {
+      n: series.length,
+      open_keys: oKeys.length,
+      last_keys: lKeys.length,
+      deltas,
+      n_changed: nChanged,
+      biggest_drop: biggestDrop,
+      biggest_rise: biggestRise,
+    };
+  }
+  const bf = summarizeDictSeries(h.bf_history);
+  const zjq = summarizeDictSeries(h.zjq_history);
+  const bqc = summarizeDictSeries(h.bqc_history);
+
   // 综合：两边合在一起看是否有"主流向漂移"
   const totalN = spf.n + rqspf.n;
   const anyDrift = (spf.fav_drift === 1 || rqspf.fav_drift === 1) ? 1 : 0;
@@ -161,7 +264,7 @@ function computeOddsMovement(mid) {
   if (spf.delta) allDeltas.push(spf.delta.home, spf.delta.draw, spf.delta.away);
   if (rqspf.delta) allDeltas.push(rqspf.delta.home, rqspf.delta.draw, rqspf.delta.away);
   const maxAbs = allDeltas.length ? round(Math.max(...allDeltas.map((d) => Math.abs(d)))) : null;
-  return { spf, rqspf, summary: { total_n: totalN, any_drift: anyDrift, max_abs_delta: maxAbs } };
+  return { spf, rqspf, bf, zjq, bqc, summary: { total_n: totalN, any_drift: anyDrift, max_abs_delta: maxAbs } };
 }
 
 function buildMerged(m) {
@@ -195,12 +298,18 @@ function buildMerged(m) {
     rqspfHit = fav === rqResult;
   }
 
+  // 球队属性（data/teams）
+  const homeTeam = resolveTeam(m.home);
+  const awayTeam = resolveTeam(m.away);
+
   return {
     mid: m.mid,
     code: m.code,
     league: m.league,
     home: m.home,
     away: m.away,
+    home_code: homeTeam.code,
+    away_code: awayTeam.code,
     kickoff: m.kickoff,
     kickoff_iso: toIso(m.kickoff),
     handicap: m.handicap,
@@ -208,6 +317,13 @@ function buildMerged(m) {
     rqspf: m.rqspf,
     scraped_at: m.scraped_at,
     final_score: r,
+    teams: {
+      home: homeTeam,
+      away: awayTeam,
+      tier_diff: round(tierNum(awayTeam.tier) - tierNum(homeTeam.tier)), // >0 表示主队更强
+      is_derby: homeTeam.confederation && awayTeam.confederation && homeTeam.confederation === awayTeam.confederation,
+      has_host: homeTeam.is_host || awayTeam.is_host,
+    },
     derived: {
       home_goals: homeGoals,
       away_goals: awayGoals,
@@ -244,13 +360,26 @@ writeJson('01_matches_with_odds.json', {
   matches: wcMerged,
 });
 
-// ---- 5. 落 02_feature_records.json（机器可读特征） ----
+// ---- 5. 落 02_feature_records.json（机器可读特征）----
 const features = wcMerged.map((m) => ({
   mid: m.mid,
   code: m.code,
   home: m.home,
   away: m.away,
+  home_code: m.home_code,
+  away_code: m.away_code,
   handicap: m.handicap,
+  // —— 球队属性（data/teams 注入）——
+  home_tier: m.teams?.home?.tier ?? null,
+  away_tier: m.teams?.away?.tier ?? null,
+  tier_diff: m.teams?.tier_diff ?? null,
+  home_has_scorer_star: m.teams?.home?.has_scorer_star ?? false,
+  away_has_scorer_star: m.teams?.away?.has_scorer_star ?? false,
+  home_is_host: m.teams?.home?.is_host ?? false,
+  away_is_host: m.teams?.away?.is_host ?? false,
+  is_same_confederation: !!m.teams?.is_derby,
+  home_style: m.teams?.home?.style ?? null,
+  away_style: m.teams?.away?.style ?? null,
   // spf 特征
   spf_home: m.spf?.home ?? null,
   spf_draw: m.spf?.draw ?? null,

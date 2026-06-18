@@ -1,0 +1,398 @@
+{
+  "generated_at": "2026-06-18T00:13:01.238Z",
+  "target_date": "2026-06-17",
+  "source": "data/odds/<mid>.json (4 场)",
+  "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
+  "summary": {
+    "total": 4,
+    "rqspf_hit": "4/4",
+    "bf_hit": "4/4",
+    "direction_a_3x1": "0/3",
+    "direction_b_2x1": "4/4"
+  },
+  "matches": [
+    {
+      "mid": "2040178",
+      "code": "周二017",
+      "home": "法国",
+      "away": "塞内加尔",
+      "handicap": -1,
+      "spf": {
+        "home": 1.32,
+        "draw": 4.2,
+        "away": 7.45
+      },
+      "rqspf": {
+        "home": 2.07,
+        "draw": 3.45,
+        "away": 2.81
+      },
+      "style": "强vs中",
+      "star": "姆巴佩",
+      "cold": "-",
+      "pre_analysis": "法国有球星姆巴佩但客队塞内加尔同为强队, 买两端(让胜+让负)",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "法国有球星姆巴佩但客队塞内加尔同为强队, 买两端(让胜+让负)"
+      },
+      "bf_picks": [
+        {
+          "score": "3:1",
+          "odds": 8.75,
+          "prob": 0.10113780025284451,
+          "tier": "mid"
+        },
+        {
+          "score": "2:2",
+          "odds": 17,
+          "prob": 0.05205622071837585,
+          "tier": "mid"
+        },
+        {
+          "score": "4:1",
+          "odds": 19,
+          "prob": 0.04657661853749418,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "3:1",
+        "winner": "home",
+        "handicapResult": "home_win"
+      }
+    },
+    {
+      "mid": "2040179",
+      "code": "周二018",
+      "home": "伊拉克",
+      "away": "挪威",
+      "handicap": 2,
+      "spf": null,
+      "rqspf": {
+        "home": 2.3,
+        "draw": 3.88,
+        "away": 2.29
+      },
+      "style": "势均",
+      "star": "无",
+      "cold": "-",
+      "pre_analysis": "|h|>=2大盘, 买两端(让胜+让负), 避开最不可能的正好让平",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "|h|>=2大盘, 买两端(让胜+让负), 避开最不可能的正好让平"
+      },
+      "bf_picks": [
+        {
+          "score": "0:3",
+          "odds": 6.5,
+          "prob": 0.13614703880190607,
+          "tier": "low"
+        },
+        {
+          "score": "1:4",
+          "odds": 15,
+          "prob": 0.058997050147492625,
+          "tier": "mid"
+        },
+        {
+          "score": "1:5",
+          "odds": 28,
+          "prob": 0.03160556257901391,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "1:4",
+        "winner": "away",
+        "handicapResult": "away_win"
+      }
+    },
+    {
+      "mid": "2040180",
+      "code": "周二019",
+      "home": "阿根廷",
+      "away": "阿尔及利亚",
+      "handicap": -1,
+      "spf": {
+        "home": 1.29,
+        "draw": 4.2,
+        "away": 8.6
+      },
+      "rqspf": {
+        "home": 2.09,
+        "draw": 3.17,
+        "away": 2.98
+      },
+      "style": "阿根廷强势",
+      "star": "梅西",
+      "cold": "阿根廷:2022被沙特爆冷",
+      "pre_analysis": "阿根廷有球星梅西+主队爆冷史, 买2边(主胜+客胜)",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "阿根廷有球星梅西+主队爆冷史, 买2边(主胜+客胜)"
+      },
+      "bf_picks": [
+        {
+          "score": "2:0",
+          "odds": 5.15,
+          "prob": 0.17183606839075524,
+          "tier": "low"
+        },
+        {
+          "score": "3:0",
+          "odds": 8.5,
+          "prob": 0.1041124414367517,
+          "tier": "mid"
+        },
+        {
+          "score": "4:0",
+          "odds": 18.5,
+          "prob": 0.04783544606553457,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "3:0",
+        "winner": "home",
+        "handicapResult": "home_win"
+      }
+    },
+    {
+      "mid": "2040181",
+      "code": "周二020",
+      "home": "奥地利",
+      "away": "约旦",
+      "handicap": -1,
+      "spf": {
+        "home": 1.25,
+        "draw": 4.75,
+        "away": 8.4
+      },
+      "rqspf": {
+        "home": 1.78,
+        "draw": 3.9,
+        "away": 3.21
+      },
+      "style": "中vs弱",
+      "star": "无",
+      "cold": "-",
+      "pre_analysis": "spf主胜1.25<1.5 主队强优势, 不被rqspf牵着走, 买让胜+让平",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "draw"
+        ],
+        "reason": "spf主胜1.25<1.5 主队强优势, 不被rqspf牵着走, 买让胜+让平"
+      },
+      "bf_picks": [
+        {
+          "score": "3:0",
+          "odds": 7.5,
+          "prob": 0.11799410029498525,
+          "tier": "low"
+        },
+        {
+          "score": "3:1",
+          "odds": 8.5,
+          "prob": 0.1041124414367517,
+          "tier": "mid"
+        },
+        {
+          "score": "3:2",
+          "odds": 30,
+          "prob": 0.029498525073746312,
+          "tier": "high"
+        }
+      ],
+      "actual": {
+        "score": "3:1",
+        "winner": "home",
+        "handicapResult": "home_win"
+      }
+    }
+  ],
+  "direction_a": {
+    "parlays_3x1": [
+      {
+        "picks": [
+          {
+            "mid": "2040178",
+            "code": "周二017",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.81
+          },
+          {
+            "mid": "2040180",
+            "code": "周二019",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.98
+          },
+          {
+            "mid": "2040181",
+            "code": "周二020",
+            "play": "rqspf",
+            "pick": "draw",
+            "pickLabel": "平",
+            "odds": 3.9
+          }
+        ],
+        "totalOdds": 32.6578
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040179",
+            "code": "周二018",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.3
+          },
+          {
+            "mid": "2040180",
+            "code": "周二019",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.98
+          },
+          {
+            "mid": "2040181",
+            "code": "周二020",
+            "play": "rqspf",
+            "pick": "draw",
+            "pickLabel": "平",
+            "odds": 3.9
+          }
+        ],
+        "totalOdds": 26.7306
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040179",
+            "code": "周二018",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.29
+          },
+          {
+            "mid": "2040180",
+            "code": "周二019",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.98
+          },
+          {
+            "mid": "2040181",
+            "code": "周二020",
+            "play": "rqspf",
+            "pick": "draw",
+            "pickLabel": "平",
+            "odds": 3.9
+          }
+        ],
+        "totalOdds": 26.6144
+      }
+    ]
+  },
+  "direction_b": {
+    "pairs_2x1": [
+      {
+        "a": {
+          "mid": "2040178",
+          "code": "周二017",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 8.75
+        },
+        "b": {
+          "mid": "2040179",
+          "code": "周二018",
+          "play": "bf",
+          "pick": "1:4",
+          "tier": "mid",
+          "odds": 15
+        },
+        "totalOdds": 131.25
+      },
+      {
+        "a": {
+          "mid": "2040179",
+          "code": "周二018",
+          "play": "bf",
+          "pick": "1:4",
+          "tier": "mid",
+          "odds": 15
+        },
+        "b": {
+          "mid": "2040180",
+          "code": "周二019",
+          "play": "bf",
+          "pick": "3:0",
+          "tier": "mid",
+          "odds": 8.5
+        },
+        "totalOdds": 127.5
+      },
+      {
+        "a": {
+          "mid": "2040179",
+          "code": "周二018",
+          "play": "bf",
+          "pick": "1:4",
+          "tier": "mid",
+          "odds": 15
+        },
+        "b": {
+          "mid": "2040181",
+          "code": "周二020",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 8.5
+        },
+        "totalOdds": 127.5
+      },
+      {
+        "a": {
+          "mid": "2040178",
+          "code": "周二017",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 8.75
+        },
+        "b": {
+          "mid": "2040180",
+          "code": "周二019",
+          "play": "bf",
+          "pick": "3:0",
+          "tier": "mid",
+          "odds": 8.5
+        },
+        "totalOdds": 74.375
+      }
+    ]
+  }
+}

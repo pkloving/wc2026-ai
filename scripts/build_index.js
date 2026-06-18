@@ -63,7 +63,9 @@ for (const m of statusDoc.matches) {
     final_score: m.final_score,
     scraped_at: m.scraped_at,
     history_snapshots: histCount,
-    odds_file: m.odds_file
+    odds_file: m.odds_file,
+    // R-014：同步 is_finished_odds 标记
+    is_finished_odds: m.is_finished_odds === true
   };
 
   // 按状态分组

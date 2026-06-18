@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T08:08:00.044Z",
+  "generated_at": "2026-06-17T02:34:11.468Z",
   "target_date": "2026-06-16",
   "unit_stake": 2,
   "source": "data/odds/<mid>.json + data/results/<mid>.json (4 场 2026-06-16)",
@@ -393,10 +393,10 @@
         }
       },
       "actual": {
-        "score": "2:0",
-        "winner": "home",
-        "handicapResult": "home_win",
-        "totalGoals": 2,
+        "score": "2:2",
+        "winner": "draw",
+        "handicapResult": "away_win",
+        "totalGoals": 4,
         "handicap": -1
       }
     }
@@ -703,8 +703,8 @@
             "mid": "2040177",
             "code": "周一016",
             "predicted": "2:0",
-            "actual": "2:0",
-            "hit": true,
+            "actual": "2:2",
+            "hit": false,
             "odds": 5.8,
             "prob": 0.1526
           },
@@ -767,13 +767,13 @@
               "odds": 3.1,
               "prob": 0.2855,
               "actual": {
-                "score": "2:0",
-                "winner": "home",
-                "handicapResult": "home_win",
-                "totalGoals": 2,
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4,
                 "handicap": -1
               },
-              "hit": true
+              "hit": false
             }
           ],
           "totalOdds": 49.8232,
@@ -796,13 +796,13 @@
               "odds": 3.28,
               "prob": 0.2698304949388065,
               "actual": {
-                "score": "2:0",
-                "winner": "home",
-                "handicapResult": "home_win",
-                "totalGoals": 2,
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4,
                 "handicap": -1
               },
-              "hit": false
+              "hit": true
             },
             {
               "mid": "2040174",
@@ -861,13 +861,13 @@
               "odds": 3.28,
               "prob": 0.2698304949388065,
               "actual": {
-                "score": "2:0",
-                "winner": "home",
-                "handicapResult": "home_win",
-                "totalGoals": 2,
+                "score": "2:2",
+                "winner": "draw",
+                "handicapResult": "away_win",
+                "totalGoals": 4,
                 "handicap": -1
               },
-              "hit": false
+              "hit": true
             },
             {
               "mid": "2040174",

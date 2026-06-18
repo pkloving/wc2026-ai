@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T09:19:29.410Z",
+  "generated_at": "2026-06-18T00:13:00.284Z",
   "target_date": "2026-06-14",
   "source": "data/odds/<mid>.json (4 场)",
   "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
@@ -8,7 +8,7 @@
     "rqspf_hit": "4/4",
     "bf_hit": "2/4",
     "direction_a_3x1": "0/3",
-    "direction_b_2x1": "0/3"
+    "direction_b_2x1": "0/4"
   },
   "matches": [
     {
@@ -77,7 +77,7 @@
         "draw": 2.91,
         "away": 2.24
       },
-      "style": "巴西强势",
+      "style": "强vs中",
       "star": "维尼修斯/罗德里戈",
       "cold": "巴西:2022被克罗爆冷",
       "pre_analysis": "巴西有球星维尼修斯/罗德里戈+主队爆冷史, 买2边(客胜+主胜)",
@@ -91,19 +91,19 @@
       },
       "bf_picks": [
         {
-          "score": "2:0",
-          "odds": 7.5,
-          "prob": 0.11799410029498525,
-          "tier": "low"
-        },
-        {
-          "score": "3:0",
-          "odds": 17,
-          "prob": 0.05205622071837585,
+          "score": "3:1",
+          "odds": 11.5,
+          "prob": 0.07695267410542517,
           "tier": "mid"
         },
         {
-          "score": "4:0",
+          "score": "2:2",
+          "odds": 12,
+          "prob": 0.0737463126843658,
+          "tier": "mid"
+        },
+        {
+          "score": "4:1",
           "odds": 45,
           "prob": 0.019665683382497544,
           "tier": "high"
@@ -154,6 +154,12 @@
           "odds": 8.25,
           "prob": 0.10726736390453205,
           "tier": "mid"
+        },
+        {
+          "score": "2:3",
+          "odds": 30,
+          "prob": 0.029498525073746312,
+          "tier": "high"
         }
       ],
       "actual": {
@@ -311,22 +317,41 @@
     "pairs_2x1": [
       {
         "a": {
+          "mid": "2040166",
+          "code": "周六005",
+          "play": "bf",
+          "pick": "0:4",
+          "tier": "mid",
+          "odds": 12
+        },
+        "b": {
           "mid": "2040167",
           "code": "周六006",
           "play": "bf",
-          "pick": "3:0",
+          "pick": "2:2",
           "tier": "mid",
-          "odds": 17
+          "odds": 12
+        },
+        "totalOdds": 144
+      },
+      {
+        "a": {
+          "mid": "2040166",
+          "code": "周六005",
+          "play": "bf",
+          "pick": "0:4",
+          "tier": "mid",
+          "odds": 12
         },
         "b": {
-          "mid": "2040168",
-          "code": "周六007",
+          "mid": "2040167",
+          "code": "周六006",
           "play": "bf",
-          "pick": "0:1",
+          "pick": "3:1",
           "tier": "mid",
-          "odds": 8.25
+          "odds": 11.5
         },
-        "totalOdds": 140.25
+        "totalOdds": 138
       },
       {
         "a": {

@@ -1,0 +1,75 @@
+{
+  "code": "CRO",
+  "name": "克罗地亚",
+  "nameEn": "Croatia",
+  "confederation": "UEFA",
+  "flag": "🇭🇷",
+  "iso2": "hr",
+  "color": "#171796",
+  "meta": {
+    "tier": "second",
+    "style": "中场大师/莫德里奇",
+    "stars": [
+      "莫德里奇"
+    ],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 季军",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "L",
+    "stage": "group",
+    "standings": {
+      "position": 1,
+      "played": 0,
+      "win": 0,
+      "draw": 0,
+      "lose": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040200",
+        "match_id": "M022",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-17T20:00:00Z",
+        "venue": "NRG Stadium, Houston, TX",
+        "role": "away",
+        "opponent_code": "ENG",
+        "opponent_name": "英格兰",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M047",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-23T23:00:00Z",
+        "venue": "BMO Field, Toronto",
+        "role": "away",
+        "opponent_code": "PAN",
+        "opponent_name": "巴拿马",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M068",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-27T21:00:00Z",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "role": "home",
+        "opponent_code": "GHA",
+        "opponent_name": "加纳",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

@@ -1,0 +1,30 @@
+{
+  "code": "ALG",
+  "name": "阿尔及利亚",
+  "nameEn": "Algeria",
+  "confederation": "CAF",
+  "flag": "🇩🇿",
+  "iso2": "dz",
+  "color": "#006233",
+  "meta": {
+    "tier": "defensive",
+    "style": "防守/组织",
+    "stars": [
+      "马赫雷斯"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛（2014 参赛）",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": null,
+    "stage": "group",
+    "standings": null,
+    "matches": []
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

@@ -1,0 +1,80 @@
+{
+  "code": "EGY",
+  "name": "埃及",
+  "nameEn": "Egypt",
+  "confederation": "CAF",
+  "flag": "🇪🇬",
+  "iso2": "eg",
+  "color": "#CE1126",
+  "meta": {
+    "tier": "second",
+    "style": "萨拉赫驱动",
+    "stars": [
+      "萨拉赫"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "G",
+    "stage": "group",
+    "standings": {
+      "position": 4,
+      "played": 1,
+      "win": 0,
+      "draw": 1,
+      "lose": 0,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "pts": 1
+    },
+    "matches": [
+      {
+        "mid": "2040175",
+        "match_id": "M014",
+        "stage": "group",
+        "group": "G",
+        "date": "2026-06-15T19:00:00Z",
+        "venue": "Estadio BBVA, Monterrey",
+        "role": "away",
+        "opponent_code": "BEL",
+        "opponent_name": "比利时",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "draw"
+      },
+      {
+        "match_id": "M040",
+        "stage": "group",
+        "group": "G",
+        "date": "2026-06-22T01:00:00Z",
+        "venue": "Lumen Field, Seattle, WA",
+        "role": "away",
+        "opponent_code": "NZL",
+        "opponent_name": "新西兰",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M066",
+        "stage": "group",
+        "group": "G",
+        "date": "2026-06-27T03:00:00Z",
+        "venue": "SoFi Stadium, Los Angeles, CA",
+        "role": "home",
+        "opponent_code": "IRN",
+        "opponent_name": "伊朗",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

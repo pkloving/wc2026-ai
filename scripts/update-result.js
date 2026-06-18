@@ -120,14 +120,44 @@ if (fs.existsSync(resultFile)) {
 fs.writeFileSync(resultFile, JSON.stringify(merged, null, 2) + '\n', 'utf-8');
 
 // 同时更新 matches_status.json 的 status 为 finished
+// R-014：完赛时同步翻 is_finished_odds=true（赔率定格，后续不再拉）
 const statusFile = path.join(__dirname, '..', 'data', 'matches_status.json');
+let touched = [];
 if (fs.existsSync(statusFile)) {
   const status = JSON.parse(fs.readFileSync(statusFile, 'utf-8'));
   const idx = status.matches.findIndex(m => m.mid === matchId);
-  if (idx !== -1 && status.matches[idx].status !== 'finished') {
-    status.matches[idx].status = 'finished';
-    fs.writeFileSync(statusFile, JSON.stringify(status, null, 2) + '\n', 'utf-8');
-    console.log(`${matchId} matches_status.json -> finished`);
+  if (idx !== -1) {
+    let changed = false;
+    if (status.matches[idx].status !== 'finished') {
+      status.matches[idx].status = 'finished';
+      changed = true;
+      touched.push('matches_status.status=finished');
+    }
+    if (status.matches[idx].is_finished_odds !== true) {
+      status.matches[idx].is_finished_odds = true;
+      changed = true;
+      touched.push('matches_status.is_finished_odds=true');
+    }
+    if (changed) {
+      fs.writeFileSync(statusFile, JSON.stringify(status, null, 2) + '\n', 'utf-8');
+      console.log(`${matchId} ${touched.join(', ')}`);
+    }
+  }
+}
+
+// 同步翻 odds/<mid>.json 的 is_finished_odds
+const oddsFile = path.join(__dirname, '..', 'data', 'odds', `${matchId}.json`);
+if (fs.existsSync(oddsFile)) {
+  try {
+    const od = JSON.parse(fs.readFileSync(oddsFile, 'utf-8'));
+    if (!od.basic) od.basic = {};
+    if (od.basic.is_finished_odds !== true) {
+      od.basic.is_finished_odds = true;
+      fs.writeFileSync(oddsFile, JSON.stringify(od, null, 2) + '\n', 'utf-8');
+      console.log(`${matchId} odds/<mid>.json -> is_finished_odds=true`);
+    }
+  } catch (e) {
+    console.warn(`⚠️  ${matchId} odds/<mid>.json 读取/写入失败：${e.message}`);
   }
 }
 

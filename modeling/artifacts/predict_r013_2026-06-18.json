@@ -1,0 +1,374 @@
+{
+  "generated_at": "2026-06-18T00:26:44.783Z",
+  "target_date": "2026-06-18",
+  "mode": "predict",
+  "source": "data/odds/<mid>.json (4 场)",
+  "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
+  "matches": [
+    {
+      "mid": "2040182",
+      "code": "周三021",
+      "home": "葡萄牙",
+      "away": "刚果(金)",
+      "handicap": -2,
+      "spf": {
+        "home": 1.13,
+        "draw": 5.86,
+        "away": 13.5
+      },
+      "rqspf": {
+        "home": 2.47,
+        "draw": 3.92,
+        "away": 2.13
+      },
+      "style": "中vs弱",
+      "star": "C罗",
+      "cold": "葡萄牙:2022被摩洛哥淘汰",
+      "pre_analysis": "|h|>=2大盘, 买两端(让胜+让负), 避开最不可能的正好让平",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "|h|>=2大盘, 买两端(让胜+让负), 避开最不可能的正好让平"
+      },
+      "bf_picks": [
+        {
+          "score": "3:0",
+          "odds": 5.25,
+          "prob": 0.1685630004214075,
+          "tier": "low"
+        },
+        {
+          "score": "4:0",
+          "odds": 11,
+          "prob": 0.08045052292839903,
+          "tier": "mid"
+        },
+        {
+          "score": "5:0",
+          "odds": 23,
+          "prob": 0.038476337052712584,
+          "tier": "high"
+        }
+      ]
+    },
+    {
+      "mid": "2040183",
+      "code": "周三022",
+      "home": "英格兰",
+      "away": "克罗地亚",
+      "handicap": -1,
+      "spf": {
+        "home": 1.52,
+        "draw": 3.55,
+        "away": 5.27
+      },
+      "rqspf": {
+        "home": 2.73,
+        "draw": 3.22,
+        "away": 2.21
+      },
+      "style": "中vs中",
+      "star": "凯恩/贝林",
+      "cold": "英格兰:2022被法国淘汰",
+      "pre_analysis": "英格兰有球星凯恩/贝林但客队克罗地亚同为强队, 买两端(让胜+让负)",
+      "direction": "home",
+      "rqspf_picks": {
+        "picks": [
+          "home",
+          "away"
+        ],
+        "reason": "英格兰有球星凯恩/贝林但客队克罗地亚同为强队, 买两端(让胜+让负)"
+      },
+      "bf_picks": [
+        {
+          "score": "1:1",
+          "odds": 6.1,
+          "prob": 0.14507471347744091,
+          "tier": "low"
+        },
+        {
+          "score": "3:1",
+          "odds": 13,
+          "prob": 0.06807351940095303,
+          "tier": "mid"
+        },
+        {
+          "score": "2:3",
+          "odds": 60,
+          "prob": 0.014749262536873156,
+          "tier": "high"
+        }
+      ]
+    },
+    {
+      "mid": "2040184",
+      "code": "周三023",
+      "home": "加纳",
+      "away": "巴拿马",
+      "handicap": -1,
+      "spf": {
+        "home": 2.03,
+        "draw": 3,
+        "away": 3.29
+      },
+      "rqspf": {
+        "home": 4.37,
+        "draw": 3.63,
+        "away": 1.6
+      },
+      "style": "势均",
+      "star": "无",
+      "cold": "-",
+      "pre_analysis": "spf2.03 1.5-2.5 调整后客胜领先2.03, 单选",
+      "direction": "away",
+      "rqspf_picks": {
+        "picks": [
+          "away"
+        ],
+        "reason": "spf2.03 1.5-2.5 调整后客胜领先2.03, 单选"
+      },
+      "bf_picks": [
+        {
+          "score": "1:1",
+          "odds": 5.5,
+          "prob": 0.16090104585679807,
+          "tier": "low"
+        },
+        {
+          "score": "0:1",
+          "odds": 8.7,
+          "prob": 0.10171905197843559,
+          "tier": "mid"
+        },
+        {
+          "score": "0:2",
+          "odds": 17,
+          "prob": 0.05205622071837585,
+          "tier": "mid"
+        }
+      ]
+    },
+    {
+      "mid": "2040185",
+      "code": "周三024",
+      "home": "乌兹别克斯坦",
+      "away": "哥伦比亚",
+      "handicap": 1,
+      "spf": {
+        "home": 9.65,
+        "draw": 4.85,
+        "away": 1.22
+      },
+      "rqspf": {
+        "home": 3.4,
+        "draw": 3.46,
+        "away": 1.83
+      },
+      "style": "势均",
+      "star": "无",
+      "cold": "-",
+      "pre_analysis": "调整后 客胜@1.83 领先1.57, 单选",
+      "direction": "away",
+      "rqspf_picks": {
+        "picks": [
+          "away"
+        ],
+        "reason": "调整后 客胜@1.83 领先1.57, 单选"
+      },
+      "bf_picks": [
+        {
+          "score": "0:2",
+          "odds": 5,
+          "prob": 0.1769911504424779,
+          "tier": "low"
+        },
+        {
+          "score": "0:3",
+          "odds": 7.15,
+          "prob": 0.12377003527446007,
+          "tier": "low"
+        },
+        {
+          "score": "1:3",
+          "odds": 10,
+          "prob": 0.08849557522123895,
+          "tier": "mid"
+        }
+      ]
+    }
+  ],
+  "direction_a": {
+    "parlays_3x1": [
+      {
+        "picks": [
+          {
+            "mid": "2040182",
+            "code": "周三021",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.47
+          },
+          {
+            "mid": "2040183",
+            "code": "周三022",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.73
+          },
+          {
+            "mid": "2040185",
+            "code": "周三024",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 1.83
+          }
+        ],
+        "totalOdds": 12.3399
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040182",
+            "code": "周三021",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.47
+          },
+          {
+            "mid": "2040183",
+            "code": "周三022",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.73
+          },
+          {
+            "mid": "2040184",
+            "code": "周三023",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 1.6
+          }
+        ],
+        "totalOdds": 10.789
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040182",
+            "code": "周三021",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.13
+          },
+          {
+            "mid": "2040183",
+            "code": "周三022",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.73
+          },
+          {
+            "mid": "2040185",
+            "code": "周三024",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 1.83
+          }
+        ],
+        "totalOdds": 10.6413
+      }
+    ]
+  },
+  "direction_b": {
+    "pairs_2x1": [
+      {
+        "a": {
+          "mid": "2040182",
+          "code": "周三021",
+          "play": "bf",
+          "pick": "4:0",
+          "tier": "mid",
+          "odds": 11
+        },
+        "b": {
+          "mid": "2040183",
+          "code": "周三022",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 13
+        },
+        "totalOdds": 143
+      },
+      {
+        "a": {
+          "mid": "2040183",
+          "code": "周三022",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 13
+        },
+        "b": {
+          "mid": "2040185",
+          "code": "周三024",
+          "play": "bf",
+          "pick": "1:3",
+          "tier": "mid",
+          "odds": 10
+        },
+        "totalOdds": 130
+      },
+      {
+        "a": {
+          "mid": "2040183",
+          "code": "周三022",
+          "play": "bf",
+          "pick": "3:1",
+          "tier": "mid",
+          "odds": 13
+        },
+        "b": {
+          "mid": "2040184",
+          "code": "周三023",
+          "play": "bf",
+          "pick": "0:1",
+          "tier": "mid",
+          "odds": 8.7
+        },
+        "totalOdds": 113.1
+      },
+      {
+        "a": {
+          "mid": "2040182",
+          "code": "周三021",
+          "play": "bf",
+          "pick": "4:0",
+          "tier": "mid",
+          "odds": 11
+        },
+        "b": {
+          "mid": "2040185",
+          "code": "周三024",
+          "play": "bf",
+          "pick": "1:3",
+          "tier": "mid",
+          "odds": 10
+        },
+        "totalOdds": 110
+      }
+    ]
+  }
+}

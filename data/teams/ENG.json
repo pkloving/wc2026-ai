@@ -1,0 +1,76 @@
+{
+  "code": "ENG",
+  "name": "英格兰",
+  "nameEn": "England",
+  "confederation": "UEFA",
+  "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  "iso2": "gb-eng",
+  "color": "#CF142B",
+  "meta": {
+    "tier": "second",
+    "style": "凯恩+贝林/力量+技术",
+    "stars": [
+      "凯恩",
+      "贝林厄姆"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 8强",
+    "cold_history": "2022被法国淘汰"
+  },
+  "wc2026": {
+    "group": "L",
+    "stage": "group",
+    "standings": {
+      "position": 2,
+      "played": 0,
+      "win": 0,
+      "draw": 0,
+      "lose": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040200",
+        "match_id": "M022",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-17T20:00:00Z",
+        "venue": "NRG Stadium, Houston, TX",
+        "role": "home",
+        "opponent_code": "CRO",
+        "opponent_name": "克罗地亚",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M046",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-23T20:00:00Z",
+        "venue": "Estadio BBVA, Monterrey",
+        "role": "home",
+        "opponent_code": "GHA",
+        "opponent_name": "加纳",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M067",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-27T21:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "away",
+        "opponent_code": "PAN",
+        "opponent_name": "巴拿马",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

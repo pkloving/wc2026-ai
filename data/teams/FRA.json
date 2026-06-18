@@ -1,0 +1,80 @@
+{
+  "code": "FRA",
+  "name": "法国",
+  "nameEn": "France",
+  "confederation": "UEFA",
+  "flag": "🇫🇷",
+  "iso2": "fr",
+  "color": "#0055A4",
+  "meta": {
+    "tier": "top",
+    "style": "速度+身体/姆巴佩驱动",
+    "stars": [
+      "姆巴佩"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 亚军",
+    "cold_history": "2022小组第2出线"
+  },
+  "wc2026": {
+    "group": "I",
+    "stage": "group",
+    "standings": {
+      "position": 2,
+      "played": 1,
+      "win": 1,
+      "draw": 0,
+      "lose": 0,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "pts": 3
+    },
+    "matches": [
+      {
+        "mid": "2040178",
+        "match_id": "M017",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-16T19:00:00Z",
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "role": "home",
+        "opponent_code": "SEN",
+        "opponent_name": "塞内加尔",
+        "status": "finished",
+        "score_my": 3,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "win"
+      },
+      {
+        "match_id": "M042",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-22T21:00:00Z",
+        "venue": "Arrowhead Stadium, Kansas City, MO",
+        "role": "home",
+        "opponent_code": "IRQ",
+        "opponent_name": "伊拉克",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M061",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-26T19:00:00Z",
+        "venue": "Estadio Akron, Guadalajara",
+        "role": "away",
+        "opponent_code": "NOR",
+        "opponent_name": "挪威",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

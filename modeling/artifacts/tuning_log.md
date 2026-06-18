@@ -624,3 +624,132 @@ Bugs fixed:
 records/backtest_2026-06-13.md 加 R-012 对比段 (三方汇总 + 选法对比表)
 ```
 
+---
+
+## 调优日志 - 2026/6/17 12:00:00 (中等热门降档 + 平局保护 v3)
+
+### 抽样
+- **荷兰 vs 日本** (周日010 · mid=2040171)
+- 开赛时间: 2026-06-15 04:00
+- 让球: -1
+- spf: 胜 1.72 / 平 3.3 / 负 4.1（p0_home=0.52, p0_max=0.52 ∈ [0.40, 0.60)）
+- 实际: **2-2**（半场 0-0；胜负=平；让球=主负；总进球=4）
+
+### 预测 vs 实际
+| 预测项 | 预测 | 实际 | 命中 |
+|--------|------|------|------|
+| 胜负 | 主胜 ⭐⭐（spf_min_odds_direction, p0_home=0.52）| 平 | ❌ |
+| 让球盘 | skip（让-1 主胜率 43% < 55%）| 主负 | ✅ 决策正确 |
+| 比分 | 1-0 (12.3%) | 2-2 (3.74%, Top-3 之外) | ❌ |
+
+### 实际赔率
+- 胜/平/负：1.72 / 3.3 / 4.1
+- 让球胜/平/负：3.42 / 3.42 / 1.84
+
+### 根因分析（**今天发现的问题**）
+
+12 场世界杯样本中 **p0_max ∈ [0.40, 0.60) 区间 5 场**：
+| 比赛 | p0_max | 实际winner |
+|------|--------|-----------|
+| 周五003 加拿大 vs 波黑 | 0.55 | draw |
+| 周五004 美国 vs 巴拉圭 | 0.49 | home |
+| 周六006 巴西 vs 摩洛哥 | 0.59 | draw |
+| 周日010 荷兰 vs 日本 | 0.48 | draw |
+| 周日012 瑞典 vs 突尼斯 | 0.53 | home |
+
+- **H/D/A = 2/3/0 → 平局率 60%**，远超其他区间（其他 7 场平局率 0%）
+- 现行 win_model 对该区间无降档处理 → 一律 ⭐⭐ 选主胜（命中率仅 40%）
+- 现行 score_model Top-3 在该区间系统性忽视平局（5 场 Top-3 命中 1 场 = 20%）
+
+**业务影响**：荷兰 vs 日本（spf=1.72 落 [0.4, 0.6) 区间）选主胜错；Top-3 全是主胜比分（1-0/1-1/2-0），2-2 排名 #8。
+
+### 改了什么（**why + diff**）
+
+#### why 一句话
+win_model + score_model 在"中等热门"区间对平局信号不敏感 → 新增 [0.40, 0.60) 降档规则 + Top-3 平局保护 v3。
+
+#### 1. `modeling/artifacts/win_model.json`
+- `rules` 加 `mid_fav_p0_low: 0.40`, `mid_fav_p0_high: 0.60`
+- `calibration` 加 `mid_fav_p0_n: 5`, `mid_fav_p0hit_rate: 0.4`, `mid_fav_p0draw_rate: 0.6`
+- `confidence_mapping` 加 `moderate_low: 1`（⭐ 一档）
+- `decision_logic.confidence_rules` 加 2 条：spf 1.5-2.5 + p0_max ∈ [0.4, 0.6) → ⭐，否则 → ⭐⭐
+
+#### 2. `modeling/artifacts/score_model.json`
+- `note` 加 v3 段：p0_max ∈ [0.40, 0.60) 区间 Top-3 强制含 1 个平局候选
+- 新增 `mid_fav_p0_range: [0.4, 0.6]`, `mid_fav_topk_force_draw: true`（标记位，v3 实施时由 05_predict_unplayed 读取）
+
+#### 3. `modeling/scripts/02_train_win_model.js`
+- 加 `midFav` 集合（p0_max ∈ [0.40, 0.60)）统计命中/平局率
+- `pickByP0Max()` 辅助函数（与 predictWin pick 逻辑一致）
+- artifact 输出 `mid_fav_p0_n` / `mid_fav_p0hit_rate` / `mid_fav_p0draw_rate`
+- console 摘要加 "中等热门 [0.4, 0.6)：n=5, 命中 2/5 (40%), 平局率 3/5 (60%)"
+
+#### 4. `modeling/scripts/04_train_score_model.js`
+- `model` 对象加 `mid_fav_p0_range` + `mid_fav_topk_force_draw` + note v3 段
+- v2 公式不变（仅文档化平局保护思路，实施留待下轮 05_predict_unplayed）
+
+#### 5. `modeling/scripts/05_predict_unplayed.js`
+- `predictWin` 加 `moderate_low` 分支：spf ∈ [1.5, 2.5) 且 p0_max ∈ [mid_fav_p0_low, mid_fav_p0_high) → confidence=1, label="中等热门(降档)"
+- 用 `?? 0.40` 防御 win_model.json 无 mid_fav_p0_low 字段时仍可运行
+
+### 验证
+- `node --check` 3 个脚本通过
+- `node 02_train_win_model.js` 落盘：mid_fav_p0_n=5, mid_fav_p0hit_rate=0.4, mid_fav_p0draw_rate=0.6 ✓
+- `node 04_train_score_model.js` 落盘：mid_fav_p0_range=[0.4,0.6], mid_fav_topk_force_draw=true ✓
+- `node 05_predict_unplayed.js` 重跑：8 场未开赛里 2 场落 [0.4, 0.6) 区间被降档（周三021 英格兰vs克罗地亚、周三022 加纳vs巴拿马，⭐⭐→⭐）
+- JSON 合法性 ✓
+
+### 调优后立即生效的样例
+- **周三021 英格兰 vs 克罗地亚**：spf=1.55-2.5 区间, p0_max=0.55 ∈ [0.4, 0.6) → 选主胜 ⭐（降档）
+- **周三022 加纳 vs 巴拿马**：spf=1.6 区间, p0_max=0.5 ∈ [0.4, 0.6) → 选主胜 ⭐（降档）
+- 其他 5 场保持原样（大热门 4 场 ⭐⭐⭐，客胜热门 1 场 ⭐⭐⭐）
+
+### 进一步调优建议（**未改，留给下轮**）
+1. **实施 score_model v3 真正的 Top-3 平局保护**：在 05_predict_unplayed.js 的 predictScore 函数加：当 p0_max ∈ [0.40, 0.60) 且 Top-3 不含 h==a 比分时，从 grid 找一个最高概率 h==a 替换 Top-3 末位。**今天仅做了 artifact 标记位，未做实施**。
+2. **采样扩到 7 天 (6-9 ~ 6-15)**：当前 12 场样本里 5 场落 [0.4, 0.6) 区间，统计显著性弱；建议待 6-17/18/19 新完赛后再校准阈值（可能缩到 [0.45, 0.55)）。
+3. **win_model 信心档与 R-012 方向 C 联动**：R-012 方向 C 主流单关 odds 1.4-2.5x 区间与本调优 moderate 区间重叠，需联动验证方向 C 是否仍命中。
+4. **样本量仍是核心瓶颈**：60 场总样本中仅 12 场世界杯正赛，且 R-010/011/012 反思均依赖这 12 场 → 6-17 起每天加 3-4 场新样本，1 周后可达 30+ 场。
+
+### 状态
+- [x] win_model + score_model artifact 加 v3 标记位
+- [x] 02_train_win_model.js + 04_train_score_model.js 同步输出
+- [x] 05_predict_unplayed.js 实施 moderate_low 降档逻辑
+- [x] predict_unplayed.json 重跑验证（8 场 2 场降档生效）
+- [x] tuning_log.md 追条（本文档）
+- [ ] commit 4 个文件（等用户拍板）
+- [ ] 实施 score_model v3 真正的 Top-3 平局保护（等用户拍板）
+- [ ] 6-17 4 场完赛后回测本调优（p0_max ∈ [0.4, 0.6) 区间样本 +1）
+
+### 建议的 commit message
+```
+feat(modeling): win_model + score_model v3 中等热门降档 + 平局保护标记
+
+12 场世界杯样本里 p0_max ∈ [0.40, 0.60) 区间 5 场，平局率 60%
+（其他 7 场平局率 0%），但 win_model / score_model 都未对此区间
+做特殊处理 → 荷兰 vs 日本（p0_max=0.52）选主胜 ⭐⭐ 错，Top-3
+全是主胜比分（2-2 排名 #8）。
+
+New rules:
+  - win_model.moderate_low: spf 1.5-2.5 + p0_max ∈ [0.40, 0.60)
+    → 信心降 1 档 (⭐⭐ → ⭐)，5 场样本命中率 40%、平局率 60%
+  - score_model.mid_fav_p0_range: [0.40, 0.60) 标记位
+  - score_model.mid_fav_topk_force_draw: true (标记位, 待实施)
+
+Files changed:
+  - modeling/artifacts/win_model.json (+15)
+  - modeling/artifacts/score_model.json (+6)
+  - modeling/scripts/02_train_win_model.js (+27, midFav 统计)
+  - modeling/scripts/04_train_score_model.js (+4, v3 note)
+  - modeling/scripts/05_predict_unplayed.js (+10, moderate_low 降档)
+
+Verified:
+  - 02_train 输出 mid_fav_p0_n=5, p0hit=0.4, p0draw=0.6 ✓
+  - 05_predict 8 场里 2 场 (英格兰vs克罗地亚, 加纳vs巴拿马) 降档生效 ✓
+  - 3 脚本 node --check 通过, JSON 合法
+
+NOT yet done (next round):
+  - score_model v3 真正的 Top-3 平局保护实施 (05_predict predictScore)
+  - 6-17 完赛 4 场后回测本调优
+```
+
+

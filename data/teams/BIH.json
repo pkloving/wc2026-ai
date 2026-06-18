@@ -1,0 +1,78 @@
+{
+  "code": "BIH",
+  "name": "波黑",
+  "nameEn": "Bosnia-Herzegovina",
+  "confederation": "UEFA",
+  "flag": "🇧🇦",
+  "iso2": "ba",
+  "color": "#002395",
+  "meta": {
+    "tier": "weak",
+    "style": "中场技术",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "B",
+    "stage": "group",
+    "standings": {
+      "position": 1,
+      "played": 1,
+      "win": 0,
+      "draw": 1,
+      "lose": 0,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "pts": 1
+    },
+    "matches": [
+      {
+        "mid": "2040164",
+        "match_id": "M003",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-12T19:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "away",
+        "opponent_code": "CAN",
+        "opponent_name": "加拿大",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "draw"
+      },
+      {
+        "match_id": "M026",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-18T19:00:00Z",
+        "venue": "Arrowhead Stadium, Kansas City, MO",
+        "role": "away",
+        "opponent_code": "SUI",
+        "opponent_name": "瑞士",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M050",
+        "stage": "group",
+        "group": "B",
+        "date": "2026-06-24T19:00:00Z",
+        "venue": "SoFi Stadium, Los Angeles, CA",
+        "role": "home",
+        "opponent_code": "QAT",
+        "opponent_name": "卡塔尔",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T01:08:58.253Z",
+  "generated_at": "2026-06-17T23:45:33.733Z",
   "note": "3 场国际赛热身，不进主建模（避免污染世界杯特征）",
   "total": 3,
   "matches": [
@@ -9,6 +9,8 @@
       "league": "国际赛",
       "home": "荷兰",
       "away": "乌兹别克",
+      "home_code": "NED",
+      "away_code": "UZB",
       "kickoff": "2026-06-09 02:45",
       "kickoff_iso": "2026-06-09T02:45:00+08:00",
       "handicap": -2,
@@ -18,11 +20,11 @@
         "away": 12.5
       },
       "rqspf": {
-        "home": 2.78,
-        "draw": 3.55,
-        "away": 2.05
+        "home": 2.65,
+        "draw": 3.34,
+        "away": 2.21
       },
-      "scraped_at": "2026-06-08T05:51:21.856Z",
+      "scraped_at": "2026-06-17T05:49:56.298Z",
       "final_score": {
         "matchId": "2040145",
         "homeScore": 2,
@@ -54,6 +56,44 @@
         "wentToPenalties": false,
         "penaltyScore": null
       },
+      "teams": {
+        "home": {
+          "code": "NED",
+          "doc": {
+            "name": "荷兰",
+            "nameEn": "Netherlands",
+            "flag": "🇳🇱"
+          },
+          "tier": "second",
+          "stars": [
+            "德容",
+            "加克波"
+          ],
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "全攻全守/343",
+          "confederation": "UEFA",
+          "fifa_rank": null
+        },
+        "away": {
+          "code": "UZB",
+          "doc": {
+            "name": "乌兹别克斯坦",
+            "nameEn": "Uzbekistan",
+            "flag": "🇺🇿"
+          },
+          "tier": "weak",
+          "stars": [],
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": null,
+          "confederation": "AFC",
+          "fifa_rank": null
+        },
+        "tier_diff": 1,
+        "is_derby": false,
+        "has_host": false
+      },
       "derived": {
         "home_goals": 2,
         "away_goals": 1,
@@ -68,10 +108,10 @@
           "vig": 0.12813315339631148
         },
         "rqspf_implied": {
-          "p0_home": 0.3185528878772625,
-          "p0_draw": 0.24945831783064498,
-          "p0_away": 0.4319887942920926,
-          "vig": 0.1292072491096783
+          "p0_home": 0.33416783995581495,
+          "p0_draw": 0.26513316643200885,
+          "p0_away": 0.40069899361217626,
+          "vig": 0.1292483759536336
         },
         "spf_hit": true,
         "rqspf_hit": true,
@@ -118,26 +158,26 @@
             "p0_delta_away": 0
           },
           "rqspf": {
-            "n": 3,
+            "n": 4,
             "open": {
               "home": 2.62,
               "draw": 3.85,
               "away": 2.05
             },
             "last": {
-              "home": 2.78,
-              "draw": 3.55,
-              "away": 2.05
+              "home": 2.65,
+              "draw": 3.34,
+              "away": 2.21
             },
             "delta": {
-              "home": 0.16,
-              "draw": -0.3,
-              "away": 0
+              "home": 0.03,
+              "draw": -0.51,
+              "away": 0.16
             },
             "range": {
               "home": 0.16,
-              "draw": 0.3,
-              "away": 0
+              "draw": 0.51,
+              "away": 0.16
             },
             "fav_open": "away",
             "fav_last": "away",
@@ -149,19 +189,97 @@
               "vig": 0.12922452710201737
             },
             "p0_last": {
-              "p0_home": 0.3185528878772625,
-              "p0_draw": 0.24945831783064498,
-              "p0_away": 0.4319887942920926,
-              "vig": 0.1292072491096783
+              "p0_home": 0.33416783995581495,
+              "p0_draw": 0.26513316643200885,
+              "p0_away": 0.40069899361217626,
+              "vig": 0.1292483759536336
             },
-            "p0_delta_home": -0.019,
-            "p0_delta_draw": 0.019,
-            "p0_delta_away": 0
+            "p0_delta_home": -0.004,
+            "p0_delta_draw": 0.035,
+            "p0_delta_away": -0.031
+          },
+          "bf": {
+            "n": 1,
+            "open_keys": 31,
+            "last_keys": 31,
+            "deltas": {
+              "05:00": 0,
+              "平其它": 0,
+              "胜其它": 0,
+              "01:00": 0,
+              "05:02": 0,
+              "05:01": 0,
+              "负其它": 0,
+              "02:04": 0,
+              "02:05": 0,
+              "02:02": 0,
+              "02:03": 0,
+              "02:00": 0,
+              "02:01": 0,
+              "03:03": 0,
+              "03:01": 0,
+              "03:02": 0,
+              "03:00": 0,
+              "00:01": 0,
+              "00:00": 0,
+              "00:03": 0,
+              "00:02": 0,
+              "00:05": 0,
+              "00:04": 0,
+              "04:02": 0,
+              "04:01": 0,
+              "04:00": 0,
+              "01:02": 0,
+              "01:01": 0,
+              "01:04": 0,
+              "01:03": 0,
+              "01:05": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "zjq": {
+            "n": 1,
+            "open_keys": 8,
+            "last_keys": 8,
+            "deltas": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7+": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "bqc": {
+            "n": 1,
+            "open_keys": 9,
+            "last_keys": 9,
+            "deltas": {
+              "胜胜": 0,
+              "胜平": 0,
+              "胜负": 0,
+              "平胜": 0,
+              "平平": 0,
+              "平负": 0,
+              "负胜": 0,
+              "负平": 0,
+              "负负": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
           },
           "summary": {
-            "total_n": 4,
+            "total_n": 5,
             "any_drift": 0,
-            "max_abs_delta": 0.3
+            "max_abs_delta": 0.51
           }
         }
       }
@@ -172,16 +290,18 @@
       "league": "国际赛",
       "home": "法国",
       "away": "北爱尔兰",
+      "home_code": "FRA",
+      "away_code": "NIR",
       "kickoff": "2026-06-09 03:10",
       "kickoff_iso": "2026-06-09T03:10:00+08:00",
       "handicap": -2,
       "spf": null,
       "rqspf": {
-        "home": 1.95,
-        "draw": 3.6,
-        "away": 2.95
+        "home": 1.82,
+        "draw": 3.96,
+        "away": 3.05
       },
-      "scraped_at": "2026-06-08T05:52:38.001Z",
+      "scraped_at": "2026-06-17T05:49:56.430Z",
       "final_score": {
         "matchId": "2040146",
         "homeScore": 3,
@@ -219,6 +339,43 @@
         "wentToPenalties": false,
         "penaltyScore": null
       },
+      "teams": {
+        "home": {
+          "code": "FRA",
+          "doc": {
+            "name": "法国",
+            "nameEn": "France",
+            "flag": "🇫🇷"
+          },
+          "tier": "top",
+          "stars": [
+            "姆巴佩"
+          ],
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "速度+身体/姆巴佩驱动",
+          "confederation": "UEFA",
+          "fifa_rank": null
+        },
+        "away": {
+          "code": "NIR",
+          "doc": {
+            "name": "北爱尔兰",
+            "nameEn": "Northern Ireland",
+            "flag": "🇬🇧"
+          },
+          "tier": "weak",
+          "stars": [],
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "英式/防守",
+          "confederation": "UEFA",
+          "fifa_rank": null
+        },
+        "tier_diff": 2,
+        "is_derby": true,
+        "has_host": false
+      },
       "derived": {
         "home_goals": 3,
         "away_goals": 1,
@@ -228,10 +385,10 @@
         "actual_handicap_result": "draw",
         "spf_implied": null,
         "rqspf_implied": {
-          "p0_home": 0.4539916639948702,
-          "p0_draw": 0.24591215133055466,
-          "p0_away": 0.30009618467457516,
-          "vig": 0.1295813414457483
+          "p0_home": 0.4863062787382933,
+          "p0_draw": 0.22350440083426618,
+          "p0_away": 0.29018932042744067,
+          "vig": 0.12984465443481819
         },
         "spf_hit": null,
         "rqspf_hit": false,
@@ -252,26 +409,26 @@
             "p0_delta_away": null
           },
           "rqspf": {
-            "n": 3,
+            "n": 4,
             "open": {
               "home": 1.92,
               "draw": 3.9,
               "away": 2.85
             },
             "last": {
-              "home": 1.95,
-              "draw": 3.6,
-              "away": 2.95
+              "home": 1.82,
+              "draw": 3.96,
+              "away": 3.05
             },
             "delta": {
-              "home": 0.03,
-              "draw": -0.3,
-              "away": 0.1
+              "home": -0.1,
+              "draw": 0.06,
+              "away": 0.2
             },
             "range": {
-              "home": 0.03,
-              "draw": 0.3,
-              "away": 0.1
+              "home": 0.13,
+              "draw": 0.36,
+              "away": 0.2
             },
             "fav_open": "home",
             "fav_last": "home",
@@ -283,19 +440,97 @@
               "vig": 0.128120782726046
             },
             "p0_last": {
-              "p0_home": 0.4539916639948702,
-              "p0_draw": 0.24591215133055466,
-              "p0_away": 0.30009618467457516,
-              "vig": 0.1295813414457483
+              "p0_home": 0.4863062787382933,
+              "p0_draw": 0.22350440083426618,
+              "p0_away": 0.29018932042744067,
+              "vig": 0.12984465443481819
             },
-            "p0_delta_home": -0.008,
-            "p0_delta_draw": 0.019,
-            "p0_delta_away": -0.011
+            "p0_delta_home": 0.025,
+            "p0_delta_draw": -0.004,
+            "p0_delta_away": -0.021
+          },
+          "bf": {
+            "n": 1,
+            "open_keys": 31,
+            "last_keys": 31,
+            "deltas": {
+              "05:00": 0,
+              "平其它": 0,
+              "胜其它": 0,
+              "01:00": 0,
+              "05:02": 0,
+              "05:01": 0,
+              "负其它": 0,
+              "02:04": 0,
+              "02:05": 0,
+              "02:02": 0,
+              "02:03": 0,
+              "02:00": 0,
+              "02:01": 0,
+              "03:03": 0,
+              "03:01": 0,
+              "03:02": 0,
+              "03:00": 0,
+              "00:01": 0,
+              "00:00": 0,
+              "00:03": 0,
+              "00:02": 0,
+              "00:05": 0,
+              "00:04": 0,
+              "04:02": 0,
+              "04:01": 0,
+              "04:00": 0,
+              "01:02": 0,
+              "01:01": 0,
+              "01:04": 0,
+              "01:03": 0,
+              "01:05": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "zjq": {
+            "n": 1,
+            "open_keys": 8,
+            "last_keys": 8,
+            "deltas": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7+": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "bqc": {
+            "n": 1,
+            "open_keys": 9,
+            "last_keys": 9,
+            "deltas": {
+              "胜胜": 0,
+              "胜平": 0,
+              "胜负": 0,
+              "平胜": 0,
+              "平平": 0,
+              "平负": 0,
+              "负胜": 0,
+              "负平": 0,
+              "负负": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
           },
           "summary": {
-            "total_n": 3,
+            "total_n": 4,
             "any_drift": 0,
-            "max_abs_delta": 0.3
+            "max_abs_delta": 0.2
           }
         }
       }
@@ -306,16 +541,18 @@
       "league": "国际赛",
       "home": "秘鲁",
       "away": "西班牙",
+      "home_code": "PER",
+      "away_code": "ESP",
       "kickoff": "2026-06-09 10:00",
       "kickoff_iso": "2026-06-09T10:00:00+08:00",
-      "handicap": -2,
+      "handicap": 2,
       "spf": null,
       "rqspf": {
-        "home": 2.68,
-        "draw": 3.6,
-        "away": 2.09
+        "home": 2.38,
+        "draw": 3.4,
+        "away": 2.41
       },
-      "scraped_at": "2026-06-08T05:53:31.612Z",
+      "scraped_at": "2026-06-17T05:49:56.641Z",
       "final_score": {
         "matchId": "2040147",
         "homeScore": 1,
@@ -353,22 +590,60 @@
         "wentToPenalties": false,
         "penaltyScore": null
       },
+      "teams": {
+        "home": {
+          "code": "PER",
+          "doc": {
+            "name": "秘鲁",
+            "nameEn": "Peru",
+            "flag": "🇵🇪"
+          },
+          "tier": "weak",
+          "stars": [],
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "南美/技术",
+          "confederation": "CONMEBOL",
+          "fifa_rank": null
+        },
+        "away": {
+          "code": "ESP",
+          "doc": {
+            "name": "西班牙",
+            "nameEn": "Spain",
+            "flag": "🇪🇸"
+          },
+          "tier": "second",
+          "stars": [
+            "亚马尔",
+            "罗德里"
+          ],
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "传控/年轻阵容",
+          "confederation": "UEFA",
+          "fifa_rank": null
+        },
+        "tier_diff": -1,
+        "is_derby": false,
+        "has_host": false
+      },
       "derived": {
         "home_goals": 1,
         "away_goals": 3,
         "total_goals": 4,
         "score_diff": -2,
         "actual_winner": "away",
-        "actual_handicap_result": "home_lose",
+        "actual_handicap_result": "draw",
         "spf_implied": null,
         "rqspf_implied": {
-          "p0_home": 0.3303883512198548,
-          "p0_draw": 0.24595577257478085,
-          "p0_away": 0.4236558762053642,
-          "vig": 0.12938100565751798
+          "p0_home": 0.37208584221090013,
+          "p0_draw": 0.2604600895476301,
+          "p0_away": 0.3674540682414698,
+          "vig": 0.12922347362181386
         },
         "spf_hit": null,
-        "rqspf_hit": true,
+        "rqspf_hit": false,
         "movement": {
           "spf": {
             "n": 0,
@@ -386,30 +661,30 @@
             "p0_delta_away": null
           },
           "rqspf": {
-            "n": 3,
+            "n": 4,
             "open": {
               "home": 2.68,
               "draw": 3.85,
               "away": 2.02
             },
             "last": {
-              "home": 2.68,
-              "draw": 3.6,
-              "away": 2.09
+              "home": 2.38,
+              "draw": 3.4,
+              "away": 2.41
             },
             "delta": {
-              "home": 0,
-              "draw": -0.25,
-              "away": 0.07
+              "home": -0.3,
+              "draw": -0.45,
+              "away": 0.39
             },
             "range": {
-              "home": 0,
-              "draw": 0.25,
-              "away": 0.07
+              "home": 0.3,
+              "draw": 0.45,
+              "away": 0.39
             },
             "fav_open": "away",
-            "fav_last": "away",
-            "fav_drift": 0,
+            "fav_last": "home",
+            "fav_drift": 1,
             "p0_open": {
               "p0_home": 0.33081510596122266,
               "p0_draw": 0.23028168414963032,
@@ -417,19 +692,97 @@
               "vig": 0.1279240930489638
             },
             "p0_last": {
-              "p0_home": 0.3303883512198548,
-              "p0_draw": 0.24595577257478085,
-              "p0_away": 0.4236558762053642,
-              "vig": 0.12938100565751798
+              "p0_home": 0.37208584221090013,
+              "p0_draw": 0.2604600895476301,
+              "p0_away": 0.3674540682414698,
+              "vig": 0.12922347362181386
             },
-            "p0_delta_home": 0,
-            "p0_delta_draw": 0.016,
-            "p0_delta_away": -0.015
+            "p0_delta_home": 0.041,
+            "p0_delta_draw": 0.03,
+            "p0_delta_away": -0.071
+          },
+          "bf": {
+            "n": 1,
+            "open_keys": 31,
+            "last_keys": 31,
+            "deltas": {
+              "05:00": 0,
+              "平其它": 0,
+              "胜其它": 0,
+              "01:00": 0,
+              "05:02": 0,
+              "05:01": 0,
+              "负其它": 0,
+              "02:04": 0,
+              "02:05": 0,
+              "02:02": 0,
+              "02:03": 0,
+              "02:00": 0,
+              "02:01": 0,
+              "03:03": 0,
+              "03:01": 0,
+              "03:02": 0,
+              "03:00": 0,
+              "00:01": 0,
+              "00:00": 0,
+              "00:03": 0,
+              "00:02": 0,
+              "00:05": 0,
+              "00:04": 0,
+              "04:02": 0,
+              "04:01": 0,
+              "04:00": 0,
+              "01:02": 0,
+              "01:01": 0,
+              "01:04": 0,
+              "01:03": 0,
+              "01:05": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "zjq": {
+            "n": 1,
+            "open_keys": 8,
+            "last_keys": 8,
+            "deltas": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7+": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
+          },
+          "bqc": {
+            "n": 1,
+            "open_keys": 9,
+            "last_keys": 9,
+            "deltas": {
+              "胜胜": 0,
+              "胜平": 0,
+              "胜负": 0,
+              "平胜": 0,
+              "平平": 0,
+              "平负": 0,
+              "负胜": 0,
+              "负平": 0,
+              "负负": 0
+            },
+            "n_changed": 0,
+            "biggest_drop": null,
+            "biggest_rise": null
           },
           "summary": {
-            "total_n": 3,
-            "any_drift": 0,
-            "max_abs_delta": 0.25
+            "total_n": 4,
+            "any_drift": 1,
+            "max_abs_delta": 0.45
           }
         }
       }

@@ -34,12 +34,27 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.join(__dirname, '..', '..');
 
 // ============== CLI ==============
-const TARGET_DATE = process.argv[2];
-const PREDICT_MODE = process.argv.includes('--predict');
+// 用法:
+//   node 12_r013_user_rules.js                          → 默认: 今日 + 预测模式
+//   node 12_r013_user_rules.js --predict                → 今日 + 预测模式
+//   node 12_r013_user_rules.js 2026-06-18               → 指定日期(回测, 需结果)
+//   node 12_r013_user_rules.js 2026-06-18 --predict     → 指定日期预测
+function todayStr() {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+const argv = process.argv.slice(2);
+const hasDateArg = argv.some(a => /^\d{4}-\d{2}-\d{2}$/.test(a));
+const PREDICT_MODE = argv.includes('--predict') || !hasDateArg; // 无日期 = 预测今日
+let TARGET_DATE = hasDateArg ? argv.find(a => /^\d{4}-\d{2}-\d{2}$/.test(a)) : todayStr();
 if (!TARGET_DATE || !/^\d{4}-\d{2}-\d{2}$/.test(TARGET_DATE)) {
-  console.error('用法: node 12_r013_user_rules.js <YYYY-MM-DD> [--predict]');
+  console.error('用法: node 12_r013_user_rules.js [YYYY-MM-DD] [--predict]');
   process.exit(1);
 }
+console.log(`[12_r013] 目标日期: ${TARGET_DATE} (${PREDICT_MODE ? '预测' : '回测'}模式)`);
 
 const UNIT_STAKE = 2;
 const VIG = 0.13;
@@ -70,18 +85,22 @@ function fairProbFromOdds(odds, vig = VIG) {
 }
 
 // ============== 球风→进球数规则 ==============
+// 球队分档(2026世界杯实力梳理): TOP夺冠级[2,3]球 / SECOND强队[1,2] / DEFENSIVE防反型[0,1] / WEAK鱼腩[0,1]
 const TOP_TIER = ['德国', '巴西', '阿根廷', '法国'];
+// SECOND: 传统强队 + 有顶级射手/淘汰赛级别的队(摩洛哥22年4强、哥伦比亚、塞内加尔、日本、丹麦、挪威/波兰/埃及等有射手)
 const SECOND_TIER = ['比利时', '葡萄牙', '荷兰', '英格兰', '西班牙',
-                    '奥地利', '瑞典', '瑞士', '韩国', '墨西哥'];
-const DEFENSIVE = ['沙特阿拉伯', '沙特', '瑞士', '伊朗', '乌拉圭'];
+                    '奥地利', '瑞典', '瑞士', '韩国', '墨西哥', '克罗地亚',
+                    '乌拉圭', '哥伦比亚', '摩洛哥', '美国', '日本', '塞内加尔',
+                    '丹麦', '塞尔维亚', '挪威', '波兰', '埃及', '尼日利亚'];
+// DEFENSIVE: 纯防守反击、低进球风格
+const DEFENSIVE = ['沙特阿拉伯', '沙特', '伊朗', '突尼斯'];
+// WEAK: 真·鱼腩/实力明显偏弱
 const WEAK_TEAMS = ['南非', '捷克', '波黑', '巴拉圭', '海地', '库拉索',
-                   '突尼斯', '阿尔及利亚', '约旦', '埃及', '塞内加尔',
-                   '新西兰', '伊拉克', '挪威', '苏格兰', '土耳其',
-                   '澳大利亚', '卡塔尔', '摩洛哥', '厄瓜多尔', '科特迪瓦',
-                   '乌兹别克', '哥伦比亚', '秘鲁', '北爱尔兰', '匈牙利',
-                   '哈萨克', '冰岛', '尼日利亚', '哥斯达黎加', '美国',
-                   '威尔士', '波兰', '丹麦', '日本', '喀麦隆', '塞尔维亚',
-                   '加纳', '巴拿马'];
+                   '阿尔及利亚', '约旦', '新西兰', '伊拉克', '苏格兰', '土耳其',
+                   '澳大利亚', '卡塔尔', '厄瓜多尔', '科特迪瓦',
+                   '乌兹别克', '秘鲁', '北爱尔兰', '匈牙利',
+                   '哈萨克', '冰岛', '哥斯达黎加',
+                   '威尔士', '喀麦隆', '加纳', '巴拿马', '刚果(金)'];
 
 function getTeamTier(team) {
   if (TOP_TIER.includes(team)) return 'top';
@@ -305,6 +324,10 @@ for (const f of allOddsFiles) {
     rqspf: oddsDoc.odds.rqspf_latest,
     bf: oddsDoc.odds.bf_latest,
     zjq: oddsDoc.odds.zjq_latest,
+    bqc: oddsDoc.odds.bqc_latest,         // 半全场胜平负赔率
+    bf_history: oddsDoc.odds.bf_history,    // 比分赔率 first vs latest
+    zjq_history: oddsDoc.odds.zjq_history,  // 总进球赔率 first vs latest
+    bqc_history: oddsDoc.odds.bqc_history, // 半全场赔率 first vs latest
     isHost: HOSTS[oddsDoc.basic.home] || HOSTS[oddsDoc.basic.away] || false,
     actual: hasResult ? JSON.parse(fs.readFileSync(resultPath, 'utf-8')) : null,
   });
@@ -314,20 +337,100 @@ console.log(`[输入] ${matches.length} 场 ${TARGET_DATE} 比赛${PREDICT_MODE 
 if (matches.length === 0) process.exit(1);
 
 // ============== 读取赔率历史并计算变化 ==============
+// 返回: { rqspf:{home,draw,away}, spf:{...}, bf:{n_changed, biggest_drop, biggest_rise, deltas}, zjq:{open_min,last_min,min_shifted,deltas}, bqc:{open_min,last_min,deltas} }
 function getOddsMovement(mid) {
-  const p = 'data/odds_history/' + mid + '.json';
+  const p = path.join(PROJECT_ROOT, 'data', 'odds_history', mid + '.json');
   if (!fs.existsSync(p)) return null;
   const data = JSON.parse(fs.readFileSync(p, 'utf8'));
-  const history = data.rqspf_history || [];
-  if (history.length < 2) return null;
-  const first = history[0], last = history[history.length - 1];
-  return {
-    home: +(last.home - first.home).toFixed(2),
-    draw: +(last.draw - first.draw).toFixed(2),
-    away: +(last.away - first.away).toFixed(2),
-    trend: last.time > first.time ? 'updating' : 'stable',
-    first, last
-  };
+  // rqspf: 主队让球胜平负趋势
+  const rqspf = data.rqspf_history || [];
+  const rqspfMov = rqspf.length >= 2 ? {
+    home: +(rqspf[rqspf.length - 1].home - rqspf[0].home).toFixed(2),
+    draw: +(rqspf[rqspf.length - 1].draw - rqspf[0].draw).toFixed(2),
+    away: +(rqspf[rqspf.length - 1].away - rqspf[0].away).toFixed(2),
+  } : null;
+  // spf: 主胜平负趋势
+  const spf = data.spf_history || [];
+  const spfMov = spf.length >= 2 ? {
+    home: +(spf[spf.length - 1].home - spf[0].home).toFixed(2),
+    draw: +(spf[spf.length - 1].draw - spf[0].draw).toFixed(2),
+    away: +(spf[spf.length - 1].away - spf[0].away).toFixed(2),
+  } : null;
+  // bf: 比分赔率 first vs latest
+  const bfSeries = data.bf_history || [];
+  let bfMov = null;
+  if (bfSeries.length >= 2) {
+    const openOdds = bfSeries[0].odds || {};
+    const lastOdds = bfSeries[bfSeries.length - 1].odds || {};
+    const deltas = {};
+    let biggestDrop = null;
+    let biggestRise = null;
+    for (const k of Object.keys(openOdds)) {
+      if (lastOdds[k] === undefined) continue;
+      const d = +(lastOdds[k] - openOdds[k]).toFixed(2);
+      if (Math.abs(d) < 0.1) continue;
+      deltas[k] = d;
+      if (biggestDrop === null || d < biggestDrop.val) biggestDrop = { key: k, val: d };
+      if (biggestRise === null || d > biggestRise.val) biggestRise = { key: k, val: d };
+    }
+    bfMov = {
+      first_time: bfSeries[0].time,
+      last_time: bfSeries[bfSeries.length - 1].time,
+      n_changed: Object.keys(deltas).length,
+      biggest_drop: biggestDrop,
+      biggest_rise: biggestRise,
+      deltas: deltas,
+    };
+  }
+  // zjq: 总进球 first vs latest
+  const zjqSeries = data.zjq_history || [];
+  let zjqMov = null;
+  if (zjqSeries.length >= 2) {
+    const openOdds = zjqSeries[0].odds || {};
+    const lastOdds = zjqSeries[zjqSeries.length - 1].odds || {};
+    const deltas = {};
+    for (const k of Object.keys(openOdds)) {
+      if (lastOdds[k] === undefined) continue;
+      const d = +(lastOdds[k] - openOdds[k]).toFixed(2);
+      if (Math.abs(d) < 0.1) continue;
+      deltas[k] = d;
+    }
+    const openMin = Object.entries(openOdds).reduce((a, b) => a[1] < b[1] ? a : b, ['', Infinity]);
+    const lastMin = Object.entries(lastOdds).reduce((a, b) => a[1] < b[1] ? a : b, ['', Infinity]);
+    zjqMov = {
+      first_time: zjqSeries[0].time,
+      last_time: zjqSeries[zjqSeries.length - 1].time,
+      open_min: openMin[0],
+      last_min: lastMin[0],
+      min_shifted: openMin[0] !== lastMin[0],
+      deltas: deltas,
+    };
+  }
+  // bqc: 半全场 first vs latest
+  const bqcSeries = data.bqc_history || [];
+  let bqcMov = null;
+  if (bqcSeries.length >= 2) {
+    const openOdds = bqcSeries[0].odds || {};
+    const lastOdds = bqcSeries[bqcSeries.length - 1].odds || {};
+    const deltas = {};
+    for (const k of Object.keys(openOdds)) {
+      if (lastOdds[k] === undefined) continue;
+      const d = +(lastOdds[k] - openOdds[k]).toFixed(2);
+      if (Math.abs(d) < 0.1) continue;
+      deltas[k] = d;
+    }
+    const openMin = Object.entries(openOdds).reduce((a, b) => a[1] < b[1] ? a : b, ['', Infinity]);
+    const lastMin = Object.entries(lastOdds).reduce((a, b) => a[1] < b[1] ? a : b, ['', Infinity]);
+    bqcMov = {
+      first_time: bqcSeries[0].time,
+      last_time: bqcSeries[bqcSeries.length - 1].time,
+      open_min: openMin[0],
+      last_min: lastMin[0],
+      deltas: deltas,
+    };
+  }
+  if (!rqspfMov && !spfMov && !bfMov && !zjqMov && !bqcMov) return null;
+  return { rqspf: rqspfMov, spf: spfMov, bf: bfMov, zjq: zjqMov, bqc: bqcMov };
 }
 
 // ============== 2. 方向A 3串1 rqspf 选法（v3.5 赔率变化+进球能力）==============
@@ -442,6 +545,13 @@ function pickRqspf(m) {
       const secondPick = sorted[1][0];
       return { picks: [minPick, secondPick], reason: `${m.home}有球星${homeStar}+${hasColdHome ? '主队' : '客队'}爆冷史, 买2边(${pickLabel(minPick)}+${pickLabel(secondPick)})` };
     }
+    // 客队同为强队(top/second), 或市场明显看好客队受让(rqspf受让最低) → 强强对话/市场反向,
+    // 不靠主队球星无脑押主胜不败, 改买两端(让胜+让负), 让比分也覆盖到客队不败的情形
+    const awayStrong = ['top', 'second'].includes(getTeamTier(m.away));
+    const mktFavorsAway = rqspf.away <= rqspf.home && rqspf.away <= rqspf.draw;
+    if (awayStrong || mktFavorsAway) {
+      return { picks: ['home', 'away'], reason: `${m.home}有球星${homeStar}但${awayStrong ? `客队${m.away}同为强队` : '客队受让赔率最低(市场看好)'}, 买两端(让胜+让负)` };
+    }
     return { picks: ['home', 'draw'], reason: `${m.home}有球星${homeStar}, 买让胜+让平` };
   }
 
@@ -527,9 +637,9 @@ function pickRqspf(m) {
 // 规则：某方向赔率上升>0.2（被卖出），而对方稳定/下降 → 去掉该方向
 function applyOddsMovement(mid, picks, rqspf) {
   const mv = getOddsMovement(mid);
-  if (!mv) return { picks, reason: '无赔率变化数据' };
+  if (!mv || !mv.rqspf) return { picks, reason: '无赔率变化数据' };
 
-  const { home: dHome, draw: dDraw, away: dAway } = mv;
+  const { home: dHome, draw: dDraw, away: dAway } = mv.rqspf;
   const moves = { home: dHome, draw: dDraw, away: dAway };
 
   // 如果是1边，不用修正
@@ -576,24 +686,28 @@ function pickScores(m, direction) {
   //   ② 球星方抬进球: getStar≠'无'(哈兰德/姆巴佩等)进球下限 +1, 防顶级射手被预测进0球
   //   上限同步抬到 >= 下限, 防区间倒挂
   const hc = m.handicap ?? 0;
+  // |h|≥2 时强队侧进球上限放宽到 7(v3: 德国 7:1 这种大胜需要 cap 7 才能覆盖 7 球)
+  const favIsHome = hc <= -2;
+  const favIsAway = hc >= 2;
   const GOAL_CAP = 4;
-  const clampRange = (r) => [Math.min(r[0], GOAL_CAP), Math.min(Math.max(r[1], r[0]), GOAL_CAP)];
-  // ① 让球幅度抬进球: 仅大盘 |h|>=2(大热门让大球)才抬 favorite 一侧的进球下限至少 ≈ 对手下限+|h|.
-  //    |h|=1 不抬(受让1/让1 的弱队仍可小胜, 如科特迪瓦 1:0; 强抬会误杀)
-  //    上限也抬到 target+1: 大盘热门大概率胜、且可能大胜(让负), 允许其多进1球, 放出大胜比分(如0:4)
+  const homeCap = favIsHome ? 7 : GOAL_CAP;
+  const awayCap = favIsAway ? 7 : GOAL_CAP;
+  const clampRangeFav = (r, cap) => [Math.min(r[0], cap), Math.min(Math.max(r[1], r[0]), cap)];
+  // ① 让球幅度抬进球: 仅大盘 |h|>=2 时抬 favorite 一侧进球下限至少 ≈ 对手下限+|h|.
+  //    上限也抬到 target+2(v3放宽): 大盘热门大概率胜且可能大胜, 允许其多进球覆盖 5-7 球范围
   if (hc <= -2) {
     const target = awayGoals[0] + Math.abs(hc); // 主队让大球=主队热门
-    if (homeGoals[1] < target + 1) homeGoals = [Math.max(homeGoals[0], target), target + 1];
+    if (homeGoals[1] < target + 2) homeGoals = [Math.max(homeGoals[0], target), target + 2];
   } else if (hc >= 2) {
     const target = homeGoals[0] + Math.abs(hc); // 客队受让大球=客队热门
-    if (awayGoals[1] < target + 1) awayGoals = [Math.max(awayGoals[0], target), target + 1];
+    if (awayGoals[1] < target + 2) awayGoals = [Math.max(awayGoals[0], target), target + 2];
   }
   // ② 进球型球星抬进球下限+1(防顶级射手被弱队 tier 压成0球). 仅抬下限, 上限随之不倒挂.
   //    只认"进球型球星"(SCORER_STAR_TEAMS); 后腰/组织核心/后卫(扎卡/德布劳内/戴维斯等)不抬.
   if (hasScorerStar(home) && homeGoals[0] < 1) homeGoals = [1, Math.max(homeGoals[1], 1)];
   if (hasScorerStar(away) && awayGoals[0] < 1) awayGoals = [1, Math.max(awayGoals[1], 1)];
-  homeGoals = clampRange(homeGoals);
-  awayGoals = clampRange(awayGoals);
+  homeGoals = clampRangeFav(homeGoals, homeCap);
+  awayGoals = clampRangeFav(awayGoals, awayCap);
 
   const allScores = Object.entries(m.bf)
     .filter(([k, v]) => v > 1 && !/其它$/.test(k))
@@ -688,20 +802,106 @@ function pickScores(m, direction) {
   else if (primary === 'away') { hT = homeGoals[0]; aT = awayGoals[1]; }
   else { hT = (homeGoals[0] + homeGoals[1]) / 2; aT = (awayGoals[0] + awayGoals[1]) / 2; }
 
-  // 基于总进球数(zjq)赔率反推修正: 取市场最热门的总进球档(最低赔=最可能), 比分的总进球越贴近它越优先.
-  //   权重 R013_ZJQ_W 可调; 默认0=关闭(16场回测显示加权反而把比分3中1 从9拉到7-8:
-  //   让球盘方向已隐含总进球, zjq众数再拉只是牺牲覆盖多样性、加噪声). 保留开关以备后续更大样本再验.
-  const zjqW = Number(process.env.R013_ZJQ_W ?? 0);
+  // v4 —— 核心思路（用户洞察 + 数据验证）：
+  //   1. zjq 先读，给一个 "基础进球档位"（2-3 球通常最准，0/1/4/7+ 都不可靠）
+  //   2. 球风组合 做"向上修正器"：zjq 唯一的系统性错误是"低估大球" —— 对以下场景要上调进球上限
+  //      a) |h| ≥ 2 且强队有进球型球星 → 强队大胜 +3
+  //      b) 双方都有进球型球星（荷兰+日本、法国+塞内加尔） → +2
+  //      c) 中强队 vs 弱防守队（瑞典vs突尼斯、奥地利vs约旦） → +2
+  //   3. 大球场景下：zjq 只罚低于 zjqMode 的（保持对"过于保守"0球的惩罚），对高进球比分不罚或轻罚
+  //   4. 小球场景下：保持 zjq 原始档位不变
+  const zjqW = Number(process.env.R013_ZJQ_W ?? 1);
   let zjqMode = null;
   if (m.zjq && zjqW > 0) {
     const ents = Object.entries(m.zjq).map(([k, v]) => ({ t: k === '7+' ? 7 : Number(k), odds: v })).filter(e => e.odds > 1 && !Number.isNaN(e.t));
     if (ents.length) zjqMode = ents.sort((a, b) => a.odds - b.odds)[0].t;
   }
+  // zjq 小球(≤3)保留；≥4 按 v3 不强行过滤（因为 zjq≥4 本身就是庄家对大球有疑虑的信号）
+  let zjqStrict = zjqMode != null && zjqMode <= 3;  // 用一个 boolean 控制是否启用"小球罚分"
+
+  // ===== v4: 球风+让球 决定"进球上限上调量 goalUplift" =====
+  const hTier = getTeamTier(m.home), aTier = getTeamTier(m.away);
+  const homeHasStar = hasScorerStar(m.home);
+  const awayHasStar = hasScorerStar(m.away);
+  // 中强队 vs 弱防守：主队 is "强/中"且有进球能力，客队 tier='weak' 且无 star —— 反之亦然
+  const homeIsWeak = hTier === 'weak' && !homeHasStar;
+  const awayIsWeak = aTier === 'weak' && !awayHasStar;
+
+  let goalUplift = 0;   // 对目标进球上限的上调量
+  let bigBallBoost = 0; // 对 fitCost 中 zjq 大球惩罚的减免
+
+  // 规则 a) |h|≥2 且 强队有进球型球星
+  if (Math.abs(hc) >= 2) {
+    const strongTeam = hc <= -2 ? m.home : m.away;
+    const strongHasStar = hasScorerStar(strongTeam);
+    goalUplift = Math.max(goalUplift, strongHasStar ? 3 : 2);
+    bigBallBoost = Math.max(bigBallBoost, strongHasStar ? 2 : 1);
+  }
+  // 规则 b) 双方都有进球型球星
+  if (homeHasStar && awayHasStar) {
+    goalUplift = Math.max(goalUplift, 2);
+    bigBallBoost = Math.max(bigBallBoost, 1);
+  }
+  // 规则 c) 中强队 vs 弱防守队
+  if ((hTier !== 'weak' && awayIsWeak) || (aTier !== 'weak' && homeIsWeak)) {
+    if (Math.abs(hc) < 2) { // |h|≥2 已覆盖
+      goalUplift = Math.max(goalUplift, 2);
+      bigBallBoost = Math.max(bigBallBoost, 1);
+    }
+  }
+
+  // bqc 信号沿用 v3
+  const bqcHotUpset = m.bqc && ((m.bqc['胜胜'] && m.bqc['胜胜'] < 1.5) || (m.bqc['负负'] && m.bqc['负负'] < 1.5));
+  let bqcHomeBonus = 0, bqcAwayBonus = 0, bqcUpsetBonus = 0;
+  if (m.bqc) {
+    const ss = m.bqc['胜胜'];
+    const ff = m.bqc['负负'];
+    if (ss && ss < 2.0) bqcHomeBonus = 1;
+    else if (ff && ff < 2.0) bqcAwayBonus = 1;
+    if ((ss && ss < 1.5) || (ff && ff < 1.5)) bqcUpsetBonus = 1;
+  }
+
+  // 应用 bqc + goalUplift 到 hT/aT
+  // v4: hT/aT 额外 + goalUplift（只往"增加"方向，不压低）
+  if (bqcHomeBonus > 0 && primary !== 'away') {
+    hT = Math.min(hc <= -2 ? homeGoals[1] + 1 : homeGoals[1], homeCap);
+    aT = Math.max(0, aT - 0.5);
+  } else if (bqcAwayBonus > 0 && primary !== 'home') {
+    aT = Math.min(hc >= 2 ? awayGoals[1] + 1 : awayGoals[1], awayCap);
+    hT = Math.max(0, hT - 0.5);
+  }
+  if (bqcUpsetBonus > 0) {
+    hT = Math.max(1, Math.min(hT - 1, 2));
+    aT = Math.max(0, Math.min(aT, 2));
+  }
+  // v4 关键: goalUplift 上调目标进球（仅主方向一侧，不强制对手进球=0）
+  if (goalUplift > 0 && primary !== 'draw') {
+    if (primary === 'home' && hc <= 0) hT = Math.min(hT + goalUplift, homeCap);
+    else if (primary === 'away' && hc >= 0) aT = Math.min(aT + goalUplift, awayCap);
+    else {
+      // 非传统让球方向（受让的主胜/让负）→ 两个方向都上调一点
+      hT = Math.min(hT + Math.ceil(goalUplift / 2), homeCap);
+      aT = Math.min(aT + Math.ceil(goalUplift / 2), awayCap);
+    }
+  }
   const fitCost = (s) => {
     const [h, a] = s.score.split(':').map(Number);
     const styleD = Math.abs(h - hT) + Math.abs(a - aT);
-    const zjqD = zjqMode != null ? zjqW * Math.abs(h + a - zjqMode) : 0;
-    return styleD + zjqD;
+    // v4: zjq 罚分只对"过低进球"起作用（防止全是 0:0 1:0）；
+    //    若 bigBallBoost>0，高进球比分（h+a > zjqMode）不罚或轻罚
+    let zjqD = 0;
+    if (zjqMode != null) {
+      const total = h + a;
+      if (total < zjqMode - 1) zjqD = zjqW * (zjqMode - 1 - total); // 罚保守
+      else if (total > zjqMode + 1) {
+        // 高进球: 若有 bigBallBoost，减免惩罚
+        zjqD = zjqW * Math.max(0, (total - zjqMode - 1) - bigBallBoost);
+      }
+    }
+    // bqc bonus 沿用 v3
+    let bqcD = ((bqcHomeBonus > 0 && h < 2) ? 2 : 0) + ((bqcAwayBonus > 0 && a < 2) ? 2 : 0);
+    if (bqcUpsetBonus > 0 && h === a && h <= 2) bqcD = -1;
+    return styleD + zjqD + bqcD;
   };
   const bestFit = (bucket) => {
     if (!bucket.length) return null;
@@ -717,13 +917,17 @@ function pickScores(m, direction) {
   for (const p of [bestFit(low), bestFit(mid), bestFit(high)]) {
     if (p && !seen.has(p.score)) { seen.add(p.score); picks.push({ ...p, tier: tierOf(p.odds) }); }
   }
-  // 不足3个时回填: 某些场次现实比分挤在同一赔率档(如大盘热门大胜全是大比分), 单档只取1会给不满3个.
-  //   从候选池按贴合度(D 小优先, 赔率低 tie-break)补足到3个 → 保证始终给满3个比分, 现实比分全是大比分时自然放弃空着的低赔档.
+  // 不足3个时回填到3个: 先从球风候选池补, 不够再从"方向过滤全池"(filtered: 只认让球方向+真实性, 放宽球风上限)补.
+  //   方向是硬约束(必须与所买让球方向一致), 球风只是软偏好 → 保证始终给满3个比分(候选总数≥3时).
   if (picks.length < 3) {
-    const rest = candidates.filter(s => !seen.has(s.score)).sort((x, y) => dFit(x) - dFit(y) || x.odds - y.odds);
-    for (const s of rest) {
+    const pools = [candidates, filtered];
+    for (const pool of pools) {
       if (picks.length >= 3) break;
-      seen.add(s.score); picks.push({ ...s, tier: tierOf(s.odds) });
+      const rest = pool.filter(s => !seen.has(s.score)).sort((x, y) => dFit(x) - dFit(y) || x.odds - y.odds);
+      for (const s of rest) {
+        if (picks.length >= 3) break;
+        seen.add(s.score); picks.push({ ...s, tier: tierOf(s.odds) });
+      }
     }
   }
   picks.sort((a, b) => a.odds - b.odds); // 按赔率升序展示(低→高)
@@ -741,9 +945,9 @@ for (const m of matches) {
   // h=-1（主队让球）：正常解读
   const mv = getOddsMovement(m.mid);
   let finalPicks = rqspfPick;
-  if (rqspfPick?.picks?.length >= 2 && mv) {
+  if (rqspfPick?.picks?.length >= 2 && mv && mv.rqspf) {
     const h_abs = Math.abs(m.handicap || 0);
-    const { home: dHome, draw: dDraw, away: dAway } = mv;
+    const { home: dHome, draw: dDraw, away: dAway } = mv.rqspf;
     const moves = { home: dHome, draw: dDraw, away: dAway };
     const { picks: origPicks, reason: origReason } = rqspfPick;
 
@@ -961,6 +1165,30 @@ if (PREDICT_MODE) {
   for (const p of directionB.pairs_2x1) {
     console.log(`- ${p.a.code}:${p.a.pick}@${p.a.odds}(${p.a.tier}) × ${p.b.code}:${p.b.pick}@${p.b.odds}(${p.b.tier}) = ${p.totalOdds}`);
   }
+  // 预测模式也写产物（便于自动化读取）
+  const report = {
+    generated_at: new Date().toISOString(),
+    target_date: TARGET_DATE,
+    mode: 'predict',
+    source: `data/odds/<mid>.json (${matches.length} 场)`,
+    algorithm: 'R-013 用户规则 v2 (2026-06-17 表格化版)',
+    matches: matches.map(m => ({
+      mid: m.mid, code: m.code, home: m.home, away: m.away,
+      handicap: m.handicap, spf: m.spf, rqspf: m.rqspf,
+      style: getTeamInfo(m.home, m.away).style,
+      star: getStar(m.home),
+      cold: getColdHistory(m.home, m.away),
+      pre_analysis: m.rqspfPick?.reason,
+      direction: m.direction,
+      rqspf_picks: m.rqspfPick,
+      bf_picks: m.bfPicks,
+    })),
+    direction_a: { parlays_3x1: directionA.parlays_3x1 },
+    direction_b: { pairs_2x1: directionB.pairs_2x1 },
+  };
+  const reportPath = path.join(PROJECT_ROOT, 'modeling', 'artifacts', `predict_r013_${TARGET_DATE}.json`);
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
+  console.log(`\n报告写入: ${reportPath}`);
   process.exit(0);
 }
 

@@ -1,0 +1,80 @@
+{
+  "code": "KOR",
+  "name": "韩国",
+  "nameEn": "South Korea",
+  "confederation": "AFC",
+  "flag": "🇰🇷",
+  "iso2": "kr",
+  "color": "#003478",
+  "meta": {
+    "tier": "second",
+    "style": "体能+跑动/孙兴慜",
+    "stars": [
+      "孙兴慜"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 16强",
+    "cold_history": "2022逼平乌拉圭"
+  },
+  "wc2026": {
+    "group": "A",
+    "stage": "group",
+    "standings": {
+      "position": 2,
+      "played": 1,
+      "win": 1,
+      "draw": 0,
+      "lose": 0,
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "pts": 3
+    },
+    "matches": [
+      {
+        "mid": "2040163",
+        "match_id": "M002",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-12T02:00:00Z",
+        "venue": "SoFi Stadium, Los Angeles, CA",
+        "role": "home",
+        "opponent_code": "CZE",
+        "opponent_name": "捷克",
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "win"
+      },
+      {
+        "match_id": "M028",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-19T01:00:00Z",
+        "venue": "Estadio Azteca, Mexico City",
+        "role": "away",
+        "opponent_code": "MEX",
+        "opponent_name": "墨西哥",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M054",
+        "stage": "group",
+        "group": "A",
+        "date": "2026-06-25T01:00:00Z",
+        "venue": "NRG Stadium, Houston, TX",
+        "role": "away",
+        "opponent_code": "RSA",
+        "opponent_name": "南非",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

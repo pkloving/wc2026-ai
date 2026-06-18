@@ -1,0 +1,78 @@
+{
+  "code": "SEN",
+  "name": "塞内加尔",
+  "nameEn": "Senegal",
+  "confederation": "CAF",
+  "flag": "🇸🇳",
+  "iso2": "sn",
+  "color": "#00853F",
+  "meta": {
+    "tier": "second",
+    "style": "身体+冲击",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 16强",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "I",
+    "stage": "group",
+    "standings": {
+      "position": 3,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040178",
+        "match_id": "M017",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-16T19:00:00Z",
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "role": "away",
+        "opponent_code": "FRA",
+        "opponent_name": "法国",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "lose"
+      },
+      {
+        "match_id": "M043",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-23T00:00:00Z",
+        "venue": "Gillette Stadium, Foxborough, MA",
+        "role": "away",
+        "opponent_code": "NOR",
+        "opponent_name": "挪威",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M062",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-26T19:00:00Z",
+        "venue": "Estadio BBVA, Monterrey",
+        "role": "home",
+        "opponent_code": "IRQ",
+        "opponent_name": "伊拉克",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

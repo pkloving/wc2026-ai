@@ -5,6 +5,11 @@
 // 使用：node scripts/scrape_fixed_bonus.js
 // 输出：data/odds/<mid>.json + 追加到 data/odds_history/<mid>.json
 // 状态：更新 data/matches_status.json 的 status 字段
+//
+// 完赛赔率标注（R-014）：
+//   - odds/<mid>.json 的 basic.is_finished_odds：true=完赛定格，false=未完赛会继续抓
+//   - matches_status.json 同步 is_finished_odds 字段
+//   - 启动时凡 is_finished_odds=true 永久跳过（不再入抓取列表）
 
 import fs from 'fs';
 import path from 'path';
@@ -20,41 +25,10 @@ const STATUS_PATH = path.join(DATA_DIR, 'matches_status.json');
 const API = 'https://webapi.sporttery.cn/gateway/uniform/football/getFixedBonusV1.qry';
 const REFERER = 'https://www.sporttery.cn/jc/zqdz/index.html';
 
-// 14 场未抓的小组赛（2040168-2040181）
-const MATCHES = [
-  '2040168', // 周六007 海地 vs 苏格兰 6-14 09:00
-  '2040169', // 周六008 澳大利亚 vs 土耳其 6-14 12:00
-  '2040170', // 周日009 德国 vs 库拉索 6-15 01:00
-  '2040171', // 周日010 荷兰 vs 日本 6-15 04:00
-  '2040172', // 周日011 科特迪瓦 vs 厄瓜多尔 6-15 07:00
-  '2040173', // 周日012 瑞典 vs 突尼斯 6-15 10:00
-  '2040174', // 周一013 西班牙 vs 佛得角 6-16 00:00
-  '2040175', // 周一014 比利时 vs 埃及 6-16 03:00
-  '2040176', // 周一015 沙特 vs 乌拉圭 6-16 06:00
-  '2040177', // 周一016 伊朗 vs 新西兰 6-16 09:00
-  '2040178', // 周二017 法国 vs 塞内加尔 6-17 03:00
-  '2040179', // 周二018 伊拉克 vs 挪威 6-17 06:00
-  '2040180', // 周二019 阿根廷 vs 阿尔及利 6-17 09:00
-  '2040181', // 周二020 奥地利 vs 约旦 6-17 12:00
-];
-
-// 主列表里已有的 basic 信息（避免重复抓 getMatchHeadV1）
-const MAIN_LIST = {
-  '2040168': { code: '周六007', home: '海地', away: '苏格兰', kickoff: '2026-06-14 09:00', handicap: 1, spf: { h: 7.65, d: 4.25, a: 1.31 }, rqspf: { h: 2.81, d: 3.35, a: 2.11 } },
-  '2040169': { code: '周六008', home: '澳大利亚', away: '土耳其', kickoff: '2026-06-14 12:00', handicap: 1, spf: { h: 5.15, d: 3.45, a: 1.55 }, rqspf: { h: 2.11, d: 3.25, a: 2.88 } },
-  '2040170': { code: '周日009', home: '德国', away: '库拉索', kickoff: '2026-06-15 01:00', handicap: -3, spf: null, rqspf: { h: 1.94, d: 4.60, a: 2.52 } },
-  '2040171': { code: '周日010', home: '荷兰', away: '日本', kickoff: '2026-06-15 04:00', handicap: -1, spf: { h: 1.72, d: 3.30, a: 4.10 }, rqspf: { h: 3.42, d: 3.42, a: 1.84 } },
-  '2040172': { code: '周日011', home: '科特迪瓦', away: '厄瓜多尔', kickoff: '2026-06-15 07:00', handicap: 1, spf: { h: 3.36, d: 2.65, a: 2.20 }, rqspf: { h: 1.51, d: 3.60, a: 5.30 } },
-  '2040173': { code: '周日012', home: '瑞典', away: '突尼斯', kickoff: '2026-06-15 10:00', handicap: -1, spf: { h: 1.74, d: 3.10, a: 4.30 }, rqspf: { h: 3.55, d: 3.30, a: 1.84 } },
-  '2040174': { code: '周一013', home: '西班牙', away: '佛得角', kickoff: '2026-06-16 00:00', handicap: -2, spf: null, rqspf: { h: 1.85, d: 4.00, a: 2.95 } },
-  '2040175': { code: '周一014', home: '比利时', away: '埃及', kickoff: '2026-06-16 03:00', handicap: -1, spf: { h: 1.46, d: 3.65, a: 5.85 }, rqspf: { h: 2.65, d: 3.15, a: 2.30 } },
-  '2040176': { code: '周一015', home: '沙特', away: '乌拉圭', kickoff: '2026-06-16 06:00', handicap: 1, spf: { h: 8.45, d: 4.35, a: 1.28 }, rqspf: { h: 2.95, d: 3.30, a: 2.05 } },
-  '2040177': { code: '周一016', home: '伊朗', away: '新西兰', kickoff: '2026-06-16 09:00', handicap: -1, spf: { h: 1.56, d: 3.30, a: 5.40 }, rqspf: { h: 3.10, d: 3.10, a: 2.07 } },
-  '2040178': { code: '周二017', home: '法国', away: '塞内加尔', kickoff: '2026-06-17 03:00', handicap: -1, spf: { h: 1.38, d: 3.90, a: 6.75 }, rqspf: { h: 2.35, d: 3.20, a: 2.56 } },
-  '2040179': { code: '周二018', home: '伊拉克', away: '挪威', kickoff: '2026-06-17 06:00', handicap: 2, spf: null, rqspf: { h: 2.03, d: 3.89, a: 2.64 } },
-  '2040180': { code: '周二019', home: '阿根廷', away: '阿尔及利', kickoff: '2026-06-17 09:00', handicap: -1, spf: { h: 1.28, d: 4.25, a: 8.90 }, rqspf: { h: 2.07, d: 3.25, a: 2.95 } },
-  '2040181': { code: '周二020', home: '奥地利', away: '约旦', kickoff: '2026-06-17 12:00', handicap: -1, spf: { h: 1.23, d: 4.90, a: 8.90 }, rqspf: { h: 1.86, d: 3.45, a: 3.32 } }
-};
+// MATCHES / MAIN_LIST 改从 matches_status.json 动态生成
+//   - MATCHES = 所有 mid（已完赛 + 未开赛，赛前的"定格赔率"也要拉一次最新）
+//   - MAIN_LIST[mid] = { code, home, away, kickoff, handicap, spf, rqspf, status, league }
+//   - 注意：MATCHES 取自 matches_status 已是 schema A 的中心索引
 
 // 5 玩法 code 映射
 const PLAY_CODE_TO_NAME = {
@@ -148,6 +122,42 @@ function sameOdds(a, b) {
   return a.home === b.home && a.draw === b.draw && a.away === b.away;
 }
 
+// 比较两个完整赔率 dict 是否一致（bf/zjq/bqc 去重用）
+function sameDict(a, b) {
+  if (!a || !b) return false;
+  const ka = Object.keys(a);
+  const kb = Object.keys(b);
+  if (ka.length !== kb.length) return false;
+  for (const k of ka) {
+    if (a[k] !== b[k]) return false;
+  }
+  return true;
+}
+
+// 向 history 数组写入一条快照。策略：
+//   - 永远保留 first_ever 快照（arr[0]），用作基准对比
+//   - 后续最新值如果跟 first_ever 不同 → 放在 arr[1]（覆盖式）
+//   - 后续跟最新值相同 → 跳过
+//   - 跟 first_ever 相同（后续赔率完全回到初始值） → 只保留 first，arr.length 变回 1
+//   所以 arr 的可能长度：1（一直没变过）、2（有变化，latest 跟 first 不同）
+function pushOrKeepLatest(arr, entry, compareFn) {
+  if (arr.length === 0) { arr.push(entry); return true; }
+  if (arr.length === 1) {
+    if (compareFn(arr[0], entry)) return false; // 跟 first 一样 → 不存
+    arr.push(entry); return true;
+  }
+  // 长度 >=2：arr[0] 永远是 first；arr[1] 一直覆盖
+  // 如果 entry == first → 回到初始赔率，删 arr[1]
+  if (compareFn(arr[0], entry)) { arr.splice(1); return true; }
+  // 如果 entry == 当前 latest（arr[arr.length-1]） → 无变化
+  const last = arr[arr.length - 1];
+  if (compareFn(last, entry)) return false;
+  // 否则覆盖掉 arr[1..-1] 的所有中间值，仅保留 [first, entry]
+  arr.length = 1;
+  arr.push(entry);
+  return true;
+}
+
 // 取 history 数组最后一个快照
 function lastOf(arr) {
   if (!Array.isArray(arr) || arr.length === 0) return null;
@@ -180,28 +190,68 @@ function getLatestTime(arr) {
 }
 
 async function main() {
-  console.log(`Scraping ${MATCHES.length} matches...`);
+  // 从 matches_status.json 动态生成 MATCHES + MAIN_LIST
   const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
-  // mid → 完赛状态 查表（用于跳过已完赛）
+  const MATCHES = statusDoc.matches.map(m => m.mid);
+  const MAIN_LIST = {};
+  for (const m of statusDoc.matches) {
+    MAIN_LIST[m.mid] = {
+      code: m.code,
+      home: m.home,
+      away: m.away,
+      kickoff: m.kickoff,
+      league: m.league,
+      status: m.status,
+      handicap: m.handicap,
+      spf: m.spf ? { h: m.spf.home, d: m.spf.draw, a: m.spf.away } : null,
+      rqspf: m.rqspf ? { h: m.rqspf.home, d: m.rqspf.draw, a: m.rqspf.away } : null
+    };
+  }
+  // mid → status 查表
   const statusByMid = new Map(statusDoc.matches.map((m) => [m.mid, m]));
 
-  // 统计：appended / skipped(unchanged) / skipped(finished) / no_data
-  const stats = { appended: 0, unchanged: 0, finished: 0, nodata: 0, error: 0 };
+  console.log(`Scraping ${MATCHES.length} matches...`);
+
+  // R-014 抓取策略（修正版 v2）：
+  //   - 启动时扫 odds/<mid>.json：已标 is_finished_odds=true 的 mid **跳过**（避免重复拉定格赔率）
+  //   - 其它 mid 全部拉一次最新赔率（已完赛未标 is_finished_odds 的也要拉 → 标完后下次跳过）
+  //   - 拉完后根据 status 决定 is_finished_odds：已完赛 → true（下次跳过），未完赛 → false
+  //   - 这样每个 mid 最多抓 2 次：完赛前 last update + 完赛后定格
+  const finishedOddsMids = new Set();
+  for (const mid of MATCHES) {
+    const oddsFile = path.join(ODDS_DIR, `${mid}.json`);
+    if (fs.existsSync(oddsFile)) {
+      try {
+        const od = JSON.parse(fs.readFileSync(oddsFile, 'utf8'));
+        if (od && od.basic && od.basic.is_finished_odds === true) {
+          finishedOddsMids.add(mid);
+        }
+      } catch (e) {
+        // 损坏文件忽略，继续
+      }
+    }
+  }
+  if (finishedOddsMids.size > 0) {
+    console.log(`R-014 跳过已完赛赔率: ${finishedOddsMids.size} 场（已标 is_finished_odds=true）`);
+  }
+
+  const stats = { appended: 0, unchanged: 0, scheduled: 0, error: 0, finished_odds: 0 };
 
   for (const mid of MATCHES) {
+    // R-014 兜底：is_finished_odds=true 的 mid 跳过
+    if (finishedOddsMids.has(mid)) {
+      stats.finished_odds += 1;
+      continue;
+    }
     const list = MAIN_LIST[mid];
     if (!list) {
       console.warn(`  No main list data for ${mid}, skipping`);
-      stats.nodata += 1;
+      stats.scheduled += 1;
       continue;
     }
-    // 跳过已完赛：避免浪费 API，且不需要再为"赔率变动"积累
     const st = statusByMid.get(mid);
-    if (st && st.status === 'finished') {
-      console.log(`  ${mid} (${list.code}): 跳过（已完赛 ${st.final_score || ''}）`);
-      stats.finished += 1;
-      continue;
-    }
+    const isFinished = st && st.status === 'finished';
+
     const apiData = await fetchMatch(mid);
     if (apiData.error) {
       console.error(`  ${mid} (${list.code}): ${apiData.error}`);
@@ -233,7 +283,7 @@ async function main() {
     const basic = {
       mid,
       code: list.code,
-      league: '世界杯',
+      league: list.league || '世界杯',
       home: list.home,
       away: list.away,
       kickoff: list.kickoff,
@@ -241,7 +291,9 @@ async function main() {
       scraped_at: new Date().toISOString(),
       sale_status: !spf && !odds.rqspf_latest ? '待开售' : '在售',
       single_supported: single,
-      is_cancel: apiData.value?.isCancel || 0
+      is_cancel: apiData.value?.isCancel || 0,
+      // R-014：已完赛场次标 is_finished_odds=true（定格赔率），未完赛标 false
+      is_finished_odds: !!isFinished
     };
 
     const fullData = {
@@ -261,33 +313,51 @@ async function main() {
 
     // 写入 odds_history/<mid>.json
     // 规则：① 保留第一次抓到的赔率（永远不删） ② 同场赔率未变则不追加 ③ 后续未完赛会再抓
+    //      ④ bf/zjq/bqc 扩展：同样按上述规则写 bf_history/zjq_history/bqc_history
     const histFile = path.join(HIST_DIR, `${mid}.json`);
-    let hist = { mid, spf_history: [], rqspf_history: [] };
+    let hist = { mid, spf_history: [], rqspf_history: [], bf_history: [], zjq_history: [], bqc_history: [] };
     if (fs.existsSync(histFile)) {
-      hist = JSON.parse(fs.readFileSync(histFile, 'utf8'));
-      // 兜底：旧文件可能没有空数组
-      hist.spf_history = Array.isArray(hist.spf_history) ? hist.spf_history : [];
-      hist.rqspf_history = Array.isArray(hist.rqspf_history) ? hist.rqspf_history : [];
+      try {
+        const existing = JSON.parse(fs.readFileSync(histFile, 'utf8'));
+        hist.mid = existing.mid || mid;
+        hist.spf_history = Array.isArray(existing.spf_history) ? existing.spf_history : [];
+        hist.rqspf_history = Array.isArray(existing.rqspf_history) ? existing.rqspf_history : [];
+        hist.bf_history = Array.isArray(existing.bf_history) ? existing.bf_history : [];
+        hist.zjq_history = Array.isArray(existing.zjq_history) ? existing.zjq_history : [];
+        hist.bqc_history = Array.isArray(existing.bqc_history) ? existing.bqc_history : [];
+      } catch (e) {
+        // 旧文件损坏：重新从零初始化
+      }
     }
     const now = new Date().toISOString();
-    let spfAppended = false, rqAppended = false;
+    let anyAppended = false;
+    // spf（赔率 {home, draw, away}）
     if (spf) {
-      const prev = lastOf(hist.spf_history);
-      // 首次 OR 与上次赔率不一致 → 追加
-      if (!prev || !sameOdds(prev, spf)) {
-        hist.spf_history.push({ time: now, ...spf });
-        spfAppended = true;
-      }
+      const entry = { time: now, ...spf };
+      if (pushOrKeepLatest(hist.spf_history, entry, (a, b) => sameOdds(a, b))) anyAppended = true;
     }
+    // rqspf（让球胜平负）
     if (odds.rqspf_latest) {
-      const prev = lastOf(hist.rqspf_history);
-      if (!prev || !sameOdds(prev, odds.rqspf_latest)) {
-        hist.rqspf_history.push({ time: now, ...odds.rqspf_latest });
-        rqAppended = true;
-      }
+      const entry = { time: now, ...odds.rqspf_latest };
+      if (pushOrKeepLatest(hist.rqspf_history, entry, (a, b) => sameOdds(a, b))) anyAppended = true;
+    }
+    // bf (比分，完整 odds dict)
+    if (bf && Object.keys(bf).length > 0) {
+      const entry = { time: now, odds: bf };
+      if (pushOrKeepLatest(hist.bf_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true;
+    }
+    // zjq (总进球)
+    if (zjqs && Object.keys(zjqs).length > 0) {
+      const entry = { time: now, odds: zjqs };
+      if (pushOrKeepLatest(hist.zjq_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true;
+    }
+    // bqc (半全场)
+    if (bqc && Object.keys(bqc).length > 0) {
+      const entry = { time: now, odds: bqc };
+      if (pushOrKeepLatest(hist.bqc_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true;
     }
     fs.writeFileSync(histFile, JSON.stringify(hist, null, 2), 'utf8');
-    if (spfAppended || rqAppended) stats.appended += 1;
+    if (anyAppended) stats.appended += 1;
     else stats.unchanged += 1;
 
     // 更新 status
@@ -299,20 +369,27 @@ async function main() {
       statusEntry.scraped_at = basic.scraped_at;
       statusEntry.sale_status = basic.sale_status;
       statusEntry.single_supported = single;
-      statusEntry.status = basic.sale_status === '待开售' ? 'scheduled' : 'on_sale';
+      // 已完赛场次保持 finished（不要被覆盖为 on_sale）
+      // 未完赛才按 sale_status 推算 on_sale / scheduled
+      if (statusEntry.status !== 'finished') {
+        statusEntry.status = basic.sale_status === '待开售' ? 'scheduled' : 'on_sale';
+      }
+      // R-014：同步 is_finished_odds 标记（已完赛 → true，未完赛 → false）
+      statusEntry.is_finished_odds = !!isFinished;
     }
 
     const spfStr = spf ? `${spf.home}/${spf.draw}/${spf.away}` : 'null';
     const rqspfStr = odds.rqspf_latest ? `${odds.rqspf_latest.home}/${odds.rqspf_latest.draw}/${odds.rqspf_latest.away}` : 'null';
     const singleStr = Object.entries(single).filter(([k, v]) => v).map(([k]) => k).join(',') || 'none';
-    const histTag = spfAppended || rqAppended ? '✓' : '·';
-    console.log(`  ${histTag} ${mid} (${list.code}): spf=${spfStr} rqspf=${rqspfStr} h=${odds.handicap} single=[${singleStr}]`);
+    const histTag = anyAppended ? '✓' : '·';
+    const finishedTag = isFinished ? '🏁' : '  ';
+    console.log(`  ${histTag}${finishedTag} ${mid} (${list.code}): spf=${spfStr} rqspf=${rqspfStr} h=${odds.handicap} single=[${singleStr}]`);
   }
 
   // 写回 status
   fs.writeFileSync(STATUS_PATH, JSON.stringify(statusDoc, null, 2), 'utf8');
   console.log(`\nUpdated matches_status.json`);
-  console.log(`Done.  appended=${stats.appended}  unchanged=${stats.unchanged}  finished=${stats.finished}  error=${stats.error}  no_data=${stats.nodata}`);
+  console.log(`Done.  appended=${stats.appended}  unchanged=${stats.unchanged}  finished_odds=${stats.finished_odds}  scheduled=${stats.scheduled}  error=${stats.error}`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

@@ -1,0 +1,78 @@
+{
+  "code": "IRQ",
+  "name": "伊拉克",
+  "nameEn": "Iraq",
+  "confederation": "AFC",
+  "flag": "🇮🇶",
+  "iso2": "iq",
+  "color": "#CE1126",
+  "meta": {
+    "tier": "weak",
+    "style": "弱队/身体",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "I",
+    "stage": "group",
+    "standings": {
+      "position": 4,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 1,
+      "ga": 4,
+      "gd": -3,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040179",
+        "match_id": "M018",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-16T22:00:00Z",
+        "venue": "SoFi Stadium, Los Angeles, CA",
+        "role": "home",
+        "opponent_code": "NOR",
+        "opponent_name": "挪威",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 4,
+        "half_my": 1,
+        "half_opp": 2,
+        "result": "lose"
+      },
+      {
+        "match_id": "M042",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-22T21:00:00Z",
+        "venue": "Arrowhead Stadium, Kansas City, MO",
+        "role": "away",
+        "opponent_code": "FRA",
+        "opponent_name": "法国",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M062",
+        "stage": "group",
+        "group": "I",
+        "date": "2026-06-26T19:00:00Z",
+        "venue": "Estadio BBVA, Monterrey",
+        "role": "away",
+        "opponent_code": "SEN",
+        "opponent_name": "塞内加尔",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

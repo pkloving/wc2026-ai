@@ -1,0 +1,80 @@
+{
+  "code": "DZA",
+  "name": "阿尔及利亚",
+  "nameEn": "Algeria",
+  "confederation": "CAF",
+  "flag": "🇩🇿",
+  "iso2": "dz",
+  "color": "#006233",
+  "meta": {
+    "tier": "defensive",
+    "style": "防守/组织",
+    "stars": [
+      "马赫雷斯"
+    ],
+    "has_scorer_star": true,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛（2014 参赛）",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "J",
+    "stage": "group",
+    "standings": {
+      "position": 4,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040180",
+        "match_id": "M019",
+        "stage": "group",
+        "group": "J",
+        "date": "2026-06-17T01:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "away",
+        "opponent_code": "ARG",
+        "opponent_name": "阿根廷",
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
+      },
+      {
+        "match_id": "M044",
+        "stage": "group",
+        "group": "J",
+        "date": "2026-06-23T03:00:00Z",
+        "venue": "Estadio Azteca, Mexico City",
+        "role": "away",
+        "opponent_code": "JOR",
+        "opponent_name": "约旦",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M072",
+        "stage": "group",
+        "group": "J",
+        "date": "2026-06-28T02:00:00Z",
+        "venue": "Lumen Field, Seattle, WA",
+        "role": "home",
+        "opponent_code": "AUT",
+        "opponent_name": "奥地利",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

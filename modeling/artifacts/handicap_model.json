@@ -1,13 +1,13 @@
 {
   "model_type": "handicap_table_lookup",
-  "generated_at": "2026-06-16T01:08:59.680Z",
+  "generated_at": "2026-06-17T23:45:34.978Z",
   "source": "modeling/data/04_handicap_table.json",
-  "n_samples": 12,
+  "n_samples": 20,
   "by_handicap": {
     "1": {
-      "n": 3,
-      "home_win_rate": 0.667,
-      "draw_rate": 0.333,
+      "n": 4,
+      "home_win_rate": 0.75,
+      "draw_rate": 0.25,
       "home_lose_rate": 0,
       "samples": [
         {
@@ -33,14 +33,22 @@
           "handicap": 1,
           "final": "1-0",
           "result": "home_win"
+        },
+        {
+          "mid": "2040176",
+          "home": "沙特阿拉伯",
+          "away": "乌拉圭",
+          "handicap": 1,
+          "final": "1-1",
+          "result": "home_win"
         }
       ]
     },
     "2": {
-      "n": 1,
-      "home_win_rate": 1,
+      "n": 2,
+      "home_win_rate": 0.5,
       "draw_rate": 0,
-      "home_lose_rate": 0,
+      "home_lose_rate": 0.5,
       "samples": [
         {
           "mid": "2040166",
@@ -49,14 +57,22 @@
           "handicap": 2,
           "final": "1-1",
           "result": "home_win"
+        },
+        {
+          "mid": "2040179",
+          "home": "伊拉克",
+          "away": "挪威",
+          "handicap": 2,
+          "final": "1-4",
+          "result": "home_lose"
         }
       ]
     },
     "-1": {
-      "n": 7,
-      "home_win_rate": 0.429,
-      "draw_rate": 0.143,
-      "home_lose_rate": 0.429,
+      "n": 12,
+      "home_win_rate": 0.5,
+      "draw_rate": 0.083,
+      "home_lose_rate": 0.417,
       "samples": [
         {
           "mid": "2040162",
@@ -113,6 +129,46 @@
           "handicap": -1,
           "final": "5-1",
           "result": "home_win"
+        },
+        {
+          "mid": "2040175",
+          "home": "比利时",
+          "away": "埃及",
+          "handicap": -1,
+          "final": "1-1",
+          "result": "home_lose"
+        },
+        {
+          "mid": "2040177",
+          "home": "伊朗",
+          "away": "新西兰",
+          "handicap": -1,
+          "final": "2-2",
+          "result": "home_lose"
+        },
+        {
+          "mid": "2040178",
+          "home": "法国",
+          "away": "塞内加尔",
+          "handicap": -1,
+          "final": "3-1",
+          "result": "home_win"
+        },
+        {
+          "mid": "2040180",
+          "home": "阿根廷",
+          "away": "阿尔及利亚",
+          "handicap": -1,
+          "final": "3-0",
+          "result": "home_win"
+        },
+        {
+          "mid": "2040181",
+          "home": "奥地利",
+          "away": "约旦",
+          "handicap": -1,
+          "final": "3-1",
+          "result": "home_win"
         }
       ]
     },
@@ -131,6 +187,22 @@
           "result": "home_win"
         }
       ]
+    },
+    "-2": {
+      "n": 1,
+      "home_win_rate": 0,
+      "draw_rate": 0,
+      "home_lose_rate": 1,
+      "samples": [
+        {
+          "mid": "2040174",
+          "home": "西班牙",
+          "away": "佛得角",
+          "handicap": -2,
+          "final": "0-0",
+          "result": "home_lose"
+        }
+      ]
     }
   },
   "verdict_thresholds": {
@@ -142,5 +214,5 @@
     "skip": "主胜率 < 55% 或样本不足",
     "not_applicable": "handicap === 0（无让球）"
   },
-  "rule_of_thumb": "让+1（3 场）：主胜率 67% / 走 33% / 主负 0%\n  让+2（1 场）：主胜率 100% / 走 0% / 主负 0%\n  让-1（7 场）：主胜率 43% / 走 14% / 主负 43%\n  让-3（1 场）：主胜率 100% / 走 0% / 主负 0%"
+  "rule_of_thumb": "让+1（4 场）：主胜率 75% / 走 25% / 主负 0%\n  让+2（2 场）：主胜率 50% / 走 0% / 主负 50%\n  让-1（12 场）：主胜率 50% / 走 8% / 主负 42%\n  让-3（1 场）：主胜率 100% / 走 0% / 主负 0%\n  让-2（1 场）：主胜率 0% / 走 0% / 主负 100%"
 }

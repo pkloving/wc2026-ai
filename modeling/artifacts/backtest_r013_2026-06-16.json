@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-17T09:19:29.982Z",
+  "generated_at": "2026-06-18T00:13:00.927Z",
   "target_date": "2026-06-16",
   "source": "data/odds/<mid>.json (4 场)",
   "algorithm": "R-013 用户规则 v2 (2026-06-17 表格化版)",
   "summary": {
     "total": 4,
-    "rqspf_hit": "3/4",
+    "rqspf_hit": "4/4",
     "bf_hit": "2/4",
     "direction_a_3x1": "0/3",
     "direction_b_2x1": "0/3"
@@ -37,21 +37,21 @@
       },
       "bf_picks": [
         {
-          "score": "3:0",
-          "odds": 5,
-          "prob": 0.1769911504424779,
+          "score": "4:0",
+          "odds": 6.2,
+          "prob": 0.14273479874393377,
           "tier": "low"
         },
         {
-          "score": "4:1",
-          "odds": 11,
-          "prob": 0.08045052292839903,
+          "score": "5:0",
+          "odds": 10,
+          "prob": 0.08849557522123895,
           "tier": "mid"
         },
         {
-          "score": "3:2",
-          "odds": 45,
-          "prob": 0.019665683382497544,
+          "score": "5:2",
+          "odds": 55,
+          "prob": 0.016090104585679808,
           "tier": "high"
         }
       ],
@@ -77,23 +77,23 @@
         "draw": 3.42,
         "away": 2.43
       },
-      "style": "中vs弱",
+      "style": "中vs中",
       "star": "德布劳内",
       "cold": "-",
-      "pre_analysis": "比利时有球星德布劳内, 买让胜+让平",
+      "pre_analysis": "比利时有球星德布劳内但客队埃及同为强队, 买两端(让胜+让负)",
       "direction": "home",
       "rqspf_picks": {
         "picks": [
           "home",
-          "draw"
+          "away"
         ],
-        "reason": "比利时有球星德布劳内, 买让胜+让平"
+        "reason": "比利时有球星德布劳内但客队埃及同为强队, 买两端(让胜+让负)"
       },
       "bf_picks": [
         {
-          "score": "2:1",
-          "odds": 5.6,
-          "prob": 0.15802781289506954,
+          "score": "1:1",
+          "odds": 6.7,
+          "prob": 0.1320829480914014,
           "tier": "low"
         },
         {
@@ -103,9 +103,9 @@
           "tier": "mid"
         },
         {
-          "score": "3:2",
-          "odds": 28,
-          "prob": 0.03160556257901391,
+          "score": "2:2",
+          "odds": 18.5,
+          "prob": 0.04783544606553457,
           "tier": "high"
         }
       ],
@@ -145,15 +145,15 @@
       },
       "bf_picks": [
         {
-          "score": "0:1",
-          "odds": 6.2,
-          "prob": 0.14273479874393377,
+          "score": "1:2",
+          "odds": 5.75,
+          "prob": 0.15390534821085033,
           "tier": "low"
         },
         {
-          "score": "1:1",
-          "odds": 6.9,
-          "prob": 0.12825445684237527,
+          "score": "0:1",
+          "odds": 6.2,
+          "prob": 0.14273479874393377,
           "tier": "low"
         },
         {
@@ -237,41 +237,12 @@
             "odds": 4.32
           },
           {
-            "mid": "2040175",
-            "code": "周一014",
-            "play": "rqspf",
-            "pick": "draw",
-            "pickLabel": "平",
-            "odds": 3.42
-          },
-          {
             "mid": "2040176",
             "code": "周一015",
             "play": "rqspf",
             "pick": "draw",
             "pickLabel": "平",
             "odds": 3.1
-          }
-        ],
-        "totalOdds": 45.8006
-      },
-      {
-        "picks": [
-          {
-            "mid": "2040174",
-            "code": "周一013",
-            "play": "rqspf",
-            "pick": "away",
-            "pickLabel": "客胜",
-            "odds": 4.32
-          },
-          {
-            "mid": "2040175",
-            "code": "周一014",
-            "play": "rqspf",
-            "pick": "draw",
-            "pickLabel": "平",
-            "odds": 3.42
           },
           {
             "mid": "2040177",
@@ -282,7 +253,36 @@
             "odds": 2.87
           }
         ],
-        "totalOdds": 42.4025
+        "totalOdds": 38.435
+      },
+      {
+        "picks": [
+          {
+            "mid": "2040174",
+            "code": "周一013",
+            "play": "rqspf",
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 4.32
+          },
+          {
+            "mid": "2040176",
+            "code": "周一015",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.83
+          },
+          {
+            "mid": "2040177",
+            "code": "周一016",
+            "play": "rqspf",
+            "pick": "home",
+            "pickLabel": "主胜",
+            "odds": 2.87
+          }
+        ],
+        "totalOdds": 35.0875
       },
       {
         "picks": [
@@ -298,20 +298,20 @@
             "mid": "2040175",
             "code": "周一014",
             "play": "rqspf",
-            "pick": "draw",
-            "pickLabel": "平",
-            "odds": 3.42
+            "pick": "away",
+            "pickLabel": "客胜",
+            "odds": 2.43
           },
           {
             "mid": "2040176",
             "code": "周一015",
             "play": "rqspf",
-            "pick": "home",
-            "pickLabel": "主胜",
-            "odds": 2.83
+            "pick": "draw",
+            "pickLabel": "平",
+            "odds": 3.1
           }
         ],
-        "totalOdds": 41.8116
+        "totalOdds": 32.5426
       }
     ]
   },
@@ -322,9 +322,9 @@
           "mid": "2040174",
           "code": "周一013",
           "play": "bf",
-          "pick": "4:1",
+          "pick": "5:0",
           "tier": "mid",
-          "odds": 11
+          "odds": 10
         },
         "b": {
           "mid": "2040175",
@@ -334,16 +334,16 @@
           "tier": "mid",
           "odds": 9.45
         },
-        "totalOdds": 103.95
+        "totalOdds": 94.5
       },
       {
         "a": {
           "mid": "2040174",
           "code": "周一013",
           "play": "bf",
-          "pick": "4:1",
+          "pick": "5:0",
           "tier": "mid",
-          "odds": 11
+          "odds": 10
         },
         "b": {
           "mid": "2040177",
@@ -353,7 +353,7 @@
           "tier": "mid",
           "odds": 8.5
         },
-        "totalOdds": 93.5
+        "totalOdds": 85
       },
       {
         "a": {

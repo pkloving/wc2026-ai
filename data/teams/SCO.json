@@ -1,0 +1,78 @@
+{
+  "code": "SCO",
+  "name": "苏格兰",
+  "nameEn": "Scotland",
+  "confederation": "UEFA",
+  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "iso2": "gb-sct",
+  "color": "#0065BD",
+  "meta": {
+    "tier": "weak",
+    "style": "英式冲击",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 未参赛",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "C",
+    "stage": "group",
+    "standings": {
+      "position": 1,
+      "played": 1,
+      "win": 1,
+      "draw": 0,
+      "lose": 0,
+      "gf": 1,
+      "ga": 0,
+      "gd": 1,
+      "pts": 3
+    },
+    "matches": [
+      {
+        "mid": "2040168",
+        "match_id": "M007",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-14T01:00:00Z",
+        "venue": "Lincoln Financial Field, Philadelphia, PA",
+        "role": "away",
+        "opponent_code": "HAI",
+        "opponent_name": "海地",
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 0,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "win"
+      },
+      {
+        "match_id": "M030",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-19T22:00:00Z",
+        "venue": "Estadio BBVA, Monterrey",
+        "role": "home",
+        "opponent_code": "MAR",
+        "opponent_name": "摩洛哥",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M052",
+        "stage": "group",
+        "group": "C",
+        "date": "2026-06-24T22:00:00Z",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "role": "home",
+        "opponent_code": "BRA",
+        "opponent_name": "巴西",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

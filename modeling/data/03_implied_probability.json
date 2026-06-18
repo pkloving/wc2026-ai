@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-16T01:08:58.248Z",
-  "total": 60,
+  "generated_at": "2026-06-17T23:45:33.730Z",
+  "total": 20,
   "records": [
     {
       "mid": "2040162",
@@ -36,10 +36,10 @@
         "vig": 0.12887915297553842
       },
       "rqspf_implied": {
-        "p0_home": 0.15277499097074523,
-        "p0_draw": 0.21878887595810426,
-        "p0_away": 0.6284361330711505,
-        "vig": 0.12854723150639025
+        "p0_home": 0.1416650742085483,
+        "p0_draw": 0.2213516784508567,
+        "p0_away": 0.636983247340595,
+        "vig": 0.1294244604316548
       },
       "actual_winner": "home",
       "actual_handicap_result": "draw",
@@ -58,10 +58,10 @@
         "vig": 0.1290150856838661
       },
       "rqspf_implied": {
-        "p0_home": 0.30003326311120965,
-        "p0_draw": 0.2682115533872935,
-        "p0_away": 0.4317551835014969,
-        "vig": 0.12981823192654107
+        "p0_home": 0.2473677861832468,
+        "p0_draw": 0.3053712670813875,
+        "p0_away": 0.44726094673536554,
+        "vig": 0.1292077001959493
       },
       "actual_winner": "draw",
       "actual_handicap_result": "home_lose",
@@ -80,10 +80,10 @@
         "vig": 0.1295094203062448
       },
       "rqspf_implied": {
-        "p0_home": 0.2243019331083154,
-        "p0_draw": 0.2605860693464253,
-        "p0_away": 0.5151119975452593,
-        "vig": 0.12867755285805815
+        "p0_home": 0.2203357497138497,
+        "p0_draw": 0.28758107592521936,
+        "p0_away": 0.49208317436093096,
+        "vig": 0.12898709913635287
       },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
@@ -97,10 +97,10 @@
       "away": "瑞士",
       "spf_implied": null,
       "rqspf_implied": {
-        "p0_home": 0.4470445646093605,
-        "p0_draw": 0.22990863322767105,
-        "p0_away": 0.3230468021629685,
-        "vig": 0.12975426844039983
+        "p0_home": 0.376759557713493,
+        "p0_draw": 0.2588844914113183,
+        "p0_away": 0.3643559508751887,
+        "vig": 0.12945220945718638
       },
       "actual_winner": "draw",
       "actual_handicap_result": "home_win",
@@ -119,10 +119,10 @@
         "vig": 0.12962962962962954
       },
       "rqspf_implied": {
-        "p0_home": 0.3163334386424155,
-        "p0_draw": 0.2716974319628109,
-        "p0_away": 0.41196912939477365,
-        "vig": 0.1290076024702933
+        "p0_home": 0.3002362868420932,
+        "p0_draw": 0.3043632461114003,
+        "p0_away": 0.3954004670465066,
+        "vig": 0.1290542339598777
       },
       "actual_winner": "draw",
       "actual_handicap_result": "home_lose",
@@ -134,16 +134,21 @@
       "code": "周六007",
       "home": "海地",
       "away": "苏格兰",
-      "spf_implied": null,
-      "rqspf_implied": {
+      "spf_implied": {
         "p0_home": 0.1196168488701058,
         "p0_draw": 0.21484579651426775,
         "p0_away": 0.6655373546156264,
         "vig": 0.1297332809851972
       },
+      "rqspf_implied": {
+        "p0_home": 0.32786355707733056,
+        "p0_draw": 0.236061761095678,
+        "p0_away": 0.43607468182699144,
+        "vig": 0.12964787447546078
+      },
       "actual_winner": "away",
       "actual_handicap_result": "draw",
-      "spf_hit": null,
+      "spf_hit": true,
       "rqspf_hit": false
     },
     {
@@ -151,17 +156,22 @@
       "code": "周六008",
       "home": "澳大利亚",
       "away": "土耳其",
-      "spf_implied": null,
-      "rqspf_implied": {
+      "spf_implied": {
         "p0_home": 0.15949920233058196,
         "p0_draw": 0.23418533675521955,
         "p0_away": 0.6063154609141984,
         "vig": 0.1296619515797599
       },
+      "rqspf_implied": {
+        "p0_home": 0.38824423518944173,
+        "p0_draw": 0.30006673092607694,
+        "p0_away": 0.3116890338844814,
+        "vig": 0.12969221813186582
+      },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": false
+      "spf_hit": false,
+      "rqspf_hit": true
     },
     {
       "mid": "2040170",
@@ -170,10 +180,10 @@
       "away": "库拉索",
       "spf_implied": null,
       "rqspf_implied": {
-        "p0_home": 0.5266585855661896,
-        "p0_draw": 0.21965516617516692,
-        "p0_away": 0.25368624825864344,
-        "vig": 0.1103879015068876
+        "p0_home": 0.5364761653937319,
+        "p0_draw": 0.1825125098762181,
+        "p0_away": 0.28101132473005,
+        "vig": 0.12970649053123284
       },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
@@ -192,10 +202,10 @@
         "vig": 0.12947989840682395
       },
       "rqspf_implied": {
-        "p0_home": 0.2605633802816902,
-        "p0_draw": 0.2605633802816902,
-        "p0_away": 0.4788732394366197,
-        "vig": 0.12877583465818754
+        "p0_home": 0.22145196922373733,
+        "p0_draw": 0.2605317284985145,
+        "p0_away": 0.5180163022777481,
+        "vig": 0.12891296869625046
       },
       "actual_winner": "draw",
       "actual_handicap_result": "home_lose",
@@ -214,10 +224,10 @@
         "vig": 0.12960141672200742
       },
       "rqspf_implied": {
-        "p0_home": 0.5499999999999999,
-        "p0_draw": 0.2475,
-        "p0_away": 0.20249999999999999,
-        "vig": 0.122334455667789
+        "p0_home": 0.6104200724998223,
+        "p0_draw": 0.23292344871703743,
+        "p0_away": 0.15665647878314024,
+        "vig": 0.1298042175931131
       },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
@@ -247,580 +257,170 @@
       "rqspf_hit": false
     },
     {
-      "mid": "2022001",
-      "code": "2022-A1",
-      "home": "卡塔尔",
-      "away": "厄瓜多尔",
+      "mid": "2040174",
+      "code": "周一013",
+      "home": "西班牙",
+      "away": "佛得角",
       "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022002",
-      "code": "2022-A2",
-      "home": "塞内加尔",
-      "away": "荷兰",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022003",
-      "code": "2022-A3",
-      "home": "卡塔尔",
-      "away": "塞内加尔",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022004",
-      "code": "2022-A4",
-      "home": "荷兰",
-      "away": "厄瓜多尔",
-      "spf_implied": null,
-      "rqspf_implied": null,
+      "rqspf_implied": {
+        "p0_home": 0.6065748120884767,
+        "p0_draw": 0.1884253671593992,
+        "p0_away": 0.20499982075212408,
+        "vig": 0.12917894577760491
+      },
       "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022005",
-      "code": "2022-A5",
-      "home": "厄瓜多尔",
-      "away": "塞内加尔",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
       "actual_handicap_result": "home_lose",
       "spf_hit": null,
-      "rqspf_hit": null
+      "rqspf_hit": false
     },
     {
-      "mid": "2022006",
-      "code": "2022-A6",
-      "home": "荷兰",
-      "away": "卡塔尔",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022007",
-      "code": "2022-B1",
-      "home": "英格兰",
-      "away": "伊朗",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022008",
-      "code": "2022-B2",
-      "home": "美国",
-      "away": "威尔士",
-      "spf_implied": null,
-      "rqspf_implied": null,
+      "mid": "2040175",
+      "code": "周一014",
+      "home": "比利时",
+      "away": "埃及",
+      "spf_implied": {
+        "p0_home": 0.6190203120755743,
+        "p0_draw": 0.22992183019949897,
+        "p0_away": 0.1510578577249268,
+        "vig": 0.1296894232047816
+      },
+      "rqspf_implied": {
+        "p0_home": 0.376759557713493,
+        "p0_draw": 0.2588844914113183,
+        "p0_away": 0.3643559508751887,
+        "vig": 0.12945220945718638
+      },
       "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022009",
-      "code": "2022-B3",
-      "home": "威尔士",
-      "away": "伊朗",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
       "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
+      "spf_hit": false,
+      "rqspf_hit": false
     },
     {
-      "mid": "2022010",
-      "code": "2022-B4",
-      "home": "英格兰",
-      "away": "美国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022011",
-      "code": "2022-B5",
-      "home": "威尔士",
-      "away": "英格兰",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022012",
-      "code": "2022-B6",
-      "home": "伊朗",
-      "away": "美国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022013",
-      "code": "2022-C1",
-      "home": "阿根廷",
-      "away": "沙特阿拉伯",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022014",
-      "code": "2022-C2",
-      "home": "墨西哥",
-      "away": "波兰",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022015",
-      "code": "2022-C3",
-      "home": "波兰",
-      "away": "沙特阿拉伯",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022016",
-      "code": "2022-C4",
-      "home": "阿根廷",
-      "away": "墨西哥",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022017",
-      "code": "2022-C5",
-      "home": "波兰",
-      "away": "阿根廷",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022018",
-      "code": "2022-C6",
+      "mid": "2040176",
+      "code": "周一015",
       "home": "沙特阿拉伯",
-      "away": "墨西哥",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022019",
-      "code": "2022-D1",
-      "home": "丹麦",
-      "away": "突尼斯",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022020",
-      "code": "2022-D2",
-      "home": "法国",
-      "away": "澳大利亚",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022021",
-      "code": "2022-D3",
-      "home": "突尼斯",
-      "away": "澳大利亚",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022022",
-      "code": "2022-D4",
-      "home": "法国",
-      "away": "丹麦",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022023",
-      "code": "2022-D5",
-      "home": "澳大利亚",
-      "away": "丹麦",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022024",
-      "code": "2022-D6",
-      "home": "突尼斯",
-      "away": "法国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022025",
-      "code": "2022-E1",
-      "home": "德国",
-      "away": "日本",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022026",
-      "code": "2022-E2",
-      "home": "西班牙",
-      "away": "哥斯达黎加",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022027",
-      "code": "2022-E3",
-      "home": "日本",
-      "away": "哥斯达黎加",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022028",
-      "code": "2022-E4",
-      "home": "西班牙",
-      "away": "德国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022029",
-      "code": "2022-E5",
-      "home": "日本",
-      "away": "西班牙",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022030",
-      "code": "2022-E6",
-      "home": "哥斯达黎加",
-      "away": "德国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022031",
-      "code": "2022-F1",
-      "home": "摩洛哥",
-      "away": "克罗地亚",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022032",
-      "code": "2022-F2",
-      "home": "比利时",
-      "away": "加拿大",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022033",
-      "code": "2022-F3",
-      "home": "比利时",
-      "away": "摩洛哥",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022034",
-      "code": "2022-F4",
-      "home": "克罗地亚",
-      "away": "加拿大",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022035",
-      "code": "2022-F5",
-      "home": "克罗地亚",
-      "away": "比利时",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022036",
-      "code": "2022-F6",
-      "home": "加拿大",
-      "away": "摩洛哥",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022037",
-      "code": "2022-G1",
-      "home": "瑞士",
-      "away": "喀麦隆",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022038",
-      "code": "2022-G2",
-      "home": "巴西",
-      "away": "塞尔维亚",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022039",
-      "code": "2022-G3",
-      "home": "喀麦隆",
-      "away": "塞尔维亚",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022040",
-      "code": "2022-G4",
-      "home": "巴西",
-      "away": "瑞士",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022041",
-      "code": "2022-G5",
-      "home": "塞尔维亚",
-      "away": "瑞士",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022042",
-      "code": "2022-G6",
-      "home": "喀麦隆",
-      "away": "巴西",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022043",
-      "code": "2022-H1",
-      "home": "乌拉圭",
-      "away": "韩国",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "draw",
-      "actual_handicap_result": "draw",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022044",
-      "code": "2022-H2",
-      "home": "葡萄牙",
-      "away": "加纳",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
-      "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022045",
-      "code": "2022-H3",
-      "home": "韩国",
-      "away": "加纳",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "away",
-      "actual_handicap_result": "home_lose",
-      "spf_hit": null,
-      "rqspf_hit": null
-    },
-    {
-      "mid": "2022046",
-      "code": "2022-H4",
-      "home": "葡萄牙",
       "away": "乌拉圭",
-      "spf_implied": null,
-      "rqspf_implied": null,
-      "actual_winner": "home",
+      "spf_implied": {
+        "p0_home": 0.12301690507152145,
+        "p0_draw": 0.2059817945383615,
+        "p0_away": 0.671001300390117,
+        "vig": 0.12902278599953032
+      },
+      "rqspf_implied": {
+        "p0_home": 0.3131413318219423,
+        "p0_draw": 0.28586773195357956,
+        "p0_away": 0.4009909362244782,
+        "vig": 0.12842622340345966
+      },
+      "actual_winner": "draw",
       "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
+      "spf_hit": false,
+      "rqspf_hit": false
     },
     {
-      "mid": "2022047",
-      "code": "2022-H5",
-      "home": "加纳",
-      "away": "乌拉圭",
+      "mid": "2040177",
+      "code": "周一016",
+      "home": "伊朗",
+      "away": "新西兰",
+      "spf_implied": {
+        "p0_home": 0.57109155827595,
+        "p0_draw": 0.26189109920938536,
+        "p0_away": 0.16701734251466463,
+        "vig": 0.12969852377128
+      },
+      "rqspf_implied": {
+        "p0_home": 0.3083657109132936,
+        "p0_draw": 0.2681847243397433,
+        "p0_away": 0.4234495647469631,
+        "vig": 0.12993125830096308
+      },
+      "actual_winner": "draw",
+      "actual_handicap_result": "home_lose",
+      "spf_hit": false,
+      "rqspf_hit": true
+    },
+    {
+      "mid": "2040178",
+      "code": "周二017",
+      "home": "法国",
+      "away": "塞内加尔",
+      "spf_implied": {
+        "p0_home": 0.6704808434044741,
+        "p0_draw": 0.21072255078426327,
+        "p0_away": 0.11879660581126253,
+        "vig": 0.12989918359045882
+      },
+      "rqspf_implied": {
+        "p0_home": 0.4279622296679866,
+        "p0_draw": 0.2567773378007919,
+        "p0_away": 0.31526043253122144,
+        "vig": 0.12881874602437815
+      },
+      "actual_winner": "home",
+      "actual_handicap_result": "home_win",
+      "spf_hit": true,
+      "rqspf_hit": true
+    },
+    {
+      "mid": "2040179",
+      "code": "周二018",
+      "home": "伊拉克",
+      "away": "挪威",
       "spf_implied": null,
-      "rqspf_implied": null,
+      "rqspf_implied": {
+        "p0_home": 0.3850373978384656,
+        "p0_draw": 0.2282438183063069,
+        "p0_away": 0.3867187838552274,
+        "vig": 0.1291957901659626
+      },
       "actual_winner": "away",
       "actual_handicap_result": "home_lose",
       "spf_hit": null,
-      "rqspf_hit": null
+      "rqspf_hit": true
     },
     {
-      "mid": "2022048",
-      "code": "2022-H6",
-      "home": "韩国",
-      "away": "葡萄牙",
-      "spf_implied": null,
-      "rqspf_implied": null,
+      "mid": "2040180",
+      "code": "周二019",
+      "home": "阿根廷",
+      "away": "阿尔及利亚",
+      "spf_implied": {
+        "p0_home": 0.6862745098039216,
+        "p0_draw": 0.21078431372549022,
+        "p0_away": 0.10294117647058824,
+        "vig": 0.1295681063122922
+      },
+      "rqspf_implied": {
+        "p0_home": 0.42361245016838495,
+        "p0_draw": 0.2792902273980834,
+        "p0_away": 0.2970973224335317,
+        "vig": 0.12949678256940023
+      },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
-      "spf_hit": null,
-      "rqspf_hit": null
+      "spf_hit": true,
+      "rqspf_hit": true
+    },
+    {
+      "mid": "2040181",
+      "code": "周二020",
+      "home": "奥地利",
+      "away": "约旦",
+      "spf_implied": {
+        "p0_home": 0.708231639671622,
+        "p0_draw": 0.18637674728200576,
+        "p0_away": 0.1053916130463723,
+        "vig": 0.12957393483709279
+      },
+      "rqspf_implied": {
+        "p0_home": 0.4972829972829973,
+        "p0_draw": 0.22696506029839364,
+        "p0_away": 0.27575194241860906,
+        "vig": 0.12973448897002404
+      },
+      "actual_winner": "home",
+      "actual_handicap_result": "home_win",
+      "spf_hit": true,
+      "rqspf_hit": true
     }
   ]
 }

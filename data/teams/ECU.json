@@ -1,0 +1,78 @@
+{
+  "code": "ECU",
+  "name": "厄瓜多尔",
+  "nameEn": "Ecuador",
+  "confederation": "CONMEBOL",
+  "flag": "🇪🇨",
+  "iso2": "ec",
+  "color": "#FFD100",
+  "meta": {
+    "tier": "weak",
+    "style": "高原主场/冲击力",
+    "stars": [],
+    "has_scorer_star": false,
+    "is_host": false,
+    "fifa_rank": null
+  },
+  "history_wc2022": {
+    "description": "2022 小组赛未出线",
+    "cold_history": "-"
+  },
+  "wc2026": {
+    "group": "E",
+    "stage": "group",
+    "standings": {
+      "position": 3,
+      "played": 1,
+      "win": 0,
+      "draw": 0,
+      "lose": 1,
+      "gf": 0,
+      "ga": 1,
+      "gd": -1,
+      "pts": 0
+    },
+    "matches": [
+      {
+        "mid": "2040172",
+        "match_id": "M011",
+        "stage": "group",
+        "group": "E",
+        "date": "2026-06-14T23:00:00Z",
+        "venue": "Gillette Stadium, Foxborough, MA",
+        "role": "away",
+        "opponent_code": "CIV",
+        "opponent_name": "科特迪瓦",
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "lose"
+      },
+      {
+        "match_id": "M035",
+        "stage": "group",
+        "group": "E",
+        "date": "2026-06-21T00:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
+        "role": "home",
+        "opponent_code": "CUW",
+        "opponent_name": "库拉索",
+        "status": "scheduled"
+      },
+      {
+        "match_id": "M055",
+        "stage": "group",
+        "group": "E",
+        "date": "2026-06-25T20:00:00Z",
+        "venue": "Lincoln Financial Field, Philadelphia, PA",
+        "role": "home",
+        "opponent_code": "GER",
+        "opponent_name": "德国",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "_updated_at": "2026-06-17T23:28:34.716Z"
+}

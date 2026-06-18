@@ -73,6 +73,23 @@ const homeMidHit = homeMid.filter((r) => r.actual_winner === 'home').length;
 const homeHigh = recs.filter((r) => r.spf && r.spf.home >= 2.5);
 const homeHighHit = homeHigh.filter((r) => r.actual_winner === 'home').length;
 
+// 6. 中等热门区间：p0_max ∈ [0.40, 0.60)（强信号：12 场样本 5 场平局率 60%）
+//    业务诉求：让 win_model 在此区间对"主队大热门"预测降 1 档信心。
+const MID_FAV_P0_LOW = 0.40;
+const MID_FAV_P0_HIGH = 0.60;
+const midFav = recs.filter((r) => {
+  if (!r.spf_implied) return false;
+  const p0max = Math.max(r.spf_implied.p0_home, r.spf_implied.p0_draw, r.spf_implied.p0_away);
+  return p0max >= MID_FAV_P0_LOW && p0max < MID_FAV_P0_HIGH;
+});
+function pickByP0Max(imp) {
+  if (imp.p0_draw >= imp.p0_home && imp.p0_draw >= imp.p0_away) return 'draw';
+  if (imp.p0_away >= imp.p0_home && imp.p0_away >= imp.p0_draw) return 'away';
+  return 'home';
+}
+const midFavHit = midFav.filter((r) => pickByP0Max(r.spf_implied) === r.actual_winner).length;
+const midFavDraw = midFav.filter((r) => r.actual_winner === 'draw').length;
+
 const model = {
   model_type: 'rule_based_with_confidence',
   generated_at: new Date().toISOString(),
@@ -84,6 +101,8 @@ const model = {
     moderate_threshold: 2.5, // 1.5-2.5 适中
     long_shot_threshold: 4.0, // >= 4 大冷门
     draw_threshold: 3.3,   // 平局赔率 < 3.3 不推荐平
+    mid_fav_p0_low: MID_FAV_P0_LOW,
+    mid_fav_p0_high: MID_FAV_P0_HIGH,
   },
   // 样本校准（命中率）
   calibration: {
@@ -96,11 +115,15 @@ const model = {
     draw_high_odds_hit_rate: safe(drawHighHit, drawHigh.length),
     away_low_odds_hit_rate: safe(awayLowHit, awayLow.length),
     away_long_shot_hit_rate: safe(awayHighHit, awayHigh.length),
+    mid_fav_p0_n: midFav.length,
+    mid_fav_p0hit_rate: safe(midFavHit, midFav.length),
+    mid_fav_p0draw_rate: safe(midFavDraw, midFav.length),
   },
   // 信心度档位（1-3 ⭐）
   confidence_mapping: {
     strong_fav: 3,    // ⭐⭐⭐
     moderate: 2,      // ⭐⭐
+    moderate_low: 1,  // ⭐（中等热门降档：p0_max ∈ [0.40, 0.60)）
     long_shot: 1,     // ⭐
   },
   // 决策规则（predict_unplayed 调用）
@@ -108,7 +131,8 @@ const model = {
     pick: 'spf_min_odds_direction（p0 最大那个）',
     confidence_rules: [
       'spf 最低赔率 < 1.5 → ⭐⭐⭐',
-      'spf 最低赔率 1.5-2.5 → ⭐⭐',
+      `spf 最低赔率 1.5-2.5 且 p0_max ∈ [${MID_FAV_P0_LOW}, ${MID_FAV_P0_HIGH}) → ⭐（中等热门降档）`,
+      'spf 最低赔率 1.5-2.5 且 p0_max ∉ [0.40, 0.60) → ⭐⭐',
       'spf 最低赔率 >= 2.5 → ⭐',
       '平局赔率 < 3.3 时不推荐平局（样本提示低赔平局假信号多）',
     ],
@@ -123,6 +147,7 @@ console.log(`  大热门（最低赔率方向）命中率：${(favHitRate * 100)
 console.log(`  主胜 < 1.5：${homeLowHit}/${homeLow.length}，1.5-2.5：${homeMidHit}/${homeMid.length}，>= 2.5：${homeHighHit}/${homeHigh.length}`);
 console.log(`  平局 < 3.3：${drawLowHit}/${drawLow.length}，>= 3.3：${drawHighHit}/${drawHigh.length}`);
 console.log(`  客胜 < 4：${awayLowHit}/${awayLow.length}，>= 4：${awayHighHit}/${awayHigh.length}`);
+console.log(`  中等热门 [${MID_FAV_P0_LOW}, ${MID_FAV_P0_HIGH})：n=${midFav.length}, p0_max 方向命中 ${midFavHit}/${midFav.length}（${(midFav.length ? (midFavHit / midFav.length * 100).toFixed(0) : '-')}%）, 平局率 ${midFavDraw}/${midFav.length}（${(midFav.length ? (midFavDraw / midFav.length * 100).toFixed(0) : '-')}%）`);
 console.log(`  落盘 ${path.relative(path.join(__dirname, '..', '..'), OUT_FILE)}`);
 
 function round(n) { return Math.round(n * 1000) / 1000; }
