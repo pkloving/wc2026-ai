@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040235",
         "match_id": "M025",
         "stage": "group",
         "group": "A",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "CZE",
         "opponent_name": "捷克",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M054",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

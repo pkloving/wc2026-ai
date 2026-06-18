@@ -54,6 +54,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040241",
         "match_id": "M031",
         "stage": "group",
         "group": "C",
@@ -62,7 +63,7 @@
         "role": "home",
         "opponent_code": "HAI",
         "opponent_name": "海地",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M052",
@@ -77,5 +78,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

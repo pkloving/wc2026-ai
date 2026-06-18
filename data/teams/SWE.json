@@ -51,6 +51,7 @@
         "result": "win"
       },
       {
+        "mid": "2040243",
         "match_id": "M033",
         "stage": "group",
         "group": "F",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "NED",
         "opponent_name": "荷兰",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M058",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

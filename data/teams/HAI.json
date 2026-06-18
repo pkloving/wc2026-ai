@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040241",
         "match_id": "M031",
         "stage": "group",
         "group": "C",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "BRA",
         "opponent_name": "巴西",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M051",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

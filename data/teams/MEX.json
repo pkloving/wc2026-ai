@@ -53,6 +53,7 @@
         "result": "win"
       },
       {
+        "mid": "2040238",
         "match_id": "M028",
         "stage": "group",
         "group": "A",
@@ -61,7 +62,7 @@
         "role": "home",
         "opponent_code": "KOR",
         "opponent_name": "韩国",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M053",
@@ -76,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

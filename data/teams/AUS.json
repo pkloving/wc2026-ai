@@ -51,6 +51,7 @@
         "result": "win"
       },
       {
+        "mid": "2040239",
         "match_id": "M029",
         "stage": "group",
         "group": "D",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "USA",
         "opponent_name": "美国",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M060",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

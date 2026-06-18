@@ -1,0 +1,49 @@
+{
+  "matchId": "2040200",
+  "homeScore": 4,
+  "awayScore": 2,
+  "halfTime": {
+    "home": 2,
+    "away": 2
+  },
+  "scorers": [
+    {
+      "team": "ENG",
+      "player": "KANE",
+      "minute": 12,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "KANE",
+      "minute": 42,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "BELLINGHAM",
+      "minute": 47,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "RASHFORD",
+      "minute": 85,
+      "type": "goal"
+    },
+    {
+      "team": "CRO",
+      "player": "Martin BATURINA",
+      "minute": 36,
+      "type": "goal"
+    },
+    {
+      "team": "CRO",
+      "player": "Petar MUSA",
+      "minute": 45,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

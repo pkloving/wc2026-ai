@@ -51,6 +51,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040236",
         "match_id": "M026",
         "stage": "group",
         "group": "B",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "SUI",
         "opponent_name": "瑞士",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M050",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

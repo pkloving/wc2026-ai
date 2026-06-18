@@ -22,15 +22,15 @@
     "group": "L",
     "stage": "group",
     "standings": {
-      "position": 3,
-      "played": 0,
-      "win": 0,
+      "position": 2,
+      "played": 1,
+      "win": 1,
       "draw": 0,
       "lose": 0,
-      "gf": 0,
+      "gf": 1,
       "ga": 0,
-      "gd": 0,
-      "pts": 0
+      "gd": 1,
+      "pts": 3
     },
     "matches": [
       {
@@ -74,5 +74,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

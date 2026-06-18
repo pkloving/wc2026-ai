@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T09:28:41.151Z",
-  "total": 80,
+  "generated_at": "2026-06-18T08:25:59.088Z",
+  "total": 92,
   "status_definitions": {
     "scheduled": "未开售（odds 都 null）",
     "on_sale": "已开售（有 spf 或 rqspf 任一）",
@@ -1863,6 +1863,380 @@
       "is_finished_odds": true,
       "sale_status": "待开售",
       "single_supported": {}
+    },
+    {
+      "mid": "2040235",
+      "code": "周四025",
+      "league": "世界杯",
+      "home": "捷克",
+      "away": "南非",
+      "kickoff": "2026-06-19 00:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.64,
+        "draw": 3.4,
+        "away": 4.43
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.12,
+        "draw": 3.35,
+        "away": 1.96
+      },
+      "scraped_at": "2026-06-18T08:26:29.604Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040235.json",
+      "history_file": "odds_history/2040235.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
+    },
+    {
+      "mid": "2040236",
+      "code": "周四026",
+      "league": "世界杯",
+      "home": "瑞士",
+      "away": "波黑",
+      "kickoff": "2026-06-19 03:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.38,
+        "draw": 3.95,
+        "away": 6.6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.33,
+        "draw": 3.3,
+        "away": 2.52
+      },
+      "scraped_at": "2026-06-18T08:26:29.651Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040236.json",
+      "history_file": "odds_history/2040236.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      }
+    },
+    {
+      "mid": "2040237",
+      "code": "周四027",
+      "league": "世界杯",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "kickoff": "2026-06-19 06:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.18,
+        "draw": 5.25,
+        "away": 11
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.72,
+        "draw": 3.55,
+        "away": 3.75
+      },
+      "scraped_at": "2026-06-18T08:26:29.683Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040237.json",
+      "history_file": "odds_history/2040237.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      }
+    },
+    {
+      "mid": "2040238",
+      "code": "周四028",
+      "league": "世界杯",
+      "home": "墨西哥",
+      "away": "韩国",
+      "kickoff": "2026-06-19 09:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.89,
+        "draw": 2.91,
+        "away": 3.9
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.05,
+        "draw": 3.32,
+        "away": 1.72
+      },
+      "scraped_at": "2026-06-18T08:26:29.714Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040238.json",
+      "history_file": "odds_history/2040238.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
+    },
+    {
+      "mid": "2040239",
+      "code": "周五029",
+      "league": "世界杯",
+      "home": "美国",
+      "away": "澳大利亚",
+      "kickoff": "2026-06-20 03:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.45,
+        "draw": 3.83,
+        "away": 5.6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.51,
+        "draw": 3.25,
+        "away": 2.36
+      },
+      "scraped_at": "2026-06-18T08:26:29.746Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040239.json",
+      "history_file": "odds_history/2040239.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
+    },
+    {
+      "mid": "2040240",
+      "code": "周五030",
+      "league": "世界杯",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "kickoff": "2026-06-20 06:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 5.1,
+        "draw": 3.28,
+        "away": 1.59
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.07,
+        "draw": 3.2,
+        "away": 3
+      },
+      "scraped_at": "2026-06-18T08:26:29.808Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040240.json",
+      "history_file": "odds_history/2040240.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
+    },
+    {
+      "mid": "2040241",
+      "code": "周五031",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "海地",
+      "kickoff": "2026-06-20 08:30",
+      "status": "on_sale",
+      "spf": null,
+      "handicap": -2,
+      "rqspf": {
+        "home": 1.73,
+        "draw": 4.1,
+        "away": 3.25
+      },
+      "scraped_at": "2026-06-18T08:26:29.826Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040241.json",
+      "history_file": "odds_history/2040241.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      }
+    },
+    {
+      "mid": "2040242",
+      "code": "周五032",
+      "league": "世界杯",
+      "home": "土耳其",
+      "away": "巴拉圭",
+      "kickoff": "2026-06-20 11:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.92,
+        "draw": 3.1,
+        "away": 3.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.1,
+        "draw": 3.4,
+        "away": 1.69
+      },
+      "scraped_at": "2026-06-18T08:26:29.845Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040242.json",
+      "history_file": "odds_history/2040242.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      }
+    },
+    {
+      "mid": "2040243",
+      "code": "周六033",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "瑞典",
+      "kickoff": "2026-06-21 01:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.59,
+        "draw": 3.58,
+        "away": 4.52
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.86,
+        "draw": 3.45,
+        "away": 2.04
+      },
+      "scraped_at": "2026-06-18T08:26:29.864Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040243.json",
+      "history_file": "odds_history/2040243.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
+    },
+    {
+      "mid": "2040244",
+      "code": "周六034",
+      "league": "世界杯",
+      "home": "德国",
+      "away": "科特迪瓦",
+      "kickoff": "2026-06-21 04:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.4,
+        "draw": 4.15,
+        "away": 5.75
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.27,
+        "draw": 3.55,
+        "away": 2.46
+      },
+      "scraped_at": "2026-06-18T08:26:29.887Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040244.json",
+      "history_file": "odds_history/2040244.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      }
+    },
+    {
+      "mid": "2040245",
+      "code": "周六035",
+      "league": "世界杯",
+      "home": "厄瓜多尔",
+      "away": "库拉索",
+      "kickoff": "2026-06-21 08:00",
+      "status": "on_sale",
+      "spf": null,
+      "handicap": -2,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.95,
+        "away": 2.75
+      },
+      "scraped_at": "2026-06-18T08:26:29.937Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040245.json",
+      "history_file": "odds_history/2040245.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      }
+    },
+    {
+      "mid": "2040246",
+      "code": "周六036",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "日本",
+      "kickoff": "2026-06-21 12:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 5.75,
+        "draw": 3.7,
+        "away": 1.46
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.3,
+        "draw": 3.25,
+        "away": 2.59
+      },
+      "scraped_at": "2026-06-18T08:26:30.022Z",
+      "sale_status": "在售",
+      "odds_file": "odds/2040246.json",
+      "history_file": "odds_history/2040246.json",
+      "is_finished_odds": false,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      }
     }
   ]
 }

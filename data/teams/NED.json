@@ -71,6 +71,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040243",
         "match_id": "M033",
         "stage": "group",
         "group": "F",
@@ -79,7 +80,7 @@
         "role": "home",
         "opponent_code": "SWE",
         "opponent_name": "瑞典",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M057",
@@ -94,5 +95,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

@@ -54,6 +54,7 @@
         "result": "win"
       },
       {
+        "mid": "2040244",
         "match_id": "M034",
         "stage": "group",
         "group": "E",
@@ -62,7 +63,7 @@
         "role": "home",
         "opponent_code": "CIV",
         "opponent_name": "科特迪瓦",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M055",
@@ -77,5 +78,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

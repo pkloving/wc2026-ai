@@ -51,6 +51,7 @@
         "result": "win"
       },
       {
+        "mid": "2040240",
         "match_id": "M030",
         "stage": "group",
         "group": "C",
@@ -59,7 +60,7 @@
         "role": "home",
         "opponent_code": "MAR",
         "opponent_name": "摩洛哥",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M052",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

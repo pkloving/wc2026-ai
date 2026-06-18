@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040246",
         "match_id": "M036",
         "stage": "group",
         "group": "F",
@@ -59,7 +60,7 @@
         "role": "home",
         "opponent_code": "JPN",
         "opponent_name": "日本",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M057",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

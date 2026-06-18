@@ -1,0 +1,19 @@
+{
+  "matchId": "2040201",
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "GHA",
+      "player": "Caleb YIRENKYI",
+      "minute": 90,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

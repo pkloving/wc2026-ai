@@ -1,0 +1,37 @@
+{
+  "matchId": "2040202",
+  "homeScore": 1,
+  "awayScore": 3,
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "UZB",
+      "player": "Abbosbek FAYZULLAEV",
+      "minute": 60,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "Daniel MUNOZ",
+      "minute": 40,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "Luis DIAZ",
+      "minute": 65,
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "Jaminton CAMPAZ",
+      "minute": 90,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

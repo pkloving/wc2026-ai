@@ -228,7 +228,7 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "POR",
     "away": "COD",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M022",
@@ -239,7 +239,7 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "ENG",
     "away": "CRO",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M023",
@@ -250,7 +250,7 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "GHA",
     "away": "PAN",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M024",
@@ -261,10 +261,11 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "UZB",
     "away": "COL",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M025",
+    "mid": "2040235",
     "stage": "group",
     "group": "A",
     "date": "2026-06-18T16:00:00Z",
@@ -275,6 +276,7 @@
   },
   {
     "id": "M026",
+    "mid": "2040236",
     "stage": "group",
     "group": "B",
     "date": "2026-06-18T19:00:00Z",
@@ -285,6 +287,7 @@
   },
   {
     "id": "M027",
+    "mid": "2040237",
     "stage": "group",
     "group": "B",
     "date": "2026-06-18T22:00:00Z",
@@ -295,6 +298,7 @@
   },
   {
     "id": "M028",
+    "mid": "2040238",
     "stage": "group",
     "group": "A",
     "date": "2026-06-19T01:00:00Z",
@@ -305,6 +309,7 @@
   },
   {
     "id": "M029",
+    "mid": "2040239",
     "stage": "group",
     "group": "D",
     "date": "2026-06-19T19:00:00Z",
@@ -315,6 +320,7 @@
   },
   {
     "id": "M030",
+    "mid": "2040240",
     "stage": "group",
     "group": "C",
     "date": "2026-06-19T22:00:00Z",
@@ -325,6 +331,7 @@
   },
   {
     "id": "M031",
+    "mid": "2040241",
     "stage": "group",
     "group": "C",
     "date": "2026-06-20T00:30:00Z",
@@ -335,6 +342,7 @@
   },
   {
     "id": "M032",
+    "mid": "2040242",
     "stage": "group",
     "group": "D",
     "date": "2026-06-20T03:00:00Z",
@@ -345,6 +353,7 @@
   },
   {
     "id": "M033",
+    "mid": "2040243",
     "stage": "group",
     "group": "F",
     "date": "2026-06-20T17:00:00Z",
@@ -355,6 +364,7 @@
   },
   {
     "id": "M034",
+    "mid": "2040244",
     "stage": "group",
     "group": "E",
     "date": "2026-06-20T20:00:00Z",
@@ -365,6 +375,7 @@
   },
   {
     "id": "M035",
+    "mid": "2040245",
     "stage": "group",
     "group": "E",
     "date": "2026-06-21T00:00:00Z",
@@ -375,6 +386,7 @@
   },
   {
     "id": "M036",
+    "mid": "2040246",
     "stage": "group",
     "group": "F",
     "date": "2026-06-21T04:00:00Z",

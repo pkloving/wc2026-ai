@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040245",
         "match_id": "M035",
         "stage": "group",
         "group": "E",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "ECU",
         "opponent_name": "厄瓜多尔",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M056",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T07:05:31.450Z"
+  "_updated_at": "2026-06-18T08:34:55.379Z"
 }

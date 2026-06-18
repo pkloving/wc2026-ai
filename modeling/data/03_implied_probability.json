@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T23:45:33.730Z",
-  "total": 20,
+  "generated_at": "2026-06-18T08:28:34.822Z",
+  "total": 24,
   "records": [
     {
       "mid": "2040162",
@@ -419,6 +419,94 @@
       },
       "actual_winner": "home",
       "actual_handicap_result": "home_win",
+      "spf_hit": true,
+      "rqspf_hit": true
+    },
+    {
+      "mid": "2040182",
+      "code": "周三021",
+      "home": "葡萄牙",
+      "away": "刚果(金)",
+      "spf_implied": {
+        "p0_home": 0.783369707724178,
+        "p0_draw": 0.15105934637002064,
+        "p0_away": 0.06557094590580156,
+        "vig": 0.12967829045028578
+      },
+      "rqspf_implied": {
+        "p0_home": 0.35845808415367636,
+        "p0_draw": 0.225865170372342,
+        "p0_away": 0.41567674547398153,
+        "vig": 0.1294439084865857
+      },
+      "actual_winner": "draw",
+      "actual_handicap_result": "home_lose",
+      "spf_hit": false,
+      "rqspf_hit": true
+    },
+    {
+      "mid": "2040183",
+      "code": "周三022",
+      "home": "英格兰",
+      "away": "克罗地亚",
+      "spf_implied": {
+        "p0_home": 0.574808397200933,
+        "p0_draw": 0.25658113962012663,
+        "p0_away": 0.16861046317894035,
+        "vig": 0.12968191229060788
+      },
+      "rqspf_implied": {
+        "p0_home": 0.29703512406121385,
+        "p0_draw": 0.29505488990080575,
+        "p0_away": 0.4079099860379803,
+        "vig": 0.12973329621954877
+      },
+      "actual_winner": "home",
+      "actual_handicap_result": "home_win",
+      "spf_hit": true,
+      "rqspf_hit": false
+    },
+    {
+      "mid": "2040184",
+      "code": "周三023",
+      "home": "加纳",
+      "away": "巴拿马",
+      "spf_implied": {
+        "p0_home": 0.43386841510287133,
+        "p0_draw": 0.29210942799005196,
+        "p0_away": 0.27402215690707665,
+        "vig": 0.12982660495151688
+      },
+      "rqspf_implied": {
+        "p0_home": 0.21080009908347785,
+        "p0_draw": 0.23928659895962348,
+        "p0_away": 0.5499133019568987,
+        "vig": 0.1294835207878684
+      },
+      "actual_winner": "home",
+      "actual_handicap_result": "draw",
+      "spf_hit": true,
+      "rqspf_hit": false
+    },
+    {
+      "mid": "2040185",
+      "code": "周三024",
+      "home": "乌兹别克斯坦",
+      "away": "哥伦比亚",
+      "spf_implied": {
+        "p0_home": 0.09174710237624528,
+        "p0_draw": 0.18254835833624064,
+        "p0_away": 0.725704539287514,
+        "vig": 0.1294846411630317
+      },
+      "rqspf_implied": {
+        "p0_home": 0.26293514472023727,
+        "p0_draw": 0.24751157477854738,
+        "p0_away": 0.4895532805012153,
+        "vig": 0.12855170182836173
+      },
+      "actual_winner": "away",
+      "actual_handicap_result": "home_lose",
       "spf_hit": true,
       "rqspf_hit": true
     }

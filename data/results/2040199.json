@@ -1,0 +1,25 @@
+{
+  "matchId": "2040199",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "POR",
+      "player": "JOAO NEVES",
+      "minute": 6,
+      "type": "goal"
+    },
+    {
+      "team": "COD",
+      "player": "Yoane WISSA",
+      "minute": 45,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

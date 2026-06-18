@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T04:07:42.126Z",
+  "generated_at": "2026-06-18T08:29:18.216Z",
   "source": "data/matches_status.json (status !== finished && league === \"世界杯\")",
   "scope": "世界杯正赛（data/matches.json M001-M104），不含国际赛热身",
   "models_used": [
@@ -7,26 +7,26 @@
     "modeling/artifacts/handicap_model.json",
     "modeling/artifacts/score_model.json"
   ],
-  "input_count": 1,
+  "input_count": 12,
   "predictions": [
     {
-      "mid": "2040185",
-      "code": "周三024",
-      "home": "乌兹别克斯坦",
-      "away": "哥伦比亚",
-      "home_code": "UZB",
-      "away_code": "COL",
-      "kickoff": "2026-06-18 10:00",
-      "handicap": 1,
+      "mid": "2040235",
+      "code": "周四025",
+      "home": "捷克",
+      "away": "南非",
+      "home_code": "CZE",
+      "away_code": "RSA",
+      "kickoff": "2026-06-19 00:00",
+      "handicap": -1,
       "spf": {
-        "home": 9.65,
-        "draw": 4.85,
-        "away": 1.22
+        "home": 1.64,
+        "draw": 3.4,
+        "away": 4.43
       },
       "rqspf": {
-        "home": 3.37,
-        "draw": 3.58,
-        "away": 1.81
+        "home": 3.12,
+        "draw": 3.35,
+        "away": 1.96
       },
       "status": "on_sale",
       "teams": {
@@ -34,15 +34,802 @@
           "tier": "weak",
           "has_scorer_star": false,
           "is_host": false,
-          "style": null,
+          "style": "传统东欧",
+          "stars": []
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "身体对抗",
+          "stars": []
+        },
+        "tier_diff": 0
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 1,
+          "label": "中等热门(降档)",
+          "rationale": "中等热门(降档)（主胜 赔率 1.64，p0 54%，主tier=weak 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%；受让方/主队非top 且无球星，需谨慎",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.129
+          },
+          {
+            "score": "1-0",
+            "prob": 0.126
+          },
+          {
+            "score": "1-1",
+            "prob": 0.095
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.053,
+        "lambda_away": 0.76,
+        "draw_protection": "v3_applied"
+      }
+    },
+    {
+      "mid": "2040236",
+      "code": "周四026",
+      "home": "瑞士",
+      "away": "波黑",
+      "home_code": "SUI",
+      "away_code": "BIH",
+      "kickoff": "2026-06-19 03:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.38,
+        "draw": 3.95,
+        "away": 6.6
+      },
+      "rqspf": {
+        "home": 2.33,
+        "draw": 3.3,
+        "away": 2.52
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "second",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "硬朗/组织防守",
+          "stars": [
+            "扎卡",
+            "沙奇里"
+          ]
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "中场技术",
+          "stars": []
+        },
+        "tier_diff": 1
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 3,
+          "label": "大热门",
+          "rationale": "大热门（主胜 赔率 1.38，p0 64%，主tier=second 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%；受让方/主队非top 且无球星，需谨慎",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.163
+          },
+          {
+            "score": "3-0",
+            "prob": 0.14
+          },
+          {
+            "score": "1-0",
+            "prob": 0.126
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.585,
+        "lambda_away": 0.486,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040237",
+      "code": "周四027",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "home_code": "CAN",
+      "away_code": "QAT",
+      "kickoff": "2026-06-19 06:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.18,
+        "draw": 5.25,
+        "away": 11
+      },
+      "rqspf": {
+        "home": 1.72,
+        "draw": 3.55,
+        "away": 3.75
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": true,
+          "style": "东道主/边路冲击",
+          "stars": [
+            "阿方索·戴维斯"
+          ]
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "东道主经验(2022)",
+          "stars": []
+        },
+        "tier_diff": 1
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 3,
+          "label": "大热门",
+          "rationale": "大热门（主胜 赔率 1.18，p0 75%，主tier=second 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.188
+          },
+          {
+            "score": "3-0",
+            "prob": 0.186
+          },
+          {
+            "score": "4-0",
+            "prob": 0.137
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.963,
+        "lambda_away": 0.272,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040238",
+      "code": "周四028",
+      "home": "墨西哥",
+      "away": "韩国",
+      "home_code": "MEX",
+      "away_code": "KOR",
+      "kickoff": "2026-06-19 09:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.89,
+        "draw": 2.91,
+        "away": 3.9
+      },
+      "rqspf": {
+        "home": 4.05,
+        "draw": 3.32,
+        "away": 1.72
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": true,
+          "style": "东道主/快速反击",
+          "stars": [
+            "希门尼斯"
+          ]
+        },
+        "away": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "体能+跑动/孙兴慜",
+          "stars": [
+            "孙兴慜"
+          ]
+        },
+        "tier_diff": 0
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 2,
+          "label": "中等热门(降档)+东道主",
+          "rationale": "中等热门(降档)+东道主（主胜 赔率 1.89，p0 47%，主tier=second 客tier=second）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-1",
+            "prob": 0.101
+          },
+          {
+            "score": "2-0",
+            "prob": 0.094
+          },
+          {
+            "score": "1-1",
+            "prob": 0.091
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.21,
+        "lambda_away": 1.071,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040239",
+      "code": "周五029",
+      "home": "美国",
+      "away": "澳大利亚",
+      "home_code": "USA",
+      "away_code": "AUS",
+      "kickoff": "2026-06-20 03:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.45,
+        "draw": 3.83,
+        "away": 5.6
+      },
+      "rqspf": {
+        "home": 2.51,
+        "draw": 3.25,
+        "away": 2.36
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": true,
+          "style": "东道主/年轻+冲击",
+          "stars": [
+            "普利西奇"
+          ]
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "身体+冲击",
+          "stars": []
+        },
+        "tier_diff": 1
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 3,
+          "label": "大热门",
+          "rationale": "大热门（主胜 赔率 1.45，p0 61%，主tier=second 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.148
+          },
+          {
+            "score": "3-0",
+            "prob": 0.129
+          },
+          {
+            "score": "1-0",
+            "prob": 0.114
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.606,
+        "lambda_away": 0.578,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040240",
+      "code": "周五030",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "home_code": "SCO",
+      "away_code": "MAR",
+      "kickoff": "2026-06-20 06:00",
+      "handicap": 1,
+      "spf": {
+        "home": 5.1,
+        "draw": 3.28,
+        "away": 1.59
+      },
+      "rqspf": {
+        "home": 2.07,
+        "draw": 3.2,
+        "away": 3
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "英式冲击",
           "stars": []
         },
         "away": {
           "tier": "second",
           "has_scorer_star": false,
           "is_host": false,
-          "style": "技术+身体",
+          "style": "防守反击/身体强",
+          "stars": [
+            "阿什拉夫"
+          ]
+        },
+        "tier_diff": -1
+      },
+      "recommendations": {
+        "win": {
+          "pick": "away",
+          "confidence": 1,
+          "label": "中等热门(降档)",
+          "rationale": "中等热门(降档)（客胜 赔率 1.59，p0 56%，主tier=weak 客tier=second）"
+        },
+        "handicap": {
+          "verdict": "chase",
+          "reason": "让1 样本主胜率 60% >= 55%",
+          "sample_win_rate": 0.6
+        },
+        "score_top3": [
+          {
+            "score": "0-2",
+            "prob": 0.139
+          },
+          {
+            "score": "0-1",
+            "prob": 0.117
+          },
+          {
+            "score": "1-1",
+            "prob": 0.078
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 0.668,
+        "lambda_away": 2.382,
+        "draw_protection": "v3_applied"
+      }
+    },
+    {
+      "mid": "2040241",
+      "code": "周五031",
+      "home": "巴西",
+      "away": "海地",
+      "home_code": "BRA",
+      "away_code": "HAI",
+      "kickoff": "2026-06-20 08:30",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.73,
+        "draw": 4.1,
+        "away": 3.25
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "top",
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "技术流/边锋突击",
+          "stars": [
+            "维尼修斯",
+            "罗德里戈"
+          ]
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "弱队/身体",
           "stars": []
+        },
+        "tier_diff": 2
+      },
+      "recommendations": {
+        "win": {
+          "pick": null,
+          "confidence": 0,
+          "label": null,
+          "rationale": "spf 未开售，无法判断胜平负"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-2 样本不足（2 < 3）",
+          "sample_win_rate": null
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.104
+          },
+          {
+            "score": "2-1",
+            "prob": 0.101
+          },
+          {
+            "score": "1-0",
+            "prob": 0.092
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.246,
+        "lambda_away": 0.975,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040242",
+      "code": "周五032",
+      "home": "土耳其",
+      "away": "巴拉圭",
+      "home_code": "TUR",
+      "away_code": "PAR",
+      "kickoff": "2026-06-20 11:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.92,
+        "draw": 3.1,
+        "away": 3.5
+      },
+      "rqspf": {
+        "home": 4.1,
+        "draw": 3.4,
+        "away": 1.69
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "身体+跑动",
+          "stars": []
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "防守型",
+          "stars": []
+        },
+        "tier_diff": 0
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 1,
+          "label": "中等热门(降档)",
+          "rationale": "中等热门(降档)（主胜 赔率 1.92，p0 46%，主tier=weak 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%；受让方/主队非top 且无球星，需谨慎",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "1-0",
+            "prob": 0.11
+          },
+          {
+            "score": "1-1",
+            "prob": 0.11
+          },
+          {
+            "score": "2-0",
+            "prob": 0.1
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 1.816,
+        "lambda_away": 0.996,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040243",
+      "code": "周六033",
+      "home": "荷兰",
+      "away": "瑞典",
+      "home_code": "NED",
+      "away_code": "SWE",
+      "kickoff": "2026-06-21 01:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.59,
+        "draw": 3.58,
+        "away": 4.52
+      },
+      "rqspf": {
+        "home": 2.86,
+        "draw": 3.45,
+        "away": 2.04
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "全攻全守/343",
+          "stars": [
+            "德容",
+            "加克波"
+          ]
+        },
+        "away": {
+          "tier": "second",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "传统北欧/身体",
+          "stars": []
+        },
+        "tier_diff": 0
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 1,
+          "label": "中等热门(降档)",
+          "rationale": "中等热门(降档)（主胜 赔率 1.59，p0 56%，主tier=second 客tier=second）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.12
+          },
+          {
+            "score": "1-0",
+            "prob": 0.099
+          },
+          {
+            "score": "1-1",
+            "prob": 0.08
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.427,
+        "lambda_away": 0.813,
+        "draw_protection": "v3_applied"
+      }
+    },
+    {
+      "mid": "2040244",
+      "code": "周六034",
+      "home": "德国",
+      "away": "科特迪瓦",
+      "home_code": "GER",
+      "away_code": "CIV",
+      "kickoff": "2026-06-21 04:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.4,
+        "draw": 4.15,
+        "away": 5.75
+      },
+      "rqspf": {
+        "home": 2.27,
+        "draw": 3.55,
+        "away": 2.46
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "top",
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "组织+压制",
+          "stars": [
+            "穆勒",
+            "维尔茨"
+          ]
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "非洲身体型",
+          "stars": []
+        },
+        "tier_diff": 2
+      },
+      "recommendations": {
+        "win": {
+          "pick": "home",
+          "confidence": 3,
+          "label": "大热门",
+          "rationale": "大热门（主胜 赔率 1.4，p0 63%，主tier=top 客tier=weak）"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-1 样本主胜率 50% < 55%；主队top+球星，让球盘有支撑",
+          "sample_win_rate": 0.5
+        },
+        "score_top3": [
+          {
+            "score": "2-0",
+            "prob": 0.148
+          },
+          {
+            "score": "3-0",
+            "prob": 0.136
+          },
+          {
+            "score": "1-0",
+            "prob": 0.107
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 2.764,
+        "lambda_away": 0.551,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040245",
+      "code": "周六035",
+      "home": "厄瓜多尔",
+      "away": "库拉索",
+      "home_code": "ECU",
+      "away_code": "CUW",
+      "kickoff": "2026-06-21 08:00",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.95,
+        "away": 2.75
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "高原主场/冲击力",
+          "stars": []
+        },
+        "away": {
+          "tier": "weak",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "弱队",
+          "stars": []
+        },
+        "tier_diff": 0
+      },
+      "recommendations": {
+        "win": {
+          "pick": null,
+          "confidence": 0,
+          "label": null,
+          "rationale": "spf 未开售，无法判断胜平负"
+        },
+        "handicap": {
+          "verdict": "skip",
+          "reason": "让-2 样本不足（2 < 3）",
+          "sample_win_rate": null
+        },
+        "score_top3": [
+          {
+            "score": "1-0",
+            "prob": 0.112
+          },
+          {
+            "score": "1-1",
+            "prob": 0.109
+          },
+          {
+            "score": "2-0",
+            "prob": 0.103
+          }
+        ]
+      },
+      "score_meta": {
+        "lambda_home": 1.838,
+        "lambda_away": 0.975,
+        "draw_protection": "none"
+      }
+    },
+    {
+      "mid": "2040246",
+      "code": "周六036",
+      "home": "突尼斯",
+      "away": "日本",
+      "home_code": "TUN",
+      "away_code": "JPN",
+      "kickoff": "2026-06-21 12:00",
+      "handicap": 1,
+      "spf": {
+        "home": 5.75,
+        "draw": 3.7,
+        "away": 1.46
+      },
+      "rqspf": {
+        "home": 2.3,
+        "draw": 3.25,
+        "away": 2.59
+      },
+      "status": "on_sale",
+      "teams": {
+        "home": {
+          "tier": "defensive",
+          "has_scorer_star": false,
+          "is_host": false,
+          "style": "防守+组织",
+          "stars": []
+        },
+        "away": {
+          "tier": "second",
+          "has_scorer_star": true,
+          "is_host": false,
+          "style": "技术+组织/远藤航核心",
+          "stars": [
+            "远藤航",
+            "三苫薰"
+          ]
         },
         "tier_diff": -1
       },
@@ -51,31 +838,31 @@
           "pick": "away",
           "confidence": 3,
           "label": "大热门",
-          "rationale": "大热门（客胜 赔率 1.22，p0 73%，主tier=weak 客tier=second）"
+          "rationale": "大热门（客胜 赔率 1.46，p0 61%，主tier=defensive 客tier=second）"
         },
         "handicap": {
           "verdict": "chase",
-          "reason": "让1 样本主胜率 75% >= 55%",
-          "sample_win_rate": 0.75
+          "reason": "让1 样本主胜率 60% >= 55%",
+          "sample_win_rate": 0.6
         },
         "score_top3": [
           {
             "score": "0-2",
-            "prob": 0.188
+            "prob": 0.149
           },
           {
             "score": "0-3",
-            "prob": 0.173
+            "prob": 0.13
           },
           {
             "score": "0-1",
-            "prob": 0.137
+            "prob": 0.114
           }
         ]
       },
       "score_meta": {
-        "lambda_home": 0.313,
-        "lambda_away": 2.752,
+        "lambda_home": 0.57,
+        "lambda_away": 2.617,
         "draw_protection": "none"
       }
     }
