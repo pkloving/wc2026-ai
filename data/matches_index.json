@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T01:39:18.617Z",
+  "generated_at": "2026-06-18T04:03:43.018Z",
   "total": 80,
   "by_status": {
     "scheduled": [],
@@ -1433,6 +1433,7 @@
           "draw": 3.92,
           "away": 2.13
         },
+        "final_score": "1-1",
         "scraped_at": "2026-06-18T01:23:14.626Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040182.json",
@@ -1457,6 +1458,7 @@
           "draw": 3,
           "away": 2.17
         },
+        "final_score": "4-2",
         "scraped_at": "2026-06-18T01:23:14.645Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040183.json",
@@ -1481,6 +1483,7 @@
           "draw": 3.7,
           "away": 1.61
         },
+        "final_score": "1-0",
         "scraped_at": "2026-06-18T01:23:14.676Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040184.json",
@@ -2896,6 +2899,7 @@
           "draw": 3.92,
           "away": 2.13
         },
+        "final_score": "1-1",
         "scraped_at": "2026-06-18T01:23:14.626Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040182.json",
@@ -2920,6 +2924,7 @@
           "draw": 3,
           "away": 2.17
         },
+        "final_score": "4-2",
         "scraped_at": "2026-06-18T01:23:14.645Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040183.json",
@@ -2944,6 +2949,7 @@
           "draw": 3.7,
           "away": 1.61
         },
+        "final_score": "1-0",
         "scraped_at": "2026-06-18T01:23:14.676Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040184.json",
@@ -3677,6 +3683,7 @@
           "draw": 3.92,
           "away": 2.13
         },
+        "final_score": "1-1",
         "scraped_at": "2026-06-18T01:23:14.626Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040182.json",
@@ -3701,6 +3708,7 @@
           "draw": 3,
           "away": 2.17
         },
+        "final_score": "4-2",
         "scraped_at": "2026-06-18T01:23:14.645Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040183.json",
@@ -3725,6 +3733,7 @@
           "draw": 3.7,
           "away": 1.61
         },
+        "final_score": "1-0",
         "scraped_at": "2026-06-18T01:23:14.676Z",
         "history_snapshots": 4,
         "odds_file": "odds/2040184.json",
