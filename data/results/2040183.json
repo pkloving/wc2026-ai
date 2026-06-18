@@ -1,0 +1,49 @@
+{
+  "matchId": "2040183",
+  "homeScore": 4,
+  "awayScore": 2,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "ENG",
+      "player": "Unknown",
+      "minute": 50,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "Unknown",
+      "minute": 60,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "Unknown",
+      "minute": 70,
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "Unknown",
+      "minute": 80,
+      "type": "goal"
+    },
+    {
+      "team": "CRO",
+      "player": "Unknown",
+      "minute": 60,
+      "type": "goal"
+    },
+    {
+      "team": "CRO",
+      "player": "Unknown",
+      "minute": 85,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

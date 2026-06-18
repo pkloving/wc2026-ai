@@ -1,0 +1,25 @@
+{
+  "matchId": "2040182",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "POR",
+      "player": "Unknown",
+      "minute": 50,
+      "type": "goal"
+    },
+    {
+      "team": "COD",
+      "player": "Unknown",
+      "minute": 78,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

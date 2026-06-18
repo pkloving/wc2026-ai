@@ -1,0 +1,19 @@
+{
+  "matchId": "2040184",
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "GHA",
+      "player": "Unknown",
+      "minute": 60,
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}
