@@ -21,8 +21,6 @@ import {
   applyRateLimit,
 } from '../lib/api_helpers.js';
 
-export const config = { runtime: 'nodejs', maxDuration: 60 };
-
 const COST_MESSAGE = 1;
 const COST_WEB_SEARCH = 1;
 
@@ -142,7 +140,7 @@ async function streamResponse({ res, email, spent, system, messages, chunks = []
   return res.end();
 }
 
-export default async function handler(req, res) {
+export async function handleRoute(req, res) {
   applyCors(res);
   if (handleOptions(req, res)) return;
 
