@@ -3,47 +3,48 @@
   "homeScore": 4,
   "awayScore": 2,
   "halfTime": {
-    "home": 0,
-    "away": 0
+    "home": 2,
+    "away": 2
   },
   "scorers": [
     {
       "team": "ENG",
-      "player": "Unknown",
-      "minute": 50,
+      "player": "KANE",
+      "minute": "12'",
+      "type": "og"
+    },
+    {
+      "team": "CRO",
+      "player": "Martin BATURINA",
+      "minute": "36'",
       "type": "goal"
     },
     {
       "team": "ENG",
-      "player": "Unknown",
-      "minute": 60,
-      "type": "goal"
-    },
-    {
-      "team": "ENG",
-      "player": "Unknown",
-      "minute": 70,
-      "type": "goal"
-    },
-    {
-      "team": "ENG",
-      "player": "Unknown",
-      "minute": 80,
+      "player": "KANE",
+      "minute": "42'",
       "type": "goal"
     },
     {
       "team": "CRO",
-      "player": "Unknown",
-      "minute": 60,
+      "player": "Petar MUSA",
+      "minute": "45'+5'",
       "type": "goal"
     },
     {
-      "team": "CRO",
-      "player": "Unknown",
-      "minute": 85,
+      "team": "ENG",
+      "player": "BELLINGHAM",
+      "minute": "47'",
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "RASHFORD",
+      "minute": "85'",
       "type": "goal"
     }
   ],
   "wentToPenalties": false,
-  "penaltyScore": null
+  "penaltyScore": null,
+  "source": "FIFA v3 live (idmatch=400021507, seasonId=285023)"
 }

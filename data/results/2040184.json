@@ -9,11 +9,12 @@
   "scorers": [
     {
       "team": "GHA",
-      "player": "Unknown",
-      "minute": 60,
+      "player": "Caleb YIRENKYI",
+      "minute": "90'+5'",
       "type": "goal"
     }
   ],
   "wentToPenalties": false,
-  "penaltyScore": null
+  "penaltyScore": null,
+  "source": "FIFA v3 live (idmatch=400021510, seasonId=285023)"
 }
