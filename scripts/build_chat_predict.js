@@ -8,14 +8,14 @@
 //   - 去掉 tier=low/mid/high 内部标签（改成「低赔/中赔/高赔」中文）
 //   - 去掉 direction / style / star / cold / pre_analysis 全字段（建模内部用）
 //   - 去掉 teams 嵌套详情
-//   - 3串1 / 2串1 只留 code + playLabel + odds
+//   - 3串1 / 2串1 只留 code + playLabel + odds（r013 缺省时回落 predict_31.combos，每类 TOP5）
 //   - 输出文件目标 < 2KB / 4 场
 //
 // 用法:
 //   node scripts/build_chat_predict.js [YYYY-MM-DD]   (默认今天)
 //   node scripts/build_chat_predict.js                # 用今天
 //
-// 接入 daily 流程（modeling/scripts/run_r013_full.js 末尾追加）
+// 接入 daily 流程：wc2026-daily skill Step 5，紧跟 modeling:all（31 出 predict_31 后）
 // ---------------------------------------------------------------
 
 import fs from 'node:fs';
@@ -98,20 +98,39 @@ const matches = [...byCode.values()].sort((a, b) =>
   String(a.kickoff || '').localeCompare(String(b.kickoff || ''))
 );
 
-// 3串1（r013 的 direction_a）
-const parlays_3x1 = r013?.direction_a?.parlays_3x1?.map((p) => ({
+// 串关来源（2026-06-18 对齐）：优先 r013（若跑了），否则回落 predict_31 的 combos
+// daily 流程只跑 31，所以常态走 r31.combos 分支
+const COMBO_CAP = 5;   // 控制 chat_predict 体积，每类只留 TOP COMBO_CAP
+
+// 3串1
+let parlays_3x1 = r013?.direction_a?.parlays_3x1?.map((p) => ({
   picks: p.picks.map((x) => ({
     code: x.code, play: x.play, pickLabel: x.pickLabel, odds: x.odds,
   })),
   totalOdds: Number(p.totalOdds?.toFixed(2) || 0),
 })) || [];
+if (parlays_3x1.length === 0 && r31?.combos?.c3) {
+  parlays_3x1 = r31.combos.c3.slice(0, COMBO_CAP).map((c) => ({
+    picks: c.picks.map((x, i) => ({
+      code: c.matches[i], play: '比分', pickLabel: x.score, odds: x.odds,
+    })),
+    totalOdds: Number((c.odds ?? 0).toFixed(2)),
+  }));
+}
 
-// 2串1（r013 的 direction_b）
-const pairs_2x1 = r013?.direction_b?.pairs_2x1?.map((p) => ({
+// 2串1
+let pairs_2x1 = r013?.direction_b?.pairs_2x1?.map((p) => ({
   a: { code: p.a.code, pick: p.a.pick, odds: p.a.odds },
   b: { code: p.b.code, pick: p.b.pick, odds: p.b.odds },
   totalOdds: Number(p.totalOdds?.toFixed(2) || 0),
 })) || [];
+if (pairs_2x1.length === 0 && r31?.combos?.c2) {
+  pairs_2x1 = r31.combos.c2.slice(0, COMBO_CAP).map((c) => ({
+    a: { code: c.matches[0], pick: c.picks[0].score, odds: c.picks[0].odds },
+    b: { code: c.matches[1], pick: c.picks[1].score, odds: c.picks[1].odds },
+    totalOdds: Number((c.odds ?? 0).toFixed(2)),
+  }));
+}
 
 const out = {
   date: TODAY,

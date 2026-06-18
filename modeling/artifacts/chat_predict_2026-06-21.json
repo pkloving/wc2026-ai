@@ -1,0 +1,653 @@
+{
+  "date": "2026-06-21",
+  "generated_at": "2026-06-18T09:32:38.915Z",
+  "source_31": "predict_31",
+  "source_r013": null,
+  "match_count": 12,
+  "matches": [
+    {
+      "code": "周四025",
+      "home": "捷克",
+      "away": "南非",
+      "kickoff": "2026-06-19 00:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.64,
+        "draw": 3.4,
+        "away": 4.43
+      },
+      "rqspf": {
+        "home": 3.12,
+        "draw": 3.35,
+        "away": 1.96
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "0:2",
+          "odds": 26,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "2:2",
+          "odds": 15,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "4:0",
+          "odds": 40,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周四026",
+      "home": "瑞士",
+      "away": "波黑",
+      "kickoff": "2026-06-19 03:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.38,
+        "draw": 3.95,
+        "away": 6.6
+      },
+      "rqspf": {
+        "home": 2.33,
+        "draw": 3.3,
+        "away": 2.52
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 7,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:0",
+          "odds": 8.75,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:0",
+          "odds": 10.5,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周四027",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "kickoff": "2026-06-19 06:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.18,
+        "draw": 5.25,
+        "away": 11
+      },
+      "rqspf": {
+        "home": 1.72,
+        "draw": 3.55,
+        "away": 3.75
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 8.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 9.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "2:0",
+          "odds": 5,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周四028",
+      "home": "墨西哥",
+      "away": "韩国",
+      "kickoff": "2026-06-19 09:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.89,
+        "draw": 2.91,
+        "away": 3.9
+      },
+      "rqspf": {
+        "home": 4.05,
+        "draw": 3.32,
+        "away": 1.72
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "2:2",
+          "odds": 11.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 15.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 5.2,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周五029",
+      "home": "美国",
+      "away": "澳大利亚",
+      "kickoff": "2026-06-20 03:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.45,
+        "draw": 3.83,
+        "away": 5.6
+      },
+      "rqspf": {
+        "home": 2.51,
+        "draw": 3.25,
+        "away": 2.36
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 6.6,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 10.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:0",
+          "odds": 10.5,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周五030",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "kickoff": "2026-06-20 06:00",
+      "handicap": 1,
+      "spf": {
+        "home": 5.1,
+        "draw": 3.28,
+        "away": 1.59
+      },
+      "rqspf": {
+        "home": 2.07,
+        "draw": 3.2,
+        "away": 3
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 5.75,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "1:3",
+          "odds": 11.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:0",
+          "odds": 9,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周五031",
+      "home": "巴西",
+      "away": "海地",
+      "kickoff": "2026-06-20 08:30",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.73,
+        "draw": 4.1,
+        "away": 3.25
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "4:0",
+          "odds": 7.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "4:1",
+          "odds": 12,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "5:1",
+          "odds": 21,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周五032",
+      "home": "土耳其",
+      "away": "巴拉圭",
+      "kickoff": "2026-06-20 11:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.92,
+        "draw": 3.1,
+        "away": 3.5
+      },
+      "rqspf": {
+        "home": 4.1,
+        "draw": 3.4,
+        "away": 1.69
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:3",
+          "odds": 30,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:2",
+          "odds": 18.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:3",
+          "odds": 50,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周六033",
+      "home": "荷兰",
+      "away": "瑞典",
+      "kickoff": "2026-06-21 01:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.59,
+        "draw": 3.58,
+        "away": 4.52
+      },
+      "rqspf": {
+        "home": 2.86,
+        "draw": 3.45,
+        "away": 2.04
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 5.9,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 11.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:0",
+          "odds": 13,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周六034",
+      "home": "德国",
+      "away": "科特迪瓦",
+      "kickoff": "2026-06-21 04:00",
+      "handicap": -1,
+      "spf": {
+        "home": 1.4,
+        "draw": 4.15,
+        "away": 5.75
+      },
+      "rqspf": {
+        "home": 2.27,
+        "draw": 3.55,
+        "away": 2.46
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 6.7,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 10,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "2:2",
+          "odds": 14,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周六035",
+      "home": "厄瓜多尔",
+      "away": "库拉索",
+      "kickoff": "2026-06-21 08:00",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.95,
+        "away": 2.75
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 13.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "3:1",
+          "odds": 10.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:1",
+          "odds": 50,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    },
+    {
+      "code": "周六036",
+      "home": "突尼斯",
+      "away": "日本",
+      "kickoff": "2026-06-21 12:00",
+      "handicap": 1,
+      "spf": {
+        "home": 5.75,
+        "draw": 3.7,
+        "away": 1.46
+      },
+      "rqspf": {
+        "home": 2.3,
+        "draw": 3.25,
+        "away": 2.59
+      },
+      "picks": [
+        {
+          "play": "比分",
+          "pick": "1:1",
+          "odds": 6,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:3",
+          "odds": 10.5,
+          "tier": "推荐"
+        },
+        {
+          "play": "比分",
+          "pick": "0:0",
+          "odds": 11,
+          "tier": "推荐"
+        }
+      ],
+      "reason": "",
+      "rqspf_direction": ""
+    }
+  ],
+  "parlays_3x1": [
+    {
+      "picks": [
+        {
+          "code": "周四027",
+          "play": "比分",
+          "pickLabel": "2:0",
+          "odds": 5
+        },
+        {
+          "code": "周四028",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.2
+        },
+        {
+          "code": "周五030",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.75
+        }
+      ],
+      "totalOdds": 149.5
+    },
+    {
+      "picks": [
+        {
+          "code": "周六033",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.9
+        },
+        {
+          "code": "周四027",
+          "play": "比分",
+          "pickLabel": "2:0",
+          "odds": 5
+        },
+        {
+          "code": "周四028",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.2
+        }
+      ],
+      "totalOdds": 153.4
+    },
+    {
+      "picks": [
+        {
+          "code": "周六036",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 6
+        },
+        {
+          "code": "周四027",
+          "play": "比分",
+          "pickLabel": "2:0",
+          "odds": 5
+        },
+        {
+          "code": "周四028",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.2
+        }
+      ],
+      "totalOdds": 156
+    },
+    {
+      "picks": [
+        {
+          "code": "周六033",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.9
+        },
+        {
+          "code": "周四027",
+          "play": "比分",
+          "pickLabel": "2:0",
+          "odds": 5
+        },
+        {
+          "code": "周五030",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.75
+        }
+      ],
+      "totalOdds": 169.63
+    },
+    {
+      "picks": [
+        {
+          "code": "周四027",
+          "play": "比分",
+          "pickLabel": "2:0",
+          "odds": 5
+        },
+        {
+          "code": "周四028",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 5.2
+        },
+        {
+          "code": "周五029",
+          "play": "比分",
+          "pickLabel": "1:1",
+          "odds": 6.6
+        }
+      ],
+      "totalOdds": 171.6
+    }
+  ],
+  "pairs_2x1": [
+    {
+      "a": {
+        "code": "周四027",
+        "pick": "2:0",
+        "odds": 5
+      },
+      "b": {
+        "code": "周四028",
+        "pick": "1:1",
+        "odds": 5.2
+      },
+      "totalOdds": 26
+    },
+    {
+      "a": {
+        "code": "周四027",
+        "pick": "2:0",
+        "odds": 5
+      },
+      "b": {
+        "code": "周五030",
+        "pick": "1:1",
+        "odds": 5.75
+      },
+      "totalOdds": 28.75
+    },
+    {
+      "a": {
+        "code": "周六033",
+        "pick": "1:1",
+        "odds": 5.9
+      },
+      "b": {
+        "code": "周四027",
+        "pick": "2:0",
+        "odds": 5
+      },
+      "totalOdds": 29.5
+    },
+    {
+      "a": {
+        "code": "周四028",
+        "pick": "1:1",
+        "odds": 5.2
+      },
+      "b": {
+        "code": "周五030",
+        "pick": "1:1",
+        "odds": 5.75
+      },
+      "totalOdds": 29.9
+    },
+    {
+      "a": {
+        "code": "周六036",
+        "pick": "1:1",
+        "odds": 6
+      },
+      "b": {
+        "code": "周四027",
+        "pick": "2:0",
+        "odds": 5
+      },
+      "totalOdds": 30
+    }
+  ]
+}

@@ -12,9 +12,10 @@
     "update:prediction": "node scripts/add-prediction.js",
     "modeling:prepare": "node modeling/scripts/01_prepare_data.js",
     "modeling:train": "node modeling/scripts/02_train_win_model.js && node modeling/scripts/03_train_handicap_model.js && node modeling/scripts/04_train_score_model.js",
+    "modeling:fit": "node modeling/scripts/33_fit_strategy.js",
+    "modeling:fit:backtest": "node modeling/scripts/31_tight_anti_value.js --backtest",
     "modeling:predict": "node modeling/scripts/31_tight_anti_value.js --predict",
-    "modeling:predict:old": "node modeling/scripts/05_predict_unplayed.js",
-    "modeling:all": "node modeling/scripts/31_tight_anti_value.js --predict",
+    "modeling:all": "node modeling/scripts/33_fit_strategy.js && node modeling/scripts/31_tight_anti_value.js --predict",
     "embeddings:build": "node scripts/build_embeddings.js",
     "chat:dev": "vercel dev"
   },
