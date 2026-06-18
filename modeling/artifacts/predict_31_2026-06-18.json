@@ -56,27 +56,27 @@
       "type": "NORMAL",
       "handicap": -1,
       "spf": {
-        "home": 1.52,
-        "draw": 3.55,
-        "away": 5.27
+        "home": 1.54,
+        "draw": 3.45,
+        "away": 5.25
       },
       "rqspf": {
-        "home": 2.73,
-        "draw": 3.22,
-        "away": 2.21
+        "home": 2.98,
+        "draw": 3,
+        "away": 2.17
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 6.1
+          "odds": 5.8
         },
         {
-          "score": "3:0",
-          "odds": 12.5
+          "score": "3:1",
+          "odds": 11.5
         },
         {
           "score": "0:0",
-          "odds": 9.5
+          "odds": 10
         }
       ],
       "singleBets": []
@@ -91,23 +91,23 @@
       "type": "WEAK_MATCH",
       "handicap": -1,
       "spf": {
-        "home": 2.03,
-        "draw": 3,
-        "away": 3.29
+        "home": 2.04,
+        "draw": 3.03,
+        "away": 3.23
       },
       "rqspf": {
-        "home": 4.37,
-        "draw": 3.63,
-        "away": 1.6
+        "home": 4.2,
+        "draw": 3.7,
+        "away": 1.61
       },
       "mainPicks": [
         {
           "score": "3:0",
-          "odds": 20
+          "odds": 25
         },
         {
           "score": "3:1",
-          "odds": 17
+          "odds": 18
         },
         {
           "score": "0:3",
@@ -118,10 +118,6 @@
         {
           "score": "1:3",
           "odds": 35
-        },
-        {
-          "score": "4:0",
-          "odds": 50
         }
       ]
     },
@@ -140,22 +136,22 @@
         "away": 1.22
       },
       "rqspf": {
-        "home": 3.4,
-        "draw": 3.46,
-        "away": 1.83
+        "home": 3.37,
+        "draw": 3.58,
+        "away": 1.81
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 8.5
+          "odds": 9.5
         },
         {
-          "score": "1:2",
-          "odds": 7
+          "score": "0:3",
+          "odds": 7.15
         },
         {
           "score": "0:0",
-          "odds": 11
+          "odds": 12
         }
       ],
       "singleBets": []
@@ -184,14 +180,52 @@
       },
       {
         "matches": [
+          "周三023",
+          "周三024"
+        ],
+        "picks": [
+          {
+            "match": "加纳vs巴拿马",
+            "score": "0:3",
+            "odds": 50
+          },
+          {
+            "match": "乌兹别克斯坦vs哥伦比亚",
+            "score": "0:0",
+            "odds": 12
+          }
+        ],
+        "odds": 600
+      },
+      {
+        "matches": [
+          "周三021",
+          "周三023"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs刚果(金)",
+            "score": "5:0",
+            "odds": 23
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "3:0",
+            "odds": 25
+          }
+        ],
+        "odds": 575
+      },
+      {
+        "matches": [
           "周三022",
           "周三023"
         ],
         "picks": [
           {
             "match": "英格兰vs克罗地亚",
-            "score": "3:0",
-            "odds": 12.5
+            "score": "3:1",
+            "odds": 11.5
           },
           {
             "match": "加纳vs巴拿马",
@@ -199,7 +233,26 @@
             "odds": 50
           }
         ],
-        "odds": 625
+        "odds": 575
+      },
+      {
+        "matches": [
+          "周三022",
+          "周三023"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs克罗地亚",
+            "score": "0:0",
+            "odds": 10
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "0:3",
+            "odds": 50
+          }
+        ],
+        "odds": 500
       },
       {
         "matches": [
@@ -214,27 +267,8 @@
           },
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
-            "score": "0:0",
-            "odds": 11
-          }
-        ],
-        "odds": 550
-      },
-      {
-        "matches": [
-          "周三022",
-          "周三023"
-        ],
-        "picks": [
-          {
-            "match": "英格兰vs克罗地亚",
-            "score": "0:0",
+            "score": "1:1",
             "odds": 9.5
-          },
-          {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
           }
         ],
         "odds": 475
@@ -252,49 +286,11 @@
           },
           {
             "match": "加纳vs巴拿马",
-            "score": "3:0",
-            "odds": 20
-          }
-        ],
-        "odds": 460
-      },
-      {
-        "matches": [
-          "周三023",
-          "周三024"
-        ],
-        "picks": [
-          {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
-          },
-          {
-            "match": "乌兹别克斯坦vs哥伦比亚",
-            "score": "1:1",
-            "odds": 8.5
-          }
-        ],
-        "odds": 425
-      },
-      {
-        "matches": [
-          "周三021",
-          "周三023"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs刚果(金)",
-            "score": "5:0",
-            "odds": 23
-          },
-          {
-            "match": "加纳vs巴拿马",
             "score": "3:1",
-            "odds": 17
+            "odds": 18
           }
         ],
-        "odds": 391
+        "odds": 414
       },
       {
         "matches": [
@@ -328,58 +324,33 @@
           },
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
-            "score": "1:2",
-            "odds": 7
+            "score": "0:3",
+            "odds": 7.15
           }
         ],
-        "odds": 350
+        "odds": 357.5
       },
       {
         "matches": [
-          "周三022",
-          "周三023"
+          "周三023",
+          "周三024"
         ],
         "picks": [
           {
-            "match": "英格兰vs克罗地亚",
-            "score": "1:1",
-            "odds": 6.1
+            "match": "加纳vs巴拿马",
+            "score": "3:0",
+            "odds": 25
           },
           {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
+            "match": "乌兹别克斯坦vs哥伦比亚",
+            "score": "0:0",
+            "odds": 12
           }
         ],
-        "odds": 305
+        "odds": 300
       }
     ],
     "c3": [
-      {
-        "matches": [
-          "周三021",
-          "周三022",
-          "周三023"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs刚果(金)",
-            "score": "5:0",
-            "odds": 23
-          },
-          {
-            "match": "英格兰vs克罗地亚",
-            "score": "3:0",
-            "odds": 12.5
-          },
-          {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
-          }
-        ],
-        "odds": 14375
-      },
       {
         "matches": [
           "周三021",
@@ -400,10 +371,35 @@
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
             "score": "0:0",
-            "odds": 11
+            "odds": 12
           }
         ],
-        "odds": 12650
+        "odds": 13800
+      },
+      {
+        "matches": [
+          "周三021",
+          "周三022",
+          "周三023"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs刚果(金)",
+            "score": "5:0",
+            "odds": 23
+          },
+          {
+            "match": "英格兰vs克罗地亚",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "0:3",
+            "odds": 50
+          }
+        ],
+        "odds": 13225
       },
       {
         "matches": [
@@ -420,12 +416,37 @@
           {
             "match": "英格兰vs克罗地亚",
             "score": "0:0",
-            "odds": 9.5
+            "odds": 10
           },
           {
             "match": "加纳vs巴拿马",
             "score": "0:3",
             "odds": 50
+          }
+        ],
+        "odds": 11500
+      },
+      {
+        "matches": [
+          "周三021",
+          "周三023",
+          "周三024"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs刚果(金)",
+            "score": "5:0",
+            "odds": 23
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "0:3",
+            "odds": 50
+          },
+          {
+            "match": "乌兹别克斯坦vs哥伦比亚",
+            "score": "1:1",
+            "odds": 9.5
           }
         ],
         "odds": 10925
@@ -449,11 +470,11 @@
           },
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
-            "score": "1:1",
-            "odds": 8.5
+            "score": "0:3",
+            "odds": 7.15
           }
         ],
-        "odds": 9775
+        "odds": 8222.5
       },
       {
         "matches": [
@@ -469,41 +490,16 @@
           },
           {
             "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
+            "score": "3:0",
+            "odds": 25
           },
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
-            "score": "1:2",
-            "odds": 7
+            "score": "0:0",
+            "odds": 12
           }
         ],
-        "odds": 8050
-      },
-      {
-        "matches": [
-          "周三021",
-          "周三022",
-          "周三023"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs刚果(金)",
-            "score": "5:0",
-            "odds": 23
-          },
-          {
-            "match": "英格兰vs克罗地亚",
-            "score": "1:1",
-            "odds": 6.1
-          },
-          {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
-          }
-        ],
-        "odds": 7015
+        "odds": 6900
       },
       {
         "matches": [
@@ -514,8 +510,8 @@
         "picks": [
           {
             "match": "英格兰vs克罗地亚",
-            "score": "3:0",
-            "odds": 12.5
+            "score": "3:1",
+            "odds": 11.5
           },
           {
             "match": "加纳vs巴拿马",
@@ -525,10 +521,10 @@
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
             "score": "0:0",
-            "odds": 11
+            "odds": 12
           }
         ],
-        "odds": 6875
+        "odds": 6900
       },
       {
         "matches": [
@@ -544,41 +540,41 @@
           },
           {
             "match": "英格兰vs克罗地亚",
-            "score": "3:0",
-            "odds": 12.5
-          },
-          {
-            "match": "加纳vs巴拿马",
-            "score": "3:0",
-            "odds": 20
-          }
-        ],
-        "odds": 5750
-      },
-      {
-        "matches": [
-          "周三022",
-          "周三023",
-          "周三024"
-        ],
-        "picks": [
-          {
-            "match": "英格兰vs克罗地亚",
-            "score": "3:0",
-            "odds": 12.5
-          },
-          {
-            "match": "加纳vs巴拿马",
-            "score": "0:3",
-            "odds": 50
-          },
-          {
-            "match": "乌兹别克斯坦vs哥伦比亚",
             "score": "1:1",
-            "odds": 8.5
+            "odds": 5.8
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "0:3",
+            "odds": 50
           }
         ],
-        "odds": 5312.5
+        "odds": 6670
+      },
+      {
+        "matches": [
+          "周三021",
+          "周三022",
+          "周三023"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs刚果(金)",
+            "score": "5:0",
+            "odds": 23
+          },
+          {
+            "match": "英格兰vs克罗地亚",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "加纳vs巴拿马",
+            "score": "3:0",
+            "odds": 25
+          }
+        ],
+        "odds": 6612.5
       },
       {
         "matches": [
@@ -590,7 +586,7 @@
           {
             "match": "英格兰vs克罗地亚",
             "score": "0:0",
-            "odds": 9.5
+            "odds": 10
           },
           {
             "match": "加纳vs巴拿马",
@@ -600,10 +596,10 @@
           {
             "match": "乌兹别克斯坦vs哥伦比亚",
             "score": "0:0",
-            "odds": 11
+            "odds": 12
           }
         ],
-        "odds": 5225
+        "odds": 6000
       }
     ]
   }

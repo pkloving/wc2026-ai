@@ -121,7 +121,7 @@
         "draw": 3.11,
         "away": 1.83
       },
-      "scraped_at": "2026-06-17T05:53:05.302Z",
+      "scraped_at": "2026-06-18T01:23:14.364Z",
       "sale_status": "在售",
       "odds_file": "odds/2040186.json",
       "history_file": "odds_history/2040186.json",
@@ -153,7 +153,7 @@
         "draw": 3.35,
         "away": 1.85
       },
-      "scraped_at": "2026-06-17T05:53:05.358Z",
+      "scraped_at": "2026-06-18T01:23:14.441Z",
       "sale_status": "在售",
       "odds_file": "odds/2040187.json",
       "history_file": "odds_history/2040187.json",
@@ -181,7 +181,7 @@
         "draw": 3.23,
         "away": 2.55
       },
-      "scraped_at": "2026-06-17T05:53:05.429Z",
+      "scraped_at": "2026-06-18T01:23:14.479Z",
       "sale_status": "在售",
       "odds_file": "odds/2040188.json",
       "history_file": "odds_history/2040188.json",
@@ -212,7 +212,7 @@
         "draw": 3.55,
         "away": 1.85
       },
-      "scraped_at": "2026-06-17T05:53:05.486Z",
+      "scraped_at": "2026-06-18T01:23:14.511Z",
       "sale_status": "在售",
       "odds_file": "odds/2040189.json",
       "history_file": "odds_history/2040189.json",
@@ -240,7 +240,7 @@
         "draw": 3.6,
         "away": 2.7
       },
-      "scraped_at": "2026-06-17T05:53:05.509Z",
+      "scraped_at": "2026-06-18T01:23:14.599Z",
       "sale_status": "在售",
       "odds_file": "odds/2040190.json",
       "history_file": "odds_history/2040190.json",
@@ -957,11 +957,11 @@
       },
       "handicap": -2,
       "rqspf": {
-        "home": 2.61,
-        "draw": 3.98,
-        "away": 2.02
+        "home": 2.47,
+        "draw": 3.92,
+        "away": 2.13
       },
-      "scraped_at": "2026-06-17T05:53:05.619Z",
+      "scraped_at": "2026-06-18T01:23:14.626Z",
       "sale_status": "在售",
       "odds_file": "odds/2040182.json",
       "history_file": "odds_history/2040182.json",
@@ -988,17 +988,17 @@
       "kickoff": "2026-06-18 04:00",
       "status": "on_sale",
       "spf": {
-        "home": 1.52,
-        "draw": 3.55,
-        "away": 5.27
+        "home": 1.54,
+        "draw": 3.45,
+        "away": 5.25
       },
       "handicap": -1,
       "rqspf": {
-        "home": 2.73,
-        "draw": 3.22,
-        "away": 2.21
+        "home": 2.98,
+        "draw": 3,
+        "away": 2.17
       },
-      "scraped_at": "2026-06-17T05:53:05.639Z",
+      "scraped_at": "2026-06-18T01:23:14.645Z",
       "sale_status": "在售",
       "odds_file": "odds/2040183.json",
       "history_file": "odds_history/2040183.json",
@@ -1025,17 +1025,17 @@
       "kickoff": "2026-06-18 07:00",
       "status": "on_sale",
       "spf": {
-        "home": 2.03,
-        "draw": 3,
-        "away": 3.29
+        "home": 2.04,
+        "draw": 3.03,
+        "away": 3.23
       },
       "handicap": -1,
       "rqspf": {
-        "home": 4.37,
-        "draw": 3.63,
-        "away": 1.6
+        "home": 4.2,
+        "draw": 3.7,
+        "away": 1.61
       },
-      "scraped_at": "2026-06-17T05:53:05.664Z",
+      "scraped_at": "2026-06-18T01:23:14.676Z",
       "sale_status": "在售",
       "odds_file": "odds/2040184.json",
       "history_file": "odds_history/2040184.json",
@@ -1068,11 +1068,11 @@
       },
       "handicap": 1,
       "rqspf": {
-        "home": 3.4,
-        "draw": 3.46,
-        "away": 1.83
+        "home": 3.37,
+        "draw": 3.58,
+        "away": 1.81
       },
-      "scraped_at": "2026-06-17T05:53:05.689Z",
+      "scraped_at": "2026-06-18T01:23:14.693Z",
       "sale_status": "在售",
       "odds_file": "odds/2040185.json",
       "history_file": "odds_history/2040185.json",
