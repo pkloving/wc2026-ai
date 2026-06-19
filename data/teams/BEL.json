@@ -24,15 +24,15 @@
     "group": "G",
     "stage": "group",
     "standings": {
-      "position": 3,
-      "played": 1,
+      "position": 1,
+      "played": 0,
       "win": 0,
-      "draw": 1,
+      "draw": 0,
       "lose": 0,
-      "gf": 1,
-      "ga": 1,
+      "gf": 0,
+      "ga": 0,
       "gd": 0,
-      "pts": 1
+      "pts": 0
     },
     "matches": [
       {
@@ -45,12 +45,7 @@
         "role": "home",
         "opponent_code": "EGY",
         "opponent_name": "埃及",
-        "status": "finished",
-        "score_my": 1,
-        "score_opp": 1,
-        "half_my": 0,
-        "half_opp": 1,
-        "result": "draw"
+        "status": "finished"
       },
       {
         "match_id": "M038",
@@ -76,5 +71,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T01:38:48.093Z"
+  "_updated_at": "2026-06-19T04:08:18.114Z"
 }

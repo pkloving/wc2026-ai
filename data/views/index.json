@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-19T01:38:43.130Z",
-  "total_matches": 30,
+  "generated_at": "2026-06-19T04:09:37.530Z",
+  "total_matches": 31,
   "plays": {
-    "spf": 24,
-    "rqspf": 30,
-    "bf": 30,
-    "zjq": 30,
-    "bqc": 29,
-    "spf_wc": 23,
-    "rqspf_wc": 27,
-    "bf_wc": 27,
-    "zjq_wc": 27,
-    "bqc_wc": 26
+    "spf": 25,
+    "rqspf": 31,
+    "bf": 31,
+    "zjq": 31,
+    "bqc": 30,
+    "spf_wc": 24,
+    "rqspf_wc": 28,
+    "bf_wc": 28,
+    "zjq_wc": 28,
+    "bqc_wc": 27
   }
 }

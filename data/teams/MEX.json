@@ -29,9 +29,9 @@
       "win": 1,
       "draw": 0,
       "lose": 0,
-      "gf": 2,
+      "gf": 1,
       "ga": 0,
-      "gd": 2,
+      "gd": 1,
       "pts": 3
     },
     "matches": [
@@ -45,12 +45,7 @@
         "role": "home",
         "opponent_code": "RSA",
         "opponent_name": "南非",
-        "status": "finished",
-        "score_my": 2,
-        "score_opp": 0,
-        "half_my": 1,
-        "half_opp": 0,
-        "result": "win"
+        "status": "finished"
       },
       {
         "mid": "2040238",
@@ -62,7 +57,12 @@
         "role": "home",
         "opponent_code": "KOR",
         "opponent_name": "韩国",
-        "status": "in_progress"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 0,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M053",
@@ -77,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T01:38:48.093Z"
+  "_updated_at": "2026-06-19T04:08:18.114Z"
 }

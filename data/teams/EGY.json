@@ -24,15 +24,15 @@
     "group": "G",
     "stage": "group",
     "standings": {
-      "position": 4,
-      "played": 1,
+      "position": 2,
+      "played": 0,
       "win": 0,
-      "draw": 1,
+      "draw": 0,
       "lose": 0,
-      "gf": 1,
-      "ga": 1,
+      "gf": 0,
+      "ga": 0,
       "gd": 0,
-      "pts": 1
+      "pts": 0
     },
     "matches": [
       {
@@ -45,12 +45,7 @@
         "role": "away",
         "opponent_code": "BEL",
         "opponent_name": "比利时",
-        "status": "finished",
-        "score_my": 1,
-        "score_opp": 1,
-        "half_my": 1,
-        "half_opp": 0,
-        "result": "draw"
+        "status": "finished"
       },
       {
         "match_id": "M040",
@@ -76,5 +71,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T01:38:48.093Z"
+  "_updated_at": "2026-06-19T04:08:18.114Z"
 }

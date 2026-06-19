@@ -1,0 +1,19 @@
+{
+  "matchId": "2040238",
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "MEX",
+      "player": "路易斯·罗莫",
+      "minute": "50",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}

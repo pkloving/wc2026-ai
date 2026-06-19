@@ -8,27 +8,29 @@
   },
   "scorers": [
     {
+      "team": "COL",
+      "player": "穆尼奥斯",
+      "minute": "38",
+      "type": "goal",
+      "assist": "迪亚斯"
+    },
+    {
       "team": "UZB",
-      "player": "FAYZULLAEV",
-      "minute": 60,
+      "player": "法伊祖拉耶夫",
+      "minute": "60",
       "type": "goal"
     },
     {
       "team": "COL",
-      "player": "MUNOZ",
-      "minute": 40,
-      "type": "goal"
+      "player": "迪亚斯",
+      "minute": "65",
+      "type": "goal",
+      "assist": "普埃尔塔"
     },
     {
       "team": "COL",
-      "player": "DIAZ",
-      "minute": 65,
-      "type": "goal"
-    },
-    {
-      "team": "COL",
-      "player": "CAMPAZ",
-      "minute": 99,
+      "player": "坎帕斯",
+      "minute": "96",
       "type": "goal"
     }
   ],

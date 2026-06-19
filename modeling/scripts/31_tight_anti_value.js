@@ -351,11 +351,16 @@ function runBacktest() {
     mainCost += 3;
     const picks = f4Strategy(m, STRATEGY_CTX);
     const actual = `${m.actualHome}:${m.actualAway}`;
-    const hit = picks.find(p => p.score === actual);
+    // 2026-06-19 调优: "胜其它" 兜底命中检测 (主队赢球 + 进 5+ 球)
+    // 例: 6-0/5-0/5-1 等"非典型大比分" 走"胜其它"档
+    const hit = picks.find(p => p.score === actual)
+             || picks.find(p => p._isOther && p.score === '胜其它' && m.actualHome > m.actualAway && m.actualHome >= 5)
+             || picks.find(p => p._isOther && p.score === '负其它' && m.actualHome < m.actualAway && m.actualAway >= 5)
+             || picks.find(p => p._isOther && p.score === '平其它' && m.actualHome === m.actualAway && (m.actualHome + m.actualAway) >= 5);
     if (hit) { mainReturn += hit.odds; mainHits++; }
     details.push({
       code: m.code, match: `${m.home}vs${m.away}`, type: classifyMatch(m, STRATEGY_CTX),
-      actual, picks: picks.map(p => `${p.score}@${p.odds}`),
+      actual, picks: picks.map(p => `${p.score}@${p.odds}${p._isOther ? '(兜底)' : ''}`),
       hit: !!hit, hitOdds: hit ? hit.odds : 0,
     });
   }

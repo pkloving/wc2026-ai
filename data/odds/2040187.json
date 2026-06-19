@@ -7,7 +7,7 @@
     "away": "哈萨克",
     "kickoff": "2026-06-10 01:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040187",
-    "scraped_at": "2026-06-19T01:36:23.873Z",
+    "scraped_at": "2026-06-19T04:09:10.959Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -90,7 +90,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-19T01:36:23.873Z",
+    "fetched_at": "2026-06-19T04:09:10.959Z",
     "snapshot_time": "2026-06-09 21:48:24"
   }
 }

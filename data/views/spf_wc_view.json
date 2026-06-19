@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-19T01:38:43.137Z",
+  "generated_at": "2026-06-19T04:09:37.535Z",
   "play": "spf",
-  "count": 23,
+  "count": 24,
   "rows": [
     {
       "mid": "2040162",
@@ -506,6 +506,28 @@
         "home": 1.17,
         "draw": 5.45,
         "away": 11
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040238",
+      "code": "周四028",
+      "home": "墨西哥",
+      "away": "韩国",
+      "kickoff": "2026-06-19 09:00",
+      "handicap": -1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2026-06-18T08:26:29.718Z",
+        "home": 1.89,
+        "draw": 2.91,
+        "away": 3.9
+      },
+      "last": {
+        "time": "2026-06-19T01:36:24.380Z",
+        "home": 1.94,
+        "draw": 2.8,
+        "away": 3.9
       },
       "result": "home"
     }

@@ -7,7 +7,7 @@
     "away": "尼日利亚",
     "kickoff": "2026-06-11 03:45",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040189",
-    "scraped_at": "2026-06-19T01:36:24.135Z",
+    "scraped_at": "2026-06-19T04:09:11.320Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -90,7 +90,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-19T01:36:24.135Z",
+    "fetched_at": "2026-06-19T04:09:11.320Z",
     "snapshot_time": "2026-06-10 18:33:51"
   }
 }

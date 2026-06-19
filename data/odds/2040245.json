@@ -7,7 +7,7 @@
     "away": "库拉索",
     "kickoff": "2026-06-21 08:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040245",
-    "scraped_at": "2026-06-19T01:36:24.726Z",
+    "scraped_at": "2026-06-19T04:09:12.305Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -85,7 +85,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-19T01:36:24.726Z",
+    "fetched_at": "2026-06-19T04:09:12.305Z",
     "snapshot_time": null
   }
 }

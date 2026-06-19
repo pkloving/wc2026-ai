@@ -22,15 +22,15 @@
     "group": "E",
     "stage": "group",
     "standings": {
-      "position": 2,
-      "played": 1,
-      "win": 1,
+      "position": 1,
+      "played": 0,
+      "win": 0,
       "draw": 0,
       "lose": 0,
-      "gf": 1,
+      "gf": 0,
       "ga": 0,
-      "gd": 1,
-      "pts": 3
+      "gd": 0,
+      "pts": 0
     },
     "matches": [
       {
@@ -43,12 +43,7 @@
         "role": "home",
         "opponent_code": "ECU",
         "opponent_name": "厄瓜多尔",
-        "status": "finished",
-        "score_my": 1,
-        "score_opp": 0,
-        "half_my": 0,
-        "half_opp": 0,
-        "result": "win"
+        "status": "finished"
       },
       {
         "mid": "2040244",
@@ -75,5 +70,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T01:38:48.093Z"
+  "_updated_at": "2026-06-19T04:08:18.114Z"
 }

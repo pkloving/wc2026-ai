@@ -17,7 +17,17 @@ export const DEFAULT_PARAMS = {
   },
   f4: {
     mainCount: 3,             // 主池取几个比分
-    bigBall: { totalMin: 4, safeOddsMax: 12, midLo: 12, midHi: 25, highLo: 15, highHi: 40 },
+    bigBall: {
+      totalMin: 4,
+      safeOddsMax: 12,
+      midLo: 12, midHi: 25,
+      highLo: 15, highHi: 40,
+      // 2026-06-19 调优: 6-0 这类"主队大胜+5+球"极端比分走"胜其它"兜底,
+      // 加进 mainPicks 候选池(odds < 此上限); NULL 关闭该兜底
+      // 适用场景: BIG_BALL 比赛主队进 5+ 球 (实际 6-0/5-0/5-1 等"非典型大比分")
+      otherOddsMax: 35,
+      otherLabel: '胜其它',
+    },
     weak:    { totalMin: 1, totalMax: 4, coreLo: 10, coreHi: 30, coreCount: 2, upsetLo: 30, upsetHi: 50 },
     normal:  { upsetTotalMin: 3, upsetTotalMax: 4, upsetOddsLo: 7, upsetOddsHi: 15, draw2OddsMax: 15 },
   },
@@ -221,7 +231,14 @@ export function f4Strategy(m, ctx) {
     const big = all.filter(s => s.total >= b.totalMin && dirMatch(s)).sort((a, c) => a.odds - c.odds);
     const safe = big.filter(s => s.odds < b.safeOddsMax)[0] || big[0];
     const midHigh = big.filter(s => s.odds >= b.midLo && s.odds <= b.midHi)[0] || big[Math.floor(big.length / 2)] || big[big.length - 1];
-    const high = big.filter(s => s.odds >= b.highLo && s.odds <= b.highHi)[0] || big[big.length - 1] || midHigh;
+    let high = big.filter(s => s.odds >= b.highLo && s.odds <= b.highHi)[0] || big[big.length - 1] || midHigh;
+    // 2026-06-19 调优 v2: "胜其它" 兜底 (主队大胜+5+球 极端比分走"胜其它"档)
+    // 例: 加拿大 6-0 卡塔尔 走 "胜其它"@27, 替代 high 档(因 胜其它@27 本身就在 highOdds 区间)
+    // 修复 v1 bug: 之前 push 后被 slice 掉, 现在直接替换 high
+    if (b.otherOddsMax != null && b.otherLabel && m.bf && m.bf[b.otherLabel] > 1 && m.bf[b.otherLabel] <= b.otherOddsMax) {
+      const otherOdds = m.bf[b.otherLabel];
+      high = { score: b.otherLabel, odds: otherOdds, home: -1, away: -1, total: 99, _isOther: true };
+    }
     mainPicks = [safe, midHigh, high].filter(Boolean).filter((p, i, arr) => arr.findIndex(q => q.score === p.score) === i);
     if (mainPicks.length < P.mainCount) {
       const sorted = all.slice().sort((a, c) => a.odds - c.odds);

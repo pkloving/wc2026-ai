@@ -22,14 +22,14 @@
     "group": "A",
     "stage": "group",
     "standings": {
-      "position": 4,
-      "played": 2,
+      "position": 3,
+      "played": 1,
       "win": 0,
       "draw": 1,
-      "lose": 1,
+      "lose": 0,
       "gf": 1,
-      "ga": 3,
-      "gd": -2,
+      "ga": 1,
+      "gd": 0,
       "pts": 1
     },
     "matches": [
@@ -43,12 +43,7 @@
         "role": "away",
         "opponent_code": "MEX",
         "opponent_name": "墨西哥",
-        "status": "finished",
-        "score_my": 0,
-        "score_opp": 2,
-        "half_my": 0,
-        "half_opp": 1,
-        "result": "lose"
+        "status": "finished"
       },
       {
         "mid": "2040235",
@@ -80,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T01:38:48.093Z"
+  "_updated_at": "2026-06-19T04:08:18.114Z"
 }
