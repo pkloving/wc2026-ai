@@ -1,0 +1,48 @@
+{
+  "matchId": "2040236",
+  "homeScore": 4,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "SUI",
+      "player": "Johan Manzambi",
+      "minute": "74",
+      "type": "goal",
+      "assist": "Ruben Vargas"
+    },
+    {
+      "team": "SUI",
+      "player": "Ruben Vargas",
+      "minute": "84",
+      "type": "goal"
+    },
+    {
+      "team": "SUI",
+      "player": "Johan Manzambi",
+      "minute": "90",
+      "type": "goal"
+    },
+    {
+      "team": "BIH",
+      "player": "Mehmed Mehic",
+      "minute": "90+2",
+      "type": "goal"
+    },
+    {
+      "team": "SUI",
+      "player": "Granit Xhaka",
+      "minute": "90+5",
+      "type": "penalty",
+      "drawnBy": "Ruben Vargas"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "redCards": [
+    {"team": "BIH", "player": "Anel Muharemovic", "minute": "80", "reason": "tackling Embolo (last man)"}
+  ]
+}

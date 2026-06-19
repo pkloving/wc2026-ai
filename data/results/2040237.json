@@ -1,0 +1,54 @@
+{
+  "matchId": "2040237",
+  "homeScore": 6,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 3,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "CAN",
+      "player": "Cyle Larin",
+      "minute": "16",
+      "type": "goal"
+    },
+    {
+      "team": "CAN",
+      "player": "Jonathan David",
+      "minute": "29",
+      "type": "goal"
+    },
+    {
+      "team": "CAN",
+      "player": "Jonathan David",
+      "minute": "45+3",
+      "type": "goal"
+    },
+    {
+      "team": "CAN",
+      "player": "Nathan-Dylan Saliba",
+      "minute": "64",
+      "type": "goal"
+    },
+    {
+      "team": "QAT",
+      "player": "Mohamed Al-Manai",
+      "minute": "75",
+      "type": "og"
+    },
+    {
+      "team": "CAN",
+      "player": "Jonathan David",
+      "minute": "90+2",
+      "type": "goal",
+      "assist": "Nathan-Dylan Saliba"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "redCards": [
+    {"team": "QAT", "player": "Humam", "minute": "33", "reason": "red card"},
+    {"team": "QAT", "player": "Madibo", "minute": "54", "reason": "second yellow / red card"}
+  ]
+}

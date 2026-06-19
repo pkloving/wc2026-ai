@@ -7,7 +7,7 @@
     "away": "海地",
     "kickoff": "2026-06-20 08:30",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040241",
-    "scraped_at": "2026-06-18T08:26:29.826Z",
+    "scraped_at": "2026-06-19T01:36:24.459Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -85,7 +85,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-18T08:26:29.826Z",
+    "fetched_at": "2026-06-19T01:36:24.459Z",
     "snapshot_time": null
   }
 }

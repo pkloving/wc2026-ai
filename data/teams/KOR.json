@@ -62,7 +62,7 @@
         "role": "away",
         "opponent_code": "MEX",
         "opponent_name": "墨西哥",
-        "status": "on_sale"
+        "status": "in_progress"
       },
       {
         "match_id": "M054",
@@ -77,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T08:34:55.379Z"
+  "_updated_at": "2026-06-19T01:38:48.093Z"
 }

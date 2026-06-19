@@ -22,14 +22,14 @@
     "group": "B",
     "stage": "group",
     "standings": {
-      "position": 3,
-      "played": 1,
+      "position": 4,
+      "played": 2,
       "win": 0,
       "draw": 1,
-      "lose": 0,
+      "lose": 1,
       "gf": 1,
-      "ga": 1,
-      "gd": 0,
+      "ga": 7,
+      "gd": -6,
       "pts": 1
     },
     "matches": [
@@ -60,7 +60,12 @@
         "role": "away",
         "opponent_code": "CAN",
         "opponent_name": "加拿大",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 6,
+        "half_my": 0,
+        "half_opp": 3,
+        "result": "lose"
       },
       {
         "match_id": "M050",
@@ -75,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T08:34:55.379Z"
+  "_updated_at": "2026-06-19T01:38:48.093Z"
 }

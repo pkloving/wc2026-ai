@@ -272,7 +272,7 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "CZE",
     "away": "RSA",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M026",
@@ -283,7 +283,7 @@
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "SUI",
     "away": "BIH",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M027",
@@ -294,7 +294,7 @@
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "CAN",
     "away": "QAT",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M028",
@@ -305,7 +305,7 @@
     "venue": "Estadio Azteca, Mexico City",
     "home": "MEX",
     "away": "KOR",
-    "status": "scheduled"
+    "status": "in_progress"
   },
   {
     "id": "M029",

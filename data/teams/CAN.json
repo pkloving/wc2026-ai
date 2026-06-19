@@ -24,15 +24,15 @@
     "group": "B",
     "stage": "group",
     "standings": {
-      "position": 2,
-      "played": 1,
-      "win": 0,
+      "position": 1,
+      "played": 2,
+      "win": 1,
       "draw": 1,
       "lose": 0,
-      "gf": 1,
+      "gf": 7,
       "ga": 1,
-      "gd": 0,
-      "pts": 1
+      "gd": 6,
+      "pts": 4
     },
     "matches": [
       {
@@ -62,7 +62,12 @@
         "role": "home",
         "opponent_code": "QAT",
         "opponent_name": "卡塔尔",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 6,
+        "score_opp": 0,
+        "half_my": 3,
+        "half_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M049",
@@ -77,5 +82,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T08:34:55.379Z"
+  "_updated_at": "2026-06-19T01:38:48.093Z"
 }

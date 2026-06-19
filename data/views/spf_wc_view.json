@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-18T09:40:53.544Z",
+  "generated_at": "2026-06-19T01:38:43.137Z",
   "play": "spf",
-  "count": 20,
+  "count": 23,
   "rows": [
     {
       "mid": "2040162",
@@ -442,6 +442,72 @@
         "away": 1.22
       },
       "result": "away"
+    },
+    {
+      "mid": "2040235",
+      "code": "周四025",
+      "home": "捷克",
+      "away": "南非",
+      "kickoff": "2026-06-19 00:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2026-06-18T08:26:29.607Z",
+        "home": 1.64,
+        "draw": 3.4,
+        "away": 4.43
+      },
+      "last": {
+        "time": "2026-06-19T01:36:24.332Z",
+        "home": 1.59,
+        "draw": 3.55,
+        "away": 4.58
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040236",
+      "code": "周四026",
+      "home": "瑞士",
+      "away": "波黑",
+      "kickoff": "2026-06-19 03:00",
+      "handicap": -1,
+      "final_score": "4:1",
+      "initial": {
+        "time": "2026-06-18T08:26:29.654Z",
+        "home": 1.38,
+        "draw": 3.95,
+        "away": 6.6
+      },
+      "last": {
+        "time": "2026-06-19T01:36:24.347Z",
+        "home": 1.37,
+        "draw": 4,
+        "away": 6.7
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040237",
+      "code": "周四027",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "kickoff": "2026-06-19 06:00",
+      "handicap": -1,
+      "final_score": "6:0",
+      "initial": {
+        "time": "2026-06-18T08:26:29.686Z",
+        "home": 1.18,
+        "draw": 5.25,
+        "away": 11
+      },
+      "last": {
+        "time": "2026-06-19T01:36:24.364Z",
+        "home": 1.17,
+        "draw": 5.45,
+        "away": 11
+      },
+      "result": "home"
     }
   ]
 }

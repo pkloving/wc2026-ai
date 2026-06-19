@@ -62,7 +62,7 @@
         "role": "home",
         "opponent_code": "KOR",
         "opponent_name": "韩国",
-        "status": "on_sale"
+        "status": "in_progress"
       },
       {
         "match_id": "M053",
@@ -77,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-18T08:34:55.379Z"
+  "_updated_at": "2026-06-19T01:38:48.093Z"
 }

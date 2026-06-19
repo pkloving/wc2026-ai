@@ -1,0 +1,27 @@
+{
+  "matchId": "2040235",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "CZE",
+      "player": "Michal Sadilek",
+      "minute": "5",
+      "type": "goal",
+      "assist": "Alexandr Sojka"
+    },
+    {
+      "team": "RSA",
+      "player": "Teboho Mokoena",
+      "minute": "82",
+      "type": "penalty",
+      "fouledBy": "Pavel Schulz"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null
+}
