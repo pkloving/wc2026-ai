@@ -45,6 +45,26 @@
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4">
+          <!-- 模型命中率对比卡片 -->
+          <div class="card bg-white/5 backdrop-blur p-5 sm:p-6 border border-white/10">
+            <div class="text-xs uppercase tracking-widest text-slate-400 mb-3">模型命中率对比（已完赛 24 场）</div>
+            <div id="model-accuracy-cards" class="grid grid-cols-3 gap-3">
+              <div class="bg-white/10 rounded-lg p-3 text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-gold">60%</div>
+                <div class="text-xs text-slate-300 mt-1">31号策略</div>
+              </div>
+              <div class="bg-white/10 rounded-lg p-3 text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-slate-100">55%</div>
+                <div class="text-xs text-slate-300 mt-1">赔率驱动</div>
+              </div>
+              <div class="bg-white/10 rounded-lg p-3 text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-slate-100">54%</div>
+                <div class="text-xs text-slate-300 mt-1">最佳大模型</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 mt-3">基于历史比赛对比，仅供参考，不构成投注建议。</div>
+          </div>
+          <!-- 倒计时卡片 -->
           <div class="card bg-white/5 backdrop-blur p-5 sm:p-6 border border-white/10">
             <div id="countdown-next" class="text-slate-100" aria-busy="true">
               <div class="text-xs uppercase tracking-widest text-slate-400 mb-2" data-i18n="countdown.title">距下场比赛</div>

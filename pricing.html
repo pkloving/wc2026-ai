@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>订阅 · WC 2026 · AI 预测研究</title>
+  <meta name="description" content="订阅 AI 体育预测研究报告，获取 31 号模型完整输出、赔率市场情绪分析、历史回测数据。" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://flagcdn.com" crossorigin />
+  <link rel="dns-prefetch" href="https://flagcdn.com" />
+  <style>
+    html,body{margin:0;padding:0;background:#f8fafc;color:#0B1F3A;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    body{display:flex;flex-direction:column;min-height:100vh}
+  </style>
+  <!-- Vercel Web Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="flex-1 container-page py-8">
+    <!-- 标题 -->
+    <div class="mb-8">
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-1">Pricing</div>
+      <h1 class="text-3xl sm:text-4xl font-black">订阅数据分析报告</h1>
+      <p class="text-slate-500 text-sm mt-2">获取完整模型输出 + 历史回测数据（研究用途，不构成投注建议）</p>
+    </div>
+
+    <!-- 三档对比 -->
+    <section class="grid lg:grid-cols-3 gap-6 mb-10">
+      <!-- FREE -->
+      <div class="card p-6 border border-slate-200">
+        <div class="text-xs uppercase tracking-widest text-slate-500 mb-2">免费读者</div>
+        <div class="text-2xl font-black mb-4">FREE</div>
+        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>全部比赛赛程 + 比分结果</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>各 AI 模型胜率榜（Top 5）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>球队分组 / 积分榜 / 基础数据</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>3 问免费 AI 对话（研究讨论用）</span>
+          </li>
+          <li class="flex items-start gap-2 text-slate-400">
+            <span>✗</span>
+            <span>31 号模型完整输出</span>
+          </li>
+          <li class="flex items-start gap-2 text-slate-400">
+            <span>✗</span>
+            <span>赔率漂移曲线</span>
+          </li>
+          <li class="flex items-start gap-2 text-slate-400">
+            <span>✗</span>
+            <span>历史回测数据</span>
+          </li>
+        </ul>
+        <div class="text-lg font-bold text-slate-800">免费</div>
+        <a href="/" class="btn-ghost w-full mt-4 text-center">开始浏览</a>
+      </div>
+
+      <!-- ANALYST -->
+      <div class="card p-6 border-2 border-gold bg-gold/5 relative">
+        <div class="absolute top-0 right-0 bg-gold text-white text-xs font-bold px-2 py-1 rounded-bl">推荐</div>
+        <div class="text-xs uppercase tracking-widest text-gold mb-2">分析员</div>
+        <div class="text-2xl font-black mb-1">ANALYST</div>
+        <div class="text-3xl font-black text-gold mb-4">￥49<span class="text-base font-normal text-slate-500">/月</span></div>
+        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span><strong>31 号预测模型全量输出</strong>（SPF / RQSPF / BF / ZJQ / BQC 五维度）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>赔率漂移曲线（初赔 → 实时，反映市场情绪变化）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>球队分层情报（top/second/defensive/weak 分类）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>2022 世界杯模型回测数据（模型有效性验证基准）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>100 次 / 月 AI 对话 + 全量历史数据下载</span>
+          </li>
+          <li class="flex items-start gap-2 text-slate-400">
+            <span>✗</span>
+            <span>冷门检测分桶报告</span>
+          </li>
+          <li class="flex items-start gap-2 text-slate-400">
+            <span>✗</span>
+            <span>赛前专属推送</span>
+          </li>
+        </ul>
+        <a href="/contact.html" class="btn-primary w-full text-center">联系站长订阅</a>
+      </div>
+
+      <!-- RESEARCHER -->
+      <div class="card p-6 border border-slate-200">
+        <div class="text-xs uppercase tracking-widest text-slate-500 mb-2">研究员</div>
+        <div class="text-2xl font-black mb-1">RESEARCHER</div>
+        <div class="text-3xl font-black mb-4">￥199<span class="text-base font-normal text-slate-500">/月</span></div>
+        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span><strong>全部 ANALYST 功能</strong></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>32 号 insights 分桶数据报告（赔率区间 × 让球 × 漂移 × 方向）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>赛前 6h 推送：当日关键比赛预测摘要（邮件）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>自定义参数预测回测工具（调阈值看历史表现，模型研究用）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>预测追踪曲线（模拟模型从开赛至今的累计表现，研究用途）</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span>1000 次 / 月 AI 对话 + API 调用额度（研究接入）</span>
+          </li>
+        </ul>
+        <a href="/contact.html" class="btn bg-slate-800 text-white hover:bg-slate-700 w-full text-center">联系站长订阅</a>
+      </div>
+    </section>
+
+    <!-- 模型命中率对比（嵌入首页卡片数据） -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">📊 模型命中率对比（已完赛 24 场）</h2>
+      <div class="card p-6">
+        <div class="grid sm:grid-cols-3 gap-4 mb-6">
+          <div class="bg-gold/10 rounded-lg p-4 text-center border border-gold/30">
+            <div class="text-3xl font-black text-gold">60%</div>
+            <div class="text-sm text-slate-600 mt-1">31 号策略</div>
+            <div class="text-xs text-slate-400">赔率 + 让球规则</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg p-4 text-center">
+            <div class="text-3xl font-black text-slate-800">55%</div>
+            <div class="text-sm text-slate-600 mt-1">赔率驱动</div>
+            <div class="text-xs text-slate-400">选最低赔率方向</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg p-4 text-center">
+            <div class="text-3xl font-black text-slate-800">58.3%</div>
+            <div class="text-sm text-slate-600 mt-1">最佳大模型</div>
+            <div class="text-xs text-slate-400">deepseek</div>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-slate-200">
+                <th class="text-left py-2 font-semibold">模型</th>
+                <th class="text-right py-2 font-semibold">胜平负方向命中率</th>
+                <th class="text-right py-2 font-semibold">精确比分命中率</th>
+                <th class="text-right py-2 font-semibold">总进球数命中率</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 font-medium">deepseek</td>
+                <td class="text-right">58.3% (14/24)</td>
+                <td class="text-right">12.5% (3/24)</td>
+                <td class="text-right">25.0%</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 font-medium">MiniMax</td>
+                <td class="text-right">54.2% (13/24)</td>
+                <td class="text-right">12.5% (3/24)</td>
+                <td class="text-right">29.2%</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 font-medium">Kimi</td>
+                <td class="text-right">54.2% (13/24)</td>
+                <td class="text-right">4.2% (1/24)</td>
+                <td class="text-right">12.5%</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 font-medium">claude</td>
+                <td class="text-right">50.0% (12/24)</td>
+                <td class="text-right">0.0% (0/24)</td>
+                <td class="text-right">8.3%</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2 font-medium">GPT-5 mini</td>
+                <td class="text-right">50.0% (12/24)</td>
+                <td class="text-right">4.2% (1/24)</td>
+                <td class="text-right">33.3%</td>
+              </tr>
+              <tr class="bg-gold/5 border-b border-gold/20">
+                <td class="py-2 font-bold text-gold">31 号策略</td>
+                <td class="text-right font-bold text-gold">60.0% (12/20)</td>
+                <td class="text-right">—</td>
+                <td class="text-right">—</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2">赔率驱动（SPF 最低赔率）</td>
+                <td class="text-right">55.0% (11/20)</td>
+                <td class="text-right">—</td>
+                <td class="text-right">—</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="py-2">多数模型一致方向（>=3 一致）</td>
+                <td class="text-right">52.2% (12/23)</td>
+                <td class="text-right">—</td>
+                <td class="text-right">—</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="py-2 text-slate-500">「全选主胜」随机基线</td>
+                <td class="text-right text-slate-500">54.2% (13/24)</td>
+                <td class="text-right text-slate-400">—</td>
+                <td class="text-right text-slate-400">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-xs text-slate-500 mt-4">
+          实际分布（24 场）：主胜 54% / 平局 38% / 客胜 8% —— 平局极高频，大模型几乎不猜平，这是 31 号策略能跑赢的核心原因。
+        </div>
+      </div>
+    </section>
+
+    <!-- 合规声明 -->
+    <section class="mb-10">
+      <div class="card p-6 bg-slate-50 border border-slate-200">
+        <h3 class="font-bold mb-3">合规说明</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>本平台为 AI 大模型体育预测研究工具。所有输出内容仅用于研究/学术讨论，不构成任何投注建议。</li>
+          <li>不承诺任何收益。历史命中率数据仅供参考，后续比赛可能波动。</li>
+          <li>请遵守所在地区法律法规。</li>
+          <li>数据来源：公开可获取的赔率数据（中国体育彩票官网等）。</li>
+          <li>数据使用：模型训练、对比分析、研究发表。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">常见问题</h2>
+      <div class="space-y-4">
+        <div class="card p-5">
+          <div class="font-semibold mb-2">Q：订阅后能拿到什么？</div>
+          <div class="text-sm text-slate-600">A：ANALYST 级可查看每场比赛的 31 号模型完整输出（5 玩法 + 赔率漂移曲线 + 球队分层情报）；RESEARCHER 级额外获得冷门检测分桶报告、赛前推送、自定义回测工具。</div>
+        </div>
+        <div class="card p-5">
+          <div class="font-semibold mb-2">Q：如何支付？</div>
+          <div class="text-sm text-slate-600">A：当前为手动发行 license key（站长邮箱发送），无 Stripe/微信手续费。点击「联系站长订阅」跳到 contact.html 填写需求。</div>
+        </div>
+        <div class="card p-5">
+          <div class="font-semibold mb-2">Q：数据多久更新一次？</div>
+          <div class="text-sm text-slate-600">A：赔率每日抓取，比赛结束后自动更新比分 + 命中统计。model_accuracy.json 每次有新完赛比赛时自动重新生成。</div>
+        </div>
+        <div class="card p-5">
+          <div class="font-semibold mb-2">Q：样本量小（24 场）会不会不稳定？</div>
+          <div class="text-sm text-slate-600">A：是的，60% 可能在后续 30 场掉到 55%，也可能升到 62%。我们会在每场新比赛后更新命中率，并在页面标注「样本量较小，仅供参考」。</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
