@@ -10,7 +10,7 @@ import { checkAdminKey, requireAdminKey } from '../lib/admin.js';
 import { env } from '../lib/env.js';
 import { redis } from '../lib/upstash.js';
 import { sendOtpEmail } from '../lib/email.js';
-import { summarizeAll } from '../lib/data_summary.js';
+import { summarizeAll, upcomingMatches } from '../lib/data_summary.js';
 import { bochaSearch } from '../lib/bocha.js';
 import {
   applyCors,
@@ -207,7 +207,13 @@ export async function handleRoute(req, res) {
           webContext = await maybeSearchWeb(lastUser.content);
         }
 
-        const system = [WC_SYSTEM_PROMPT, ragContext, webContext].filter(Boolean).join('\n\n');
+        // 注入当前北京时间 + 即将开赛列表，作为"下一场/即将开赛"的权威依据
+        const { now, matches: upcoming } = upcomingMatches(6);
+        const timeContext = upcoming.length
+          ? `【当前北京时间】${now}\n【接下来即将开赛（按开赛时间升序，最近的在最前；回答"下一场/即将开赛/最近哪场"时以此为准，不要凭检索片段的顺序猜测）】\n${upcoming.map((m) => `• ${m.code} ${m.home} vs ${m.away} ${m.kickoff}（${m.league || ''}）`).join('\n')}`
+          : `【当前北京时间】${now}\n（当前没有即将开赛的比赛）`;
+
+        const system = [WC_SYSTEM_PROMPT, timeContext, ragContext, webContext].filter(Boolean).join('\n\n');
         return streamResponse({ res, email, spent, system, messages, chunks, webContext });
       } catch (err) {
         console.error('[api/chat]', err);

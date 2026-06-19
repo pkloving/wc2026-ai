@@ -542,8 +542,13 @@ export function mountChatbot({ auth } = {}) {
     if (u.credits < 10) { showLowCredits(); auth?.showRedeem(); return; }
     if (!confirm('确定花 10 积分获取今日推荐单解读？\n（推荐单由本地 modeling 脚本生成）')) return;
 
-    const prompt = '/出推荐';
-    appendMessage('user', prompt);
+    // 展示用文案 vs 真正发给模型的指令分开：
+    // 裸的 "/出推荐" 会被模型当成"无法执行的按钮命令"而反问要内容，
+    // 这里明确告诉它数据已在系统提示里，直接输出、不要反问。
+    const displayText = '📊 出今日推荐';
+    const userContent =
+      '请根据系统提示中已提供的"今日推荐单"数据，直接输出一份今日推荐解读：逐场说明赔率结构与推荐理由、给出串关风险提示、末尾附免责声明。这是已确认的付费操作，数据就在系统提示中，不要反问、不要让我再提供内容。';
+    appendMessage('user', displayText);
     // 不写入 history（这是工具调用，不是对话）
 
     const bubble = appendMessage('bot', '');
@@ -553,7 +558,7 @@ export function mountChatbot({ auth } = {}) {
 
     let acc = '';
     await streamChat({
-      messages: [{ role: 'user', content: prompt }],
+      messages: [{ role: 'user', content: userContent }],
       mode: 'recommend',
       onMeta: (m) => {
         if (m.match_count) {

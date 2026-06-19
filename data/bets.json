@@ -1587,6 +1587,160 @@
       "result": "won",
       "actualReturn": 21.92,
       "note": "021 2选 / 022 2选 / 023 2选 / 024 1选。结算：021葡 1-1 让-2 = 客胜 ✅ / 022英 4-2 让-1 = 主胜 ✅ / 023加纳 1-0 让-1 = 平 ❌ / 024乌 vs 哥未完赛 → 已 1 腿错，全 lost 已定。等 024 完赛正式改 lost"
+    },
+    {
+      "id": "crs-mex-kor-2026-06-19",
+      "type": "match",
+      "title": "[比分] 单关（2 注 · 墨西哥-韩国 2:3 / 1:3）",
+      "matchLabel": "周四028 bf{2:3, 1:3}（单关 2 注 × 1 倍）",
+      "date": "2026-06-19T08:00:00",
+      "stakeMultiplier": 1,
+      "parlayType": [],
+      "isActual": true,
+      "source": "用户录入（2026-06-19）",
+      "picks": [
+        {
+          "mid": "2040238",
+          "match": "周四028",
+          "home": "MEX",
+          "away": "KOR",
+          "kickoff": "2026-06-19 09:00",
+          "play": "bf",
+          "pick": "2-3",
+          "pickLabel": "2:3",
+          "odds": null
+        },
+        {
+          "mid": "2040238",
+          "match": "周四028",
+          "home": "MEX",
+          "away": "KOR",
+          "kickoff": "2026-06-19 09:00",
+          "play": "bf",
+          "pick": "1-3",
+          "pickLabel": "1:3",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "pending",
+      "note": "单关比分 2 注（墨西哥客负 2:3 / 1:3）× 1 倍 = 4 元，待结算"
+    },
+    {
+      "id": "mix-3x1-cze-sui-can-2026-06-19",
+      "type": "match",
+      "title": "[混合] 3 场串关（3×1 · 捷克让-1主负 + 瑞士波黑4球 + 加拿大卡塔尔1球）",
+      "matchLabel": "周四025 rqspf 让-1 主负 + 周四026 zjq 4 + 周四027 zjq 1（3×1 × 1 倍）",
+      "date": "2026-06-18T22:00:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["3x1"],
+      "isActual": true,
+      "source": "用户录入（2026-06-19）",
+      "picks": [
+        {
+          "mid": "2040235",
+          "match": "周四025",
+          "home": "CZE",
+          "away": "RSA",
+          "kickoff": "2026-06-19 00:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负（让-1）",
+          "odds": 1.96
+        },
+        {
+          "mid": "2040236",
+          "match": "周四026",
+          "home": "SUI",
+          "away": "BIH",
+          "kickoff": "2026-06-19 03:00",
+          "play": "zjq",
+          "pick": "4",
+          "pickLabel": "4 球",
+          "odds": null
+        },
+        {
+          "mid": "2040237",
+          "match": "周四027",
+          "home": "CAN",
+          "away": "QAT",
+          "kickoff": "2026-06-19 06:00",
+          "play": "zjq",
+          "pick": "1",
+          "pickLabel": "1 球",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 2,
+      "maxReturn": null,
+      "result": "pending",
+      "note": "3 场 3×1 × 1 倍 = 1 注 2 元，待结算"
+    },
+    {
+      "id": "crs-can-qat-2026-06-19",
+      "type": "match",
+      "title": "[比分] 单关（单注 · 加拿大-卡塔尔 2:2）",
+      "matchLabel": "周四027 bf 2:2（单关 1 注 × 1 倍）",
+      "date": "2026-06-19T05:00:00",
+      "stakeMultiplier": 1,
+      "parlayType": [],
+      "isActual": true,
+      "source": "用户录入（2026-06-19）",
+      "picks": [
+        {
+          "mid": "2040237",
+          "match": "周四027",
+          "home": "CAN",
+          "away": "QAT",
+          "kickoff": "2026-06-19 06:00",
+          "play": "bf",
+          "pick": "2-2",
+          "pickLabel": "2:2",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 2,
+      "maxReturn": null,
+      "result": "pending",
+      "note": "单关比分单注 × 1 倍 = 2 元，待结算"
+    },
+    {
+      "id": "crs-cze-rsa-2026-06-19",
+      "type": "match",
+      "title": "[比分] 单关（单注 × 2 倍 · 捷克-南非 0:1）",
+      "matchLabel": "周四025 bf 0:1（单关 1 注 × 2 倍）",
+      "date": "2026-06-18T22:30:00",
+      "stakeMultiplier": 2,
+      "parlayType": [],
+      "isActual": true,
+      "source": "用户录入（2026-06-19）",
+      "picks": [
+        {
+          "mid": "2040235",
+          "match": "周四025",
+          "home": "CZE",
+          "away": "RSA",
+          "kickoff": "2026-06-19 00:00",
+          "play": "bf",
+          "pick": "0-1",
+          "pickLabel": "0:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "单关比分单注 × 2 倍 = 4 元。结算：捷克已先进 1 球，0:1（捷克 0 球）已不可能 → lost"
     }
   ]
 }
