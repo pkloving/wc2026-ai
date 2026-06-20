@@ -63,7 +63,7 @@
         <div class="text-2xl font-black mb-1">ANALYST</div>
         <div class="text-3xl font-black text-gold mb-4">￥49<span class="text-base font-normal text-slate-500">/月</span></div>
         <ul class="space-y-2 text-sm text-slate-700 mb-6">
-          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>结构化数据导出</strong>（2022 全程 + 2026 赔率 / 赛果 / AI 预测，CSV / JSON）<span class="ml-1 inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5 align-middle">即将上线</span></span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>结构化数据导出</strong>（2022 + 2026 五玩法赔率 / 赛果，CSV / JSON）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>赔率漂移曲线（初赔 → 实时，市场情绪变化）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>比赛原型分类 + 球队分层情报（强弱 × 进球轴）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>2022 + 2026 全量回测明细（方法可复核、含样本外检验）</span></li>
@@ -124,8 +124,8 @@
               <tr class="border-b border-slate-100">
                 <td class="py-2 font-medium">数据导出</td>
                 <td class="text-right">1 credit / 次</td>
-                <td class="text-center px-3"><span class="inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5">即将上线</span></td>
-                <td class="pl-3 text-slate-600">导出一场 / 一桶结构化数据（CSV / JSON）</td>
+                <td class="text-center px-3"><span class="inline-block rounded-full bg-green-100 text-green-700 text-xs px-2 py-0.5">已上线</span></td>
+                <td class="pl-3 text-slate-600">导出一届一玩法结构化数据（CSV / JSON）；见下方导出工具</td>
               </tr>
             </tbody>
           </table>
@@ -139,6 +139,82 @@
         </div>
       </div>
     </section>
+
+    <!-- 数据导出工具（已上线，计量制 1 credit/次） -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-2">📤 数据导出工具</h2>
+      <p class="text-slate-600 text-sm mb-4 max-w-3xl">
+        导出 2022 / 2026 世界杯五玩法的结构化数据（含初赔 → 即时赔率 + 赛果），CSV 或 JSON。
+        每次导出扣 <b>1 credit</b>，需登录且余额充足（ANALYST 起）。下载即开始计费，失败自动退款。
+      </p>
+      <div class="card p-6">
+        <div class="flex flex-col sm:flex-row gap-3 sm:items-end" data-export-tool>
+          <label class="flex-1 text-sm">
+            <span class="block text-slate-500 mb-1">数据集</span>
+            <select data-export-dataset class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <optgroup label="2026 世界杯">
+                <option value="settled_2026">2026 已完赛（赛果）</option>
+                <option value="spf_2026" selected>2026 胜平负（初赔/即时+赛果）</option>
+                <option value="rqspf_2026">2026 让球胜平负</option>
+                <option value="bf_2026">2026 比分</option>
+                <option value="zjq_2026">2026 总进球</option>
+                <option value="bqc_2026">2026 半全场</option>
+              </optgroup>
+              <optgroup label="2022 世界杯">
+                <option value="spf_2022">2022 胜平负</option>
+                <option value="rqspf_2022">2022 让球胜平负</option>
+                <option value="bf_2022">2022 比分</option>
+                <option value="zjq_2022">2022 总进球</option>
+                <option value="bqc_2022">2022 半全场</option>
+              </optgroup>
+            </select>
+          </label>
+          <label class="text-sm">
+            <span class="block text-slate-500 mb-1">格式</span>
+            <select data-export-format class="border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="csv" selected>CSV</option>
+              <option value="json">JSON</option>
+            </select>
+          </label>
+          <button type="button" data-export-go class="btn-primary whitespace-nowrap">下载（1 credit）</button>
+        </div>
+        <div data-export-status class="text-sm mt-3 text-slate-500">登录后即可导出。</div>
+      </div>
+    </section>
+    <script type="module">
+      const root = document.querySelector('[data-export-tool]');
+      if (root) {
+        const dsEl = root.querySelector('[data-export-dataset]');
+        const fmtEl = root.querySelector('[data-export-format]');
+        const btn = root.querySelector('[data-export-go]');
+        const statusEl = document.querySelector('[data-export-status]');
+        const setStatus = (msg, ok) => { statusEl.textContent = msg; statusEl.className = `text-sm mt-3 ${ok ? 'text-green-600' : 'text-slate-500'}`; };
+        btn.addEventListener('click', async () => {
+          const dataset = dsEl.value;
+          const format = fmtEl.value;
+          btn.disabled = true;
+          setStatus('导出中…', false);
+          try {
+            const resp = await fetch(`/api/export?dataset=${encodeURIComponent(dataset)}&format=${format}`, { credentials: 'include' });
+            if (resp.status === 401) { setStatus('请先用右上角「登录」按钮登录后再导出。', false); return; }
+            if (resp.status === 402) { setStatus('credits 不足，请兑换 license key 或联系站长充值。', false); return; }
+            if (!resp.ok) { const e = await resp.json().catch(() => ({})); setStatus(`导出失败：${e.error || resp.status}`, false); return; }
+            const blob = await resp.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = `${dataset}.${format}`;
+            document.body.appendChild(a); a.click(); a.remove();
+            URL.revokeObjectURL(url);
+            const left = resp.headers.get('X-Credits-Spent');
+            setStatus(`已导出 ${dataset}.${format}${left ? `（扣 ${left} credit）` : ''}。`, true);
+          } catch (err) {
+            setStatus(`导出失败：${err.message}`, false);
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      }
+    </script>
 
     <!-- 命中率对比：诚实呈现 -->
     <section class="mb-10">

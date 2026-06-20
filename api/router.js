@@ -9,7 +9,7 @@ import { checkAdminKey, requireAdminKey } from '../lib/admin.js';
 import { env } from '../lib/env.js';
 import { redis } from '../lib/upstash.js';
 import { sendOtpEmail } from '../lib/email.js';
-import { summarizeAll, upcomingMatches } from '../lib/data_summary.js';
+import { summarizeAll, upcomingMatches, loadExportRows, rowsToCsv, EXPORT_DATASET_KEYS } from '../lib/data_summary.js';
 import { bochaSearch } from '../lib/bocha.js';
 import {
   applyCors,
@@ -21,8 +21,8 @@ import {
 } from '../lib/api_helpers.js';
 
 // 计量制单一真源：一处改价，全站一致。与 pricing.html 的「Credits 怎么计量」表对齐。
-// 已上线：message（研究问答）、web_search（联网检索，问答内触发时附加）。
-// 即将上线：backtest（自助回测）、export（数据导出）—— 端点上线后接入此表。
+// 已上线：message（研究问答）、web_search（联网检索附加）、export（数据导出，见 /api/export）。
+// 即将上线：backtest（自助回测）—— 端点上线后接入此表。
 const COSTS = {
   message: 1,
   web_search: 1,
@@ -198,6 +198,57 @@ export async function handleRoute(req, res) {
       const out = summarizeAll();
       res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300, stale-while-revalidate=600');
       return res.status(200).json(out);
+    }
+
+    // 计量制「数据导出」动作：?dataset=<key>&format=json|csv，扣 COSTS.export，出错退款
+    if (route === 'export') {
+      if (req.method !== 'GET') return jsonError(res, 405, 'Method not allowed');
+      let email = null;
+      let spent = 0;
+      try {
+        const { email: e } = await requireUser(req);
+        email = e;
+        await applyRateLimit(req, email);
+
+        const dataset = String(requestUrl.searchParams.get('dataset') || '');
+        const format = String(requestUrl.searchParams.get('format') || 'json').toLowerCase();
+        if (!EXPORT_DATASET_KEYS.includes(dataset)) {
+          return jsonError(res, 400, `unknown dataset; valid: ${EXPORT_DATASET_KEYS.join(', ')}`);
+        }
+        if (format !== 'json' && format !== 'csv') {
+          return jsonError(res, 400, 'format must be json or csv');
+        }
+        const data = loadExportRows(dataset);
+        if (!data || !data.rows.length) {
+          return jsonError(res, 404, 'dataset empty or missing');
+        }
+
+        await spendCredits(email, COSTS.export);
+        spent += COSTS.export;
+
+        const filename = `${dataset}.${format}`;
+        res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+        res.setHeader('X-Credits-Spent', String(spent));
+        if (format === 'csv') {
+          res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+          return res.status(200).end(rowsToCsv(data.rows));
+        }
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        return res.status(200).end(JSON.stringify({
+          dataset,
+          label: data.label,
+          generated_at: data.generated_at,
+          count: data.rows.length,
+          cost: spent,
+          rows: data.rows,
+        }));
+      } catch (err) {
+        console.error('[api/export]', err);
+        if (email && spent > 0) {
+          await grantCredits(email, spent, 'refund:export-error').catch(() => {});
+        }
+        return jsonError(res, err.statusCode || 500, err.message);
+      }
     }
 
     if (route === 'search') {
