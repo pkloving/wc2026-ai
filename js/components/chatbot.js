@@ -119,14 +119,6 @@ const STYLE = `
   transition: background .15s;
 }
 .wc-chat-suggestion:hover { background: #D4AF37; color: #0B1F3A; }
-.wc-chat-suggestion-recommend {
-  background: linear-gradient(135deg, #D4AF37 0%, #f4d35e 100%);
-  border: 1px solid #D4AF37; color: #0B1F3A; font-weight: 700;
-  padding: .4rem .8rem; font-size: .8rem;
-  box-shadow: 0 2px 6px rgba(212,175,55,.25);
-}
-.wc-chat-suggestion-recommend:hover { background: #D4AF37; transform: translateY(-1px); }
-.wc-chat-suggestion-recommend:disabled { opacity: .5; cursor: not-allowed; transform: none; }
 .wc-chat-suggestion-simulate {
   background: #f1f5f9; border: 1px dashed #D4AF37; color: #0B1F3A;
   padding: .4rem .8rem; font-size: .8rem; font-weight: 600;
@@ -335,10 +327,7 @@ export function mountChatbot({ auth } = {}) {
         </div>
       </div>
       <div class="wc-chat-msgs" data-msgs></div>
-      <div data-recommend-row style="padding: 0 1rem .5rem; display: flex; flex-wrap: wrap; gap: .5rem;">
-        <button class="wc-chat-suggestion wc-chat-suggestion-recommend" data-recommend type="button">
-          📊 出今日推荐（10 积分）
-        </button>
+      <div data-tools-row style="padding: 0 1rem .5rem; display: flex; flex-wrap: wrap; gap: .5rem;">
         <a class="wc-chat-suggestion wc-chat-suggestion-simulate" href="/simulate.html" target="_blank" rel="noopener">
           ⚽ 模拟记录<span class="soontag">v0.4</span>
         </a>
@@ -364,8 +353,7 @@ export function mountChatbot({ auth } = {}) {
   const subEl = root.querySelector('[data-sub]');
   const suggestionsEl = root.querySelector('[data-suggestions]');
   const suggestions = root.querySelectorAll('[data-suggestion]');
-  const recommendBtn = root.querySelector('[data-recommend]');
-  const recommendRow = root.querySelector('[data-recommend-row]');
+  const toolsRow = root.querySelector('[data-tools-row]');
 
   let isStreaming = false;
   let history = loadHistory();
@@ -386,8 +374,7 @@ export function mountChatbot({ auth } = {}) {
   function refreshControls() {
     const u = auth?.getUser?.();
     if (!u) return;
-    // 积分 < 10 隐藏推荐按钮（避免点了扣成负数）
-    if (recommendRow) recommendRow.style.display = u.credits < 10 ? 'none' : '';
+    if (toolsRow) toolsRow.style.display = '';
     suggestionsEl.style.display = u.credits <= 0 ? 'none' : '';
   }
 
@@ -404,7 +391,7 @@ export function mountChatbot({ auth } = {}) {
         });
       });
       suggestionsEl.style.display = 'none';
-      if (recommendRow) recommendRow.style.display = 'none';
+      if (toolsRow) toolsRow.style.display = 'none';
       form.style.display = 'none';
       return;
     }
@@ -535,73 +522,6 @@ export function mountChatbot({ auth } = {}) {
     setStreaming(false);
   }
 
-  async function sendRecommend() {
-    if (isStreaming) return;
-    const u = auth?.getUser?.();
-    if (!u) { auth?.show(); return; }
-    if (u.credits < 10) { showLowCredits(); auth?.showRedeem(); return; }
-    if (!confirm('确定花 10 积分获取今日推荐单解读？\n（推荐单由本地 modeling 脚本生成）')) return;
-
-    // 展示用文案 vs 真正发给模型的指令分开：
-    // 裸的 "/出推荐" 会被模型当成"无法执行的按钮命令"而反问要内容，
-    // 这里明确告诉它数据已在系统提示里，直接输出、不要反问。
-    const displayText = '📊 出今日推荐';
-    const userContent =
-      '请根据系统提示中已提供的"今日推荐单"数据，直接输出一份今日推荐解读：逐场说明赔率结构与推荐理由、给出串关风险提示、末尾附免责声明。这是已确认的付费操作，数据就在系统提示中，不要反问、不要让我再提供内容。';
-    appendMessage('user', displayText);
-    // 不写入 history（这是工具调用，不是对话）
-
-    const bubble = appendMessage('bot', '');
-    bubble.classList.add('wc-chat-cursor');
-    setStreaming(true);
-    if (recommendBtn) recommendBtn.disabled = true;
-
-    let acc = '';
-    await streamChat({
-      messages: [{ role: 'user', content: userContent }],
-      mode: 'recommend',
-      onMeta: (m) => {
-        if (m.match_count) {
-          const meta = document.createElement('div');
-          meta.className = 'wc-chat-msg-meta';
-          meta.textContent = `${m.predict_date || ''} · ${m.match_count} 场 · 已扣 10 积分`;
-          bubble.parentElement.appendChild(meta);
-        }
-        if (typeof m.credits_remaining === 'number') {
-          const cur = auth?.getUser?.();
-          if (cur) {
-            cur.credits = m.credits_remaining;
-            renderHeader();
-            refreshControls(); // 只刷新按钮显隐，避免重建消息列表清掉推荐对话
-            if (m.credits_remaining <= 0) showLowCredits();
-          }
-        }
-      },
-      onToken: (t) => {
-        acc += t;
-        bubble.textContent = acc;
-        msgsEl.scrollTop = msgsEl.scrollHeight;
-      },
-      onError: (msg) => {
-        bubble.classList.remove('wc-chat-cursor');
-        if (acc) bubble.innerHTML = renderMarkdown(acc);
-        else bubble.textContent = `⚠️ ${msg}`;
-        showError(msg);
-        auth?.checkSession?.();
-      },
-      onDone: () => {
-        bubble.classList.remove('wc-chat-cursor');
-        if (acc) bubble.innerHTML = renderMarkdown(acc);
-        setStreaming(false);
-        if (recommendBtn) recommendBtn.disabled = false;
-        renderHeader();
-        input.focus();
-      },
-    });
-    setStreaming(false);
-    if (recommendBtn) recommendBtn.disabled = false;
-  }
-
   function openPanel({ focus = true } = {}) {
     if (!panel.hidden) return;
     panel.hidden = false;
@@ -647,7 +567,6 @@ export function mountChatbot({ auth } = {}) {
   suggestions.forEach((btn) => {
     btn.addEventListener('click', () => send(btn.textContent));
   });
-  if (recommendBtn) recommendBtn.addEventListener('click', () => sendRecommend());
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();

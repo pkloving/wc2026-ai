@@ -63,7 +63,7 @@
         <div class="text-2xl font-black mb-1">ANALYST</div>
         <div class="text-3xl font-black text-gold mb-4">￥49<span class="text-base font-normal text-slate-500">/月</span></div>
         <ul class="space-y-2 text-sm text-slate-700 mb-6">
-          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>结构化数据导出</strong>（2022 全程 + 2026 赔率 / 赛果 / AI 预测，CSV / JSON）</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>结构化数据导出</strong>（2022 全程 + 2026 赔率 / 赛果 / AI 预测，CSV / JSON）<span class="ml-1 inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5 align-middle">即将上线</span></span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>赔率漂移曲线（初赔 → 实时，市场情绪变化）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>比赛原型分类 + 球队分层情报（强弱 × 进球轴）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>2022 + 2026 全量回测明细（方法可复核、含样本外检验）</span></li>
@@ -81,7 +81,7 @@
         <div class="text-3xl font-black mb-4">￥199<span class="text-base font-normal text-slate-500">/月</span></div>
         <ul class="space-y-2 text-sm text-slate-700 mb-6">
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>全部 ANALYST 功能</strong></span></li>
-          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>自助回测工具</strong>（自调阈值 / 原型 / 分桶，跑历史表现，研究用）</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>自助回测工具</strong>（自调阈值 / 原型 / 分桶，跑历史表现，研究用）<span class="ml-1 inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5 align-middle">即将上线</span></span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>本届指纹研究周报（赛事整体趋势 + 机制分析，研究 / 科普）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>分桶规律数据报告（赔率区间 × 让球 × 漂移 × 方向 的历史命中分布）</span></li>
           <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>3000 credits / 月</strong>（含自助回测，约 600 次）+ API 调用额度</span></li>
@@ -95,7 +95,7 @@
       <h2 class="text-2xl font-bold mb-2">⚙️ Credits 怎么计量</h2>
       <p class="text-slate-600 text-sm mb-4 max-w-3xl">
         订阅按 <b>credits</b> 计量，对应三类「研究动作」——按它消耗的算力 / 价值扣费，你清楚每一分花在哪。
-        订阅内的月度额度按月清零；额外购买的<b>加油包不过期</b>。
+        credits 到账后<b>不过期</b>（订阅额度与加油包一样），到账方式见下方常见问题。
       </p>
       <div class="card p-6">
         <div class="overflow-x-auto mb-6">
@@ -104,24 +104,28 @@
               <tr class="border-b border-slate-200">
                 <th class="text-left py-2 font-semibold">研究动作</th>
                 <th class="text-right py-2 font-semibold">扣费</th>
-                <th class="text-left py-2 font-semibold pl-6">说明</th>
+                <th class="text-center py-2 font-semibold px-3">状态</th>
+                <th class="text-left py-2 font-semibold pl-3">说明</th>
               </tr>
             </thead>
             <tbody>
               <tr class="border-b border-slate-100">
                 <td class="py-2 font-medium">研究问答</td>
                 <td class="text-right">1 credit / 次</td>
-                <td class="pl-6 text-slate-600">就站内回测结论 / 数据向 AI 助手提问（RAG）</td>
+                <td class="text-center px-3"><span class="inline-block rounded-full bg-green-100 text-green-700 text-xs px-2 py-0.5">已上线</span></td>
+                <td class="pl-3 text-slate-600">就站内回测结论 / 数据向 AI 助手提问（RAG）；触发联网检索再 +1</td>
               </tr>
               <tr class="border-b border-slate-100">
                 <td class="py-2 font-medium">自助回测</td>
                 <td class="text-right">5 credits / 次</td>
-                <td class="pl-6 text-slate-600">自调阈值 / 原型 / 分桶，跑一次 2022 / 2026 历史表现（RESEARCHER）</td>
+                <td class="text-center px-3"><span class="inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5">即将上线</span></td>
+                <td class="pl-3 text-slate-600">自调阈值 / 原型 / 分桶，跑一次 2022 / 2026 历史表现（RESEARCHER）</td>
               </tr>
               <tr class="border-b border-slate-100">
                 <td class="py-2 font-medium">数据导出</td>
                 <td class="text-right">1 credit / 次</td>
-                <td class="pl-6 text-slate-600">导出一场 / 一桶结构化数据（CSV / JSON）</td>
+                <td class="text-center px-3"><span class="inline-block rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5">即将上线</span></td>
+                <td class="pl-3 text-slate-600">导出一场 / 一桶结构化数据（CSV / JSON）</td>
               </tr>
             </tbody>
           </table>
@@ -218,12 +222,12 @@
           <div class="text-sm text-slate-600">A：不会。我们的回测结论是博彩没有可持续 edge，卖「每日推荐单」既不诚实也没价值。你拿到的是数据和工具，结论自己跑、自己判断。</div>
         </div>
         <div class="card p-5">
-          <div class="font-semibold mb-2">Q：credits 用完了怎么办？</div>
-          <div class="text-sm text-slate-600">A：可以买<b>加油包</b>（￥29 / 500 credits，永不过期），叠加在订阅额度之上。订阅内的月度额度按月清零，加油包额度不清零、先扣月度再扣加油包。</div>
+          <div class="font-semibold mb-2">Q：credits 用完了怎么办？会过期吗？</div>
+          <div class="text-sm text-slate-600">A：可以买<b>加油包</b>（￥29 / 500 credits）补充。credits 到账后<b>不过期</b>——无论订阅额度还是加油包，用不完都留着，开赛 / 淘汰赛旺季按需购买即可。</div>
         </div>
         <div class="card p-5">
-          <div class="font-semibold mb-2">Q：如何支付？</div>
-          <div class="text-sm text-slate-600">A：当前为手动发行 license key（站长邮箱发送），充值 credits 同样手动到账。点击「联系站长订阅」跳到 contact.html 填写需求。</div>
+          <div class="font-semibold mb-2">Q：如何支付、credits 怎么到账？</div>
+          <div class="text-sm text-slate-600">A：当前为手动发行 <b>license key</b>（站长邮箱发送，格式 <code>WC26-…</code>）。订阅与加油包都通过它到账：登录后在账户面板「兑换 license key」即把对应 credits 充入你的余额。点击「联系站长订阅」跳到 contact.html 填写需求。</div>
         </div>
         <div class="card p-5">
           <div class="font-semibold mb-2">Q：样本量小（24 场）会不会不稳定？</div>

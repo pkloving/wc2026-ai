@@ -73,7 +73,7 @@
               <tbody>
                 <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">普通聊天（纯 RAG）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ 1 积分/次</td></tr>
                 <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">联网搜索（伤停/首发/新闻等）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ +1 积分（叠加）</td></tr>
-                <tr><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">📊 出今日推荐单（AI 解读）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ 10 积分/次</td></tr>
+                <tr style="color:#b45309;"><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;">自助回测 / 数据导出（即将上线）</td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;">⚡ 5 / 1 积分（端点上线后生效）</td></tr>
                 <tr style="background:#fef9c3;"><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;"><b>🆓 新用户注册</b></td><td style="padding:.3rem .5rem;border:1px solid #e2e8f0;text-align:right;"><b>自动到账 3 积分</b></td></tr>
               </tbody>
             </table>
@@ -90,8 +90,9 @@
           </div>
 
           <div>
-            <div style="font-size:.8rem;font-weight:700;color:#0B1F3A;margin-bottom:.5rem;">🤖 今日推荐单怎么更新</div>
+            <div style="font-size:.8rem;font-weight:700;color:#0B1F3A;margin-bottom:.5rem;">🤖 模型预测数据怎么更新</div>
             <div style="font-size:.8rem;line-height:1.7;">
+              <p>注：聊天框「出今日推荐」按钮已下线（定位转向「卖研究/工具，不卖推荐」）。以下流程仍用于刷新 simulate / predictions 展示的模型预测数据。</p>
               <p>Vercel 上不跑 modeling（serverless 限制），需要你本地生成后 push。</p>
               <p style="margin-top:.5rem;"><b>每日流程</b>：</p>
               <ol style="margin:.3rem 0 .3rem 1rem;padding:0;">
@@ -99,7 +100,7 @@
                 <li><code>node scripts/build_chat_predict.js &lt;YYYY-MM-DD&gt;</code></li>
                 <li><code>git add &amp;&amp; git commit &amp;&amp; git push</code></li>
               </ol>
-              <p style="background:#f1f5f9;padding:.4rem;border-radius:.3rem;font-size:.7rem;">推荐单通常在 <b>17:00</b> 左右赔率收敛后生成。如果当天没有未完赛比赛，文件可能为空，用户点按钮会看到友好提示（不扣积分）。</p>
+              <p style="background:#f1f5f9;padding:.4rem;border-radius:.3rem;font-size:.7rem;">预测数据通常在 <b>17:00</b> 左右赔率收敛后生成。如果当天没有未完赛比赛，文件可能为空。</p>
             </div>
           </div>
 

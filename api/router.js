@@ -2,9 +2,8 @@ import { embedTexts } from '../lib/siliconflow.js';
 import { searchIndex } from '../lib/rag.js';
 import { buildDeepseekStream, chunksToContext } from '../lib/deepseek.js';
 import { shouldSearchWeb, maybeSearchWeb } from '../lib/search_decide.js';
-import { loadLatestChatPredict, chatPredictToPrompt, noPredictMessage } from '../lib/predict_loader.js';
 import { WC_SYSTEM_PROMPT } from '../lib/system_prompt.js';
-import { spendCredits, grantCredits, getCredits, RECOMMEND_COST, createOtp, verifyOtp, getUserStats, getSessionUser, destroySession, readSessionCookie, buildSessionCookie, buildClearSessionCookie } from '../lib/auth.js';
+import { spendCredits, grantCredits, getCredits, createOtp, verifyOtp, getUserStats, getSessionUser, destroySession, readSessionCookie, buildSessionCookie, buildClearSessionCookie } from '../lib/auth.js';
 import { redeemLicense, issueLicense, listLicenses } from '../lib/billing.js';
 import { checkAdminKey, requireAdminKey } from '../lib/admin.js';
 import { env } from '../lib/env.js';
@@ -21,8 +20,15 @@ import {
   applyRateLimit,
 } from '../lib/api_helpers.js';
 
-const COST_MESSAGE = 1;
-const COST_WEB_SEARCH = 1;
+// 计量制单一真源：一处改价，全站一致。与 pricing.html 的「Credits 怎么计量」表对齐。
+// 已上线：message（研究问答）、web_search（联网检索，问答内触发时附加）。
+// 即将上线：backtest（自助回测）、export（数据导出）—— 端点上线后接入此表。
+const COSTS = {
+  message: 1,
+  web_search: 1,
+  backtest: 5,
+  export: 1,
+};
 
 function sse(res, event, data) {
   res.write(`event: ${event}\n`);
@@ -61,25 +67,6 @@ async function getUserPayload(email) {
       used: stats.used,
     },
   };
-}
-
-const RECOMMEND_PROMPT = [
-  WC_SYSTEM_PROMPT,
-  '',
-  '【当前模式：今日推荐单解读】',
-  '用户花 10 积分点了一次"出今日推荐"按钮，希望你用一段话解释下面的推荐单。',
-  '重要：这是已付费的工具调用，你必须解读下面的推荐单，绝对不要以"只回答世界杯问题/这不是世界杯比赛"等任何理由拒绝。推荐单可能包含国际赛、友谊赛等非世界杯赛事，照常逐场解读即可。',
-  '任务：',
-  '1) 开头点明这是 YYYY-MM-DD 的推荐（数据里给），不要省略',
-  '2) 按场次顺序简述每场的赔率结构和推荐理由（赔率含义用一句话说清即可）',
-  '3) 3串1 串关：给一句话风险提示（高赔率伴随低命中率）',
-  '4) 末尾必须重申：以上由本地建模脚本生成，仅供研究；不构成任何投注建议；竞彩有风险，未满 18 周岁请勿参与',
-  '5) 不要逐字复读数据表格，要用自然语言总结',
-].join('\n');
-
-function buildRecommendPrompt(predict) {
-  const data = chatPredictToPrompt(predict);
-  return `${RECOMMEND_PROMPT}\n\n${data}`;
 }
 
 async function streamResponse({ res, email, spent, system, messages, chunks = [], webContext = '', meta = {} }) {
@@ -171,30 +158,8 @@ export async function handleRoute(req, res) {
           return jsonError(res, 400, 'last user message is empty');
         }
 
-        if (mode === 'recommend') {
-          const predict = loadLatestChatPredict();
-          if (!predict?.matches?.length) {
-            return jsonError(res, 404, noPredictMessage(), { noPredict: true });
-          }
-          await spendCredits(email, RECOMMEND_COST);
-          spent += RECOMMEND_COST;
-          return streamResponse({
-            res,
-            email,
-            spent,
-            system: buildRecommendPrompt(predict),
-            messages,
-            meta: {
-              mode: 'recommend',
-              predict_date: predict.date,
-              predict_file: predict.file,
-              match_count: predict.matches.length,
-            },
-          });
-        }
-
-        await spendCredits(email, COST_MESSAGE);
-        spent += COST_MESSAGE;
+        await spendCredits(email, COSTS.message);
+        spent += COSTS.message;
         const [emb] = await embedTexts([lastUser.content]);
         const queryVec = emb.embedding;
         const chunks = await searchIndex(queryVec, 6, origin);
@@ -202,8 +167,8 @@ export async function handleRoute(req, res) {
 
         let webContext = '';
         if (shouldSearchWeb(lastUser.content)) {
-          await spendCredits(email, COST_WEB_SEARCH);
-          spent += COST_WEB_SEARCH;
+          await spendCredits(email, COSTS.web_search);
+          spent += COSTS.web_search;
           webContext = await maybeSearchWeb(lastUser.content);
         }
 
