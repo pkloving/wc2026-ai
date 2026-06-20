@@ -283,23 +283,100 @@ function runPredict() {
   const PCK = STRATEGY_CTX.params.picker;
   console.log(`\n# 今日选单 (5类: 必出 cat1/cat2 + 可选 cat3/cat4/cat5)\n`);
 
-  // --- cat1: RQSPF 3串1 (核心) ---
-  console.log(`## 必出① RQSPF 3串1 (核心价值, legMode=${picker.cat1.legMode}, 挑场=${PCK.cat1.topNMode})\n`);
-  if (picker.cat1.tickets.length > 0) {
-    console.log(`选中场次: ${picker.cat1.matches.join(' / ')}  (共 ${picker.cat1.tickets.length} 注${picker.cat1.stake > 1 ? ` ×${picker.cat1.stake}金额` : ''})\n`);
-    console.log(`| # | 线路 (让球方向) | 串关赔率 | 注金 |`);
-    console.log(`|---|----------------|----------|------|`);
-    picker.cat1.tickets.forEach((t, i) => {
-      const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
-      console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} |`);
-    });
-    if (picker.cat1.parlay4) {
-      const t = picker.cat1.parlay4;
-      const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
-      console.log(`| 4串1 | ${desc} | ${t.odds} | ${t.stake} |`);
+  // --- cat1: RQSPF 三层 (2串1 + 3串1 + 4串1) ---
+  console.log(`## 必出① RQSPF 选单 (单选 ${picker.cat1.slimCount} 场 / 双选 ${picker.cat1.dualCount} 场, 挑场=${PCK.cat1.topNMode})\n`);
+  const hasCat1 = picker.cat1.parlay2.length || picker.cat1.parlay3.length || picker.cat1.parlay4;
+  if (hasCat1) {
+    // 单行汇总: 2x1(N) + 3x1(N) + 4x1(N) = 总注
+    const n2 = picker.cat1.parlay2.length;
+    const n3 = picker.cat1.parlay3.length;
+    // 4x1 在 n=3+dual 时是数组(双选展开 2 注), 否则是单 object
+    const n4 = picker.cat1.parlay4
+      ? (Array.isArray(picker.cat1.parlay4) ? picker.cat1.parlay4.length : 1)
+      : 0;
+    const total = n2 + n3 + n4;
+    const n = picker.cat1.slimCount, m = picker.cat1.dualCount;
+    // 单选状态表 (每场 primary/secondary + 单/双选标记)
+    const enriched = matchPredictions
+      .filter(p => picker.cat1.matches.includes(p.code))
+      .map(p => {
+        const slim = n >= 2 && (() => {
+          const rq = p.rq;
+          if (!rq?.primary) return false;
+          if (p.handicap === 1) return false;                       // G (2026-06-20): 主受让+1 强制 DUAL, 同步 strategy_core.isRqSlim
+          if (rq.primary.d === 'home') return true;                 // A: 主选=让胜
+          if (p.spf?.home && p.spf.home < 1.3) return true;          // B: spf 大热门
+          // C 规则(2026-06-20 关闭): spf.home∈[1.5,2.0) - 庄家陷阱盘,见 strategy_core.isRqSlim
+          if (Math.abs(p.handicap ?? 0) === 2) return true;          // D: 大让球
+          if (p.handicap === -1 && p.spf?.home && p.spf.home < 1.5) return true;  // E: 强让
+          if (p.handicap === 1 && p.spf?.away && p.spf.away < 1.5) return true;    // F: 反向强让 (被 G 覆盖)
+          return false;
+        })();
+        return { ...p, _slim: slim };
+      });
+    const slimN = enriched.filter(x => x._slim).length;
+    const dualN = enriched.length - slimN;
+    console.log(`### 单选场次状态 (共 ${enriched.length} 场: 单选 ${slimN} / 双选 ${dualN})\n`);
+    console.log(`| 场次 | 对阵 | hc | 让胜 | 让平 | 让负 | 主选/次选 | 类型 |`);
+    console.log(`|------|------|----|------|------|------|----------|------|`);
+    for (const p of enriched) {
+      const rq_ = p.rqspf || {};
+      const rq = p.rq;
+      const rqCell = rq ? `${rq.primary.label}@${rq.primary.odds} / ${rq.secondary.label}@${rq.secondary.odds}` : '-';
+      const ruleName = rq?.rule?.name || '-';
+      const kind = p._slim ? '单选' : '双选';
+      console.log(`| ${p.code} | ${p.match} | ${p.handicap} | ${rq_.home ?? '-'} | ${rq_.draw ?? '-'} | ${rq_.away ?? '-'} | ${rqCell} | ${kind} (${ruleName}) |`);
+    }
+    console.log(`\n### 一张单子: 2x1(${n2}) + 3x1(${n3}) + 4x1(${n4}) = ${total} 注\n`);
+    if (n2 === 0 && n3 === 0 && n4 === 0) {
+      console.log(`(组合不足, 不出)\n`);
+    } else {
+      // 2串1
+      if (n2 > 0) {
+        console.log(`#### 2串1 (单选 ${n} 选 2 = C(${n},2) = ${n2} 注)\n`);
+        console.log(`| # | 线路 (让球方向) | 串关赔率 | 注金 |`);
+        console.log(`|---|----------------|----------|------|`);
+        picker.cat1.parlay2.forEach((t, i) => {
+          const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
+          console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} |`);
+        });
+        console.log(``);
+      }
+      // 3串1
+      if (n3 > 0) {
+        const desc3 = n >= 3
+          ? `单选 ${n} 选 3 = C(${n},3)`
+          : n === 0
+            ? `0 单选 + jqs + 2 best 双选 (1 票 × 1×2×2 笛卡尔)`
+            : `1 单选 + 2 best 双选 (1 票 × 1×2×2 笛卡尔)`;
+        console.log(`#### 3串1 (${desc3} = ${n3} 注)\n`);
+        console.log(`| # | 线路 (让球方向) | 串关赔率 | 注金 |`);
+        console.log(`|---|----------------|----------|------|`);
+        picker.cat1.parlay3.forEach((t, i) => {
+          const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
+          console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} |`);
+        });
+        console.log(``);
+      }
+      // 4串1 (可能多注: 双选展开 2 注)
+      if (n4 > 0) {
+        const tArr = Array.isArray(picker.cat1.parlay4) ? picker.cat1.parlay4 : [picker.cat1.parlay4];
+        const fill = 4 - Math.min(n, 4);
+        const desc4 = n >= 4
+          ? `单选 ${n} 选 4 = top 4`
+          : `${n} 单选 + top ${fill} 双选 (双选展开 × 2)`;
+        console.log(`#### 4串1 (${desc4} = ${tArr.length} 注, 原子模型)\n`);
+        console.log(`| # | 线路 (让球方向) | 串关赔率 | 注金 |`);
+        console.log(`|---|----------------|----------|------|`);
+        tArr.forEach((t, i) => {
+          const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
+          console.log(`| 4×1 #${i + 1} | ${desc} | ${t.odds} | ${t.stake} |`);
+        });
+        console.log(``);
+      }
     }
   } else {
-    console.log(`(当日有效场次不足 ${PCK.cat1.topN} 场, 不出)`);
+    console.log(`(当日 rqspf 场次不足, 不出)`);
   }
 
   // --- cat2: 比分 2串1 ---
@@ -407,7 +484,7 @@ function runBacktest() {
     if (!m || !P) return false;
     if (P.d === 'home') return true;
     if (m.spf?.home && m.spf.home < 1.3) return true;
-    if (m.spf?.home && m.spf.home >= 1.5 && m.spf.home < 2.0) return true;
+    // C 规则(2026-06-20 关闭): spf.home∈[1.5,2.0) - 庄家陷阱盘,见 strategy_core.isRqSlim
     if (Math.abs(m.handicap ?? 0) === 2) return true;
     if (m.handicap === -1 && m.spf?.home && m.spf.home < 1.5) return true;
     if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) return true;
@@ -751,7 +828,7 @@ function runBacktest() {
     console.log(`\n## Part2 选单回测 (按天选单, ${dayCount} 天 / ${BT.length} 场)\n`);
     console.log(`| 类别 | 注数 | 命中 | 投入 | 回报 | ROI |`);
     console.log(`|------|------|------|------|------|-----|`);
-    const labels = { cat1: '① rqspf 3串1', cat2: '② 比分 2串1', cat3: '③ 高倍比分单', cat4: '④ zjq 单关', cat5: '⑤ bqc 单关' };
+    const labels = { cat1: '① rqspf 2串1+3串1+4串1', cat2: '② 比分 2串1', cat3: '③ 高倍比分单', cat4: '④ zjq 单关', cat5: '⑤ bqc 单关' };
     for (const k of ['cat1', 'cat2', 'cat3', 'cat4', 'cat5']) {
       const c = agg[k];
       const roi = c.cost > 0 ? ((c.ret - c.cost) / c.cost * 100).toFixed(1) : '-';
@@ -783,11 +860,269 @@ function runBacktest() {
 }
 
 // ============================================================
-// 主入口: 默认 predict, --backtest 触发回测
+// 单日全量明细: 加载某日比赛 + 出全部 5 类选单 + 用赛果结算并标注命中
+//   --day YYYY-MM-DD 触发
+//   命中标注: 每个注后跟 ✅/❌; 末尾汇总当日总命中/总投入/总回报/ROI
+// ============================================================
+function runDayDetail(targetDay) {
+  // 1) 加载该日所有赔率文件
+  const oddsFiles = fs.readdirSync(ODDS_DIR).filter(f => f.endsWith('.json')).sort();
+  const dayMatches = [];
+  for (const f of oddsFiles) {
+    const oddsDoc = JSON.parse(fs.readFileSync(path.join(ODDS_DIR, f), 'utf-8'));
+    if (!oddsDoc.basic || oddsDoc.basic.league !== '世界杯') continue;
+    const day = (oddsDoc.basic.kickoff || '').split(' ')[0];
+    if (day !== targetDay) continue;
+    const mid = oddsDoc.basic.mid;
+    const resultPath = path.join(RESULTS_DIR, mid + '.json');
+    const hasResult = fs.existsSync(resultPath);
+    const m = {
+      code: oddsDoc.basic.code, mid, home: oddsDoc.basic.home, away: oddsDoc.basic.away,
+      match: `${oddsDoc.basic.home}vs${oddsDoc.basic.away}`,
+      kickoff: oddsDoc.basic.kickoff,
+      handicap: oddsDoc.odds.handicap ?? 0,
+      spf: oddsDoc.odds.spf_latest, rqspf: oddsDoc.odds.rqspf_latest,
+      bf: oddsDoc.odds.bf_latest, zjq: oddsDoc.odds.zjq_latest, bqc: oddsDoc.odds.bqc_latest,
+      hasResult,
+    };
+    if (hasResult) {
+      const r = JSON.parse(fs.readFileSync(resultPath, 'utf-8'));
+      m.actualHome = r.homeScore; m.actualAway = r.awayScore;
+    }
+    dayMatches.push(m);
+  }
+  if (dayMatches.length === 0) {
+    console.log(`无 ${targetDay} 比赛数据`); return;
+  }
+  const allSettled = dayMatches.every(m => m.hasResult);
+  console.log(`\n[31号策略] 单日明细: ${targetDay} (${dayMatches.length} 场${allSettled ? ', 全部完赛' : ', 部分未完赛'})\n`);
+
+  // 2) 出全部 5 类选单
+  const matchPredictions = dayMatches.map(m => {
+    const type = classifyMatch(m, STRATEGY_CTX);
+    const mainPicks = f4Strategy(m, STRATEGY_CTX);
+    const singleBets = singleBetStrategy(m, mainPicks, STRATEGY_CTX);
+    const rq = rqspfStrategy(m, STRATEGY_CTX);
+    const z = zjqStrategy(m, STRATEGY_CTX);
+    const b = bqcStrategy(m, STRATEGY_CTX);
+    return { ...m, type, mainPicks, singleBets, rq, z, b };
+  });
+  const picker = selectBets(matchPredictions, STRATEGY_CTX);
+  const PCK = STRATEGY_CTX.params.picker;
+
+  // 3) 准备赛果 lookup
+  const actualByCode = {};
+  for (const m of dayMatches) {
+    if (!m.hasResult) continue;
+    const diff = m.actualHome - m.actualAway;
+    const hc = m.handicap ?? 0;
+    let rqResult = diff + hc > 0 ? 'home' : diff + hc < 0 ? 'away' : 'draw';
+    let zjqResult = String(m.actualHome + m.actualAway);
+    if (m.actualHome + m.actualAway >= 7) zjqResult = '7+';
+    actualByCode[m.code] = { score: `${m.actualHome}:${m.actualAway}`, rqResult, zjqResult };
+  }
+
+  // ====== 比赛结果概览 ======
+  console.log(`## 比赛结果 (${dayMatches.length} 场)\n`);
+  console.log(`| 场次 | 对阵 | hc | 实际比分 | rqspf | zjq |`);
+  console.log(`|------|------|----|----------|-------|-----|`);
+  for (const m of dayMatches) {
+    const r = actualByCode[m.code];
+    const rq = r ? (({ home: '让胜', draw: '让平', away: '让负' })[r.rqResult]) : '未完赛';
+    const zjq = r ? r.zjqResult + '球' : '-';
+    console.log(`| ${m.code} | ${m.match} | ${m.handicap} | ${r ? r.score : '-'} | ${rq} | ${zjq} |`);
+  }
+
+  // ====== ① RQSPF 选单 (含命中) ======
+  console.log(`\n## ① RQSPF 选单 (单选 ${picker.cat1.slimCount} 场 / 双选 ${picker.cat1.dualCount} 场)\n`);
+  const n2 = picker.cat1.parlay2.length;
+  const n3 = picker.cat1.parlay3.length;
+  // 4x1 在 n=3+dual 时是数组(双选展开 2 注), 否则是单 object
+  const n4 = picker.cat1.parlay4
+    ? (Array.isArray(picker.cat1.parlay4) ? picker.cat1.parlay4.length : 1)
+    : 0;
+  const totalCat1 = n2 + n3 + n4;
+  const n = picker.cat1.slimCount;
+  if (totalCat1 === 0) {
+    console.log(`(当日 rqspf 场次不足, 不出)`);
+  } else {
+    // 单选场次状态
+    const enriched = matchPredictions
+      .filter(p => picker.cat1.matches.includes(p.code))
+      .map(p => {
+        const slim = (() => {
+          const rq = p.rq;
+          if (!rq?.primary) return false;
+          if (p.handicap === 1) return false;                       // G (2026-06-20): 主受让+1 强制 DUAL, 同步 strategy_core.isRqSlim
+          if (rq.primary.d === 'home') return true;                 // A: 主选=让胜
+          if (p.spf?.home && p.spf.home < 1.3) return true;          // B: spf 大热门
+          // C 规则(2026-06-20 关闭): spf.home∈[1.5,2.0) - 庄家陷阱盘,见 strategy_core.isRqSlim
+          if (Math.abs(p.handicap ?? 0) === 2) return true;          // D: 大让球
+          if (p.handicap === -1 && p.spf?.home && p.spf.home < 1.5) return true;  // E: 强让
+          if (p.handicap === 1 && p.spf?.away && p.spf.away < 1.5) return true;    // F: 反向强让 (被 G 覆盖)
+          return false;
+        })();
+        return { ...p, _slim: slim };
+      });
+    const slimN = enriched.filter(x => x._slim).length;
+    const dualN = enriched.length - slimN;
+    console.log(`### 单选场次状态 (共 ${enriched.length} 场: 单选 ${slimN} / 双选 ${dualN})\n`);
+    console.log(`| 场次 | 对阵 | hc | 让胜 | 让平 | 让负 | 主选/次选 | 类型 |`);
+    console.log(`|------|------|----|------|------|------|----------|------|`);
+    for (const p of enriched) {
+      const rq_ = p.rqspf || {};
+      const rq = p.rq;
+      const rqCell = rq ? `${rq.primary.label}@${rq.primary.odds} / ${rq.secondary.label}@${rq.secondary.odds}` : '-';
+      const ruleName = rq?.rule?.name || '-';
+      const kind = p._slim ? '单选' : '双选';
+      console.log(`| ${p.code} | ${p.match} | ${p.handicap} | ${rq_.home ?? '-'} | ${rq_.draw ?? '-'} | ${rq_.away ?? '-'} | ${rqCell} | ${kind} (${ruleName}) |`);
+    }
+    console.log(`\n### 一张单子: 2x1(${n2}) + 3x1(${n3}) + 4x1(${n4}) = ${totalCat1} 注\n`);
+
+    const renderLeg = (l) => {
+      if (l.market === 'zjq') {
+        const r = actualByCode[l.code];
+        const hit = r && r.zjqResult === l.pick;
+        return `${l.code} zjq${l.pick}球@${l.odds}${hit ? ' ✅' : (r ? ' ❌' : '')}`;
+      }
+      const r = actualByCode[l.code];
+      const hit = r && r.rqResult === l.d;
+      return `${l.code} ${l.label}@${l.odds}${hit ? ' ✅' : (r ? ' ❌' : '')}`;
+    };
+    const winT = (t) => t.legs.every(l => {
+      const a = actualByCode[l.code]; if (!a) return false;
+      if (l.market === 'zjq') return a.zjqResult === l.pick;
+      return a.rqResult === l.d;
+    });
+
+    // 2串1
+    if (n2 > 0) {
+      console.log(`#### 2串1 (单选 ${n} 选 2 = C(${n},2) = ${n2} 注)\n`);
+      console.log(`| # | 线路 (✅=中 ❌=未中) | 串关赔率 | 注金 | 命中 |`);
+      console.log(`|---|--------------------|----------|------|------|`);
+      picker.cat1.parlay2.forEach((t, i) => {
+        const desc = t.legs.map(renderLeg).join(' × ');
+        const win = winT(t);
+        console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} | ${win ? `✅ +$${t.odds}` : '❌'} |`);
+      });
+      console.log(``);
+    }
+    // 3串1
+    if (n3 > 0) {
+      const desc3 = n >= 3
+        ? `单选 ${n} 选 3 = C(${n},3)`
+        : n === 0
+          ? `0 单选 + jqs + 2 best 双选 (1 票 × 1×2×2 笛卡尔)`
+          : `1 单选 + 2 best 双选 (1 票 × 1×2×2 笛卡尔)`;
+      console.log(`#### 3串1 (${desc3} = ${n3} 注)\n`);
+      console.log(`| # | 线路 (✅=中 ❌=未中) | 串关赔率 | 注金 | 命中 |`);
+      console.log(`|---|--------------------|----------|------|------|`);
+      picker.cat1.parlay3.forEach((t, i) => {
+        const desc = t.legs.map(renderLeg).join(' × ');
+        const win = winT(t);
+        console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} | ${win ? `✅ +$${t.odds}` : '❌'} |`);
+      });
+      console.log(``);
+    }
+    // 4串1 (可能多注: 双选展开 2 注)
+    if (n4 > 0) {
+      const tArr = Array.isArray(picker.cat1.parlay4) ? picker.cat1.parlay4 : [picker.cat1.parlay4];
+      const fill = 4 - Math.min(n, 4);
+      const desc4 = n >= 4
+        ? `单选 ${n} 选 4 = top 4`
+        : `${n} 单选 + top ${fill} 双选 (双选展开 × 2)`;
+      console.log(`#### 4串1 (${desc4} = ${tArr.length} 注, 原子模型)\n`);
+      console.log(`| # | 线路 (✅=中 ❌=未中) | 串关赔率 | 注金 | 命中 |`);
+      console.log(`|---|--------------------|----------|------|------|`);
+      tArr.forEach((t, i) => {
+        const desc = t.legs.map(renderLeg).join(' × ');
+        const win = winT(t);
+        console.log(`| 4×1 #${i + 1} | ${desc} | ${t.odds} | ${t.stake} | ${win ? `✅ +$${t.odds}` : '❌'} |`);
+      });
+      console.log(``);
+    }
+  }
+
+  // ====== ② 比分 2串1 (含命中) ======
+  console.log(`\n## ② 比分 2串1 (每场挑2比分, pickMode=${PCK.cat2.pickMode})\n`);
+  if (picker.cat2.tickets.length > 0) {
+    console.log(`选中场次: ${picker.cat2.matches.join(' / ')}  (共 ${picker.cat2.tickets.length} 注)\n`);
+    console.log(`| # | 线路 (✅=中 ❌=未中) | 串关赔率 | 命中 |`);
+    console.log(`|---|--------------------|----------|------|`);
+    picker.cat2.tickets.forEach((t, i) => {
+      const desc = t.legs.map(l => {
+        const r = actualByCode[l.code];
+        const hit = r && r.score === l.score;
+        return `${l.code} ${l.score}@${l.odds}${hit ? ' ✅' : (r ? ' ❌' : '')}`;
+      }).join(' × ');
+      const win = t.legs.every(l => actualByCode[l.code]?.score === l.score);
+      console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${win ? `✅ +$${t.odds}` : '❌'} |`);
+    });
+  } else {
+    console.log(`(当日有效场次不足 ${PCK.cat2.topN} 场, 不出)`);
+  }
+
+  // ====== ③ 高倍比分单关 ======
+  console.log(`\n## ③ 高倍比分单关 (主池比分赔率 >= ${PCK.cat3.oddsThreshold})\n`);
+  if (picker.cat3.length > 0) {
+    for (const p of picker.cat3) {
+      const r = actualByCode[p.code];
+      const hit = r && r.score === p.score;
+      console.log(`  ${p.code} ${p.match}: ${p.score}@${p.odds}${r ? (hit ? ' ✅' : ` ❌ (实际${r.score})`) : ''}`);
+    }
+  } else { console.log(`(无高倍比分信号, 今日不出)`); }
+
+  // ====== ④ zjq 单关 (仅纠偏信号, auxOnly=012 球不出) ======
+  console.log(`\n## ④ 总进球(zjq) 单关 (仅纠偏信号, 012 球辅助 bf 筛查不出单)\n`);
+  if (picker.cat4.length > 0) {
+    for (const p of picker.cat4) {
+      const r = actualByCode[p.code];
+      const hit = r && p.picks.includes(r.zjqResult);
+      const desc = p.picks.map(k => `${k}球@${p.oddsMap[k]}`).join(' / ');
+      console.log(`  ${p.code} ${p.match}: ${desc}${r ? (hit ? ` ✅ (实际${r.zjqResult}球)` : ` ❌ (实际${r.zjqResult}球)`) : ''}  (${p.rule?.name || ''})`);
+    }
+  } else { console.log(`(无 zjq 纠偏信号, 今日不出)`); }
+
+  // ====== ⑤ bqc 单关 ======
+  console.log(`\n## ⑤ 半全场(bqc) 单关 (仅纠偏信号)\n`);
+  if (picker.cat5.length > 0) {
+    // 注: deriveActual 提供 bqcResult, 这里需要补一下
+    for (const p of picker.cat5) {
+      const r = actualByCode[p.code];
+      const desc = p.picks.map(k => `${k}@${p.oddsMap[k]}`).join(' / ');
+      console.log(`  ${p.code} ${p.match}: ${desc}  (${p.rule?.name || ''})  ${r ? '' : '(bqcResult 未计算)'}`);
+    }
+  } else { console.log(`(无 bqc 纠偏信号, 今日不出)`); }
+
+  // ====== 当日总账 ======
+  if (allSettled) {
+    const settled = settleBets(picker, actualByCode);
+    console.log(`\n## 当日总账 (${targetDay})\n`);
+    console.log(`| 类别 | 注数 | 命中 | 投入 | 回报 | ROI |`);
+    console.log(`|------|------|------|------|------|-----|`);
+    const labels = { cat1: '① rqspf 2x1+3x1+4x1', cat2: '② 比分 2串1', cat3: '③ 高倍比分单', cat4: '④ zjq 单关', cat5: '⑤ bqc 单关' };
+    let totalCost = 0, totalRet = 0, totalHits = 0, totalN = 0;
+    for (const k of ['cat1', 'cat2', 'cat3', 'cat4', 'cat5']) {
+      const c = settled[k];
+      const roi = c.cost > 0 ? ((c.ret - c.cost) / c.cost * 100).toFixed(1) : '-';
+      console.log(`| ${labels[k]} | ${c.n} | ${c.hits} | $${c.cost} | $${c.ret.toFixed(2)} | ${roi}% |`);
+      totalCost += c.cost; totalRet += c.ret; totalHits += c.hits; totalN += c.n;
+    }
+    const totalRoi = totalCost > 0 ? ((totalRet - totalCost) / totalCost * 100).toFixed(1) : '-';
+    console.log(`| **合计** | **${totalN}** | **${totalHits}** | **$${totalCost}** | **$${totalRet.toFixed(2)}** | **${totalRoi}%** |`);
+  } else {
+    console.log(`\n(部分比赛未完赛, 跳过结算汇总)`);
+  }
+}
+
+// ============================================================
+// 主入口: 默认 predict, --backtest 触发回测, --day YYYY-MM-DD 触发单日明细
 // ============================================================
 const args = process.argv.slice(2);
 if (args.includes('--backtest')) {
   runBacktest();
+} else if (args[0] === '--day' && args[1]) {
+  runDayDetail(args[1]);
 } else {
   runPredict();
 }

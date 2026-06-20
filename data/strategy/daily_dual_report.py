@@ -107,6 +107,29 @@ def standings_and_regime():
 
 
 # ---------- 新策略核心 ----------
+def is_rq_slim(m, primary):
+    """复刻 strategy_core.isRqSlim (5 OR + G 规则 2026-06-20 新增)
+    返回 True=单选, False=双选
+    """
+    if not m or not primary:
+        return False
+    hc = m.get("handicap")
+    if hc == 1:                                  # G: 主受让+1 强制 DUAL
+        return False
+    if primary.get("d") == "home":               # A: 主选=让胜
+        return True
+    spf = m.get("spf") or {}
+    if spf.get("home") and spf["home"] < 1.3:    # B: spf 大热门
+        return True
+    if hc is not None and abs(hc) == 2:          # D: 大让球
+        return True
+    if hc == -1 and spf.get("home") and spf["home"] < 1.5:  # E: 强让
+        return True
+    if hc == 1 and spf.get("away") and spf["away"] < 1.5:  # F: 反向强让 (被 G 覆盖)
+        return True
+    return False
+
+
 def strength(spf, rqspf, hc):
     if spf and spf.get("home") and spf.get("away"):
         fo = min(spf["home"], spf["away"])
@@ -212,7 +235,7 @@ def new_strategy(m, pts, gd, regime):
 
 
 # ---------- 渲染 ----------
-def render(date, matches, pts, gd, regime, rnd):
+def render(date, matches, pts, gd, regime, rnd, picker=None):
     L = []
     L.append(f"# {date} 出单合并报告 (31规则 + 新策略)\n")
     # 本届指纹
@@ -225,14 +248,65 @@ def render(date, matches, pts, gd, regime, rnd):
     chalk = fav_gap > 0.02
 
     # ===== 31 规则段 =====
+    cat1 = (picker or {}).get("cat1", {})
+    slimN = cat1.get("slimCount", 0); dualN = cat1.get("dualCount", 0)
     L.append("\n## 一、31规则 出单\n")
-    L.append("| 场次 | 类型 | 让球 | F4主池比分 | rqspf主腿 |")
-    L.append("|---|---|---|---|---|")
+    L.append(f"> **SLIM/DUAL 分流:** 单选 {slimN} 场 / 双选 {dualN} 场 (5 OR 规则 + G 规则 2026-06-20 新增: hc=+1 强制 DUAL)\n")
+    L.append("| 场次 | 类型 | 让球 | SLIM/DUAL | F4主池比分 | rqspf 主+次选 |")
+    L.append("|---|---|---|---|---|---|")
     for m in matches:
-        picks = " / ".join(f"{p['score']}@{p['odds']}" for p in m.get("mainPicks", []))
-        rqf = m.get("_rq_primary")
-        rqs = f"{rqf['label']}@{rqf['odds']}" if rqf else "—"
-        L.append(f"| {m['code']} {m['match']} | {m.get('type','')} | {m.get('handicap')} | {picks} | {rqs} |")
+        picks = " / ".join(f"{p['score']}@{p['odds']}" for p in m.get("mainPicks", [])) or "—"
+        rqf = m.get("_rq_primary"); rqs = m.get("_rq_secondary")
+        # SLIM/DUAL 判定 (用 is_rq_slim 复刻 strategy_core 逻辑)
+        is_slim = is_rq_slim(m, rqf) if rqf else False
+        if rqf and rqs and not is_slim:
+            rq_cell = f"**{rqf['label']}@{rqf['odds']}** + {rqs['label']}@{rqs['odds']} (双选)"
+        elif rqf and is_slim:
+            rq_cell = f"{rqf['label']}@{rqf['odds']} (单选, 跳过次选)"
+        elif rqf:
+            rq_cell = f"{rqf['label']}@{rqf['odds']}"
+        else:
+            rq_cell = "—"
+        slim_flag = "SLIM" if is_slim else "DUAL"
+        if not is_slim and m.get("handicap") == 1:
+            slim_flag = "**DUAL (G)**"
+        L.append(f"| {m['code']} {m['match']} | {m.get('type','')} | {m.get('handicap')} | {slim_flag} | {picks} | {rq_cell} |")
+
+    # ===== 31 规则串关套餐 (从 picker.cat1 读 parlay2/parlay4) =====
+    parlay2_list = cat1.get("parlay2") or []
+    parlay4_raw = cat1.get("parlay4")
+    parlay4_list = parlay4_raw if isinstance(parlay4_raw, list) else ([parlay4_raw] if parlay4_raw else [])
+    parlay3_list = cat1.get("parlay3") or []
+    n2 = len(parlay2_list)
+    n4 = len(parlay4_list)
+    n3 = len(parlay3_list)
+    total = n2 + n3 + n4
+    if total > 0:
+        L.append(f"\n### 31规则 串关套餐 (2×1 {n2} + 3×1 {n3} + 4×1 {n4} = {total} 注)\n")
+        if n2:
+            L.append(f"\n**2串1 (单选 {slimN} 选 2 = C({slimN},2) = {n2} 注):**\n")
+            L.append("| # | 线路 | 串关赔率 | 注金 |")
+            L.append("|---|------|----------|------|")
+            for i, t in enumerate(parlay2_list, 1):
+                legs_str = " × ".join(f"{l['code']} {l['label']}@{l['odds']}" for l in t["legs"])
+                L.append(f"| {i} | {legs_str} | {t['odds']} | {t['stake']} |")
+        if n3:
+            L.append(f"\n**3串1 (= {n3} 注):**\n")
+            L.append("| # | 线路 | 串关赔率 | 注金 |")
+            L.append("|---|------|----------|------|")
+            for i, t in enumerate(parlay3_list, 1):
+                legs_str = " × ".join(f"{l['code']} {l['label']}@{l['odds']}" for l in t["legs"])
+                L.append(f"| {i} | {legs_str} | {t['odds']} | {t['stake']} |")
+        if n4:
+            L.append(f"\n**4串1 (单选+双选展开 = {n4} 注, 原子模型):**\n")
+            L.append("| # | 线路 | 串关赔率 | 注金 |")
+            L.append("|---|------|----------|------|")
+            for i, t in enumerate(parlay4_list, 1):
+                legs_str = " × ".join(f"{l['code']} {l['label']}@{l['odds']}" for l in t["legs"])
+                L.append(f"| {i} | {legs_str} | {t['odds']} | {t['stake']} |")
+        if n4 == 0:
+            L.append(f"\n> **4×1 已跳过** — parlay4OnlyN4=true, 仅 n=4 (4 单选) 才出 4x1; "
+                     f"今日 n={slimN} (n=3 降级后或本身就 n=2) 不满足。")
 
     # ===== 新策略段 =====
     L.append("\n## 二、新策略 出单(另起一段)\n")
@@ -269,7 +343,8 @@ def render(date, matches, pts, gd, regime, rnd):
     L.append("\n## 诚实刹车")
     L.append("- 新策略规律来自 2022全程+2026在赛(小样本,原型最准格 n≈16-21);")
     L.append("- '信热门'是进行中读数,会随 R2/R3 变脸;R2 养生局尚不典型(多数队仍需分);")
-    L.append("- 比分仅辅助收口,bf 高水位,主力价值在方向(spf/rqspf)与总进球(zjq)。")
+    L.append("- 比分仅辅助收口,bf 高水位,主力价值在方向(spf/rqspf)与总进球(zjq);")
+    L.append("- **G 规则(2026-06-20 新增)**: 主受让+1 强制 DUAL, 不再单边, 详见 strategy_core.isRqSlim。")
     return "\n".join(L)
 
 
@@ -288,11 +363,14 @@ def main():
     # 附 rqspf 主腿 + 轮次 + 新策略
     rqmap = {x["code"]: x for x in d.get("rqspf_follow", [])}
     for m in matches:
-        m["_rq_primary"] = (rqmap.get(m["code"]) or {}).get("primary")
+        rq = rqmap.get(m["code"]) or {}
+        m["_rq_primary"] = rq.get("primary")
+        m["_rq_secondary"] = rq.get("secondary")
         m["round"] = rnd.get(str(m["mid"]))
         m["_new"] = new_strategy(m, pts, gd, regime)
 
-    report = render(date, matches, pts, gd, regime, rnd)
+    picker = d.get("picker", {})
+    report = render(date, matches, pts, gd, regime, rnd, picker)
     out = os.path.join(MODEL, f"出单合并_{date}.md")
     open(out, "w").write(report)
     print(report)

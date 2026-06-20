@@ -50,20 +50,36 @@ export const DEFAULT_PARAMS = {
   // 选单是在"当日所有场次出完各自的 rqspf 主+次 选项 + 3个比分"之后,
   // 把多场组合/单关汇总成投注建议。所有数字均为可优化参数。
   picker: {
-    // 类别1: rqspf 3串1 (核心) / 4串1 (有4场时附加)
-    // 每天挑 topN 场做 rqspf 3串1, 每场 rqspf 都投 2 倍: 主+次 同时下注
-    // 挑场策略: topNMode = 'confidence' (默认: 有让胜纠偏优先, 否则按让胜赔率最接近 1.5 的顺序)
-    //                          'all' = 不挑, 全上
+    // 类别1: rqspf 三层 (2串1 + 3串1 + 4串1)
+    // 每天按 isRqSlim 把所有 rqspf 场次分单选 (1 腿) / 双选 (2 腿):
+    //   2串1: n 单选 → C(n,2) 注
+    //   3串1: 单选+双选 (0/1/2+ 单选 三档, 每注必须含 ≥1 单选)
+    //   4串1: n≥2 单选 → 1 注 4 选 4 (单选不够时补 top 双选, 单选 > 4 时取 top 4)
+    // 挑场策略: topNMode = 'confidence' (默认: 让胜纠偏优先, 否则按让胜赔率最接近 1.5 的顺序)
     //                          'lowOdds' = 按 rqspf 主选赔率最低优先
+    // 旧参数 legMode/topN 已废弃 (单选/双选由 isRqSlim 自动决定, 场次由 n 单选驱动)
     cat1: {
-      topN: 3,                     // 每天挑几场做 3串1
-      topNMode: 'confidence',      // 挑场排序策略: confidence | lowOdds
+      topN: 3,                     // 废弃: 旧版 3串1 挑 N 场; 新版按 n 单选自动算 C(n,2) 等
+      topNMode: 'confidence',      // 挑场排序策略: confidence | lowOdds (rankCat1 用)
       parlay3: true,               // 是否出 3串1
-      parlay4IfAvailable: true,    // 当日>=4场时额外出 4串1 (只取主方向, 1注, 靠命中率)
-      // legMode: 每场 rqspf 腿的形式, 让 33_fit 试遍择 ROI 最高:
-      //   'doubleSide'  = 主+次 双边展开成多注 (笛卡尔)
-      //   'primaryOnly' = 只主方向, 1 注线
-      //   'primary2x'   = 只主方向, 每腿下注金额 ×2
+      parlay4IfAvailable: true,    // n 单选 ≥2 时出 4串1 (1 注, 原子模型)
+      parlay4OnlyN4: true,         // 2026-06-20 新增: 仅 n=4 (4 单选) 才出 4串1
+                                   //   n=3 降级到 n=2 不出 4x1
+                                   //   n=2 本身(2 单选) 不出 4x1
+                                   //   原因: n=2+双选笛卡尔 (1×1×2×2=4 注) ROI 负, 历史回测覆盖
+      parlay2Stake: 1,             // 2026-06-20 测试: 2x1 注金倍率, 默认 1
+                                    //   Kelly 55.9% 不算最高, 仅做对照
+      parlay3aStake: 10,           // 2026-06-20 启用: 3x1a (3单选 only) 注金倍率
+                                    //   Kelly 62.3% 是高频高赔最优, 推荐加倍
+      parlay3bStake: 2,            // 2026-06-20 测试: 3x1b (2单选+1双选) 注金倍率
+                                    //   折中: 既给 3x1b 一点权重(公平), 又不因 stake=10 拖累 ROI
+                                    //   Kelly 0% ROI 0%, 加注主要是增加降级单选次选覆盖
+      parlay3bSkip: true,          // 2026-06-20 启用: 跳过 3x1b 原始版本 (parlay3bDowngrade 替代)
+                                    //   Kelly 0% ROI 0%, 12 注都白投
+      parlay3bDowngrade: true,     // 2026-06-20 新增: 当 n>=3 时, 挑 1 单选降级为"虚拟双选"
+                                    //   让 3x1b 覆盖次选信号 (parlay3bStake 倍注)
+      parlay4N3WithDual: true,     // 2026-06-20 新增: n=3 + 1 dual 时, 是否出 4x1 (2 注, 双选展开)
+      // legMode: 废弃, 见 isRqSlim (5 OR + E/F)
       legMode: 'doubleSide',
     },
     // 类别2: 比分 2串1 —— 每场从 3 个比分中挑 2 个
@@ -309,6 +325,38 @@ export function f4Strategy(m, ctx) {
 }
 
 // ==================================================================
+// 7.5) isRqSlim —— 「单选 rqspf」判定 (5 OR + E/F + G 2026-06-20)
+//   单选 = 该场 rqspf 出 1 腿 (仅 primary); 双选 = 出 2 腿 (primary + secondary)
+//   用于 cat1 出单规则的"单选/双选"分流 (buildCat1)
+//   与回测里 shouldSlimRq + shouldOverrideRq 的合并版等价: 命中任一即视为单选
+//   注: E/F 在 isRqSlim 里只触发单选标记, 不覆盖 primary 方向 (保持预测和回测口径一致)
+//
+// 2026-06-20 新增 G 规则 (主受让+1 强制 DUAL, 覆盖 A/F):
+//   数据: 7 场主受让+1 全部被 5 OR 命中为 SLIM (A 2 场 + F 5 场)
+//        实际让平率 33.3% (vs 主让-1 的 15%, 全 +1 的 19.2%) = 庄家陷阱
+//   后果: 基线 (最低赔率, away) 在 hc=+1 ROI -7.7% (n=6, 命中 3, 平均赔率 1.85)
+//        改双选 (主+平) ROI +11.6% (n=6, 命中 5, 覆盖率 83.3%)
+//   决定: hc=+1 一律 DUAL, 由 rqspfStrategy 输出 [home, draw] 双腿
+//        isRqSlim 里提前 return false 压住 A/F, 避免 F 把客热门场次错配成单选
+// ==================================================================
+export function isRqSlim(m, primary) {
+  if (!m || !primary) return false;
+  if (m.handicap === 1) return false;                          // G (2026-06-20): 主受让+1 强制 DUAL
+  if (primary.d === 'home') return true;                       // A: 主选=让胜
+  if (m.spf?.home && m.spf.home < 1.3) return true;            // B: spf 大热门
+// C 规则(2026-06-20 关闭): spf.home∈[1.5,2.0) 触发 slim
+//   关闭原因: 9 场样本中 8 场主队 hc=-1 + rqspf 让负热门(基线最低赔率),
+//            形成 spf 主胜热门 vs rqspf 让负热门的"庄家陷阱"盘口
+//            关掉后改走双选(主+次), 至少兜底不浪费次选信号
+//   典型反例: 2026-06-13 周五004 美国vs巴拉圭 (spf.home=1.79, rqspf.away=1.8, 实际让胜)
+//   if (m.spf?.home && m.spf.home >= 1.5 && m.spf.home < 2.0) return true;  // C 已关闭
+  if (Math.abs(m.handicap ?? 0) === 2) return true;            // D: 大让球
+  if (m.handicap === -1 && m.spf?.home && m.spf.home < 1.5) return true;  // E: 强让
+  if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) return true;    // F: 反向强让 (被 G 覆盖, 仅作 fallback 注释保留)
+  return false;
+}
+
+// ==================================================================
 // 8) RQSPF 跟投 + 让胜纠偏
 // ==================================================================
 export function rqspfStrategy(m, ctx) {
@@ -322,6 +370,18 @@ export function rqspfStrategy(m, ctx) {
     { d: 'away', odds: rq.away, label: '让负' },
   ];
   const sorted = dirs.slice().sort((a, b) => a.odds - b.odds);
+  // 信号 0 (2026-06-20 新增): 主受让+1 → 主+平双选
+  // 2026 数据: 7 场主受让+1 全部被 5 OR 命中为 SLIM (A 2 + F 5)
+  //   基线 (最低赔率, 几乎都是 away) ROI -7.7% (n=6, 命中 3, 平均赔率 1.85)
+  //   改主+平双选 ROI +11.6% (n=6, 命中 5 = 3 让胜 + 2 让平, 覆盖率 83.3%)
+  // 让平率 33.3% (vs 全 +1 的 19.2%) 是结构性陷阱, 双选 [home, draw] 是最优信号
+  if (m.handicap === 1) {
+    return {
+      primary: { d: 'home', odds: rq.home, label: '让胜' },
+      secondary: { d: 'draw', odds: rq.draw, label: '让平' },
+      rule: { name: '主受让+1主+平双选', roi: '+11.6%', n: 6 },
+    };
+  }
   // 信号①: spf 大热门主队 (spf.home < 1.5) → 跟让胜 (优先级最高, 跟 home odds 区间无关)
   // 2026 数据: 8 场样本, 命中 7 场 (87.5%), ROI +76.4%
   const spf = m.spf;
@@ -340,11 +400,11 @@ export function rqspfStrategy(m, ctx) {
       rule: { name: '让胜纠偏(主流盘)', roi: '+20.5%', n: 6 },
     };
   }
-  // 基线: 最低赔率
+  // 基线: 最低赔率 (注: 2026-06-20 改成"主让-1 基线", 主受让+1 走信号 0 不进基线)
   return {
     primary: sorted[0],
     secondary: sorted[1],
-    rule: { name: '基线(最低赔率)', roi: '+16.6%', n: 26 },
+    rule: { name: '基线(最低赔率,主让-1)', roi: '+19.5%', n: 20 },
   };
 }
 
@@ -375,6 +435,7 @@ export function zjqStrategy(m, ctx) {
     const cold = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
     return {
       corrected: { picks: smallKeys, odds: Object.fromEntries(smallKeys.map(k => [k, odds[k]])), cost: smallKeys.length },
+      auxOnly: true,  // 012 球辅助 bf 筛查用, 不单独出 zjq 单关
       coldPick: cold, stable: '0+1+2', coldOdds: odds[cold],
       stableOdds: smallKeys.map(k => odds[k]).reduce((a, b) => a + b, 0) / smallKeys.length,
       rule: { name: 'BIG_BALL+0+1+2(反市场冷门)', roi: '+205%', n: 5 },
@@ -387,6 +448,7 @@ export function zjqStrategy(m, ctx) {
     const cold = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
     return {
       corrected: { picks: smallKeys, odds: Object.fromEntries(smallKeys.map(k => [k, odds[k]])), cost: smallKeys.length },
+      auxOnly: true,  // 012 球辅助 bf 筛查用, 不单独出 zjq 单关
       coldPick: cold, stable: '0+1+2', coldOdds: odds[cold],
       stableOdds: smallKeys.map(k => odds[k]).reduce((a, b) => a + b, 0) / smallKeys.length,
       rule: { name: 'WEAK_MATCH+0+1+2', roi: '+10%', n: 5 },
@@ -603,44 +665,215 @@ function rankCat1(dayMatches, c1, RQ) {
   return scored.map(x => x.m);
 }
 
-function cat1Legs(m, legMode) {
+function cat1Legs(m) {
+  // 单选 (isRqSlim=true) 只出 1 腿 primary; 双选出 2 腿 primary + secondary
   const rq = m.rq;
   const primary = { code: m.code, match: m.match, d: rq.primary.d, label: rq.primary.label, odds: rq.primary.odds };
-  if (legMode === 'doubleSide' && rq.secondary && rq.secondary.d !== rq.primary.d) {
-    return [primary, { code: m.code, match: m.match, d: rq.secondary.d, label: rq.secondary.label, odds: rq.secondary.odds }];
-  }
-  return [primary];
+  if (isRqSlim(m, rq.primary)) return [primary];
+  return [primary, { code: m.code, match: m.match, d: rq.secondary.d, label: rq.secondary.label, odds: rq.secondary.odds }];
 }
 
+// buildCat1 (新版 31 规则) — 单选/双选分流 + 2串1/3串1/4串1
+//   n = 当日单选 (isRqSlim) 场次; m = 双选 场次
+//   2串1: n≥2 时, C(n,2) 注 (全是单选)
+//   3串1:
+//     - n≥3: C(n,3) 注 (从单选里抽 3 场, 不掺双选)
+//     - n=0 + jqs + ≥2 双选: 1 票 (jqs + 2 best 双选 rqspf) = 1×2×2=4 注
+//     - n=1 + ≥2 双选: 1 票 (单选 + 2 best 双选) = 1×2×2=4 注
+//     - 其他: 跳过
+//   4串1: n≥2 时, 1 票 4 选 4 (双选只用于填补 4 场不足的位置)
+//     - 2 ≤ n ≤ 4: 全单选 + top (4-n) 双选
+//     - n > 4:     top 4 单选 (按 rankCat1 排序)
 function buildCat1(dayMatches, c1, RQ) {
-  const legMode = c1.legMode || 'doubleSide';
-  const empty = { matches: [], tickets: [], parlay4: null, legMode, stake: 1 };
+  const empty = {
+    matches: [], tickets: [], parlay2: [], parlay3: [], parlay4: null,
+    legMode: 'atomic', stake: 1, slimCount: 0, dualCount: 0,
+  };
   if (!c1.parlay3) return empty;
   const ranked = rankCat1(dayMatches, c1, RQ);
-  const sel = ranked.slice(0, c1.topN);
-  if (sel.length < c1.topN) return empty;        // 必出, 但需够 topN 场才成串
+  if (ranked.length < 2) return empty;
 
-  const stake = legMode === 'primary2x' ? 2 : 1;
-  const legSets = sel.map(m => cat1Legs(m, legMode));
-  const tickets = cartesian(legSets).map(legs => ({
+  // 单选/双选分流 + 算腿
+  const enriched = ranked.map(m => {
+    const slim = isRqSlim(m, m.rq.primary);
+    return { m, slim, legs: cat1Legs(m) };
+  });
+  const slims = enriched.filter(x => x.slim);
+  const duals = enriched.filter(x => !x.slim);
+
+  const result = {
+    ...empty,
+    matches: enriched.map(x => x.m.code),
+    slimCount: slims.length,
+    dualCount: duals.length,
+  };
+
+  // 笛卡尔展开工具: 给一组 match-leg-set, 生成笛卡尔注 (单注 stake=1)
+  const expand = (legSets, stake = 1) => cartesian(legSets).map(legs => ({
     legs,
     odds: +legs.reduce((s, l) => s * l.odds, 1).toFixed(2),
     stake,
   }));
 
-  let parlay4 = null;
-  if (c1.parlay4IfAvailable && ranked.length >= 4) {
-    const sel4 = ranked.slice(0, 4);
-    const legs4 = sel4.map(m => cat1Legs(m, 'primaryOnly')[0]);
-    parlay4 = {
-      matches: sel4.map(m => m.code),
-      legs: legs4,
-      odds: +legs4.reduce((s, l) => s * l.odds, 1).toFixed(2),
-      stake: 1,
-    };
+  // ----- 降级场选择 (BEFORE 2x1/3x1) -----
+  //   2026-06-20 规则: n>=3 + parlay3bDowngrade 时, 挑 1 单选降级为"虚拟双选"
+  //   降级场必须在 3x1 里, 2x1 仅做非降级场组合
+  let downgradeSlimCode = null;
+  if (c1.parlay3bDowngrade && slims.length >= 3) {
+    const weakest = [...slims].sort((a, b) => b.m.rq.primary.odds - a.m.rq.primary.odds)[0];
+    downgradeSlimCode = weakest.m.code;
+  }
+  const bSlims = downgradeSlimCode
+    ? slims.filter(s => s.m.code !== downgradeSlimCode)
+    : slims;
+
+  // ----- 2串1: C(bSlims, 2) 注, 仅做非降级场组合 -----
+  // 2026-06-20 规则: 2x1 仅做非降级场的 C(bSlims.length, 2) 注
+  if (bSlims.length >= 2) {
+    for (let i = 0; i < bSlims.length; i++) {
+      for (let j = i + 1; j < bSlims.length; j++) {
+        result.parlay2.push(...expand([bSlims[i].legs, bSlims[j].legs], c1.parlay2Stake));
+      }
+    }
   }
 
-  return { matches: sel.map(m => m.code), tickets, parlay4, legMode, stake };
+  // ----- 3串1 -----
+  //   n≥3:
+  //     (a) 3x1a: 1 降级 + 2 非降级 (C(n-1, 2) 注, 降级场必须在 3x1 里)
+  //     (b) 3x1b: 1 降级次选 + 2 非降级 (C(n-1, 2) 注, 虚拟双选只用 secondary, 不混原 duals)
+  //   n=2 + ≥1 双选: 3x1c (2 单选 + top 1 双选的主边) = 1 注 (2026-06-20 用户新规则)
+  //   n=0 + jqs + ≥2 双选: 1 票 (jqs + 2 best 双选 rqspf) = 1×2×2=4 注
+  //   n=1 + ≥2 双选: 1 票 (单选 + 2 best 双选) = 1×2×2=4 注
+  //   其他: 跳过
+  if (slims.length >= 3) {
+    // (a) 3x1a: 必须含降级场 (1 降级 + 2 非降级 = C(n-1, 2) 注)
+    //   2026-06-20 规则: 降级场必须在 3x1 里, 其他 n-1 场做 C(n-1, 2) 组合
+    if (downgradeSlimCode) {
+      const downgradeSlim = slims.find(s => s.m.code === downgradeSlimCode);
+      for (let i = 0; i < bSlims.length; i++) {
+        for (let j = i + 1; j < bSlims.length; j++) {
+          result.parlay3.push(...expand([bSlims[i].legs, bSlims[j].legs, downgradeSlim.legs], c1.parlay3aStake));
+        }
+      }
+    } else {
+      // 无降级时回退: 3 单选 only (C(n,3)) - 适用 n=4
+      for (let i = 0; i < slims.length; i++) {
+        for (let j = i + 1; j < slims.length; j++) {
+          for (let k = j + 1; k < slims.length; k++) {
+            result.parlay3.push(...expand([slims[i].legs, slims[j].legs, slims[k].legs], c1.parlay3aStake));
+          }
+        }
+      }
+    }
+    // (b) 3x1b: 降级场次选 + 2 非降级 (1 注, 虚拟双选只用 secondary, 不混原 duals)
+    //   2026-06-20 规则: 双边的默认不选进 3x1, 只用降级的虚拟双选 secondary
+    if (bSlims.length >= 2 && downgradeSlimCode && c1.parlay3bDowngrade) {
+      const downgradeSlim = slims.find(s => s.m.code === downgradeSlimCode);
+      // 用 raw rqspf 算降级场的次选方向
+      const r = downgradeSlim.m.rqspf;
+      if (r) {
+        const dirs = [
+          { d: 'home', label: '让胜', odds: r.home },
+          { d: 'draw', label: '让平', odds: r.draw },
+          { d: 'away', label: '让负', odds: r.away },
+        ].filter(x => x.odds != null);
+        dirs.sort((a, b) => a.odds - b.odds);
+        const primary = dirs[0];
+        const secondary = dirs[1];
+        if (primary && secondary) {
+          const secondaryLeg = { code: downgradeSlim.m.code, match: downgradeSlim.m.match, d: secondary.d, label: secondary.label, odds: secondary.odds };
+          for (let i = 0; i < bSlims.length; i++) {
+            for (let j = i + 1; j < bSlims.length; j++) {
+              result.parlay3.push(...expand([bSlims[i].legs, bSlims[j].legs, [secondaryLeg]], c1.parlay3bStake));
+            }
+          }
+        }
+      }
+    }
+  } else if (slims.length === 0 && duals.length >= 2) {
+    // 0 单选: 放弃 3 best 双选组合; 若当日有 jqs 纠偏信号, 出 1 组合 (jqs + 2 best 双选 rqspf)
+    // 0 单选 + 无 jqs: 跳过 (不出 3串1)
+    const jqsMatch = enriched.find(x => x.m.z?.corrected);
+    if (jqsMatch) {
+      const j = jqsMatch.m.z.corrected;
+      const jqsKey = j.pick ?? j.picks?.[0];
+      const jqsOdds = (typeof j.odds === 'object' ? j.odds[jqsKey] : j.odds) ?? 0;
+      if (jqsKey && jqsOdds > 0) {
+        const jqsLeg = {
+          code: jqsMatch.m.code,
+          match: jqsMatch.m.match,
+          market: 'zjq',
+          pick: jqsKey,
+          odds: jqsOdds,
+          label: `zjq ${jqsKey}球`,
+        };
+        // 2 best 双选 rqspf: 优先排除 jqsMatch 自身
+        const dualsForRq = jqsMatch.slim === false
+          ? duals.filter(d => d.m.code !== jqsMatch.m.code).slice(0, 2)
+          : duals.slice(0, 2);
+        if (dualsForRq.length === 2) {
+          const legSets = [[jqsLeg], dualsForRq[0].legs, dualsForRq[1].legs];
+          result.parlay3.push(...expand(legSets));
+        }
+      }
+    }
+  } else if (slims.length === 1 && duals.length >= 2) {
+    // 1 单选: 1 组合 (单选 + 2 best 双选)
+    const [d1, d2] = duals;
+    result.parlay3.push(...expand([slims[0].legs, d1.legs, d2.legs]));
+  } else if (slims.length === 2 && duals.length >= 1) {
+    // 2 单选 + 1 双选: 3x1c = 2 单选 + top 1 双选的主边 = 1×1×1 = 1 注 (2026-06-20 新增)
+    //   双选只取 primary(主边),不展开 secondary; 避免 1×1×2 = 2 注 成本
+    //   stake=1 (单注, 不加倍; 2026-06-20 用户规则)
+    //   如果 2 双选都在, 用 duals[0] (rankCat1 排序在前, 置信度最高)
+    const bestDual = duals[0];
+    const primaryLeg = bestDual.legs[0];  // cat1Legs 返回 [primary] 或 [primary, secondary], primary 在前
+    result.parlay3.push(...expand([slims[0].legs, slims[1].legs, [primaryLeg]], 1));
+  }
+
+  // ----- 4串1: n=4 (4 单选) 时, 4 选 4 (原子模型) -----
+  //   2026-06-20 改: parlay4OnlyN4 默认 true
+  //     - n=3 降级后 n=2: 不出 4x1 (parlay3bDowngrade 接管)
+  //     - n=2 (2 单选): 不出 4x1 (1×1×2×2 笛卡尔 ROI 负, 历史回测覆盖)
+  //     - 仅 n=4 (4 单选) 出 4x1 (1 注)
+  //   旧逻辑 n>=2: 双选展开 × 2 (parlay4N3WithDual) → 已废
+  if (c1.parlay4IfAvailable && slims.length >= 2) {
+    let p4Matches = null;
+    if (c1.parlay4OnlyN4) {
+      // 严格模式: 仅 n=4 才出 4x1
+      if (slims.length === 4 && duals.length === 0) {
+        p4Matches = slims.slice(0, 4);
+      }
+    } else {
+      // 旧模式: n>=2 + 双选补位
+      if (slims.length >= 4) {
+        p4Matches = slims.slice(0, 4);
+      } else {
+        const need = 4 - slims.length;
+        const fill = duals.slice(0, need);
+        p4Matches = fill.length === need ? [...slims, ...fill] : null;
+      }
+      if (p4Matches) {
+        const isN3WithDual = slims.length === 3 && duals.length >= 1;
+        if (isN3WithDual && c1.parlay4N3WithDual === false) {
+          p4Matches = null;
+        }
+      }
+    }
+    if (p4Matches) {
+      const legSets = p4Matches.map(x => x.legs);
+      const expanded = cartesian(legSets).map(legs => ({
+        legs,
+        odds: +legs.reduce((s, l) => s * l.odds, 1).toFixed(2),
+        stake: 1,
+      }));
+      result.parlay4 = expanded.length === 1 ? expanded[0] : expanded;
+    }
+  }
+
+  // 向后兼容: tickets 字段 (老代码读这里). settleBets 不再读, 避免重复计 cost
+  result.tickets = [...result.parlay2, ...result.parlay3];
+  return result;
 }
 
 function rankCat2(dayMatches, c2) {
@@ -697,6 +930,7 @@ export function selectBets(dayMatches, ctx) {
     const z = m.z;
     if (!z) continue;
     if (P.cat4.needCorrected && !z.corrected) continue;
+    if (z.auxOnly) continue;  // 012 球规则 (BIG_BALL/WEAK_MATCH) 只辅助 bf 筛查, 不出 zjq 单
     let picks, oddsMap;
     if (z.corrected?.picks) { picks = z.corrected.picks; oddsMap = z.corrected.odds; }
     else if (z.corrected?.pick) { picks = [z.corrected.pick]; oddsMap = { [z.corrected.pick]: z.corrected.odds }; }
@@ -724,12 +958,27 @@ export function settleBets(categories, actualByCode) {
   const z = () => ({ cost: 0, ret: 0, hits: 0, n: 0 });
   const out = { cat1: z(), cat2: z(), cat3: z(), cat4: z(), cat5: z() };
 
-  const c1 = categories.cat1 || { tickets: [], parlay4: null };
-  const allC1 = (c1.tickets || []).concat(c1.parlay4 ? [c1.parlay4] : []);
-  for (const t of allC1) {
+  // cat1 三层: parlay2 (C(n,2)) + parlay3 (单选+双选) + parlay4 (n≥2 单选, 可能多注)
+  // 不再读 legacy tickets 字段 (buildCat1 仍写入该字段供老代码兼容, 但避免重复计 cost)
+  const c1 = categories.cat1 || {};
+  // 4x1 在 n=3+dual 时是数组(双选展开 2 注), 否则是单 object
+  const parlay4Tickets = c1.parlay4
+    ? (Array.isArray(c1.parlay4) ? c1.parlay4 : [c1.parlay4])
+    : [];
+  const c1All = []
+    .concat(c1.parlay2 || [])
+    .concat(c1.parlay3 || [])
+    .concat(parlay4Tickets);
+  for (const t of c1All) {
     const stake = t.stake || 1;
     out.cat1.n++; out.cat1.cost += stake;
-    const win = t.legs.every(l => actualByCode[l.code]?.rqResult === l.d);
+    // rqspf 腿用 rqResult 比 d; jqs 腿 (market='zjq') 用 zjqResult 比 pick
+    const win = t.legs.every(l => {
+      const act = actualByCode[l.code];
+      if (!act) return false;
+      if (l.market === 'zjq') return act.zjqResult === l.pick;
+      return act.rqResult === l.d;
+    });
     if (win) { out.cat1.ret += t.odds * stake; out.cat1.hits++; }
   }
 
