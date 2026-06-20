@@ -49,38 +49,38 @@
             🏆 2026 美加墨世界杯
           </div>
           <h1 class="text-4xl sm:text-6xl font-black leading-tight tracking-tight">
-            <span data-i18n="home.hero.title1">AI 大模型，</span><br>
-            <span data-i18n="home.hero.title2">押得准吗？</span><br>
-            <span class="text-gradient-gold" data-i18n="home.hero.title3">让数据说话</span>
+            <span data-i18n="home.hero.title1">世界杯博彩直觉，</span><br>
+            <span data-i18n="home.hero.title2">真的成立吗？</span><br>
+            <span class="text-gradient-gold" data-i18n="home.hero.title3">用回测说话</span>
           </h1>
           <p class="mt-5 text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed" data-i18n="home.hero.body">
-            48 支球队 · 104 场比赛 · 12 个小组。我把每场比赛前问 GPT、Claude、Gemini、DeepSeek 等大模型的预测录入，赛后 更新比分 + 命中情况。
+            48 支球队 · 104 场比赛。我用 2022 全程 + 2026 在赛的真实赔率与赛果做回测，诚实地论证或证伪常见博彩直觉；同时记录各大 AI 大模型的赛前预测、赛后对账。不卖必胜，只讲数据与机制。
           </p>
           <div class="mt-7 flex flex-wrap gap-3">
-            <a href="/schedule.html" class="btn-primary" data-i18n="home.hero.cta1">查看赛程 →</a>
+            <a href="/backtest.html" class="btn-primary" data-i18n="home.hero.cta1">回测研究 →</a>
             <a href="/predictions.html" class="btn bg-white/10 text-white hover:bg-white/20" data-i18n="home.hero.cta2">⭐ AI 预测</a>
-            <a href="/stats.html" class="btn-ghost bg-white/5 text-white hover:bg-white/10" data-i18n="home.hero.cta3">准确率榜</a>
+            <a href="/schedule.html" class="btn-ghost bg-white/5 text-white hover:bg-white/10" data-i18n="home.hero.cta3">赛程赛果 →</a>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4">
           <!-- 模型命中率对比卡片 -->
           <div class="card bg-white/5 backdrop-blur p-5 sm:p-6 border border-white/10">
-            <div class="text-xs uppercase tracking-widest text-slate-400 mb-3">模型命中率对比（已完赛 24 场）</div>
+            <div class="text-xs uppercase tracking-widest text-slate-400 mb-3">胜负方向命中率 · 已完赛 24 场（样本小）</div>
             <div id="model-accuracy-cards" class="grid grid-cols-3 gap-3">
               <div class="bg-white/10 rounded-lg p-3 text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-gold">60%</div>
-                <div class="text-xs text-slate-300 mt-1">赔率纠偏模型</div>
-              </div>
-              <div class="bg-white/10 rounded-lg p-3 text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-slate-100">55%</div>
-                <div class="text-xs text-slate-300 mt-1">赔率驱动</div>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-100">58%</div>
+                <div class="text-xs text-slate-300 mt-1">最佳大模型</div>
               </div>
               <div class="bg-white/10 rounded-lg p-3 text-center">
                 <div class="text-2xl sm:text-3xl font-bold text-slate-100">54%</div>
-                <div class="text-xs text-slate-300 mt-1">最佳大模型</div>
+                <div class="text-xs text-slate-300 mt-1">「全选主胜」基线</div>
+              </div>
+              <div class="bg-white/10 rounded-lg p-3 text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-slate-100">60%<span class="text-sm align-top text-slate-400">*</span></div>
+                <div class="text-xs text-slate-300 mt-1">赔率纠偏模型</div>
               </div>
             </div>
-            <div class="text-xs text-slate-400 mt-3">基于历史比赛对比，仅供参考，不构成投注建议。</div>
+            <div class="text-xs text-slate-400 mt-3">仅 24 场，差异多在统计噪声内：AI 模型只略胜「全选主胜」基线。*本站模型为样本内 20 场回测、易高估。<a class="underline hover:text-gold" href="/backtest.html">回测研究 →</a></div>
           </div>
           <!-- 倒计时卡片 -->
           <div class="card bg-white/5 backdrop-blur p-5 sm:p-6 border border-white/10">

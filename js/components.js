@@ -127,6 +127,7 @@ export function mountFooter() {
             <li><a class="hover:text-gold" href="/stats.html">${t('nav.stats')}</a></li>
             <li><a class="hover:text-gold" href="/backtest.html">${t('nav.backtest')}</a></li>
             <li><a class="hover:text-gold" href="/bets.html">${t('nav.bets')}</a></li>
+            <li><a class="hover:text-gold" href="/pricing.html">${t('nav.pricing')}</a></li>
             <li><a class="hover:text-gold" href="/contact.html">${t('nav.contact')}</a></li>
           </ul>
         </div>
