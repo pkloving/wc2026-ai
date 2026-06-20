@@ -374,14 +374,19 @@ git push
 ```
 执行每日 prompt（d:\project\github\wc2026-ai\每日执行.md）。
 
+> ⚠️ **执行前必做分支检查**：
+> 1. `git fetch origin` + `git status` — 检查远端有无可用更新
+> 2. `git branch --show-current` — 不在 main 则自动 `git checkout main && git pull origin main` 后再执行
+
 关注范围：仅世界杯正赛 M001-M104（其它赛事不拉不推）。
 任务顺序：
 1) `node scripts/scrape_fixed_bonus.js`（**一体化脚本**：拉完赛结果 → 写入 data/results/<mid>.json + 拉赔率 → 标 is_finished_odds=true；matchResultList 存在 = 比赛已完赛。FIFA 仅作为半场比分/进球者补充）
 2) 重算积分（`node scripts/update-groups-standings.js` + `node scripts/build_teams_data.js`）
 3) 统计（build_index + 消费 predictions.json 做 AI 命中复盘）
-4) npm run modeling:all（33_fit 拟合 + 31 预测，出 predict_31_<今日>.json）→ 再跑 node scripts/build_chat_predict.js 出 chat_predict_<今日>.json
-5) 基于 predict_31 + 赔率市场情绪给推荐，**只写到 records/<今日>.md**（不写 data/bets.json，模拟单用户手动录）
-6) git commit + push
+4) 拉未开赛+次日场的赔率（仅世界杯正赛，>10 场才开子 agent；is_finished_odds=true 的跳过）
+5) npm run modeling:all（33_fit 拟合 + 31 预测，出 predict_31_<今日>.json）→ 再跑 node scripts/build_chat_predict.js 出 chat_predict_<今日>.json → 再跑 python3 data/strategy/daily_dual_report.py <今日> 出 出单合并_<今日>.md（31规则 + 新策略 并排对照）
+6) 基于 predict_31 + 赔率市场情绪给推荐，**只写到 records/<今日>.md**（不写 data/bets.json，模拟单用户手动录）
+7) git commit + push
 
 注：AI 模拟结算、多 LLM 比分预测都不在本流程（前者单独触发、后者用户手动录入）。
 临时文件放 tmp/<今日>/，完事清掉
