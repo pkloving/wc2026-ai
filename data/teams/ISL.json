@@ -33,9 +33,12 @@
         "role": "away",
         "opponent_code": "ARG",
         "opponent_name": "阿根廷",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 3,
+        "result": "lose"
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

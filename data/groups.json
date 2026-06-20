@@ -11,47 +11,47 @@
     "standings": [
       {
         "code": "MEX",
-        "played": 1,
-        "win": 1,
+        "played": 2,
+        "win": 2,
         "draw": 0,
         "lose": 0,
-        "gf": 1,
+        "gf": 3,
         "ga": 0,
-        "gd": 1,
+        "gd": 3,
+        "pts": 6
+      },
+      {
+        "code": "KOR",
+        "played": 2,
+        "win": 1,
+        "draw": 0,
+        "lose": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
         "pts": 3
       },
       {
         "code": "CZE",
-        "played": 1,
+        "played": 2,
         "win": 0,
         "draw": 1,
-        "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
+        "lose": 1,
+        "gf": 2,
+        "ga": 3,
+        "gd": -1,
         "pts": 1
       },
       {
         "code": "RSA",
-        "played": 1,
+        "played": 2,
         "win": 0,
         "draw": 1,
-        "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
-      },
-      {
-        "code": "KOR",
-        "played": 1,
-        "win": 0,
-        "draw": 0,
         "lose": 1,
-        "gf": 0,
-        "ga": 1,
-        "gd": -1,
-        "pts": 0
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 1
       }
     ]
   },
@@ -67,47 +67,47 @@
     "standings": [
       {
         "code": "CAN",
-        "played": 1,
+        "played": 2,
         "win": 1,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 6,
-        "ga": 0,
+        "gf": 7,
+        "ga": 1,
         "gd": 6,
-        "pts": 3
+        "pts": 4
       },
       {
         "code": "SUI",
-        "played": 1,
+        "played": 2,
         "win": 1,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 4,
-        "ga": 1,
+        "gf": 5,
+        "ga": 2,
         "gd": 3,
-        "pts": 3
+        "pts": 4
       },
       {
         "code": "BIH",
-        "played": 1,
+        "played": 2,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 1,
-        "gf": 1,
-        "ga": 4,
+        "gf": 2,
+        "ga": 5,
         "gd": -3,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "QAT",
-        "played": 1,
+        "played": 2,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 1,
-        "gf": 0,
-        "ga": 6,
+        "gf": 1,
+        "ga": 7,
         "gd": -6,
-        "pts": 0
+        "pts": 1
       }
     ]
   },
@@ -123,46 +123,46 @@
     "standings": [
       {
         "code": "BRA",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
+        "played": 2,
+        "win": 1,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "HAI",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 4
       },
       {
         "code": "MAR",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
+        "played": 2,
+        "win": 1,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 4
       },
       {
         "code": "SCO",
-        "played": 0,
+        "played": 2,
+        "win": 1,
+        "draw": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 3
+      },
+      {
+        "code": "HAI",
+        "played": 2,
         "win": 0,
         "draw": 0,
-        "lose": 0,
+        "lose": 2,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 4,
+        "gd": -4,
         "pts": 0
       }
     ]
@@ -178,47 +178,47 @@
     ],
     "standings": [
       {
-        "code": "AUS",
-        "played": 0,
-        "win": 0,
+        "code": "USA",
+        "played": 2,
+        "win": 2,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 6,
+        "ga": 1,
+        "gd": 5,
+        "pts": 6
+      },
+      {
+        "code": "AUS",
+        "played": 2,
+        "win": 1,
+        "draw": 0,
+        "lose": 1,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
+        "pts": 3
+      },
+      {
+        "code": "TUR",
+        "played": 1,
+        "win": 0,
+        "draw": 0,
+        "lose": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
         "pts": 0
       },
       {
         "code": "PAR",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "TUR",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "USA",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 0
       }
     ]
@@ -234,47 +234,47 @@
     ],
     "standings": [
       {
-        "code": "CIV",
-        "played": 0,
-        "win": 0,
+        "code": "GER",
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "pts": 3
+      },
+      {
+        "code": "CIV",
+        "played": 1,
+        "win": 1,
+        "draw": 0,
+        "lose": 0,
+        "gf": 1,
         "ga": 0,
-        "gd": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "code": "ECU",
+        "played": 1,
+        "win": 0,
+        "draw": 0,
+        "lose": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
         "pts": 0
       },
       {
         "code": "CUW",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "ECU",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "GER",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
         "pts": 0
       }
     ]
@@ -290,47 +290,47 @@
     ],
     "standings": [
       {
-        "code": "JPN",
-        "played": 0,
-        "win": 0,
+        "code": "SWE",
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 5,
+        "ga": 1,
+        "gd": 4,
+        "pts": 3
+      },
+      {
+        "code": "JPN",
+        "played": 1,
+        "win": 0,
+        "draw": 1,
+        "lose": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "NED",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "SWE",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "TUN",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
         "pts": 0
       }
     ]
@@ -346,48 +346,48 @@
     ],
     "standings": [
       {
-        "code": "BEL",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "EGY",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
         "code": "IRN",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "NZL",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 0
+        "pts": 1
+      },
+      {
+        "code": "BEL",
+        "played": 1,
+        "win": 0,
+        "draw": 1,
+        "lose": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "code": "EGY",
+        "played": 1,
+        "win": 0,
+        "draw": 1,
+        "lose": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
       }
     ]
   },
@@ -402,48 +402,48 @@
     ],
     "standings": [
       {
-        "code": "CPV",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "ESP",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
         "code": "KSA",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 1,
+        "ga": 1,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "URU",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
+        "lose": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "code": "CPV",
+        "played": 1,
+        "win": 0,
+        "draw": 1,
         "lose": 0,
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "pts": 0
+        "pts": 1
+      },
+      {
+        "code": "ESP",
+        "played": 1,
+        "win": 0,
+        "draw": 1,
+        "lose": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
       }
     ]
   },
@@ -458,47 +458,47 @@
     ],
     "standings": [
       {
-        "code": "FRA",
-        "played": 0,
-        "win": 0,
+        "code": "NOR",
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "code": "FRA",
+        "played": 1,
+        "win": 1,
+        "draw": 0,
+        "lose": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "code": "SEN",
+        "played": 1,
+        "win": 0,
+        "draw": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       },
       {
         "code": "IRQ",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "NOR",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "SEN",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 0
       }
     ]
@@ -515,46 +515,46 @@
     "standings": [
       {
         "code": "ARG",
-        "played": 0,
-        "win": 0,
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
+        "gf": 3,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 3,
+        "pts": 3
       },
       {
         "code": "AUT",
-        "played": 0,
-        "win": 0,
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "code": "JOR",
+        "played": 1,
+        "win": 0,
+        "draw": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       },
       {
         "code": "DZA",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
+        "lose": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "code": "JOR",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       }
     ]
@@ -570,47 +570,47 @@
     ],
     "standings": [
       {
-        "code": "COD",
-        "played": 0,
-        "win": 0,
+        "code": "COL",
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
       },
       {
-        "code": "COL",
-        "played": 0,
+        "code": "COD",
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 1,
+        "ga": 1,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "POR",
-        "played": 0,
+        "played": 1,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 1,
+        "ga": 1,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "code": "UZB",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       }
     ]
@@ -626,47 +626,47 @@
     ],
     "standings": [
       {
-        "code": "CRO",
-        "played": 0,
-        "win": 0,
-        "draw": 0,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
         "code": "ENG",
-        "played": 0,
-        "win": 0,
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "pts": 3
       },
       {
         "code": "GHA",
-        "played": 0,
-        "win": 0,
+        "played": 1,
+        "win": 1,
         "draw": 0,
         "lose": 0,
-        "gf": 0,
+        "gf": 1,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 1,
+        "pts": 3
       },
       {
         "code": "PAN",
-        "played": 0,
+        "played": 1,
         "win": 0,
         "draw": 0,
-        "lose": 0,
+        "lose": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "code": "CRO",
+        "played": 1,
+        "win": 0,
+        "draw": 0,
+        "lose": 1,
+        "gf": 2,
+        "ga": 4,
+        "gd": -2,
         "pts": 0
       }
     ]

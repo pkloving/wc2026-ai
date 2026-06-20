@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-19T07:17:28.225Z",
+  "generated_at": "2026-06-20T04:29:00.633Z",
   "play": "rqspf",
-  "count": 31,
+  "count": 39,
   "rows": [
     {
       "mid": "2040145",
@@ -68,6 +68,116 @@
         "away": 2.41
       },
       "result": "draw"
+    },
+    {
+      "mid": "2040186",
+      "code": "周二201",
+      "home": "中国",
+      "away": "泰国",
+      "kickoff": "2026-06-09 19:35",
+      "handicap": -1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2026-06-09 09:05:49",
+        "home": 3.38,
+        "draw": 3.3,
+        "away": 1.89
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.705Z",
+        "home": 3.82,
+        "draw": 3.11,
+        "away": 1.83
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040187",
+      "code": "周二202",
+      "home": "匈牙利",
+      "away": "哈萨克",
+      "kickoff": "2026-06-10 01:00",
+      "handicap": -2,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2026-06-09 09:05:49",
+        "home": 3,
+        "draw": 3.7,
+        "away": 1.9
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.727Z",
+        "home": 3.45,
+        "draw": 3.35,
+        "away": 1.85
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040188",
+      "code": "周二203",
+      "home": "阿根廷",
+      "away": "冰岛",
+      "kickoff": "2026-06-10 09:00",
+      "handicap": -2,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2026-06-09 09:05:49",
+        "home": 2.08,
+        "draw": 3.7,
+        "away": 2.64
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.749Z",
+        "home": 2.34,
+        "draw": 3.23,
+        "away": 2.55
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040189",
+      "code": "周三201",
+      "home": "葡萄牙",
+      "away": "尼日利亚",
+      "kickoff": "2026-06-11 03:45",
+      "handicap": -2,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2026-06-17T05:49:56.769Z",
+        "home": 3.25,
+        "draw": 3.55,
+        "away": 1.85
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.769Z",
+        "home": 3.25,
+        "draw": 3.55,
+        "away": 1.85
+      },
+      "result": "away"
+    },
+    {
+      "mid": "2040190",
+      "code": "周三202",
+      "home": "英格兰",
+      "away": "哥斯达",
+      "kickoff": "2026-06-11 04:00",
+      "handicap": -2,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2026-06-17T05:49:56.790Z",
+        "home": 2.08,
+        "draw": 3.6,
+        "away": 2.7
+      },
+      "last": {
+        "time": "2026-06-17T05:49:56.790Z",
+        "home": 2.08,
+        "draw": 3.6,
+        "away": 2.7
+      },
+      "result": "home"
     },
     {
       "mid": "2040162",
@@ -684,6 +794,72 @@
         "away": 1.68
       },
       "result": "draw"
+    },
+    {
+      "mid": "2040239",
+      "code": "周五029",
+      "home": "美国",
+      "away": "澳大利亚",
+      "kickoff": "2026-06-20 03:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2026-06-18T08:26:29.750Z",
+        "home": 2.51,
+        "draw": 3.25,
+        "away": 2.36
+      },
+      "last": {
+        "time": "2026-06-20T04:28:09.115Z",
+        "home": 2.53,
+        "draw": 3.15,
+        "away": 2.4
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040240",
+      "code": "周五030",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "kickoff": "2026-06-20 06:00",
+      "handicap": 1,
+      "final_score": "0:1",
+      "initial": {
+        "time": "2026-06-18T08:26:29.810Z",
+        "home": 2.07,
+        "draw": 3.2,
+        "away": 3
+      },
+      "last": {
+        "time": "2026-06-20T04:28:09.133Z",
+        "home": 2.26,
+        "draw": 3.08,
+        "away": 2.76
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040241",
+      "code": "周五031",
+      "home": "巴西",
+      "away": "海地",
+      "kickoff": "2026-06-20 08:30",
+      "handicap": -2,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2026-06-18T08:26:29.829Z",
+        "home": 1.73,
+        "draw": 4.1,
+        "away": 3.25
+      },
+      "last": {
+        "time": "2026-06-20T04:28:09.152Z",
+        "home": 1.6,
+        "draw": 4.42,
+        "away": 3.6
+      },
+      "result": "home"
     }
   ]
 }

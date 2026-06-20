@@ -26,14 +26,14 @@
     "stage": "group",
     "standings": {
       "position": 1,
-      "played": 0,
-      "win": 0,
-      "draw": 0,
+      "played": 2,
+      "win": 1,
+      "draw": 1,
       "lose": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
+      "gf": 4,
+      "ga": 1,
+      "gd": 3,
+      "pts": 4
     },
     "matches": [
       {
@@ -46,7 +46,12 @@
         "role": "home",
         "opponent_code": "MAR",
         "opponent_name": "摩洛哥",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 1,
+        "result": "draw"
       },
       {
         "mid": "2040241",
@@ -58,7 +63,10 @@
         "role": "home",
         "opponent_code": "HAI",
         "opponent_name": "海地",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 3,
+        "score_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M052",
@@ -73,5 +81,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

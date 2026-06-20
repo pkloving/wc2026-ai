@@ -23,14 +23,14 @@
     "stage": "group",
     "standings": {
       "position": 4,
-      "played": 1,
+      "played": 2,
       "win": 0,
-      "draw": 0,
+      "draw": 1,
       "lose": 1,
-      "gf": 0,
-      "ga": 6,
+      "gf": 1,
+      "ga": 7,
       "gd": -6,
-      "pts": 0
+      "pts": 1
     },
     "matches": [
       {
@@ -43,7 +43,12 @@
         "role": "home",
         "opponent_code": "SUI",
         "opponent_name": "瑞士",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "draw"
       },
       {
         "mid": "2040237",
@@ -75,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

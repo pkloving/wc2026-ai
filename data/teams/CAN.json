@@ -25,14 +25,14 @@
     "stage": "group",
     "standings": {
       "position": 1,
-      "played": 1,
+      "played": 2,
       "win": 1,
-      "draw": 0,
+      "draw": 1,
       "lose": 0,
-      "gf": 6,
-      "ga": 0,
+      "gf": 7,
+      "ga": 1,
       "gd": 6,
-      "pts": 3
+      "pts": 4
     },
     "matches": [
       {
@@ -45,7 +45,12 @@
         "role": "home",
         "opponent_code": "BIH",
         "opponent_name": "波黑",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "draw"
       },
       {
         "mid": "2040237",
@@ -77,5 +82,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

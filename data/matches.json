@@ -316,7 +316,7 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "USA",
     "away": "AUS",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M030",
@@ -327,7 +327,7 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "SCO",
     "away": "MAR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M031",
@@ -338,7 +338,7 @@
     "venue": "BMO Field, Toronto",
     "home": "BRA",
     "away": "HAI",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M032",

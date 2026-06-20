@@ -33,9 +33,14 @@
         "role": "home",
         "opponent_code": "ESP",
         "opponent_name": "西班牙",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 2,
+        "result": "lose"
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

@@ -35,9 +35,12 @@
         "role": "home",
         "opponent_code": "THA",
         "opponent_name": "泰国",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 0,
+        "result": "draw"
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

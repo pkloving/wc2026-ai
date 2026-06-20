@@ -7,7 +7,7 @@
     "away": "库拉索",
     "kickoff": "2026-06-21 08:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040245",
-    "scraped_at": "2026-06-19T04:09:12.305Z",
+    "scraped_at": "2026-06-20T04:28:09.218Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -23,9 +23,9 @@
     "spf_history": [],
     "handicap": -2,
     "rqspf_latest": {
-      "home": 1.95,
-      "draw": 3.95,
-      "away": 2.75
+      "home": 1.85,
+      "draw": 4,
+      "away": 2.95
     },
     "rqspf_history": [],
     "bf_latest": {
@@ -65,11 +65,11 @@
       "0": 24,
       "1": 7.4,
       "2": 4.3,
-      "3": 3.5,
+      "3": 3.65,
       "4": 4.3,
-      "5": 6.5,
-      "6": 10.5,
-      "7+": 13
+      "5": 6.3,
+      "6": 10,
+      "7+": 12.5
     },
     "bqc_latest": {
       "胜胜": 1.31,
@@ -85,7 +85,10 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-19T04:09:12.305Z",
-    "snapshot_time": null
+    "fetched_at": "2026-06-20T04:28:09.218Z",
+    "snapshot_time": null,
+    "has_match_result": false,
+    "spf_result": null,
+    "half_time_result": null
   }
 }

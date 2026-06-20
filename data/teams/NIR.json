@@ -33,9 +33,14 @@
         "role": "away",
         "opponent_code": "FRA",
         "opponent_name": "法国",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

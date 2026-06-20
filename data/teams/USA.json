@@ -24,15 +24,15 @@
     "group": "D",
     "stage": "group",
     "standings": {
-      "position": 4,
-      "played": 0,
-      "win": 0,
+      "position": 1,
+      "played": 2,
+      "win": 2,
       "draw": 0,
       "lose": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
+      "gf": 6,
+      "ga": 1,
+      "gd": 5,
+      "pts": 6
     },
     "matches": [
       {
@@ -45,7 +45,12 @@
         "role": "home",
         "opponent_code": "PAR",
         "opponent_name": "巴拉圭",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 4,
+        "score_opp": 1,
+        "half_my": 3,
+        "half_opp": 0,
+        "result": "win"
       },
       {
         "mid": "2040239",
@@ -57,7 +62,10 @@
         "role": "home",
         "opponent_code": "AUS",
         "opponent_name": "澳大利亚",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M059",
@@ -72,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }

@@ -24,15 +24,15 @@
     "group": "C",
     "stage": "group",
     "standings": {
-      "position": 3,
-      "played": 0,
-      "win": 0,
-      "draw": 0,
+      "position": 2,
+      "played": 2,
+      "win": 1,
+      "draw": 1,
       "lose": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "pts": 4
     },
     "matches": [
       {
@@ -45,7 +45,12 @@
         "role": "away",
         "opponent_code": "BRA",
         "opponent_name": "巴西",
-        "status": "finished"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 1,
+        "half_my": 1,
+        "half_opp": 1,
+        "result": "draw"
       },
       {
         "mid": "2040240",
@@ -57,7 +62,10 @@
         "role": "away",
         "opponent_code": "SCO",
         "opponent_name": "苏格兰",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M051",
@@ -72,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-19T04:08:18.114Z"
+  "_updated_at": "2026-06-20T04:28:51.138Z"
 }
