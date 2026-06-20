@@ -1,0 +1,25 @@
+{
+  "code": "GER",
+  "name": "德国",
+  "nameEn": "Germany",
+  "confederation": "UEFA",
+  "flag": "🇩🇪",
+  "iso2": "de",
+  "color": "#000000",
+  "meta": {
+    "tier": "top",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 11
+  },
+  "wc2022": {
+    "group": "E",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 6,
+    "ga": 5
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

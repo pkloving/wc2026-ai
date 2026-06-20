@@ -1,0 +1,25 @@
+{
+  "code": "CMR",
+  "name": "喀麦隆",
+  "nameEn": "Cameroon",
+  "confederation": "CAF",
+  "flag": "🇨🇲",
+  "iso2": "cm",
+  "color": "#007A5E",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 43
+  },
+  "wc2022": {
+    "group": "G",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 4,
+    "ga": 4
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

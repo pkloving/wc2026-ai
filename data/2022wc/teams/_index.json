@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-06-19T07:28:20.286Z",
+  "total_teams": 32,
+  "note": "2022 卡塔尔世界杯 32 队数据. 区别于 data/teams/_index.json (那是 2026 世界杯)",
+  "source": "2022 实际参赛 + 2022 当时 FIFA 排名 + 2022 实际赛果",
+  "by_code": {
+    "QAT": "QAT.json",
+    "ECU": "ECU.json",
+    "SEN": "SEN.json",
+    "NED": "NED.json",
+    "ENG": "ENG.json",
+    "IRN": "IRN.json",
+    "USA": "USA.json",
+    "WAL": "WAL.json",
+    "ARG": "ARG.json",
+    "KSA": "KSA.json",
+    "MEX": "MEX.json",
+    "POL": "POL.json",
+    "FRA": "FRA.json",
+    "AUS": "AUS.json",
+    "DEN": "DEN.json",
+    "TUN": "TUN.json",
+    "ESP": "ESP.json",
+    "CRC": "CRC.json",
+    "GER": "GER.json",
+    "JPN": "JPN.json",
+    "BEL": "BEL.json",
+    "CAN": "CAN.json",
+    "MAR": "MAR.json",
+    "CRO": "CRO.json",
+    "BRA": "BRA.json",
+    "SRB": "SRB.json",
+    "SUI": "SUI.json",
+    "CMR": "CMR.json",
+    "POR": "POR.json",
+    "GHA": "GHA.json",
+    "URU": "URU.json",
+    "KOR": "KOR.json"
+  },
+  "by_name": {
+    "卡塔尔": "QAT",
+    "厄瓜多尔": "ECU",
+    "塞内加尔": "SEN",
+    "荷兰": "NED",
+    "英格兰": "ENG",
+    "伊朗": "IRN",
+    "美国": "USA",
+    "威尔士": "WAL",
+    "阿根廷": "ARG",
+    "沙特阿拉伯": "KSA",
+    "墨西哥": "MEX",
+    "波兰": "POL",
+    "法国": "FRA",
+    "澳大利亚": "AUS",
+    "丹麦": "DEN",
+    "突尼斯": "TUN",
+    "西班牙": "ESP",
+    "哥斯达黎加": "CRC",
+    "德国": "GER",
+    "日本": "JPN",
+    "比利时": "BEL",
+    "加拿大": "CAN",
+    "摩洛哥": "MAR",
+    "克罗地亚": "CRO",
+    "巴西": "BRA",
+    "塞尔维亚": "SRB",
+    "瑞士": "SUI",
+    "喀麦隆": "CMR",
+    "葡萄牙": "POR",
+    "加纳": "GHA",
+    "乌拉圭": "URU",
+    "韩国": "KOR"
+  },
+  "by_group": {
+    "A": [
+      "QAT",
+      "ECU",
+      "SEN",
+      "NED"
+    ],
+    "B": [
+      "ENG",
+      "IRN",
+      "USA",
+      "WAL"
+    ],
+    "C": [
+      "ARG",
+      "KSA",
+      "MEX",
+      "POL"
+    ],
+    "D": [
+      "FRA",
+      "AUS",
+      "DEN",
+      "TUN"
+    ],
+    "E": [
+      "ESP",
+      "CRC",
+      "GER",
+      "JPN"
+    ],
+    "F": [
+      "BEL",
+      "CAN",
+      "MAR",
+      "CRO"
+    ],
+    "G": [
+      "BRA",
+      "SRB",
+      "SUI",
+      "CMR"
+    ],
+    "H": [
+      "POR",
+      "GHA",
+      "URU",
+      "KOR"
+    ]
+  },
+  "by_tier": {
+    "top": [
+      "ARG",
+      "FRA",
+      "GER",
+      "BRA"
+    ],
+    "second": [
+      "SEN",
+      "NED",
+      "ENG",
+      "USA",
+      "MEX",
+      "POL",
+      "DEN",
+      "ESP",
+      "JPN",
+      "BEL",
+      "MAR",
+      "CRO",
+      "SRB",
+      "SUI",
+      "POR",
+      "URU",
+      "KOR"
+    ],
+    "defensive": [
+      "IRN",
+      "KSA",
+      "TUN"
+    ],
+    "weak": [
+      "QAT",
+      "ECU",
+      "WAL",
+      "AUS",
+      "CRC",
+      "CAN",
+      "CMR",
+      "GHA"
+    ]
+  },
+  "name_variants_to_code": {
+    "沙特": "KSA",
+    "威尔士": "WAL"
+  },
+  "hosts": [
+    "QAT"
+  ]
+}

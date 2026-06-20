@@ -1,0 +1,25 @@
+{
+  "code": "AUS",
+  "name": "澳大利亚",
+  "nameEn": "Australia",
+  "confederation": "AFC",
+  "flag": "🇦🇺",
+  "iso2": "au",
+  "color": "#FFCD00",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 38
+  },
+  "wc2022": {
+    "group": "D",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 3,
+    "ga": 5
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

@@ -1269,14 +1269,28 @@ function runAnalysis(label) {
     }
   }
 
-  // ============== 5 玩法完整频率分布 (直接读 data/views/) ==============
+  // ============== 5 玩法完整频率分布 (读 data/views/ + data/2022wc/views/ 合并) ==============
   // 这是用户视角: 看完 ROI 之后, 还想看到"每种结果到底出现过几次"
   // 各玩法所有 key/结果的完整分布, 不截断
-  const VIEWS_DIR = path.join(PROJECT_ROOT, 'data', 'views');
+  // 注意: 视图文件按届分到两个目录, 这里合并读取, 维持原本"全样本"的语义
+  const VIEW_DIRS = [
+    path.join(PROJECT_ROOT, 'data', 'views'),
+    path.join(PROJECT_ROOT, 'data', '2022wc', 'views'),
+  ];
   const viewSuffix = label === 'wc_only' ? '_wc' : '';
   function readView(name) {
-    try { return JSON.parse(fs.readFileSync(path.join(VIEWS_DIR, `${name}${viewSuffix}_view.json`), 'utf-8')); }
-    catch { return null; }
+    // 合并多个目录的同一文件, 行拼起来; 缺失目录静默跳过
+    const rows = [];
+    let count = 0;
+    for (const dir of VIEW_DIRS) {
+      try {
+        const v = JSON.parse(fs.readFileSync(path.join(dir, `${name}${viewSuffix}_view.json`), 'utf-8'));
+        if (Array.isArray(v.rows)) rows.push(...v.rows);
+        if (typeof v.count === 'number') count += v.count;
+      } catch { /* 目录或文件不存在就跳过 */ }
+    }
+    if (rows.length === 0 && count === 0) return null;
+    return { generated_at: '', play: name, count: rows.length || count, rows };
   }
 
   function printFreqBars(playName, items, total) {

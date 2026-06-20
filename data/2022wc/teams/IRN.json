@@ -1,0 +1,27 @@
+{
+  "code": "IRN",
+  "name": "伊朗",
+  "nameEn": "Iran",
+  "confederation": "AFC",
+  "flag": "🇮🇷",
+  "iso2": "ir",
+  "color": "#DA0000",
+  "meta": {
+    "tier": "defensive",
+    "has_scorer_star": false,
+    "stars": [
+      "塔雷米"
+    ],
+    "is_host": false,
+    "fifa_rank": 20
+  },
+  "wc2022": {
+    "group": "B",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 4,
+    "ga": 7
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

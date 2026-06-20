@@ -25,6 +25,7 @@ import {
   DEFAULT_PARAMS, SEARCH_SPACE, clone, getPath, setPath,
   createTeamCtx, loadBacktestMatches,
   f4Strategy, singleBetStrategy, rqspfStrategy, zjqStrategy, bqcStrategy,
+  selectBets, settleBets, deriveActual, groupByDay, buildPrediction,
 } from './strategy_core.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -59,6 +60,12 @@ function evaluate(params) {
     rqspf: { cost: 0, ret: 0, hits: 0, n: 0 },
     zjq:   { cost: 0, ret: 0, hits: 0, n: 0 },
     bqc:   { cost: 0, ret: 0, hits: 0, n: 0 },
+    // 选单 5 类 (按天出, 见下方 picker 段)
+    cat1:  { cost: 0, ret: 0, hits: 0, n: 0 },
+    cat2:  { cost: 0, ret: 0, hits: 0, n: 0 },
+    cat3:  { cost: 0, ret: 0, hits: 0, n: 0 },
+    cat4:  { cost: 0, ret: 0, hits: 0, n: 0 },
+    cat5:  { cost: 0, ret: 0, hits: 0, n: 0 },
   };
 
   for (const m of MATCHES) {
@@ -119,6 +126,20 @@ function evaluate(params) {
         comp.bqc.n++; comp.bqc.cost += bpicks.length;
         if (bpicks.includes(result)) { comp.bqc.ret += odds; comp.bqc.hits++; }
       }
+    }
+  }
+
+  // ---------- 选单 picker (按天 selectBets + settleBets, 调每类 ROI) ----------
+  const byDay = groupByDay(MATCHES);
+  for (const [, dayMatches] of byDay) {
+    const preds = dayMatches.map(m => buildPrediction(m, ctx));
+    const cats = selectBets(preds, ctx);
+    const actualByCode = {};
+    for (const m of dayMatches) actualByCode[m.code] = deriveActual(m);
+    const settled = settleBets(cats, actualByCode);
+    for (const k of ['cat1', 'cat2', 'cat3', 'cat4', 'cat5']) {
+      comp[k].cost += settled[k].cost; comp[k].ret += settled[k].ret;
+      comp[k].hits += settled[k].hits; comp[k].n += settled[k].n;
     }
   }
 

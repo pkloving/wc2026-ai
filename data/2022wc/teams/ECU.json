@@ -1,0 +1,25 @@
+{
+  "code": "ECU",
+  "name": "厄瓜多尔",
+  "nameEn": "Ecuador",
+  "confederation": "CONMEBOL",
+  "flag": "🇪🇨",
+  "iso2": "ec",
+  "color": "#FFD100",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 44
+  },
+  "wc2022": {
+    "group": "A",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 4,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

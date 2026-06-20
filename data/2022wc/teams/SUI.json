@@ -1,0 +1,25 @@
+{
+  "code": "SUI",
+  "name": "瑞士",
+  "nameEn": "Switzerland",
+  "confederation": "UEFA",
+  "flag": "🇨🇭",
+  "iso2": "ch",
+  "color": "#FF0000",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 15
+  },
+  "wc2022": {
+    "group": "G",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 4,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

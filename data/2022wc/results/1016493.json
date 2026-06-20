@@ -1,0 +1,37 @@
+{
+  "matchId": "1016493",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": null,
+  "scorers": [],
+  "wentToPenalties": true,
+  "penaltyScore": "1:3",
+  "penaltyWinner": "CRO",
+  "lottery": {
+    "HHAD": {
+      "combination": "H",
+      "combinationDesc": "(+1)胜",
+      "odds": 1.67
+    },
+    "TTG": {
+      "combination": "2",
+      "combinationDesc": "2",
+      "odds": 3.15
+    },
+    "HAD": {
+      "combination": "D",
+      "combinationDesc": "平",
+      "odds": 3
+    },
+    "HAFU": {
+      "combination": "H:D",
+      "combinationDesc": "胜平",
+      "odds": 16
+    },
+    "CRS": {
+      "combination": "1:1",
+      "combinationDesc": "1:1",
+      "odds": 6.25
+    }
+  }
+}

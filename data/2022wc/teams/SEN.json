@@ -1,0 +1,27 @@
+{
+  "code": "SEN",
+  "name": "塞内加尔",
+  "nameEn": "Senegal",
+  "confederation": "CAF",
+  "flag": "🇸🇳",
+  "iso2": "sn",
+  "color": "#00853F",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": true,
+    "stars": [
+      "马内"
+    ],
+    "is_host": false,
+    "fifa_rank": 18
+  },
+  "wc2022": {
+    "group": "A",
+    "stage": "r16",
+    "result": "16强",
+    "played": 4,
+    "gf": 5,
+    "ga": 4
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

@@ -1,0 +1,27 @@
+{
+  "code": "WAL",
+  "name": "威尔士",
+  "nameEn": "Wales",
+  "confederation": "UEFA",
+  "flag": "🏴",
+  "iso2": "gb-wls",
+  "color": "#D30731",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": true,
+    "stars": [
+      "贝尔"
+    ],
+    "is_host": false,
+    "fifa_rank": 19
+  },
+  "wc2022": {
+    "group": "B",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 1,
+    "ga": 6
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

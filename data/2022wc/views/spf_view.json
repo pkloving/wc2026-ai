@@ -1,0 +1,1349 @@
+{
+  "generated_at": "2026-06-20T03:41:33.093Z",
+  "play": "spf",
+  "count": 61,
+  "rows": [
+    {
+      "mid": "1016184",
+      "code": "2022-A1",
+      "home": "卡塔尔",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-20 23:00",
+      "handicap": 1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 3.72,
+        "draw": 2.96,
+        "away": 1.88
+      },
+      "last": {
+        "time": "2022-11-20 20:22:06",
+        "home": 2.86,
+        "draw": 2.95,
+        "away": 2.22
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016185",
+      "code": "2022-B1",
+      "home": "英格兰",
+      "away": "伊朗",
+      "kickoff": "2022-11-21 20:00",
+      "handicap": -1,
+      "final_score": "6:2",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.24,
+        "draw": 4.3,
+        "away": 10
+      },
+      "last": {
+        "time": "2022-11-21 19:59:24",
+        "home": 1.25,
+        "draw": 4.7,
+        "away": 7.9
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016186",
+      "code": "2022-A2",
+      "home": "塞内加尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-21 23:00",
+      "handicap": 1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 6.2,
+        "draw": 3.72,
+        "away": 1.41
+      },
+      "last": {
+        "time": "2022-11-21 20:10:00",
+        "home": 5.75,
+        "draw": 3.5,
+        "away": 1.47
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016187",
+      "code": "2022-B2",
+      "home": "美国",
+      "away": "威尔士",
+      "kickoff": "2022-11-22 02:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 2.54,
+        "draw": 2.84,
+        "away": 2.56
+      },
+      "last": {
+        "time": "2022-11-21 19:25:18",
+        "home": 2.33,
+        "draw": 2.84,
+        "away": 2.8
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016189",
+      "code": "2022-D1",
+      "home": "丹麦",
+      "away": "突尼斯",
+      "kickoff": "2022-11-22 20:00",
+      "handicap": -1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.36,
+        "draw": 3.7,
+        "away": 7.5
+      },
+      "last": {
+        "time": "2022-11-22 20:26:27",
+        "home": 1.39,
+        "draw": 3.75,
+        "away": 6.5
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016190",
+      "code": "2022-C2",
+      "home": "墨西哥",
+      "away": "波兰",
+      "kickoff": "2022-11-22 23:00",
+      "handicap": -1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 2.45,
+        "draw": 2.84,
+        "away": 2.64
+      },
+      "last": {
+        "time": "2022-11-22 19:06:04",
+        "home": 2.3,
+        "draw": 2.85,
+        "away": 2.83
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016191",
+      "code": "2022-D2",
+      "home": "法国",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-23 02:00",
+      "handicap": -2,
+      "final_score": "4:1",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.16,
+        "draw": 5.2,
+        "away": 12
+      },
+      "last": {
+        "time": "2022-11-22 18:42:19",
+        "home": 1.14,
+        "draw": 5.5,
+        "away": 12.5
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016192",
+      "code": "2022-F1",
+      "home": "摩洛哥",
+      "away": "克罗地亚",
+      "kickoff": "2022-11-23 17:00",
+      "handicap": 1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 3.6,
+        "draw": 2.9,
+        "away": 1.94
+      },
+      "last": {
+        "time": "2022-11-23 17:51:07",
+        "home": 3.41,
+        "draw": 3.1,
+        "away": 1.91
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016193",
+      "code": "2022-E1",
+      "home": "德国",
+      "away": "日本",
+      "kickoff": "2022-11-23 20:00",
+      "handicap": -1,
+      "final_score": "1:2",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.35,
+        "draw": 4.2,
+        "away": 6.25
+      },
+      "last": {
+        "time": "2022-11-23 20:45:09",
+        "home": 1.31,
+        "draw": 4.8,
+        "away": 6
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016195",
+      "code": "2022-F2",
+      "home": "比利时",
+      "away": "加拿大",
+      "kickoff": "2022-11-24 02:00",
+      "handicap": -1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.32,
+        "draw": 4.2,
+        "away": 7
+      },
+      "last": {
+        "time": "2022-11-23 17:30:11",
+        "home": 1.33,
+        "draw": 4.3,
+        "away": 6.45
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016196",
+      "code": "2022-G1",
+      "home": "瑞士",
+      "away": "喀麦隆",
+      "kickoff": "2022-11-24 17:00",
+      "handicap": -1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.48,
+        "draw": 3.48,
+        "away": 5.7
+      },
+      "last": {
+        "time": "2022-11-24 17:38:13",
+        "home": 1.61,
+        "draw": 3.27,
+        "away": 4.8
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016197",
+      "code": "2022-H1",
+      "home": "乌拉圭",
+      "away": "韩国",
+      "kickoff": "2022-11-24 20:00",
+      "handicap": -1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.6,
+        "draw": 3.15,
+        "away": 5.1
+      },
+      "last": {
+        "time": "2022-11-24 20:57:34",
+        "home": 1.57,
+        "draw": 3.55,
+        "away": 4.52
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016198",
+      "code": "2022-H2",
+      "home": "葡萄牙",
+      "away": "加纳",
+      "kickoff": "2022-11-25 02:00",
+      "handicap": -1,
+      "final_score": "3:2",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.24,
+        "draw": 4.4,
+        "away": 9.5
+      },
+      "last": {
+        "time": "2022-11-24 21:51:24",
+        "home": 1.23,
+        "draw": 4.9,
+        "away": 8.15
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016199",
+      "code": "2022-G2",
+      "home": "巴西",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-25 02:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2022-11-14 09:56:02",
+        "home": 1.3,
+        "draw": 4.25,
+        "away": 7.5
+      },
+      "last": {
+        "time": "2022-11-24 21:44:10",
+        "home": 1.3,
+        "draw": 4.6,
+        "away": 6.6
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016200",
+      "code": "2022-B3",
+      "home": "威尔士",
+      "away": "伊朗",
+      "kickoff": "2022-11-25 17:00",
+      "handicap": -1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-23 10:06:59",
+        "home": 2,
+        "draw": 2.86,
+        "away": 3.45
+      },
+      "last": {
+        "time": "2022-11-25 16:52:38",
+        "home": 1.92,
+        "draw": 2.95,
+        "away": 3.6
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016201",
+      "code": "2022-A3",
+      "home": "卡塔尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-25 23:00",
+      "handicap": 1,
+      "final_score": "1:3",
+      "initial": {
+        "time": "2022-11-23 10:06:59",
+        "home": 5,
+        "draw": 3.4,
+        "away": 1.55
+      },
+      "last": {
+        "time": "2022-11-25 19:50:10",
+        "home": 5,
+        "draw": 3.4,
+        "away": 1.55
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016202",
+      "code": "2022-A4",
+      "home": "荷兰",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-26 03:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2022-11-23 10:06:59",
+        "home": 1.55,
+        "draw": 3.45,
+        "away": 4.9
+      },
+      "last": {
+        "time": "2022-11-25 19:54:24",
+        "home": 1.57,
+        "draw": 3.5,
+        "away": 4.62
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016203",
+      "code": "2022-B4",
+      "home": "英格兰",
+      "away": "美国",
+      "kickoff": "2022-11-26 03:00",
+      "handicap": -1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-23 10:06:59",
+        "home": 1.39,
+        "draw": 3.85,
+        "away": 6.25
+      },
+      "last": {
+        "time": "2022-11-25 19:35:55",
+        "home": 1.33,
+        "draw": 4.3,
+        "away": 6.5
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016204",
+      "code": "2022-D3",
+      "home": "突尼斯",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-26 17:00",
+      "handicap": -1,
+      "final_score": "0:1",
+      "initial": {
+        "time": "2022-11-24 09:28:20",
+        "home": 2.12,
+        "draw": 2.95,
+        "away": 3.05
+      },
+      "last": {
+        "time": "2022-11-26 17:16:58",
+        "home": 1.98,
+        "draw": 3,
+        "away": 3.33
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016205",
+      "code": "2022-C3",
+      "home": "波兰",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-26 20:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2022-11-24 09:28:20",
+        "home": 1.59,
+        "draw": 3.25,
+        "away": 4.95
+      },
+      "last": {
+        "time": "2022-11-26 20:51:12",
+        "home": 1.53,
+        "draw": 3.35,
+        "away": 5.35
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016206",
+      "code": "2022-D4",
+      "home": "法国",
+      "away": "丹麦",
+      "kickoff": "2022-11-27 00:00",
+      "handicap": -1,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2022-11-24 09:28:20",
+        "home": 1.66,
+        "draw": 3.26,
+        "away": 4.35
+      },
+      "last": {
+        "time": "2022-11-26 15:23:17",
+        "home": 1.6,
+        "draw": 3.4,
+        "away": 4.55
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016207",
+      "code": "2022-C4",
+      "home": "阿根廷",
+      "away": "墨西哥",
+      "kickoff": "2022-11-27 03:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2022-11-24 09:28:20",
+        "home": 1.4,
+        "draw": 3.75,
+        "away": 6.3
+      },
+      "last": {
+        "time": "2022-11-26 22:06:42",
+        "home": 1.35,
+        "draw": 4.1,
+        "away": 6.45
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016208",
+      "code": "2022-E3",
+      "home": "日本",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-27 17:00",
+      "handicap": -1,
+      "final_score": "0:1",
+      "initial": {
+        "time": "2022-11-25 09:51:27",
+        "home": 1.35,
+        "draw": 4.05,
+        "away": 6.6
+      },
+      "last": {
+        "time": "2022-11-27 17:43:49",
+        "home": 1.35,
+        "draw": 4.05,
+        "away": 6.6
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016209",
+      "code": "2022-F3",
+      "home": "比利时",
+      "away": "摩洛哥",
+      "kickoff": "2022-11-27 20:00",
+      "handicap": -1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-25 09:51:27",
+        "home": 1.62,
+        "draw": 3.35,
+        "away": 4.48
+      },
+      "last": {
+        "time": "2022-11-27 20:05:59",
+        "home": 1.66,
+        "draw": 3.3,
+        "away": 4.28
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016210",
+      "code": "2022-F4",
+      "home": "克罗地亚",
+      "away": "加拿大",
+      "kickoff": "2022-11-28 00:00",
+      "handicap": -1,
+      "final_score": "4:1",
+      "initial": {
+        "time": "2022-11-25 09:51:27",
+        "home": 1.95,
+        "draw": 3.15,
+        "away": 3.25
+      },
+      "last": {
+        "time": "2022-11-27 19:45:06",
+        "home": 1.95,
+        "draw": 3.15,
+        "away": 3.25
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016211",
+      "code": "2022-E4",
+      "home": "西班牙",
+      "away": "德国",
+      "kickoff": "2022-11-28 03:00",
+      "handicap": -1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2022-11-25 09:51:27",
+        "home": 2.22,
+        "draw": 3.38,
+        "away": 2.55
+      },
+      "last": {
+        "time": "2022-11-27 20:00:27",
+        "home": 2.28,
+        "draw": 3.2,
+        "away": 2.58
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016212",
+      "code": "2022-G3",
+      "home": "喀麦隆",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-28 17:00",
+      "handicap": 1,
+      "final_score": "3:3",
+      "initial": {
+        "time": "2022-11-26 10:16:54",
+        "home": 4.3,
+        "draw": 3.5,
+        "away": 1.61
+      },
+      "last": {
+        "time": "2022-11-28 16:51:15",
+        "home": 4.55,
+        "draw": 3.55,
+        "away": 1.57
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016213",
+      "code": "2022-H3",
+      "home": "韩国",
+      "away": "加纳",
+      "kickoff": "2022-11-28 20:00",
+      "handicap": -1,
+      "final_score": "2:3",
+      "initial": {
+        "time": "2022-11-26 10:16:54",
+        "home": 2.22,
+        "draw": 2.95,
+        "away": 2.86
+      },
+      "last": {
+        "time": "2022-11-28 20:56:22",
+        "home": 2.45,
+        "draw": 2.95,
+        "away": 2.55
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016214",
+      "code": "2022-G4",
+      "home": "巴西",
+      "away": "瑞士",
+      "kickoff": "2022-11-29 03:00",
+      "handicap": -1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-26 10:16:54",
+        "home": 1.41,
+        "draw": 3.95,
+        "away": 5.65
+      },
+      "last": {
+        "time": "2022-11-28 16:58:03",
+        "home": 1.38,
+        "draw": 4,
+        "away": 6.05
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016215",
+      "code": "2022-H4",
+      "home": "葡萄牙",
+      "away": "乌拉圭",
+      "kickoff": "2022-11-29 03:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2022-11-26 10:16:54",
+        "home": 1.75,
+        "draw": 3.15,
+        "away": 4
+      },
+      "last": {
+        "time": "2022-11-28 11:20:18",
+        "home": 1.77,
+        "draw": 3.12,
+        "away": 3.95
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016216",
+      "code": "2022-A5",
+      "home": "厄瓜多尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-29 23:00",
+      "handicap": -1,
+      "final_score": "1:2",
+      "initial": {
+        "time": "2022-11-27 09:54:50",
+        "home": 2.38,
+        "draw": 2.93,
+        "away": 2.65
+      },
+      "last": {
+        "time": "2022-11-29 12:46:41",
+        "home": 2.32,
+        "draw": 2.96,
+        "away": 2.7
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016217",
+      "code": "2022-A6",
+      "home": "卡塔尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-30 03:00",
+      "handicap": 2,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-27 09:54:50",
+        "home": 13,
+        "draw": 6.2,
+        "away": 1.11
+      },
+      "last": {
+        "time": "2022-11-27 09:54:50",
+        "home": 13,
+        "draw": 6.2,
+        "away": 1.11
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016218",
+      "code": "2022-B5",
+      "home": "伊朗",
+      "away": "美国",
+      "kickoff": "2022-11-30 03:00",
+      "handicap": 1,
+      "final_score": "0:1",
+      "initial": {
+        "time": "2022-11-27 09:54:50",
+        "home": 3.58,
+        "draw": 3.16,
+        "away": 1.84
+      },
+      "last": {
+        "time": "2022-11-29 19:55:53",
+        "home": 3.43,
+        "draw": 3.16,
+        "away": 1.88
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016219",
+      "code": "2022-B6",
+      "home": "威尔士",
+      "away": "英格兰",
+      "kickoff": "2022-11-30 03:00",
+      "handicap": 1,
+      "final_score": "0:3",
+      "initial": {
+        "time": "2022-11-27 09:54:50",
+        "home": 7.35,
+        "draw": 4.16,
+        "away": 1.31
+      },
+      "last": {
+        "time": "2022-11-27 09:54:50",
+        "home": 7.35,
+        "draw": 4.16,
+        "away": 1.31
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016220",
+      "code": "2022-D5",
+      "home": "突尼斯",
+      "away": "法国",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": 1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-28 09:26:34",
+        "home": 7.4,
+        "draw": 4.15,
+        "away": 1.31
+      },
+      "last": {
+        "time": "2022-11-30 21:54:34",
+        "home": 6,
+        "draw": 3.95,
+        "away": 1.39
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016222",
+      "code": "2022-C5",
+      "home": "沙特阿拉伯",
+      "away": "墨西哥",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": 1,
+      "final_score": "1:2",
+      "initial": {
+        "time": "2022-11-28 09:26:34",
+        "home": 4.95,
+        "draw": 4.2,
+        "away": 1.43
+      },
+      "last": {
+        "time": "2022-11-30 20:17:12",
+        "home": 4.45,
+        "draw": 4.1,
+        "away": 1.49
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016221",
+      "code": "2022-D6",
+      "home": "澳大利亚",
+      "away": "丹麦",
+      "kickoff": "2022-12-01 03:00",
+      "handicap": 1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-28 09:26:34",
+        "home": 6.55,
+        "draw": 3.9,
+        "away": 1.37
+      },
+      "last": {
+        "time": "2022-11-28 09:26:34",
+        "home": 6.55,
+        "draw": 3.9,
+        "away": 1.37
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016223",
+      "code": "2022-C6",
+      "home": "波兰",
+      "away": "阿根廷",
+      "kickoff": "2022-12-01 03:00",
+      "handicap": 1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-28 09:26:34",
+        "home": 7.4,
+        "draw": 4.05,
+        "away": 1.32
+      },
+      "last": {
+        "time": "2022-11-30 17:12:07",
+        "home": 7.1,
+        "draw": 4.15,
+        "away": 1.32
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016224",
+      "code": "2022-F5",
+      "home": "加拿大",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-01 23:00",
+      "handicap": 1,
+      "final_score": "1:2",
+      "initial": {
+        "time": "2022-11-29 09:10:25",
+        "home": 3.4,
+        "draw": 3.1,
+        "away": 1.92
+      },
+      "last": {
+        "time": "2022-12-01 18:39:25",
+        "home": 3.9,
+        "draw": 3.25,
+        "away": 1.74
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016225",
+      "code": "2022-F6",
+      "home": "克罗地亚",
+      "away": "比利时",
+      "kickoff": "2022-12-02 03:00",
+      "handicap": 1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-11-29 09:10:25",
+        "home": 2.95,
+        "draw": 3.15,
+        "away": 2.07
+      },
+      "last": {
+        "time": "2022-12-01 21:47:29",
+        "home": 2.45,
+        "draw": 3.15,
+        "away": 2.42
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016226",
+      "code": "2022-E5",
+      "home": "日本",
+      "away": "西班牙",
+      "kickoff": "2022-12-02 03:00",
+      "handicap": 1,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2022-11-29 09:10:25",
+        "home": 7,
+        "draw": 4.3,
+        "away": 1.31
+      },
+      "last": {
+        "time": "2022-11-29 09:10:25",
+        "home": 7,
+        "draw": 4.3,
+        "away": 1.31
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016228",
+      "code": "2022-H5",
+      "home": "加纳",
+      "away": "乌拉圭",
+      "kickoff": "2022-12-02 23:00",
+      "handicap": 1,
+      "final_score": "0:2",
+      "initial": {
+        "time": "2022-11-30 08:32:10",
+        "home": 4.7,
+        "draw": 3.45,
+        "away": 1.57
+      },
+      "last": {
+        "time": "2022-12-02 21:30:08",
+        "home": 4.18,
+        "draw": 3.4,
+        "away": 1.65
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016229",
+      "code": "2022-H6",
+      "home": "韩国",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-03 03:00",
+      "handicap": 1,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2022-11-30 08:32:10",
+        "home": 5.85,
+        "draw": 4.1,
+        "away": 1.38
+      },
+      "last": {
+        "time": "2022-12-02 21:49:15",
+        "home": 3.85,
+        "draw": 3.7,
+        "away": 1.64
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016230",
+      "code": "2022-G5",
+      "home": "塞尔维亚",
+      "away": "瑞士",
+      "kickoff": "2022-12-03 03:00",
+      "handicap": -1,
+      "final_score": "2:3",
+      "initial": {
+        "time": "2022-11-30 08:32:10",
+        "home": 2.43,
+        "draw": 3.16,
+        "away": 2.43
+      },
+      "last": {
+        "time": "2022-12-02 11:04:35",
+        "home": 2.4,
+        "draw": 3.16,
+        "away": 2.46
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016231",
+      "code": "2022-G6",
+      "home": "喀麦隆",
+      "away": "巴西",
+      "kickoff": "2022-12-03 03:00",
+      "handicap": 2,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-11-30 08:32:10",
+        "home": 10.5,
+        "draw": 5.5,
+        "away": 1.16
+      },
+      "last": {
+        "time": "2022-12-02 20:52:55",
+        "home": 8.55,
+        "draw": 5.1,
+        "away": 1.21
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016466",
+      "code": "2022-R16-1",
+      "home": "荷兰",
+      "away": "美国",
+      "kickoff": "2022-12-03 23:00",
+      "handicap": -1,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2022-12-01 09:31:57",
+        "home": 1.61,
+        "draw": 3.2,
+        "away": 4.85
+      },
+      "last": {
+        "time": "2022-12-03 22:10:11",
+        "home": 1.74,
+        "draw": 3.2,
+        "away": 3.98
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016476",
+      "code": "2022-R16-2",
+      "home": "阿根廷",
+      "away": "澳大利亚",
+      "kickoff": "2022-12-04 03:00",
+      "handicap": -2,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2022-12-02 09:04:55",
+        "home": 1.12,
+        "draw": 5.6,
+        "away": 14.6
+      },
+      "last": {
+        "time": "2022-12-03 19:20:13",
+        "home": 1.17,
+        "draw": 5.5,
+        "away": 9.7
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016467",
+      "code": "2022-R16-3",
+      "home": "英格兰",
+      "away": "塞内加尔",
+      "kickoff": "2022-12-04 23:00",
+      "handicap": -1,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2022-12-01 09:31:57",
+        "home": 1.41,
+        "draw": 3.6,
+        "away": 6.6
+      },
+      "last": {
+        "time": "2022-12-04 15:08:43",
+        "home": 1.39,
+        "draw": 3.7,
+        "away": 6.7
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016477",
+      "code": "2022-R16-4",
+      "home": "法国",
+      "away": "波兰",
+      "kickoff": "2022-12-05 03:00",
+      "handicap": -1,
+      "final_score": "3:1",
+      "initial": {
+        "time": "2022-12-02 09:04:55",
+        "home": 1.22,
+        "draw": 4.55,
+        "away": 10
+      },
+      "last": {
+        "time": "2022-12-04 22:37:49",
+        "home": 1.25,
+        "draw": 4.5,
+        "away": 8.5
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016493",
+      "code": "2022-R16-5",
+      "home": "日本",
+      "away": "克罗地亚",
+      "kickoff": "2022-12-05 23:00",
+      "handicap": 1,
+      "final_score": "1:1",
+      "initial": {
+        "time": "2022-12-03 10:07:22",
+        "home": 3.72,
+        "draw": 2.93,
+        "away": 1.89
+      },
+      "last": {
+        "time": "2022-12-05 19:59:31",
+        "home": 3.54,
+        "draw": 3,
+        "away": 1.91
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016521",
+      "code": "2022-R16-6",
+      "home": "巴西",
+      "away": "韩国",
+      "kickoff": "2022-12-06 03:00",
+      "handicap": -2,
+      "final_score": "4:1",
+      "initial": {
+        "time": "2022-12-04 10:01:50",
+        "home": 1.14,
+        "draw": 5.4,
+        "away": 13
+      },
+      "last": {
+        "time": "2022-12-04 21:39:53",
+        "home": 1.13,
+        "draw": 5.55,
+        "away": 13.5
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016492",
+      "code": "2022-R16-7",
+      "home": "摩洛哥",
+      "away": "西班牙",
+      "kickoff": "2022-12-06 23:00",
+      "handicap": 1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-12-03 10:07:22",
+        "home": 6.8,
+        "draw": 3.6,
+        "away": 1.4
+      },
+      "last": {
+        "time": "2022-12-06 21:39:37",
+        "home": 6.1,
+        "draw": 3.7,
+        "away": 1.42
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016522",
+      "code": "2022-R16-8",
+      "home": "葡萄牙",
+      "away": "瑞士",
+      "kickoff": "2022-12-07 03:00",
+      "handicap": -1,
+      "final_score": "6:1",
+      "initial": {
+        "time": "2022-12-04 10:01:50",
+        "home": 1.69,
+        "draw": 3.1,
+        "away": 4.45
+      },
+      "last": {
+        "time": "2022-12-06 19:41:56",
+        "home": 1.67,
+        "draw": 3.15,
+        "away": 4.5
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016536",
+      "code": "2022-QF-1",
+      "home": "克罗地亚",
+      "away": "巴西",
+      "kickoff": "2022-12-09 23:00",
+      "handicap": 1,
+      "final_score": "0:0",
+      "initial": {
+        "time": "2022-12-07 08:48:49",
+        "home": 6.85,
+        "draw": 4.05,
+        "away": 1.34
+      },
+      "last": {
+        "time": "2022-12-09 16:21:28",
+        "home": 8.7,
+        "draw": 4.6,
+        "away": 1.24
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016523",
+      "code": "2022-QF-2",
+      "home": "荷兰",
+      "away": "阿根廷",
+      "kickoff": "2022-12-10 03:00",
+      "handicap": 1,
+      "final_score": "2:2",
+      "initial": {
+        "time": "2022-12-05 09:06:13",
+        "home": 3.12,
+        "draw": 2.8,
+        "away": 2.17
+      },
+      "last": {
+        "time": "2022-12-09 13:41:40",
+        "home": 3.26,
+        "draw": 2.88,
+        "away": 2.06
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "1016557",
+      "code": "2022-QF-3",
+      "home": "摩洛哥",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-10 23:00",
+      "handicap": 1,
+      "final_score": "1:0",
+      "initial": {
+        "time": "2022-12-08 09:06:08",
+        "home": 5.35,
+        "draw": 3.35,
+        "away": 1.53
+      },
+      "last": {
+        "time": "2022-12-10 22:43:24",
+        "home": 5.55,
+        "draw": 3.42,
+        "away": 1.5
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016532",
+      "code": "2022-QF-4",
+      "home": "英格兰",
+      "away": "法国",
+      "kickoff": "2022-12-11 03:00",
+      "handicap": 1,
+      "final_score": "1:2",
+      "initial": {
+        "time": "2022-12-06 09:42:23",
+        "home": 2.8,
+        "draw": 2.88,
+        "away": 2.3
+      },
+      "last": {
+        "time": "2022-12-06 09:42:23",
+        "home": 2.8,
+        "draw": 2.88,
+        "away": 2.3
+      },
+      "result": "away"
+    },
+    {
+      "mid": "1016588",
+      "code": "2022-SF-1",
+      "home": "阿根廷",
+      "away": "克罗地亚",
+      "kickoff": "2022-12-14 03:00",
+      "handicap": -1,
+      "final_score": "3:0",
+      "initial": {
+        "time": "2022-12-11 09:52:57",
+        "home": 1.64,
+        "draw": 3,
+        "away": 5.1
+      },
+      "last": {
+        "time": "2022-12-13 13:11:03",
+        "home": 1.7,
+        "draw": 3.15,
+        "away": 4.28
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016608",
+      "code": "2022-SF-2",
+      "home": "法国",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-15 03:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "time": "2022-12-12 09:55:38",
+        "home": 1.41,
+        "draw": 3.5,
+        "away": 6.9
+      },
+      "last": {
+        "time": "2022-12-14 09:45:20",
+        "home": 1.43,
+        "draw": 3.55,
+        "away": 6.4
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016631",
+      "code": "2022-3RD",
+      "home": "克罗地亚",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-17 23:00",
+      "handicap": -1,
+      "final_score": "2:1",
+      "initial": {
+        "time": "2022-12-15 14:26:30",
+        "home": 2.08,
+        "draw": 3.38,
+        "away": 2.76
+      },
+      "last": {
+        "time": "2022-12-17 22:34:58",
+        "home": 2.04,
+        "draw": 3.38,
+        "away": 2.83
+      },
+      "result": "home"
+    },
+    {
+      "mid": "1016632",
+      "code": "2022-FINAL",
+      "home": "阿根廷",
+      "away": "法国",
+      "kickoff": "2022-12-18 23:00",
+      "handicap": 1,
+      "final_score": "2:2",
+      "initial": {
+        "time": "2022-12-15 14:26:30",
+        "home": 2.67,
+        "draw": 2.68,
+        "away": 2.55
+      },
+      "last": {
+        "time": "2022-12-18 20:12:41",
+        "home": 2.49,
+        "draw": 3,
+        "away": 2.47
+      },
+      "result": "draw"
+    }
+  ]
+}

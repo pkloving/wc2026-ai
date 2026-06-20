@@ -1,0 +1,25 @@
+{
+  "code": "MEX",
+  "name": "墨西哥",
+  "nameEn": "Mexico",
+  "confederation": "CONCACAF",
+  "flag": "🇲🇽",
+  "iso2": "mx",
+  "color": "#006847",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 13
+  },
+  "wc2022": {
+    "group": "C",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 2,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

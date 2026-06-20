@@ -1,0 +1,27 @@
+{
+  "code": "FRA",
+  "name": "法国",
+  "nameEn": "France",
+  "confederation": "UEFA",
+  "flag": "🇫🇷",
+  "iso2": "fr",
+  "color": "#0055A4",
+  "meta": {
+    "tier": "top",
+    "has_scorer_star": true,
+    "stars": [
+      "姆巴佩"
+    ],
+    "is_host": false,
+    "fifa_rank": 4
+  },
+  "wc2022": {
+    "group": "D",
+    "stage": "final",
+    "result": "亚军",
+    "played": 7,
+    "gf": 16,
+    "ga": 8
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

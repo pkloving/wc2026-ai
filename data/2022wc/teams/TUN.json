@@ -1,0 +1,25 @@
+{
+  "code": "TUN",
+  "name": "突尼斯",
+  "nameEn": "Tunisia",
+  "confederation": "CAF",
+  "flag": "🇹🇳",
+  "iso2": "tn",
+  "color": "#E70013",
+  "meta": {
+    "tier": "defensive",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 35
+  },
+  "wc2022": {
+    "group": "D",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 1,
+    "ga": 1
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

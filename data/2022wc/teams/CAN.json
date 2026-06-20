@@ -1,0 +1,27 @@
+{
+  "code": "CAN",
+  "name": "加拿大",
+  "nameEn": "Canada",
+  "confederation": "CONCACAF",
+  "flag": "🇨🇦",
+  "iso2": "ca",
+  "color": "#FF0000",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [
+      "戴维斯"
+    ],
+    "is_host": false,
+    "fifa_rank": 41
+  },
+  "wc2022": {
+    "group": "F",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 1,
+    "ga": 8
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

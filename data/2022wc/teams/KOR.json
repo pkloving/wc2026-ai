@@ -1,0 +1,27 @@
+{
+  "code": "KOR",
+  "name": "韩国",
+  "nameEn": "South Korea",
+  "confederation": "AFC",
+  "flag": "🇰🇷",
+  "iso2": "kr",
+  "color": "#003478",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": true,
+    "stars": [
+      "孙兴慜"
+    ],
+    "is_host": false,
+    "fifa_rank": 28
+  },
+  "wc2022": {
+    "group": "H",
+    "stage": "r16",
+    "result": "16强",
+    "played": 4,
+    "gf": 5,
+    "ga": 6
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

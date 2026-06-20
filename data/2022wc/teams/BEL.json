@@ -1,0 +1,27 @@
+{
+  "code": "BEL",
+  "name": "比利时",
+  "nameEn": "Belgium",
+  "confederation": "UEFA",
+  "flag": "🇧🇪",
+  "iso2": "be",
+  "color": "#FAE042",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [
+      "德布劳内"
+    ],
+    "is_host": false,
+    "fifa_rank": 2
+  },
+  "wc2022": {
+    "group": "F",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 1,
+    "ga": 4
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}
