@@ -4,13 +4,19 @@
 //   node scripts/build_views.js                 # 全部重建
 //   node scripts/build_views.js --incremental   # 增量(同 build_settled)
 //
-// 输出: data/views/{spf,rqspf,bf,zjq,bqc}_view.json
+// 输出: data/views/{spf,rqspf,bf,zjq,bqc}_view.json (本届: 2026)
+//       data/2022wc/views/{spf,rqspf,bf,zjq,bqc}_view.json (上届: 2022)
 //   每个文件 = 比赛数组, 字段:
 //     mid / code / home / away / kickoff / handicap / final_score
 //     initial / last / result
 //   spf/rqspf 的 result = 'home'|'draw'|'away'
 //   bf 的 result = { score, other }
 //   zjq/bqc 的 result = 字符串 ('胜胜' / '2' 等)
+//
+// 拆分规则: 用 m.kickoff 起始 4 位 ('YYYY') 判断年份
+//   2022 → data/2022wc/views/
+//   2026 → data/views/
+//   其它年份 → 也按年份落到 data/<YYYY>wc/views/ (兜底)
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -19,7 +25,8 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.join(__dirname, '..');
 const SETTLED_FILE = path.join(PROJECT_ROOT, 'data', 'settled_matches.json');
-const VIEWS_DIR = path.join(PROJECT_ROOT, 'data', 'views');
+const VIEWS_2026 = path.join(PROJECT_ROOT, 'data', 'views');
+const VIEWS_2022 = path.join(PROJECT_ROOT, 'data', '2022wc', 'views');
 
 const PLAYS = ['spf', 'rqspf', 'bf', 'zjq', 'bqc'];
 
@@ -35,14 +42,35 @@ if (matches.length === 0) {
   process.exit(0);
 }
 
-// 拆分: 全部 / 世界杯正赛 only
-const matchesAll = matches;
-const matchesWc = matches.filter(m => m.league === '世界杯');
-if (matchesAll.length > matchesWc.length) {
-  console.log(`[build_views] ⚠️ 含 ${matchesAll.length - matchesWc.length} 场非世界杯正赛 (国际赛), 默认全输出, 世界杯正赛见 *_wc_view.json`);
+// 按年份分桶: '2022' / '2026' / 其它
+function yearOf(m) {
+  const k = m?.kickoff;
+  if (typeof k !== 'string' || k.length < 4) return 'unknown';
+  return k.slice(0, 4);
+}
+const matchesByYear = {};
+for (const m of matches) {
+  const y = yearOf(m);
+  if (!matchesByYear[y]) matchesByYear[y] = [];
+  matchesByYear[y].push(m);
 }
 
-if (!fs.existsSync(VIEWS_DIR)) fs.mkdirSync(VIEWS_DIR, { recursive: true });
+// 输出目录映射: 2022 → data/2022wc/views, 2026 → data/views, 其它 → data/<y>wc/views
+function outDirFor(year) {
+  if (year === '2026') return VIEWS_2026;
+  if (year === '2022') return VIEWS_2022;
+  return path.join(PROJECT_ROOT, 'data', `${year}wc`, 'views');
+}
+const years = Object.keys(matchesByYear).sort();
+if (years.length > 1) {
+  console.log(`[build_views] 检测到多年份数据: ${years.map(y => `${y}=${matchesByYear[y].length}场`).join(', ')}`);
+}
+
+// 世界杯正赛 only (按 m.league === '世界杯') 用于 *_wc_view.json
+function isWc(m) { return m.league === '世界杯'; }
+
+if (!fs.existsSync(VIEWS_2026)) fs.mkdirSync(VIEWS_2026, { recursive: true });
+if (!fs.existsSync(VIEWS_2022)) fs.mkdirSync(VIEWS_2022, { recursive: true });
 
 // 共同基础字段
 function baseOf(m) {
@@ -69,42 +97,53 @@ function viewOf(play, m) {
   };
 }
 
-let summary = { generated_at: new Date().toISOString(), total_matches: matches.length, plays: {} };
-for (const play of PLAYS) {
-  const rows = matchesAll
-    .map(m => viewOf(play, m))
-    .filter(r => r && (r.initial || r.last || r.result));
-  const outFile = path.join(VIEWS_DIR, `${play}_view.json`);
+function writePlay(outDir, play, rows, wcOnly) {
+  const suffix = wcOnly ? '_wc' : '';
+  const outFile = path.join(outDir, `${play}${suffix}_view.json`);
   fs.writeFileSync(outFile, JSON.stringify({
     generated_at: new Date().toISOString(),
     play,
     count: rows.length,
     rows,
   }, null, 2), 'utf-8');
-  summary.plays[play] = rows.length;
-  console.log(`[build_views] ${play}: ${rows.length} 条 → data/views/${play}_view.json`);
+  return outFile;
 }
 
-// 世界杯正赛 only 视图 (去除国际赛)
-if (matchesWc.length > 0 && matchesWc.length < matchesAll.length) {
+for (const year of years) {
+  const yearMatches = matchesByYear[year];
+  const yearMatchesWc = yearMatches.filter(isWc);
+  const outDir = outDirFor(year);
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+
+  // 全部
   for (const play of PLAYS) {
-    const rows = matchesWc
+    const rows = yearMatches
       .map(m => viewOf(play, m))
       .filter(r => r && (r.initial || r.last || r.result));
-    const outFile = path.join(VIEWS_DIR, `${play}_wc_view.json`);
-    fs.writeFileSync(outFile, JSON.stringify({
-      generated_at: new Date().toISOString(),
-      play,
-      count: rows.length,
-      rows,
-    }, null, 2), 'utf-8');
-    summary.plays[`${play}_wc`] = rows.length;
-    console.log(`[build_views] ${play}: ${rows.length} 条 (WC only) → data/views/${play}_wc_view.json`);
+    const outFile = writePlay(outDir, play, rows, false);
+    console.log(`[build_views][${year}] ${play}: ${rows.length} 条 → ${path.relative(PROJECT_ROOT, outFile)}`);
   }
+  // 世界杯正赛 only
+  if (yearMatchesWc.length > 0 && yearMatchesWc.length < yearMatches.length) {
+    for (const play of PLAYS) {
+      const rows = yearMatchesWc
+        .map(m => viewOf(play, m))
+        .filter(r => r && (r.initial || r.last || r.result));
+      const outFile = writePlay(outDir, play, rows, true);
+      console.log(`[build_views][${year}] ${play}: ${rows.length} 条 (WC only) → ${path.relative(PROJECT_ROOT, outFile)}`);
+    }
+  }
+
+  // 索引
+  const indexFile = path.join(outDir, 'index.json');
+  const summary = { generated_at: new Date().toISOString(), total_matches: new Set(yearMatches.map(m => m.mid)).size, plays: {} };
+  // 从刚写出的文件回读, 用更准确 count
+  for (const f of fs.readdirSync(outDir).filter(x => x.endsWith('.json') && x !== 'index.json')) {
+    const v = JSON.parse(fs.readFileSync(path.join(outDir, f), 'utf-8'));
+    summary.plays[v.play + (f.includes('_wc_') ? '_wc' : '')] = v.count;
+  }
+  fs.writeFileSync(indexFile, JSON.stringify(summary, null, 2), 'utf-8');
+  console.log(`[build_views][${year}] 索引 → ${path.relative(PROJECT_ROOT, indexFile)}`);
 }
 
-// 总览索引
-const indexFile = path.join(VIEWS_DIR, 'index.json');
-fs.writeFileSync(indexFile, JSON.stringify(summary, null, 2), 'utf-8');
-console.log(`[build_views] 索引 → data/views/index.json`);
-console.log(`[build_views] 完成, 全部 ${matchesAll.length} 场, 世界杯正赛 ${matchesWc.length} 场`);
+console.log(`[build_views] 完成, 总 ${matches.length} 场 (${years.map(y => `${y}=${matchesByYear[y].length}`).join(', ')})`);

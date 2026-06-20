@@ -1,0 +1,27 @@
+{
+  "code": "URU",
+  "name": "乌拉圭",
+  "nameEn": "Uruguay",
+  "confederation": "CONMEBOL",
+  "flag": "🇺🇾",
+  "iso2": "uy",
+  "color": "#0038A8",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [
+      "苏亚雷斯"
+    ],
+    "is_host": false,
+    "fifa_rank": 14
+  },
+  "wc2022": {
+    "group": "H",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 2,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

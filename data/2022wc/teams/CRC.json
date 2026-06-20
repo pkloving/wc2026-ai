@@ -1,0 +1,25 @@
+{
+  "code": "CRC",
+  "name": "哥斯达黎加",
+  "nameEn": "Costa Rica",
+  "confederation": "CONCACAF",
+  "flag": "🇨🇷",
+  "iso2": "cr",
+  "color": "#002B7F",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 31
+  },
+  "wc2022": {
+    "group": "E",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 3,
+    "ga": 11
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

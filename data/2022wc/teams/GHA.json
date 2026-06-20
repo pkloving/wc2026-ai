@@ -1,0 +1,25 @@
+{
+  "code": "GHA",
+  "name": "加纳",
+  "nameEn": "Ghana",
+  "confederation": "CAF",
+  "flag": "🇬🇭",
+  "iso2": "gh",
+  "color": "#CE1126",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 61
+  },
+  "wc2022": {
+    "group": "H",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 5,
+    "ga": 7
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

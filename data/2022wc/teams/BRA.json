@@ -1,0 +1,27 @@
+{
+  "code": "BRA",
+  "name": "巴西",
+  "nameEn": "Brazil",
+  "confederation": "CONMEBOL",
+  "flag": "🇧🇷",
+  "iso2": "br",
+  "color": "#FEDF00",
+  "meta": {
+    "tier": "top",
+    "has_scorer_star": true,
+    "stars": [
+      "内马尔"
+    ],
+    "is_host": false,
+    "fifa_rank": 1
+  },
+  "wc2022": {
+    "group": "G",
+    "stage": "qf",
+    "result": "八强",
+    "played": 5,
+    "gf": 8,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

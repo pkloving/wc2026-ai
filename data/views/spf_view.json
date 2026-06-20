@@ -1,30 +1,8 @@
 {
-  "generated_at": "2026-06-19T07:17:28.224Z",
+  "generated_at": "2026-06-20T03:41:33.101Z",
   "play": "spf",
-  "count": 25,
+  "count": 24,
   "rows": [
-    {
-      "mid": "2040145",
-      "code": "周一201",
-      "home": "荷兰",
-      "away": "乌兹别克",
-      "kickoff": "2026-06-09 02:45",
-      "handicap": -2,
-      "final_score": "2:1",
-      "initial": {
-        "time": "2026-06-08 10:02:19",
-        "home": 1.14,
-        "draw": 5.85,
-        "away": 12.5
-      },
-      "last": {
-        "time": "2026-06-08 10:02:19",
-        "home": 1.14,
-        "draw": 5.85,
-        "away": 12.5
-      },
-      "result": "home"
-    },
     {
       "mid": "2040162",
       "code": "周四001",

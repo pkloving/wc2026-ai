@@ -1,0 +1,25 @@
+{
+  "code": "QAT",
+  "name": "卡塔尔",
+  "nameEn": "Qatar",
+  "confederation": "AFC",
+  "flag": "🇶🇦",
+  "iso2": "qa",
+  "color": "#8D1B3D",
+  "meta": {
+    "tier": "weak",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": true,
+    "fifa_rank": 50
+  },
+  "wc2022": {
+    "group": "A",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 1,
+    "ga": 7
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

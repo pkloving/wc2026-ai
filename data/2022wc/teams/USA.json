@@ -1,0 +1,27 @@
+{
+  "code": "USA",
+  "name": "美国",
+  "nameEn": "USA",
+  "confederation": "CONCACAF",
+  "flag": "🇺🇸",
+  "iso2": "us",
+  "color": "#002868",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [
+      "普利西奇"
+    ],
+    "is_host": false,
+    "fifa_rank": 16
+  },
+  "wc2022": {
+    "group": "B",
+    "stage": "r16",
+    "result": "16强",
+    "played": 4,
+    "gf": 3,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

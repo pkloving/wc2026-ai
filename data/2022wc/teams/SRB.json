@@ -1,0 +1,27 @@
+{
+  "code": "SRB",
+  "name": "塞尔维亚",
+  "nameEn": "Serbia",
+  "confederation": "UEFA",
+  "flag": "🇷🇸",
+  "iso2": "rs",
+  "color": "#C7363D",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [
+      "弗拉霍维奇"
+    ],
+    "is_host": false,
+    "fifa_rank": 21
+  },
+  "wc2022": {
+    "group": "G",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 5,
+    "ga": 8
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

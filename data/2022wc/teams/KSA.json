@@ -1,0 +1,25 @@
+{
+  "code": "KSA",
+  "name": "沙特阿拉伯",
+  "nameEn": "Saudi Arabia",
+  "confederation": "AFC",
+  "flag": "🇸🇦",
+  "iso2": "sa",
+  "color": "#006C35",
+  "meta": {
+    "tier": "defensive",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 49
+  },
+  "wc2022": {
+    "group": "C",
+    "stage": "group",
+    "result": "小组出局",
+    "played": 3,
+    "gf": 3,
+    "ga": 8
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

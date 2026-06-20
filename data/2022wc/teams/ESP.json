@@ -1,0 +1,25 @@
+{
+  "code": "ESP",
+  "name": "西班牙",
+  "nameEn": "Spain",
+  "confederation": "UEFA",
+  "flag": "🇪🇸",
+  "iso2": "es",
+  "color": "#AA151B",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 7
+  },
+  "wc2022": {
+    "group": "E",
+    "stage": "r16",
+    "result": "16强",
+    "played": 4,
+    "gf": 9,
+    "ga": 3
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

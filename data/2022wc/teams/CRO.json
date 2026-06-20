@@ -1,0 +1,27 @@
+{
+  "code": "CRO",
+  "name": "克罗地亚",
+  "nameEn": "Croatia",
+  "confederation": "UEFA",
+  "flag": "🇭🇷",
+  "iso2": "hr",
+  "color": "#FF0000",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": true,
+    "stars": [
+      "莫德里奇"
+    ],
+    "is_host": false,
+    "fifa_rank": 12
+  },
+  "wc2022": {
+    "group": "F",
+    "stage": "3rd",
+    "result": "季军",
+    "played": 7,
+    "gf": 8,
+    "ga": 7
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

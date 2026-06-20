@@ -1,0 +1,27 @@
+{
+  "code": "POR",
+  "name": "葡萄牙",
+  "nameEn": "Portugal",
+  "confederation": "UEFA",
+  "flag": "🇵🇹",
+  "iso2": "pt",
+  "color": "#FF0000",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": true,
+    "stars": [
+      "C罗"
+    ],
+    "is_host": false,
+    "fifa_rank": 9
+  },
+  "wc2022": {
+    "group": "H",
+    "stage": "qf",
+    "result": "八强",
+    "played": 5,
+    "gf": 12,
+    "ga": 5
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

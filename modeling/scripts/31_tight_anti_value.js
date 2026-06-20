@@ -1,8 +1,9 @@
 // 31_tight_anti_value.js — 主模型策略脚本
 // 核心策略: 主池=F4混合 (ROI+134%) + 单关=反方向/平局高赔率比分 (爆冷门)
+//          + 5类选单 (rqspf 3串1/4串1 + 比分2串1 + 单关比分/zjq/bqc)
 // 用法:
 //   node modeling/scripts/31_tight_anti_value.js --predict    (默认, 预测今日比赛)
-//   node modeling/scripts/31_tight_anti_value.js --backtest   (回测历史比赛)
+//   node modeling/scripts/31_tight_anti_value.js --backtest   (回测历史比赛, 报告落盘 modeling/artifacts/backtest_31_*.md)
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,6 +13,8 @@ import {
   DEFAULT_PARAMS, mergeParams, createTeamCtx,
   classifyMatch, f4Strategy, generateCombos,
   rqspfStrategy, zjqStrategy, bqcStrategy, singleBetStrategy,
+  selectBets, settleBets, deriveActual, groupByDay,
+  loadBacktestMatches, buildPrediction,
 } from './strategy_core.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -165,12 +168,15 @@ function runPredict() {
     console.log(`\n⚠️  [ROI 规律] 未加载到 insights, 单关数量走默认 (2 个)\n`);
   }
 
-  // 对每场比赛应用 F4 + 单关策略
+  // 对每场比赛应用 F4 + 单关 + rqspf/zjq/bqc 策略 (rq/z/b 供 selectBets 选单使用)
   const matchPredictions = todayMatches.map(m => {
     const type = classifyMatch(m, STRATEGY_CTX);
     const mainPicks = f4Strategy(m, STRATEGY_CTX);
     const singleBets = singleBetStrategy(m, mainPicks, STRATEGY_CTX);
-    return { ...m, type, mainPicks, singleBets };
+    const rq = rqspfStrategy(m, STRATEGY_CTX);
+    const z = zjqStrategy(m, STRATEGY_CTX);
+    const b = bqcStrategy(m, STRATEGY_CTX);
+    return { ...m, type, mainPicks, singleBets, rq, z, b };
   });
 
   // 生成组合
@@ -206,7 +212,7 @@ function runPredict() {
   }
 
   // ======= RQSPF 跟投 + 纠偏 (insights: 基线+16.6% / 纠偏+20.5%) =======
-  const rqspfPicks = matchPredictions.map(p => ({ p, rq: rqspfStrategy(p, STRATEGY_CTX) })).filter(x => x.rq);
+  const rqspfPicks = matchPredictions.map(p => ({ p, rq: p.rq })).filter(x => x.rq);
   if (rqspfPicks.length > 0) {
     const corrCount = rqspfPicks.filter(x => x.rq.rule.name.includes('纠偏')).length;
     console.log(`\n## RQSPF 让球胜平负 跟投 (${corrCount}场命中纠偏条件 → 用让胜, 其余用基线最低赔率)\n`);
@@ -221,7 +227,7 @@ function runPredict() {
   }
 
   // ======= ZJQ 跟投 + 纠偏 (insights: 2球主流盘 ROI+24.7%) =======
-  const zjqPicks = matchPredictions.map(p => ({ p, z: zjqStrategy(p, STRATEGY_CTX) })).filter(x => x.z);
+  const zjqPicks = matchPredictions.map(p => ({ p, z: p.z })).filter(x => x.z);
   if (zjqPicks.length > 0) {
     const corrCount = zjqPicks.filter(x => x.z.corrected).length;
     console.log(`\n## ZJQ 总进球 跟投 (${corrCount}场命中纠偏条件 → 用2球主流盘, 其余用让球→大/小球)\n`);
@@ -235,7 +241,7 @@ function runPredict() {
   }
 
   // ======= BQC 跟投 + 纠偏 (insights: 胜胜赔率<2.0 → 胜胜+平平 ROI+110.4%) =======
-  const bqcPicks = matchPredictions.map(p => ({ p, b: bqcStrategy(p, STRATEGY_CTX) })).filter(x => x.b);
+  const bqcPicks = matchPredictions.map(p => ({ p, b: p.b })).filter(x => x.b);
   if (bqcPicks.length > 0) {
     const corrCount = bqcPicks.filter(x => x.b.corrected).length;
     console.log(`\n## BQC 半全场 跟投 (${corrCount}场命中纠偏条件 → 胜胜+平平, 其余用TOP3)\n`);
@@ -272,11 +278,80 @@ function runPredict() {
     }
   }
 
+  // ======= 5 类选单 (picker) =======
+  const picker = selectBets(matchPredictions, STRATEGY_CTX);
+  const PCK = STRATEGY_CTX.params.picker;
+  console.log(`\n# 今日选单 (5类: 必出 cat1/cat2 + 可选 cat3/cat4/cat5)\n`);
+
+  // --- cat1: RQSPF 3串1 (核心) ---
+  console.log(`## 必出① RQSPF 3串1 (核心价值, legMode=${picker.cat1.legMode}, 挑场=${PCK.cat1.topNMode})\n`);
+  if (picker.cat1.tickets.length > 0) {
+    console.log(`选中场次: ${picker.cat1.matches.join(' / ')}  (共 ${picker.cat1.tickets.length} 注${picker.cat1.stake > 1 ? ` ×${picker.cat1.stake}金额` : ''})\n`);
+    console.log(`| # | 线路 (让球方向) | 串关赔率 | 注金 |`);
+    console.log(`|---|----------------|----------|------|`);
+    picker.cat1.tickets.forEach((t, i) => {
+      const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
+      console.log(`| ${i + 1} | ${desc} | ${t.odds} | ${t.stake} |`);
+    });
+    if (picker.cat1.parlay4) {
+      const t = picker.cat1.parlay4;
+      const desc = t.legs.map(l => `${l.code} ${l.label}@${l.odds}`).join(' × ');
+      console.log(`| 4串1 | ${desc} | ${t.odds} | ${t.stake} |`);
+    }
+  } else {
+    console.log(`(当日有效场次不足 ${PCK.cat1.topN} 场, 不出)`);
+  }
+
+  // --- cat2: 比分 2串1 ---
+  console.log(`\n## 必出② 比分 2串1 (每场挑2比分, pickMode=${PCK.cat2.pickMode}, 挑场=${PCK.cat2.topNMode})\n`);
+  if (picker.cat2.tickets.length > 0) {
+    console.log(`选中场次: ${picker.cat2.matches.join(' / ')}  (共 ${picker.cat2.tickets.length} 注)\n`);
+    console.log(`| # | 线路 (比分) | 串关赔率 |`);
+    console.log(`|---|------------|----------|`);
+    picker.cat2.tickets.forEach((t, i) => {
+      const desc = t.legs.map(l => `${l.code} ${l.score}@${l.odds}`).join(' × ');
+      console.log(`| ${i + 1} | ${desc} | ${t.odds} |`);
+    });
+  } else {
+    console.log(`(当日有效场次不足 ${PCK.cat2.topN} 场, 不出)`);
+  }
+
+  // --- cat3: 高倍比分单关 (可选) ---
+  console.log(`\n## 可选③ 高倍比分单关 (主池比分赔率 >= ${PCK.cat3.oddsThreshold})\n`);
+  if (picker.cat3.length > 0) {
+    for (const p of picker.cat3) console.log(`  ${p.code} ${p.match}: ${p.score}@${p.odds}`);
+  } else {
+    console.log(`(无高倍比分信号, 今日不出)`);
+  }
+
+  // --- cat4: zjq 单关 (可选) ---
+  console.log(`\n## 可选④ 总进球(zjq) 单关 (仅纠偏信号)\n`);
+  if (picker.cat4.length > 0) {
+    for (const p of picker.cat4) {
+      const desc = p.picks.map(k => `${k}球@${p.oddsMap[k]}`).join(' / ');
+      console.log(`  ${p.code} ${p.match}: ${desc}  (${p.rule?.name || ''})`);
+    }
+  } else {
+    console.log(`(无 zjq 纠偏信号, 今日不出)`);
+  }
+
+  // --- cat5: bqc 单关 (可选) ---
+  console.log(`\n## 可选⑤ 半全场(bqc) 单关 (仅纠偏信号)\n`);
+  if (picker.cat5.length > 0) {
+    for (const p of picker.cat5) {
+      const desc = p.picks.map(k => `${k}@${p.oddsMap[k]}`).join(' / ');
+      console.log(`  ${p.code} ${p.match}: ${desc}  (${p.rule?.name || ''})`);
+    }
+  } else {
+    console.log(`(无 bqc 纠偏信号, 今日不出)`);
+  }
+
   // ======= 写入 JSON =======
   if (!fs.existsSync(ARTIFACTS_DIR)) fs.mkdirSync(ARTIFACTS_DIR, { recursive: true });
   const jsonOut = {
     date: today,
     strategy: '31号策略 (F4主池 + 反方向单关 + RQSPF/ZJQ/BQC赔率纠偏)',
+    picker,
     rqspf_follow: rqspfPicks.map(({ p, rq }) => ({
       code: p.code, mid: p.mid, match: p.match, handicap: p.handicap,
       rqspf_odds: { home: p.rqspf?.home, draw: p.rqspf?.draw, away: p.rqspf?.away },
@@ -314,8 +389,41 @@ function runPredict() {
 
 // ============================================================
 // 回测模式: 对有结果的比赛应用策略并报告 ROI
+//   报告同时落盘 modeling/artifacts/backtest_31_<时间戳>.md (仅留最近 2 份)
 // ============================================================
 function runBacktest() {
+  // 把回测报告 tee 到 buffer, 结束时落盘成 Markdown (仅 console.log, 不影响终端输出)
+  const _origLog = console.log;
+  const _report = [];
+  console.log = (...args) => { _report.push(args.map(String).join(' ')); _origLog(...args); };
+
+  // ============================================================
+  // 5 OR 瘦身 + E/F override 规则 (在 RQSPF 跟投和 Part1 逐场明细里统一使用)
+  //   A: 主选=让胜  B: spf.home<1.3  C: spf.home∈[1.5,2.0)  D: |hc|=2
+  //   E: hc=-1 + spf.home<1.5 强制让胜 (覆盖 baseline)
+  //   F: hc=+1 + spf.away<1.5 强制让胜 (反向, 客热门爆冷)
+  // ============================================================
+  function shouldSlimRq(m, P) {
+    if (!m || !P) return false;
+    if (P.d === 'home') return true;
+    if (m.spf?.home && m.spf.home < 1.3) return true;
+    if (m.spf?.home && m.spf.home >= 1.5 && m.spf.home < 2.0) return true;
+    if (Math.abs(m.handicap ?? 0) === 2) return true;
+    if (m.handicap === -1 && m.spf?.home && m.spf.home < 1.5) return true;
+    if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) return true;
+    return false;
+  }
+  function shouldOverrideRq(m, P) {
+    if (!m || !P) return null;
+    if (m.handicap === -1 && m.spf?.home && m.spf.home < 1.5) {
+      return { d: 'home', odds: m.rqspf?.home ?? P.odds, label: '让胜', rule: 'E' };
+    }
+    if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) {
+      return { d: 'home', odds: m.rqspf?.home ?? P.odds, label: '让胜', rule: 'F' };
+    }
+    return null;
+  }
+
   const matches_ = [];
   for (const f of fs.readdirSync(ODDS_DIR).filter(f => f.endsWith('.json')).sort()) {
     const oddsDoc = JSON.parse(fs.readFileSync(path.join(ODDS_DIR, f), 'utf-8'));
@@ -332,6 +440,7 @@ function runBacktest() {
       handicap: oddsDoc.odds.handicap ?? 0,
       bf: oddsDoc.odds.bf_latest,
       rqspf: oddsDoc.odds.rqspf_latest,
+      spf: oddsDoc.odds.spf_latest,
       zjq: oddsDoc.odds.zjq_latest,
       bqc: oddsDoc.odds.bqc_latest,
       actualHome: actual.homeScore,
@@ -341,6 +450,7 @@ function runBacktest() {
 
   if (matches_.length === 0) {
     console.log('无历史比赛可回测');
+    console.log = _origLog;
     return;
   }
 
@@ -351,16 +461,11 @@ function runBacktest() {
     mainCost += 3;
     const picks = f4Strategy(m, STRATEGY_CTX);
     const actual = `${m.actualHome}:${m.actualAway}`;
-    // 2026-06-19 调优: "胜其它" 兜底命中检测 (主队赢球 + 进 5+ 球)
-    // 例: 6-0/5-0/5-1 等"非典型大比分" 走"胜其它"档
-    const hit = picks.find(p => p.score === actual)
-             || picks.find(p => p._isOther && p.score === '胜其它' && m.actualHome > m.actualAway && m.actualHome >= 5)
-             || picks.find(p => p._isOther && p.score === '负其它' && m.actualHome < m.actualAway && m.actualAway >= 5)
-             || picks.find(p => p._isOther && p.score === '平其它' && m.actualHome === m.actualAway && (m.actualHome + m.actualAway) >= 5);
+    const hit = picks.find(p => p.score === actual);
     if (hit) { mainReturn += hit.odds; mainHits++; }
     details.push({
       code: m.code, match: `${m.home}vs${m.away}`, type: classifyMatch(m, STRATEGY_CTX),
-      actual, picks: picks.map(p => `${p.score}@${p.odds}${p._isOther ? '(兜底)' : ''}`),
+      actual, picks: picks.map(p => `${p.score}@${p.odds}`),
       hit: !!hit, hitOdds: hit ? hit.odds : 0,
     });
   }
@@ -396,7 +501,7 @@ function runBacktest() {
   // 用历史数据验证 3 条纠偏规则的实战 ROI
   console.log(`\n## 31号策略 跟投 + 纠偏回测 (RQSPF / ZJQ / BQC)\n`);
 
-  // RQSPF 跟投
+  // RQSPF 跟投 (5 OR + E/F 完整策略: 触发单选让胜, E/F 强制覆盖; 未触发走主+次双选)
   const rqspfBack = matches_.map(m => {
     const rq = m.rqspf;
     if (!rq || !rq.home || !rq.draw || !rq.away) return null;
@@ -407,28 +512,47 @@ function runBacktest() {
     if (actualDiff + handicap > 0) rqResult = 'home';
     else if (actualDiff + handicap < 0) rqResult = 'away';
     else rqResult = 'draw';
-    const strategy = rqspfStrategy({ rqspf: { home: rq.home, draw: rq.draw, away: rq.away } }, STRATEGY_CTX);
+    const strategy = rqspfStrategy({ rqspf: { home: rq.home, draw: rq.draw, away: rq.away }, spf: m.spf, handicap: m.handicap }, STRATEGY_CTX);
     if (!strategy) return null;
-    const hit = strategy.primary.d === rqResult;
-    const odds = strategy.primary.odds;
-    return { match: m, rq, rqResult, strategy, hit, odds, rule: strategy.rule };
+    const P = strategy.primary, S = strategy.secondary;
+    // 5 OR + E/F 优先级: E/F override 强制让胜; 其它规则只跳次选(单选)
+    const ovr = shouldOverrideRq(m, P);
+    const slim = shouldSlimRq(m, P) || !!ovr;
+    const effP = ovr ? { d: ovr.d, odds: ovr.odds, label: ovr.label } : P;
+    // 命中计算: 单选(瘦身后) cost=1, 双选(未瘦身) cost=2
+    let cost, ret, slimFlag;
+    if (slim) {
+      cost = 1;
+      slimFlag = 'slim';
+      if (effP.d === rqResult) ret = effP.odds;
+      else ret = 0;
+    } else {
+      cost = 2;
+      slimFlag = 'dual';
+      if (P.d === rqResult) ret = P.odds;
+      else if (S.d === rqResult) ret = S.odds;
+      else ret = 0;
+    }
+    return { match: m, rq, rqResult, strategy, effP, ovr, cost, ret, slimFlag, rule: ovr ? { name: '纠偏-' + ovr.rule } : strategy.rule };
   }).filter(Boolean);
 
   if (rqspfBack.length > 0) {
-    let n = rqspfBack.length;
-    let hits = rqspfBack.filter(x => x.hit).length;
-    let cost = n;  // 每场 1 注
-    let ret = rqspfBack.filter(x => x.hit).reduce((s, x) => s + x.odds, 0);
-    let roi = (ret - cost) / cost * 100;
-    let corrN = rqspfBack.filter(x => x.rule.name.includes('纠偏')).length;
-    let corrHits = rqspfBack.filter(x => x.rule.name.includes('纠偏') && x.hit).length;
-    let corrCost = corrN;
-    let corrRet = rqspfBack.filter(x => x.rule.name.includes('纠偏') && x.hit).reduce((s, x) => s + x.odds, 0);
-    let corrRoi = corrCost > 0 ? (corrRet - corrCost) / corrCost * 100 : 0;
-    console.log(`### RQSPF 跟投 (基线+16.6% / 纠偏+20.5%)\n`);
+    const n = rqspfBack.length;
+    const totalCost = rqspfBack.reduce((s, x) => s + x.cost, 0);
+    const totalRet = rqspfBack.reduce((s, x) => s + x.ret, 0);
+    const hits = rqspfBack.filter(x => x.ret > 0).length;
+    const roi = (totalRet - totalCost) / totalCost * 100;
+    const corrN = rqspfBack.filter(x => x.rule.name.includes('纠偏')).length;
+    const corrHits = rqspfBack.filter(x => x.rule.name.includes('纠偏') && x.ret > 0).length;
+    const corrCost = rqspfBack.filter(x => x.rule.name.includes('纠偏')).reduce((s, x) => s + x.cost, 0);
+    const corrRet = rqspfBack.filter(x => x.rule.name.includes('纠偏')).reduce((s, x) => s + x.ret, 0);
+    const corrRoi = corrCost > 0 ? (corrRet - corrCost) / corrCost * 100 : 0;
+    const slimN = rqspfBack.filter(x => x.slimFlag === 'slim').length;
+    const dualN = n - slimN;
+    console.log(`### RQSPF 跟投 (5 OR + E/F 完整策略: slim=单选 cost=1, dual=主+次 cost=2)\n`);
     console.log(`| 范围 | 命中 | 投入 | 回报 | ROI |`);
     console.log(`|------|------|------|------|-----|`);
-    console.log(`| 全部 (${n}场) | ${hits} | $${cost} | $${ret.toFixed(2)} | ${roi.toFixed(1)}% |`);
+    console.log(`| 全部 (${n}场: slim=${slimN} dual=${dualN}) | ${hits} | $${totalCost} | $${totalRet.toFixed(2)} | ${roi.toFixed(1)}% |`);
     if (corrN > 0) console.log(`| 纠偏命中 (${corrN}场) | ${corrHits} | $${corrCost} | $${corrRet.toFixed(2)} | ${corrRoi.toFixed(1)}% |`);
   }
 
@@ -521,6 +645,140 @@ function runBacktest() {
     console.log(`|------|------|------|------|-----|`);
     console.log(`| 全部 (${bqcBack.length}场) | ${totalHits} | $${totalCost} | $${totalRet.toFixed(2)} | ${roi.toFixed(1)}% |`);
     if (corrN > 0) console.log(`| 纠偏命中 (${corrN}场) | ${corrHits} | $${corrCost} | $${corrRet.toFixed(2)} | ${corrRoi.toFixed(1)}% |`);
+  }
+
+  // ============================================================
+  // Part 1 (回测规则): 逐场表 —— rqspf 1-2选项&命中 + 3比分&命中 + 信号
+  //   重点调优指标: rqspf 命中率、3比分单关 ROI
+  // ============================================================
+  const BT = loadBacktestMatches(PROJECT_ROOT);
+  if (BT.length > 0) {
+    const PCK = STRATEGY_CTX.params.picker;
+    console.log(`\n## Part1 逐场明细 (rqspf选项&命中 + 3比分&命中 + 信号) —— ${BT.length} 场\n`);
+    console.log(`| 场次 | 对阵 | hc | 实际 | rqspf主/次 | rq命中 | 3比分 | 比分命中 | 信号(高倍/zjq/bqc) |`);
+    console.log(`|------|------|----|------|-----------|--------|-------|----------|--------------------|`);
+
+    const RQ_LABEL = { home: '让胜', draw: '让平', away: '让负' };
+    // shouldSlimRq / shouldOverrideRq 已在 runBacktest 顶部定义 (5 OR + E/F)
+    let rqN = 0, rqHitP = 0, rqRetP = 0;               // rqspf 主选: 命中率 + ROI
+    let rqHitS = 0, rqRetS = 0, rqCostS = 0;           // rqspf 次选: 仅在主未中时买(各1注)
+    let rqHit2 = 0, rqRet2 = 0;                         // rqspf 主+次: 覆盖命中 (各1注, cost=2/场)
+    let rqSlimHit = 0, rqSlimRet = 0, rqSlimCost = 0;   // 瘦身单选 (跳过次): cost=1/场
+    let bf3N = 0, bf3Cost = 0, bf3Ret = 0, bf3Hit = 0; // 3比分单关: 每场买3个比分
+    for (const m of BT) {
+      const pred = buildPrediction(m, STRATEGY_CTX);
+      const act = deriveActual(m);
+      // rqspf 主/次 —— 命中标注命中的是 主 还是 次, 未覆盖则标实际方向
+      let rqCell = '-', rqHitMark = '-', rqSlimMark = '-';
+      if (pred.rq) {
+        const P = pred.rq.primary, S = pred.rq.secondary;
+        // E/F override 优先: 强制把主选改成让胜
+        const ovr = shouldOverrideRq(m, P);
+        const effP = ovr ? { d: ovr.d, odds: ovr.odds, label: ovr.label } : P;
+        rqCell = `${effP.label}@${effP.odds} / ${S.label}@${S.odds}`;
+        rqN++;
+        const slim = shouldSlimRq(m, P);
+        if (slim) { rqSlimCost++; rqSlimMark = `单选[${ovr ? ovr.rule : (P.d === 'home' ? 'A' : '')}]`; }
+        if (effP.d === act.rqResult) {
+          rqHitMark = `✅主@${effP.odds}`;
+          rqHitP++; rqRetP += effP.odds; rqHit2++; rqRet2 += effP.odds;
+          if (slim) { rqSlimHit++; rqSlimRet += effP.odds; rqSlimMark = `✅主@${effP.odds}`; }
+        } else {
+          // 主未中, 次算成本(1注), 命中给次选赔率
+          rqCostS++;
+          if (S.d === act.rqResult) {
+            rqHitMark = `✅次@${S.odds}`;
+            rqHitS++; rqRetS += S.odds; rqHit2++; rqRet2 += S.odds;
+            if (slim) { rqSlimMark = `❌主${ovr ? '(' + ovr.rule + ')' : '(slim, 跳过次)'}`; }
+          } else {
+            rqHitMark = `❌(实际${RQ_LABEL[act.rqResult] || act.rqResult})`;
+            if (slim) { rqSlimMark = `❌主${ovr ? '(' + ovr.rule + ')' : '(slim, 跳过次)'}`; }
+          }
+        }
+      }
+      // 3 比分
+      const bf3 = pred.mainPicks || [];
+      const bfCell = bf3.map(p => `${p.score}@${p.odds}`).join(' ');
+      const bfHitPick = bf3.find(p => p.score === act.score);
+      const bfHitMark = bfHitPick ? `✅@${bfHitPick.odds}` : '❌';
+      if (bf3.length > 0) {
+        bf3N++; bf3Cost += bf3.length;
+        if (bfHitPick) { bf3Hit++; bf3Ret += bfHitPick.odds; }
+      }
+      // 信号
+      const sig = [];
+      if (bf3.some(p => p.odds >= PCK.cat3.oddsThreshold)) sig.push('高倍比分');
+      if (pred.z?.corrected) sig.push('zjq纠偏');
+      if (pred.b?.corrected) sig.push('bqc纠偏');
+      console.log(`| ${m.code} | ${m.match} | ${m.handicap} | ${act.score} | ${rqCell} | ${rqHitMark} | ${bfCell} | ${bfHitMark} | ${sig.join('/') || '-'} |`);
+    }
+
+    console.log(`\n### Part1 重点指标 (回测调优目标)\n`);
+    console.log(`| 指标 | 命中/场次 | 命中率 | 投入 | 回报 | ROI |`);
+    console.log(`|------|-----------|--------|------|------|-----|`);
+    const rqRoiP = rqN > 0 ? ((rqRetP - rqN) / rqN * 100).toFixed(1) : '0';
+    console.log(`| rqspf 主选 | ${rqHitP}/${rqN} | ${rqN > 0 ? (rqHitP / rqN * 100).toFixed(1) : 0}% | $${rqN} | $${rqRetP.toFixed(2)} | ${rqRoiP}% |`);
+    const rqRoiS = rqCostS > 0 ? ((rqRetS - rqCostS) / rqCostS * 100).toFixed(1) : '0';
+    console.log(`| rqspf 次选(主未中时) | ${rqHitS}/${rqCostS} | ${rqCostS > 0 ? (rqHitS / rqCostS * 100).toFixed(1) : 0}% | $${rqCostS} | $${rqRetS.toFixed(2)} | ${rqRoiS}% |`);
+    const rqCost2 = rqN * 2;
+    const rqRoi2 = rqCost2 > 0 ? ((rqRet2 - rqCost2) / rqCost2 * 100).toFixed(1) : '0';
+    console.log(`| rqspf 主+次(各1注) | ${rqHit2}/${rqN} | ${rqN > 0 ? (rqHit2 / rqN * 100).toFixed(1) : 0}% | $${rqCost2} | $${rqRet2.toFixed(2)} | ${rqRoi2}% |`);
+    // 瘦身单选: 触发了 shouldSlimRq 的场次, 只买主(跳过次)
+    const rqRoiSlim = rqSlimCost > 0 ? ((rqSlimRet - rqSlimCost) / rqSlimCost * 100).toFixed(1) : '0';
+    console.log(`| rqspf 瘦身单选(主+次条件筛选) | ${rqSlimHit}/${rqSlimCost} | ${rqSlimCost > 0 ? (rqSlimHit / rqSlimCost * 100).toFixed(1) : 0}% | $${rqSlimCost} | $${rqSlimRet.toFixed(2)} | ${rqRoiSlim}% |`);
+    const bfRoi = bf3Cost > 0 ? ((bf3Ret - bf3Cost) / bf3Cost * 100).toFixed(1) : '0';
+    console.log(`| 3比分单关 | ${bf3Hit}/${bf3N} | ${bf3N > 0 ? (bf3Hit / bf3N * 100).toFixed(1) : 0}% | $${bf3Cost} | $${bf3Ret.toFixed(2)} | ${bfRoi}% |`);
+
+    // ============================================================
+    // Part 2 (选单回测): 按天 selectBets + settleBets, 每类 ROI
+    // ============================================================
+    const byDay = groupByDay(BT);
+    const agg = { cat1: { cost: 0, ret: 0, hits: 0, n: 0 }, cat2: { cost: 0, ret: 0, hits: 0, n: 0 }, cat3: { cost: 0, ret: 0, hits: 0, n: 0 }, cat4: { cost: 0, ret: 0, hits: 0, n: 0 }, cat5: { cost: 0, ret: 0, hits: 0, n: 0 } };
+    let dayCount = 0;
+    for (const [, dayMatches] of byDay) {
+      dayCount++;
+      const preds = dayMatches.map(m => buildPrediction(m, STRATEGY_CTX));
+      const cats = selectBets(preds, STRATEGY_CTX);
+      const actualByCode = {};
+      for (const m of dayMatches) actualByCode[m.code] = deriveActual(m);
+      const settled = settleBets(cats, actualByCode);
+      for (const k of Object.keys(agg)) {
+        agg[k].cost += settled[k].cost; agg[k].ret += settled[k].ret;
+        agg[k].hits += settled[k].hits; agg[k].n += settled[k].n;
+      }
+    }
+
+    console.log(`\n## Part2 选单回测 (按天选单, ${dayCount} 天 / ${BT.length} 场)\n`);
+    console.log(`| 类别 | 注数 | 命中 | 投入 | 回报 | ROI |`);
+    console.log(`|------|------|------|------|------|-----|`);
+    const labels = { cat1: '① rqspf 3串1', cat2: '② 比分 2串1', cat3: '③ 高倍比分单', cat4: '④ zjq 单关', cat5: '⑤ bqc 单关' };
+    for (const k of ['cat1', 'cat2', 'cat3', 'cat4', 'cat5']) {
+      const c = agg[k];
+      const roi = c.cost > 0 ? ((c.ret - c.cost) / c.cost * 100).toFixed(1) : '-';
+      const warn = (c.n > 0 && c.n < 5) ? ' ⚠️样本<5' : '';
+      console.log(`| ${labels[k]} | ${c.n} | ${c.hits} | $${c.cost} | $${c.ret.toFixed(2)} | ${roi}%${warn} |`);
+    }
+  }
+
+  // ======= 回测报告落盘 (Markdown, 仅保留最近 2 份) =======
+  console.log = _origLog;
+  try {
+    if (!fs.existsSync(ARTIFACTS_DIR)) fs.mkdirSync(ARTIFACTS_DIR, { recursive: true });
+    const now = new Date();
+    const ts = now.toISOString().slice(0, 19).replace(/[:]/g, '');   // 2026-06-19T091030
+    const header = `# 31号策略 回测报告\n\n生成时间: ${now.toISOString()}\n`;
+    const outPath = path.join(ARTIFACTS_DIR, `backtest_31_${ts}.md`);
+    fs.writeFileSync(outPath, header + '\n' + _report.join('\n') + '\n', 'utf-8');
+    // 轮换: 按 mtime 新→旧, 只留最近 2 份
+    const olds = fs.readdirSync(ARTIFACTS_DIR)
+      .filter(f => /^backtest_31_.*\.md$/.test(f))
+      .map(f => ({ f, t: fs.statSync(path.join(ARTIFACTS_DIR, f)).mtimeMs }))
+      .sort((a, b) => b.t - a.t)
+      .slice(2);
+    for (const o of olds) fs.unlinkSync(path.join(ARTIFACTS_DIR, o.f));
+    console.log(`\n回测报告写入: ${outPath}  (仅保留最近 2 份)`);
+  } catch (e) {
+    console.error(`⚠️ 回测报告落盘失败: ${e.message}`);
   }
 }
 

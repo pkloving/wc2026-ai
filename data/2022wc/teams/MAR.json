@@ -1,0 +1,27 @@
+{
+  "code": "MAR",
+  "name": "摩洛哥",
+  "nameEn": "Morocco",
+  "confederation": "CAF",
+  "flag": "🇲🇦",
+  "iso2": "ma",
+  "color": "#C1272D",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [
+      "阿什拉夫"
+    ],
+    "is_host": false,
+    "fifa_rank": 22
+  },
+  "wc2022": {
+    "group": "F",
+    "stage": "sf",
+    "result": "殿军",
+    "played": 7,
+    "gf": 6,
+    "ga": 5
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

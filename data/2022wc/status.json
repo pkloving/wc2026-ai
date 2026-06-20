@@ -1,0 +1,4140 @@
+{
+  "generated_at": "2026-06-19T06:51:48.083Z",
+  "total": 64,
+  "note": "2022 世界杯 64 场状态汇总。区别于 matches_status.json（那是 2026 世界杯）",
+  "status_definitions": {
+    "finished": "已完赛"
+  },
+  "matches": [
+    {
+      "mid": "1016184",
+      "code": "2022-A1",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-20 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.86,
+        "draw": 2.95,
+        "away": 2.22
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.47,
+        "draw": 3.8,
+        "away": 5.1
+      },
+      "scraped_at": "2026-06-19T06:51:37.215Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016184.json",
+      "history_file": "2022wc/odds_history/1016184.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016184.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 5.1
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.05
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 2.22
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 3.75
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 10
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016186",
+      "code": "2022-A2",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "塞内加尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-21 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 5.75,
+        "draw": 3.5,
+        "away": 1.47
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.23,
+        "draw": 3.15,
+        "away": 2.68
+      },
+      "scraped_at": "2026-06-19T06:51:37.400Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016186.json",
+      "history_file": "2022wc/odds_history/1016186.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016186.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 2.68
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.2
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.47
+        },
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 4
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 5.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016201",
+      "code": "2022-A3",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-25 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 5,
+        "draw": 3.4,
+        "away": 1.55
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.08,
+        "draw": 3.2,
+        "away": 2.9
+      },
+      "scraped_at": "2026-06-19T06:51:37.631Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016201.json",
+      "history_file": "2022wc/odds_history/1016201.json",
+      "final_score": "1:3",
+      "result_file": "2022wc/results/1016201.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 2.9
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.55
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 2.4
+        },
+        "CRS": {
+          "combination": "1:3",
+          "combinationDesc": "1:3",
+          "odds": 14
+        },
+        "TTG": {
+          "combination": "4",
+          "combinationDesc": "4",
+          "odds": 6.8
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016202",
+      "code": "2022-A4",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-26 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.57,
+        "draw": 3.5,
+        "away": 4.62
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.95,
+        "draw": 3.25,
+        "away": 2.03
+      },
+      "scraped_at": "2026-06-19T06:51:37.917Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016202.json",
+      "history_file": "2022wc/odds_history/1016202.json",
+      "final_score": "1:1",
+      "result_file": "2022wc/results/1016202.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.03
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.5
+        },
+        "HAFU": {
+          "combination": "H:D",
+          "combinationDesc": "胜平",
+          "odds": 16
+        },
+        "CRS": {
+          "combination": "1:1",
+          "combinationDesc": "1:1",
+          "odds": 6.5
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.35
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016216",
+      "code": "2022-A5",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "厄瓜多尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-29 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.32,
+        "draw": 2.96,
+        "away": 2.7
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.9,
+        "draw": 3.7,
+        "away": 1.43
+      },
+      "scraped_at": "2026-06-19T06:51:38.101Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016216.json",
+      "history_file": "2022wc/odds_history/1016216.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016216.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "TTG": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "HAD": true
+      },
+      "lottery": {
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.75
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.43
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 4.3
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 9.5
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 2.7
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016217",
+      "code": "2022-A6",
+      "stage": "group",
+      "group": "A",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-30 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 13,
+        "draw": 6.2,
+        "away": 1.11
+      },
+      "handicap": 2,
+      "rqspf": {
+        "home": 2.11,
+        "draw": 3.9,
+        "away": 2.45
+      },
+      "scraped_at": "2026-06-19T06:51:38.277Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016217.json",
+      "history_file": "2022wc/odds_history/1016217.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016217.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "TTG": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "HAD": false
+      },
+      "lottery": {
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 4.2
+        },
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+2)平",
+          "odds": 3.9
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 1.49
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 5.8
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.11
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016185",
+      "code": "2022-B1",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "伊朗",
+      "kickoff": "2022-11-21 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.25,
+        "draw": 4.7,
+        "away": 7.9
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.92,
+        "draw": 3.4,
+        "away": 3.08
+      },
+      "scraped_at": "2026-06-19T06:51:38.481Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016185.json",
+      "history_file": "2022wc/odds_history/1016185.json",
+      "final_score": "6:2",
+      "result_file": "2022wc/results/1016185.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 1.92
+        },
+        "TTG": {
+          "combination": "7+",
+          "combinationDesc": "7+",
+          "odds": 28
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.25
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.76
+        },
+        "CRS": {
+          "combination": "-1:-H",
+          "combinationDesc": "胜其它",
+          "odds": 35
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016187",
+      "code": "2022-B2",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "美国",
+      "away": "威尔士",
+      "kickoff": "2022-11-22 02:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.33,
+        "draw": 2.84,
+        "away": 2.8
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.4,
+        "draw": 3.85,
+        "away": 1.44
+      },
+      "scraped_at": "2026-06-19T06:51:38.658Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016187.json",
+      "history_file": "2022wc/odds_history/1016187.json",
+      "final_score": "1:1",
+      "result_file": "2022wc/results/1016187.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.44
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 2.84
+        },
+        "HAFU": {
+          "combination": "H:D",
+          "combinationDesc": "胜平",
+          "odds": 15.5
+        },
+        "CRS": {
+          "combination": "1:1",
+          "combinationDesc": "1:1",
+          "odds": 5.6
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016200",
+      "code": "2022-B3",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "伊朗",
+      "kickoff": "2022-11-25 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.92,
+        "draw": 2.95,
+        "away": 3.6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.45,
+        "draw": 3.3,
+        "away": 1.64
+      },
+      "scraped_at": "2026-06-19T06:51:38.826Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016200.json",
+      "history_file": "2022wc/odds_history/1016200.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016200.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.64
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 3.6
+        },
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 7.5
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 15
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.1
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016203",
+      "code": "2022-B4",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "美国",
+      "kickoff": "2022-11-26 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.33,
+        "draw": 4.3,
+        "away": 6.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.2,
+        "draw": 3.3,
+        "away": 2.62
+      },
+      "scraped_at": "2026-06-19T06:51:38.991Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016203.json",
+      "history_file": "2022wc/odds_history/1016203.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016203.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.62
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 4.3
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 7
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 13
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 13
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016218",
+      "code": "2022-B5",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "伊朗",
+      "away": "美国",
+      "kickoff": "2022-11-30 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.43,
+        "draw": 3.16,
+        "away": 1.88
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.67,
+        "draw": 3.3,
+        "away": 4.2
+      },
+      "scraped_at": "2026-06-19T06:51:39.148Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016218.json",
+      "history_file": "2022wc/odds_history/1016218.json",
+      "final_score": "0:1",
+      "result_file": "2022wc/results/1016218.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "TTG": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "HAD": false
+      },
+      "lottery": {
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.05
+        },
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+1)平",
+          "odds": 3.3
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 2.95
+        },
+        "CRS": {
+          "combination": "0:1",
+          "combinationDesc": "0:1",
+          "odds": 6.25
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.88
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016219",
+      "code": "2022-B6",
+      "stage": "group",
+      "group": "B",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "英格兰",
+      "kickoff": "2022-11-30 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 7.35,
+        "draw": 4.16,
+        "away": 1.31
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.7,
+        "draw": 3.3,
+        "away": 2.15
+      },
+      "scraped_at": "2026-06-19T06:51:39.336Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016219.json",
+      "history_file": "2022wc/odds_history/1016219.json",
+      "final_score": "0:3",
+      "result_file": "2022wc/results/1016219.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "TTG": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "HAD": false
+      },
+      "lottery": {
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.55
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 2.15
+        },
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 3.85
+        },
+        "CRS": {
+          "combination": "0:3",
+          "combinationDesc": "0:3",
+          "odds": 8.5
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.31
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016188",
+      "code": "2022-C1",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-22 17:00",
+      "status": "finished",
+      "spf": null,
+      "handicap": -2,
+      "rqspf": {
+        "home": 1.8,
+        "draw": 4,
+        "away": 3
+      },
+      "scraped_at": "2026-06-19T06:51:39.391Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016188.json",
+      "history_file": "2022wc/odds_history/1016188.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016188.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": true,
+        "TTG": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-2)负",
+          "odds": 3
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.95
+        },
+        "HAFU": {
+          "combination": "H:A",
+          "combinationDesc": "胜负",
+          "odds": 80
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 85
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016190",
+      "code": "2022-C2",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "墨西哥",
+      "away": "波兰",
+      "kickoff": "2022-11-22 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.3,
+        "draw": 2.85,
+        "away": 2.83
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.6,
+        "draw": 3.7,
+        "away": 1.45
+      },
+      "scraped_at": "2026-06-19T06:51:39.574Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016190.json",
+      "history_file": "2022wc/odds_history/1016190.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016190.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.45
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 7.5
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 2.85
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 4.1
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 7.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016205",
+      "code": "2022-C3",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-26 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.53,
+        "draw": 3.35,
+        "away": 5.35
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.95,
+        "draw": 3.1,
+        "away": 2.1
+      },
+      "scraped_at": "2026-06-19T06:51:39.633Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016205.json",
+      "history_file": "2022wc/odds_history/1016205.json",
+      "final_score": "2:0",
+      "result_file": "2022wc/results/1016205.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 2.95
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.45
+        },
+        "CRS": {
+          "combination": "2:0",
+          "combinationDesc": "2:0",
+          "odds": 7
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.2
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.53
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016207",
+      "code": "2022-C4",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "墨西哥",
+      "kickoff": "2022-11-27 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.35,
+        "draw": 4.1,
+        "away": 6.45
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.17,
+        "draw": 3.4,
+        "away": 2.6
+      },
+      "scraped_at": "2026-06-19T06:51:39.783Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016207.json",
+      "history_file": "2022wc/odds_history/1016207.json",
+      "final_score": "2:0",
+      "result_file": "2022wc/results/1016207.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 2.17
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 3.95
+        },
+        "CRS": {
+          "combination": "2:0",
+          "combinationDesc": "2:0",
+          "odds": 5.8
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.3
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.35
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016222",
+      "code": "2022-C5",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "沙特阿拉伯",
+      "away": "墨西哥",
+      "kickoff": "2022-11-30 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 4.45,
+        "draw": 4.1,
+        "away": 1.49
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.17,
+        "draw": 3.4,
+        "away": 2.6
+      },
+      "scraped_at": "2026-06-19T06:51:39.985Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016222.json",
+      "history_file": "2022wc/odds_history/1016222.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016222.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 4.3
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 7
+        },
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+1)平",
+          "odds": 3.4
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.6
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.49
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016223",
+      "code": "2022-C6",
+      "stage": "group",
+      "group": "C",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "阿根廷",
+      "kickoff": "2022-12-01 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 7.1,
+        "draw": 4.15,
+        "away": 1.32
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.65,
+        "draw": 3.25,
+        "away": 2.2
+      },
+      "scraped_at": "2026-06-19T06:51:40.318Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016223.json",
+      "history_file": "2022wc/odds_history/1016223.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016223.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 3.7
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 6
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 2.2
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.25
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.32
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016189",
+      "code": "2022-D1",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "丹麦",
+      "away": "突尼斯",
+      "kickoff": "2022-11-22 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.39,
+        "draw": 3.75,
+        "away": 6.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.42,
+        "draw": 3.22,
+        "away": 2.41
+      },
+      "scraped_at": "2026-06-19T06:51:40.498Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016189.json",
+      "history_file": "2022wc/odds_history/1016189.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016189.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.41
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 10
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.75
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 5.25
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 10
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016191",
+      "code": "2022-D2",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-23 02:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.14,
+        "draw": 5.5,
+        "away": 12.5
+      },
+      "handicap": -2,
+      "rqspf": {
+        "home": 2.49,
+        "draw": 3.9,
+        "away": 2.08
+      },
+      "scraped_at": "2026-06-19T06:51:40.864Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016191.json",
+      "history_file": "2022wc/odds_history/1016191.json",
+      "final_score": "4:1",
+      "result_file": "2022wc/results/1016191.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-2)胜",
+          "odds": 2.49
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 8.2
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.14
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.49
+        },
+        "CRS": {
+          "combination": "4:1",
+          "combinationDesc": "4:1",
+          "odds": 17
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016204",
+      "code": "2022-D3",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-26 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.98,
+        "draw": 3,
+        "away": 3.33
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.3,
+        "draw": 3.45,
+        "away": 1.62
+      },
+      "scraped_at": "2026-06-19T06:51:40.927Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016204.json",
+      "history_file": "2022wc/odds_history/1016204.json",
+      "final_score": "0:1",
+      "result_file": "2022wc/results/1016204.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.62
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 5.55
+        },
+        "CRS": {
+          "combination": "0:1",
+          "combinationDesc": "0:1",
+          "odds": 8
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.05
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 3.33
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016206",
+      "code": "2022-D4",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "丹麦",
+      "kickoff": "2022-11-27 00:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.6,
+        "draw": 3.4,
+        "away": 4.55
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.96,
+        "draw": 3.35,
+        "away": 1.99
+      },
+      "scraped_at": "2026-06-19T06:51:41.084Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016206.json",
+      "history_file": "2022wc/odds_history/1016206.json",
+      "final_score": "2:1",
+      "result_file": "2022wc/results/1016206.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.35
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 4.5
+        },
+        "CRS": {
+          "combination": "2:1",
+          "combinationDesc": "2:1",
+          "odds": 7.1
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.8
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.6
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016220",
+      "code": "2022-D5",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "法国",
+      "kickoff": "2022-11-30 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 6,
+        "draw": 3.95,
+        "away": 1.39
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.45,
+        "draw": 3.55,
+        "away": 2.23
+      },
+      "scraped_at": "2026-06-19T06:51:41.286Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016220.json",
+      "history_file": "2022wc/odds_history/1016220.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016220.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 14
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 14
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.45
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.6
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 6
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016221",
+      "code": "2022-D6",
+      "stage": "group",
+      "group": "D",
+      "league": "世界杯",
+      "home": "澳大利亚",
+      "away": "丹麦",
+      "kickoff": "2022-12-01 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 6.55,
+        "draw": 3.9,
+        "away": 1.37
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.5,
+        "draw": 3.2,
+        "away": 2.34
+      },
+      "scraped_at": "2026-06-19T06:51:41.488Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016221.json",
+      "history_file": "2022wc/odds_history/1016221.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016221.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 14
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 14
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.5
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.65
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 6.55
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016193",
+      "code": "2022-E1",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "德国",
+      "away": "日本",
+      "kickoff": "2022-11-23 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.31,
+        "draw": 4.8,
+        "away": 6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2,
+        "draw": 3.55,
+        "away": 2.8
+      },
+      "scraped_at": "2026-06-19T06:51:41.649Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016193.json",
+      "history_file": "2022wc/odds_history/1016193.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016193.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.8
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.75
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 6
+        },
+        "HAFU": {
+          "combination": "H:A",
+          "combinationDesc": "胜负",
+          "odds": 25
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 14
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016194",
+      "code": "2022-E2",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-24 02:00",
+      "status": "finished",
+      "spf": null,
+      "handicap": -2,
+      "rqspf": {
+        "home": 2.17,
+        "draw": 3.7,
+        "away": 2.45
+      },
+      "scraped_at": "2026-06-19T06:51:41.830Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016194.json",
+      "history_file": "2022wc/odds_history/1016194.json",
+      "final_score": "7:0",
+      "result_file": "2022wc/results/1016194.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-2)胜",
+          "odds": 2.17
+        },
+        "TTG": {
+          "combination": "7+",
+          "combinationDesc": "7+",
+          "odds": 14
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.36
+        },
+        "CRS": {
+          "combination": "-1:-H",
+          "combinationDesc": "胜其它",
+          "odds": 15
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016208",
+      "code": "2022-E3",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-27 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.35,
+        "draw": 4.05,
+        "away": 6.6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.2,
+        "draw": 3.28,
+        "away": 2.63
+      },
+      "scraped_at": "2026-06-19T06:51:42.032Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016208.json",
+      "history_file": "2022wc/odds_history/1016208.json",
+      "final_score": "0:1",
+      "result_file": "2022wc/results/1016208.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true
+      },
+      "lottery": {
+        "CRS": {
+          "combination": "0:1",
+          "combinationDesc": "0:1",
+          "odds": 13
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.63
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.25
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 6.6
+        },
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 14
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016211",
+      "code": "2022-E4",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "德国",
+      "kickoff": "2022-11-28 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.28,
+        "draw": 3.2,
+        "away": 2.58
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.15,
+        "draw": 4,
+        "away": 1.44
+      },
+      "scraped_at": "2026-06-19T06:51:42.220Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016211.json",
+      "history_file": "2022wc/odds_history/1016211.json",
+      "final_score": "1:1",
+      "result_file": "2022wc/results/1016211.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true
+      },
+      "lottery": {
+        "CRS": {
+          "combination": "1:1",
+          "combinationDesc": "1:1",
+          "odds": 6.75
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.44
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.55
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.2
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 5.2
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016226",
+      "code": "2022-E5",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "西班牙",
+      "kickoff": "2022-12-02 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 7,
+        "draw": 4.3,
+        "away": 1.31
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.78,
+        "draw": 3.5,
+        "away": 2.03
+      },
+      "scraped_at": "2026-06-19T06:51:42.413Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016226.json",
+      "history_file": "2022wc/odds_history/1016226.json",
+      "final_score": "2:1",
+      "result_file": "2022wc/results/1016226.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAD": false,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 7
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.78
+        },
+        "HAFU": {
+          "combination": "A:H",
+          "combinationDesc": "负胜",
+          "odds": 42
+        },
+        "CRS": {
+          "combination": "2:1",
+          "combinationDesc": "2:1",
+          "odds": 17
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.55
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016227",
+      "code": "2022-E6",
+      "stage": "group",
+      "group": "E",
+      "league": "世界杯",
+      "home": "哥斯达黎加",
+      "away": "德国",
+      "kickoff": "2022-12-02 03:00",
+      "status": "finished",
+      "spf": null,
+      "handicap": 2,
+      "rqspf": {
+        "home": 3.06,
+        "draw": 4.1,
+        "away": 1.76
+      },
+      "scraped_at": "2026-06-19T06:51:42.598Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016227.json",
+      "history_file": "2022wc/odds_history/1016227.json",
+      "final_score": "2:4",
+      "result_file": "2022wc/results/1016227.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+2)平",
+          "odds": 4.1
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 1.29
+        },
+        "CRS": {
+          "combination": "2:4",
+          "combinationDesc": "2:4",
+          "odds": 35
+        },
+        "TTG": {
+          "combination": "6",
+          "combinationDesc": "6",
+          "odds": 7.75
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016192",
+      "code": "2022-F1",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "摩洛哥",
+      "away": "克罗地亚",
+      "kickoff": "2022-11-23 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.41,
+        "draw": 3.1,
+        "away": 1.91
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.64,
+        "draw": 3.35,
+        "away": 4.32
+      },
+      "scraped_at": "2026-06-19T06:51:42.805Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016192.json",
+      "history_file": "2022wc/odds_history/1016192.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016192.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.64
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 8
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.1
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 4.3
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 8
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016195",
+      "code": "2022-F2",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "加拿大",
+      "kickoff": "2022-11-24 02:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.33,
+        "draw": 4.3,
+        "away": 6.45
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.16,
+        "draw": 3.4,
+        "away": 2.62
+      },
+      "scraped_at": "2026-06-19T06:51:43.017Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016195.json",
+      "history_file": "2022wc/odds_history/1016195.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016195.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.4
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 5.8
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.33
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.93
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 6.15
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016209",
+      "code": "2022-F3",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "摩洛哥",
+      "kickoff": "2022-11-27 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.66,
+        "draw": 3.3,
+        "away": 4.28
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.28,
+        "draw": 3.3,
+        "away": 1.88
+      },
+      "scraped_at": "2026-06-19T06:51:43.076Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016209.json",
+      "history_file": "2022wc/odds_history/1016209.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016209.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true
+      },
+      "lottery": {
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 22
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.88
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.2
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 4.28
+        },
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 9.2
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016210",
+      "code": "2022-F4",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "加拿大",
+      "kickoff": "2022-11-28 00:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.95,
+        "draw": 3.15,
+        "away": 3.25
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.3,
+        "draw": 3.5,
+        "away": 1.61
+      },
+      "scraped_at": "2026-06-19T06:51:43.225Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016210.json",
+      "history_file": "2022wc/odds_history/1016210.json",
+      "final_score": "4:1",
+      "result_file": "2022wc/results/1016210.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "CRS": true,
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true
+      },
+      "lottery": {
+        "CRS": {
+          "combination": "4:1",
+          "combinationDesc": "4:1",
+          "odds": 45
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 4.3
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 13
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.95
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 3.25
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016224",
+      "code": "2022-F5",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "加拿大",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-01 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.9,
+        "draw": 3.25,
+        "away": 1.74
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.82,
+        "draw": 3.35,
+        "away": 3.45
+      },
+      "scraped_at": "2026-06-19T06:51:43.417Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016224.json",
+      "history_file": "2022wc/odds_history/1016224.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016224.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAD": false,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.74
+        },
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+1)平",
+          "odds": 3.35
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 3.05
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 7.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.65
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016225",
+      "code": "2022-F6",
+      "stage": "group",
+      "group": "F",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "比利时",
+      "kickoff": "2022-12-02 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.45,
+        "draw": 3.15,
+        "away": 2.42
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.41,
+        "draw": 4,
+        "away": 5.55
+      },
+      "scraped_at": "2026-06-19T06:51:43.583Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016225.json",
+      "history_file": "2022wc/odds_history/1016225.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016225.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAD": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.15
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.41
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 4.8
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 10
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 10
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016196",
+      "code": "2022-G1",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "瑞士",
+      "away": "喀麦隆",
+      "kickoff": "2022-11-24 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.61,
+        "draw": 3.27,
+        "away": 4.8
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.05,
+        "draw": 3.35,
+        "away": 1.95
+      },
+      "scraped_at": "2026-06-19T06:51:43.781Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016196.json",
+      "history_file": "2022wc/odds_history/1016196.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016196.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.35
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.61
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 4.05
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016199",
+      "code": "2022-G2",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-25 02:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.3,
+        "draw": 4.6,
+        "away": 6.6
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.04,
+        "draw": 3.5,
+        "away": 2.75
+      },
+      "scraped_at": "2026-06-19T06:51:43.967Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016199.json",
+      "history_file": "2022wc/odds_history/1016199.json",
+      "final_score": "2:0",
+      "result_file": "2022wc/results/1016199.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 2.04
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 4
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.3
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 4.1
+        },
+        "CRS": {
+          "combination": "2:0",
+          "combinationDesc": "2:0",
+          "odds": 6.3
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016212",
+      "code": "2022-G3",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-28 17:00",
+      "status": "finished",
+      "spf": {
+        "home": 4.55,
+        "draw": 3.55,
+        "away": 1.57
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.01,
+        "draw": 3.25,
+        "away": 3
+      },
+      "scraped_at": "2026-06-19T06:51:44.012Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016212.json",
+      "history_file": "2022wc/odds_history/1016212.json",
+      "final_score": "3:3",
+      "result_file": "2022wc/results/1016212.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "TTG": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.01
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.55
+        },
+        "HAFU": {
+          "combination": "A:D",
+          "combinationDesc": "负平",
+          "odds": 17
+        },
+        "TTG": {
+          "combination": "6",
+          "combinationDesc": "6",
+          "odds": 20
+        },
+        "CRS": {
+          "combination": "3:3",
+          "combinationDesc": "3:3",
+          "odds": 70
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016214",
+      "code": "2022-G4",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "瑞士",
+      "kickoff": "2022-11-29 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.38,
+        "draw": 4,
+        "away": 6.05
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.25,
+        "draw": 3.4,
+        "away": 2.5
+      },
+      "scraped_at": "2026-06-19T06:51:44.222Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016214.json",
+      "history_file": "2022wc/odds_history/1016214.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016214.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "TTG": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.4
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.38
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 4.05
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 5
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 6.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016230",
+      "code": "2022-G5",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "塞尔维亚",
+      "away": "瑞士",
+      "kickoff": "2022-12-03 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.4,
+        "draw": 3.16,
+        "away": 2.46
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.8,
+        "draw": 3.8,
+        "away": 1.42
+      },
+      "scraped_at": "2026-06-19T06:51:44.446Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016230.json",
+      "history_file": "2022wc/odds_history/1016230.json",
+      "final_score": "2:3",
+      "result_file": "2022wc/results/1016230.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true,
+        "HHAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:A",
+          "combinationDesc": "平负",
+          "odds": 5.75
+        },
+        "CRS": {
+          "combination": "2:3",
+          "combinationDesc": "2:3",
+          "odds": 35
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 10
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 2.46
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.42
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016231",
+      "code": "2022-G6",
+      "stage": "group",
+      "group": "G",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "巴西",
+      "kickoff": "2022-12-03 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 8.55,
+        "draw": 5.1,
+        "away": 1.21
+      },
+      "handicap": 2,
+      "rqspf": {
+        "home": 1.7,
+        "draw": 4.05,
+        "away": 3.3
+      },
+      "scraped_at": "2026-06-19T06:51:44.642Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016231.json",
+      "history_file": "2022wc/odds_history/1016231.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016231.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false,
+        "HHAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 19
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 20
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 5.7
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 8.55
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+2)胜",
+          "odds": 1.7
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016197",
+      "code": "2022-H1",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "乌拉圭",
+      "away": "韩国",
+      "kickoff": "2022-11-24 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.57,
+        "draw": 3.55,
+        "away": 4.52
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.95,
+        "draw": 3.15,
+        "away": 2.07
+      },
+      "scraped_at": "2026-06-19T06:51:44.717Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016197.json",
+      "history_file": "2022wc/odds_history/1016197.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016197.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 2.07
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 9.5
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.55
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 4.85
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 9.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016198",
+      "code": "2022-H2",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "加纳",
+      "kickoff": "2022-11-25 02:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.23,
+        "draw": 4.9,
+        "away": 8.15
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.9,
+        "draw": 3.3,
+        "away": 3.22
+      },
+      "scraped_at": "2026-06-19T06:51:44.897Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016198.json",
+      "history_file": "2022wc/odds_history/1016198.json",
+      "final_score": "3:2",
+      "result_file": "2022wc/results/1016198.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.3
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 9.5
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.23
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 3.75
+        },
+        "CRS": {
+          "combination": "3:2",
+          "combinationDesc": "3:2",
+          "odds": 30
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016213",
+      "code": "2022-H3",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "加纳",
+      "kickoff": "2022-11-28 20:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.45,
+        "draw": 2.95,
+        "away": 2.55
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 5.95,
+        "draw": 3.9,
+        "away": 1.4
+      },
+      "scraped_at": "2026-06-19T06:51:45.066Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016213.json",
+      "history_file": "2022wc/odds_history/1016213.json",
+      "final_score": "2:3",
+      "result_file": "2022wc/results/1016213.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "TTG": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-1)负",
+          "odds": 1.4
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 2.55
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 5
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 15
+        },
+        "CRS": {
+          "combination": "2:3",
+          "combinationDesc": "2:3",
+          "odds": 40
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016215",
+      "code": "2022-H4",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "乌拉圭",
+      "kickoff": "2022-11-29 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.77,
+        "draw": 3.12,
+        "away": 3.95
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.55,
+        "draw": 3.38,
+        "away": 1.78
+      },
+      "scraped_at": "2026-06-19T06:51:45.227Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016215.json",
+      "history_file": "2022wc/odds_history/1016215.json",
+      "final_score": "2:0",
+      "result_file": "2022wc/results/1016215.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": false,
+        "HAFU": true,
+        "TTG": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 3.55
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.77
+        },
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 4.25
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.1
+        },
+        "CRS": {
+          "combination": "2:0",
+          "combinationDesc": "2:0",
+          "odds": 7
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016228",
+      "code": "2022-H5",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "加纳",
+      "away": "乌拉圭",
+      "kickoff": "2022-12-02 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 4.18,
+        "draw": 3.4,
+        "away": 1.65
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.9,
+        "draw": 3.3,
+        "away": 3.22
+      },
+      "scraped_at": "2026-06-19T06:51:45.375Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016228.json",
+      "history_file": "2022wc/odds_history/1016228.json",
+      "final_score": "0:2",
+      "result_file": "2022wc/results/1016228.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false,
+        "HHAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 2.55
+        },
+        "CRS": {
+          "combination": "0:2",
+          "combinationDesc": "0:2",
+          "odds": 7.5
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.2
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 1.65
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(+1)负",
+          "odds": 3.22
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016229",
+      "code": "2022-H6",
+      "stage": "group",
+      "group": "H",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-03 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.85,
+        "draw": 3.7,
+        "away": 1.64
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.4,
+        "away": 3.02
+      },
+      "scraped_at": "2026-06-19T06:51:45.468Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016229.json",
+      "history_file": "2022wc/odds_history/1016229.json",
+      "final_score": "2:1",
+      "result_file": "2022wc/results/1016229.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": false,
+        "HHAD": false
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:H",
+          "combinationDesc": "平胜",
+          "odds": 9.5
+        },
+        "CRS": {
+          "combination": "2:1",
+          "combinationDesc": "2:1",
+          "odds": 13.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.6
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 3.85
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.95
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016466",
+      "code": "2022-R16-1",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "美国",
+      "kickoff": "2022-12-03 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.74,
+        "draw": 3.2,
+        "away": 3.98
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.55,
+        "draw": 3.35,
+        "away": 1.79
+      },
+      "scraped_at": "2026-06-19T06:51:45.568Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016466.json",
+      "history_file": "2022wc/odds_history/1016466.json",
+      "final_score": "3:1",
+      "result_file": "2022wc/results/1016466.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 3.55
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.74
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.8
+        },
+        "CRS": {
+          "combination": "3:1",
+          "combinationDesc": "3:1",
+          "odds": 16
+        },
+        "TTG": {
+          "combination": "4",
+          "combinationDesc": "4",
+          "odds": 6.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016476",
+      "code": "2022-R16-2",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "澳大利亚",
+      "kickoff": "2022-12-04 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.17,
+        "draw": 5.5,
+        "away": 9.7
+      },
+      "handicap": -2,
+      "rqspf": {
+        "home": 2.88,
+        "draw": 3.8,
+        "away": 1.89
+      },
+      "scraped_at": "2026-06-19T06:51:45.636Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016476.json",
+      "history_file": "2022wc/odds_history/1016476.json",
+      "final_score": "2:1",
+      "result_file": "2022wc/results/1016476.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.55
+        },
+        "CRS": {
+          "combination": "2:1",
+          "combinationDesc": "2:1",
+          "odds": 7.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.45
+        },
+        "HHAD": {
+          "combination": "A",
+          "combinationDesc": "(-2)负",
+          "odds": 1.89
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.17
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016467",
+      "code": "2022-R16-3",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "塞内加尔",
+      "kickoff": "2022-12-04 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.39,
+        "draw": 3.7,
+        "away": 6.7
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.4,
+        "draw": 3.15,
+        "away": 2.47
+      },
+      "scraped_at": "2026-06-19T06:51:45.787Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016467.json",
+      "history_file": "2022wc/odds_history/1016467.json",
+      "final_score": "3:0",
+      "result_file": "2022wc/results/1016467.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 2.4
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.39
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.15
+        },
+        "CRS": {
+          "combination": "3:0",
+          "combinationDesc": "3:0",
+          "odds": 9.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.7
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016477",
+      "code": "2022-R16-4",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "法国",
+      "away": "波兰",
+      "kickoff": "2022-12-05 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.25,
+        "draw": 4.5,
+        "away": 8.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.93,
+        "draw": 3.35,
+        "away": 3.1
+      },
+      "scraped_at": "2026-06-19T06:51:45.948Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016477.json",
+      "history_file": "2022wc/odds_history/1016477.json",
+      "final_score": "3:1",
+      "result_file": "2022wc/results/1016477.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.8
+        },
+        "CRS": {
+          "combination": "3:1",
+          "combinationDesc": "3:1",
+          "odds": 9
+        },
+        "TTG": {
+          "combination": "4",
+          "combinationDesc": "4",
+          "odds": 4.75
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 1.93
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.25
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016493",
+      "code": "2022-R16-5",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "日本",
+      "away": "克罗地亚",
+      "kickoff": "2022-12-05 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.54,
+        "draw": 3,
+        "away": 1.91
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.67,
+        "draw": 3.35,
+        "away": 4.15
+      },
+      "scraped_at": "2026-06-19T06:51:46.149Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016493.json",
+      "history_file": "2022wc/odds_history/1016493.json",
+      "final_score": "1:1",
+      "result_file": "2022wc/results/1016493.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.67
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.15
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3
+        },
+        "HAFU": {
+          "combination": "H:D",
+          "combinationDesc": "胜平",
+          "odds": 16
+        },
+        "CRS": {
+          "combination": "1:1",
+          "combinationDesc": "1:1",
+          "odds": 6.25
+        }
+      },
+      "wentToPenalties": true,
+      "penaltyScore": "1:3"
+    },
+    {
+      "mid": "1016521",
+      "code": "2022-R16-6",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "韩国",
+      "kickoff": "2022-12-06 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.13,
+        "draw": 5.55,
+        "away": 13.5
+      },
+      "handicap": -2,
+      "rqspf": {
+        "home": 2.68,
+        "draw": 3.75,
+        "away": 2
+      },
+      "scraped_at": "2026-06-19T06:51:46.303Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016521.json",
+      "history_file": "2022wc/odds_history/1016521.json",
+      "final_score": "4:1",
+      "result_file": "2022wc/results/1016521.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-2)胜",
+          "odds": 2.68
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.13
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 1.48
+        },
+        "CRS": {
+          "combination": "4:1",
+          "combinationDesc": "4:1",
+          "odds": 18
+        },
+        "TTG": {
+          "combination": "5",
+          "combinationDesc": "5",
+          "odds": 8.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016492",
+      "code": "2022-R16-7",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "摩洛哥",
+      "away": "西班牙",
+      "kickoff": "2022-12-06 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 6.1,
+        "draw": 3.7,
+        "away": 1.42
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.34,
+        "draw": 3.2,
+        "away": 2.5
+      },
+      "scraped_at": "2026-06-19T06:51:46.458Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016492.json",
+      "history_file": "2022wc/odds_history/1016492.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016492.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.34
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 11
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3.7
+        },
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 5.7
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 11
+        }
+      },
+      "wentToPenalties": true,
+      "penaltyScore": "3:0"
+    },
+    {
+      "mid": "1016522",
+      "code": "2022-R16-8",
+      "stage": "r16",
+      "group": null,
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "瑞士",
+      "kickoff": "2022-12-07 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.67,
+        "draw": 3.15,
+        "away": 4.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.45,
+        "draw": 3.1,
+        "away": 1.9
+      },
+      "scraped_at": "2026-06-19T06:51:46.643Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016522.json",
+      "history_file": "2022wc/odds_history/1016522.json",
+      "final_score": "6:1",
+      "result_file": "2022wc/results/1016522.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 3.45
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.67
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.75
+        },
+        "CRS": {
+          "combination": "-1:-H",
+          "combinationDesc": "胜其它",
+          "odds": 75
+        },
+        "TTG": {
+          "combination": "7+",
+          "combinationDesc": "7+",
+          "odds": 30
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016536",
+      "code": "2022-QF-1",
+      "stage": "qf",
+      "group": null,
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "巴西",
+      "kickoff": "2022-12-09 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 8.7,
+        "draw": 4.6,
+        "away": 1.24
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 3.05,
+        "draw": 3.42,
+        "away": 1.93
+      },
+      "scraped_at": "2026-06-19T06:51:47.063Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016536.json",
+      "history_file": "2022wc/odds_history/1016536.json",
+      "final_score": "0:0",
+      "result_file": "2022wc/results/1016536.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "D:D",
+          "combinationDesc": "平平",
+          "odds": 6.85
+        },
+        "CRS": {
+          "combination": "0:0",
+          "combinationDesc": "0:0",
+          "odds": 12
+        },
+        "TTG": {
+          "combination": "0",
+          "combinationDesc": "0",
+          "odds": 12
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 3.05
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 4.6
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016523",
+      "code": "2022-QF-2",
+      "stage": "qf",
+      "group": null,
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "阿根廷",
+      "kickoff": "2022-12-10 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 3.26,
+        "draw": 2.88,
+        "away": 2.06
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.55,
+        "draw": 3.4,
+        "away": 5
+      },
+      "scraped_at": "2026-06-19T06:51:47.241Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016523.json",
+      "history_file": "2022wc/odds_history/1016523.json",
+      "final_score": "2:2",
+      "result_file": "2022wc/results/1016523.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "A:D",
+          "combinationDesc": "负平",
+          "odds": 16
+        },
+        "CRS": {
+          "combination": "2:2",
+          "combinationDesc": "2:2",
+          "odds": 16
+        },
+        "TTG": {
+          "combination": "4",
+          "combinationDesc": "4",
+          "odds": 6.75
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.55
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 2.88
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016557",
+      "code": "2022-QF-3",
+      "stage": "qf",
+      "group": null,
+      "league": "世界杯",
+      "home": "摩洛哥",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-10 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 5.55,
+        "draw": 3.42,
+        "away": 1.5
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 2.2,
+        "draw": 3.1,
+        "away": 2.76
+      },
+      "scraped_at": "2026-06-19T06:51:47.414Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016557.json",
+      "history_file": "2022wc/odds_history/1016557.json",
+      "final_score": "1:0",
+      "result_file": "2022wc/results/1016557.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 9.25
+        },
+        "CRS": {
+          "combination": "1:0",
+          "combinationDesc": "1:0",
+          "odds": 13
+        },
+        "TTG": {
+          "combination": "1",
+          "combinationDesc": "1",
+          "odds": 4.6
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 2.2
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 5.55
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016532",
+      "code": "2022-QF-4",
+      "stage": "qf",
+      "group": null,
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "法国",
+      "kickoff": "2022-12-11 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.8,
+        "draw": 2.88,
+        "away": 2.3
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.45,
+        "draw": 3.62,
+        "away": 5.75
+      },
+      "scraped_at": "2026-06-19T06:51:47.584Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016532.json",
+      "history_file": "2022wc/odds_history/1016532.json",
+      "final_score": "1:2",
+      "result_file": "2022wc/results/1016532.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(+1)平",
+          "odds": 3.62
+        },
+        "HAD": {
+          "combination": "A",
+          "combinationDesc": "负",
+          "odds": 2.3
+        },
+        "HAFU": {
+          "combination": "A:A",
+          "combinationDesc": "负负",
+          "odds": 3.95
+        },
+        "CRS": {
+          "combination": "1:2",
+          "combinationDesc": "1:2",
+          "odds": 8.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.9
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016588",
+      "code": "2022-SF-1",
+      "stage": "sf",
+      "group": null,
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "克罗地亚",
+      "kickoff": "2022-12-14 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.7,
+        "draw": 3.15,
+        "away": 4.28
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.39,
+        "draw": 3.2,
+        "away": 1.88
+      },
+      "scraped_at": "2026-06-19T06:51:47.751Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016588.json",
+      "history_file": "2022wc/odds_history/1016588.json",
+      "final_score": "3:0",
+      "result_file": "2022wc/results/1016588.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "TTG": true,
+        "HAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 3.39
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 4
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.7
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.68
+        },
+        "CRS": {
+          "combination": "3:0",
+          "combinationDesc": "3:0",
+          "odds": 13.5
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016608",
+      "code": "2022-SF-2",
+      "stage": "sf",
+      "group": null,
+      "league": "世界杯",
+      "home": "法国",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-15 03:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.43,
+        "draw": 3.55,
+        "away": 6.4
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.47,
+        "draw": 3.24,
+        "away": 2.35
+      },
+      "scraped_at": "2026-06-19T06:51:47.821Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016608.json",
+      "history_file": "2022wc/odds_history/1016608.json",
+      "final_score": "2:0",
+      "result_file": "2022wc/results/1016608.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HHAD": false,
+        "HAD": true
+      },
+      "lottery": {
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 2.1
+        },
+        "CRS": {
+          "combination": "2:0",
+          "combinationDesc": "2:0",
+          "odds": 5.95
+        },
+        "TTG": {
+          "combination": "2",
+          "combinationDesc": "2",
+          "odds": 3.25
+        },
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(-1)胜",
+          "odds": 2.47
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 1.43
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016631",
+      "code": "2022-3RD",
+      "stage": "third",
+      "group": null,
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-17 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.04,
+        "draw": 3.38,
+        "away": 2.83
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.4,
+        "draw": 3.7,
+        "away": 1.56
+      },
+      "scraped_at": "2026-06-19T06:51:47.899Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016631.json",
+      "history_file": "2022wc/odds_history/1016631.json",
+      "final_score": "2:1",
+      "result_file": "2022wc/results/1016631.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "D",
+          "combinationDesc": "(-1)平",
+          "odds": 3.7
+        },
+        "HAFU": {
+          "combination": "H:H",
+          "combinationDesc": "胜胜",
+          "odds": 3.5
+        },
+        "CRS": {
+          "combination": "2:1",
+          "combinationDesc": "2:1",
+          "odds": 7.5
+        },
+        "TTG": {
+          "combination": "3",
+          "combinationDesc": "3",
+          "odds": 3.6
+        },
+        "HAD": {
+          "combination": "H",
+          "combinationDesc": "胜",
+          "odds": 2.04
+        }
+      },
+      "wentToPenalties": false,
+      "penaltyScore": null
+    },
+    {
+      "mid": "1016632",
+      "code": "2022-FINAL",
+      "stage": "final",
+      "group": null,
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "法国",
+      "kickoff": "2022-12-18 23:00",
+      "status": "finished",
+      "spf": {
+        "home": 2.49,
+        "draw": 3,
+        "away": 2.47
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.38,
+        "draw": 4.05,
+        "away": 6
+      },
+      "scraped_at": "2026-06-19T06:51:48.080Z",
+      "sale_status": "已完赛",
+      "odds_file": "2022wc/odds/1016632.json",
+      "history_file": "2022wc/odds_history/1016632.json",
+      "final_score": "2:2",
+      "result_file": "2022wc/results/1016632.json",
+      "is_finished_odds": true,
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "lottery": {
+        "HHAD": {
+          "combination": "H",
+          "combinationDesc": "(+1)胜",
+          "odds": 1.38
+        },
+        "HAFU": {
+          "combination": "H:D",
+          "combinationDesc": "胜平",
+          "odds": 15
+        },
+        "CRS": {
+          "combination": "2:2",
+          "combinationDesc": "2:2",
+          "odds": 14
+        },
+        "TTG": {
+          "combination": "4",
+          "combinationDesc": "4",
+          "odds": 6.3
+        },
+        "HAD": {
+          "combination": "D",
+          "combinationDesc": "平",
+          "odds": 3
+        }
+      },
+      "wentToPenalties": true,
+      "penaltyScore": "4:2"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "code": "ENG",
+  "name": "英格兰",
+  "nameEn": "England",
+  "confederation": "UEFA",
+  "flag": "🏴",
+  "iso2": "gb-eng",
+  "color": "#FFFFFF",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": true,
+    "stars": [
+      "凯恩"
+    ],
+    "is_host": false,
+    "fifa_rank": 5
+  },
+  "wc2022": {
+    "group": "B",
+    "stage": "qf",
+    "result": "八强",
+    "played": 5,
+    "gf": 13,
+    "ga": 5
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

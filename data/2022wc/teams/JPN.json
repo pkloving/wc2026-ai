@@ -1,0 +1,25 @@
+{
+  "code": "JPN",
+  "name": "日本",
+  "nameEn": "Japan",
+  "confederation": "AFC",
+  "flag": "🇯🇵",
+  "iso2": "jp",
+  "color": "#BC002D",
+  "meta": {
+    "tier": "second",
+    "has_scorer_star": false,
+    "stars": [],
+    "is_host": false,
+    "fifa_rank": 24
+  },
+  "wc2022": {
+    "group": "E",
+    "stage": "r16",
+    "result": "16强",
+    "played": 4,
+    "gf": 5,
+    "ga": 4
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}

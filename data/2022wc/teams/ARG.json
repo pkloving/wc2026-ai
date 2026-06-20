@@ -1,0 +1,27 @@
+{
+  "code": "ARG",
+  "name": "阿根廷",
+  "nameEn": "Argentina",
+  "confederation": "CONMEBOL",
+  "flag": "🇦🇷",
+  "iso2": "ar",
+  "color": "#75AADB",
+  "meta": {
+    "tier": "top",
+    "has_scorer_star": true,
+    "stars": [
+      "梅西"
+    ],
+    "is_host": false,
+    "fifa_rank": 3
+  },
+  "wc2022": {
+    "group": "C",
+    "stage": "final",
+    "result": "冠军",
+    "played": 7,
+    "gf": 15,
+    "ga": 8
+  },
+  "_updated_at": "2026-06-19T07:28:20.286Z"
+}
