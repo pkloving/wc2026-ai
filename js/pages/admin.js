@@ -52,13 +52,13 @@ function renderStats(users, licenses) {
   const totalUsers = users.length;
   const active7d = users.filter((u) => u.lastSeenAt && Date.now() - u.lastSeenAt < 7 * 86_400_000).length;
   const totalCreditsHeld = users.reduce((s, u) => s + (u.credits || 0), 0);
-  const totalUsed = users.reduce((s, u) => s + (u.used || 0), 0);
+  const usedLic = licenses.filter((l) => l.used).length;
   const unusedLic = licenses.filter((l) => !l.used).length;
   $('#stats').innerHTML = `
     <div class="stat"><div class="stat-value">${totalUsers}</div><div class="stat-label">总用户</div></div>
     <div class="stat"><div class="stat-value">${active7d}</div><div class="stat-label">7 日活跃</div></div>
     <div class="stat"><div class="stat-value">${totalCreditsHeld}</div><div class="stat-label">总余额</div></div>
-    <div class="stat"><div class="stat-value">${totalUsed} / ${unusedLic}待用</div><div class="stat-label">已用 / 未用 key</div></div>
+    <div class="stat"><div class="stat-value">${usedLic} / ${unusedLic}</div><div class="stat-label">已用 / 未用 key</div></div>
   `;
 }
 
@@ -215,7 +215,7 @@ function renderPredict31Block(p) {
   if (!p) return '<div class="muted">无最新 predict_31 文件</div>';
   return `
     <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:.5rem;padding:.75rem;margin-bottom:1rem;">
-      <div style="font-weight:700;font-size:.85rem;margin-bottom:.4rem;">🤖 最新 R-031 推荐（${p.date}） <span class="muted">(${p.matches.length} 场, ${p.comboCount} 串关)</span></div>
+      <div style="font-weight:700;font-size:.85rem;margin-bottom:.4rem;">🤖 赔率纠偏模型 · 最新推荐（${p.date}） <span class="muted">(${p.matches.length} 场, ${p.comboCount} 串关)</span></div>
       ${p.matches.slice(0, 8).map((m) => {
         const sp = m.spf || {};
         const rq = m.rqspf || {};
