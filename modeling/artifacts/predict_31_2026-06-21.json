@@ -4,87 +4,122 @@
   "picker": {
     "cat1": {
       "matches": [
-        "周五031",
         "周六035",
-        "周五032"
+        "周六034",
+        "周六033",
+        "周六036"
       ],
       "tickets": [
         {
           "legs": [
             {
-              "code": "周五031",
-              "match": "巴西vs海地",
+              "code": "周六035",
+              "match": "厄瓜多尔vs库拉索",
               "d": "home",
               "label": "让胜",
-              "odds": 1.73
+              "odds": 1.85
             },
+            {
+              "code": "周六034",
+              "match": "德国vs科特迪瓦",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.11
+            }
+          ],
+          "odds": 3.9,
+          "stake": 1
+        },
+        {
+          "legs": [
             {
               "code": "周六035",
               "match": "厄瓜多尔vs库拉索",
               "d": "home",
               "label": "让胜",
-              "odds": 1.95
+              "odds": 1.85
             },
             {
-              "code": "周五032",
-              "match": "土耳其vs巴拉圭",
+              "code": "周六034",
+              "match": "德国vs科特迪瓦",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.11
+            },
+            {
+              "code": "周六033",
+              "match": "荷兰vs瑞典",
               "d": "away",
               "label": "让负",
-              "odds": 1.72
+              "odds": 2.16
             }
           ],
-          "odds": 5.8,
+          "odds": 8.43,
           "stake": 1
         }
       ],
-      "parlay4": {
-        "matches": [
-          "周五031",
-          "周六035",
-          "周五032",
-          "周六033"
-        ],
-        "legs": [
-          {
-            "code": "周五031",
-            "match": "巴西vs海地",
-            "d": "home",
-            "label": "让胜",
-            "odds": 1.73
-          },
-          {
-            "code": "周六035",
-            "match": "厄瓜多尔vs库拉索",
-            "d": "home",
-            "label": "让胜",
-            "odds": 1.95
-          },
-          {
-            "code": "周五032",
-            "match": "土耳其vs巴拉圭",
-            "d": "away",
-            "label": "让负",
-            "odds": 1.72
-          },
-          {
-            "code": "周六033",
-            "match": "荷兰vs瑞典",
-            "d": "away",
-            "label": "让负",
-            "odds": 2.04
-          }
-        ],
-        "odds": 11.84,
-        "stake": 1
-      },
-      "legMode": "primaryOnly",
-      "stake": 1
+      "parlay2": [
+        {
+          "legs": [
+            {
+              "code": "周六035",
+              "match": "厄瓜多尔vs库拉索",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.85
+            },
+            {
+              "code": "周六034",
+              "match": "德国vs科特迪瓦",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.11
+            }
+          ],
+          "odds": 3.9,
+          "stake": 1
+        }
+      ],
+      "parlay3": [
+        {
+          "legs": [
+            {
+              "code": "周六035",
+              "match": "厄瓜多尔vs库拉索",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.85
+            },
+            {
+              "code": "周六034",
+              "match": "德国vs科特迪瓦",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.11
+            },
+            {
+              "code": "周六033",
+              "match": "荷兰vs瑞典",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.16
+            }
+          ],
+          "odds": 8.43,
+          "stake": 1
+        }
+      ],
+      "parlay4": null,
+      "legMode": "atomic",
+      "stake": 1,
+      "slimCount": 2,
+      "dualCount": 2
     },
     "cat2": {
       "matches": [
         "周六035",
-        "周六036",
-        "周六034"
+        "周六034",
+        "周六036"
       ],
       "tickets": [
         {
@@ -96,19 +131,19 @@
               "odds": 13.5
             },
             {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "0:4",
-              "odds": 21
-            },
-            {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
               "score": "3:1",
               "odds": 10
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "0:4",
+              "odds": 20
             }
           ],
-          "odds": 2835,
+          "odds": 2700,
           "stake": 1
         },
         {
@@ -120,19 +155,19 @@
               "odds": 13.5
             },
             {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "0:4",
-              "odds": 21
-            },
-            {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
-              "score": "2:2",
-              "odds": 14
+              "score": "3:1",
+              "odds": 10
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "2:0",
+              "odds": 34
             }
           ],
-          "odds": 3969,
+          "odds": 4590,
           "stake": 1
         },
         {
@@ -144,19 +179,19 @@
               "odds": 13.5
             },
             {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "2:0",
-              "odds": 33
-            },
-            {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
-              "score": "3:1",
-              "odds": 10
+              "score": "2:2",
+              "odds": 14
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "0:4",
+              "odds": 20
             }
           ],
-          "odds": 4455,
+          "odds": 3780,
           "stake": 1
         },
         {
@@ -168,19 +203,19 @@
               "odds": 13.5
             },
             {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "2:0",
-              "odds": 33
-            },
-            {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
               "score": "2:2",
               "odds": 14
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "2:0",
+              "odds": 34
             }
           ],
-          "odds": 6237,
+          "odds": 6426,
           "stake": 1
         },
         {
@@ -190,45 +225,21 @@
               "match": "厄瓜多尔vs库拉索",
               "score": "0:1",
               "odds": 50
-            },
-            {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "0:4",
-              "odds": 21
             },
             {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
               "score": "3:1",
               "odds": 10
-            }
-          ],
-          "odds": 10500,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
-              "code": "周六035",
-              "match": "厄瓜多尔vs库拉索",
-              "score": "0:1",
-              "odds": 50
             },
             {
               "code": "周六036",
               "match": "突尼斯vs日本",
               "score": "0:4",
-              "odds": 21
-            },
-            {
-              "code": "周六034",
-              "match": "德国vs科特迪瓦",
-              "score": "2:2",
-              "odds": 14
+              "odds": 20
             }
           ],
-          "odds": 14700,
+          "odds": 10000,
           "stake": 1
         },
         {
@@ -238,21 +249,21 @@
               "match": "厄瓜多尔vs库拉索",
               "score": "0:1",
               "odds": 50
-            },
-            {
-              "code": "周六036",
-              "match": "突尼斯vs日本",
-              "score": "2:0",
-              "odds": 33
             },
             {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
               "score": "3:1",
               "odds": 10
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "2:0",
+              "odds": 34
             }
           ],
-          "odds": 16500,
+          "odds": 17000,
           "stake": 1
         },
         {
@@ -264,19 +275,43 @@
               "odds": 50
             },
             {
+              "code": "周六034",
+              "match": "德国vs科特迪瓦",
+              "score": "2:2",
+              "odds": 14
+            },
+            {
               "code": "周六036",
               "match": "突尼斯vs日本",
-              "score": "2:0",
-              "odds": 33
+              "score": "0:4",
+              "odds": 20
+            }
+          ],
+          "odds": 14000,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六035",
+              "match": "厄瓜多尔vs库拉索",
+              "score": "0:1",
+              "odds": 50
             },
             {
               "code": "周六034",
               "match": "德国vs科特迪瓦",
               "score": "2:2",
               "odds": 14
+            },
+            {
+              "code": "周六036",
+              "match": "突尼斯vs日本",
+              "score": "2:0",
+              "odds": 34
             }
           ],
-          "odds": 23100,
+          "odds": 23800,
           "stake": 1
         }
       ]
@@ -292,99 +327,10 @@
         "code": "周六036",
         "match": "突尼斯vs日本",
         "score": "2:0",
-        "odds": 33
-      },
-      {
-        "code": "周五030",
-        "match": "苏格兰vs摩洛哥",
-        "score": "2:0",
-        "odds": 30
-      },
-      {
-        "code": "周五032",
-        "match": "土耳其vs巴拉圭",
-        "score": "4:0",
-        "odds": 46
+        "odds": 34
       }
     ],
-    "cat4": [
-      {
-        "code": "周六035",
-        "match": "厄瓜多尔vs库拉索",
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "oddsMap": {
-          "0": 24,
-          "1": 7.4,
-          "2": 4.3
-        },
-        "rule": {
-          "name": "WEAK_MATCH+0+1+2",
-          "roi": "+10%",
-          "n": 5
-        }
-      },
-      {
-        "code": "周六036",
-        "match": "突尼斯vs日本",
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "oddsMap": {
-          "0": 11,
-          "1": 4.4,
-          "2": 3.3
-        },
-        "rule": {
-          "name": "WEAK_MATCH+0+1+2",
-          "roi": "+10%",
-          "n": 5
-        }
-      },
-      {
-        "code": "周五030",
-        "match": "苏格兰vs摩洛哥",
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "oddsMap": {
-          "0": 9,
-          "1": 4.2,
-          "2": 3.1
-        },
-        "rule": {
-          "name": "WEAK_MATCH+0+1+2",
-          "roi": "+10%",
-          "n": 5
-        }
-      },
-      {
-        "code": "周五032",
-        "match": "土耳其vs巴拉圭",
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "oddsMap": {
-          "0": 10,
-          "1": 4.35,
-          "2": 3.2
-        },
-        "rule": {
-          "name": "WEAK_MATCH+0+1+2",
-          "roi": "+10%",
-          "n": 5
-        }
-      }
-    ],
+    "cat4": [],
     "cat5": [
       {
         "code": "周六035",
@@ -402,23 +348,6 @@
           "roi": "-32%",
           "n": 4
         }
-      },
-      {
-        "code": "周五031",
-        "match": "巴西vs海地",
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "oddsMap": {
-          "胜胜": 1.26,
-          "平平": 15.5
-        },
-        "rule": {
-          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-          "roi": "-32%",
-          "n": 4
-        }
       }
     ]
   },
@@ -429,24 +358,24 @@
       "match": "荷兰vs瑞典",
       "handicap": -1,
       "rqspf_odds": {
-        "home": 2.86,
-        "draw": 3.45,
-        "away": 2.04
+        "home": 2.67,
+        "draw": 3.42,
+        "away": 2.16
       },
       "primary": {
         "d": "away",
-        "odds": 2.04,
+        "odds": 2.16,
         "label": "让负"
       },
       "secondary": {
         "d": "home",
-        "odds": 2.86,
+        "odds": 2.67,
         "label": "让胜"
       },
       "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
       }
     },
     {
@@ -455,24 +384,24 @@
       "match": "德国vs科特迪瓦",
       "handicap": -1,
       "rqspf_odds": {
-        "home": 2.27,
-        "draw": 3.55,
-        "away": 2.46
+        "home": 2.11,
+        "draw": 3.71,
+        "away": 2.59
       },
       "primary": {
         "d": "home",
-        "odds": 2.27,
+        "odds": 2.11,
         "label": "让胜"
       },
       "secondary": {
         "d": "away",
-        "odds": 2.46,
+        "odds": 2.59,
         "label": "让负"
       },
       "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
       }
     },
     {
@@ -481,18 +410,18 @@
       "match": "厄瓜多尔vs库拉索",
       "handicap": -2,
       "rqspf_odds": {
-        "home": 1.95,
-        "draw": 3.95,
-        "away": 2.75
+        "home": 1.85,
+        "draw": 4,
+        "away": 2.95
       },
       "primary": {
         "d": "home",
-        "odds": 1.95,
+        "odds": 1.85,
         "label": "让胜"
       },
       "secondary": {
         "d": "away",
-        "odds": 2.75,
+        "odds": 2.95,
         "label": "让负"
       },
       "rule": {
@@ -507,128 +436,24 @@
       "match": "突尼斯vs日本",
       "handicap": 1,
       "rqspf_odds": {
-        "home": 2.38,
-        "draw": 3.25,
-        "away": 2.49
+        "home": 2.56,
+        "draw": 3.4,
+        "away": 2.25
       },
       "primary": {
         "d": "home",
-        "odds": 2.38,
+        "odds": 2.56,
         "label": "让胜"
-      },
-      "secondary": {
-        "d": "away",
-        "odds": 2.49,
-        "label": "让负"
-      },
-      "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五029",
-      "mid": "2040239",
-      "match": "美国vs澳大利亚",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 2.51,
-        "draw": 3.25,
-        "away": 2.36
-      },
-      "primary": {
-        "d": "away",
-        "odds": 2.36,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "home",
-        "odds": 2.51,
-        "label": "让胜"
-      },
-      "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五030",
-      "mid": "2040240",
-      "match": "苏格兰vs摩洛哥",
-      "handicap": 1,
-      "rqspf_odds": {
-        "home": 2.14,
-        "draw": 3.18,
-        "away": 2.88
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.14,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "away",
-        "odds": 2.88,
-        "label": "让负"
-      },
-      "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五031",
-      "mid": "2040241",
-      "match": "巴西vs海地",
-      "handicap": -2,
-      "rqspf_odds": {
-        "home": 1.73,
-        "draw": 4.1,
-        "away": 3.25
-      },
-      "primary": {
-        "d": "home",
-        "odds": 1.73,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "away",
-        "odds": 3.25,
-        "label": "让负"
-      },
-      "rule": {
-        "name": "让胜纠偏(主流盘)",
-        "roi": "+20.5%",
-        "n": 6
-      }
-    },
-    {
-      "code": "周五032",
-      "mid": "2040242",
-      "match": "土耳其vs巴拉圭",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 4,
-        "draw": 3.35,
-        "away": 1.72
-      },
-      "primary": {
-        "d": "away",
-        "odds": 1.72,
-        "label": "让负"
       },
       "secondary": {
         "d": "draw",
-        "odds": 3.35,
+        "odds": 3.4,
         "label": "让平"
       },
       "rule": {
-        "name": "基线(最低赔率)",
-        "roi": "+16.6%",
-        "n": 26
+        "name": "主受让+1主+平双选",
+        "roi": "+11.6%",
+        "n": 6
       }
     }
   ],
@@ -641,8 +466,8 @@
       "corrected": null,
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 25,
-      "stableOdds": 3.45,
+      "coldOdds": 20,
+      "stableOdds": 3.7,
       "rule": {
         "name": "基线(让球→大/小球)",
         "roi": "+3.1%",
@@ -657,8 +482,8 @@
       "corrected": null,
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 20,
-      "stableOdds": 3.7,
+      "coldOdds": 18,
+      "stableOdds": 3.8,
       "rule": {
         "name": "基线(让球→大/小球)",
         "roi": "+3.1%",
@@ -720,94 +545,6 @@
         "roi": "+10%",
         "n": 5
       }
-    },
-    {
-      "code": "周五029",
-      "mid": "2040239",
-      "match": "美国vs澳大利亚",
-      "handicap": -1,
-      "corrected": null,
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 31,
-      "stableOdds": 3.4,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五030",
-      "mid": "2040240",
-      "match": "苏格兰vs摩洛哥",
-      "handicap": 1,
-      "corrected": {
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "odds": {
-          "0": 9,
-          "1": 4.2,
-          "2": 3.1
-        },
-        "cost": 3
-      },
-      "coldPick": "7+",
-      "stable": "0+1+2",
-      "coldOdds": 34,
-      "stableOdds": 5.433333333333334,
-      "rule": {
-        "name": "WEAK_MATCH+0+1+2",
-        "roi": "+10%",
-        "n": 5
-      }
-    },
-    {
-      "code": "周五031",
-      "mid": "2040241",
-      "match": "巴西vs海地",
-      "handicap": -2,
-      "corrected": null,
-      "coldPick": "0",
-      "stable": "4",
-      "coldOdds": 35,
-      "stableOdds": 4.1,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五032",
-      "mid": "2040242",
-      "match": "土耳其vs巴拉圭",
-      "handicap": -1,
-      "corrected": {
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "odds": {
-          "0": 10,
-          "1": 4.35,
-          "2": 3.2
-        },
-        "cost": 3
-      },
-      "coldPick": "7+",
-      "stable": "0+1+2",
-      "coldOdds": 28,
-      "stableOdds": 5.8500000000000005,
-      "rule": {
-        "name": "WEAK_MATCH+0+1+2",
-        "roi": "+10%",
-        "n": 5
-      }
     }
   ],
   "bqc_follow": [
@@ -819,7 +556,7 @@
       "top3": [
         {
           "key": "胜胜",
-          "odds": 2.45
+          "odds": 2.38
         },
         {
           "key": "平胜",
@@ -827,7 +564,7 @@
         },
         {
           "key": "平平",
-          "odds": 5.8
+          "odds": 6.2
         }
       ],
       "rule": {
@@ -844,7 +581,7 @@
       "top3": [
         {
           "key": "胜胜",
-          "odds": 2
+          "odds": 1.96
         },
         {
           "key": "平胜",
@@ -852,7 +589,7 @@
         },
         {
           "key": "平平",
-          "odds": 6.5
+          "odds": 7
         }
       ],
       "rule": {
@@ -904,7 +641,7 @@
       "top3": [
         {
           "key": "负负",
-          "odds": 2.06
+          "odds": 2
         },
         {
           "key": "平负",
@@ -912,117 +649,7 @@
         },
         {
           "key": "平平",
-          "odds": 6
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五029",
-      "mid": "2040239",
-      "match": "美国vs澳大利亚",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 2.15
-        },
-        {
-          "key": "平胜",
-          "odds": 4
-        },
-        {
-          "key": "平平",
-          "odds": 5.6
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五030",
-      "mid": "2040240",
-      "match": "苏格兰vs摩洛哥",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "负负",
-          "odds": 2.5
-        },
-        {
-          "key": "平负",
-          "odds": 4.1
-        },
-        {
-          "key": "平平",
-          "odds": 5.1
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五031",
-      "mid": "2040241",
-      "match": "巴西vs海地",
-      "corrected": {
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "odds": {
-          "胜胜": 1.26,
-          "平平": 15.5
-        },
-        "cost": 2
-      },
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 1.26
-        },
-        {
-          "key": "平胜",
-          "odds": 4.05
-        },
-        {
-          "key": "平平",
-          "odds": 15.5
-        }
-      ],
-      "rule": {
-        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-        "roi": "-32%",
-        "n": 4
-      }
-    },
-    {
-      "code": "周五032",
-      "mid": "2040242",
-      "match": "土耳其vs巴拉圭",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 2.95
-        },
-        {
-          "key": "平胜",
-          "odds": 4.7
-        },
-        {
-          "key": "平平",
-          "odds": 4.9
+          "odds": 6.05
         }
       ],
       "rule": {
@@ -1043,26 +670,26 @@
       "type": "NORMAL",
       "handicap": -1,
       "spf": {
-        "home": 1.59,
-        "draw": 3.58,
-        "away": 4.52
+        "home": 1.54,
+        "draw": 3.8,
+        "away": 4.6
       },
       "rqspf": {
-        "home": 2.86,
-        "draw": 3.45,
-        "away": 2.04
+        "home": 2.67,
+        "draw": 3.42,
+        "away": 2.16
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 5.9
+          "odds": 6.3
         },
         {
           "score": "3:1",
           "odds": 11.5
         },
         {
-          "score": "0:0",
+          "score": "2:2",
           "odds": 13
         }
       ],
@@ -1078,19 +705,19 @@
       "type": "NORMAL",
       "handicap": -1,
       "spf": {
-        "home": 1.4,
-        "draw": 4.15,
+        "home": 1.37,
+        "draw": 4.45,
         "away": 5.75
       },
       "rqspf": {
-        "home": 2.27,
-        "draw": 3.55,
-        "away": 2.46
+        "home": 2.11,
+        "draw": 3.71,
+        "away": 2.59
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 6.7
+          "odds": 7.4
         },
         {
           "score": "3:1",
@@ -1114,9 +741,9 @@
       "handicap": -2,
       "spf": null,
       "rqspf": {
-        "home": 1.95,
-        "draw": 3.95,
-        "away": 2.75
+        "home": 1.85,
+        "draw": 4,
+        "away": 2.95
       },
       "mainPicks": [
         {
@@ -1153,163 +780,27 @@
       "type": "WEAK_MATCH",
       "handicap": 1,
       "spf": {
-        "home": 6,
-        "draw": 3.8,
-        "away": 1.43
+        "home": 6.65,
+        "draw": 4.02,
+        "away": 1.37
       },
       "rqspf": {
-        "home": 2.38,
-        "draw": 3.25,
-        "away": 2.49
+        "home": 2.56,
+        "draw": 3.4,
+        "away": 2.25
       },
       "mainPicks": [
         {
           "score": "0:4",
-          "odds": 21
+          "odds": 20
         },
         {
           "score": "2:2",
-          "odds": 16
-        },
-        {
-          "score": "2:0",
-          "odds": 33
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五029",
-      "mid": "2040239",
-      "match": "美国vs澳大利亚",
-      "home": "美国",
-      "away": "澳大利亚",
-      "kickoff": "2026-06-20 03:00",
-      "type": "NORMAL",
-      "handicap": -1,
-      "spf": {
-        "home": 1.45,
-        "draw": 3.83,
-        "away": 5.6
-      },
-      "rqspf": {
-        "home": 2.51,
-        "draw": 3.25,
-        "away": 2.36
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 6.6
-        },
-        {
-          "score": "3:1",
-          "odds": 10.5
-        },
-        {
-          "score": "0:0",
-          "odds": 10.5
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五030",
-      "mid": "2040240",
-      "match": "苏格兰vs摩洛哥",
-      "home": "苏格兰",
-      "away": "摩洛哥",
-      "kickoff": "2026-06-20 06:00",
-      "type": "WEAK_MATCH",
-      "handicap": 1,
-      "spf": {
-        "home": 5.35,
-        "draw": 3.42,
-        "away": 1.54
-      },
-      "rqspf": {
-        "home": 2.14,
-        "draw": 3.18,
-        "away": 2.88
-      },
-      "mainPicks": [
-        {
-          "score": "2:0",
-          "odds": 30
-        },
-        {
-          "score": "0:4",
-          "odds": 29
-        },
-        {
-          "score": "0:1",
-          "odds": 5.5
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五031",
-      "mid": "2040241",
-      "match": "巴西vs海地",
-      "home": "巴西",
-      "away": "海地",
-      "kickoff": "2026-06-20 08:30",
-      "type": "NORMAL",
-      "handicap": -2,
-      "spf": null,
-      "rqspf": {
-        "home": 1.73,
-        "draw": 4.1,
-        "away": 3.25
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
           "odds": 17
         },
         {
-          "score": "2:1",
-          "odds": 9
-        },
-        {
           "score": "2:0",
-          "odds": 6
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五032",
-      "mid": "2040242",
-      "match": "土耳其vs巴拉圭",
-      "home": "土耳其",
-      "away": "巴拉圭",
-      "kickoff": "2026-06-20 11:00",
-      "type": "WEAK_MATCH",
-      "handicap": -1,
-      "spf": {
-        "home": 1.88,
-        "draw": 3.15,
-        "away": 3.57
-      },
-      "rqspf": {
-        "home": 4,
-        "draw": 3.35,
-        "away": 1.72
-      },
-      "mainPicks": [
-        {
-          "score": "1:3",
-          "odds": 30
-        },
-        {
-          "score": "0:2",
-          "odds": 19.5
-        },
-        {
-          "score": "4:0",
-          "odds": 46
+          "odds": 34
         }
       ],
       "singleBets": []
@@ -1320,116 +811,21 @@
       {
         "matches": [
           "周六033",
-          "周五030"
+          "周六034"
         ],
         "picks": [
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          }
-        ],
-        "odds": 32.45
-      },
-      {
-        "matches": [
-          "周五030",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 33
-      },
-      {
-        "matches": [
-          "周六033",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "荷兰vs瑞典",
-            "score": "1:1",
-            "odds": 5.9
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 35.4
-      },
-      {
-        "matches": [
-          "周五029",
-          "周五030"
-        ],
-        "picks": [
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          }
-        ],
-        "odds": 36.3
-      },
-      {
-        "matches": [
-          "周六034",
-          "周五030"
-        ],
-        "picks": [
           {
             "match": "德国vs科特迪瓦",
             "score": "1:1",
-            "odds": 6.7
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
+            "odds": 7.4
           }
         ],
-        "odds": 36.85
-      },
-      {
-        "matches": [
-          "周六033",
-          "周五029"
-        ],
-        "picks": [
-          {
-            "match": "荷兰vs瑞典",
-            "score": "1:1",
-            "odds": 5.9
-          },
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 38.94
+        "odds": 46.62
       },
       {
         "matches": [
@@ -1440,324 +836,419 @@
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
           {
             "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
+            "score": "3:1",
+            "odds": 10
           }
         ],
-        "odds": 39.53
+        "odds": 63
       },
       {
         "matches": [
-          "周五029",
-          "周五031"
+          "周六033",
+          "周六035"
         ],
         "picks": [
           {
-            "match": "美国vs澳大利亚",
+            "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 6.6
+            "odds": 6.3
           },
           {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
           }
         ],
-        "odds": 39.6
-      },
-      {
-        "matches": [
-          "周六034",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 40.2
+        "odds": 66.15
       },
       {
         "matches": [
           "周六034",
-          "周五029"
+          "周六035"
         ],
         "picks": [
           {
             "match": "德国vs科特迪瓦",
             "score": "1:1",
-            "odds": 6.7
+            "odds": 7.4
           },
           {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
           }
         ],
-        "odds": 44.22
+        "odds": 77.7
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六035"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "1:1",
+            "odds": 13.5
+          }
+        ],
+        "odds": 85.05
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
+          }
+        ],
+        "odds": 85.1
+      },
+      {
+        "matches": [
+          "周六034",
+          "周六035"
+        ],
+        "picks": [
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "1:1",
+            "odds": 13.5
+          }
+        ],
+        "odds": 99.9
+      },
+      {
+        "matches": [
+          "周六034",
+          "周六035"
+        ],
+        "picks": [
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "3:1",
+            "odds": 10
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
+          }
+        ],
+        "odds": 105
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六036"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
+            "match": "突尼斯vs日本",
+            "score": "2:2",
+            "odds": 17
+          }
+        ],
+        "odds": 107.1
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "3:1",
+            "odds": 10
+          }
+        ],
+        "odds": 115
       }
     ],
     "c3": [
       {
         "matches": [
           "周六033",
-          "周五030",
-          "周五031"
+          "周六034",
+          "周六035"
         ],
         "picks": [
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
           {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
           },
           {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
           }
         ],
-        "odds": 194.7
-      },
-      {
-        "matches": [
-          "周六033",
-          "周五029",
-          "周五030"
-        ],
-        "picks": [
-          {
-            "match": "荷兰vs瑞典",
-            "score": "1:1",
-            "odds": 5.9
-          },
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          }
-        ],
-        "odds": 214.17
+        "odds": 489.51
       },
       {
         "matches": [
           "周六033",
           "周六034",
-          "周五030"
+          "周六035"
         ],
         "picks": [
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
           {
             "match": "德国vs科特迪瓦",
             "score": "1:1",
-            "odds": 6.7
+            "odds": 7.4
           },
           {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
+            "match": "厄瓜多尔vs库拉索",
+            "score": "1:1",
+            "odds": 13.5
           }
         ],
-        "odds": 217.42
-      },
-      {
-        "matches": [
-          "周五029",
-          "周五030",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 217.8
-      },
-      {
-        "matches": [
-          "周六034",
-          "周五030",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 221.1
-      },
-      {
-        "matches": [
-          "周六033",
-          "周五029",
-          "周五031"
-        ],
-        "picks": [
-          {
-            "match": "荷兰vs瑞典",
-            "score": "1:1",
-            "odds": 5.9
-          },
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
-          }
-        ],
-        "odds": 233.64
+        "odds": 629.37
       },
       {
         "matches": [
           "周六033",
           "周六034",
-          "周五031"
+          "周六035"
         ],
         "picks": [
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
           {
             "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
+            "score": "3:1",
+            "odds": 10
           },
           {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
           }
         ],
-        "odds": 237.18
-      },
-      {
-        "matches": [
-          "周六034",
-          "周五029",
-          "周五030"
-        ],
-        "picks": [
-          {
-            "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
-          },
-          {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "苏格兰vs摩洛哥",
-            "score": "0:1",
-            "odds": 5.5
-          }
-        ],
-        "odds": 243.21
+        "odds": 661.5
       },
       {
         "matches": [
           "周六033",
           "周六034",
-          "周五029"
+          "周六036"
         ],
         "picks": [
           {
             "match": "荷兰vs瑞典",
             "score": "1:1",
-            "odds": 5.9
+            "odds": 6.3
           },
           {
             "match": "德国vs科特迪瓦",
             "score": "1:1",
-            "odds": 6.7
+            "odds": 7.4
           },
           {
-            "match": "美国vs澳大利亚",
-            "score": "1:1",
-            "odds": 6.6
+            "match": "突尼斯vs日本",
+            "score": "2:2",
+            "odds": 17
           }
         ],
-        "odds": 260.9
+        "odds": 792.54
       },
       {
         "matches": [
+          "周六033",
           "周六034",
-          "周五029",
-          "周五031"
+          "周六035"
         ],
         "picks": [
           {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
             "match": "德国vs科特迪瓦",
-            "score": "1:1",
-            "odds": 6.7
+            "score": "3:1",
+            "odds": 10
           },
           {
-            "match": "美国vs澳大利亚",
+            "match": "厄瓜多尔vs库拉索",
             "score": "1:1",
-            "odds": 6.6
-          },
-          {
-            "match": "巴西vs海地",
-            "score": "2:0",
-            "odds": 6
+            "odds": 13.5
           }
         ],
-        "odds": 265.32
+        "odds": 850.5
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034",
+          "周六035"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
+          }
+        ],
+        "odds": 893.55
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034",
+          "周六036"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
+          },
+          {
+            "match": "突尼斯vs日本",
+            "score": "0:4",
+            "odds": 20
+          }
+        ],
+        "odds": 932.4
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034",
+          "周六036"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "3:1",
+            "odds": 10
+          },
+          {
+            "match": "突尼斯vs日本",
+            "score": "2:2",
+            "odds": 17
+          }
+        ],
+        "odds": 1071
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六035",
+          "周六036"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "1:1",
+            "odds": 6.3
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "3:1",
+            "odds": 10.5
+          },
+          {
+            "match": "突尼斯vs日本",
+            "score": "2:2",
+            "odds": 17
+          }
+        ],
+        "odds": 1124.55
+      },
+      {
+        "matches": [
+          "周六033",
+          "周六034",
+          "周六035"
+        ],
+        "picks": [
+          {
+            "match": "荷兰vs瑞典",
+            "score": "3:1",
+            "odds": 11.5
+          },
+          {
+            "match": "德国vs科特迪瓦",
+            "score": "1:1",
+            "odds": 7.4
+          },
+          {
+            "match": "厄瓜多尔vs库拉索",
+            "score": "1:1",
+            "odds": 13.5
+          }
+        ],
+        "odds": 1148.85
       }
     ]
   }
