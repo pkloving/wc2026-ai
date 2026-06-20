@@ -80,5 +80,20 @@
       ]
     }
   ],
-  "rewrites": [{ "source": "/admin", "destination": "/admin.html" }]
+  "rewrites": [
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/schedule", "destination": "/schedule.html" },
+    { "source": "/standings", "destination": "/standings.html" },
+    { "source": "/results", "destination": "/results.html" },
+    { "source": "/predictions", "destination": "/predictions.html" },
+    { "source": "/stats", "destination": "/stats.html" },
+    { "source": "/teams", "destination": "/teams.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/bets", "destination": "/bets.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/simulate", "destination": "/simulate.html" },
+    { "source": "/backtest", "destination": "/backtest.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/match", "destination": "/match.html" }
+  ]
 }

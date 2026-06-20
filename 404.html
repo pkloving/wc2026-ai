@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>页面走丢了 · 404 · WC 2026</title>
+  <meta name="description" content="你访问的页面不存在或已移动。返回首页，或前往回测研究、赛程赛果、AI 预测等页面。" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <style>
+    html,body{margin:0;padding:0;background:#f8fafc;color:#0B1F3A;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    body{display:flex;flex-direction:column;min-height:100vh}
+    .nf-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 1.25rem}
+    .nf-card{max-width:640px;width:100%;text-align:center}
+    .nf-code{font-size:clamp(5rem,18vw,9rem);font-weight:900;line-height:1;letter-spacing:-.04em;background:linear-gradient(135deg,#0B1F3A 0%,#D4AF37 120%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .nf-ball{font-size:clamp(2.5rem,9vw,4.5rem);display:inline-block;transform:translateY(.1em)}
+    .nf-title{font-size:1.5rem;font-weight:800;margin:.75rem 0 .25rem}
+    .nf-sub{color:#475569;font-size:.95rem;line-height:1.7;margin:0 auto 1.75rem;max-width:30rem}
+    .nf-links{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+    .nf-btn{display:inline-flex;align-items:center;gap:.4rem;border-radius:9999px;padding:.6rem 1.1rem;font-size:.9rem;font-weight:700;text-decoration:none;transition:opacity .15s,transform .15s}
+    .nf-btn:hover{transform:translateY(-1px)}
+    .nf-primary{background:#D4AF37;color:#0B1F3A}
+    .nf-ghost{background:#fff;color:#0B1F3A;border:1px solid #e2e8f0}
+    .nf-hint{margin-top:1.5rem;font-size:.8rem;color:#94a3b8}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="nf-wrap">
+    <div class="nf-card">
+      <div class="nf-code">4<span class="nf-ball">⚽</span>4</div>
+      <h1 class="nf-title">这球踢飞了，页面没找到</h1>
+      <p class="nf-sub">
+        你访问的地址不存在或已经移动。也许是链接里少了 <code>.html</code>，或者页面改名了。
+        从下面任意入口回到正轨吧。
+      </p>
+      <div class="nf-links">
+        <a class="nf-btn nf-primary" href="/">← 回首页</a>
+        <a class="nf-btn nf-ghost" href="/backtest.html">📊 回测研究</a>
+        <a class="nf-btn nf-ghost" href="/schedule.html">📅 赛程赛果</a>
+        <a class="nf-btn nf-ghost" href="/predictions.html">⭐ AI 预测</a>
+        <a class="nf-btn nf-ghost" href="/pricing.html">💳 订阅</a>
+      </div>
+      <div class="nf-hint">如果你是从站内链接点过来的，欢迎到「联系」页反馈这个失效链接。</div>
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
