@@ -4,7 +4,7 @@ import { resolve } from 'path';
 const pages = [
   'index', 'schedule', 'standings', 'results',
   'predictions', 'stats', 'teams', 'about', 'bets',
-  'match', 'contact', 'admin', 'simulate',
+  'match', 'contact', 'admin', 'simulate', 'backtest',
 ];
 
 export default defineConfig({

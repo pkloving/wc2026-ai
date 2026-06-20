@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: '/results.html', labelKey: 'nav.results', key: 'results' },
   { href: '/predictions.html', labelKey: 'nav.predictions', key: 'predictions' },
   { href: '/stats.html', labelKey: 'nav.stats', key: 'stats' },
+  { href: '/backtest.html', labelKey: 'nav.backtest', key: 'backtest' },
   { href: '/teams.html', labelKey: 'nav.teams', key: 'teams' },
   { href: '/bets.html', labelKey: 'nav.bets', key: 'bets' },
   { href: '/about.html', labelKey: 'nav.about', key: 'about' },
@@ -124,6 +125,7 @@ export function mountFooter() {
             <li><a class="hover:text-gold" href="/standings.html">${t('nav.standings')}</a></li>
             <li><a class="hover:text-gold" href="/predictions.html">${t('nav.predictions')}</a></li>
             <li><a class="hover:text-gold" href="/stats.html">${t('nav.stats')}</a></li>
+            <li><a class="hover:text-gold" href="/backtest.html">${t('nav.backtest')}</a></li>
             <li><a class="hover:text-gold" href="/bets.html">${t('nav.bets')}</a></li>
             <li><a class="hover:text-gold" href="/contact.html">${t('nav.contact')}</a></li>
           </ul>

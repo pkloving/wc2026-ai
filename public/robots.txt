@@ -1,0 +1,57 @@
+# www.wc2026-ai.top —— robots
+# 站点定位：2026 世界杯赛事数据 + 多 AI 大模型预测对账 + 真实回测研究（用回测论证/证伪直觉）
+# 欢迎搜索引擎与 AI 答案引擎抓取公开内容；后台与 API 不抓。
+
+# ---- 通用 ----
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /api/
+
+# ---- AI 答案引擎 / 大模型爬虫（显式放行公开内容）----
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://www.wc2026-ai.top/sitemap.xml

@@ -87,10 +87,10 @@ function renderMatchesStatusBlock(ms) {
 }
 
 function renderPredict31Block(p) {
-  if (!p) return '<div style="color:#94a3b8;font-size:.85rem;">暂无最新 R-031 推荐文件（通常每天 17:00 更新）</div>';
+  if (!p) return '<div style="color:#94a3b8;font-size:.85rem;">暂无最新赔率纠偏模型推荐（通常每天 17:00 更新）</div>';
   return `
     <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:.5rem;padding:.75rem;margin-bottom:1rem;">
-      <div style="font-weight:700;font-size:.9rem;margin-bottom:.4rem;">🤖 最新 R-031 推荐 <span style="color:#94a3b8;font-weight:400;">(${p.date} · ${p.matches.length} 场 · ${p.comboCount} 串关)</span></div>
+      <div style="font-weight:700;font-size:.9rem;margin-bottom:.4rem;">🤖 赔率纠偏模型 · 最新推荐 <span style="color:#94a3b8;font-weight:400;">(${p.date} · ${p.matches.length} 场 · ${p.comboCount} 串关)</span></div>
       ${p.matches.slice(0, 8).map((m) => {
         const sp = m.spf || {};
         const rq = m.rqspf || {};
