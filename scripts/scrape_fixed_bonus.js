@@ -293,9 +293,10 @@ async function fetchMatch(mid) {
 
 async function main() {
   const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
-  const MATCHES = statusDoc.matches.map(m => m.mid);
+  const wcMatches = statusDoc.matches.filter(m => m.league === '世界杯');
+  const MATCHES = wcMatches.map(m => m.mid);
   const MAIN_LIST = {};
-  for (const m of statusDoc.matches) {
+  for (const m of wcMatches) {
     MAIN_LIST[m.mid] = {
       code: m.code, home: m.home, away: m.away,
       kickoff: m.kickoff, league: m.league, status: m.status,
