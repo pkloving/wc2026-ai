@@ -60,7 +60,12 @@
         "role": "home",
         "opponent_code": "PAR",
         "opponent_name": "巴拉圭",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       },
       {
         "match_id": "M059",
@@ -75,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }

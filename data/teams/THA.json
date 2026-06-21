@@ -35,12 +35,9 @@
         "role": "away",
         "opponent_code": "CHN",
         "opponent_name": "中国",
-        "status": "finished",
-        "score_my": 0,
-        "score_opp": 0,
-        "result": "draw"
+        "status": "finished"
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }

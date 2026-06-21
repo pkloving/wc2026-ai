@@ -200,24 +200,24 @@
         "pts": 3
       },
       {
-        "code": "TUR",
-        "played": 1,
-        "win": 0,
+        "code": "PAR",
+        "played": 2,
+        "win": 1,
         "draw": 0,
         "lose": 1,
-        "gf": 0,
-        "ga": 2,
+        "gf": 2,
+        "ga": 4,
         "gd": -2,
-        "pts": 0
+        "pts": 3
       },
       {
-        "code": "PAR",
-        "played": 1,
+        "code": "TUR",
+        "played": 2,
         "win": 0,
         "draw": 0,
-        "lose": 1,
-        "gf": 1,
-        "ga": 4,
+        "lose": 2,
+        "gf": 0,
+        "ga": 3,
         "gd": -3,
         "pts": 0
       }
@@ -235,24 +235,24 @@
     "standings": [
       {
         "code": "GER",
-        "played": 1,
-        "win": 1,
+        "played": 2,
+        "win": 2,
         "draw": 0,
         "lose": 0,
-        "gf": 7,
-        "ga": 1,
-        "gd": 6,
-        "pts": 3
+        "gf": 9,
+        "ga": 2,
+        "gd": 7,
+        "pts": 6
       },
       {
         "code": "CIV",
-        "played": 1,
+        "played": 2,
         "win": 1,
         "draw": 0,
-        "lose": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
+        "lose": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
         "pts": 3
       },
       {
@@ -290,29 +290,29 @@
     ],
     "standings": [
       {
+        "code": "NED",
+        "played": 2,
+        "win": 1,
+        "draw": 1,
+        "lose": 0,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
+        "pts": 4
+      },
+      {
         "code": "SWE",
-        "played": 1,
+        "played": 2,
         "win": 1,
         "draw": 0,
-        "lose": 0,
-        "gf": 5,
-        "ga": 1,
-        "gd": 4,
+        "lose": 1,
+        "gf": 6,
+        "ga": 6,
+        "gd": 0,
         "pts": 3
       },
       {
         "code": "JPN",
-        "played": 1,
-        "win": 0,
-        "draw": 1,
-        "lose": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 1
-      },
-      {
-        "code": "NED",
         "played": 1,
         "win": 0,
         "draw": 1,

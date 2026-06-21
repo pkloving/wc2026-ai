@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-20T12:04:02.666Z",
-  "total_matches": 44,
+  "generated_at": "2026-06-21T01:04:28.469Z",
+  "total_matches": 92,
   "matches": [
     {
       "mid": "2040145",
@@ -4650,6 +4650,966 @@
       }
     },
     {
+      "mid": "2022001",
+      "code": "2022-A1",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-20 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022002",
+      "code": "2022-A2",
+      "league": "世界杯",
+      "home": "塞内加尔",
+      "away": "荷兰",
+      "kickoff": "2022-11-21 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022003",
+      "code": "2022-A3",
+      "league": "世界杯",
+      "home": "卡塔尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-25 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022004",
+      "code": "2022-A4",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "厄瓜多尔",
+      "kickoff": "2022-11-26 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022005",
+      "code": "2022-A5",
+      "league": "世界杯",
+      "home": "厄瓜多尔",
+      "away": "塞内加尔",
+      "kickoff": "2022-11-29 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022006",
+      "code": "2022-A6",
+      "league": "世界杯",
+      "home": "荷兰",
+      "away": "卡塔尔",
+      "kickoff": "2022-11-29 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022007",
+      "code": "2022-B1",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "伊朗",
+      "kickoff": "2022-11-21 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022008",
+      "code": "2022-B2",
+      "league": "世界杯",
+      "home": "美国",
+      "away": "威尔士",
+      "kickoff": "2022-11-22 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022009",
+      "code": "2022-B3",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "伊朗",
+      "kickoff": "2022-11-25 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022010",
+      "code": "2022-B4",
+      "league": "世界杯",
+      "home": "英格兰",
+      "away": "美国",
+      "kickoff": "2022-11-26 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022011",
+      "code": "2022-B5",
+      "league": "世界杯",
+      "home": "威尔士",
+      "away": "英格兰",
+      "kickoff": "2022-11-30 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022012",
+      "code": "2022-B6",
+      "league": "世界杯",
+      "home": "伊朗",
+      "away": "美国",
+      "kickoff": "2022-11-30 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022013",
+      "code": "2022-C1",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-22 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022014",
+      "code": "2022-C2",
+      "league": "世界杯",
+      "home": "墨西哥",
+      "away": "波兰",
+      "kickoff": "2022-11-22 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022015",
+      "code": "2022-C3",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "沙特阿拉伯",
+      "kickoff": "2022-11-26 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022016",
+      "code": "2022-C4",
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "墨西哥",
+      "kickoff": "2022-11-27 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022017",
+      "code": "2022-C5",
+      "league": "世界杯",
+      "home": "波兰",
+      "away": "阿根廷",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022018",
+      "code": "2022-C6",
+      "league": "世界杯",
+      "home": "沙特阿拉伯",
+      "away": "墨西哥",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022019",
+      "code": "2022-D1",
+      "league": "世界杯",
+      "home": "丹麦",
+      "away": "突尼斯",
+      "kickoff": "2022-11-22 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022020",
+      "code": "2022-D2",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-23 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022021",
+      "code": "2022-D3",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "澳大利亚",
+      "kickoff": "2022-11-26 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022022",
+      "code": "2022-D4",
+      "league": "世界杯",
+      "home": "法国",
+      "away": "丹麦",
+      "kickoff": "2022-11-27 00:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022023",
+      "code": "2022-D5",
+      "league": "世界杯",
+      "home": "澳大利亚",
+      "away": "丹麦",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022024",
+      "code": "2022-D6",
+      "league": "世界杯",
+      "home": "突尼斯",
+      "away": "法国",
+      "kickoff": "2022-11-30 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022025",
+      "code": "2022-E1",
+      "league": "世界杯",
+      "home": "德国",
+      "away": "日本",
+      "kickoff": "2022-11-23 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022026",
+      "code": "2022-E2",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-24 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022027",
+      "code": "2022-E3",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "哥斯达黎加",
+      "kickoff": "2022-11-27 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022028",
+      "code": "2022-E4",
+      "league": "世界杯",
+      "home": "西班牙",
+      "away": "德国",
+      "kickoff": "2022-11-28 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022029",
+      "code": "2022-E5",
+      "league": "世界杯",
+      "home": "日本",
+      "away": "西班牙",
+      "kickoff": "2022-12-02 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022030",
+      "code": "2022-E6",
+      "league": "世界杯",
+      "home": "哥斯达黎加",
+      "away": "德国",
+      "kickoff": "2022-12-02 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022031",
+      "code": "2022-F1",
+      "league": "世界杯",
+      "home": "摩洛哥",
+      "away": "克罗地亚",
+      "kickoff": "2022-11-23 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022032",
+      "code": "2022-F2",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "加拿大",
+      "kickoff": "2022-11-24 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022033",
+      "code": "2022-F3",
+      "league": "世界杯",
+      "home": "比利时",
+      "away": "摩洛哥",
+      "kickoff": "2022-11-27 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022034",
+      "code": "2022-F4",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "加拿大",
+      "kickoff": "2022-11-28 00:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022035",
+      "code": "2022-F5",
+      "league": "世界杯",
+      "home": "克罗地亚",
+      "away": "比利时",
+      "kickoff": "2022-12-01 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022036",
+      "code": "2022-F6",
+      "league": "世界杯",
+      "home": "加拿大",
+      "away": "摩洛哥",
+      "kickoff": "2022-12-01 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022037",
+      "code": "2022-G1",
+      "league": "世界杯",
+      "home": "瑞士",
+      "away": "喀麦隆",
+      "kickoff": "2022-11-24 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022038",
+      "code": "2022-G2",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-25 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022039",
+      "code": "2022-G3",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "塞尔维亚",
+      "kickoff": "2022-11-28 17:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022040",
+      "code": "2022-G4",
+      "league": "世界杯",
+      "home": "巴西",
+      "away": "瑞士",
+      "kickoff": "2022-11-29 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022041",
+      "code": "2022-G5",
+      "league": "世界杯",
+      "home": "塞尔维亚",
+      "away": "瑞士",
+      "kickoff": "2022-12-03 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022042",
+      "code": "2022-G6",
+      "league": "世界杯",
+      "home": "喀麦隆",
+      "away": "巴西",
+      "kickoff": "2022-12-03 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022043",
+      "code": "2022-H1",
+      "league": "世界杯",
+      "home": "乌拉圭",
+      "away": "韩国",
+      "kickoff": "2022-11-24 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022044",
+      "code": "2022-H2",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "加纳",
+      "kickoff": "2022-11-25 02:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022045",
+      "code": "2022-H3",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "加纳",
+      "kickoff": "2022-11-28 20:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022046",
+      "code": "2022-H4",
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "乌拉圭",
+      "kickoff": "2022-11-29 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022047",
+      "code": "2022-H5",
+      "league": "世界杯",
+      "home": "加纳",
+      "away": "乌拉圭",
+      "kickoff": "2022-12-02 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
+      "mid": "2022048",
+      "code": "2022-H6",
+      "league": "世界杯",
+      "home": "韩国",
+      "away": "葡萄牙",
+      "kickoff": "2022-12-02 23:00",
+      "handicap": null,
+      "status": "finished",
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 0,
+          "rqspf": 0,
+          "bf": 0,
+          "zjq": 0,
+          "bqc": 0
+        }
+      }
+    },
+    {
       "mid": "2040235",
       "code": "周四025",
       "league": "世界杯",
@@ -5576,12 +6536,15 @@
             "负负": 11.5
           }
         },
-        "result": null
+        "result": "胜胜"
       },
       "result": {
         "home": 2,
         "away": 0,
-        "half": null,
+        "half": {
+          "home": 1,
+          "away": 0
+        },
         "scorers_count": 0,
         "wentToPenalties": false,
         "penaltyScore": null
@@ -5763,12 +6726,15 @@
             "负负": 2.5
           }
         },
-        "result": null
+        "result": "负负"
       },
       "result": {
         "home": 0,
         "away": 1,
-        "half": null,
+        "half": {
+          "home": 0,
+          "away": 1
+        },
         "scorers_count": 0,
         "wentToPenalties": false,
         "penaltyScore": null
@@ -5937,12 +6903,15 @@
             "负负": 50
           }
         },
-        "result": null
+        "result": "胜胜"
       },
       "result": {
         "home": 3,
         "away": 0,
-        "half": null,
+        "half": {
+          "home": 2,
+          "away": 0
+        },
         "scorers_count": 0,
         "wentToPenalties": false,
         "penaltyScore": null
@@ -6124,12 +7093,15 @@
             "负负": 6.7
           }
         },
-        "result": null
+        "result": "负负"
       },
       "result": {
         "home": 0,
         "away": 1,
-        "half": null,
+        "half": {
+          "home": 0,
+          "away": 1
+        },
         "scorers_count": 0,
         "wentToPenalties": false,
         "penaltyScore": null
@@ -6152,7 +7124,7 @@
       "away": "瑞典",
       "kickoff": "2026-06-21 01:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.54,
@@ -6164,7 +7136,7 @@
           "draw": 3.8,
           "away": 4.6
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -6179,7 +7151,7 @@
           "draw": 3.42,
           "away": 2.16
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
@@ -6252,7 +7224,10 @@
             "01:05": 400
           }
         },
-        "result": null
+        "result": {
+          "score": "5:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -6279,7 +7254,7 @@
             "7+": 20
           }
         },
-        "result": null
+        "result": "6"
       },
       "bqc": {
         "initial": {
@@ -6308,9 +7283,19 @@
             "负负": 8.25
           }
         },
-        "result": null
+        "result": "胜胜"
       },
-      "result": null,
+      "result": {
+        "home": 5,
+        "away": 1,
+        "half": {
+          "home": 2,
+          "away": 1
+        },
+        "scorers_count": 0,
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
       "meta": {
         "history_points": {
           "spf": 2,
@@ -6329,7 +7314,7 @@
       "away": "科特迪瓦",
       "kickoff": "2026-06-21 04:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.37,
@@ -6341,7 +7326,7 @@
           "draw": 4.45,
           "away": 5.75
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -6356,7 +7341,7 @@
           "draw": 3.71,
           "away": 2.59
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
@@ -6429,7 +7414,10 @@
             "01:05": 700
           }
         },
-        "result": null
+        "result": {
+          "score": "2:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -6456,7 +7444,7 @@
             "7+": 18
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
@@ -6485,9 +7473,19 @@
             "负负": 10
           }
         },
-        "result": null
+        "result": "胜胜"
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 1,
+        "half": {
+          "home": 1,
+          "away": 0
+        },
+        "scorers_count": 0,
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
       "meta": {
         "history_points": {
           "spf": 2,

@@ -2,12 +2,17 @@
   "matchId": "2040242",
   "homeScore": 0,
   "awayScore": 1,
-  "halfTime": null,
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
   "_fromSporttery": true,
   "_halfTimeResult": "away",
   "_spfResult": "away",
-  "_totalGoals": "1"
+  "_totalGoals": "1",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 code review, TUR 0:1 PAR, _halfTimeResult=away → 0:1)",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
 }

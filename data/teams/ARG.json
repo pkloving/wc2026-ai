@@ -45,10 +45,7 @@
         "role": "home",
         "opponent_code": "ISL",
         "opponent_name": "冰岛",
-        "status": "finished",
-        "score_my": 3,
-        "score_opp": 0,
-        "result": "win"
+        "status": "finished"
       },
       {
         "mid": "2040180",
@@ -91,5 +88,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }

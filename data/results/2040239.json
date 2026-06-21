@@ -2,12 +2,17 @@
   "matchId": "2040239",
   "homeScore": 2,
   "awayScore": 0,
-  "halfTime": null,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
   "_fromSporttery": true,
   "_halfTimeResult": "home",
   "_spfResult": "home",
-  "_totalGoals": "2"
+  "_totalGoals": "2",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 code review, USA 2:0 AUS, _halfTimeResult=home → 1:0)",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
 }

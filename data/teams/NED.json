@@ -49,8 +49,6 @@
         "status": "finished",
         "score_my": 2,
         "score_opp": 1,
-        "half_my": 1,
-        "half_opp": 0,
         "result": "win"
       },
       {
@@ -80,7 +78,12 @@
         "role": "home",
         "opponent_code": "SWE",
         "opponent_name": "瑞典",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 5,
+        "score_opp": 1,
+        "half_my": 2,
+        "half_opp": 1,
+        "result": "win"
       },
       {
         "match_id": "M057",
@@ -95,5 +98,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }

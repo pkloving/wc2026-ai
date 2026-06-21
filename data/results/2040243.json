@@ -1,0 +1,18 @@
+{
+  "matchId": "2040243",
+  "homeScore": 5,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 2,
+    "away": 1
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": false,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_totalGoals": "6",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 code review, NED 5:1 SWE, _halfTimeResult=home → 2:1)",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
+}

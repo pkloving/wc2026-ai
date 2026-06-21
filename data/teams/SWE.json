@@ -60,7 +60,12 @@
         "role": "away",
         "opponent_code": "NED",
         "opponent_name": "荷兰",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 5,
+        "half_my": 1,
+        "half_opp": 2,
+        "result": "lose"
       },
       {
         "match_id": "M058",
@@ -75,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }

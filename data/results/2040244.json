@@ -1,18 +1,18 @@
 {
-  "matchId": "2040241",
-  "homeScore": 3,
-  "awayScore": 0,
+  "matchId": "2040244",
+  "homeScore": 2,
+  "awayScore": 1,
   "halfTime": {
-    "home": 2,
+    "home": 1,
     "away": 0
   },
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
-  "_fromSporttery": true,
+  "_fromSporttery": false,
   "_halfTimeResult": "home",
   "_spfResult": "home",
   "_totalGoals": "3",
-  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 code review, BRA 3:0 HAI, _halfTimeResult=home → 2:0)",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 code review, GER 2:1 CIV, _halfTimeResult=home → 1:0)",
   "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
 }

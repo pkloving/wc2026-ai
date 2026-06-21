@@ -349,7 +349,7 @@
     "venue": "BC Place, Vancouver",
     "home": "TUR",
     "away": "PAR",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M033",
@@ -360,7 +360,7 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "NED",
     "away": "SWE",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M034",
@@ -371,7 +371,7 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "GER",
     "away": "CIV",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M035",

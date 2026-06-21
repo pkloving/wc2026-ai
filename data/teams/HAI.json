@@ -63,6 +63,8 @@
         "status": "finished",
         "score_my": 0,
         "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 2,
         "result": "lose"
       },
       {
@@ -78,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-20T04:28:51.138Z"
+  "_updated_at": "2026-06-21T01:04:35.405Z"
 }
