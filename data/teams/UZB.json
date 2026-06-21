@@ -43,10 +43,7 @@
         "role": "away",
         "opponent_code": "NED",
         "opponent_name": "荷兰",
-        "status": "finished",
-        "score_my": 1,
-        "score_opp": 2,
-        "result": "lose"
+        "status": "finished"
       },
       {
         "mid": "2040185",
@@ -89,5 +86,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T07:06:37.656Z"
+  "_updated_at": "2026-06-21T10:55:22.958Z"
 }

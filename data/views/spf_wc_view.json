@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-21T10:16:53.179Z",
+  "generated_at": "2026-06-21T11:15:32.671Z",
   "play": "spf",
-  "count": 30,
+  "count": 33,
   "rows": [
     {
       "mid": "2040162",
@@ -602,6 +602,66 @@
         "away": 1.29
       },
       "result": "away"
+    },
+    {
+      "mid": "2040248",
+      "code": "周六038",
+      "home": "比利时",
+      "away": "伊朗",
+      "kickoff": "2026-06-22 03:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.26,
+        "draw": 4.76,
+        "away": 7.95
+      },
+      "last": {
+        "home": 1.26,
+        "draw": 4.76,
+        "away": 7.95
+      },
+      "result": null
+    },
+    {
+      "mid": "2040249",
+      "code": "周六039",
+      "home": "乌拉圭",
+      "away": "佛得角",
+      "kickoff": "2026-06-22 06:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.3,
+        "draw": 4.05,
+        "away": 8.8
+      },
+      "last": {
+        "home": 1.3,
+        "draw": 4.05,
+        "away": 8.8
+      },
+      "result": null
+    },
+    {
+      "mid": "2040250",
+      "code": "周六040",
+      "home": "新西兰",
+      "away": "埃及",
+      "kickoff": "2026-06-22 09:00",
+      "handicap": 1,
+      "final_score": null,
+      "initial": {
+        "home": 6,
+        "draw": 3.87,
+        "away": 1.42
+      },
+      "last": {
+        "home": 6,
+        "draw": 3.87,
+        "away": 1.42
+      },
+      "result": null
     }
   ]
 }

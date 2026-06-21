@@ -1,0 +1,1225 @@
+{
+  "date": "2026-06-22",
+  "strategy": "31号策略 (F4主池 + 反方向单关 + RQSPF/ZJQ/BQC赔率纠偏)",
+  "picker": {
+    "cat1": {
+      "matches": [
+        "周六038",
+        "周六037",
+        "周六039",
+        "周六040"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            }
+          ],
+          "odds": 3.01,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            },
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.1
+            }
+          ],
+          "odds": 6.31,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            },
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.86
+            }
+          ],
+          "odds": 8.59,
+          "stake": 2
+        }
+      ],
+      "parlay2": [
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            }
+          ],
+          "odds": 3.01,
+          "stake": 1
+        }
+      ],
+      "parlay3": [
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            },
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.1
+            }
+          ],
+          "odds": 6.31,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.89
+            },
+            {
+              "code": "周六037",
+              "match": "西班牙vs沙特阿拉伯",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.59
+            },
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.86
+            }
+          ],
+          "odds": 8.59,
+          "stake": 2
+        }
+      ],
+      "parlay4": null,
+      "legMode": "atomic",
+      "stake": 1,
+      "slimCount": 3,
+      "dualCount": 1
+    },
+    "cat2": {
+      "matches": [
+        "周六039",
+        "周六038"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "score": "0:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "score": "1:1",
+              "odds": 8
+            }
+          ],
+          "odds": 68,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "score": "0:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "score": "3:0",
+              "odds": 8.5
+            }
+          ],
+          "odds": 72.25,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "score": "3:1",
+              "odds": 12
+            },
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "score": "1:1",
+              "odds": 8
+            }
+          ],
+          "odds": 96,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六039",
+              "match": "乌拉圭vs佛得角",
+              "score": "3:1",
+              "odds": 12
+            },
+            {
+              "code": "周六038",
+              "match": "比利时vs伊朗",
+              "score": "3:0",
+              "odds": 8.5
+            }
+          ],
+          "odds": 102,
+          "stake": 1
+        }
+      ]
+    },
+    "cat3": [
+      {
+        "code": "周六037",
+        "match": "西班牙vs沙特阿拉伯",
+        "score": "4:2",
+        "odds": 42
+      },
+      {
+        "code": "周六038",
+        "match": "比利时vs伊朗",
+        "score": "4:2",
+        "odds": 45
+      },
+      {
+        "code": "周六039",
+        "match": "乌拉圭vs佛得角",
+        "score": "4:1",
+        "odds": 27
+      },
+      {
+        "code": "周六040",
+        "match": "新西兰vs埃及",
+        "score": "2:0",
+        "odds": 35
+      }
+    ],
+    "cat4": [
+      {
+        "code": "周六039",
+        "match": "乌拉圭vs佛得角",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3.05
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘)",
+          "roi": "+54%",
+          "n": 10
+        }
+      }
+    ],
+    "cat5": [
+      {
+        "code": "周六037",
+        "match": "西班牙vs沙特阿拉伯",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.24,
+          "平平": 15.5
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      },
+      {
+        "code": "周六038",
+        "match": "比利时vs伊朗",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.77,
+          "平平": 7.1
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      }
+    ]
+  },
+  "rqspf_follow": [
+    {
+      "code": "周六037",
+      "mid": "2040247",
+      "match": "西班牙vs沙特阿拉伯",
+      "handicap": -2,
+      "rqspf_odds": {
+        "home": 1.59,
+        "draw": 4.55,
+        "away": 3.56
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.59,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 3.56,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周六038",
+      "mid": "2040248",
+      "match": "比利时vs伊朗",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 1.89,
+        "draw": 3.72,
+        "away": 3.02
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.89,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 3.02,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周六039",
+      "mid": "2040249",
+      "match": "乌拉圭vs佛得角",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 2.86
+      },
+      "primary": {
+        "d": "home",
+        "odds": 2.1,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 2.86,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周六040",
+      "mid": "2040250",
+      "match": "新西兰vs埃及",
+      "handicap": 1,
+      "rqspf_odds": {
+        "home": 2.46,
+        "draw": 3.3,
+        "away": 2.38
+      },
+      "primary": {
+        "d": "home",
+        "odds": 2.46,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.3,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "主受让+1主+平双选",
+        "roi": "+11.6%",
+        "n": 6
+      }
+    }
+  ],
+  "zjq_follow": [
+    {
+      "code": "周六037",
+      "mid": "2040247",
+      "match": "西班牙vs沙特阿拉伯",
+      "handicap": -2,
+      "corrected": null,
+      "coldPick": "0",
+      "stable": "4",
+      "coldOdds": 34,
+      "stableOdds": 3.95,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周六038",
+      "mid": "2040248",
+      "match": "比利时vs伊朗",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 24,
+      "stableOdds": 3.65,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周六039",
+      "mid": "2040249",
+      "match": "乌拉圭vs佛得角",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.05
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 32,
+      "stableOdds": 3.05,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘)",
+        "roi": "+54%",
+        "n": 10
+      }
+    },
+    {
+      "code": "周六040",
+      "mid": "2040250",
+      "match": "新西兰vs埃及",
+      "handicap": 1,
+      "corrected": {
+        "picks": [
+          "0",
+          "1",
+          "2"
+        ],
+        "odds": {
+          "0": 10.5,
+          "1": 4.55,
+          "2": 3.1
+        },
+        "cost": 3
+      },
+      "coldPick": "7+",
+      "stable": "0+1+2",
+      "coldOdds": 30,
+      "stableOdds": 6.050000000000001,
+      "rule": {
+        "name": "WEAK_MATCH+0+1+2",
+        "roi": "+10%",
+        "n": 5
+      }
+    }
+  ],
+  "bqc_follow": [
+    {
+      "code": "周六037",
+      "mid": "2040247",
+      "match": "西班牙vs沙特阿拉伯",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.24,
+          "平平": 15.5
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.24
+        },
+        {
+          "key": "平胜",
+          "odds": 4.2
+        },
+        {
+          "key": "平平",
+          "odds": 15.5
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周六038",
+      "mid": "2040248",
+      "match": "比利时vs伊朗",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.77,
+          "平平": 7.1
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.77
+        },
+        {
+          "key": "平胜",
+          "odds": 3.9
+        },
+        {
+          "key": "平平",
+          "odds": 7.1
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周六039",
+      "mid": "2040249",
+      "match": "乌拉圭vs佛得角",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.9
+        },
+        {
+          "key": "平胜",
+          "odds": 3.6
+        },
+        {
+          "key": "平平",
+          "odds": 5.55
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周六040",
+      "mid": "2040250",
+      "match": "新西兰vs埃及",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 2.05
+        },
+        {
+          "key": "平负",
+          "odds": 4.1
+        },
+        {
+          "key": "平平",
+          "odds": 5.55
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    }
+  ],
+  "matches": [
+    {
+      "code": "周六037",
+      "mid": "2040247",
+      "match": "西班牙vs沙特阿拉伯",
+      "home": "西班牙",
+      "away": "沙特阿拉伯",
+      "kickoff": "2026-06-22 00:00",
+      "type": "NORMAL",
+      "handicap": -2,
+      "spf": null,
+      "rqspf": {
+        "home": 1.59,
+        "draw": 4.55,
+        "away": 3.56
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 22
+        },
+        {
+          "score": "3:1",
+          "odds": 8.7
+        },
+        {
+          "score": "3:0",
+          "odds": 5.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周六038",
+      "mid": "2040248",
+      "match": "比利时vs伊朗",
+      "home": "比利时",
+      "away": "伊朗",
+      "kickoff": "2026-06-22 03:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.26,
+        "draw": 4.76,
+        "away": 7.95
+      },
+      "rqspf": {
+        "home": 1.89,
+        "draw": 3.72,
+        "away": 3.02
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 8
+        },
+        {
+          "score": "3:0",
+          "odds": 8.5
+        },
+        {
+          "score": "1:0",
+          "odds": 6.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周六039",
+      "mid": "2040249",
+      "match": "乌拉圭vs佛得角",
+      "home": "乌拉圭",
+      "away": "佛得角",
+      "kickoff": "2026-06-22 06:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.3,
+        "draw": 4.05,
+        "away": 8.8
+      },
+      "rqspf": {
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 2.86
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 7.3
+        },
+        {
+          "score": "3:1",
+          "odds": 12
+        },
+        {
+          "score": "0:0",
+          "odds": 8.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周六040",
+      "mid": "2040250",
+      "match": "新西兰vs埃及",
+      "home": "新西兰",
+      "away": "埃及",
+      "kickoff": "2026-06-22 09:00",
+      "type": "WEAK_MATCH",
+      "handicap": 1,
+      "spf": {
+        "home": 6,
+        "draw": 3.87,
+        "away": 1.42
+      },
+      "rqspf": {
+        "home": 2.46,
+        "draw": 3.3,
+        "away": 2.38
+      },
+      "mainPicks": [
+        {
+          "score": "0:4",
+          "odds": 21
+        },
+        {
+          "score": "2:1",
+          "odds": 18
+        },
+        {
+          "score": "2:0",
+          "odds": 35
+        }
+      ],
+      "singleBets": []
+    }
+  ],
+  "combos": {
+    "c2": [
+      {
+        "matches": [
+          "周六037",
+          "周六038"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          }
+        ],
+        "odds": 35.75
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 40.15
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          }
+        ],
+        "odds": 44
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 46.75
+      },
+      {
+        "matches": [
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 47.45
+      },
+      {
+        "matches": [
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 55.25
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          }
+        ],
+        "odds": 56.55
+      },
+      {
+        "matches": [
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 58.4
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 63.51
+      },
+      {
+        "matches": [
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 68
+      }
+    ],
+    "c3": [
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 260.97
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 303.88
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 321.2
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 374
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 412.81
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 480.67
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          }
+        ],
+        "odds": 508.08
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六039"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:1",
+            "odds": 8.7
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:1",
+            "odds": 8
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "0:0",
+            "odds": 8.5
+          }
+        ],
+        "odds": 591.6
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六038",
+          "周六040"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "比利时vs伊朗",
+            "score": "1:0",
+            "odds": 6.5
+          },
+          {
+            "match": "新西兰vs埃及",
+            "score": "2:1",
+            "odds": 18
+          }
+        ],
+        "odds": 643.5
+      },
+      {
+        "matches": [
+          "周六037",
+          "周六039",
+          "周六040"
+        ],
+        "picks": [
+          {
+            "match": "西班牙vs沙特阿拉伯",
+            "score": "3:0",
+            "odds": 5.5
+          },
+          {
+            "match": "乌拉圭vs佛得角",
+            "score": "1:1",
+            "odds": 7.3
+          },
+          {
+            "match": "新西兰vs埃及",
+            "score": "2:1",
+            "odds": 18
+          }
+        ],
+        "odds": 722.7
+      }
+    ]
+  }
+}

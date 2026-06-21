@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-21T10:16:53.180Z",
+  "generated_at": "2026-06-21T11:15:32.671Z",
   "play": "rqspf",
-  "count": 36,
+  "count": 40,
   "rows": [
     {
       "mid": "2040162",
@@ -794,6 +794,94 @@
         "away": 1.91
       },
       "result": "away"
+    },
+    {
+      "mid": "2040247",
+      "code": "周六037",
+      "home": "西班牙",
+      "away": "沙特阿拉伯",
+      "kickoff": "2026-06-22 00:00",
+      "handicap": -2,
+      "final_score": null,
+      "initial": {
+        "handicap": -2,
+        "home": 1.59,
+        "draw": 4.55,
+        "away": 3.56
+      },
+      "last": {
+        "handicap": -2,
+        "home": 1.59,
+        "draw": 4.55,
+        "away": 3.56
+      },
+      "result": null
+    },
+    {
+      "mid": "2040248",
+      "code": "周六038",
+      "home": "比利时",
+      "away": "伊朗",
+      "kickoff": "2026-06-22 03:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 1.89,
+        "draw": 3.72,
+        "away": 3.02
+      },
+      "last": {
+        "handicap": -1,
+        "home": 1.89,
+        "draw": 3.72,
+        "away": 3.02
+      },
+      "result": null
+    },
+    {
+      "mid": "2040249",
+      "code": "周六039",
+      "home": "乌拉圭",
+      "away": "佛得角",
+      "kickoff": "2026-06-22 06:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 2.86
+      },
+      "last": {
+        "handicap": -1,
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 2.86
+      },
+      "result": null
+    },
+    {
+      "mid": "2040250",
+      "code": "周六040",
+      "home": "新西兰",
+      "away": "埃及",
+      "kickoff": "2026-06-22 09:00",
+      "handicap": 1,
+      "final_score": null,
+      "initial": {
+        "handicap": 1,
+        "home": 2.46,
+        "draw": 3.3,
+        "away": 2.38
+      },
+      "last": {
+        "handicap": 1,
+        "home": 2.46,
+        "draw": 3.3,
+        "away": 2.38
+      },
+      "result": null
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "basic": {
+    "mid": "2022034",
+    "code": "2022-F4",
+    "league": "世界杯",
+    "home": "克罗地亚",
+    "away": "加拿大",
+    "kickoff": "2022-11-28 00:00",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2022034",
+    "scraped_at": "2026-06-21T11:04:12.972Z",
+    "sale_status": "待开售",
+    "single_supported": {},
+    "is_cancel": 0,
+    "is_finished_odds": true
+  },
+  "odds": {
+    "spf_latest": null,
+    "spf_history": [],
+    "handicap": null,
+    "rqspf_latest": null,
+    "rqspf_history": [],
+    "bf_latest": null,
+    "zjq_latest": null,
+    "bqc_latest": null
+  },
+  "source": {
+    "api": "getFixedBonusV1.qry",
+    "fetched_at": "2026-06-21T11:04:12.972Z",
+    "snapshot_time": null,
+    "has_match_result": false,
+    "spf_result": null,
+    "half_time_result": null
+  }
+}

@@ -46,10 +46,7 @@
         "role": "home",
         "opponent_code": "UZB",
         "opponent_name": "乌兹别克斯坦",
-        "status": "finished",
-        "score_my": 2,
-        "score_opp": 1,
-        "result": "win"
+        "status": "finished"
       },
       {
         "mid": "2040171",
@@ -98,5 +95,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T07:06:37.656Z"
+  "_updated_at": "2026-06-21T10:55:22.958Z"
 }
