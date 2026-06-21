@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1F3A"/>
+      <stop offset="1" stop-color="#0a1830"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F1D27A"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <!-- all visible content lives in the middle 630px band (y 285..915); the rest is cropped off -->
+  <g transform="translate(0,285)">
+    <!-- decorative ball / star motif, right -->
+    <g opacity="0.10" transform="translate(965,315)">
+      <circle r="300" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle r="210" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <polygon points="0,-150 44,-46 156,-46 66,28 100,140 0,72 -100,140 -66,28 -156,-46 -44,-46" fill="#E63946" opacity="0.55"/>
+    </g>
+    <!-- left accent bar -->
+    <rect x="80" y="150" width="6" height="330" rx="3" fill="url(#gold)"/>
+    <!-- kicker -->
+    <text x="116" y="172" font-family="PingFang SC, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#D4AF37" letter-spacing="2">WC 2026 · 美加墨世界杯</text>
+    <!-- title -->
+    <text x="112" y="262" font-family="PingFang SC, Helvetica, Arial, sans-serif" font-size="62" font-weight="800" fill="#FFFFFF">世界杯博彩直觉，真的成立吗？</text>
+    <text x="112" y="350" font-family="PingFang SC, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#gold)">用回测说话</text>
+    <!-- subtitle -->
+    <text x="116" y="432" font-family="PingFang SC, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#CBD5E1">诚实回测研究 · 不卖必胜，只讲数据与机制</text>
+    <!-- footer domain -->
+    <text x="116" y="518" font-family="PingFang SC, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#D4AF37">www.wc2026-ai.top</text>
+  </g>
+</svg>

@@ -167,11 +167,11 @@ const SUGGESTIONS = [
 const WELCOME_HTML = `
 <div class="wc-chat-welcome">
   <div style="font-size:1.5rem;margin-bottom:.4rem;">⚽</div>
-  <strong>WC2026 AI 预测助手</strong>
-  <div>基于项目竞彩数据 + 建模推荐 + 实时联网</div>
+  <strong>WC2026 AI 研究助手</strong>
+  <div>基于站内赔率库 + 回测研究 + 实时联网</div>
   <ul>
     <li>📊 <b>赔率分析</b>：胜平负/让球/比分/总进球</li>
-    <li>🤖 <b>建模推荐</b>：基于 R-013 / R-031 已验证策略</li>
+    <li>🔬 <b>回测解读</b>：基于赔率纠偏模型与历史回测，解读赔率结构与机制（不提供投注推荐）</li>
     <li>🌍 <b>联网信息</b>：伤停、首发、突发新闻</li>
     <li>🚫 非世界杯相关问题会礼貌拒绝</li>
   </ul>
@@ -181,11 +181,11 @@ const WELCOME_HTML = `
 const LOCKED_HTML = `
 <div class="wc-chat-locked">
   <div class="wc-chat-locked-icon">⚽</div>
-  <strong>WC2026 世界杯 AI 助手</strong>
-  <div class="wc-chat-locked-intro">问它任何世界杯问题，它结合本站赔率库 + 建模推荐 + 实时联网作答：</div>
+  <strong>WC2026 世界杯 AI 研究助手</strong>
+  <div class="wc-chat-locked-intro">问它任何世界杯问题，它结合本站赔率库 + 回测研究 + 实时联网作答：</div>
   <ul class="wc-chat-locked-feats">
     <li>📊 <b>赔率分析</b>：胜平负 / 让球 / 比分 / 总进球</li>
-    <li>🤖 <b>建模推荐</b>：基于 R-013 / R-031 已验证策略出推荐单</li>
+    <li>🔬 <b>回测解读</b>：基于赔率纠偏模型与历史回测，解读赔率结构与机制（不提供投注推荐）</li>
     <li>🌍 <b>联网信息</b>：伤停、首发、突发新闻</li>
   </ul>
   <div class="wc-chat-locked-free">📧 邮箱收验证码即可登录 · 新用户自动送 <b>3 次</b>免费提问 · 无需密码</div>
@@ -317,7 +317,7 @@ export function mountChatbot({ auth } = {}) {
       <div class="wc-chat-header">
         <div>
           <div class="wc-chat-header-title">⚽ WC2026 AI 助手</div>
-          <div class="wc-chat-header-sub" data-sub>赔率 · 建模 · 联网</div>
+          <div class="wc-chat-header-sub" data-sub>赔率 · 回测 · 联网</div>
         </div>
         <div style="display:flex;gap:.25rem;align-items:center;">
           <span class="wc-chat-header-credits" data-credits hidden></span>
@@ -361,7 +361,7 @@ export function mountChatbot({ auth } = {}) {
   function renderHeader() {
     const u = auth?.getUser?.();
     if (u) {
-      creditsEl.innerHTML = `⚡ <b>${u.credits}</b> 问`;
+      creditsEl.innerHTML = `⚡ <b>${u.credits}</b> 问 <a href="/pricing.html" target="_blank" rel="noopener" title="购买 credits" style="color:#D4AF37;text-decoration:none;font-weight:700;padding:0 4px">＋</a>`;
       creditsEl.hidden = false;
       subEl.textContent = u.email;
     } else {
@@ -428,7 +428,7 @@ export function mountChatbot({ auth } = {}) {
     if (msgsEl.querySelector('.wc-chat-low-credits')) return;
     const el = document.createElement('div');
     el.className = 'wc-chat-low-credits';
-    el.innerHTML = `⚠️ <b>积分不足</b>，无法继续对话。<a href="#" data-redeem style="color:#1d4ed8">兑换 license key</a> 或联系站长充值。`;
+    el.innerHTML = `⚠️ <b>积分不足</b>，无法继续对话。<a href="/pricing.html" target="_blank" rel="noopener" style="color:#1d4ed8">查看定价 / 购买 credits</a>，或 <a href="#" data-redeem style="color:#1d4ed8">兑换 license key</a>。`;
     msgsEl.appendChild(el);
     el.querySelector('[data-redeem]').addEventListener('click', (e) => {
       e.preventDefault();
