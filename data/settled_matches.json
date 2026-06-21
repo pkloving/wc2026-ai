@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T04:12:00.111Z",
+  "generated_at": "2026-06-21T07:06:50.049Z",
   "total_matches": 92,
   "matches": [
     {
@@ -7650,12 +7650,15 @@
             "负负": 45
           }
         },
-        "result": null
+        "result": "平平"
       },
       "result": {
         "home": 0,
         "away": 0,
-        "half": null,
+        "half": {
+          "home": 0,
+          "away": 0
+        },
         "scorers_count": 0,
         "wentToPenalties": false,
         "penaltyScore": null
@@ -7678,7 +7681,7 @@
       "away": "日本",
       "kickoff": "2026-06-21 12:00",
       "handicap": 1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 8.05,
@@ -7690,7 +7693,7 @@
           "draw": 4.35,
           "away": 1.29
         },
-        "result": null
+        "result": "away"
       },
       "rqspf": {
         "initial": {
@@ -7705,7 +7708,7 @@
           "draw": 3.71,
           "away": 1.91
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -7778,7 +7781,10 @@
             "01:05": 42
           }
         },
-        "result": null
+        "result": {
+          "score": "0:4",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -7805,7 +7811,7 @@
             "7+": 18.5
           }
         },
-        "result": null
+        "result": "4"
       },
       "bqc": {
         "initial": {
@@ -7834,9 +7840,19 @@
             "负负": 1.85
           }
         },
-        "result": null
+        "result": "负负"
       },
-      "result": null,
+      "result": {
+        "home": 0,
+        "away": 4,
+        "half": {
+          "home": 0,
+          "away": 2
+        },
+        "scorers_count": 0,
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
       "meta": {
         "history_points": {
           "spf": 2,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T04:12:00.402Z",
+  "generated_at": "2026-06-21T07:06:50.124Z",
   "play": "bf",
   "count": 36,
   "rows": [
@@ -2915,7 +2915,7 @@
       "away": "日本",
       "kickoff": "2026-06-21 12:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:4",
       "initial": {
         "odds": {
           "05:00": 900,
@@ -2986,7 +2986,10 @@
           "01:05": 42
         }
       },
-      "result": null
+      "result": {
+        "score": "0:4",
+        "other": null
+      }
     }
   ]
 }

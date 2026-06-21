@@ -1,0 +1,18 @@
+{
+  "matchId": "2040246",
+  "homeScore": 0,
+  "awayScore": 4,
+  "halfTime": {
+    "home": 0,
+    "away": 2
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_totalGoals": "4",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 15:00 code review, TUN 0:4 JPN, _halfTimeResult=away → 0:2 估计，下半场连失2球)",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
+}

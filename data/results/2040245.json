@@ -2,12 +2,17 @@
   "matchId": "2040245",
   "homeScore": 0,
   "awayScore": 0,
-  "halfTime": null,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
   "_fromSporttery": true,
   "_halfTimeResult": "draw",
   "_spfResult": null,
-  "_totalGoals": "0"
+  "_totalGoals": "0",
+  "_halfTimeSource": "estimated_from_final+_halfTimeResult (2026-06-21 15:00 code review, ECU 0:0 CUW, _halfTimeResult=draw → 0:0)",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
 }

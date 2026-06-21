@@ -23,13 +23,13 @@
     "stage": "group",
     "standings": {
       "position": 4,
-      "played": 1,
+      "played": 2,
       "win": 0,
       "draw": 0,
-      "lose": 1,
+      "lose": 2,
       "gf": 1,
-      "ga": 5,
-      "gd": -4,
+      "ga": 9,
+      "gd": -8,
       "pts": 0
     },
     "matches": [
@@ -60,7 +60,12 @@
         "role": "home",
         "opponent_code": "JPN",
         "opponent_name": "日本",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 4,
+        "half_my": 0,
+        "half_opp": 2,
+        "result": "lose"
       },
       {
         "match_id": "M057",
@@ -75,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T04:03:50.467Z"
+  "_updated_at": "2026-06-21T07:06:37.656Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T04:12:00.408Z",
+  "generated_at": "2026-06-21T07:06:50.129Z",
   "play": "rqspf",
   "count": 36,
   "rows": [
@@ -780,7 +780,7 @@
       "away": "日本",
       "kickoff": "2026-06-21 12:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:4",
       "initial": {
         "handicap": 1,
         "home": 2.97,
@@ -793,7 +793,7 @@
         "draw": 3.71,
         "away": 1.91
       },
-      "result": null
+      "result": "away"
     }
   ]
 }

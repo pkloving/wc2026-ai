@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T04:12:00.405Z",
+  "generated_at": "2026-06-21T07:06:50.128Z",
   "play": "bqc",
   "count": 35,
   "rows": [
@@ -1225,7 +1225,7 @@
           "负负": 45
         }
       },
-      "result": null
+      "result": "平平"
     },
     {
       "mid": "2040246",
@@ -1234,7 +1234,7 @@
       "away": "日本",
       "kickoff": "2026-06-21 12:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:4",
       "initial": {
         "odds": {
           "胜胜": 14.5,
@@ -1261,7 +1261,7 @@
           "负负": 1.85
         }
       },
-      "result": null
+      "result": "负负"
     }
   ]
 }

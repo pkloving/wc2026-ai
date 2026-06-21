@@ -22,7 +22,7 @@
     "group": "F",
     "stage": "group",
     "standings": {
-      "position": 2,
+      "position": 3,
       "played": 2,
       "win": 1,
       "draw": 0,
@@ -80,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T04:03:50.467Z"
+  "_updated_at": "2026-06-21T07:06:37.656Z"
 }
