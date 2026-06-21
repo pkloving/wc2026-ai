@@ -387,10 +387,15 @@ for (const g of groups) {
   }
 }
 
-// ============== 合并 matchesStatus → matches（按 mid 错位修复）==============
-// 背景：matches.json 用 mid 2040199-2040202 标 6-18 完赛 4 场，但 sporttery 实际 mid 是
+// ============== 合并 matchesStatus → matches（兜底错位修复）==============
+// 历史背景：matches.json 曾用 mid 2040199-2040202 标 6-18 完赛 4 场，但 sporttery 实际 mid 是
 //       2040182-2040185（与 data/results/*.json 一致）。matches.json 是手工录入，迁移期
-//       留下错位。matchesStatus.json 才是权威完赛数据源。
+//       留下错位。matchesStatus.json 是权威完赛数据源。
+// 2026-06-21 修正：matches.json M021-M024 已统一到 2040182-2040185（对齐 sporttery + 主 result）。
+//       data/results/2040199-2040202.json 作为 FIFA v3 live 抓取的留档（与 2040182-2040185
+//       内容同源但 minute 格式略不同），保留不删。
+//       下方按 (home_code, away_code) 配对作为兜底保险，并补充 matches.json 中没列出但
+//       matchesStatus 里有 mid 的赛事（如 2040186-2040190 国际赛 + 2040235+ WC）。
 // 这里按 (home_code, away_code) 配对，把 matchesStatus 的真 mid + status 覆盖到 matches 条目。
 // 并把 matchesStatus 里有但 matches.json 没有的 mid（排除 TBD/历史 2022 赛事）补进 matches。
 const _msByMid = new Map(matchesStatus.matches.map(ms => [ms.mid, ms]));
