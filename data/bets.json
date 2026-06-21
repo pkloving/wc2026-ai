@@ -1977,6 +1977,134 @@
       "maxReturn": null,
       "result": "lost",
       "note": "2 场 2×1 × 50 倍 = 1 注 × 2 元 × 50 倍 = 100 元。结算：德国 2:1 让-1=平 ✗ / 厄瓜多尔 0:0 让-2=客胜 ✗ → 全错，lost"
+    },
+    {
+      "id": "crs-fri029-030-031-032-mix-2026-06-20",
+      "type": "match",
+      "title": "[混合] 串关（4×1 · 美国平 + 苏格兰让+1主胜 + 巴西让-2主胜 + 土耳其主胜）",
+      "matchLabel": "周五029 spf 平 + 周五030 rqspf(+1)主胜 + 周五031 rqspf(-2)主胜 + 周五032 spf 主胜（4×1 × 2 倍）",
+      "date": "2026-06-19T20:27:00",
+      "stakeMultiplier": 2,
+      "parlayType": ["4x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-19 20:27）",
+      "picks": [
+        {
+          "mid": "2040239",
+          "match": "周五029",
+          "home": "USA",
+          "away": "AUS",
+          "kickoff": "2026-06-20 03:00",
+          "play": "spf",
+          "pick": "draw",
+          "pickLabel": "平",
+          "odds": null
+        },
+        {
+          "mid": "2040240",
+          "match": "周五030",
+          "home": "SCO",
+          "away": "MAR",
+          "kickoff": "2026-06-20 06:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "home",
+          "pickLabel": "主胜（让+1）",
+          "odds": null
+        },
+        {
+          "mid": "2040241",
+          "match": "周五031",
+          "home": "BRA",
+          "away": "HAI",
+          "kickoff": "2026-06-20 06:00",
+          "play": "rqspf",
+          "handicap": -2,
+          "pick": "home",
+          "pickLabel": "主胜（让-2）",
+          "odds": null
+        },
+        {
+          "mid": "2040242",
+          "match": "周五032",
+          "home": "TUR",
+          "away": "PAR",
+          "kickoff": "2026-06-20 06:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "4 场 4×1 × 2 倍 = 1 注 × 2 元 × 2 倍 = 4 元。结算：美国 2:0 平 ✗ / 苏格兰 0:1 让+1=平 ✗ / 巴西 3:0 让-2=主胜 ✓ / 土耳其 0:1 主胜 ✗ → 3 腿错，lost"
+    },
+    {
+      "id": "crs-fri030-031-bf-2026-06-20",
+      "type": "match",
+      "title": "[比分] 串关（2×1 · 4 注 · 苏格兰摩洛哥1:1/0:1 + 巴西海地4:1/5:0）",
+      "matchLabel": "周五030 bf{1:1,0:1} + 周五031 bf{4:1,5:0}（2×1 × 1 倍）",
+      "date": "2026-06-19T20:32:00",
+      "stakeMultiplier": 1,
+      "parlayType": ["2x1"],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-19 20:32）",
+      "picks": [
+        {
+          "mid": "2040240",
+          "match": "周五030",
+          "home": "SCO",
+          "away": "MAR",
+          "kickoff": "2026-06-20 06:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040240",
+          "match": "周五030",
+          "home": "SCO",
+          "away": "MAR",
+          "kickoff": "2026-06-20 06:00",
+          "play": "bf",
+          "pick": "0-1",
+          "pickLabel": "0:1",
+          "odds": null
+        },
+        {
+          "mid": "2040241",
+          "match": "周五031",
+          "home": "BRA",
+          "away": "HAI",
+          "kickoff": "2026-06-20 06:00",
+          "play": "bf",
+          "pick": "4-1",
+          "pickLabel": "4:1",
+          "odds": null
+        },
+        {
+          "mid": "2040241",
+          "match": "周五031",
+          "home": "BRA",
+          "away": "HAI",
+          "kickoff": "2026-06-20 06:00",
+          "play": "bf",
+          "pick": "5-0",
+          "pickLabel": "5:0",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 4,
+      "totalCost": 8,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周五030 2选 × 周五031 2选 = 4 注 × 2 元 × 1 倍 = 8 元。结算：苏格兰 0:1（1:1 错/0:1 中）/ 巴西 3:0（4:1/5:0 全错）→ 4注全错，lost"
     }
   ]
 }
