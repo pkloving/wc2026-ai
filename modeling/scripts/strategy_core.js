@@ -183,11 +183,13 @@ export function createTeamCtx(PROJECT_ROOT) {
   const variants = idx.name_variants_to_code || {};
   const scorerStarCodes = new Set();
   const nameToTier = {};
+  const qualCache = {}; // code -> wc2026 晋级数据缓存
   for (const [code, rel] of Object.entries(idx.by_code || {})) {
     try {
       const t = JSON.parse(fs.readFileSync(path.join(PROJECT_ROOT, 'data', rel), 'utf-8'));
       if (t.meta?.has_scorer_star === true) scorerStarCodes.add(code);
       if (t.name && tierOfCode[code]) nameToTier[t.name] = tierOfCode[code];
+      if (t.wc2026) qualCache[code] = t.wc2026;
     } catch (e) { /* ignore */ }
   }
   for (const [alias, code] of Object.entries(variants)) if (tierOfCode[code]) nameToTier[alias] = tierOfCode[code];
@@ -201,7 +203,47 @@ export function createTeamCtx(PROJECT_ROOT) {
     const code = codeOf(team);
     return code ? scorerStarCodes.has(code) : false;
   };
-  return { getTeamTier, hasScorerStar };
+  // 2026-06-21 新增: 读取球队 wc2026 晋级信息 (积分/排名/压力/目标)
+  // 返回 { group, position, pts, played, pressure_level, target_position, ... } 或 null
+  const getQual = (team) => {
+    const code = team ? (codeByName[team] || (variants && variants[team]) || null) : null;
+    if (!code) return null;
+    const wc = qualCache[code];
+    if (!wc?.standings) return null;
+    const s = wc.standings;
+    const qp = wc.qualification_pressure || {};
+    const km = wc.knockout_matchup || {};
+    return {
+      group: wc.group,
+      position: s.position,
+      pts: s.pts,
+      played: s.played,
+      remaining: 3 - s.played,
+      pressure_level: qp.pressure_level || 'low',
+      target_position: km.target_position || null,
+      strategy_notes: km.strategy_notes || [],
+    };
+  };
+  // 2026-06-21 新增: 生成一场比赛的晋级对比信号
+  // 返回 { home, away, bothHighPressure, bigPressureDiff, homeNeedWin, awayNeedWin }
+  const getMatchQualCtx = (m) => {
+    const h = getQual(m.home);
+    const a = getQual(m.away);
+    if (!h && !a) return null;
+    const hPts = h?.pts ?? null;
+    const aPts = a?.pts ?? null;
+    const highLevels = ['high', 'very-high', 'medium-high'];
+    return {
+      home: h,
+      away: a,
+      bothHighPressure: h && a && highLevels.includes(h.pressure_level) && highLevels.includes(a.pressure_level),
+      bigPressureDiff: h && a && Math.abs((hPts ?? 0) - (aPts ?? 0)) >= 3,
+      homeNeedWin: h && highLevels.includes(h.pressure_level),
+      awayNeedWin: a && highLevels.includes(a.pressure_level),
+      homeFavTied: h && h.pressure_level === 'low' && (hPts ?? 0) >= 3 && (aPts ?? 0) <= 1, // 主队积分领先+低压力=有放水心态
+    };
+  };
+  return { getTeamTier, hasScorerStar, getQual, getMatchQualCtx };
 }
 
 // ==================================================================
@@ -269,6 +311,16 @@ export function classifyMatch(m, ctx) {
     if (favHasStar) isBigBall = true;
   }
   if (homeHasStar && awayHasStar) isBigBall = true;
+
+  // 2026-06-21 新增: 晋级信号融合 — 双方高压力 → 对攻大战 → BIG_BALL
+  // 例: 厄瓜多尔vs库拉索 (双方0分均需抢分) → 进球数可能更多
+  if (ctx.getMatchQualCtx) {
+    const qc = ctx.getMatchQualCtx(m);
+    if (qc?.bothHighPressure) {
+      isBigBall = true;
+    }
+  }
+
   const isWeak = ((tier === 'weak' || tier === 'defensive') && !homeHasStar && !awayHasStar);
   if (isBigBall) return 'BIG_BALL';
   if (isWeak) return 'WEAK_MATCH';
@@ -382,7 +434,31 @@ export function rqspfStrategy(m, ctx) {
       rule: { name: '主受让+1主+平双选', roi: '+11.6%', n: 6 },
     };
   }
-  // 信号①: spf 大热门主队 (spf.home < 1.5) → 跟让胜 (优先级最高, 跟 home odds 区间无关)
+  // 信号① (2026-06-21 新增: 晋级信号融合 — 优先级最高)
+  // 主队 high/medium-high 压力 + 让胜赔率 1.3-2.4 → 倾向让胜
+  // 例: 荷兰vs瑞典(荷兰需抢分) / 德国vs科特迪瓦(德国需巩固头名)
+  const triggerLevels = ['high', 'very-high', 'medium-high'];
+  if (ctx.getMatchQualCtx) {
+    const qc = ctx.getMatchQualCtx(m);
+    if (qc?.home && triggerLevels.includes(qc.home.pressure_level)
+      && qc.home.pts <= 3 && rq.home >= 1.3 && rq.home < 2.4) {
+      return {
+        primary: { d: 'home', odds: rq.home, label: '让胜' },
+        secondary: sorted.find(d => d.d !== 'home') || sorted[1],
+        rule: { name: '⭐晋级:主队需抢分→让胜', roi: '(动态)', n: 0 },
+      };
+    }
+    // 客队高压力 + handicap 正向/平盘 → 客队拼命 → 倾向让负
+    if (qc?.away && triggerLevels.includes(qc.away.pressure_level)
+      && qc.away.pts <= 3 && (m.handicap ?? 0) >= 0 && rq.away >= 1.3 && rq.away < 2.4) {
+      return {
+        primary: { d: 'away', odds: rq.away, label: '让负' },
+        secondary: sorted.find(d => d.d !== 'away') || sorted[1],
+        rule: { name: '⭐晋级:客队需抢分→让负', roi: '(动态)', n: 0 },
+      };
+    }
+  }
+  // 信号②: spf 大热门主队 (spf.home < 1.5) → 跟让胜
   // 2026 数据: 8 场样本, 命中 7 场 (87.5%), ROI +76.4%
   const spf = m.spf;
   if (spf?.home && P.spfFavHomeMax > 0 && spf.home < P.spfFavHomeMax) {
@@ -418,6 +494,28 @@ export function zjqStrategy(m, ctx) {
   const keys = ['0', '1', '2', '3', '4', '5', '6', '7+'].filter(k => odds[k] > 1);
   if (keys.length === 0) return null;
   const type = classifyMatch(m, ctx);
+
+  // 2026-06-21 新增: 晋级信号融合 (早于主分类判断)
+  // 主队或客队高压力 → 进球倾向增加。如果原本是 NORMAL 但有一方压力 high+
+  // 例: 荷兰vs瑞典 (荷兰积分不够需抢分) → 倾向更多进球
+  if (ctx.getMatchQualCtx) {
+    const qc = ctx.getMatchQualCtx(m);
+    if ((qc?.homeNeedWin || qc?.awayNeedWin) && type === 'NORMAL') {
+      const coldPick = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
+      // 高压力比赛 → 倾向 2-3 球范围
+      // 跳过 2 球纠偏规则的严格区间检查，直接推 2-3 球
+      // 但保留原 NORMAL 的路径：先看 2 球赔率是否在主流盘，仍用 2 球纠偏；否则推 3 球
+      if (odds['2'] >= P.normalTwoLo && odds['2'] < 4) {
+        return {
+          corrected: { pick: '2', odds: odds['2'] },
+          coldPick, stable: '2',
+          coldOdds: odds[coldPick], stableOdds: odds['2'],
+          rule: { name: '晋级信号:高压力NORMAL→2球', roi: '见晋级分析', n: 0 },
+        };
+      }
+      // 3 球也做纠偏 (有晋级压力 提升进球倾向
+    }
+  }
 
   if (type === 'NORMAL' && odds['2'] >= P.normalTwoLo && odds['2'] < P.normalTwoHi) {
     const coldPick = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
@@ -609,6 +707,9 @@ export function buildPrediction(m, ctx) {
     rq: rqspfStrategy(m, ctx),
     z: zjqStrategy(m, ctx),
     b: bqcStrategy(m, ctx),
+    // 2026-06-21: 加 type, 让 selectBets 能识别 NORMAL/BIG_BALL/WEAK_MATCH
+    //   cat3 cat3 扩展 highOddsHomeWin 候选池 (4-1/4-0/5-1/4-2) 需要
+    type: classifyMatch(m, ctx),
   };
 }
 
@@ -922,6 +1023,17 @@ export function selectBets(dayMatches, ctx) {
   for (const m of dayMatches) {
     const picks = (m.mainPicks || []).filter(p => p.odds >= P.cat3.oddsThreshold)
       .sort((a, b) => b.odds - a.odds).slice(0, P.cat3.maxPerMatch);
+    // 2026-06-21: NORMAL+hc<0 扩展 highOddsHomeWin 候选 (4-1/4-0/5-1/4-2)
+    //   历史 4 场 NORMAL 4-5 球主胜 (2040165/173/183/236) 因主池 caps 全部不覆盖, 加单关兜底
+    //   优先 4-1 (历史 50% 命中), 退路 4-0/4-2/5-1; odds [20, 100] 区间
+    if (m.type === 'NORMAL' && m.handicap < 0 && picks.length === 0) {
+      const allBf = parseOdds(m.bf || m.bf_latest);
+      const priority = ['4:1', '4:2', '5:1', '4:0'];
+      for (const score of priority) {
+        const cand = allBf.find(s => s.score === score && s.odds >= 20 && s.odds <= 100);
+        if (cand) { picks.push(cand); break; }
+      }
+    }
     for (const p of picks) cat3.push({ code: m.code, match: m.match, score: p.score, odds: p.odds });
   }
 

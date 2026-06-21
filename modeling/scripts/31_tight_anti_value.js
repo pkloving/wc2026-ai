@@ -88,7 +88,7 @@ const ROI_INSIGHTS = loadInsights();
 // ============== 动态加载球队分层 + 射手星 (从 data/teams/_index.json + 57 个 team json) ==============
 // 单一数据源: data/teams/_index.json (by_tier 分类) + data/teams/<CODE>.json (meta.has_scorer_star)
 // 球队上下文由 strategy_core.createTeamCtx 统一构建, 与 33_fit 共用同一份逻辑
-const { getTeamTier, hasScorerStar } = createTeamCtx(PROJECT_ROOT);
+const { getTeamTier, hasScorerStar, getQual, getMatchQualCtx } = createTeamCtx(PROJECT_ROOT);
 // ============================================================
 // 策略参数: DEFAULT_PARAMS (strategy_core.js) 叠加 33_fit 产物 strategy_params.json
 // 没有 fit 产物时 = 默认参数 = 重构前的硬编码行为
@@ -114,6 +114,8 @@ const STRATEGY_CTX = {
   params: loadStrategyParams(),
   getTeamTier,
   hasScorerStar,
+  getQual,
+  getMatchQualCtx,
 };
 
 // 串关组合 generateCombos 已移至 strategy_core.js (参数化, 设计修正: 低赔腿+赔率带+最可能优先)
@@ -185,6 +187,127 @@ function runPredict() {
   // 输出日期
   const today = matchPredictions[0].kickoff ? matchPredictions[0].kickoff.split(' ')[0]
                : new Date().toISOString().split('T')[0];
+
+  // ======= 球队晋级分析 (新增: 赛前积分/排名/晋级压力/对位分析) =======
+  // 从 data/teams/<CODE>.json 读取 wc2026.qualification_pressure + knockout_matchup
+  // 为 31 规则提供"强队抢分/弱队保守"等额外信号
+  function loadTeamQual(teamName) {
+    try {
+      const idx = JSON.parse(fs.readFileSync(path.join(PROJECT_ROOT, 'data', 'teams', '_index.json'), 'utf-8'));
+      const code = idx.by_name?.[teamName] || idx.name_variants_to_code?.[teamName];
+      if (!code) return null;
+      const rel = idx.by_code?.[code];
+      if (!rel) return null;
+      const t = JSON.parse(fs.readFileSync(path.join(PROJECT_ROOT, 'data', rel), 'utf-8'));
+      return t.wc2026 || null;
+    } catch (e) { return null; }
+  }
+
+  function formatQualRow(teamName, matchCode, role) {
+    const wc = loadTeamQual(teamName);
+    if (!wc?.standings) return `  ${matchCode} ${role === 'home' ? '主' : '客'} ${teamName}: 暂无小组数据`;
+    const s = wc.standings;
+    const qp = wc.qualification_pressure || {};
+    const km = wc.knockout_matchup || {};
+    const groupId = wc.group || '-';
+    const pressureLevel = qp.pressure_level || '-';
+    const pressureIcon = pressureLevel === 'very-high' ? '🔴' : pressureLevel === 'high' ? '🟠' : pressureLevel === 'medium' ? '🟡' : pressureLevel === 'low-medium' ? '🟢' : pressureLevel === 'low' ? '✅' : '⚪';
+    const pts = s.pts, pos = s.position, played = s.played;
+    const remaining = 3 - played;
+    const pressureText = qp.pressure_text || '';
+    const targetPos = km.target_position || '-';
+    const nextMatch = qp.next_match;
+    let nextInfo = '';
+    if (nextMatch) {
+      nextInfo = `下一场 vs ${nextMatch.opponent_name} (${nextMatch.opponent_position}名/${nextMatch.opponent_pts}分)`;
+    }
+    return `  ${matchCode} ${role === 'home' ? '主' : '客'} ${teamName} (${groupId}组): ${pos}名 ${pts}分 ${played}场 ${pressureIcon}${pressureText} | 目标:${targetPos} ${nextInfo ? '| ' + nextInfo : ''}`;
+  }
+
+  console.log(`\n# 球队晋级策略分析 (${today})\n`);
+  console.log(`| 场次 | 球队 | 小组 | 排名 | 积分 | 场次 | 剩余 | 压力 | 晋级目标 | 关键信号 |`);
+  console.log(`|------|------|------|------|------|------|------|------|----------|----------|`);
+  for (const p of matchPredictions) {
+    // 主队
+    const hw = loadTeamQual(p.home);
+    const hGrp = hw?.group || '-';
+    const hPos = hw?.standings?.position !== undefined ? hw.standings.position : '-';
+    const hPts = hw?.standings?.pts !== undefined ? hw.standings.pts : '-';
+    const hPlayed = hw?.standings?.played || '-';
+    const hRem = hw?.standings ? (3 - hw.standings.played) : '-';
+    const hPressure = hw?.qualification_pressure?.pressure_level || '-';
+    const hTarget = hw?.knockout_matchup?.target_position || '-';
+    const hSignal = hw?.qualification_pressure?.pressure_text ? hw.qualification_pressure.pressure_text.slice(0, 18) : '-';
+    console.log(`| ${p.code} | ${p.home} | ${hGrp} | ${hPos} | ${hPts} | ${hPlayed} | ${hRem} | ${hPressure} | ${hTarget} | ${hSignal} |`);
+    // 客队
+    const aw = loadTeamQual(p.away);
+    const aGrp = aw?.group || '-';
+    const aPos = aw?.standings?.position !== undefined ? aw.standings.position : '-';
+    const aPts = aw?.standings?.pts !== undefined ? aw.standings.pts : '-';
+    const aPlayed = aw?.standings?.played || '-';
+    const aRem = aw?.standings ? (3 - aw.standings.played) : '-';
+    const aPressure = aw?.qualification_pressure?.pressure_level || '-';
+    const aTarget = aw?.knockout_matchup?.target_position || '-';
+    const aSignal = aw?.qualification_pressure?.pressure_text ? aw.qualification_pressure.pressure_text.slice(0, 18) : '-';
+    console.log(`| ${p.code} | ${p.away} | ${aGrp} | ${aPos} | ${aPts} | ${aPlayed} | ${aRem} | ${aPressure} | ${aTarget} | ${aSignal} |`);
+  }
+
+  // 单场晋级压力深度解读（帮助纠正主池/单关的方向判断）
+  console.log(`\n## 晋级压力深度解读\n`);
+  for (const p of matchPredictions) {
+    console.log(`### ${p.code} ${p.match}\n`);
+    // 主队
+    const hw = loadTeamQual(p.home);
+    if (hw?.standings) {
+      const qp = hw.qualification_pressure || {};
+      const km = hw.knockout_matchup || {};
+      const icon = qp.pressure_level === 'very-high' ? '🔴' : qp.pressure_level === 'high' ? '🟠' : qp.pressure_level === 'medium' ? '🟡' : qp.pressure_level === 'low-medium' ? '🟢' : '✅';
+      console.log(`- **${p.home}** (${hw.group}组 ${qp.position}名 ${qp.points}分) ${icon}${qp.pressure_text}`);
+      console.log(`  - 晋级机会: ${km.qualification_chance || '-'} | 目标排名: ${km.target_position || '-'}`);
+      if (km.strategy_notes?.length) console.log(`  - 策略信号: ${km.strategy_notes.slice(0, 2).join('；')}`);
+      if (km.best_case) console.log(`  - 最好情况: 积${km.best_case.best_possible_pts}分 (${km.best_case.scenario})`);
+      if (km.worst_case) console.log(`  - 最坏情况: 积${km.worst_case.worst_possible_pts}分 (${km.worst_case.scenario})`);
+      if (km.knockout_potential) console.log(`  - 淘汰赛对位: ${km.knockout_potential.would_play_description}`);
+    } else {
+      console.log(`- **${p.home}**: 暂无世界杯小组数据`);
+    }
+    // 客队
+    const aw = loadTeamQual(p.away);
+    if (aw?.standings) {
+      const qp = aw.qualification_pressure || {};
+      const km = aw.knockout_matchup || {};
+      const icon = qp.pressure_level === 'very-high' ? '🔴' : qp.pressure_level === 'high' ? '🟠' : qp.pressure_level === 'medium' ? '🟡' : qp.pressure_level === 'low-medium' ? '🟢' : '✅';
+      console.log(`- **${p.away}** (${aw.group}组 ${qp.position}名 ${qp.points}分) ${icon}${qp.pressure_text}`);
+      console.log(`  - 晋级机会: ${km.qualification_chance || '-'} | 目标排名: ${km.target_position || '-'}`);
+      if (km.strategy_notes?.length) console.log(`  - 策略信号: ${km.strategy_notes.slice(0, 2).join('；')}`);
+      if (km.best_case) console.log(`  - 最好情况: 积${km.best_case.best_possible_pts}分 (${km.best_case.scenario})`);
+      if (km.worst_case) console.log(`  - 最坏情况: 积${km.worst_case.worst_possible_pts}分 (${km.worst_case.scenario})`);
+      if (km.knockout_potential) console.log(`  - 淘汰赛对位: ${km.knockout_potential.would_play_description}`);
+    } else {
+      console.log(`- **${p.away}**: 暂无世界杯小组数据`);
+    }
+    // 综合判断
+    if (hw?.qualification_pressure && aw?.qualification_pressure) {
+      const hPts = hw.qualification_pressure.points || 0;
+      const aPts = aw.qualification_pressure.points || 0;
+      const hLevel = hw.qualification_pressure.pressure_level;
+      const aLevel = aw.qualification_pressure.pressure_level;
+      const highPressure = ['high', 'very-high'];
+      if (highPressure.includes(hLevel) && highPressure.includes(aLevel)) {
+        console.log(`  \n  ⚠️ **双方高压力**: 双方都面临抢分压力，战意拉满，可能出现激烈对抗和进球大战`);
+      } else if (highPressure.includes(hLevel)) {
+        console.log(`  \n  ⚠️ **主队高压力**: ${p.home}需抢分，可能采取更积极的进攻策略，或因压力过大踢得保守`);
+      } else if (highPressure.includes(aLevel)) {
+        console.log(`  \n  ⚠️ **客队高压力**: ${p.away}需抢分，可能采取更积极的进攻策略，或因压力过大踢得保守`);
+      } else if (hLevel === 'low' && aLevel === 'low') {
+        console.log(`  \n  ✅ **双方低压力**: 双方形势都不错，可能轮换或调整状态，注意冷门或平局`);
+      }
+      if (Math.abs(hPts - aPts) >= 3) {
+        console.log(`  ⚠️ **积分差距大 (${Math.abs(hPts - aPts)}分)**: 两队排名/处境不同，需警惕强队"放水"心态或弱队拼死一搏`);
+      }
+    }
+    console.log(``);
+  }
 
   // ======= 控制台输出 =======
   console.log(`\n[31号策略] 目标日期: ${today} (预测模式)`);

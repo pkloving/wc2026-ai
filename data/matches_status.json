@@ -2211,7 +2211,7 @@
       "home": "厄瓜多尔",
       "away": "库拉索",
       "kickoff": "2026-06-21 08:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": -2,
       "rqspf": {
@@ -2219,17 +2219,18 @@
         "draw": 4,
         "away": 2.95
       },
-      "scraped_at": "2026-06-20T07:15:25.772Z",
+      "scraped_at": "2026-06-21T04:03:25.659Z",
       "sale_status": "在售",
       "odds_file": "odds/2040245.json",
       "history_file": "odds_history/2040245.json",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "single_supported": {
         "HHAD": false,
         "HAFU": true,
         "CRS": true,
         "TTG": true
-      }
+      },
+      "final_score": "0:0"
     },
     {
       "mid": "2040246",
@@ -2240,17 +2241,17 @@
       "kickoff": "2026-06-21 12:00",
       "status": "on_sale",
       "spf": {
-        "home": 6.36,
-        "draw": 3.95,
-        "away": 1.39
+        "home": 8.05,
+        "draw": 4.35,
+        "away": 1.29
       },
       "handicap": 1,
       "rqspf": {
-        "home": 2.54,
-        "draw": 3.54,
-        "away": 2.21
+        "home": 2.97,
+        "draw": 3.71,
+        "away": 1.91
       },
-      "scraped_at": "2026-06-20T07:15:25.792Z",
+      "scraped_at": "2026-06-21T04:03:25.685Z",
       "sale_status": "在售",
       "odds_file": "odds/2040246.json",
       "history_file": "odds_history/2040246.json",

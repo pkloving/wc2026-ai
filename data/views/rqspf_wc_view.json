@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T01:04:28.414Z",
+  "generated_at": "2026-06-21T04:12:00.408Z",
   "play": "rqspf",
   "count": 36,
   "rows": [
@@ -758,7 +758,7 @@
       "away": "库拉索",
       "kickoff": "2026-06-21 08:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "handicap": -2,
         "home": 1.85,
@@ -771,7 +771,7 @@
         "draw": 4,
         "away": 2.95
       },
-      "result": null
+      "result": "away"
     },
     {
       "mid": "2040246",
@@ -783,15 +783,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 2.56,
-        "draw": 3.4,
-        "away": 2.25
+        "home": 2.97,
+        "draw": 3.71,
+        "away": 1.91
       },
       "last": {
         "handicap": 1,
-        "home": 2.56,
-        "draw": 3.4,
-        "away": 2.25
+        "home": 2.97,
+        "draw": 3.71,
+        "away": 1.91
       },
       "result": null
     }
