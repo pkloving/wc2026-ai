@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T10:55:00.000Z",
+  "generated_at": "2026-06-22T08:06:52.328Z",
   "total": 96,
   "status_definitions": {
     "scheduled": "未开售（odds 都 null）",
@@ -2038,7 +2038,9 @@
         "TTG": true,
         "HAD": true
       },
-      "final_score": "2:0"
+      "final_score": "2:0",
+      "result_file": "results/2040239.json",
+      "is_finished_odds_marked_at": "2026-06-21T07:00:00.000Z"
     },
     {
       "mid": "2040240",
@@ -2071,7 +2073,9 @@
         "TTG": true,
         "HAD": true
       },
-      "final_score": "0:1"
+      "final_score": "0:1",
+      "result_file": "results/2040240.json",
+      "is_finished_odds_marked_at": "2026-06-21T07:00:00.000Z"
     },
     {
       "mid": "2040241",
@@ -2099,7 +2103,9 @@
         "CRS": true,
         "TTG": true
       },
-      "final_score": "3:0"
+      "final_score": "3:0",
+      "result_file": "results/2040241.json",
+      "is_finished_odds_marked_at": "2026-06-21T07:00:00.000Z"
     },
     {
       "mid": "2040242",
@@ -2132,7 +2138,9 @@
         "TTG": true,
         "HAD": false
       },
-      "final_score": "0:1"
+      "final_score": "0:1",
+      "result_file": "results/2040242.json",
+      "is_finished_odds_marked_at": "2026-06-21T07:00:00.000Z"
     },
     {
       "mid": "2040243",
@@ -2276,12 +2284,12 @@
       "home": "西班牙",
       "away": "沙特阿拉伯",
       "kickoff": "2026-06-22 00:00",
-      "status": "on_sale",
+      "status": "finished",
       "scraped_at": "2026-06-21T11:04:16.924Z",
       "sale_status": "在售",
       "odds_file": "odds/2040247.json",
       "history_file": "odds_history/2040247.json",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "spf": null,
       "handicap": -2,
       "rqspf": {
@@ -2294,7 +2302,10 @@
         "HAFU": true,
         "CRS": true,
         "TTG": true
-      }
+      },
+      "final_score": "4-0",
+      "is_finished_odds_marked_at": "2026-06-22T08:06:52.327Z",
+      "result_file": "results/2040247.json"
     },
     {
       "mid": "2040248",
@@ -2303,12 +2314,12 @@
       "home": "比利时",
       "away": "伊朗",
       "kickoff": "2026-06-22 03:00",
-      "status": "on_sale",
+      "status": "finished",
       "scraped_at": "2026-06-21T11:04:17.084Z",
       "sale_status": "在售",
       "odds_file": "odds/2040248.json",
       "history_file": "odds_history/2040248.json",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "spf": {
         "home": 1.26,
         "draw": 4.76,
@@ -2326,7 +2337,10 @@
         "CRS": true,
         "TTG": true,
         "HAD": false
-      }
+      },
+      "final_score": "0-0",
+      "is_finished_odds_marked_at": "2026-06-22T08:06:52.328Z",
+      "result_file": "results/2040248.json"
     },
     {
       "mid": "2040249",
@@ -2335,12 +2349,12 @@
       "home": "乌拉圭",
       "away": "佛得角",
       "kickoff": "2026-06-22 06:00",
-      "status": "on_sale",
+      "status": "finished",
       "scraped_at": "2026-06-21T11:04:17.136Z",
       "sale_status": "在售",
       "odds_file": "odds/2040249.json",
       "history_file": "odds_history/2040249.json",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "spf": {
         "home": 1.3,
         "draw": 4.05,
@@ -2358,7 +2372,10 @@
         "CRS": true,
         "TTG": true,
         "HAD": true
-      }
+      },
+      "final_score": "2-2",
+      "is_finished_odds_marked_at": "2026-06-22T08:06:52.328Z",
+      "result_file": "results/2040249.json"
     },
     {
       "mid": "2040250",
@@ -2367,12 +2384,12 @@
       "home": "新西兰",
       "away": "埃及",
       "kickoff": "2026-06-22 09:00",
-      "status": "on_sale",
+      "status": "finished",
       "scraped_at": "2026-06-21T11:04:17.240Z",
       "sale_status": "在售",
       "odds_file": "odds/2040250.json",
       "history_file": "odds_history/2040250.json",
-      "is_finished_odds": false,
+      "is_finished_odds": true,
       "spf": {
         "home": 6,
         "draw": 3.87,
@@ -2390,7 +2407,10 @@
         "CRS": true,
         "TTG": true,
         "HAD": false
-      }
+      },
+      "final_score": "1-3",
+      "is_finished_odds_marked_at": "2026-06-22T08:06:52.328Z",
+      "result_file": "results/2040250.json"
     }
   ]
 }
