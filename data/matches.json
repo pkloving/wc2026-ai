@@ -451,6 +451,7 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "ARG",
     "away": "AUT",
+    "mid": "2040251",
     "status": "scheduled"
   },
   {
@@ -481,6 +482,7 @@
     "venue": "Estadio Azteca, Mexico City",
     "home": "JOR",
     "away": "DZA",
+    "mid": "2040254",
     "status": "scheduled"
   },
   {
@@ -521,6 +523,7 @@
     "venue": "BC Place, Vancouver",
     "home": "COL",
     "away": "COD",
+    "mid": "2040258",
     "status": "scheduled"
   },
   {
@@ -704,13 +707,14 @@
     "status": "scheduled"
   },
   {
-    "id": "M067",
+    "id": "M046",
     "stage": "group",
     "group": "L",
-    "date": "2026-06-27T21:00:00Z",
+    "date": "2026-06-23T20:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
-    "home": "PAN",
-    "away": "ENG",
+    "home": "ENG",
+    "away": "GHA",
+    "mid": "2040256",
     "status": "scheduled"
   },
   {
