@@ -23,14 +23,14 @@
     "stage": "group",
     "standings": {
       "position": 3,
-      "played": 1,
+      "played": 2,
       "win": 0,
-      "draw": 1,
+      "draw": 2,
       "lose": 0,
-      "gf": 0,
-      "ga": 0,
+      "gf": 2,
+      "ga": 2,
       "gd": 0,
-      "pts": 1
+      "pts": 2
     },
     "matches": [
       {
@@ -51,6 +51,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040249",
         "match_id": "M039",
         "stage": "group",
         "group": "H",
@@ -59,7 +60,12 @@
         "role": "away",
         "opponent_code": "URU",
         "opponent_name": "乌拉圭",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 2,
+        "half_my": 1,
+        "half_opp": 2,
+        "result": "draw"
       },
       {
         "match_id": "M064",
@@ -74,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T10:55:22.958Z"
+  "_updated_at": "2026-06-22T10:08:24.266Z"
 }

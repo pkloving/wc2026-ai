@@ -24,15 +24,15 @@
     "group": "G",
     "stage": "group",
     "standings": {
-      "position": 4,
-      "played": 1,
-      "win": 0,
+      "position": 1,
+      "played": 2,
+      "win": 1,
       "draw": 1,
       "lose": 0,
-      "gf": 1,
-      "ga": 1,
-      "gd": 0,
-      "pts": 1
+      "gf": 4,
+      "ga": 2,
+      "gd": 2,
+      "pts": 4
     },
     "matches": [
       {
@@ -53,6 +53,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040250",
         "match_id": "M040",
         "stage": "group",
         "group": "G",
@@ -61,7 +62,12 @@
         "role": "away",
         "opponent_code": "NZL",
         "opponent_name": "新西兰",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 3,
+        "score_opp": 1,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "win"
       },
       {
         "match_id": "M066",
@@ -76,5 +82,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-21T10:55:22.958Z"
+  "_updated_at": "2026-06-22T10:08:24.266Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T11:15:32.670Z",
+  "generated_at": "2026-06-22T10:08:13.350Z",
   "play": "bqc",
   "count": 39,
   "rows": [
@@ -1270,7 +1270,7 @@
       "away": "沙特阿拉伯",
       "kickoff": "2026-06-22 00:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "4:0",
       "initial": {
         "odds": {
           "胜胜": 1.24,
@@ -1297,7 +1297,7 @@
           "负负": 50
         }
       },
-      "result": null
+      "result": "胜胜"
     },
     {
       "mid": "2040248",
@@ -1306,7 +1306,7 @@
       "away": "伊朗",
       "kickoff": "2026-06-22 03:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "odds": {
           "胜胜": 1.77,
@@ -1333,7 +1333,7 @@
           "负负": 14
         }
       },
-      "result": null
+      "result": "平平"
     },
     {
       "mid": "2040249",
@@ -1342,7 +1342,7 @@
       "away": "佛得角",
       "kickoff": "2026-06-22 06:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:2",
       "initial": {
         "odds": {
           "胜胜": 1.9,
@@ -1369,7 +1369,7 @@
           "负负": 15
         }
       },
-      "result": null
+      "result": "胜平"
     },
     {
       "mid": "2040250",
@@ -1378,7 +1378,7 @@
       "away": "埃及",
       "kickoff": "2026-06-22 09:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:3",
       "initial": {
         "odds": {
           "胜胜": 11,
@@ -1405,7 +1405,7 @@
           "负负": 2.05
         }
       },
-      "result": null
+      "result": "胜负"
     }
   ]
 }

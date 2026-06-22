@@ -1,0 +1,21 @@
+{
+  "matchId": "2040248",
+  "homeScore": 0,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "draw",
+  "_totalGoals": "0",
+  "_hhadResult": "away",
+  "_hhadGoalLine": -1,
+  "_hafu": "D:D",
+  "_halfTimeSource": "sporttery 赛果页（半 0:0 全 0:0） + 央视/新浪 6/22 文字战报（2026-06-22 code review）",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单"
+}

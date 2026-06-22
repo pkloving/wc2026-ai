@@ -346,47 +346,47 @@
     ],
     "standings": [
       {
-        "code": "IRN",
-        "played": 1,
-        "win": 0,
+        "code": "EGY",
+        "played": 2,
+        "win": 1,
         "draw": 1,
         "lose": 0,
-        "gf": 2,
+        "gf": 4,
         "ga": 2,
-        "gd": 0,
-        "pts": 1
+        "gd": 2,
+        "pts": 4
       },
       {
-        "code": "NZL",
-        "played": 1,
+        "code": "IRN",
+        "played": 2,
         "win": 0,
-        "draw": 1,
+        "draw": 2,
         "lose": 0,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "code": "BEL",
-        "played": 1,
+        "played": 2,
         "win": 0,
-        "draw": 1,
+        "draw": 2,
         "lose": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
-        "code": "EGY",
-        "played": 1,
+        "code": "NZL",
+        "played": 2,
         "win": 0,
         "draw": 1,
-        "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
+        "lose": 1,
+        "gf": 3,
+        "ga": 5,
+        "gd": -2,
         "pts": 1
       }
     ]
@@ -402,47 +402,47 @@
     ],
     "standings": [
       {
-        "code": "KSA",
-        "played": 1,
-        "win": 0,
+        "code": "ESP",
+        "played": 2,
+        "win": 1,
         "draw": 1,
         "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "gf": 4,
+        "ga": 0,
+        "gd": 4,
+        "pts": 4
       },
       {
         "code": "URU",
-        "played": 1,
+        "played": 2,
         "win": 0,
-        "draw": 1,
+        "draw": 2,
         "lose": 0,
-        "gf": 1,
-        "ga": 1,
+        "gf": 3,
+        "ga": 3,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "code": "CPV",
-        "played": 1,
+        "played": 2,
         "win": 0,
-        "draw": 1,
+        "draw": 2,
         "lose": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
-        "code": "ESP",
-        "played": 1,
+        "code": "KSA",
+        "played": 2,
         "win": 0,
         "draw": 1,
-        "lose": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lose": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
         "pts": 1
       }
     ]
