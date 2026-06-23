@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T02:26:01.461Z",
+  "generated_at": "2026-06-23T03:00:28.969Z",
   "note": "由 scripts/build_frequency_atlas.js 从 data/views 与 data/2022wc/views 汇总",
   "y2026": {
     "total": 43,
@@ -53,22 +53,7 @@
             "pct": 7
           },
           {
-            "score": "3:0",
-            "count": 3,
-            "pct": 7
-          },
-          {
             "score": "2:1",
-            "count": 2,
-            "pct": 4.7
-          },
-          {
-            "score": "4:1",
-            "count": 2,
-            "pct": 4.7
-          },
-          {
-            "score": "5:1",
             "count": 2,
             "pct": 4.7
           },
@@ -83,40 +68,15 @@
             "pct": 4.7
           },
           {
-            "score": "7:1",
-            "count": 1,
-            "pct": 2.3
-          },
-          {
-            "score": "1:4",
-            "count": 1,
-            "pct": 2.3
-          },
-          {
             "score": "4:2",
-            "count": 1,
-            "pct": 2.3
-          },
-          {
-            "score": "6:0",
-            "count": 1,
-            "pct": 2.3
-          },
-          {
-            "score": "0:4",
-            "count": 1,
-            "pct": 2.3
-          },
-          {
-            "score": "4:0",
             "count": 1,
             "pct": 2.3
           }
         ],
         "others": {
-          "胜其它": 0,
+          "胜其它": 10,
           "平其它": 0,
-          "负其它": 0
+          "负其它": 2
         },
         "total": 43
       },
@@ -264,11 +224,6 @@
             "pct": 6.3
           },
           {
-            "score": "4:1",
-            "count": 3,
-            "pct": 4.7
-          },
-          {
             "score": "0:1",
             "count": 3,
             "pct": 4.7
@@ -280,11 +235,6 @@
           },
           {
             "score": "3:1",
-            "count": 2,
-            "pct": 3.1
-          },
-          {
-            "score": "3:0",
             "count": 2,
             "pct": 3.1
           },
@@ -304,20 +254,15 @@
             "pct": 1.6
           },
           {
-            "score": "0:3",
-            "count": 1,
-            "pct": 1.6
-          },
-          {
             "score": "2:4",
             "count": 1,
             "pct": 1.6
           }
         ],
         "others": {
-          "胜其它": 3,
+          "胜其它": 8,
           "平其它": 1,
-          "负其它": 0
+          "负其它": 1
         },
         "total": 64
       },

@@ -99,6 +99,8 @@ function fillBqcFromResults(year, rows) {
 
 function statBf(rows) {
   // result = { score: "1:0", other: null | "胜其它" | "平其它" | "负其它" }
+  // 部分 view 文件没把 other 算对（build_settled 直接 score="h:a"），所以这里按竞彩规则再归类一次
+  //   规则: 主胜差 ≥ 3 → 胜其它；客胜差 ≥ 3 → 负其它；4:4 / 5:5+ → 平其它；其它留具体比分
   const map = new Map(); // score -> count
   const others = { '胜其它': 0, '平其它': 0, '负其它': 0 };
   let total = 0;
@@ -109,14 +111,34 @@ function statBf(rows) {
       others[v.other] += 1;
       total += 1;
     } else if (v.score) {
-      map.set(v.score, (map.get(v.score) || 0) + 1);
-      total += 1;
+      const c = classifyBfScore(v.score);
+      if (c.other) {
+        others[c.other] += 1;
+        total += 1;
+      } else {
+        map.set(c.score, (map.get(c.score) || 0) + 1);
+        total += 1;
+      }
     }
   }
   const top = [...map.entries()]
     .map(([score, count]) => ({ score, count, pct: safeDiv(count, total) }))
     .sort((a, b) => b.count - a.count);
   return { top, others, total };
+}
+
+// 竞彩 BF 归类: 胜负差 ≥ 3 → 胜其它 / 负其它；平局 ≥ 4:4 → 平其它
+function classifyBfScore(score) {
+  const m = /^(\d+):(\d+)$/.exec(score);
+  if (!m) return { score, other: null };
+  const h = +m[1], a = +m[2];
+  if (h === a) {
+    if (h >= 4) return { score: null, other: '平其它' };
+    return { score, other: null };
+  }
+  if (h - a >= 3) return { score: null, other: '胜其它' };
+  if (a - h >= 3) return { score: null, other: '负其它' };
+  return { score, other: null };
 }
 
 function statZjq(rows) {
