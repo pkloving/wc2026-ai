@@ -74,7 +74,7 @@ git branch --show-current
 | ---- | ------------------------------------------------------------ | ---------------- |
 | 1    | 拉完赛结果 + 更新比分（仅正赛）                              | ✅               |
 | 2    | 重算积分（FIFA Standings）                                   | ❌               |
-| 3    | 统计（build_index + AI 命中复盘）                            | ❌               |
+| 3    | 统计（build_index + AI 命中复盘 + 频率图谱刷新）             | ❌               |
 | 4    | 拉未开赛已放出的赔率（仅正赛）                               | ❌（>10 场才开） |
 | 5    | `npm run modeling:all`（拟合+预测）+ `build_chat_predict.js` | ❌               |
 | 6    | 基于赔率-结果模型 + 赔率市场情绪给推荐（**不写 bets.json**） | ❌               |
@@ -152,10 +152,15 @@ node scripts/build_teams_data.js
 ### Step 3 · 统计
 
 1. `node scripts/build_index.js` 刷新 `data/matches_index.json`
-2. 看 `js/pages/stats.js` 的 dashboard（AI 模型准确率榜）— 自动从 `predictions.json` + `results/*.json` 算
-3. 复盘：哪些 AI 命中 / 哪些未中，新发现写进 `records/reflections.md`
+2. `node scripts/build_settled.js`（增量：`--incremental`）刷新 `data/settled_matches.json`，被 modeling 消费
+3. `node scripts/build_views.js` 刷新 `data/views/` 与 `data/2022wc/views/` 5 玩法视图（modeling 喂数据 + 频率图谱页消费）
+4. **`node scripts/build_frequency_atlas.js` 刷新 `data/frequency_atlas.json`** — 喂 `frequency.html` 展示页
+5. 看 `js/pages/stats.js` 的 dashboard（AI 模型准确率榜）— 自动从 `predictions.json` + `results/*.json` 算
+6. 复盘：哪些 AI 命中 / 哪些未中，新发现写进 `records/reflections.md`
 
 > 本步骤**不修改** `data/bets.json`，**不调用** `add-prediction.js`
+>
+> **为什么 Step 3 一定要跑 build_frequency_atlas.js**：站点 `/frequency.html`（频率图谱）只读消费 `data/frequency_atlas.json`，完赛补录后不重新生成，页面就一直展示陈旧频率。每次跑 daily 流程时把这条加进 Step 3 末尾，确保完赛 → 频率图谱数据是同一天的。
 
 ---
 
@@ -382,7 +387,7 @@ git push
 任务顺序：
 1) `node scripts/scrape_fixed_bonus.js`（**一体化脚本**：拉完赛结果 → 写入 data/results/<mid>.json + 拉赔率 → 标 is_finished_odds=true；matchResultList 存在 = 比赛已完赛。FIFA 仅作为半场比分/进球者补充）
 2) 重算积分（`node scripts/update-groups-standings.js` + `node scripts/build_teams_data.js`）
-3) 统计（build_index + 消费 predictions.json 做 AI 命中复盘）
+3) 统计（build_index + build_settled（incremental） + build_views + **build_frequency_atlas**（刷 frequency.html 用）+ 消费 predictions.json 做 AI 命中复盘）
 4) 拉未开赛+次日场的赔率（仅世界杯正赛，>10 场才开子 agent；is_finished_odds=true 的跳过）
 5) npm run modeling:all（33_fit 拟合 + 31 预测，出 predict_31_<今日>.json）→ 再跑 node scripts/build_chat_predict.js 出 chat_predict_<今日>.json → 再跑 python3 data/strategy/daily_dual_report.py <今日> 出 出单合并_<今日>.md（31规则 + 新策略 并排对照）
 6) 基于 predict_31 + 赔率市场情绪给推荐，**只写到 records/<今日>.md**（不写 data/bets.json，模拟单用户手动录）

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n-attr="title:meta.frequency.title">频率图谱 · WC 2026 · AI 预测</title>
+  <meta name="description" data-i18n-attr="content:meta.frequency.description" content="5 类玩法 (胜平负 / 让球 / 比分 / 总进球 / 半全场) 的真实赛果频率分布，2026 在赛 + 2022 全程并排对照。" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta property="og:image" content="https://www.wc2026-ai.top/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://www.wc2026-ai.top/og-cover.png" />
+  <link rel="canonical" href="https://www.wc2026-ai.top/frequency.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="WC 2026 · AI 预测与回测研究" />
+  <meta property="og:title" content="频率图谱 · 5 玩法真实赛果分布" />
+  <meta property="og:description" content="2026 在赛 + 2022 全程并排对照，胜平负/让球/比分/总进球/半全场。" />
+  <meta property="og:url" content="https://www.wc2026-ai.top/frequency.html" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    /* ---------- 页面级 dark 主题覆盖（其它页面是 light 主题） ---------- */
+    html, body { background: #0d1117; color: #e6edf3; }
+    body { font-family: 'JetBrains Mono', 'Noto Sans SC', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .freq-page { max-width: 1400px; margin: 0 auto; padding: 24px 16px 64px; }
+
+    /* Masthead */
+    .freq-masthead {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding-bottom: 20px; border-bottom: 1px solid #21262d; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+    }
+    .freq-masthead-title { font-size: 26px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+    .freq-masthead-sub { font-size: 11px; font-weight: 300; color: #7d8590; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+    .freq-masthead-meta { font-size: 11px; color: #7d8590; text-align: right; line-height: 1.8; }
+    .freq-highlight { color: #f0883e; font-weight: 600; }
+
+    /* Section header (year switch) */
+    .freq-year {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 16px; margin: 28px 0 14px; border: 1px solid #21262d; border-radius: 8px;
+      background: #161b22; cursor: pointer; user-select: none;
+    }
+    .freq-year:hover { background: #1c2128; }
+    .freq-year-title { font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #e6edf3; }
+    .freq-year-meta { font-size: 11px; color: #7d8590; }
+    .freq-year-caret { font-size: 14px; color: #7d8590; transition: transform 0.2s; }
+    .freq-year[data-open="true"] .freq-year-caret { transform: rotate(180deg); }
+    .freq-year-body { display: none; }
+    .freq-year[data-open="true"] + .freq-year-body { display: block; }
+
+    /* Grid 5 cards (top row) */
+    .freq-grid-5 {
+      display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 14px;
+    }
+    @media (max-width: 1100px) { .freq-grid-5 { grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 700px)  { .freq-grid-5 { grid-template-columns: 1fr 1fr; } }
+
+    .freq-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 18px 16px;
+    }
+    .freq-card-header { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #7d8590; margin-bottom: 4px; }
+    .freq-card-title { font-size: 17px; font-weight: 700; color: #e6edf3; margin-bottom: 14px; }
+    .freq-card-title-en { font-size: 10px; font-weight: 300; color: #484f58; letter-spacing: 1px; margin-top: 2px; }
+
+    /* Bars */
+    .freq-bar-row { display: flex; align-items: center; margin-bottom: 10px; gap: 8px; }
+    .freq-bar-label { font-size: 12px; color: #7d8590; width: 42px; flex-shrink: 0; text-align: right; }
+    .freq-bar-track { flex: 1; height: 10px; background: #21262d; border-radius: 2px; overflow: hidden; }
+    .freq-bar-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
+    .freq-bar-pct { font-size: 12px; font-weight: 600; width: 48px; flex-shrink: 0; text-align: right; }
+    .freq-bar-count { font-size: 10px; color: #484f58; width: 32px; flex-shrink: 0; text-align: right; }
+    .freq-legend { font-size: 10px; color: #484f58; margin-top: 6px; letter-spacing: 0.5px; }
+
+    /* BF Heatmap (cards) */
+    .freq-bf-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: 6px; }
+    @media (max-width: 700px) { .freq-bf-grid { grid-template-columns: repeat(4, 1fr); } }
+    .freq-bf-cell { border-radius: 4px; padding: 8px 4px; text-align: center; }
+    .freq-bf-cell-score { font-size: 12px; font-weight: 700; display: block; }
+    .freq-bf-cell-pct { font-size: 9px; font-weight: 400; opacity: 0.75; display: block; margin-top: 1px; }
+
+    /* BQC compact */
+    .freq-bqc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+    .freq-bqc-row { display: flex; align-items: center; gap: 6px; }
+    .freq-bqc-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+    .freq-bqc-name { font-size: 11px; color: #7d8590; flex: 1; }
+    .freq-bqc-pct { font-size: 11px; font-weight: 600; }
+
+    /* Insights card */
+    .freq-insight { background: #1c2128; }
+    .freq-insight-list { font-size: 12px; color: #7d8590; line-height: 2.0; margin-top: 4px; }
+    .freq-insight-list strong { color: #f0883e; font-weight: 600; }
+    .freq-insight-list .sub { color: #484f58; font-size: 11px; }
+
+    /* Full-width BF below */
+    .freq-full { margin-top: 14px; }
+    .freq-bf-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .freq-bf-row + .freq-bf-row { margin-top: 8px; }
+    .freq-bf-top-cell { flex: 1; min-width: 70px; }
+    .freq-bf-other-cell { flex: 1; min-width: 80px; background: #1c2128; border: 1px solid #21262d; }
+    .freq-bf-rest-cell { flex: 1; min-width: 70px; background: #21262d; border: 1px solid #30363d; }
+    .freq-bf-note { color: #484f58; font-size: 10px; margin-top: 8px; letter-spacing: 0.5px; }
+
+    /* Empty / error state */
+    .freq-empty { padding: 24px; text-align: center; color: #7d8590; font-size: 12px; }
+
+    /* Footer */
+    .freq-footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #21262d; display: flex; justify-content: space-between; font-size: 10px; color: #484f58; letter-spacing: 1px; flex-wrap: wrap; gap: 8px; }
+  </style>
+
+  <!-- Vercel Web Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="flex-1">
+    <div class="freq-page">
+
+      <!-- Masthead -->
+      <div class="freq-masthead">
+        <div>
+          <div class="freq-masthead-title" data-i18n="frequency.masthead.title">FREQUENCY ATLAS</div>
+          <div class="freq-masthead-sub" data-i18n="frequency.masthead.sub">5 玩法真实赛果分布 · 2026 在赛 + 2022 全程</div>
+        </div>
+        <div class="freq-masthead-meta">
+          <span data-i18n="frequency.masthead.source">数据来源：竞彩网 sporttery.cn</span><br>
+          <span data-i18n="frequency.masthead.updLabel">更新时间：</span><span id="upd-at">—</span><br>
+          <span class="freq-highlight" data-i18n="frequency.masthead.note">完赛即刷新 · 频率 = 真实命中 / 该玩法已完赛场次</span>
+        </div>
+      </div>
+
+      <!-- 2026: default open -->
+      <div class="freq-year" data-year="2026" data-open="true" role="button" tabindex="0" aria-expanded="true">
+        <div>
+          <div class="freq-year-title" data-i18n="frequency.year2026">2026 美加墨世界杯 · IN PROGRESS</div>
+          <div class="freq-year-meta" id="meta-2026">—</div>
+        </div>
+        <div class="freq-year-caret">▼</div>
+      </div>
+      <div class="freq-year-body" id="body-2026">
+        <div class="freq-empty" data-i18n="frequency.loading">加载中…</div>
+      </div>
+
+      <!-- 2022: default collapsed -->
+      <div class="freq-year" data-year="2022" data-open="false" role="button" tabindex="0" aria-expanded="false">
+        <div>
+          <div class="freq-year-title" data-i18n="frequency.year2022">2022 卡塔尔世界杯 · REFERENCE</div>
+          <div class="freq-year-meta" id="meta-2022">—</div>
+        </div>
+        <div class="freq-year-caret">▼</div>
+      </div>
+      <div class="freq-year-body" id="body-2022">
+        <!-- 折叠时不渲染（首次展开时再注入），保证首屏快 -->
+      </div>
+
+      <div class="freq-footer">
+        <div>WC2026-AI · Data Observatory</div>
+        <div data-i18n="frequency.footer.note">仅世界杯正赛 · 完赛即重新生成</div>
+      </div>
+
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/pages/frequency.js"></script>
+</body>
+</html>

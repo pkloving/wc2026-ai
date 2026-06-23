@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: '/results.html', labelKey: 'nav.results', key: 'results' },
   { href: '/predictions.html', labelKey: 'nav.predictions', key: 'predictions' },
   { href: '/stats.html', labelKey: 'nav.stats', key: 'stats' },
+  { href: '/frequency.html', labelKey: 'nav.frequency', key: 'frequency' },
   { href: '/backtest.html', labelKey: 'nav.backtest', key: 'backtest' },
   { href: '/teams.html', labelKey: 'nav.teams', key: 'teams' },
   { href: '/about.html', labelKey: 'nav.about', key: 'about' },
