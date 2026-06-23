@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040254",
         "match_id": "M044",
         "stage": "group",
         "group": "J",
@@ -59,7 +60,7 @@
         "role": "home",
         "opponent_code": "DZA",
         "opponent_name": "阿尔及利亚",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M071",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

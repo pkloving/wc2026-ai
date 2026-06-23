@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T10:31:16.834Z",
+  "generated_at": "2026-06-23T01:10:30.875Z",
   "play": "bqc",
   "count": 47,
   "rows": [
@@ -1414,7 +1414,7 @@
       "away": "奥地利",
       "kickoff": "2026-06-23 01:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "胜胜": 1.92,
@@ -1441,7 +1441,7 @@
           "负负": 13.5
         }
       },
-      "result": null
+      "result": "胜胜"
     },
     {
       "mid": "2040252",
@@ -1450,7 +1450,7 @@
       "away": "伊拉克",
       "kickoff": "2026-06-23 05:00",
       "handicap": -3,
-      "final_score": null,
+      "final_score": "3:0",
       "initial": {
         "odds": {
           "胜胜": 1.16,
@@ -1477,7 +1477,7 @@
           "负负": 60
         }
       },
-      "result": null
+      "result": "胜胜"
     },
     {
       "mid": "2040253",
@@ -1486,7 +1486,7 @@
       "away": "塞内加尔",
       "kickoff": "2026-06-23 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "odds": {
           "胜胜": 2.93,
@@ -1513,7 +1513,7 @@
           "负负": 6.1
         }
       },
-      "result": null
+      "result": "胜胜"
     },
     {
       "mid": "2040254",

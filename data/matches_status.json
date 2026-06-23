@@ -2419,7 +2419,7 @@
       "home": "阿根廷",
       "away": "奥地利",
       "kickoff": "2026-06-23 01:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.3,
         "draw": 4.3,
@@ -2442,7 +2442,10 @@
         "TTG": true,
         "HAD": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "2-0",
+      "result_file": "results/2040251.json",
+      "is_finished_odds_marked_at": "2026-06-23T01:00:00.000Z"
     },
     {
       "mid": "2040252",
@@ -2451,7 +2454,7 @@
       "home": "法国",
       "away": "伊拉克",
       "kickoff": "2026-06-23 05:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": -3,
       "rqspf": {
@@ -2469,7 +2472,10 @@
         "CRS": true,
         "TTG": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "3-0",
+      "result_file": "results/2040252.json",
+      "is_finished_odds_marked_at": "2026-06-23T01:00:00.000Z"
     },
     {
       "mid": "2040253",
@@ -2478,7 +2484,7 @@
       "home": "挪威",
       "away": "塞内加尔",
       "kickoff": "2026-06-23 08:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.86,
         "draw": 3.48,
@@ -2501,7 +2507,10 @@
         "TTG": true,
         "HAD": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "1-0",
+      "result_file": "results/2040253.json",
+      "is_finished_odds_marked_at": "2026-06-23T01:00:00.000Z"
     },
     {
       "mid": "2040254",

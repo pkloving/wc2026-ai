@@ -452,7 +452,8 @@
     "home": "ARG",
     "away": "AUT",
     "mid": "2040251",
-    "status": "scheduled"
+    "status": "finished",
+    "final_score": "2-0"
   },
   {
     "id": "M042",
@@ -462,7 +463,9 @@
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "FRA",
     "away": "IRQ",
-    "status": "scheduled"
+    "mid": "2040252",
+    "status": "finished",
+    "final_score": "3-0"
   },
   {
     "id": "M043",
@@ -472,7 +475,9 @@
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "NOR",
     "away": "SEN",
-    "status": "scheduled"
+    "mid": "2040253",
+    "status": "finished",
+    "final_score": "1-0"
   },
   {
     "id": "M044",

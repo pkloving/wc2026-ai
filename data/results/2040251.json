@@ -1,0 +1,35 @@
+{
+  "matchId": "2040251",
+  "homeScore": 2,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "ARG",
+      "player": "MESSI",
+      "minute": "38'",
+      "type": "goal",
+      "assist": "Medina"
+    },
+    {
+      "team": "ARG",
+      "player": "MESSI",
+      "minute": "90+4'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_totalGoals": "2",
+  "_hhadResult": "home",
+  "_hhadGoalLine": -1,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 2:0）+ 直播吧/虎扑 6/23 战报（2026-06-23 code review）",
+  "_scorersSource": "直播吧/虎扑 6/23 战报：9' 劳塔罗造点梅西罚失；38' 梅迪纳助攻梅西破门；90+4' 梅西补射梅开二度（个人世界杯 18 球，超越克洛泽 16 球独占历史射手王）"
+}

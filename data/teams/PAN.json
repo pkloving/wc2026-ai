@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040257",
         "match_id": "M047",
         "stage": "group",
         "group": "L",
@@ -59,20 +60,9 @@
         "role": "home",
         "opponent_code": "CRO",
         "opponent_name": "克罗地亚",
-        "status": "scheduled"
-      },
-      {
-        "match_id": "M067",
-        "stage": "group",
-        "group": "L",
-        "date": "2026-06-27T21:00:00Z",
-        "venue": "AT&T Stadium, Arlington, TX",
-        "role": "home",
-        "opponent_code": "ENG",
-        "opponent_name": "英格兰",
-        "status": "scheduled"
+        "status": "on_sale"
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

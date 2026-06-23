@@ -23,13 +23,13 @@
     "stage": "group",
     "standings": {
       "position": 4,
-      "played": 1,
+      "played": 2,
       "win": 0,
       "draw": 0,
-      "lose": 1,
+      "lose": 2,
       "gf": 1,
-      "ga": 4,
-      "gd": -3,
+      "ga": 7,
+      "gd": -6,
       "pts": 0
     },
     "matches": [
@@ -51,6 +51,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040252",
         "match_id": "M042",
         "stage": "group",
         "group": "I",
@@ -59,7 +60,12 @@
         "role": "away",
         "opponent_code": "FRA",
         "opponent_name": "法国",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       },
       {
         "match_id": "M062",
@@ -74,5 +80,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

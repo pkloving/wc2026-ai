@@ -51,6 +51,7 @@
         "result": "win"
       },
       {
+        "mid": "2040258",
         "match_id": "M048",
         "stage": "group",
         "group": "K",
@@ -59,7 +60,7 @@
         "role": "home",
         "opponent_code": "COD",
         "opponent_name": "刚果（金）",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M069",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

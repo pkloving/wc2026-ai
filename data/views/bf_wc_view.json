@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T10:31:16.832Z",
+  "generated_at": "2026-06-23T01:10:30.873Z",
   "play": "bf",
   "count": 48,
   "rows": [
@@ -3330,7 +3330,7 @@
       "away": "奥地利",
       "kickoff": "2026-06-23 01:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "05:00": 55,
@@ -3401,7 +3401,10 @@
           "01:05": 700
         }
       },
-      "result": null
+      "result": {
+        "score": "2:0",
+        "other": null
+      }
     },
     {
       "mid": "2040252",
@@ -3410,7 +3413,7 @@
       "away": "伊拉克",
       "kickoff": "2026-06-23 05:00",
       "handicap": -3,
-      "final_score": null,
+      "final_score": "3:0",
       "initial": {
         "odds": {
           "05:00": 9,
@@ -3481,7 +3484,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "3:0",
+        "other": null
+      }
     },
     {
       "mid": "2040253",
@@ -3490,7 +3496,7 @@
       "away": "塞内加尔",
       "kickoff": "2026-06-23 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "odds": {
           "05:00": 80,
@@ -3561,7 +3567,10 @@
           "01:05": 350
         }
       },
-      "result": null
+      "result": {
+        "score": "1:0",
+        "other": null
+      }
     },
     {
       "mid": "2040254",

@@ -24,15 +24,15 @@
     "group": "I",
     "stage": "group",
     "standings": {
-      "position": 2,
-      "played": 1,
-      "win": 1,
+      "position": 1,
+      "played": 2,
+      "win": 2,
       "draw": 0,
       "lose": 0,
-      "gf": 3,
+      "gf": 6,
       "ga": 1,
-      "gd": 2,
-      "pts": 3
+      "gd": 5,
+      "pts": 6
     },
     "matches": [
       {
@@ -65,6 +65,7 @@
         "result": "win"
       },
       {
+        "mid": "2040252",
         "match_id": "M042",
         "stage": "group",
         "group": "I",
@@ -73,7 +74,12 @@
         "role": "home",
         "opponent_code": "IRQ",
         "opponent_name": "伊拉克",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 3,
+        "score_opp": 0,
+        "half_my": 1,
+        "half_opp": 0,
+        "result": "win"
       },
       {
         "match_id": "M061",
@@ -88,5 +94,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T10:31:16.832Z",
+  "generated_at": "2026-06-23T01:10:30.872Z",
   "play": "rqspf",
   "count": 48,
   "rows": [
@@ -890,7 +890,7 @@
       "away": "奥地利",
       "kickoff": "2026-06-23 01:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "handicap": -1,
         "home": 2.02,
@@ -903,7 +903,7 @@
         "draw": 3.56,
         "away": 2.83
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040252",
@@ -912,7 +912,7 @@
       "away": "伊拉克",
       "kickoff": "2026-06-23 05:00",
       "handicap": -3,
-      "final_score": null,
+      "final_score": "3:0",
       "initial": {
         "handicap": -3,
         "home": 2.35,
@@ -925,7 +925,7 @@
         "draw": 4.3,
         "away": 2.12
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040253",
@@ -934,7 +934,7 @@
       "away": "塞内加尔",
       "kickoff": "2026-06-23 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "handicap": -1,
         "home": 3.57,
@@ -947,7 +947,7 @@
         "draw": 3.78,
         "away": 1.71
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040254",

@@ -54,6 +54,7 @@
         "result": "win"
       },
       {
+        "mid": "2040256",
         "match_id": "M046",
         "stage": "group",
         "group": "L",
@@ -62,20 +63,21 @@
         "role": "home",
         "opponent_code": "GHA",
         "opponent_name": "加纳",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
-        "match_id": "M067",
+        "mid": "2040256",
+        "match_id": "M046",
         "stage": "group",
         "group": "L",
-        "date": "2026-06-27T21:00:00Z",
+        "date": "2026-06-23T20:00:00Z",
         "venue": "AT&T Stadium, Arlington, TX",
-        "role": "away",
-        "opponent_code": "PAN",
-        "opponent_name": "巴拿马",
+        "role": "home",
+        "opponent_code": "GHA",
+        "opponent_name": "加纳",
         "status": "scheduled"
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

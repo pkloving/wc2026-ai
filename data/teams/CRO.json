@@ -53,6 +53,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040257",
         "match_id": "M047",
         "stage": "group",
         "group": "L",
@@ -61,7 +62,7 @@
         "role": "away",
         "opponent_code": "PAN",
         "opponent_name": "巴拿马",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M068",
@@ -76,5 +77,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

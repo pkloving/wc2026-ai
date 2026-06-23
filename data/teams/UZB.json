@@ -66,6 +66,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040255",
         "match_id": "M045",
         "stage": "group",
         "group": "K",
@@ -74,7 +75,7 @@
         "role": "away",
         "opponent_code": "POR",
         "opponent_name": "葡萄牙",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M070",
@@ -89,5 +90,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

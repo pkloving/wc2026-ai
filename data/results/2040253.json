@@ -1,0 +1,28 @@
+{
+  "matchId": "2040253",
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "NOR",
+      "player": "Markus PEDERSEN",
+      "minute": "41'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_totalGoals": "1",
+  "_hhadResult": "home",
+  "_hhadGoalLine": -1,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 1:0）+ 直播吧 6/23 半场+完赛战报（2026-06-23 code review）",
+  "_scorersSource": "直播吧 6/23 战报：13' 吕尔松伤退彼得森替补登场；41' 库利巴利解围失误，彼得森禁区右侧射门弹地入网；哈兰德错失空门中柱；厄德高失单刀"
+}

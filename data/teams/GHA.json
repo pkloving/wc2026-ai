@@ -51,11 +51,24 @@
         "result": "win"
       },
       {
+        "mid": "2040256",
         "match_id": "M046",
         "stage": "group",
         "group": "L",
         "date": "2026-06-23T20:00:00Z",
         "venue": "Estadio BBVA, Monterrey",
+        "role": "away",
+        "opponent_code": "ENG",
+        "opponent_name": "英格兰",
+        "status": "on_sale"
+      },
+      {
+        "mid": "2040256",
+        "match_id": "M046",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-23T20:00:00Z",
+        "venue": "AT&T Stadium, Arlington, TX",
         "role": "away",
         "opponent_code": "ENG",
         "opponent_name": "英格兰",
@@ -74,5 +87,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }

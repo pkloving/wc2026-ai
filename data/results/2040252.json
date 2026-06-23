@@ -1,0 +1,40 @@
+{
+  "matchId": "2040252",
+  "homeScore": 3,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "FRA",
+      "player": "MBAPPÉ",
+      "minute": "14'",
+      "type": "goal"
+    },
+    {
+      "team": "FRA",
+      "player": "MBAPPÉ",
+      "minute": "54'",
+      "type": "goal"
+    },
+    {
+      "team": "FRA",
+      "player": "DEMBÉLÉ",
+      "minute": "66'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": null,
+  "_totalGoals": "3",
+  "_hhadResult": "home",
+  "_hhadGoalLine": -3,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 3:0）+ 央视/直播吧 6/23 战报（2026-06-23 code review）",
+  "_scorersSource": "直播吧/央视 6/23 战报：14' 姆巴佩禁区外世界波；下半场因雷暴中断 2 小时；54' 伊拉克后防失误姆巴佩梅开二度（国家队百场里程碑）；66' 登贝莱低射；奥利塞两助攻"
+}

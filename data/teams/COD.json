@@ -51,6 +51,7 @@
         "result": "draw"
       },
       {
+        "mid": "2040258",
         "match_id": "M048",
         "stage": "group",
         "group": "K",
@@ -59,7 +60,7 @@
         "role": "away",
         "opponent_code": "COL",
         "opponent_name": "哥伦比亚",
-        "status": "scheduled"
+        "status": "on_sale"
       },
       {
         "match_id": "M070",
@@ -74,5 +75,5 @@
       }
     ]
   },
-  "_updated_at": "2026-06-22T10:08:24.266Z"
+  "_updated_at": "2026-06-23T01:09:24.477Z"
 }
