@@ -1,0 +1,42 @@
+{
+  "matchId": "2040254",
+  "homeScore": 1,
+  "awayScore": 2,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "JOR",
+      "player": "NIZAR",
+      "minute": "36'",
+      "type": "goal"
+    },
+    {
+      "team": "ALG",
+      "player": "BENBOUALI",
+      "minute": "56'",
+      "type": "goal",
+      "assist": "Mahrez"
+    },
+    {
+      "team": "ALG",
+      "player": "GOUIRI",
+      "minute": "73'",
+      "type": "goal",
+      "assist": "Mahrez"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "away",
+  "_totalGoals": "3",
+  "_hhadResult": "draw",
+  "_hhadGoalLine": 1,
+  "_hafu": "H:A",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 1:2）+ 直播吧/虎扑 6/23 战报（2026-06-23 code review）",
+  "_scorersSource": "直播吧/虎扑 6/23 战报：上半场第3分钟古伊里禁区内射门击中边网；36' 尼扎尔打破僵局，马赫雷斯两次错失单刀；下半场马赫雷斯两次助攻，56' 本布阿利扳平、73' 古伊里制胜；阿尔及利亚 2-1 逆转约旦，约旦成为本届首支被淘汰的亚洲队；J 组阿根廷锁定头名"
+}

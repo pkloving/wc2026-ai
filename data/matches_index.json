@@ -1,41 +1,9 @@
 {
-  "generated_at": "2026-06-23T04:04:35.520Z",
+  "generated_at": "2026-06-23T07:08:31.553Z",
   "total": 104,
   "by_status": {
     "scheduled": [],
     "on_sale": [
-      {
-        "mid": "2040254",
-        "code": "周一044",
-        "league": "世界杯",
-        "home": "约旦",
-        "away": "阿尔及利亚",
-        "kickoff": "2026-06-23 11:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 6.2,
-          "draw": 4.1,
-          "away": 1.38
-        },
-        "handicap": 1,
-        "rqspf": {
-          "home": 2.54,
-          "draw": 3.35,
-          "away": 2.29
-        },
-        "scraped_at": "2026-06-22T10:30:12.264Z",
-        "sale_status": "在售",
-        "odds_file": "odds/2040254.json",
-        "history_file": "odds_history/2040254.json",
-        "single_supported": {
-          "HHAD": false,
-          "HAFU": true,
-          "CRS": true,
-          "TTG": true,
-          "HAD": false
-        },
-        "is_finished_odds": false
-      },
       {
         "mid": "2040255",
         "code": "周二045",
@@ -2658,6 +2626,41 @@
         "final_score": "1-0",
         "result_file": "results/2040253.json",
         "is_finished_odds_marked_at": "2026-06-23T01:00:00.000Z"
+      },
+      {
+        "mid": "2040254",
+        "code": "周一044",
+        "league": "世界杯",
+        "home": "约旦",
+        "away": "阿尔及利亚",
+        "kickoff": "2026-06-23 11:00",
+        "status": "finished",
+        "spf": {
+          "home": 6.2,
+          "draw": 4.1,
+          "away": 1.38
+        },
+        "handicap": 1,
+        "rqspf": {
+          "home": 2.54,
+          "draw": 3.35,
+          "away": 2.29
+        },
+        "scraped_at": "2026-06-22T10:30:12.264Z",
+        "sale_status": "在售",
+        "odds_file": "odds/2040254.json",
+        "history_file": "odds_history/2040254.json",
+        "single_supported": {
+          "HHAD": false,
+          "HAFU": true,
+          "CRS": true,
+          "TTG": true,
+          "HAD": false
+        },
+        "is_finished_odds": true,
+        "final_score": "1-2",
+        "result_file": "results/2040254.json",
+        "is_finished_odds_marked_at": "2026-06-23T15:00:00.000Z"
       }
     ],
     "cancelled": [],
@@ -5176,7 +5179,7 @@
         "home": "约旦",
         "away": "阿尔及利亚",
         "kickoff": "2026-06-23 11:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 6.2,
           "draw": 4.1,
@@ -5199,7 +5202,10 @@
           "TTG": true,
           "HAD": false
         },
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "final_score": "1-2",
+        "result_file": "results/2040254.json",
+        "is_finished_odds_marked_at": "2026-06-23T15:00:00.000Z"
       },
       {
         "mid": "2040255",
@@ -7888,7 +7894,7 @@
         "home": "约旦",
         "away": "阿尔及利亚",
         "kickoff": "2026-06-23 11:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 6.2,
           "draw": 4.1,
@@ -7911,7 +7917,10 @@
           "TTG": true,
           "HAD": false
         },
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "final_score": "1-2",
+        "result_file": "results/2040254.json",
+        "is_finished_odds_marked_at": "2026-06-23T15:00:00.000Z"
       }
     ],
     "2026-06-24": [
