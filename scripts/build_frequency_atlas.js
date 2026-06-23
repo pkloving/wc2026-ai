@@ -127,17 +127,30 @@ function statBf(rows) {
   return { top, others, total };
 }
 
-// 竞彩 BF 归类: 胜负差 ≥ 3 → 胜其它 / 负其它；平局 ≥ 4:4 → 平其它
+// 竞彩 BF 归类（按「具体比分」的剩余选项划，不按胜负差）
+//   胜其它 = 主胜 且 (主进 ≥ 6 或 比分 ∈ {4:3, 5:3, 5:4})
+//   负其它 = 客胜 且 (客进 ≥ 6 或 比分 ∈ {3:4, 3:5, 4:5})
+//   平其它 = 平局 且 主进 ≥ 4（即 4:4, 5:5, 6:6...）
+//   其它比分都属"具体比分"，留 top 里
 function classifyBfScore(score) {
   const m = /^(\d+):(\d+)$/.exec(score);
   if (!m) return { score, other: null };
   const h = +m[1], a = +m[2];
-  if (h === a) {
-    if (h >= 4) return { score: null, other: '平其它' };
+  if (a > h) {
+    if (a >= 6) return { score: null, other: '负其它' };
+    if ((h === 3 && a === 4) || (h === 3 && a === 5) || (h === 4 && a === 5)) {
+      return { score: null, other: '负其它' };
+    }
     return { score, other: null };
   }
-  if (h - a >= 3) return { score: null, other: '胜其它' };
-  if (a - h >= 3) return { score: null, other: '负其它' };
+  if (h > a) {
+    if (h >= 6) return { score: null, other: '胜其它' };
+    if ((h === 4 && a === 3) || (h === 5 && a === 3) || (h === 5 && a === 4)) {
+      return { score: null, other: '胜其它' };
+    }
+    return { score, other: null };
+  }
+  if (h >= 4) return { score: null, other: '平其它' };
   return { score, other: null };
 }
 
