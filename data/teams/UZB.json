@@ -43,10 +43,7 @@
         "role": "away",
         "opponent_code": "NED",
         "opponent_name": "荷兰",
-        "status": "finished",
-        "score_my": 1,
-        "score_opp": 2,
-        "result": "lose"
+        "status": "finished"
       },
       {
         "mid": "2040185",
@@ -88,7 +85,59 @@
         "opponent_name": "刚果（金）",
         "status": "scheduled"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "high",
+      "pressure_text": "尚未拿分，出线形势严峻，需连胜或至少拿4分才有希望",
+      "position": 4,
+      "points": 0,
+      "played": 1,
+      "remaining_matches": 2,
+      "teams_ahead": 3,
+      "teams_behind": 0,
+      "same_points_teams": 0,
+      "min_points_to_qualify": 4,
+      "next_match": {
+        "match_id": "M045",
+        "mid": null,
+        "date": "2026-06-23T17:00:00Z",
+        "opponent_code": "POR",
+        "opponent_name": "葡萄牙",
+        "opponent_position": 3,
+        "opponent_pts": 1,
+        "venue": "Estadio Akron, Guadalajara",
+        "importance": "critical"
+      }
+    },
+    "knockout_matchup": {
+      "current_position": 4,
+      "points": 0,
+      "goal_diff": -2,
+      "remaining_matches": 2,
+      "diff_to_1st": 3,
+      "diff_to_2nd": 1,
+      "target_position": "全力争前2",
+      "best_case": {
+        "best_possible_position": 1,
+        "best_possible_pts": 6,
+        "scenario": "全胜可积6分，有机会争小组第一"
+      },
+      "worst_case": {
+        "worst_possible_position": 4,
+        "worst_possible_pts": 0,
+        "scenario": "剩余比赛全败将停留在0分，大概率无法出线"
+      },
+      "qualification_chance": "low",
+      "knockout_potential": {
+        "would_play_description": "若以第二出线，1/8决赛可能对阵其他小组第一或成绩较好的第三名，很可能遭遇强敌",
+        "bracket_note": "第二出线的淘汰赛对手通常更强，需做好硬仗准备"
+      },
+      "strategy_notes": [
+        "排名暂时靠后，剩余比赛必须改变策略全力进攻",
+        "可能需要大比分取胜才能靠净胜球竞争出线",
+        "还有2场比赛，足够扭转局面但不能再输"
+      ]
+    }
   },
-  "_updated_at": "2026-06-23T01:09:24.477Z"
+  "_updated_at": "2026-06-23T23:03:03.943Z"
 }

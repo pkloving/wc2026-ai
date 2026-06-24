@@ -1,0 +1,34 @@
+{
+  "matchId": "2040258",
+  "homeScore": 2,
+  "awayScore": 0,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "COL",
+      "player": "VALDERRAMA",
+      "minute": "15'",
+      "type": "goal"
+    },
+    {
+      "team": "COL",
+      "player": "JAMES",
+      "minute": "67'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_totalGoals": "2",
+  "_hhadResult": "home",
+  "_hhadGoalLine": -1,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 2:0） + 直播吧/虎扑 6/24 战报（2026-06-24 code review）",
+  "_scorersSource": "直播吧/虎扑 6/24 战报：15' 巴尔德拉马首开纪录；67' 哈梅斯扩大比分"
+}

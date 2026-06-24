@@ -62,7 +62,59 @@
         "opponent_name": "克罗地亚",
         "status": "on_sale"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "high",
+      "pressure_text": "尚未拿分，出线形势严峻，需连胜或至少拿4分才有希望",
+      "position": 3,
+      "points": 0,
+      "played": 1,
+      "remaining_matches": 2,
+      "teams_ahead": 2,
+      "teams_behind": 0,
+      "same_points_teams": 1,
+      "min_points_to_qualify": 4,
+      "next_match": {
+        "match_id": "M047",
+        "mid": null,
+        "date": "2026-06-23T23:00:00Z",
+        "opponent_code": "CRO",
+        "opponent_name": "克罗地亚",
+        "opponent_position": 4,
+        "opponent_pts": 0,
+        "venue": "BMO Field, Toronto",
+        "importance": "critical"
+      }
+    },
+    "knockout_matchup": {
+      "current_position": 3,
+      "points": 0,
+      "goal_diff": -1,
+      "remaining_matches": 2,
+      "diff_to_1st": 3,
+      "diff_to_2nd": 3,
+      "target_position": "争前2保3",
+      "best_case": {
+        "best_possible_position": 1,
+        "best_possible_pts": 6,
+        "scenario": "全胜可积6分，有机会争小组第一"
+      },
+      "worst_case": {
+        "worst_possible_position": 4,
+        "worst_possible_pts": 0,
+        "scenario": "剩余比赛全败将停留在0分，大概率无法出线"
+      },
+      "qualification_chance": "low",
+      "knockout_potential": {
+        "would_play_description": "若以最好的8个第三名之一出线，将对阵其他组第一，大概率是硬仗，但爆冷机会也存在",
+        "bracket_note": "第三名晋级通常需在首轮对阵强队"
+      },
+      "strategy_notes": [
+        "排名第三，处于晋级边缘，必须全力争取前2或最佳第三名资格",
+        "净胜球可能成为决定性因素，不应保守",
+        "还有2场比赛，足够扭转局面但不能再输"
+      ]
+    }
   },
-  "_updated_at": "2026-06-23T01:09:24.477Z"
+  "_updated_at": "2026-06-23T23:03:03.930Z"
 }

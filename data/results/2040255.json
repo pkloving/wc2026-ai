@@ -1,0 +1,46 @@
+{
+  "matchId": "2040255",
+  "homeScore": 3,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "POR",
+      "player": "RONALDO",
+      "minute": "28'",
+      "type": "goal"
+    },
+    {
+      "team": "POR",
+      "player": "FELIX",
+      "minute": "55'",
+      "type": "goal"
+    },
+    {
+      "team": "UZB",
+      "player": "SHOMURODOV",
+      "minute": "72'",
+      "type": "goal"
+    },
+    {
+      "team": "POR",
+      "player": "LEAO",
+      "minute": "88'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": null,
+  "_totalGoals": "4",
+  "_hhadResult": "home",
+  "_hhadGoalLine": -2,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 3:1） + 直播吧/虎扑 6/24 战报（2026-06-24 code review）",
+  "_scorersSource": "直播吧/虎扑 6/24 战报：28' C罗禁区内头球破门；55' 菲利克斯远射扩大比分；72' 绍穆罗多夫为乌兹别克扳回一城；88' 莱奥补射锁定胜局"
+}

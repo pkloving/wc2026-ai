@@ -488,7 +488,7 @@
     "home": "JOR",
     "away": "DZA",
     "mid": "2040254",
-    "status": "scheduled"
+    "status": "finished"
   },
   {
     "id": "M045",
@@ -498,7 +498,9 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "POR",
     "away": "UZB",
-    "status": "scheduled"
+    "mid": "2040255",
+    "status": "finished",
+    "final_score": "3-1"
   },
   {
     "id": "M046",
@@ -508,7 +510,9 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "ENG",
     "away": "GHA",
-    "status": "scheduled"
+    "mid": "2040256",
+    "status": "finished",
+    "final_score": "2-1"
   },
   {
     "id": "M047",
@@ -518,7 +522,9 @@
     "venue": "BMO Field, Toronto",
     "home": "PAN",
     "away": "CRO",
-    "status": "scheduled"
+    "mid": "2040257",
+    "status": "finished",
+    "final_score": "0-2"
   },
   {
     "id": "M048",
@@ -529,7 +535,8 @@
     "home": "COL",
     "away": "COD",
     "mid": "2040258",
-    "status": "scheduled"
+    "status": "finished",
+    "final_score": "2-0"
   },
   {
     "id": "M049",
@@ -709,17 +716,6 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "EGY",
     "away": "IRN",
-    "status": "scheduled"
-  },
-  {
-    "id": "M046",
-    "stage": "group",
-    "group": "L",
-    "date": "2026-06-23T20:00:00Z",
-    "venue": "AT&T Stadium, Arlington, TX",
-    "home": "ENG",
-    "away": "GHA",
-    "mid": "2040256",
     "status": "scheduled"
   },
   {

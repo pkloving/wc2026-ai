@@ -42,6 +42,23 @@ try {
   process.stderr.write(`⚠️  build_settled 调用失败：${e.message}\n`);
 }
 
+// ============== 入口前更新球队晋级压力分析 ==============
+// 基于最新的 groups.json 积分榜，重新计算每队的晋级压力 + 淘汰赛对位
+// 第二轮及以后尤为重要：积分形势 → 战意 → 影响比赛类型判断(BIG_BALL/NORMAL/WEAK_MATCH)
+// 失败不阻塞建模（仅 warning）
+try {
+  const r = spawnSync('node', [path.join(PROJECT_ROOT, 'scripts', 'update_teams_qualification.js')], {
+    cwd: PROJECT_ROOT, encoding: 'utf-8', timeout: 30_000,
+  });
+  if (r.status === 0) {
+    process.stdout.write(r.stdout || '');
+  } else {
+    process.stderr.write(`⚠️  update_teams_qualification 退出码 ${r.status}：${r.stderr || ''}\n`);
+  }
+} catch (e) {
+  process.stderr.write(`⚠️  update_teams_qualification 调用失败：${e.message}\n`);
+}
+
 // ============== 入口前按玩法维度拆视图文件 ==============
 // 把 settled_matches 拆成 data/views/{spf,rqspf,bf,zjq,bqc}_view.json
 // 方便手工 query / 验证 / 调试 (避免每次都走大源文件)

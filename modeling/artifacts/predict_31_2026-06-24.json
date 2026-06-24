@@ -4,56 +4,12 @@
   "picker": {
     "cat1": {
       "matches": [
-        "周一043",
-        "周一041",
-        "周一042",
         "周二046",
-        "周二045",
         "周二048",
-        "周二047",
-        "周一044"
+        "周二045",
+        "周二047"
       ],
       "tickets": [
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            }
-          ],
-          "odds": 4.38,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            }
-          ],
-          "odds": 4.59,
-          "stake": 1
-        },
         {
           "legs": [
             {
@@ -77,119 +33,11 @@
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
               "code": "周二046",
               "match": "英格兰vs加纳",
               "d": "away",
               "label": "让负",
               "odds": 2.17
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 9.95,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 10.41,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 11.18,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.28
-            }
-          ],
-          "odds": 9.99,
-          "stake": 2
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
             },
             {
               "code": "周二048",
@@ -206,8 +54,8 @@
               "odds": 2.28
             }
           ],
-          "odds": 10.45,
-          "stake": 2
+          "odds": 11.23,
+          "stake": 10
         },
         {
           "legs": [
@@ -241,46 +89,6 @@
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            }
-          ],
-          "odds": 4.38,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            }
-          ],
-          "odds": 4.59,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
               "code": "周二046",
               "match": "英格兰vs加纳",
               "d": "away",
@@ -303,119 +111,11 @@
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
               "code": "周二046",
               "match": "英格兰vs加纳",
               "d": "away",
               "label": "让负",
               "odds": 2.17
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 9.95,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 10.41,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            },
-            {
-              "code": "周二048",
-              "match": "哥伦比亚vs刚果(金)",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.27
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
-            }
-          ],
-          "odds": 11.18,
-          "stake": 10
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
-            },
-            {
-              "code": "周二046",
-              "match": "英格兰vs加纳",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.17
-            },
-            {
-              "code": "周二045",
-              "match": "葡萄牙vs乌兹别克斯坦",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.28
-            }
-          ],
-          "odds": 9.99,
-          "stake": 2
-        },
-        {
-          "legs": [
-            {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.02
             },
             {
               "code": "周二048",
@@ -432,8 +132,8 @@
               "odds": 2.28
             }
           ],
-          "odds": 10.45,
-          "stake": 2
+          "odds": 11.23,
+          "stake": 10
         },
         {
           "legs": [
@@ -466,23 +166,23 @@
       "parlay4": null,
       "legMode": "atomic",
       "stake": 1,
-      "slimCount": 4,
-      "dualCount": 4
+      "slimCount": 3,
+      "dualCount": 1
     },
     "cat2": {
       "matches": [
-        "周一041",
+        "周二045",
         "周二048",
-        "周一043"
+        "周二047"
       ],
       "tickets": [
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "3:1",
-              "odds": 8.5
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "4:1",
+              "odds": 14
             },
             {
               "code": "周二048",
@@ -491,22 +191,22 @@
               "odds": 9
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
-              "score": "2:1",
-              "odds": 6.6
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
+              "score": "1:3",
+              "odds": 10
             }
           ],
-          "odds": 504.9,
+          "odds": 1260,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "3:1",
-              "odds": 8.5
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "4:1",
+              "odds": 14
             },
             {
               "code": "周二048",
@@ -515,22 +215,22 @@
               "odds": 9
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
               "score": "2:2",
-              "odds": 10
+              "odds": 18
             }
           ],
-          "odds": 765,
+          "odds": 2268,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "3:1",
-              "odds": 8.5
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "4:1",
+              "odds": 14
             },
             {
               "code": "周二048",
@@ -539,22 +239,22 @@
               "odds": 10
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
-              "score": "2:1",
-              "odds": 6.6
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
+              "score": "1:3",
+              "odds": 10
             }
           ],
-          "odds": 561,
+          "odds": 1400,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "3:1",
-              "odds": 8.5
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "4:1",
+              "odds": 14
             },
             {
               "code": "周二048",
@@ -563,22 +263,22 @@
               "odds": 10
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
               "score": "2:2",
-              "odds": 10
+              "odds": 18
             }
           ],
-          "odds": 850,
+          "odds": 2520,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "0:0",
-              "odds": 13
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "5:0",
+              "odds": 17
             },
             {
               "code": "周二048",
@@ -587,22 +287,22 @@
               "odds": 9
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
-              "score": "2:1",
-              "odds": 6.6
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
+              "score": "1:3",
+              "odds": 10
             }
           ],
-          "odds": 772.2,
+          "odds": 1530,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "0:0",
-              "odds": 13
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "5:0",
+              "odds": 17
             },
             {
               "code": "周二048",
@@ -611,22 +311,22 @@
               "odds": 9
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
               "score": "2:2",
-              "odds": 10
+              "odds": 18
             }
           ],
-          "odds": 1170,
+          "odds": 2754,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "0:0",
-              "odds": 13
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "5:0",
+              "odds": 17
             },
             {
               "code": "周二048",
@@ -635,22 +335,22 @@
               "odds": 10
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
-              "score": "2:1",
-              "odds": 6.6
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
+              "score": "1:3",
+              "odds": 10
             }
           ],
-          "odds": 858,
+          "odds": 1700,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周一041",
-              "match": "阿根廷vs奥地利",
-              "score": "0:0",
-              "odds": 13
+              "code": "周二045",
+              "match": "葡萄牙vs乌兹别克斯坦",
+              "score": "5:0",
+              "odds": 17
             },
             {
               "code": "周二048",
@@ -659,24 +359,18 @@
               "odds": 10
             },
             {
-              "code": "周一043",
-              "match": "挪威vs塞内加尔",
+              "code": "周二047",
+              "match": "巴拿马vs克罗地亚",
               "score": "2:2",
-              "odds": 10
+              "odds": 18
             }
           ],
-          "odds": 1300,
+          "odds": 3060,
           "stake": 1
         }
       ]
     },
     "cat3": [
-      {
-        "code": "周二045",
-        "match": "葡萄牙vs乌兹别克斯坦",
-        "score": "4:2",
-        "odds": 45
-      },
       {
         "code": "周二046",
         "match": "英格兰vs加纳",
@@ -684,40 +378,10 @@
         "odds": 50
       },
       {
-        "code": "周二047",
-        "match": "巴拿马vs克罗地亚",
-        "score": "2:0",
-        "odds": 32
-      },
-      {
         "code": "周二048",
         "match": "哥伦比亚vs刚果(金)",
         "score": "4:1",
         "odds": 20
-      },
-      {
-        "code": "周一041",
-        "match": "阿根廷vs奥地利",
-        "score": "4:1",
-        "odds": 22
-      },
-      {
-        "code": "周一042",
-        "match": "法国vs伊拉克",
-        "score": "4:2",
-        "odds": 55
-      },
-      {
-        "code": "周一043",
-        "match": "挪威vs塞内加尔",
-        "score": "4:1",
-        "odds": 31
-      },
-      {
-        "code": "周一044",
-        "match": "约旦vs阿尔及利亚",
-        "score": "2:0",
-        "odds": 33
       }
     ],
     "cat4": [
@@ -731,9 +395,9 @@
           "2": 3.15
         },
         "rule": {
-          "name": "NORMAL+2球纠偏(主流盘)",
-          "roi": "+54%",
-          "n": 10
+          "name": "晋级信号:高压力NORMAL→2球",
+          "roi": "见晋级分析",
+          "n": 0
         }
       }
     ],
@@ -750,9 +414,9 @@
           "平平": 10.5
         },
         "rule": {
-          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-          "roi": "-32%",
-          "n": 4
+          "name": "BIG_BALL+胜胜纠偏(胜胜+平平)",
+          "roi": "+537%",
+          "n": 2
         }
       },
       {
@@ -765,23 +429,6 @@
         "oddsMap": {
           "胜胜": 1.45,
           "平平": 9.5
-        },
-        "rule": {
-          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-          "roi": "-32%",
-          "n": 4
-        }
-      },
-      {
-        "code": "周一042",
-        "match": "法国vs伊拉克",
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "oddsMap": {
-          "胜胜": 1.16,
-          "平平": 19
         },
         "rule": {
           "name": "NORMAL+胜胜纠偏(胜胜+平平)",
@@ -803,19 +450,19 @@
         "away": 2.27
       },
       "primary": {
-        "d": "away",
-        "odds": 2.27,
-        "label": "让负"
-      },
-      "secondary": {
         "d": "home",
         "odds": 2.28,
         "label": "让胜"
       },
+      "secondary": {
+        "d": "away",
+        "odds": 2.27,
+        "label": "让负"
+      },
       "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
+        "name": "⭐晋级:主队需抢分→让胜",
+        "roi": "(动态)",
+        "n": 0
       }
     },
     {
@@ -895,110 +542,6 @@
         "roi": "+19.5%",
         "n": 20
       }
-    },
-    {
-      "code": "周一041",
-      "mid": "2040251",
-      "match": "阿根廷vs奥地利",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 2.02,
-        "draw": 3.56,
-        "away": 2.83
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.02,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "away",
-        "odds": 2.83,
-        "label": "让负"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周一042",
-      "mid": "2040252",
-      "match": "法国vs伊拉克",
-      "handicap": -3,
-      "rqspf_odds": {
-        "home": 2.35,
-        "draw": 4.3,
-        "away": 2.12
-      },
-      "primary": {
-        "d": "away",
-        "odds": 2.12,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "home",
-        "odds": 2.35,
-        "label": "让胜"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周一043",
-      "mid": "2040253",
-      "match": "挪威vs塞内加尔",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 3.57,
-        "draw": 3.78,
-        "away": 1.71
-      },
-      "primary": {
-        "d": "away",
-        "odds": 1.71,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "home",
-        "odds": 3.57,
-        "label": "让胜"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周一044",
-      "mid": "2040254",
-      "match": "约旦vs阿尔及利亚",
-      "handicap": 1,
-      "rqspf_odds": {
-        "home": 2.54,
-        "draw": 3.35,
-        "away": 2.29
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.54,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "draw",
-        "odds": 3.35,
-        "label": "让平"
-      },
-      "rule": {
-        "name": "主受让+1主+平双选",
-        "roi": "+11.6%",
-        "n": 6
-      }
     }
   ],
   "zjq_follow": [
@@ -1007,15 +550,27 @@
       "mid": "2040255",
       "match": "葡萄牙vs乌兹别克斯坦",
       "handicap": -2,
-      "corrected": null,
+      "corrected": {
+        "picks": [
+          "0",
+          "1",
+          "2"
+        ],
+        "odds": {
+          "0": 19,
+          "1": 6.25,
+          "2": 4.1
+        },
+        "cost": 3
+      },
       "coldPick": "0",
-      "stable": "4",
+      "stable": "0+1+2",
       "coldOdds": 19,
-      "stableOdds": 4.5,
+      "stableOdds": 9.783333333333333,
       "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
+        "name": "BIG_BALL+0+1+2(反市场冷门)",
+        "roi": "+205%",
+        "n": 5
       }
     },
     {
@@ -1057,8 +612,8 @@
       "coldOdds": 27,
       "stableOdds": 6.7,
       "rule": {
-        "name": "WEAK_MATCH+0+1+2",
-        "roi": "+10%",
+        "name": "BIG_BALL+0+1+2(反市场冷门)",
+        "roi": "+205%",
         "n": 5
       }
     },
@@ -1076,85 +631,9 @@
       "coldOdds": 30,
       "stableOdds": 3.15,
       "rule": {
-        "name": "NORMAL+2球纠偏(主流盘)",
-        "roi": "+54%",
-        "n": 10
-      }
-    },
-    {
-      "code": "周一041",
-      "mid": "2040251",
-      "match": "阿根廷vs奥地利",
-      "handicap": -1,
-      "corrected": null,
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 29,
-      "stableOdds": 3.55,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周一042",
-      "mid": "2040252",
-      "match": "法国vs伊拉克",
-      "handicap": -3,
-      "corrected": null,
-      "coldPick": "0",
-      "stable": "4",
-      "coldOdds": 34,
-      "stableOdds": 3.85,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周一043",
-      "mid": "2040253",
-      "match": "挪威vs塞内加尔",
-      "handicap": -1,
-      "corrected": null,
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 26,
-      "stableOdds": 3.55,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周一044",
-      "mid": "2040254",
-      "match": "约旦vs阿尔及利亚",
-      "handicap": 1,
-      "corrected": {
-        "picks": [
-          "0",
-          "1",
-          "2"
-        ],
-        "odds": {
-          "0": 10.5,
-          "1": 4.2,
-          "2": 3.25
-        },
-        "cost": 3
-      },
-      "coldPick": "7+",
-      "stable": "0+1+2",
-      "coldOdds": 32,
-      "stableOdds": 5.983333333333333,
-      "rule": {
-        "name": "WEAK_MATCH+0+1+2",
-        "roi": "+10%",
-        "n": 5
+        "name": "晋级信号:高压力NORMAL→2球",
+        "roi": "见晋级分析",
+        "n": 0
       }
     }
   ],
@@ -1189,9 +668,9 @@
         }
       ],
       "rule": {
-        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-        "roi": "-32%",
-        "n": 4
+        "name": "BIG_BALL+胜胜纠偏(胜胜+平平)",
+        "roi": "+537%",
+        "n": 2
       }
     },
     {
@@ -1278,116 +757,6 @@
         "roi": "-10%",
         "n": 26
       }
-    },
-    {
-      "code": "周一041",
-      "mid": "2040251",
-      "match": "阿根廷vs奥地利",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 1.92
-        },
-        {
-          "key": "平胜",
-          "odds": 3.8
-        },
-        {
-          "key": "平平",
-          "odds": 6.55
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周一042",
-      "mid": "2040252",
-      "match": "法国vs伊拉克",
-      "corrected": {
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "odds": {
-          "胜胜": 1.16,
-          "平平": 19
-        },
-        "cost": 2
-      },
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 1.16
-        },
-        {
-          "key": "平胜",
-          "odds": 4.6
-        },
-        {
-          "key": "平平",
-          "odds": 19
-        }
-      ],
-      "rule": {
-        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-        "roi": "-32%",
-        "n": 4
-      }
-    },
-    {
-      "code": "周一043",
-      "mid": "2040253",
-      "match": "挪威vs塞内加尔",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 2.93
-        },
-        {
-          "key": "平胜",
-          "odds": 4.8
-        },
-        {
-          "key": "平平",
-          "odds": 5.3
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周一044",
-      "mid": "2040254",
-      "match": "约旦vs阿尔及利亚",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "负负",
-          "odds": 2.05
-        },
-        {
-          "key": "平负",
-          "odds": 3.85
-        },
-        {
-          "key": "平平",
-          "odds": 6.15
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
     }
   ],
   "matches": [
@@ -1398,7 +767,7 @@
       "home": "葡萄牙",
       "away": "乌兹别克斯坦",
       "kickoff": "2026-06-24 01:00",
-      "type": "NORMAL",
+      "type": "BIG_BALL",
       "handicap": -2,
       "spf": null,
       "rqspf": {
@@ -1408,19 +777,28 @@
       },
       "mainPicks": [
         {
-          "score": "1:1",
-          "odds": 12
+          "score": "4:0",
+          "odds": 9
         },
         {
-          "score": "2:1",
-          "odds": 8.5
+          "score": "4:1",
+          "odds": 14
         },
         {
-          "score": "2:0",
-          "odds": 5.7
+          "score": "5:0",
+          "odds": 17
         }
       ],
-      "singleBets": []
+      "singleBets": [
+        {
+          "score": "0:1",
+          "odds": 30
+        },
+        {
+          "score": "1:2",
+          "odds": 40
+        }
+      ]
     },
     {
       "code": "周二046",
@@ -1460,7 +838,7 @@
       "home": "巴拿马",
       "away": "克罗地亚",
       "kickoff": "2026-06-24 07:00",
-      "type": "WEAK_MATCH",
+      "type": "BIG_BALL",
       "handicap": 1,
       "spf": {
         "home": 6.38,
@@ -1474,19 +852,28 @@
       },
       "mainPicks": [
         {
-          "score": "0:4",
-          "odds": 20
+          "score": "1:3",
+          "odds": 10
         },
         {
           "score": "2:2",
           "odds": 18
         },
         {
-          "score": "2:0",
-          "odds": 32
+          "score": "1:2",
+          "odds": 6
         }
       ],
-      "singleBets": []
+      "singleBets": [
+        {
+          "score": "2:0",
+          "odds": 32
+        },
+        {
+          "score": "3:2",
+          "odds": 60
+        }
+      ]
     },
     {
       "code": "周二048",
@@ -1522,169 +909,14 @@
         }
       ],
       "singleBets": []
-    },
-    {
-      "code": "周一041",
-      "mid": "2040251",
-      "match": "阿根廷vs奥地利",
-      "home": "阿根廷",
-      "away": "奥地利",
-      "kickoff": "2026-06-23 01:00",
-      "type": "NORMAL",
-      "handicap": -1,
-      "spf": {
-        "home": 1.3,
-        "draw": 4.3,
-        "away": 7.85
-      },
-      "rqspf": {
-        "home": 2.02,
-        "draw": 3.56,
-        "away": 2.83
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 7.8
-        },
-        {
-          "score": "3:1",
-          "odds": 8.5
-        },
-        {
-          "score": "0:0",
-          "odds": 13
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周一042",
-      "mid": "2040252",
-      "match": "法国vs伊拉克",
-      "home": "法国",
-      "away": "伊拉克",
-      "kickoff": "2026-06-23 05:00",
-      "type": "NORMAL",
-      "handicap": -3,
-      "spf": null,
-      "rqspf": {
-        "home": 2.35,
-        "draw": 4.3,
-        "away": 2.12
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 22
-        },
-        {
-          "score": "3:1",
-          "odds": 10
-        },
-        {
-          "score": "3:0",
-          "odds": 5
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周一043",
-      "mid": "2040253",
-      "match": "挪威vs塞内加尔",
-      "home": "挪威",
-      "away": "塞内加尔",
-      "kickoff": "2026-06-23 08:00",
-      "type": "NORMAL",
-      "handicap": -1,
-      "spf": {
-        "home": 1.86,
-        "draw": 3.48,
-        "away": 3.28
-      },
-      "rqspf": {
-        "home": 3.57,
-        "draw": 3.78,
-        "away": 1.71
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 6.5
-        },
-        {
-          "score": "2:2",
-          "odds": 10
-        },
-        {
-          "score": "2:1",
-          "odds": 6.6
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周一044",
-      "mid": "2040254",
-      "match": "约旦vs阿尔及利亚",
-      "home": "约旦",
-      "away": "阿尔及利亚",
-      "kickoff": "2026-06-23 11:00",
-      "type": "WEAK_MATCH",
-      "handicap": 1,
-      "spf": {
-        "home": 6.2,
-        "draw": 4.1,
-        "away": 1.38
-      },
-      "rqspf": {
-        "home": 2.54,
-        "draw": 3.35,
-        "away": 2.29
-      },
-      "mainPicks": [
-        {
-          "score": "0:4",
-          "odds": 23
-        },
-        {
-          "score": "2:1",
-          "odds": 20
-        },
-        {
-          "score": "2:0",
-          "odds": 33
-        }
-      ],
-      "singleBets": []
     }
   ],
   "combos": {
     "c2": [
       {
         "matches": [
-          "周二045",
-          "周一042"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          }
-        ],
-        "odds": 28.5
-      },
-      {
-        "matches": [
           "周二046",
-          "周一042"
+          "周二047"
         ],
         "picks": [
           {
@@ -1693,12 +925,69 @@
             "odds": 5.7
           },
           {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
           }
         ],
-        "odds": 28.5
+        "odds": 34.2
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:0",
+            "odds": 5.7
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "1:1",
+            "odds": 7
+          }
+        ],
+        "odds": 39.9
+      },
+      {
+        "matches": [
+          "周二047",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "1:1",
+            "odds": 7
+          }
+        ],
+        "odds": 42
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二047"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:1",
+            "odds": 8.5
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 51
       },
       {
         "matches": [
@@ -1708,8 +997,8 @@
         "picks": [
           {
             "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
+            "score": "4:0",
+            "odds": 9
           },
           {
             "match": "英格兰vs加纳",
@@ -1717,198 +1006,110 @@
             "odds": 5.7
           }
         ],
-        "odds": 32.49
+        "odds": 51.3
       },
       {
         "matches": [
-          "周一042",
-          "周一043"
+          "周二046",
+          "周二048"
         ],
         "picks": [
           {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
+            "match": "英格兰vs加纳",
+            "score": "2:0",
+            "odds": 5.7
           },
           {
-            "match": "挪威vs塞内加尔",
-            "score": "1:1",
-            "odds": 6.5
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "3:0",
+            "odds": 9
           }
         ],
-        "odds": 32.5
+        "odds": 51.3
       },
       {
         "matches": [
-          "周一042",
-          "周一043"
+          "周二045",
+          "周二047"
         ],
         "picks": [
           {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
+            "match": "葡萄牙vs乌兹别克斯坦",
+            "score": "4:0",
+            "odds": 9
           },
           {
-            "match": "挪威vs塞内加尔",
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 54
+      },
+      {
+        "matches": [
+          "周二047",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "3:0",
+            "odds": 9
+          }
+        ],
+        "odds": 54
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二047"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:0",
+            "odds": 5.7
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:3",
+            "odds": 10
+          }
+        ],
+        "odds": 57
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
             "score": "2:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 33
-      },
-      {
-        "matches": [
-          "周二048",
-          "周一042"
-        ],
-        "picks": [
+            "odds": 8.5
+          },
           {
             "match": "哥伦比亚vs刚果(金)",
             "score": "1:1",
             "odds": 7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
           }
         ],
-        "odds": 35
-      },
-      {
-        "matches": [
-          "周二045",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "1:1",
-            "odds": 6.5
-          }
-        ],
-        "odds": 37.05
-      },
-      {
-        "matches": [
-          "周二046",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "英格兰vs加纳",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "1:1",
-            "odds": 6.5
-          }
-        ],
-        "odds": 37.05
-      },
-      {
-        "matches": [
-          "周二045",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "2:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 37.62
-      },
-      {
-        "matches": [
-          "周二046",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "英格兰vs加纳",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "2:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 37.62
+        "odds": 59.5
       }
     ],
     "c3": [
       {
         "matches": [
-          "周二045",
           "周二046",
-          "周一042"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "英格兰vs加纳",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          }
-        ],
-        "odds": 162.45
-      },
-      {
-        "matches": [
-          "周二045",
-          "周一042",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "1:1",
-            "odds": 6.5
-          }
-        ],
-        "odds": 185.25
-      },
-      {
-        "matches": [
-          "周二046",
-          "周一042",
-          "周一043"
+          "周二047",
+          "周二048"
         ],
         "picks": [
           {
@@ -1917,100 +1118,105 @@
             "odds": 5.7
           },
           {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "1:1",
-            "odds": 6.5
-          }
-        ],
-        "odds": 185.25
-      },
-      {
-        "matches": [
-          "周二045",
-          "周一042",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "2:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 188.1
-      },
-      {
-        "matches": [
-          "周二046",
-          "周一042",
-          "周一043"
-        ],
-        "picks": [
-          {
-            "match": "英格兰vs加纳",
-            "score": "2:0",
-            "odds": 5.7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
-          },
-          {
-            "match": "挪威vs塞内加尔",
-            "score": "2:1",
-            "odds": 6.6
-          }
-        ],
-        "odds": 188.1
-      },
-      {
-        "matches": [
-          "周二045",
-          "周二048",
-          "周一042"
-        ],
-        "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
           },
           {
             "match": "哥伦比亚vs刚果(金)",
             "score": "1:1",
             "odds": 7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
           }
         ],
-        "odds": 199.5
+        "odds": 239.4
+      },
+      {
+        "matches": [
+          "周二045",
+          "周二046",
+          "周二047"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs乌兹别克斯坦",
+            "score": "4:0",
+            "odds": 9
+          },
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:0",
+            "odds": 5.7
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 307.8
       },
       {
         "matches": [
           "周二046",
-          "周二048",
-          "周一042"
+          "周二047",
+          "周二048"
         ],
         "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:0",
+            "odds": 5.7
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "3:0",
+            "odds": 9
+          }
+        ],
+        "odds": 307.8
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二047",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:1",
+            "odds": 8.5
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "1:1",
+            "odds": 7
+          }
+        ],
+        "odds": 357
+      },
+      {
+        "matches": [
+          "周二045",
+          "周二046",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs乌兹别克斯坦",
+            "score": "4:0",
+            "odds": 9
+          },
           {
             "match": "英格兰vs加纳",
             "score": "2:0",
@@ -2020,89 +1226,134 @@
             "match": "哥伦比亚vs刚果(金)",
             "score": "1:1",
             "odds": 7
-          },
-          {
-            "match": "法国vs伊拉克",
-            "score": "3:0",
-            "odds": 5
           }
         ],
-        "odds": 199.5
+        "odds": 359.1
       },
       {
         "matches": [
           "周二045",
-          "周二046",
-          "周一043"
+          "周二047",
+          "周二048"
         ],
         "picks": [
           {
             "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
+            "score": "4:0",
+            "odds": 9
           },
           {
-            "match": "英格兰vs加纳",
-            "score": "2:0",
-            "odds": 5.7
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
           },
           {
-            "match": "挪威vs塞内加尔",
+            "match": "哥伦比亚vs刚果(金)",
             "score": "1:1",
-            "odds": 6.5
+            "odds": 7
           }
         ],
-        "odds": 211.19
+        "odds": 378
       },
       {
         "matches": [
-          "周二045",
           "周二046",
-          "周一043"
+          "周二047",
+          "周二048"
         ],
         "picks": [
-          {
-            "match": "葡萄牙vs乌兹别克斯坦",
-            "score": "2:0",
-            "odds": 5.7
-          },
           {
             "match": "英格兰vs加纳",
             "score": "2:0",
             "odds": 5.7
           },
           {
-            "match": "挪威vs塞内加尔",
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:3",
+            "odds": 10
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "1:1",
+            "odds": 7
+          }
+        ],
+        "odds": 399
+      },
+      {
+        "matches": [
+          "周二045",
+          "周二046",
+          "周二047"
+        ],
+        "picks": [
+          {
+            "match": "葡萄牙vs乌兹别克斯坦",
+            "score": "4:0",
+            "odds": 9
+          },
+          {
+            "match": "英格兰vs加纳",
             "score": "2:1",
-            "odds": 6.6
+            "odds": 8.5
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
           }
         ],
-        "odds": 214.43
+        "odds": 459
+      },
+      {
+        "matches": [
+          "周二046",
+          "周二047",
+          "周二048"
+        ],
+        "picks": [
+          {
+            "match": "英格兰vs加纳",
+            "score": "2:1",
+            "odds": 8.5
+          },
+          {
+            "match": "巴拿马vs克罗地亚",
+            "score": "1:2",
+            "odds": 6
+          },
+          {
+            "match": "哥伦比亚vs刚果(金)",
+            "score": "3:0",
+            "odds": 9
+          }
+        ],
+        "odds": 459
       },
       {
         "matches": [
           "周二045",
-          "周一041",
-          "周一042"
+          "周二046",
+          "周二048"
         ],
         "picks": [
           {
             "match": "葡萄牙vs乌兹别克斯坦",
+            "score": "4:0",
+            "odds": 9
+          },
+          {
+            "match": "英格兰vs加纳",
             "score": "2:0",
             "odds": 5.7
           },
           {
-            "match": "阿根廷vs奥地利",
-            "score": "1:1",
-            "odds": 7.8
-          },
-          {
-            "match": "法国vs伊拉克",
+            "match": "哥伦比亚vs刚果(金)",
             "score": "3:0",
-            "odds": 5
+            "odds": 9
           }
         ],
-        "odds": 222.3
+        "odds": 461.7
       }
     ]
   }

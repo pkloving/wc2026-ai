@@ -73,7 +73,59 @@
         "opponent_name": "葡萄牙",
         "status": "scheduled"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "medium",
+      "pressure_text": "3分处于晋级边缘，下一场比赛至关重要，需争取不败",
+      "position": 1,
+      "points": 3,
+      "played": 1,
+      "remaining_matches": 2,
+      "teams_ahead": 0,
+      "teams_behind": 3,
+      "same_points_teams": 0,
+      "min_points_to_qualify": 1,
+      "next_match": {
+        "match_id": "M048",
+        "mid": "2040258",
+        "date": "2026-06-24T02:00:00Z",
+        "opponent_code": "COD",
+        "opponent_name": "刚果（金）",
+        "opponent_position": 2,
+        "opponent_pts": 1,
+        "venue": "BC Place, Vancouver",
+        "importance": "important"
+      }
+    },
+    "knockout_matchup": {
+      "current_position": 1,
+      "points": 3,
+      "goal_diff": 2,
+      "remaining_matches": 2,
+      "diff_to_1st": 0,
+      "diff_to_2nd": 0,
+      "target_position": "保1争1",
+      "best_case": {
+        "best_possible_position": 1,
+        "best_possible_pts": 9,
+        "scenario": "全胜可积9分，有机会争小组第一"
+      },
+      "worst_case": {
+        "worst_possible_position": 4,
+        "worst_possible_pts": 3,
+        "scenario": "剩余比赛全败将停留在3分，大概率无法出线"
+      },
+      "qualification_chance": "medium",
+      "knockout_potential": {
+        "would_play_description": "若以第一出线，1/8决赛大概率对阵其他组第二名或成绩较好的第三名，淘汰赛起步相对轻松",
+        "bracket_note": "小组第一通常被分在种子对位区，避开过早与其他强队相遇"
+      },
+      "strategy_notes": [
+        "暂居第一但领先优势不大，需继续全力争胜巩固头名",
+        "小组第一将在淘汰赛获得更有利的对位",
+        "还有2场比赛，足够扭转局面但不能再输"
+      ]
+    }
   },
-  "_updated_at": "2026-06-23T01:09:24.477Z"
+  "_updated_at": "2026-06-23T23:03:03.902Z"
 }

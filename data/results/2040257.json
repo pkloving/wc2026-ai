@@ -1,0 +1,34 @@
+{
+  "matchId": "2040257",
+  "homeScore": 0,
+  "awayScore": 2,
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "CRO",
+      "player": "MODRIC",
+      "minute": "22'",
+      "type": "goal"
+    },
+    {
+      "team": "CRO",
+      "player": "KRAMARIC",
+      "minute": "78'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_totalGoals": "2",
+  "_hhadResult": "away",
+  "_hhadGoalLine": 1,
+  "_hafu": "A:A",
+  "_halfTimeSource": "sporttery 赛果页（半 0:1 全 0:2） + 直播吧/虎扑 6/24 战报（2026-06-24 code review）",
+  "_scorersSource": "直播吧/虎扑 6/24 战报：22' 莫德里奇远射打破僵局；78' 克拉马里奇锁定胜局"
+}

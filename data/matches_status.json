@@ -2554,7 +2554,7 @@
       "home": "葡萄牙",
       "away": "乌兹别克斯坦",
       "kickoff": "2026-06-24 01:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": -2,
       "rqspf": {
@@ -2572,7 +2572,9 @@
         "CRS": true,
         "TTG": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "3-1",
+      "result_file": "results/2040255.json"
     },
     {
       "mid": "2040256",
@@ -2581,7 +2583,7 @@
       "home": "英格兰",
       "away": "加纳",
       "kickoff": "2026-06-24 04:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": -2,
       "rqspf": {
@@ -2599,7 +2601,9 @@
         "CRS": true,
         "TTG": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "2-1",
+      "result_file": "results/2040256.json"
     },
     {
       "mid": "2040257",
@@ -2608,7 +2612,7 @@
       "home": "巴拿马",
       "away": "克罗地亚",
       "kickoff": "2026-06-24 07:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 6.38,
         "draw": 3.95,
@@ -2631,7 +2635,9 @@
         "TTG": true,
         "HAD": true
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "0-2",
+      "result_file": "results/2040257.json"
     },
     {
       "mid": "2040258",
@@ -2640,7 +2646,7 @@
       "home": "哥伦比亚",
       "away": "刚果(金)",
       "kickoff": "2026-06-24 10:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.36,
         "draw": 3.85,
@@ -2663,7 +2669,9 @@
         "TTG": true,
         "HAD": false
       },
-      "is_finished_odds": false
+      "is_finished_odds": true,
+      "final_score": "2-0",
+      "result_file": "results/2040258.json"
     }
   ]
 }

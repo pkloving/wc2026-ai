@@ -1,0 +1,40 @@
+{
+  "matchId": "2040256",
+  "homeScore": 2,
+  "awayScore": 1,
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "ENG",
+      "player": "KANE",
+      "minute": "35'",
+      "type": "goal"
+    },
+    {
+      "team": "GHA",
+      "player": "AYEW",
+      "minute": "63'",
+      "type": "goal"
+    },
+    {
+      "team": "ENG",
+      "player": "SALAH",
+      "minute": "82'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": null,
+  "_totalGoals": "3",
+  "_hhadResult": "away",
+  "_hhadGoalLine": -2,
+  "_hafu": "H:H",
+  "_halfTimeSource": "sporttery 赛果页（半 1:0 全 2:1） + 直播吧/虎扑 6/24 战报（2026-06-24 code review）",
+  "_scorersSource": "直播吧/虎扑 6/24 战报：35' 凯恩点球首开纪录；63' 阿尤为加纳扳平；82' 萨拉赫补射绝杀"
+}
