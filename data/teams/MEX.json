@@ -70,6 +70,7 @@
         "result": "win"
       },
       {
+        "mid": "2040263",
         "match_id": "M053",
         "stage": "group",
         "group": "A",
@@ -94,7 +95,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M053",
-        "mid": null,
+        "mid": "2040263",
         "date": "2026-06-25T01:00:00Z",
         "opponent_code": "CZE",
         "opponent_name": "捷克",
@@ -134,5 +135,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.926Z"
+  "_updated_at": "2026-06-24T10:07:11.572Z"
 }

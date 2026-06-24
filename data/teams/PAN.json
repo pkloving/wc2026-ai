@@ -60,44 +60,39 @@
         "role": "home",
         "opponent_code": "CRO",
         "opponent_name": "克罗地亚",
-        "status": "on_sale"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 2,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       }
     ],
     "qualification_pressure": {
-      "pressure_level": "high",
-      "pressure_text": "尚未拿分，出线形势严峻，需连胜或至少拿4分才有希望",
-      "position": 3,
+      "pressure_level": "very-high",
+      "pressure_text": "只剩一场比赛且0分，理论上仅存数学希望，必须赢球且看其他队脸色",
+      "position": 4,
       "points": 0,
-      "played": 1,
-      "remaining_matches": 2,
-      "teams_ahead": 2,
+      "played": 2,
+      "remaining_matches": 1,
+      "teams_ahead": 3,
       "teams_behind": 0,
-      "same_points_teams": 1,
+      "same_points_teams": 0,
       "min_points_to_qualify": 4,
-      "next_match": {
-        "match_id": "M047",
-        "mid": null,
-        "date": "2026-06-23T23:00:00Z",
-        "opponent_code": "CRO",
-        "opponent_name": "克罗地亚",
-        "opponent_position": 4,
-        "opponent_pts": 0,
-        "venue": "BMO Field, Toronto",
-        "importance": "critical"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
-      "current_position": 3,
+      "current_position": 4,
       "points": 0,
-      "goal_diff": -1,
-      "remaining_matches": 2,
-      "diff_to_1st": 3,
+      "goal_diff": -3,
+      "remaining_matches": 1,
+      "diff_to_1st": 6,
       "diff_to_2nd": 3,
-      "target_position": "争前2保3",
+      "target_position": "全力争前2",
       "best_case": {
         "best_possible_position": 1,
-        "best_possible_pts": 6,
-        "scenario": "全胜可积6分，有机会争小组第一"
+        "best_possible_pts": 3,
+        "scenario": "全胜可积3分，有机会争小组第一"
       },
       "worst_case": {
         "worst_possible_position": 4,
@@ -106,15 +101,15 @@
       },
       "qualification_chance": "low",
       "knockout_potential": {
-        "would_play_description": "若以最好的8个第三名之一出线，将对阵其他组第一，大概率是硬仗，但爆冷机会也存在",
-        "bracket_note": "第三名晋级通常需在首轮对阵强队"
+        "would_play_description": "若以第二出线，1/8决赛可能对阵其他小组第一或成绩较好的第三名，很可能遭遇强敌",
+        "bracket_note": "第二出线的淘汰赛对手通常更强，需做好硬仗准备"
       },
       "strategy_notes": [
-        "排名第三，处于晋级边缘，必须全力争取前2或最佳第三名资格",
-        "净胜球可能成为决定性因素，不应保守",
-        "还有2场比赛，足够扭转局面但不能再输"
+        "排名暂时靠后，剩余比赛必须改变策略全力进攻",
+        "可能需要大比分取胜才能靠净胜球竞争出线",
+        "小组赛最后一轮，必须根据实时比分调整策略"
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.930Z"
+  "_updated_at": "2026-06-24T10:07:11.574Z"
 }

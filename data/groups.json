@@ -571,46 +571,46 @@
     "standings": [
       {
         "code": "COL",
-        "played": 1,
-        "win": 1,
+        "played": 2,
+        "win": 2,
         "draw": 0,
         "lose": 0,
-        "gf": 3,
+        "gf": 5,
         "ga": 1,
-        "gd": 2,
-        "pts": 3
-      },
-      {
-        "code": "COD",
-        "played": 1,
-        "win": 0,
-        "draw": 1,
-        "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "gd": 4,
+        "pts": 6
       },
       {
         "code": "POR",
-        "played": 1,
-        "win": 0,
+        "played": 2,
+        "win": 1,
         "draw": 1,
         "lose": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "pts": 4
       },
       {
-        "code": "UZB",
-        "played": 1,
+        "code": "COD",
+        "played": 2,
         "win": 0,
-        "draw": 0,
+        "draw": 1,
         "lose": 1,
         "gf": 1,
         "ga": 3,
         "gd": -2,
+        "pts": 1
+      },
+      {
+        "code": "UZB",
+        "played": 2,
+        "win": 0,
+        "draw": 0,
+        "lose": 2,
+        "gf": 2,
+        "ga": 6,
+        "gd": -4,
         "pts": 0
       }
     ]
@@ -627,46 +627,46 @@
     "standings": [
       {
         "code": "ENG",
-        "played": 1,
-        "win": 1,
+        "played": 2,
+        "win": 2,
         "draw": 0,
         "lose": 0,
+        "gf": 6,
+        "ga": 3,
+        "gd": 3,
+        "pts": 6
+      },
+      {
+        "code": "CRO",
+        "played": 2,
+        "win": 1,
+        "draw": 0,
+        "lose": 1,
         "gf": 4,
-        "ga": 2,
-        "gd": 2,
+        "ga": 4,
+        "gd": 0,
         "pts": 3
       },
       {
         "code": "GHA",
-        "played": 1,
+        "played": 2,
         "win": 1,
         "draw": 0,
-        "lose": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
+        "lose": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
         "pts": 3
       },
       {
         "code": "PAN",
-        "played": 1,
+        "played": 2,
         "win": 0,
         "draw": 0,
-        "lose": 1,
+        "lose": 2,
         "gf": 0,
-        "ga": 1,
-        "gd": -1,
-        "pts": 0
-      },
-      {
-        "code": "CRO",
-        "played": 1,
-        "win": 0,
-        "draw": 0,
-        "lose": 1,
-        "gf": 2,
-        "ga": 4,
-        "gd": -2,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       }
     ]

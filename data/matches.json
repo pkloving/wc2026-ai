@@ -566,8 +566,8 @@
     "group": "C",
     "date": "2026-06-24T22:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
-    "home": "MAR",
-    "away": "HAI",
+    "home": "SCO",
+    "away": "BRA",
     "status": "scheduled",
     "mid": "2040261"
   },
@@ -577,8 +577,8 @@
     "group": "C",
     "date": "2026-06-24T22:00:00Z",
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
-    "home": "SCO",
-    "away": "BRA",
+    "home": "MAR",
+    "away": "HAI",
     "status": "scheduled",
     "mid": "2040262"
   },

@@ -68,11 +68,12 @@
         "result": "lose"
       },
       {
-        "match_id": "M052",
+        "mid": "2040261",
+        "match_id": "M051",
         "stage": "group",
         "group": "C",
         "date": "2026-06-24T22:00:00Z",
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "venue": "AT&T Stadium, Arlington, TX",
         "role": "home",
         "opponent_code": "BRA",
         "opponent_name": "巴西",
@@ -91,14 +92,14 @@
       "same_points_teams": 0,
       "min_points_to_qualify": 1,
       "next_match": {
-        "match_id": "M052",
-        "mid": null,
+        "match_id": "M051",
+        "mid": "2040261",
         "date": "2026-06-24T22:00:00Z",
         "opponent_code": "BRA",
         "opponent_name": "巴西",
         "opponent_position": 1,
         "opponent_pts": 4,
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "venue": "AT&T Stadium, Arlington, TX",
         "importance": "must-win"
       }
     },
@@ -132,5 +133,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.936Z"
+  "_updated_at": "2026-06-24T10:07:11.576Z"
 }

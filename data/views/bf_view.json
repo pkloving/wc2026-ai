@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T22:43:20.023Z",
+  "generated_at": "2026-06-24T10:07:11.859Z",
   "play": "bf",
   "count": 48,
   "rows": [
@@ -3662,7 +3662,7 @@
       "away": "乌兹别克斯坦",
       "kickoff": "2026-06-24 01:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "3:1",
       "initial": {
         "odds": {
           "05:00": 17,
@@ -3733,7 +3733,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "3:1",
+        "other": null
+      }
     },
     {
       "mid": "2040256",
@@ -3742,7 +3745,7 @@
       "away": "加纳",
       "kickoff": "2026-06-24 04:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
         "odds": {
           "05:00": 18,
@@ -3813,7 +3816,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "2:1",
+        "other": null
+      }
     },
     {
       "mid": "2040257",
@@ -3822,7 +3828,7 @@
       "away": "克罗地亚",
       "kickoff": "2026-06-24 07:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:2",
       "initial": {
         "odds": {
           "05:00": 1000,
@@ -3893,7 +3899,10 @@
           "01:05": 50
         }
       },
-      "result": null
+      "result": {
+        "score": "0:2",
+        "other": null
+      }
     },
     {
       "mid": "2040258",
@@ -3902,7 +3911,7 @@
       "away": "刚果(金)",
       "kickoff": "2026-06-24 10:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "05:00": 50,
@@ -3973,7 +3982,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "2:0",
+        "other": null
+      }
     }
   ]
 }

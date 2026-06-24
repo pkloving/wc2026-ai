@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T22:43:20.026Z",
+  "generated_at": "2026-06-24T10:07:11.862Z",
   "play": "spf",
   "count": 38,
   "rows": [
@@ -730,7 +730,7 @@
       "away": "克罗地亚",
       "kickoff": "2026-06-24 07:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:2",
       "initial": {
         "home": 6.38,
         "draw": 3.95,
@@ -741,7 +741,7 @@
         "draw": 3.95,
         "away": 1.39
       },
-      "result": null
+      "result": "away"
     },
     {
       "mid": "2040258",
@@ -750,7 +750,7 @@
       "away": "刚果(金)",
       "kickoff": "2026-06-24 10:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "home": 1.36,
         "draw": 3.85,
@@ -761,7 +761,7 @@
         "draw": 3.85,
         "away": 7.5
       },
-      "result": null
+      "result": "home"
     }
   ]
 }

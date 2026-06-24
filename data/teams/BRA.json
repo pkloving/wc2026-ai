@@ -71,11 +71,12 @@
         "result": "win"
       },
       {
-        "match_id": "M052",
+        "mid": "2040261",
+        "match_id": "M051",
         "stage": "group",
         "group": "C",
         "date": "2026-06-24T22:00:00Z",
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "venue": "AT&T Stadium, Arlington, TX",
         "role": "away",
         "opponent_code": "SCO",
         "opponent_name": "苏格兰",
@@ -94,14 +95,14 @@
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
       "next_match": {
-        "match_id": "M052",
-        "mid": null,
+        "match_id": "M051",
+        "mid": "2040261",
         "date": "2026-06-24T22:00:00Z",
         "opponent_code": "SCO",
         "opponent_name": "苏格兰",
         "opponent_position": 3,
         "opponent_pts": 3,
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
+        "venue": "AT&T Stadium, Arlington, TX",
         "importance": "must-win"
       }
     },
@@ -135,5 +136,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.896Z"
+  "_updated_at": "2026-06-24T10:07:11.558Z"
 }

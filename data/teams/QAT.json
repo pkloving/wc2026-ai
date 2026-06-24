@@ -68,6 +68,7 @@
         "result": "lose"
       },
       {
+        "mid": "2040260",
         "match_id": "M050",
         "stage": "group",
         "group": "B",
@@ -92,7 +93,7 @@
       "min_points_to_qualify": 3,
       "next_match": {
         "match_id": "M050",
-        "mid": null,
+        "mid": "2040260",
         "date": "2026-06-24T19:00:00Z",
         "opponent_code": "BIH",
         "opponent_name": "波黑",
@@ -132,5 +133,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.934Z"
+  "_updated_at": "2026-06-24T10:07:11.576Z"
 }

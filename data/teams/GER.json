@@ -71,6 +71,7 @@
         "result": "win"
       },
       {
+        "mid": "2040265",
         "match_id": "M055",
         "stage": "group",
         "group": "E",
@@ -95,7 +96,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M055",
-        "mid": null,
+        "mid": "2040265",
         "date": "2026-06-25T20:00:00Z",
         "opponent_code": "ECU",
         "opponent_name": "厄瓜多尔",
@@ -135,5 +136,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.917Z"
+  "_updated_at": "2026-06-24T10:07:11.568Z"
 }

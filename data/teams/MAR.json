@@ -70,11 +70,12 @@
         "result": "win"
       },
       {
-        "match_id": "M051",
+        "mid": "2040262",
+        "match_id": "M052",
         "stage": "group",
         "group": "C",
         "date": "2026-06-24T22:00:00Z",
-        "venue": "AT&T Stadium, Arlington, TX",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
         "role": "home",
         "opponent_code": "HAI",
         "opponent_name": "海地",
@@ -93,14 +94,14 @@
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
       "next_match": {
-        "match_id": "M051",
-        "mid": null,
+        "match_id": "M052",
+        "mid": "2040262",
         "date": "2026-06-24T22:00:00Z",
         "opponent_code": "HAI",
         "opponent_name": "海地",
         "opponent_position": 4,
         "opponent_pts": 0,
-        "venue": "AT&T Stadium, Arlington, TX",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
         "importance": "must-win"
       }
     },
@@ -134,5 +135,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.925Z"
+  "_updated_at": "2026-06-24T10:07:11.572Z"
 }

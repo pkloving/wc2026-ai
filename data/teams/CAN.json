@@ -70,6 +70,7 @@
         "result": "win"
       },
       {
+        "mid": "2040259",
         "match_id": "M049",
         "stage": "group",
         "group": "B",
@@ -94,7 +95,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M049",
-        "mid": null,
+        "mid": "2040259",
         "date": "2026-06-24T19:00:00Z",
         "opponent_code": "SUI",
         "opponent_name": "瑞士",
@@ -134,5 +135,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.897Z"
+  "_updated_at": "2026-06-24T10:07:11.558Z"
 }

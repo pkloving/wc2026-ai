@@ -68,11 +68,12 @@
         "result": "lose"
       },
       {
-        "match_id": "M051",
+        "mid": "2040262",
+        "match_id": "M052",
         "stage": "group",
         "group": "C",
         "date": "2026-06-24T22:00:00Z",
-        "venue": "AT&T Stadium, Arlington, TX",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
         "role": "away",
         "opponent_code": "MAR",
         "opponent_name": "摩洛哥",
@@ -91,14 +92,14 @@
       "same_points_teams": 0,
       "min_points_to_qualify": 4,
       "next_match": {
-        "match_id": "M051",
-        "mid": null,
+        "match_id": "M052",
+        "mid": "2040262",
         "date": "2026-06-24T22:00:00Z",
         "opponent_code": "MAR",
         "opponent_name": "摩洛哥",
         "opponent_position": 2,
         "opponent_pts": 4,
-        "venue": "AT&T Stadium, Arlington, TX",
+        "venue": "Hard Rock Stadium, Miami Gardens, FL",
         "importance": "must-win"
       }
     },
@@ -132,5 +133,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-23T23:03:03.919Z"
+  "_updated_at": "2026-06-24T10:07:11.569Z"
 }

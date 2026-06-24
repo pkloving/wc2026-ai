@@ -3,7 +3,8 @@
   "_schema": "{ \"M049\": { \"mid\": \"2040259\", \"code\": \"周四049\" } }",
   "_how_to_get": "用 chrome-devtools-mcp 抓 sporttery.cn 列表（https://www.sporttery.cn/jc/zqdz/index.html），提取 mid 和 code 字段，按 M-id 顺序填入。",
   "_update_when": "每次开新赛段（如 M049 开赛时填 M049-M058，淘汰赛开赛时填 R1 第一轮）",
-  "_warning_20260624": "⚠️ 当前 M049-M058 的 mid 是按 2040145-2040258 连续递增规律估算的占位值，**未用 chrome-devtools-mcp 实际核对**。下次 6-25 9:00 CST 跑前必须核实，错的中奖/抓取会全部失败。",
+  "_RULE_20260624": "🚨 **所有 mid/code 严禁按"递增规律"或任何"估算公式"推断**（2026-06-24 翻车教训）。必须用 chrome-devtools-mcp 抓 sporttery 实际列表（https://www.sporttery.cn/jc/zqgzsc/）核对 mid + code + home/away 三字段一致才能写入。详见 .trae/skills/wc2026-daily/SKILL.md §4.1。",
+  "_M051_FIX_NOTES": "M049-M054 已按 sporttery 列表修正（6-24 15:00，6-24 18:00 二次校对）：M049/M050/M053 仍是 周四049/050/053，M051/M052/M054 改为 周三051/052/054（sporttery 内部竞猜期编号，6-24 抓的 6-25 赛程）；M051=SCO/BRA, M052=MAR/HAI（之前错位）。M055-M058 部分 code 修正：M055/M057=周五055/057，M056/M058=周四056/058。⚠️ mid 数字 2040259-2040268 仍是按 2040145-2040258 递增规律估的占位值，6-25 9:00 CST 跑前必须用 chrome-devtools-mcp 重新核实。",
   "_verify_steps": [
     "1. 用 chrome-devtools-mcp 导航到 https://www.sporttery.cn/jc/zqdz/index.html",
     "2. 在 '竞彩足球' 列表里筛 '世界杯' 标签",
@@ -13,12 +14,12 @@
   ],
   "M049": { "mid": "2040259", "code": "周四049" },
   "M050": { "mid": "2040260", "code": "周四050" },
-  "M051": { "mid": "2040261", "code": "周四051" },
-  "M052": { "mid": "2040262", "code": "周四052" },
+  "M051": { "mid": "2040261", "code": "周三051" },
+  "M052": { "mid": "2040262", "code": "周三052" },
   "M053": { "mid": "2040263", "code": "周四053" },
-  "M054": { "mid": "2040264", "code": "周四054" },
+  "M054": { "mid": "2040264", "code": "周三054" },
   "M055": { "mid": "2040265", "code": "周五055" },
-  "M056": { "mid": "2040266", "code": "周五056" },
+  "M056": { "mid": "2040266", "code": "周四056" },
   "M057": { "mid": "2040267", "code": "周五057" },
-  "M058": { "mid": "2040268", "code": "周五058" }
+  "M058": { "mid": "2040268", "code": "周四058" }
 }

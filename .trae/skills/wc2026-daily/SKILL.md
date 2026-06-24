@@ -371,6 +371,7 @@ git push
 - **比分表定位失败**：让球调整后 `tables[3]` 不一定是比分表，必须按表头 `"1:0"` 动态找
 - **待开售场次没赔率**：spf/rqspf/bf 全 `null` 正常，售出后再补抓（写入 `rqspf_history` 第一条）
 - **未在 teams.json 的球队**（如 PER/NIR）：先 `data/teams.json` 加条目再渲染，否则会 fallback 成 `?` 占位
+- **mid 配对禁止按递增规律猜（2026-06-24 翻车）**：所有 mid 必须从 sporttery 实际列表抓取，code 是"竞猜期"编号不是比赛日。详见 §4.1
 
 ---
 
