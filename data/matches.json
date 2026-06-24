@@ -546,7 +546,8 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "SUI",
     "away": "CAN",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040259"
   },
   {
     "id": "M050",
@@ -556,7 +557,8 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "BIH",
     "away": "QAT",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040260"
   },
   {
     "id": "M051",
@@ -566,7 +568,8 @@
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "MAR",
     "away": "HAI",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040261"
   },
   {
     "id": "M052",
@@ -576,7 +579,8 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "SCO",
     "away": "BRA",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040262"
   },
   {
     "id": "M053",
@@ -586,7 +590,8 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "CZE",
     "away": "MEX",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040263"
   },
   {
     "id": "M054",
@@ -596,7 +601,8 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "RSA",
     "away": "KOR",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040264"
   },
   {
     "id": "M055",
@@ -606,7 +612,8 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "ECU",
     "away": "GER",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040265"
   },
   {
     "id": "M056",
@@ -616,7 +623,8 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "CUW",
     "away": "CIV",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040266"
   },
   {
     "id": "M057",
@@ -626,7 +634,8 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "TUN",
     "away": "NED",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040267"
   },
   {
     "id": "M058",
@@ -636,7 +645,8 @@
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "JPN",
     "away": "SWE",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040268"
   },
   {
     "id": "M059",
