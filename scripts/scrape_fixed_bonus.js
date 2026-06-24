@@ -9,7 +9,10 @@
 //   - 自动写入 data/results/<mid>.json（保留手动的 halfTime/scorers）
 //   - 自动把 matches_status.json status 标为 finished + is_finished_odds=true
 //
-// 使用：node scripts/scrape_fixed_bonus.js
+// 使用：
+//   node scripts/scrape_fixed_bonus.js              # 正常跑 (拉赔率 + 写盘)
+//   node scripts/scrape_fixed_bonus.js --dry-run   # 预览 mid 入库 + 抓取计划, 不写盘
+//   node scripts/scrape_fixed_bonus.js --mid-only  # 只跑 mid 入库, 不抓赔率
 // 输出：data/odds/<mid>.json + data/odds_history/<mid>.json + data/results/<mid>.json
 // 状态：更新 data/matches_status.json 的 status / is_finished_odds / final_score
 
@@ -24,9 +27,16 @@ const ODDS_DIR = path.join(DATA_DIR, 'odds');
 const HIST_DIR = path.join(DATA_DIR, 'odds_history');
 const RESULTS_DIR = path.join(DATA_DIR, 'results');
 const STATUS_PATH = path.join(DATA_DIR, 'matches_status.json');
+const MATCHES_PATH = path.join(DATA_DIR, 'matches.json');
+const MID_MAPPING_PATH = path.join(DATA_DIR, 'mid_mapping.json');
 
 const API = 'https://webapi.sporttery.cn/gateway/uniform/football/getFixedBonusV1.qry';
 const REFERER = 'https://www.sporttery.cn/jc/zqdz/index.html';
+
+// CLI flags
+const ARGV = process.argv.slice(2);
+const DRY_RUN = ARGV.includes('--dry-run');
+const MID_ONLY = ARGV.includes('--mid-only');
 
 // 5 玩法 code 映射
 const PLAY_CODE_TO_NAME = {
@@ -291,7 +301,156 @@ async function fetchMatch(mid) {
   }
 }
 
+// =====================================================================
+// §0. mid 入库 —— 修补 status=scheduled 但缺 mid 的场次（2026-06-24 加）
+// =====================================================================
+// 背景：data/matches.json 里 M049+ 缺 mid（sporttery 内部 id），scrape_fixed_bonus.js
+//       只从 data/matches_status.json 读 mid 列表 → 没 mid 就跳过 → "今日+次日"红线被违反
+// 修复：维护一个 data/mid_mapping.json 配置文件（schema: { "M049": { "mid": "2040259", "code": "周四049" } }）
+//       抓赔率前先扫 matches.json 找 status=scheduled + 缺 mid 的场次 → 用 mid_mapping 补
+//       同步把新场次塞进 data/matches_status.json
+// 何时更新：每次开新赛段（如 R1 第一轮 8 场开赛时填 8 个 mid），chrome-devtools-mcp 抓 sporttery.cn 列表获取
+// =====================================================================
+
+function loadMidMapping() {
+  if (!fs.existsSync(MID_MAPPING_PATH)) return {};
+  try {
+    const raw = JSON.parse(fs.readFileSync(MID_MAPPING_PATH, 'utf8'));
+    // 过滤掉 _comment / _schema / _how_to_get / _update_when 等元字段
+    const out = {};
+    for (const [k, v] of Object.entries(raw)) {
+      if (k.startsWith('_')) continue;
+      if (v && typeof v === 'object' && v.mid) out[k] = v;
+    }
+    return out;
+  } catch (e) {
+    console.warn(`⚠️  ${MID_MAPPING_PATH} 解析失败: ${e.message}`);
+    return {};
+  }
+}
+
+// 找 status=scheduled + 缺 mid 的世界杯场次（仅看 M001-M104 范围）
+function findMissingMids() {
+  if (!fs.existsSync(MATCHES_PATH)) return [];
+  const matches = JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'));
+  const missing = [];
+  for (const m of matches) {
+    if (!m.id || !m.id.match(/^M\d{3}$/)) continue; // 只看 M-id 格式
+    if (m.status !== 'scheduled') continue; // 已完赛或未开赛不算
+    if (m.mid) continue; // 已有 mid 跳过
+    missing.push(m);
+  }
+  return missing;
+}
+
+// 修补：扫 mid_mapping → 找 matches.json 里 status=scheduled + 缺 mid 的场次
+//      → 写 mid 字段进 matches.json + 注入新 entry 进 matches_status.json
+// 返回：{ injected: [{ matchId, mid, code, home, away, kickoff }], stillMissing: [...] }
+// 参数：{ dryRun: bool = false }  // dryRun=true 时不写盘，只返回将注入什么
+function injectPendingMids({ dryRun = false } = {}) {
+  const mapping = loadMidMapping();
+  if (Object.keys(mapping).length === 0) {
+    return { injected: [], stillMissing: findMissingMids() };
+  }
+  if (!fs.existsSync(MATCHES_PATH)) return { injected: [], stillMissing: [] };
+
+  const matches = JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'));
+  const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
+  const statusByMid = new Set(statusDoc.matches.map(m => m.mid));
+
+  const injected = [];
+  for (const m of matches) {
+    if (!m.id || !m.id.match(/^M\d{3}$/)) continue;
+    if (m.status !== 'scheduled') continue;
+    if (m.mid) continue; // 已有 mid
+    const map = mapping[m.id];
+    if (!map || !map.mid) continue;
+    // 1. 写 mid 进 matches.json (内存)
+    m.mid = map.mid;
+    injected.push({
+      matchId: m.id,
+      mid: map.mid,
+      code: map.code || null,
+      home: m.home,
+      away: m.away,
+      kickoff: m.date || null
+    });
+    // 2. 注入 matches_status.json (内存)
+    if (!statusByMid.has(map.mid)) {
+      const kickoffCst = m.date ? convertUtcToCst(m.date) : null;
+      statusDoc.matches.push({
+        mid: map.mid,
+        code: map.code || m.id,
+        league: '世界杯',
+        home: m.home,
+        away: m.away,
+        kickoff: kickoffCst,
+        status: 'scheduled',
+        spf: null,
+        handicap: null,
+        rqspf: null,
+        is_finished_odds: false,
+        scraped_at: null
+      });
+      statusByMid.add(map.mid);
+    }
+  }
+
+  // 落盘：dryRun 模式不写
+  if (!dryRun && injected.length > 0) {
+    fs.writeFileSync(MATCHES_PATH, JSON.stringify(matches, null, 2), 'utf8');
+    fs.writeFileSync(STATUS_PATH, JSON.stringify(statusDoc, null, 2), 'utf8');
+  }
+
+  const stillMissing = findMissingMids();
+  return { injected, stillMissing, dryRun };
+}
+
+// 把 "2026-06-25T01:00:00Z" (UTC) 转为 "2026-06-25 09:00" (CST) 给 matches_status.json 用
+function convertUtcToCst(utcIso) {
+  try {
+    const d = new Date(utcIso);
+    if (isNaN(d.getTime())) return null;
+    // 手工 +8h，避免时区配置问题
+    const cst = new Date(d.getTime() + 8 * 3600 * 1000);
+    const yyyy = cst.getUTCFullYear();
+    const mm = String(cst.getUTCMonth() + 1).padStart(2, '0');
+    const dd = String(cst.getUTCDate()).padStart(2, '0');
+    const HH = String(cst.getUTCHours()).padStart(2, '0');
+    const MM = String(cst.getUTCMinutes()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd} ${HH}:${MM}`;
+  } catch (e) { return null; }
+}
+
 async function main() {
+  // §0. mid 入库 —— 先扫 mid_mapping 修补 status=scheduled + 缺 mid 的场次
+  //     (2026-06-24 红线被违反的修复,见 records/2026-06-24_code_review.md §6)
+  console.log('=== §0 mid 入库 ===');
+  const { injected, stillMissing } = injectPendingMids({ dryRun: DRY_RUN });
+  if (DRY_RUN) console.log('  [DRY RUN 模式 · 不写盘]');
+  if (injected.length > 0) {
+    console.log(`  ${DRY_RUN ? '🔍 将补' : '✓ 补'} ${injected.length} 场 mid:`);
+    for (const x of injected) {
+      console.log(`    ${x.matchId} -> mid=${x.mid} code=${x.code} ${x.home}-${x.away} kickoff=${x.kickoff}`);
+    }
+  } else {
+    console.log('  - 无 mid 需要修补');
+  }
+  if (stillMissing.length > 0) {
+    console.warn(`  ⚠️ 仍有 ${stillMissing.length} 场未入库 mid（需先填 data/mid_mapping.json）:`);
+    for (const m of stillMissing) {
+      console.warn(`    ${m.id} ${m.home}-${m.away} date=${m.date}`);
+    }
+    console.warn(`  → 用 chrome-devtools-mcp 抓 sporttery.cn 列表 (https://www.sporttery.cn/jc/zqdz/index.html) 补 mid`);
+  }
+  console.log();
+
+  // --mid-only 模式: 只跑 mid 入库, 退出
+  if (MID_ONLY) {
+    console.log(`[--mid-only 模式 · 退出抓赔率阶段]`);
+    return;
+  }
+
   const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
   const wcMatches = statusDoc.matches.filter(m => m.league === '世界杯');
   const MATCHES = wcMatches.map(m => m.mid);

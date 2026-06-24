@@ -1,0 +1,24 @@
+{
+  "_comment": "WC 2026 比赛 M-id → sporttery mid 映射表。抓赔率前必须先填这个文件，否则 scrape_fixed_bonus.js 会跳过无 mid 的场次。",
+  "_schema": "{ \"M049\": { \"mid\": \"2040259\", \"code\": \"周四049\" } }",
+  "_how_to_get": "用 chrome-devtools-mcp 抓 sporttery.cn 列表（https://www.sporttery.cn/jc/zqdz/index.html），提取 mid 和 code 字段，按 M-id 顺序填入。",
+  "_update_when": "每次开新赛段（如 M049 开赛时填 M049-M058，淘汰赛开赛时填 R1 第一轮）",
+  "_warning_20260624": "⚠️ 当前 M049-M058 的 mid 是按 2040145-2040258 连续递增规律估算的占位值，**未用 chrome-devtools-mcp 实际核对**。下次 6-25 9:00 CST 跑前必须核实，错的中奖/抓取会全部失败。",
+  "_verify_steps": [
+    "1. 用 chrome-devtools-mcp 导航到 https://www.sporttery.cn/jc/zqdz/index.html",
+    "2. 在 '竞彩足球' 列表里筛 '世界杯' 标签",
+    "3. 找 6-25/26 10 场比赛，提取每场的 mid（数字 7-8 位）和 code（周四XXX 格式）",
+    "4. 对照 M049-M058 顺序填入本文件",
+    "5. 改完跑 `node scripts/scrape_fixed_bonus.js --mid-only --dry-run` 验证"
+  ],
+  "M049": { "mid": "2040259", "code": "周四049" },
+  "M050": { "mid": "2040260", "code": "周四050" },
+  "M051": { "mid": "2040261", "code": "周四051" },
+  "M052": { "mid": "2040262", "code": "周四052" },
+  "M053": { "mid": "2040263", "code": "周四053" },
+  "M054": { "mid": "2040264", "code": "周四054" },
+  "M055": { "mid": "2040265", "code": "周五055" },
+  "M056": { "mid": "2040266", "code": "周五056" },
+  "M057": { "mid": "2040267", "code": "周五057" },
+  "M058": { "mid": "2040268", "code": "周五058" }
+}
