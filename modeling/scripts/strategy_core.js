@@ -314,10 +314,21 @@ export function classifyMatch(m, ctx) {
 
   // 2026-06-21 新增: 晋级信号融合 — 双方高压力 → 对攻大战 → BIG_BALL
   // 例: 厄瓜多尔vs库拉索 (双方0分均需抢分) → 进球数可能更多
+  // 2026-06-23 调优: 双方高压力 + 大盘 (|hc|>=2) 实际是"双方怕输保守踢"
+  //   例: 2040245 厄瓜多尔 0-0 库拉索 (handicap=-2, 双方 medium-high) → 0-0
+  //   BIG_BALL 主池只追 4+ 球主胜比分, 完全不覆盖 0-0 走盘结果
+  //   修复: 双方高压力 + 大盘 + 弱/防守型 → 降级到 WEAK_MATCH (走 WEAK 主池)
   if (ctx.getMatchQualCtx) {
     const qc = ctx.getMatchQualCtx(m);
     if (qc?.bothHighPressure) {
-      isBigBall = true;
+      const isBigHandicap = Math.abs(hc) >= P.bigHandicapAbs;
+      const isWeakSide = (tier === 'weak' || tier === 'defensive') && !homeHasStar && !awayHasStar;
+      if (isBigHandicap && isWeakSide) {
+        // 双方高压力 + 大盘 + 弱/防守型 → 实际多走盘/小比分, 走 WEAK 路径
+        isBigBall = false; // 覆盖上面所有 bigBall 设置
+      } else {
+        isBigBall = true;
+      }
     }
   }
 
