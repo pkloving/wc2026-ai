@@ -546,8 +546,11 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "SUI",
     "away": "CAN",
-    "status": "scheduled",
-    "mid": "2040259"
+    "status": "finished",
+    "mid": "2040285",
+    "final_score": "2-1",
+    "code": "周三049",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M050",
@@ -557,8 +560,11 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "BIH",
     "away": "QAT",
-    "status": "scheduled",
-    "mid": "2040260"
+    "status": "finished",
+    "mid": "2040286",
+    "final_score": "3-1",
+    "code": "周三050",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M051",
@@ -568,8 +574,11 @@
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "SCO",
     "away": "BRA",
-    "status": "scheduled",
-    "mid": "2040261"
+    "status": "finished",
+    "mid": "2040287",
+    "final_score": "0-3",
+    "code": "周三051",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M052",
@@ -579,8 +588,11 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "MAR",
     "away": "HAI",
-    "status": "scheduled",
-    "mid": "2040262"
+    "status": "finished",
+    "mid": "2040288",
+    "final_score": "4-2",
+    "code": "周三052",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M053",
@@ -590,8 +602,11 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "CZE",
     "away": "MEX",
-    "status": "scheduled",
-    "mid": "2040263"
+    "status": "finished",
+    "mid": "2040289",
+    "final_score": "1-0",
+    "code": "周三053",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M054",
@@ -601,8 +616,11 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "RSA",
     "away": "KOR",
-    "status": "scheduled",
-    "mid": "2040264"
+    "status": "finished",
+    "mid": "2040290",
+    "final_score": "0-3",
+    "code": "周三054",
+    "_midUpdated_20260625": true
   },
   {
     "id": "M055",

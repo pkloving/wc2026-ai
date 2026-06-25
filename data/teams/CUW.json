@@ -68,7 +68,7 @@
         "result": "draw"
       },
       {
-        "mid": "2040266",
+        "mid": "2040292",
         "match_id": "M056",
         "stage": "group",
         "group": "E",
@@ -93,7 +93,7 @@
       "min_points_to_qualify": 3,
       "next_match": {
         "match_id": "M056",
-        "mid": "2040266",
+        "mid": "2040292",
         "date": "2026-06-25T20:00:00Z",
         "opponent_code": "CIV",
         "opponent_name": "科特迪瓦",
@@ -133,5 +133,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.562Z"
+  "_updated_at": "2026-06-25T07:15:45.442Z"
 }

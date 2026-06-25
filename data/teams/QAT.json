@@ -23,13 +23,13 @@
     "stage": "group",
     "standings": {
       "position": 4,
-      "played": 2,
+      "played": 3,
       "win": 0,
       "draw": 1,
-      "lose": 1,
-      "gf": 1,
-      "ga": 7,
-      "gd": -6,
+      "lose": 2,
+      "gf": 2,
+      "ga": 10,
+      "gd": -8,
       "pts": 1
     },
     "matches": [
@@ -68,7 +68,7 @@
         "result": "lose"
       },
       {
-        "mid": "2040260",
+        "mid": "2040286",
         "match_id": "M050",
         "stage": "group",
         "group": "B",
@@ -77,7 +77,12 @@
         "role": "away",
         "opponent_code": "BIH",
         "opponent_name": "波黑",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 1,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 1,
+        "result": "lose"
       }
     ],
     "qualification_pressure": {
@@ -85,36 +90,26 @@
       "pressure_text": "积分不足，剩余比赛必须全力争胜，平局可能都不够",
       "position": 4,
       "points": 1,
-      "played": 2,
-      "remaining_matches": 1,
-      "teams_ahead": 2,
+      "played": 3,
+      "remaining_matches": 0,
+      "teams_ahead": 3,
       "teams_behind": 0,
-      "same_points_teams": 1,
-      "min_points_to_qualify": 3,
-      "next_match": {
-        "match_id": "M050",
-        "mid": "2040260",
-        "date": "2026-06-24T19:00:00Z",
-        "opponent_code": "BIH",
-        "opponent_name": "波黑",
-        "opponent_position": 3,
-        "opponent_pts": 1,
-        "venue": "SoFi Stadium, Los Angeles, CA",
-        "importance": "must-win"
-      }
+      "same_points_teams": 0,
+      "min_points_to_qualify": 0,
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 4,
       "points": 1,
-      "goal_diff": -6,
-      "remaining_matches": 1,
-      "diff_to_1st": 3,
+      "goal_diff": -8,
+      "remaining_matches": 0,
+      "diff_to_1st": 6,
       "diff_to_2nd": 3,
       "target_position": "全力争前2",
       "best_case": {
-        "best_possible_position": 1,
-        "best_possible_pts": 4,
-        "scenario": "全胜可积4分，有机会争小组第一"
+        "best_possible_position": 4,
+        "best_possible_pts": 1,
+        "scenario": "全胜可积1分，排名已锁定"
       },
       "worst_case": {
         "worst_possible_position": 4,
@@ -128,10 +123,9 @@
       },
       "strategy_notes": [
         "排名暂时靠后，剩余比赛必须改变策略全力进攻",
-        "可能需要大比分取胜才能靠净胜球竞争出线",
-        "小组赛最后一轮，必须根据实时比分调整策略"
+        "可能需要大比分取胜才能靠净胜球竞争出线"
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.576Z"
+  "_updated_at": "2026-06-25T07:15:45.459Z"
 }

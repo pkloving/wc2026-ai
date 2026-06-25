@@ -71,7 +71,7 @@
         "result": "win"
       },
       {
-        "mid": "2040268",
+        "mid": "2040294",
         "match_id": "M058",
         "stage": "group",
         "group": "F",
@@ -96,7 +96,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M058",
-        "mid": "2040268",
+        "mid": "2040294",
         "date": "2026-06-25T23:00:00Z",
         "opponent_code": "SWE",
         "opponent_name": "瑞典",
@@ -136,5 +136,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.571Z"
+  "_updated_at": "2026-06-25T07:15:45.453Z"
 }

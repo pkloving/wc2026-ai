@@ -25,14 +25,14 @@
     "stage": "group",
     "standings": {
       "position": 2,
-      "played": 2,
-      "win": 1,
+      "played": 3,
+      "win": 2,
       "draw": 1,
       "lose": 0,
-      "gf": 2,
-      "ga": 1,
-      "gd": 1,
-      "pts": 4
+      "gf": 6,
+      "ga": 3,
+      "gd": 3,
+      "pts": 7
     },
     "matches": [
       {
@@ -70,7 +70,7 @@
         "result": "win"
       },
       {
-        "mid": "2040262",
+        "mid": "2040288",
         "match_id": "M052",
         "stage": "group",
         "group": "C",
@@ -79,61 +79,55 @@
         "role": "home",
         "opponent_code": "HAI",
         "opponent_name": "海地",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 4,
+        "score_opp": 2,
+        "half_my": 1,
+        "half_opp": 1,
+        "result": "win"
       }
     ],
     "qualification_pressure": {
-      "pressure_level": "low-medium",
-      "pressure_text": "积分形势良好，再拿1-2分即可确保出线",
+      "pressure_level": "low",
+      "pressure_text": "已积6分，基本锁定出线资格，只需避免大比分失利",
       "position": 2,
-      "points": 4,
-      "played": 2,
-      "remaining_matches": 1,
+      "points": 7,
+      "played": 3,
+      "remaining_matches": 0,
       "teams_ahead": 0,
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M052",
-        "mid": "2040262",
-        "date": "2026-06-24T22:00:00Z",
-        "opponent_code": "HAI",
-        "opponent_name": "海地",
-        "opponent_position": 4,
-        "opponent_pts": 0,
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
-        "importance": "must-win"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
-      "points": 4,
-      "goal_diff": 1,
-      "remaining_matches": 1,
+      "points": 7,
+      "goal_diff": 3,
+      "remaining_matches": 0,
       "diff_to_1st": 0,
       "diff_to_2nd": 0,
       "target_position": "保2争1",
       "best_case": {
-        "best_possible_position": 1,
+        "best_possible_position": 2,
         "best_possible_pts": 7,
-        "scenario": "全胜可积7分，有机会争小组第一"
+        "scenario": "全胜可积7分，排名已锁定"
       },
       "worst_case": {
-        "worst_possible_position": 4,
-        "worst_possible_pts": 4,
-        "scenario": "剩余比赛全败将停留在4分，大概率无法出线"
+        "worst_possible_position": 2,
+        "worst_possible_pts": 7,
+        "scenario": "剩余比赛全败将停留在7分，大概率无法出线"
       },
-      "qualification_chance": "medium-high",
+      "qualification_chance": "high",
       "knockout_potential": {
         "would_play_description": "若以第二出线，1/8决赛可能对阵其他小组第一或成绩较好的第三名，很可能遭遇强敌",
         "bracket_note": "第二出线的淘汰赛对手通常更强，需做好硬仗准备"
       },
       "strategy_notes": [
         "排名第二，处于直接晋级区，需保持不败避免被反超",
-        "与第三名的积分差距需要关注，保持进攻效率",
-        "小组赛最后一轮，必须根据实时比分调整策略"
+        "与第三名的积分差距需要关注，保持进攻效率"
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.572Z"
+  "_updated_at": "2026-06-25T07:15:45.454Z"
 }

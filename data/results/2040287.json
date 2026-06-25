@@ -1,0 +1,32 @@
+{
+  "matchId": "2040287",
+  "code": "周三051",
+  "league": "世界杯",
+  "home": "苏格兰",
+  "away": "巴西",
+  "kickoff": "2026-06-25 06:00",
+  "homeScore": 0,
+  "awayScore": 3,
+  "final_score": "0-3",
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "0:3",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "AA",
+  "_hhadResult": "A",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单",
+  "_capturedAt": "2026-06-25T15:00:00.000Z"
+}

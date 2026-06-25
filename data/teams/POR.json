@@ -24,15 +24,15 @@
     "group": "K",
     "stage": "group",
     "standings": {
-      "position": 3,
-      "played": 1,
-      "win": 0,
+      "position": 2,
+      "played": 2,
+      "win": 1,
       "draw": 1,
       "lose": 0,
-      "gf": 1,
-      "ga": 1,
-      "gd": 0,
-      "pts": 1
+      "gf": 4,
+      "ga": 2,
+      "gd": 2,
+      "pts": 4
     },
     "matches": [
       {
@@ -134,5 +134,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.575Z"
+  "_updated_at": "2026-06-25T07:15:45.458Z"
 }

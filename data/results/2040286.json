@@ -1,0 +1,32 @@
+{
+  "matchId": "2040286",
+  "code": "周三050",
+  "league": "世界杯",
+  "home": "波黑",
+  "away": "卡塔尔",
+  "kickoff": "2026-06-25 03:00",
+  "homeScore": 3,
+  "awayScore": 1,
+  "final_score": "3-1",
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "3:1",
+    "other": null
+  },
+  "zjqResult": "4",
+  "bqcResult": "胜胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "HH",
+  "_hhadResult": "H",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单",
+  "_capturedAt": "2026-06-25T15:00:00.000Z"
+}

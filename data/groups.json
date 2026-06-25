@@ -10,47 +10,47 @@
     ],
     "standings": [
       {
-        "code": "MEX",
-        "played": 2,
+        "code": "KOR",
+        "played": 3,
         "win": 2,
         "draw": 0,
-        "lose": 0,
-        "gf": 3,
-        "ga": 0,
+        "lose": 1,
+        "gf": 5,
+        "ga": 2,
         "gd": 3,
         "pts": 6
       },
       {
-        "code": "KOR",
-        "played": 2,
-        "win": 1,
+        "code": "MEX",
+        "played": 3,
+        "win": 2,
         "draw": 0,
         "lose": 1,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 3
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 6
       },
       {
         "code": "CZE",
-        "played": 2,
-        "win": 0,
+        "played": 3,
+        "win": 1,
         "draw": 1,
         "lose": 1,
-        "gf": 2,
+        "gf": 3,
         "ga": 3,
-        "gd": -1,
-        "pts": 1
+        "gd": 0,
+        "pts": 4
       },
       {
         "code": "RSA",
-        "played": 2,
+        "played": 3,
         "win": 0,
         "draw": 1,
-        "lose": 1,
+        "lose": 2,
         "gf": 1,
-        "ga": 3,
-        "gd": -2,
+        "ga": 6,
+        "gd": -5,
         "pts": 1
       }
     ]
@@ -66,47 +66,47 @@
     ],
     "standings": [
       {
-        "code": "CAN",
-        "played": 2,
-        "win": 1,
+        "code": "SUI",
+        "played": 3,
+        "win": 2,
         "draw": 1,
         "lose": 0,
         "gf": 7,
-        "ga": 1,
-        "gd": 6,
-        "pts": 4
+        "ga": 3,
+        "gd": 4,
+        "pts": 7
       },
       {
-        "code": "SUI",
-        "played": 2,
+        "code": "CAN",
+        "played": 3,
         "win": 1,
         "draw": 1,
-        "lose": 0,
-        "gf": 5,
-        "ga": 2,
-        "gd": 3,
+        "lose": 1,
+        "gf": 8,
+        "ga": 3,
+        "gd": 5,
         "pts": 4
       },
       {
         "code": "BIH",
-        "played": 2,
-        "win": 0,
+        "played": 3,
+        "win": 1,
         "draw": 1,
         "lose": 1,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
-        "pts": 1
+        "gf": 5,
+        "ga": 6,
+        "gd": -1,
+        "pts": 4
       },
       {
         "code": "QAT",
-        "played": 2,
+        "played": 3,
         "win": 0,
         "draw": 1,
-        "lose": 1,
-        "gf": 1,
-        "ga": 7,
-        "gd": -6,
+        "lose": 2,
+        "gf": 2,
+        "ga": 10,
+        "gd": -8,
         "pts": 1
       }
     ]
@@ -123,46 +123,46 @@
     "standings": [
       {
         "code": "BRA",
-        "played": 2,
-        "win": 1,
+        "played": 3,
+        "win": 2,
         "draw": 1,
         "lose": 0,
-        "gf": 4,
+        "gf": 7,
         "ga": 1,
-        "gd": 3,
-        "pts": 4
+        "gd": 6,
+        "pts": 7
       },
       {
         "code": "MAR",
-        "played": 2,
-        "win": 1,
+        "played": 3,
+        "win": 2,
         "draw": 1,
         "lose": 0,
-        "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "pts": 4
+        "gf": 6,
+        "ga": 3,
+        "gd": 3,
+        "pts": 7
       },
       {
         "code": "SCO",
-        "played": 2,
+        "played": 3,
         "win": 1,
         "draw": 0,
-        "lose": 1,
+        "lose": 2,
         "gf": 1,
-        "ga": 1,
-        "gd": 0,
+        "ga": 4,
+        "gd": -3,
         "pts": 3
       },
       {
         "code": "HAI",
-        "played": 2,
+        "played": 3,
         "win": 0,
         "draw": 0,
-        "lose": 2,
-        "gf": 0,
-        "ga": 4,
-        "gd": -4,
+        "lose": 3,
+        "gf": 2,
+        "ga": 8,
+        "gd": -6,
         "pts": 0
       }
     ]

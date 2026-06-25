@@ -376,11 +376,20 @@ export function f4Strategy(m, ctx) {
     const n = P.normal;
     const draws = all.filter(s => s.home === s.away).sort((a, c) => a.odds - c.odds);
     if (draws[0]) mainPicks.push(draws[0]);
+    // 2026-06-25 调优 (sampled 2040251 ARG vs AUT 2-0):
+    // 加 favWinPick (主受让低赔主胜, total 1-2, odds<draw2OddsMax, dirMatch)
+    // 旧 f4Strategy 漏掉 2:0@6 (实际最低赔率), 选 0:0@13 作 Top-1
+    const favWinPick = all.filter(s => s.total >= 1 && s.total <= 2 && s.odds < n.draw2OddsMax && dirMatch(s) && !mainPicks.find(p => p.score === s.score)).sort((a, c) => a.odds - c.odds)[0];
+    if (favWinPick) mainPicks.push(favWinPick);
     const upsetPick = all.filter(s => (s.total >= n.upsetTotalMin && s.total <= n.upsetTotalMax) && (s.odds >= n.upsetOddsLo && s.odds <= n.upsetOddsHi) && dirMatch(s)).sort((a, c) => a.odds - c.odds)[0];
     if (upsetPick) mainPicks.push(upsetPick);
     if (draws[1] && draws[1].odds < n.draw2OddsMax && !mainPicks.find(p => p.score === draws[1].score)) mainPicks.push(draws[1]);
-    const sorted = all.slice().sort((a, c) => a.odds - c.odds);
-    for (const s of sorted) if (!mainPicks.find(p => p.score === s.score)) mainPicks.push(s);
+    // 2026-06-25 调优: mainPicks 按 odds asc 排序, 保证 Top-1 = 最低赔率
+    mainPicks.sort((a, c) => a.odds - c.odds);
+    if (mainPicks.length < P.mainCount) {
+      const sorted = all.slice().sort((a, c) => a.odds - c.odds).filter(s => !mainPicks.find(p => p.score === s.score));
+      mainPicks = mainPicks.concat(sorted);
+    }
     mainPicks = mainPicks.slice(0, P.mainCount);
   }
 

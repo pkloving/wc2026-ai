@@ -1,89 +1,89 @@
 {
-  "generated_at": "2026-06-19T09:13:26.670Z",
-  "sample_size": 24,
+  "generated_at": "2026-06-25T07:14:48.813Z",
+  "sample_size": 54,
   "models": [
     {
       "name": "deepseek",
-      "dir_acc": 58.3,
-      "score_acc": 12.5,
-      "zjq_acc": 25,
-      "dir_hits": 14,
-      "score_hits": 3,
-      "zjq_hits": 6,
-      "total": 24
+      "dir_acc": 63.6,
+      "score_acc": 13.6,
+      "zjq_acc": 20.5,
+      "dir_hits": 28,
+      "score_hits": 6,
+      "zjq_hits": 9,
+      "total": 44
     },
     {
       "name": "claude",
-      "dir_acc": 50,
-      "score_acc": 0,
-      "zjq_acc": 8.3,
-      "dir_hits": 12,
-      "score_hits": 0,
-      "zjq_hits": 2,
-      "total": 24
+      "dir_acc": 57.4,
+      "score_acc": 5.6,
+      "zjq_acc": 13,
+      "dir_hits": 31,
+      "score_hits": 3,
+      "zjq_hits": 7,
+      "total": 54
     },
     {
       "name": "MiniMax",
-      "dir_acc": 54.2,
-      "score_acc": 12.5,
-      "zjq_acc": 29.2,
-      "dir_hits": 13,
-      "score_hits": 3,
-      "zjq_hits": 7,
-      "total": 24
+      "dir_acc": 59.1,
+      "score_acc": 15.9,
+      "zjq_acc": 25,
+      "dir_hits": 26,
+      "score_hits": 7,
+      "zjq_hits": 11,
+      "total": 44
     },
     {
       "name": "Kimi",
-      "dir_acc": 54.2,
-      "score_acc": 4.2,
-      "zjq_acc": 12.5,
-      "dir_hits": 13,
-      "score_hits": 1,
-      "zjq_hits": 3,
-      "total": 24
+      "dir_acc": 63,
+      "score_acc": 14.8,
+      "zjq_acc": 20.4,
+      "dir_hits": 34,
+      "score_hits": 8,
+      "zjq_hits": 11,
+      "total": 54
     },
     {
       "name": "GPT-5 mini",
-      "dir_acc": 50,
-      "score_acc": 4.2,
-      "zjq_acc": 33.3,
-      "dir_hits": 12,
-      "score_hits": 1,
-      "zjq_hits": 8,
-      "total": 24
+      "dir_acc": 59.1,
+      "score_acc": 11.4,
+      "zjq_acc": 27.3,
+      "dir_hits": 26,
+      "score_hits": 5,
+      "zjq_hits": 12,
+      "total": 44
     }
   ],
   "baselines": {
     "odds_driven": {
-      "dir_acc": 55,
-      "dir_hits": 11,
-      "total": 20
+      "dir_acc": 67.4,
+      "dir_hits": 29,
+      "total": 43
     },
     "strategy_31": {
-      "dir_acc": 60,
-      "dir_hits": 12,
-      "total": 20
+      "dir_acc": 55.8,
+      "dir_hits": 24,
+      "total": 43
     },
     "majority_vote": {
-      "dir_acc": 52.2,
-      "dir_hits": 12,
-      "total": 23
+      "dir_acc": 62.8,
+      "dir_hits": 27,
+      "total": 43
     },
     "all_home": {
-      "dir_acc": 54.2,
-      "dir_hits": 13,
-      "total": 24
+      "dir_acc": 55.6,
+      "dir_hits": 30,
+      "total": 54
     },
     "all_draw": {
-      "dir_acc": 37.5,
-      "dir_hits": 9,
-      "total": 24
+      "dir_acc": 24.1,
+      "dir_hits": 13,
+      "total": 54
     }
   },
   "distribution": {
-    "home": 54,
-    "draw": 38,
-    "away": 8
+    "home": 56,
+    "draw": 24,
+    "away": 20
   },
-  "disclaimer": "本数据基于历史比赛对比，仅供参考，不构成投注建议。样本量较小（n=24），后续可能波动。"
+  "disclaimer": "本数据基于历史比赛对比，仅供参考，不构成投注建议。样本量较小（n=54），后续可能波动。"
 }

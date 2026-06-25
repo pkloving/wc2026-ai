@@ -68,7 +68,7 @@
         "result": "lose"
       },
       {
-        "mid": "2040267",
+        "mid": "2040293",
         "match_id": "M057",
         "stage": "group",
         "group": "F",
@@ -93,7 +93,7 @@
       "min_points_to_qualify": 4,
       "next_match": {
         "match_id": "M057",
-        "mid": "2040267",
+        "mid": "2040293",
         "date": "2026-06-25T23:00:00Z",
         "opponent_code": "NED",
         "opponent_name": "荷兰",
@@ -133,5 +133,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.578Z"
+  "_updated_at": "2026-06-25T07:15:45.462Z"
 }

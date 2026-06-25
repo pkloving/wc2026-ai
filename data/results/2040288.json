@@ -1,0 +1,32 @@
+{
+  "matchId": "2040288",
+  "code": "周三052",
+  "league": "世界杯",
+  "home": "摩洛哥",
+  "away": "海地",
+  "kickoff": "2026-06-25 06:00",
+  "homeScore": 4,
+  "awayScore": 2,
+  "final_score": "4-2",
+  "halfTime": {
+    "home": 1,
+    "away": 1
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": -2,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "4:2",
+    "other": null
+  },
+  "zjqResult": "6",
+  "bqcResult": "平胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "DH",
+  "_hhadResult": "D",
+  "_scorersSource": "无 FIFA API 抓取数据，待补精确名单",
+  "_capturedAt": "2026-06-25T15:00:00.000Z"
+}

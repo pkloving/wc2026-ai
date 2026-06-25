@@ -23,13 +23,13 @@
     "stage": "group",
     "standings": {
       "position": 4,
-      "played": 2,
+      "played": 3,
       "win": 0,
       "draw": 1,
-      "lose": 1,
+      "lose": 2,
       "gf": 1,
-      "ga": 3,
-      "gd": -2,
+      "ga": 6,
+      "gd": -5,
       "pts": 1
     },
     "matches": [
@@ -68,7 +68,7 @@
         "result": "draw"
       },
       {
-        "mid": "2040264",
+        "mid": "2040290",
         "match_id": "M054",
         "stage": "group",
         "group": "A",
@@ -77,7 +77,12 @@
         "role": "home",
         "opponent_code": "KOR",
         "opponent_name": "韩国",
-        "status": "scheduled"
+        "status": "finished",
+        "score_my": 0,
+        "score_opp": 3,
+        "half_my": 0,
+        "half_opp": 0,
+        "result": "lose"
       }
     ],
     "qualification_pressure": {
@@ -85,36 +90,26 @@
       "pressure_text": "积分不足，剩余比赛必须全力争胜，平局可能都不够",
       "position": 4,
       "points": 1,
-      "played": 2,
-      "remaining_matches": 1,
-      "teams_ahead": 2,
+      "played": 3,
+      "remaining_matches": 0,
+      "teams_ahead": 3,
       "teams_behind": 0,
-      "same_points_teams": 1,
-      "min_points_to_qualify": 3,
-      "next_match": {
-        "match_id": "M054",
-        "mid": "2040264",
-        "date": "2026-06-25T01:00:00Z",
-        "opponent_code": "KOR",
-        "opponent_name": "韩国",
-        "opponent_position": 2,
-        "opponent_pts": 3,
-        "venue": "NRG Stadium, Houston, TX",
-        "importance": "must-win"
-      }
+      "same_points_teams": 0,
+      "min_points_to_qualify": 0,
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 4,
       "points": 1,
-      "goal_diff": -2,
-      "remaining_matches": 1,
+      "goal_diff": -5,
+      "remaining_matches": 0,
       "diff_to_1st": 5,
-      "diff_to_2nd": 2,
+      "diff_to_2nd": 5,
       "target_position": "全力争前2",
       "best_case": {
-        "best_possible_position": 1,
-        "best_possible_pts": 4,
-        "scenario": "全胜可积4分，有机会争小组第一"
+        "best_possible_position": 4,
+        "best_possible_pts": 1,
+        "scenario": "全胜可积1分，排名已锁定"
       },
       "worst_case": {
         "worst_possible_position": 4,
@@ -128,10 +123,9 @@
       },
       "strategy_notes": [
         "排名暂时靠后，剩余比赛必须改变策略全力进攻",
-        "可能需要大比分取胜才能靠净胜球竞争出线",
-        "小组赛最后一轮，必须根据实时比分调整策略"
+        "可能需要大比分取胜才能靠净胜球竞争出线"
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.576Z"
+  "_updated_at": "2026-06-25T07:15:45.459Z"
 }

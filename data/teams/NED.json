@@ -83,7 +83,7 @@
         "result": "win"
       },
       {
-        "mid": "2040267",
+        "mid": "2040293",
         "match_id": "M057",
         "stage": "group",
         "group": "F",
@@ -108,7 +108,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M057",
-        "mid": "2040267",
+        "mid": "2040293",
         "date": "2026-06-25T23:00:00Z",
         "opponent_code": "TUN",
         "opponent_name": "突尼斯",
@@ -148,5 +148,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.573Z"
+  "_updated_at": "2026-06-25T07:15:45.455Z"
 }

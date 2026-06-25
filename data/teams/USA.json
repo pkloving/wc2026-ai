@@ -70,6 +70,7 @@
         "result": "win"
       },
       {
+        "mid": "2040296",
         "match_id": "M059",
         "stage": "group",
         "group": "D",
@@ -94,7 +95,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M059",
-        "mid": null,
+        "mid": "2040296",
         "date": "2026-06-26T02:00:00Z",
         "opponent_code": "TUR",
         "opponent_name": "土耳其",
@@ -134,5 +135,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-24T10:07:11.579Z"
+  "_updated_at": "2026-06-25T07:15:45.464Z"
 }
