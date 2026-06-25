@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T07:14:28.283Z",
+  "generated_at": "2026-06-25T10:04:20.108Z",
   "play": "rqspf",
   "count": 60,
   "rows": [
@@ -1148,32 +1148,10 @@
       "result": "draw"
     },
     {
-      "mid": "2040289",
+      "mid": "2040290",
       "code": "周三053",
       "home": "CZE",
       "away": "MEX",
-      "kickoff": "2026-06-25 09:00",
-      "handicap": 1,
-      "final_score": "1:0",
-      "initial": {
-        "handicap": 1,
-        "home": 2.42,
-        "draw": 2.97,
-        "away": 2.64
-      },
-      "last": {
-        "handicap": 1,
-        "home": 2.42,
-        "draw": 2.97,
-        "away": 2.64
-      },
-      "result": "home"
-    },
-    {
-      "mid": "2040290",
-      "code": "周三054",
-      "home": "RSA",
-      "away": "KOR",
       "kickoff": "2026-06-25 09:00",
       "handicap": 1,
       "final_score": "0:3",
@@ -1192,6 +1170,28 @@
       "result": "away"
     },
     {
+      "mid": "2040289",
+      "code": "周三054",
+      "home": "RSA",
+      "away": "KOR",
+      "kickoff": "2026-06-25 09:00",
+      "handicap": 1,
+      "final_score": "1:0",
+      "initial": {
+        "handicap": 1,
+        "home": 2.42,
+        "draw": 2.97,
+        "away": 2.64
+      },
+      "last": {
+        "handicap": 1,
+        "home": 2.42,
+        "draw": 2.97,
+        "away": 2.64
+      },
+      "result": "home"
+    },
+    {
       "mid": "2040291",
       "code": "周四055",
       "home": "ECU",
@@ -1201,15 +1201,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 1.91,
-        "draw": 3.5,
-        "away": 3.12
+        "home": 2.65,
+        "draw": 3.72,
+        "away": 2.07
       },
       "last": {
         "handicap": 1,
-        "home": 1.91,
-        "draw": 3.5,
-        "away": 3.12
+        "home": 2.65,
+        "draw": 3.72,
+        "away": 2.07
       },
       "result": null
     },
@@ -1223,15 +1223,15 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.4,
-        "draw": 3.85,
-        "away": 2.21
+        "home": 2.54,
+        "draw": 3.8,
+        "away": 2.12
       },
       "last": {
         "handicap": 2,
-        "home": 2.4,
-        "draw": 3.85,
-        "away": 2.21
+        "home": 2.54,
+        "draw": 3.8,
+        "away": 2.12
       },
       "result": null
     },
@@ -1245,15 +1245,15 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.6,
-        "draw": 3.9,
-        "away": 2.05
+        "home": 3.7,
+        "draw": 4.35,
+        "away": 1.59
       },
       "last": {
         "handicap": 2,
-        "home": 2.6,
-        "draw": 3.9,
-        "away": 2.05
+        "home": 3.7,
+        "draw": 4.35,
+        "away": 1.59
       },
       "result": null
     },
@@ -1267,15 +1267,15 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 3.43,
-        "draw": 3.8,
-        "away": 1.74
+        "home": 2.87,
+        "draw": 3.57,
+        "away": 2
       },
       "last": {
         "handicap": -1,
-        "home": 3.43,
-        "draw": 3.8,
-        "away": 1.74
+        "home": 2.87,
+        "draw": 3.57,
+        "away": 2
       },
       "result": null
     },
@@ -1289,15 +1289,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 1.74,
-        "draw": 4,
-        "away": 3.28
+        "home": 1.94,
+        "draw": 3.93,
+        "away": 2.78
       },
       "last": {
         "handicap": 1,
-        "home": 1.74,
-        "draw": 4,
-        "away": 3.28
+        "home": 1.94,
+        "draw": 3.93,
+        "away": 2.78
       },
       "result": null
     },
@@ -1311,15 +1311,15 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 6.1,
-        "draw": 4.35,
-        "away": 1.36
+        "home": 6.2,
+        "draw": 4.4,
+        "away": 1.35
       },
       "last": {
         "handicap": -1,
-        "home": 6.1,
-        "draw": 4.35,
-        "away": 1.36
+        "home": 6.2,
+        "draw": 4.4,
+        "away": 1.35
       },
       "result": null
     }

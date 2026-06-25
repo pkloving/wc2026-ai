@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T07:14:48.813Z",
+  "generated_at": "2026-06-25T09:38:01.136Z",
   "sample_size": 54,
   "models": [
     {
@@ -36,10 +36,10 @@
       "name": "Kimi",
       "dir_acc": 63,
       "score_acc": 14.8,
-      "zjq_acc": 20.4,
+      "zjq_acc": 22.2,
       "dir_hits": 34,
       "score_hits": 8,
-      "zjq_hits": 11,
+      "zjq_hits": 12,
       "total": 54
     },
     {
