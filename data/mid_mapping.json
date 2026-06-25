@@ -1,9 +1,10 @@
 {
   "_comment": "WC 2026 比赛 M-id → sporttery mid 映射表。抓赔率前必须先填这个文件，否则 scrape_fixed_bonus.js 会跳过无 mid 的场次。",
-  "_schema": "{ \"M049\": { \"mid\": \"2040259\", \"code\": \"周四049\" } }",
-  "_how_to_get": "用 chrome-devtools-mcp 抓 sporttery.cn 列表（https://www.sporttery.cn/jc/zqdz/index.html），提取 mid 和 code 字段，按 M-id 顺序填入。",
+  "_schema": "{ \"M049\": { \"mid\": \"2040259\", \"code\": \"周四049\", \"status\": \"unverified\" } }",
+  "_how_to_get": "用 chrome-devtools-mcp 抓 sporttery.cn 列表（https://www.sporttery.cn/jc/zqdz/index.html），提取 mid 和 code 字段，按 M-id 顺序填入。或用 getMatchListV1.qry 无参数调用（带 Referer+UA）取 3 日窗口。",
   "_update_when": "每次开新赛段（如 M049 开赛时填 M049-M058，淘汰赛开赛时填 R1 第一轮）",
-  "_RULE_20260624": "🚨 **所有 mid/code 严禁按"递增规律"或任何"估算公式"推断**（2026-06-24 翻车教训）。必须用 chrome-devtools-mcp 抓 sporttery 实际列表（https://www.sporttery.cn/jc/zqgzsc/）核对 mid + code + home/away 三字段一致才能写入。详见 .trae/skills/wc2026-daily/SKILL.md §4.1。",
+  "_RULE_20260624": "🚨 **所有 mid/code 严禁按\"递增规律\"或任何\"估算公式\"推断**（2026-06-24 翻车教训）。必须用 chrome-devtools-mcp 抓 sporttery 实际列表（https://www.sporttery.cn/jc/zqgzsc/）核对 mid + code + home/away 三字段一致才能写入。详见 .trae/skills/wc2026-daily/SKILL.md §4.1。",
+  "_VERIFY_20260625": "✅ 2026-06-25 9:00 CST code 模式验证：getMatchListV1.qry?clientCode=3001（带 Referer+UA）返回 3 日窗口 18 场（6-25~6-27），定位 M055-M060 共 6 场实际 mid。**M049-M054 的 mid/code 仍是占位值**（kickoff 6-25 03:00/06:00/09:00 CST 已出 sporttery 3 日窗口，API 无法直接拿到完整赔率/赛果；需走单场 page 或 history 接口，code 模式不抓）。M055-M058 在用户原表里 mid 误为 2040265-2040268 估算值，本表已修正为 2040291-2040294；M059-M060 mid 此前缺失，已补 2040295/2040296。code 周几以 sporttery businessDate 实际为准：6-25 CST=周三，6-26 CST=周四，6-27 CST=周五。",
   "_M051_FIX_NOTES": "M049-M054 已按 sporttery 列表修正（6-24 15:00，6-24 18:00 二次校对）：M049/M050/M053 仍是 周四049/050/053，M051/M052/M054 改为 周三051/052/054（sporttery 内部竞猜期编号，6-24 抓的 6-25 赛程）；M051=SCO/BRA, M052=MAR/HAI（之前错位）。M055-M058 部分 code 修正：M055/M057=周五055/057，M056/M058=周四056/058。⚠️ mid 数字 2040259-2040268 仍是按 2040145-2040258 递增规律估的占位值，6-25 9:00 CST 跑前必须用 chrome-devtools-mcp 重新核实。",
   "_verify_steps": [
     "1. 用 chrome-devtools-mcp 导航到 https://www.sporttery.cn/jc/zqdz/index.html",
@@ -12,14 +13,16 @@
     "4. 对照 M049-M058 顺序填入本文件",
     "5. 改完跑 `node scripts/scrape_fixed_bonus.js --mid-only --dry-run` 验证"
   ],
-  "M049": { "mid": "2040259", "code": "周四049" },
-  "M050": { "mid": "2040260", "code": "周四050" },
-  "M051": { "mid": "2040261", "code": "周三051" },
-  "M052": { "mid": "2040262", "code": "周三052" },
-  "M053": { "mid": "2040263", "code": "周四053" },
-  "M054": { "mid": "2040264", "code": "周三054" },
-  "M055": { "mid": "2040265", "code": "周五055" },
-  "M056": { "mid": "2040266", "code": "周四056" },
-  "M057": { "mid": "2040267", "code": "周五057" },
-  "M058": { "mid": "2040268", "code": "周四058" }
+  "M049": { "mid": "2040259", "code": "周四049", "status": "unverified_placeholder", "note": "6-25 03:00 CST 已开赛，sporttery 3 日窗口 (getMatchListV1) 已不含此 mid；真实 mid/code 需单场 page 或 history 抓，code 模式不抓" },
+  "M050": { "mid": "2040260", "code": "周四050", "status": "unverified_placeholder", "note": "同 M049，6-25 03:00 CST" },
+  "M051": { "mid": "2040261", "code": "周三051", "status": "unverified_placeholder", "note": "6-25 06:00 CST，已出 3 日窗口" },
+  "M052": { "mid": "2040262", "code": "周三052", "status": "unverified_placeholder", "note": "6-25 06:00 CST，已出 3 日窗口" },
+  "M053": { "mid": "2040263", "code": "周四053", "status": "unverified_placeholder", "note": "6-25 09:00 CST，已出 3 日窗口；按 CST 周几应为\"周三053\"，原 code 标的\"周四\"实为误判" },
+  "M054": { "mid": "2040264", "code": "周三054", "status": "unverified_placeholder", "note": "6-25 09:00 CST，已出 3 日窗口" },
+  "M055": { "mid": "2040291", "code": "周四055", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4055, 厄瓜多尔 vs 德国" },
+  "M056": { "mid": "2040292", "code": "周四056", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4056, 库拉索 vs 科特迪瓦" },
+  "M057": { "mid": "2040293", "code": "周四057", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4057, 突尼斯 vs 荷兰" },
+  "M058": { "mid": "2040294", "code": "周四058", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4058, 日本 vs 瑞典" },
+  "M059": { "mid": "2040296", "code": "周四060", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4060, 土耳其 vs 美国 (note: sporttery matchNum=4060 大于 M-id 59, 因 M059/M060 排列顺序与 sporttery 不一致)" },
+  "M060": { "mid": "2040295", "code": "周四059", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4059, 巴拉圭 vs 澳大利亚" }
 }

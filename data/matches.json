@@ -613,7 +613,7 @@
     "home": "ECU",
     "away": "GER",
     "status": "scheduled",
-    "mid": "2040265"
+    "mid": "2040291"
   },
   {
     "id": "M056",
@@ -624,7 +624,7 @@
     "home": "CUW",
     "away": "CIV",
     "status": "scheduled",
-    "mid": "2040266"
+    "mid": "2040292"
   },
   {
     "id": "M057",
@@ -635,7 +635,7 @@
     "home": "TUN",
     "away": "NED",
     "status": "scheduled",
-    "mid": "2040267"
+    "mid": "2040293"
   },
   {
     "id": "M058",
@@ -646,7 +646,7 @@
     "home": "JPN",
     "away": "SWE",
     "status": "scheduled",
-    "mid": "2040268"
+    "mid": "2040294"
   },
   {
     "id": "M059",
@@ -656,7 +656,8 @@
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "TUR",
     "away": "USA",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040296"
   },
   {
     "id": "M060",
@@ -666,7 +667,8 @@
     "venue": "Estadio Azteca, Mexico City",
     "home": "PAR",
     "away": "AUS",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040295"
   },
   {
     "id": "M061",
