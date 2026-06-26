@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T09:38:01.136Z",
-  "sample_size": 54,
+  "generated_at": "2026-06-26T10:11:05.949Z",
+  "sample_size": 60,
   "models": [
     {
       "name": "deepseek",
@@ -14,13 +14,13 @@
     },
     {
       "name": "claude",
-      "dir_acc": 57.4,
-      "score_acc": 5.6,
-      "zjq_acc": 13,
-      "dir_hits": 31,
-      "score_hits": 3,
-      "zjq_hits": 7,
-      "total": 54
+      "dir_acc": 56.7,
+      "score_acc": 8.3,
+      "zjq_acc": 16.7,
+      "dir_hits": 34,
+      "score_hits": 5,
+      "zjq_hits": 10,
+      "total": 60
     },
     {
       "name": "MiniMax",
@@ -34,13 +34,13 @@
     },
     {
       "name": "Kimi",
-      "dir_acc": 63,
-      "score_acc": 14.8,
-      "zjq_acc": 22.2,
-      "dir_hits": 34,
-      "score_hits": 8,
-      "zjq_hits": 12,
-      "total": 54
+      "dir_acc": 61.7,
+      "score_acc": 18.3,
+      "zjq_acc": 26.7,
+      "dir_hits": 37,
+      "score_hits": 11,
+      "zjq_hits": 16,
+      "total": 60
     },
     {
       "name": "GPT-5 mini",
@@ -55,14 +55,14 @@
   ],
   "baselines": {
     "odds_driven": {
-      "dir_acc": 67.4,
-      "dir_hits": 29,
-      "total": 43
+      "dir_acc": 66,
+      "dir_hits": 31,
+      "total": 47
     },
     "strategy_31": {
-      "dir_acc": 55.8,
-      "dir_hits": 24,
-      "total": 43
+      "dir_acc": 53.2,
+      "dir_hits": 25,
+      "total": 47
     },
     "majority_vote": {
       "dir_acc": 62.8,
@@ -70,20 +70,20 @@
       "total": 43
     },
     "all_home": {
-      "dir_acc": 55.6,
-      "dir_hits": 30,
-      "total": 54
+      "dir_acc": 55,
+      "dir_hits": 33,
+      "total": 60
     },
     "all_draw": {
-      "dir_acc": 24.1,
-      "dir_hits": 13,
-      "total": 54
+      "dir_acc": 23.3,
+      "dir_hits": 14,
+      "total": 60
     }
   },
   "distribution": {
-    "home": 56,
-    "draw": 24,
-    "away": 20
+    "home": 55,
+    "draw": 23,
+    "away": 22
   },
-  "disclaimer": "本数据基于历史比赛对比，仅供参考，不构成投注建议。样本量较小（n=54），后续可能波动。"
+  "disclaimer": "本数据基于历史比赛对比，仅供参考，不构成投注建议。样本量较小（n=60），后续可能波动。"
 }

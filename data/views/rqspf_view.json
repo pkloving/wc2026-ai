@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:06:07.233Z",
+  "generated_at": "2026-06-26T10:13:39.719Z",
   "play": "rqspf",
   "count": 60,
   "rows": [
@@ -1242,7 +1242,7 @@
       "away": "NED",
       "kickoff": "2026-06-26 07:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "0:2",
       "initial": {
         "handicap": 2,
         "home": 3.55,
@@ -1255,7 +1255,7 @@
         "draw": 4.2,
         "away": 1.64
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040294",
@@ -1264,7 +1264,7 @@
       "away": "SWE",
       "kickoff": "2026-06-26 07:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
         "handicap": -1,
         "home": 2.95,
@@ -1277,7 +1277,7 @@
         "draw": 3.5,
         "away": 1.98
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040296",
@@ -1286,7 +1286,7 @@
       "away": "USA",
       "kickoff": "2026-06-26 10:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "3:2",
       "initial": {
         "handicap": 1,
         "home": 1.94,
@@ -1299,7 +1299,7 @@
         "draw": 3.93,
         "away": 2.78
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040295",
@@ -1308,7 +1308,7 @@
       "away": "AUS",
       "kickoff": "2026-06-26 10:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "handicap": -1,
         "home": 6.2,
@@ -1321,7 +1321,7 @@
         "draw": 4.1,
         "away": 1.38
       },
-      "result": null
+      "result": "away"
     }
   ]
 }

@@ -78,7 +78,59 @@
         "opponent_name": "埃及",
         "status": "scheduled"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "medium-high",
+      "pressure_text": "积分不足，剩余比赛必须全力争胜，平局可能都不够",
+      "position": 2,
+      "points": 2,
+      "played": 2,
+      "remaining_matches": 1,
+      "teams_ahead": 1,
+      "teams_behind": 1,
+      "same_points_teams": 1,
+      "min_points_to_qualify": 2,
+      "next_match": {
+        "match_id": "M066",
+        "mid": null,
+        "date": "2026-06-27T03:00:00Z",
+        "opponent_code": "EGY",
+        "opponent_name": "埃及",
+        "opponent_position": 1,
+        "opponent_pts": 4,
+        "venue": "SoFi Stadium, Los Angeles, CA",
+        "importance": "must-win"
+      }
+    },
+    "knockout_matchup": {
+      "current_position": 2,
+      "points": 2,
+      "goal_diff": 0,
+      "remaining_matches": 1,
+      "diff_to_1st": 2,
+      "diff_to_2nd": 0,
+      "target_position": "保2争1",
+      "best_case": {
+        "best_possible_position": 1,
+        "best_possible_pts": 5,
+        "scenario": "全胜可积5分，有机会争小组第一"
+      },
+      "worst_case": {
+        "worst_possible_position": 4,
+        "worst_possible_pts": 2,
+        "scenario": "剩余比赛全败将停留在2分，大概率无法出线"
+      },
+      "qualification_chance": "low-medium",
+      "knockout_potential": {
+        "would_play_description": "若以第二出线，1/8决赛可能对阵其他小组第一或成绩较好的第三名，很可能遭遇强敌",
+        "bracket_note": "第二出线的淘汰赛对手通常更强，需做好硬仗准备"
+      },
+      "strategy_notes": [
+        "排名第二，处于直接晋级区，需保持不败避免被反超",
+        "与第三名的积分差距需要关注，保持进攻效率",
+        "小组赛最后一轮，必须根据实时比分调整策略"
+      ]
+    }
   },
-  "_updated_at": "2026-06-26T07:06:20.566Z"
+  "_updated_at": "2026-06-26T10:13:39.266Z"
 }

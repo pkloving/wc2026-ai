@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:06:07.437Z",
+  "generated_at": "2026-06-26T10:13:39.732Z",
   "play": "bf",
   "count": 60,
   "rows": [
@@ -4658,7 +4658,7 @@
       "away": "NED",
       "kickoff": "2026-06-26 07:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "0:2",
       "initial": {
         "odds": {
           "05:00": 1000,
@@ -4729,7 +4729,10 @@
           "01:05": 21
         }
       },
-      "result": null
+      "result": {
+        "score": "0:2",
+        "other": null
+      }
     },
     {
       "mid": "2040294",
@@ -4738,7 +4741,7 @@
       "away": "SWE",
       "kickoff": "2026-06-26 07:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
         "odds": {
           "05:00": 80,
@@ -4809,7 +4812,10 @@
           "01:05": 400
         }
       },
-      "result": null
+      "result": {
+        "score": "2:1",
+        "other": null
+      }
     },
     {
       "mid": "2040296",
@@ -4818,7 +4824,7 @@
       "away": "USA",
       "kickoff": "2026-06-26 10:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "3:2",
       "initial": {
         "odds": {
           "05:00": 350,
@@ -4889,7 +4895,10 @@
           "01:05": 75
         }
       },
-      "result": null
+      "result": {
+        "score": "3:2",
+        "other": null
+      }
     },
     {
       "mid": "2040295",
@@ -4898,7 +4907,7 @@
       "away": "AUS",
       "kickoff": "2026-06-26 10:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "odds": {
           "05:00": 300,
@@ -4969,7 +4978,10 @@
           "01:05": 500
         }
       },
-      "result": null
+      "result": {
+        "score": "0:0",
+        "other": null
+      }
     }
   ]
 }
