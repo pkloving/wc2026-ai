@@ -92,7 +92,7 @@
       "min_points_to_qualify": 4,
       "next_match": {
         "match_id": "M062",
-        "mid": null,
+        "mid": "2040298",
         "date": "2026-06-26T19:00:00Z",
         "opponent_code": "SEN",
         "opponent_name": "塞内加尔",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.266Z"
+  "_updated_at": "2026-06-26T10:53:41.016Z"
 }

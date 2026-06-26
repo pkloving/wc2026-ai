@@ -94,7 +94,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M069",
-        "mid": null,
+        "mid": "2040305",
         "date": "2026-06-27T23:30:00Z",
         "opponent_code": "COL",
         "opponent_name": "哥伦比亚",
@@ -134,5 +134,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.275Z"
+  "_updated_at": "2026-06-26T10:53:41.032Z"
 }

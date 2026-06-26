@@ -94,7 +94,7 @@
       "min_points_to_qualify": 2,
       "next_match": {
         "match_id": "M065",
-        "mid": null,
+        "mid": "2040302",
         "date": "2026-06-27T03:00:00Z",
         "opponent_code": "NZL",
         "opponent_name": "新西兰",
@@ -134,5 +134,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.252Z"
+  "_updated_at": "2026-06-26T10:53:40.984Z"
 }

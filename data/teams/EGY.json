@@ -94,7 +94,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M066",
-        "mid": null,
+        "mid": "2040301",
         "date": "2026-06-27T03:00:00Z",
         "opponent_code": "IRN",
         "opponent_name": "伊朗",
@@ -134,5 +134,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.262Z"
+  "_updated_at": "2026-06-26T10:53:41.003Z"
 }

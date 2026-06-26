@@ -92,7 +92,7 @@
       "min_points_to_qualify": 3,
       "next_match": {
         "match_id": "M064",
-        "mid": null,
+        "mid": "2040299",
         "date": "2026-06-27T00:00:00Z",
         "opponent_code": "CPV",
         "opponent_name": "佛得角",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.268Z"
+  "_updated_at": "2026-06-26T10:53:41.020Z"
 }

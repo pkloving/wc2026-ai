@@ -106,7 +106,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M061",
-        "mid": null,
+        "mid": "2040297",
         "date": "2026-06-26T19:00:00Z",
         "opponent_code": "NOR",
         "opponent_name": "挪威",
@@ -146,5 +146,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.264Z"
+  "_updated_at": "2026-06-26T10:53:41.008Z"
 }

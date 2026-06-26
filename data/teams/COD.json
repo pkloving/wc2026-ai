@@ -92,7 +92,7 @@
       "min_points_to_qualify": 3,
       "next_match": {
         "match_id": "M070",
-        "mid": null,
+        "mid": "2040306",
         "date": "2026-06-27T23:30:00Z",
         "opponent_code": "UZB",
         "opponent_name": "乌兹别克斯坦",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.255Z"
+  "_updated_at": "2026-06-26T10:53:40.992Z"
 }

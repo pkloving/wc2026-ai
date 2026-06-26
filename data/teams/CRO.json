@@ -94,7 +94,7 @@
       "min_points_to_qualify": 1,
       "next_match": {
         "match_id": "M068",
-        "mid": null,
+        "mid": "2040303",
         "date": "2026-06-27T21:00:00Z",
         "opponent_code": "GHA",
         "opponent_name": "加纳",
@@ -134,5 +134,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.257Z"
+  "_updated_at": "2026-06-26T10:53:40.995Z"
 }

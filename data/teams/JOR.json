@@ -92,7 +92,7 @@
       "min_points_to_qualify": 4,
       "next_match": {
         "match_id": "M071",
-        "mid": null,
+        "mid": "2040308",
         "date": "2026-06-28T02:00:00Z",
         "opponent_code": "ARG",
         "opponent_name": "阿根廷",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.267Z"
+  "_updated_at": "2026-06-26T10:53:41.017Z"
 }

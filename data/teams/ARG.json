@@ -106,7 +106,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M071",
-        "mid": null,
+        "mid": "2040308",
         "date": "2026-06-28T02:00:00Z",
         "opponent_code": "JOR",
         "opponent_name": "约旦",
@@ -146,5 +146,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.249Z"
+  "_updated_at": "2026-06-26T10:53:40.981Z"
 }

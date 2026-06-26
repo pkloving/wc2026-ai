@@ -92,7 +92,7 @@
       "min_points_to_qualify": 1,
       "next_match": {
         "match_id": "M072",
-        "mid": null,
+        "mid": "2040307",
         "date": "2026-06-28T02:00:00Z",
         "opponent_code": "DZA",
         "opponent_name": "阿尔及利亚",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.252Z"
+  "_updated_at": "2026-06-26T10:53:40.983Z"
 }

@@ -2715,6 +2715,614 @@
       "maxReturn": null,
       "result": "lost",
       "note": "3 场比分大包围 2×2×2=8 注 × 2 元 × 1 倍 = 16 元（用户已确认全 lost）"
+    },
+    {
+      "id": "crs-thu055-060-zjq-2026-06-25",
+      "type": "match",
+      "title": "[总进球] 串关（6×1 · 2 注 · 4 元）",
+      "matchLabel": "周四055-060 总进球（赔率时点 2026-06-25 18:35）",
+      "date": "2026-06-25T18:35:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "6x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-25 18:35）",
+      "picks": [
+        {
+          "mid": "2040291",
+          "match": "周四055",
+          "home": "ECU",
+          "away": "GER",
+          "kickoff": "2026-06-26 04:00",
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040291",
+          "match": "周四055",
+          "home": "ECU",
+          "away": "GER",
+          "kickoff": "2026-06-26 04:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040292",
+          "match": "周四056",
+          "home": "CUW",
+          "away": "CIV",
+          "kickoff": "2026-06-26 04:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040293",
+          "match": "周四057",
+          "home": "TUN",
+          "away": "NED",
+          "kickoff": "2026-06-26 07:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040294",
+          "match": "周四058",
+          "home": "JPN",
+          "away": "SWE",
+          "kickoff": "2026-06-26 07:00",
+          "play": "zjq",
+          "pick": "4",
+          "pickLabel": "4 球",
+          "odds": null
+        },
+        {
+          "mid": "2040295",
+          "match": "周四059",
+          "home": "PAR",
+          "away": "AUS",
+          "kickoff": "2026-06-26 10:00",
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040296",
+          "match": "周四060",
+          "home": "TUR",
+          "away": "USA",
+          "kickoff": "2026-06-26 10:00",
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 4,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周四055-060 共 6 场 6×1 总进球串关，055 选 2 注（2/3 球）→ 2 注 × 2 元 × 1 倍 = 4 元。结算：055 ECU 2-1 GER(3 球中/2 球错) / 056 CUW 0-2 CIV(2 球中/3 球错) / 057 TUN 0-2 NED(2 球中/3 球错) / 058 JPN 2-1 SWE(3 球中/4 球错) / 059 PAR 0-0 AUS(0 球中/2 球错) / 060 TUR 3-2 USA(5 球中/2 球错) → 4 场非 3 球，055 zjq 2 也错 → 全 lost"
+    },
+    {
+      "id": "crs-thu055-057-060-mix-2026-06-25",
+      "type": "match",
+      "title": "[混合] 串关（3×1 + 4×1 · 5 注 · 20 元 · 2 倍）",
+      "matchLabel": "周四055 spf + 周四056 rqspf(+2) + 周四057 rqspf(+2) + 周四060 spf（赔率时点 2026-06-25 18:38）",
+      "date": "2026-06-25T18:38:00",
+      "stakeMultiplier": 2,
+      "parlayType": [
+        "3x1",
+        "4x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-25 18:38）",
+      "picks": [
+        {
+          "mid": "2040291",
+          "match": "周四055",
+          "home": "ECU",
+          "away": "GER",
+          "kickoff": "2026-06-26 04:00",
+          "play": "spf",
+          "pick": "away",
+          "pickLabel": "主负",
+          "odds": null
+        },
+        {
+          "mid": "2040292",
+          "match": "周四056",
+          "home": "CUW",
+          "away": "CIV",
+          "kickoff": "2026-06-26 04:00",
+          "play": "rqspf",
+          "handicap": 2,
+          "pick": "away",
+          "pickLabel": "主负(+2)",
+          "odds": null
+        },
+        {
+          "mid": "2040293",
+          "match": "周四057",
+          "home": "TUN",
+          "away": "NED",
+          "kickoff": "2026-06-26 07:00",
+          "play": "rqspf",
+          "handicap": 2,
+          "pick": "away",
+          "pickLabel": "主负(+2)",
+          "odds": null
+        },
+        {
+          "mid": "2040296",
+          "match": "周四060",
+          "home": "TUR",
+          "away": "USA",
+          "kickoff": "2026-06-26 10:00",
+          "play": "spf",
+          "pick": "away",
+          "pickLabel": "主负",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 5,
+      "totalCost": 20,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "4 场 3×1+4×1 × 2 倍 = C(4,3)+C(4,4)=4+1=5 注 × 2 元 × 2 倍 = 20 元。结算：055 ECU 2-1 GER(主胜·非主负 ✗) / 056 CUW 0-2 CIV 让+2=主平(非主负 ✗) / 057 TUN 0-2 NED 让+2=主平(非主负 ✗) / 060 TUR 3-2 USA(主胜·非主负 ✗) → 4 腿全错，lost"
+    },
+    {
+      "id": "crs-wed050-054-mix-2026-06-24",
+      "type": "match",
+      "title": "[混合] 串关（2×1 + 3×1 + 4×1 · 25 注 · 100 元 · 2 倍）",
+      "matchLabel": "周三050-054 bqc+spf+rqspf（赔率时点 2026-06-24 19:19）",
+      "date": "2026-06-24T19:19:00",
+      "stakeMultiplier": 2,
+      "parlayType": [
+        "2x1",
+        "3x1",
+        "4x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-24 19:19）",
+      "picks": [
+        {
+          "mid": "2040286",
+          "match": "周三050",
+          "home": "BIH",
+          "away": "QAT",
+          "kickoff": "2026-06-25 03:00",
+          "play": "bqc",
+          "pick": "win-win",
+          "pickLabel": "胜-胜",
+          "odds": null
+        },
+        {
+          "mid": "2040287",
+          "match": "周三051",
+          "home": "SCO",
+          "away": "BRA",
+          "kickoff": "2026-06-25 06:00",
+          "play": "bqc",
+          "pick": "lose-lose",
+          "pickLabel": "负-负",
+          "odds": null
+        },
+        {
+          "mid": "2040288",
+          "match": "周三052",
+          "home": "MAR",
+          "away": "HAI",
+          "kickoff": "2026-06-25 06:00",
+          "play": "bqc",
+          "pick": "win-win",
+          "pickLabel": "胜-胜",
+          "odds": null
+        },
+        {
+          "mid": "2040289",
+          "match": "周三053",
+          "home": "RSA",
+          "away": "KOR",
+          "kickoff": "2026-06-25 09:00",
+          "play": "spf",
+          "pick": "away",
+          "pickLabel": "主负",
+          "odds": null
+        },
+        {
+          "mid": "2040290",
+          "match": "周三054",
+          "home": "CZE",
+          "away": "MEX",
+          "kickoff": "2026-06-25 09:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "home",
+          "pickLabel": "主胜(+1)",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 25,
+      "totalCost": 100,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "5 场 2×1+3×1+4×1 × 2 倍 = C(5,2)+C(5,3)+C(5,4)=10+10+5=25 注 × 2 元 × 2 倍 = 100 元。结算：050 BIH 3-1 QAT(胜胜·半场未知) / 051 SCO 0-3 BRA(负负·半场未知) / 052 MAR 4-2 HAI(胜胜·半场未知) / 053 RSA 1-0 KOR(主胜·非主负 ✗) / 054 CZE 0-3 MEX 让+1=主平(非主胜 ✗) → 已 2 腿错，全 lost 已定"
+    },
+    {
+      "id": "crs-wed050-051-052-054-mix-2026-06-24",
+      "type": "match",
+      "title": "[混合] 串关（3×1 · 12 注 · 48 元 · 2 倍）",
+      "matchLabel": "周三050 bf{2:0,3:0} + 周三051 rqspf(+1) + 周三052 bqc + 周三054 bf{1:1,0:0}（赔率时点 2026-06-24 19:38）",
+      "date": "2026-06-24T19:38:00",
+      "stakeMultiplier": 2,
+      "parlayType": [
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-24 19:38）",
+      "picks": [
+        {
+          "mid": "2040286",
+          "match": "周三050",
+          "home": "BIH",
+          "away": "QAT",
+          "kickoff": "2026-06-25 03:00",
+          "play": "bf",
+          "pick": "2-0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040286",
+          "match": "周三050",
+          "home": "BIH",
+          "away": "QAT",
+          "kickoff": "2026-06-25 03:00",
+          "play": "bf",
+          "pick": "3-0",
+          "pickLabel": "3:0",
+          "odds": null
+        },
+        {
+          "mid": "2040287",
+          "match": "周三051",
+          "home": "SCO",
+          "away": "BRA",
+          "kickoff": "2026-06-25 06:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "away",
+          "pickLabel": "主负(+1)",
+          "odds": null
+        },
+        {
+          "mid": "2040288",
+          "match": "周三052",
+          "home": "MAR",
+          "away": "HAI",
+          "kickoff": "2026-06-25 06:00",
+          "play": "bqc",
+          "pick": "win-win",
+          "pickLabel": "胜-胜",
+          "odds": null
+        },
+        {
+          "mid": "2040290",
+          "match": "周三054",
+          "home": "CZE",
+          "away": "MEX",
+          "kickoff": "2026-06-25 09:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040290",
+          "match": "周三054",
+          "home": "CZE",
+          "away": "MEX",
+          "kickoff": "2026-06-25 09:00",
+          "play": "bf",
+          "pick": "0-0",
+          "pickLabel": "0:0",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 12,
+      "totalCost": 48,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "4 场 3×1 × 2 倍。计算: 050 (2选) × 051 (1选) × 052 (1选) × 054 (2选) → 2×1×1×2=4 种场选 → C(4,3)=4 组选 3 → 2+4+4+2=12 注 × 2 元 × 2 倍 = 48 元。结算：050 BIH 3-1 QAT(2:0/3:0 全错 ✗) / 051 SCO 0-3 BRA 让+1=主负 ✓ / 052 MAR 4-2 HAI(胜胜·半场未知) / 054 CZE 0-3 MEX(1:1/0:0 全错 ✗) → 050+054 比分全错，3×1 必含这两场 → 全 lost"
+    },
+    {
+      "id": "crs-tue046-047-048-mix-2026-06-23",
+      "type": "match",
+      "title": "[混合] 串关（3×1 · 2 注 · 20 元 · 5 倍）",
+      "matchLabel": "周二046 bqc + 周二047 rqspf(+1) + 周二048 rqspf(-1)/spf（赔率时点 2026-06-23 14:03）",
+      "date": "2026-06-23T14:03:00",
+      "stakeMultiplier": 5,
+      "parlayType": [
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-23 14:03）",
+      "picks": [
+        {
+          "mid": "2040256",
+          "match": "周二046",
+          "home": "ENG",
+          "away": "GHA",
+          "kickoff": "2026-06-24 04:00",
+          "play": "bqc",
+          "pick": "win-win",
+          "pickLabel": "胜-胜",
+          "odds": null
+        },
+        {
+          "mid": "2040257",
+          "match": "周二047",
+          "home": "PAN",
+          "away": "CRO",
+          "kickoff": "2026-06-24 07:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "away",
+          "pickLabel": "主负(+1)",
+          "odds": null
+        },
+        {
+          "mid": "2040258",
+          "match": "周二048",
+          "home": "COL",
+          "away": "COD",
+          "kickoff": "2026-06-24 10:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "home",
+          "pickLabel": "主胜(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040258",
+          "match": "周二048",
+          "home": "COL",
+          "away": "COD",
+          "kickoff": "2026-06-24 10:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 2,
+      "totalCost": 20,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "3 场 3×1 × 5 倍（048 双玩法 rqspf+spf → 2 注）× 2 元 × 5 倍 = 20 元。结算：046 ENG 2-1 GHA 半全场需半场数据(默认错) / 047 PAN 0-2 CRO 让+1=主负 ✓ / 048 COL 2-0 COD 让-1=主胜 ✓ + spf 主胜 ✓ → 半全场 046 半场不符 → 全 lost"
+    },
+    {
+      "id": "crs-tue045-046-047-bf-2026-06-23",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 3×1 · 20 注 · 40 元 · 1 倍）",
+      "matchLabel": "周二045 bf{4:0,2:0} + 周二046 bf{2:0,3:1} + 周二047 bf{0:2,0:3}（赔率时点 2026-06-23 18:53）",
+      "date": "2026-06-23T18:53:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1",
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-23 18:53）",
+      "picks": [
+        {
+          "mid": "2040255",
+          "match": "周二045",
+          "home": "POR",
+          "away": "UZB",
+          "kickoff": "2026-06-24 01:00",
+          "play": "bf",
+          "pick": "4-0",
+          "pickLabel": "4:0",
+          "odds": null
+        },
+        {
+          "mid": "2040255",
+          "match": "周二045",
+          "home": "POR",
+          "away": "UZB",
+          "kickoff": "2026-06-24 01:00",
+          "play": "bf",
+          "pick": "2-0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040256",
+          "match": "周二046",
+          "home": "ENG",
+          "away": "GHA",
+          "kickoff": "2026-06-24 04:00",
+          "play": "bf",
+          "pick": "2-0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040256",
+          "match": "周二046",
+          "home": "ENG",
+          "away": "GHA",
+          "kickoff": "2026-06-24 04:00",
+          "play": "bf",
+          "pick": "3-1",
+          "pickLabel": "3:1",
+          "odds": null
+        },
+        {
+          "mid": "2040257",
+          "match": "周二047",
+          "home": "PAN",
+          "away": "CRO",
+          "kickoff": "2026-06-24 07:00",
+          "play": "bf",
+          "pick": "0-2",
+          "pickLabel": "0:2",
+          "odds": null
+        },
+        {
+          "mid": "2040257",
+          "match": "周二047",
+          "home": "PAN",
+          "away": "CRO",
+          "kickoff": "2026-06-24 07:00",
+          "play": "bf",
+          "pick": "0-3",
+          "pickLabel": "0:3",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "3 场 2×1+3×1（每场 2 选）。计算: 2x1(045×2)(046×2)→4 + 2x1(045×2)(047×2)→4 + 2x1(046×2)(047×2)→4 = 12 + 3x1(045×2)(046×2)(047×2)→8 = 20 注 × 2 元 × 1 倍 = 40 元。结算：045 POR 3-1 UZB(4:0/2:0 全错 ✗) / 046 ENG 2-1 GHA(2:0/3:1 全错 ✗) / 047 PAN 0-2 CRO(0:2 ✓ / 0:3 ✗) → 045/046 比分全错，任何 2x1+3x1 都含 045 或 046 → 全 lost (12+8=20 注全输)"
+    },
+    {
+      "id": "crs-tue048-bf-2026-06-23",
+      "type": "match",
+      "title": "[比分] 单关（1 注 · 10 元 · 5 倍）",
+      "matchLabel": "周二048 bf 1:1（赔率时点 2026-06-23 18:57）",
+      "date": "2026-06-23T18:57:00",
+      "stakeMultiplier": 5,
+      "parlayType": [
+        "single"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-23 18:57）",
+      "picks": [
+        {
+          "mid": "2040258",
+          "match": "周二048",
+          "home": "COL",
+          "away": "COD",
+          "kickoff": "2026-06-24 10:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 10,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周二048 比分单关 × 5 倍 = 1 注 × 2 元 × 5 倍 = 10 元。结算：048 COL 2-0 COD(1:1 错 ✗) → lost"
+    },
+    {
+      "id": "crs-thu058-059-060-bf-2026-06-25",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 3×1 · 20 注 · 40 元 · 1 倍）",
+      "matchLabel": "周四058 bf{1:1,2:2} + 周四059 bf{0:0,1:1} + 周四060 bf{1:1,0:3}（赔率时点 2026-06-25 18:22）",
+      "date": "2026-06-25T18:22:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1",
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-25 18:22）",
+      "picks": [
+        {
+          "mid": "2040294",
+          "match": "周四058",
+          "home": "JPN",
+          "away": "SWE",
+          "kickoff": "2026-06-26 07:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040294",
+          "match": "周四058",
+          "home": "JPN",
+          "away": "SWE",
+          "kickoff": "2026-06-26 07:00",
+          "play": "bf",
+          "pick": "2-2",
+          "pickLabel": "2:2",
+          "odds": null
+        },
+        {
+          "mid": "2040295",
+          "match": "周四059",
+          "home": "PAR",
+          "away": "AUS",
+          "kickoff": "2026-06-26 10:00",
+          "play": "bf",
+          "pick": "0-0",
+          "pickLabel": "0:0",
+          "odds": null
+        },
+        {
+          "mid": "2040295",
+          "match": "周四059",
+          "home": "PAR",
+          "away": "AUS",
+          "kickoff": "2026-06-26 10:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040296",
+          "match": "周四060",
+          "home": "TUR",
+          "away": "USA",
+          "kickoff": "2026-06-26 10:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040296",
+          "match": "周四060",
+          "home": "TUR",
+          "away": "USA",
+          "kickoff": "2026-06-26 10:00",
+          "play": "bf",
+          "pick": "0-3",
+          "pickLabel": "0:3",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": 67.68,
+      "result": "won",
+      "note": "3 场 2×1+3×1（每场 2 选）。计算: 2x1(058×2)(059×2)→4 + 2x1(058×2)(060×2)→4 + 2x1(059×2)(060×2)→4 = 12 + 3x1(058×2)(059×2)(060×2)→8 = 20 注 × 2 元 × 1 倍 = 40 元。结算：058 JPN 2-1 SWE(1:1/2:2 全错) / 059 PAR 0-0 AUS(0:0 ✓ / 1:1 ✗) / 060 TUR 3-2 USA(1:1/0:3 全错) — 用户报 won 67.68 (ROI +69.2%)，注：以用户实际 APP 中奖金额为准"
     }
   ]
 }

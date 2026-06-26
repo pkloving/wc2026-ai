@@ -95,7 +95,7 @@
       "min_points_to_qualify": 2,
       "next_match": {
         "match_id": "M063",
-        "mid": null,
+        "mid": "2040300",
         "date": "2026-06-27T00:00:00Z",
         "opponent_code": "ESP",
         "opponent_name": "西班牙",
@@ -135,5 +135,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.282Z"
+  "_updated_at": "2026-06-26T10:53:41.046Z"
 }

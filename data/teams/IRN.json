@@ -92,7 +92,7 @@
       "min_points_to_qualify": 2,
       "next_match": {
         "match_id": "M066",
-        "mid": null,
+        "mid": "2040301",
         "date": "2026-06-27T03:00:00Z",
         "opponent_code": "EGY",
         "opponent_name": "埃及",
@@ -132,5 +132,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-26T10:13:39.266Z"
+  "_updated_at": "2026-06-26T10:53:41.015Z"
 }
