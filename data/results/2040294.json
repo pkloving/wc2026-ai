@@ -1,0 +1,56 @@
+{
+  "matchId": "2040294",
+  "code": "周四058",
+  "league": "世界杯",
+  "home": "JPN",
+  "away": "SWE",
+  "kickoff": "2026-06-26 07:00",
+  "homeScore": 2,
+  "awayScore": 1,
+  "final_score": "2-1",
+  "halfTime": {
+    "home": 1,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "SWE",
+      "player": "伊萨克 (Isak)",
+      "minute": "15",
+      "type": "goal",
+      "assist": "福斯贝里 (Forsberg)"
+    },
+    {
+      "team": "JPN",
+      "player": "三笘薫 (Mitoma)",
+      "minute": "41",
+      "type": "goal",
+      "assist": "镰田大地 (Kamada)"
+    },
+    {
+      "team": "JPN",
+      "player": "久保健英 (Kubo)",
+      "minute": "67",
+      "type": "goal",
+      "assist": "堂安律 (Doan)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 0,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "3",
+  "_scorersSource": "网络战报+直播吧（伊萨克15'，三笘薫41'，久保健英67'）",
+  "_capturedAt": "2026-06-26T09:00:00.000Z"
+}

@@ -1,0 +1,66 @@
+{
+  "matchId": "2040296",
+  "code": "周四060",
+  "league": "世界杯",
+  "home": "TUR",
+  "away": "USA",
+  "kickoff": "2026-06-26 10:00",
+  "homeScore": 3,
+  "awayScore": 2,
+  "final_score": "3-2",
+  "halfTime": {
+    "home": 1,
+    "away": 2
+  },
+  "scorers": [
+    {
+      "team": "USA",
+      "player": "特拉斯蒂 (Trusty)",
+      "minute": "3",
+      "type": "goal"
+    },
+    {
+      "team": "TUR",
+      "player": "居莱尔 (Güler)",
+      "minute": "15",
+      "type": "goal"
+    },
+    {
+      "team": "TUR",
+      "player": "柯克曲 (Kökçü)",
+      "minute": "27",
+      "type": "goal",
+      "assist": "居莱尔 (Güler)"
+    },
+    {
+      "team": "USA",
+      "player": "伯哈尔特 (Burkhart)",
+      "minute": "65",
+      "type": "goal"
+    },
+    {
+      "team": "TUR",
+      "player": "艾汗 (Ayhan)",
+      "minute": "90+8",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "3:2",
+    "other": null
+  },
+  "zjqResult": "5",
+  "bqcResult": "负胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "home",
+  "_hhadResult": "D",
+  "_totalGoals": "5",
+  "_scorersSource": "直播吧6月26日讯：特拉斯蒂3'闪击破门，居莱尔15'扳平(斩获世界杯处子球)，柯克曲27'反超(居莱尔直塞+埃尔马利助攻)，伯哈尔特65'贴地斩扳平，艾汗90+8'(97:50)绝杀——土耳其队史世界杯最晚进球",
+  "_capturedAt": "2026-06-26T15:00:00.000Z"
+}

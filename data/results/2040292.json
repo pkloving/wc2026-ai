@@ -1,0 +1,49 @@
+{
+  "matchId": "2040292",
+  "code": "周四056",
+  "league": "世界杯",
+  "home": "CUW",
+  "away": "CIV",
+  "kickoff": "2026-06-26 04:00",
+  "homeScore": 0,
+  "awayScore": 2,
+  "final_score": "0-2",
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "CIV",
+      "player": "尼古拉·佩佩 (Nicolas Pépé)",
+      "minute": "6",
+      "type": "goal",
+      "assist": "迪奥曼德 (Diomande)"
+    },
+    {
+      "team": "CIV",
+      "player": "尼古拉·佩佩 (Nicolas Pépé)",
+      "minute": "55",
+      "type": "goal",
+      "assist": "桑加雷 (Sangaré)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 2,
+  "spfResult": "away",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "0:2",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_hhadResult": "D",
+  "_totalGoals": "2",
+  "_scorersSource": "网络战报+直播吧（佩佩6'，佩佩55'，迪奥曼德/桑加雷各1助攻）",
+  "_capturedAt": "2026-06-26T01:10:00.000Z"
+}

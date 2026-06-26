@@ -1,0 +1,54 @@
+{
+  "matchId": "2040291",
+  "code": "周四055",
+  "league": "世界杯",
+  "home": "ECU",
+  "away": "GER",
+  "kickoff": "2026-06-26 04:00",
+  "homeScore": 2,
+  "awayScore": 1,
+  "final_score": "2-1",
+  "halfTime": {
+    "home": 1,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "GER",
+      "player": "萨内 (Sané)",
+      "minute": "2",
+      "type": "goal",
+      "assist": "维尔茨 (Wirtz)"
+    },
+    {
+      "team": "ECU",
+      "player": "安古洛 (Ángulo)",
+      "minute": "9",
+      "type": "goal"
+    },
+    {
+      "team": "ECU",
+      "player": "普拉塔 (Plata)",
+      "minute": "85+",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "home",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "home",
+  "_hhadResult": "A",
+  "_totalGoals": "3",
+  "_scorersSource": "网络战报+直播吧（萨内2'，安古洛9'，普拉塔85+'）",
+  "_capturedAt": "2026-06-26T01:10:00.000Z"
+}

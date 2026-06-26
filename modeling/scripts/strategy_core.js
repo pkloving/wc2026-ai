@@ -29,6 +29,11 @@ export const DEFAULT_PARAMS = {
   },
   zjq: {
     normalTwoLo: 2.5, normalTwoHi: 3.5,
+    // 2026-06-26 调优 (sampled 2040285 瑞士 2-1 加拿大 hc=-1 走盘):
+    // 2 球纠偏在 rq.away<1.6 (让负热门) 场景下 0/2 命中 (n=2 ROI -100%)
+    // 排除后剩余 n=13 ROI +18.5%, 命中率从 33.3% → 38.5%
+    // 默认 1.6 关闭 rq.away<1.6 的 2 球纠偏, 走 baseline 让球→大/小球
+    normalTwoRqAwayMin: 1.6,
     baselineBigHandicapAbs: 2,
   },
   bqc: {
@@ -131,6 +136,8 @@ export const SEARCH_SPACE = [
   // --- zjq / bqc 纠偏 ---
   { path: 'zjq.normalTwoLo',              values: [2.3, 2.5, 2.7] },
   { path: 'zjq.normalTwoHi',              values: [3.3, 3.5, 3.7] },
+  // 2026-06-26: 加 normalTwoRqAwayMin 旋钮 (0=关闭过滤, 1.5/1.6=温和过滤, 1.8/2.0=严格)
+  { path: 'zjq.normalTwoRqAwayMin',       values: [0, 1.5, 1.6, 1.8] },
   { path: 'bqc.ssMax',                    values: [1.8, 2.0, 2.2] },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
@@ -525,6 +532,19 @@ export function zjqStrategy(m, ctx) {
       // 高压力比赛 → 倾向 2-3 球范围
       // 跳过 2 球纠偏规则的严格区间检查，直接推 2-3 球
       // 但保留原 NORMAL 的路径：先看 2 球赔率是否在主流盘，仍用 2 球纠偏；否则推 3 球
+      // 2026-06-26 调优 (sampled 2040163 韩国 2-1 捷克, hc=-1, rq.away=1.39 高压力):
+      // 高压力 + rq.away<1.6 (让负热门) → 实际走盘 3 球, 2 球错
+      // 加 rq.away 过滤: <1.6 时推 3 球 (走盘 1:0/2:1 走盘比分), ≥1.6 时维持 2 球
+      const rqAway = m.rqspf?.away ?? 999;
+      const rqAwayMin = P.normalTwoRqAwayMin ?? 1.6;
+      if (rqAway < rqAwayMin && odds['3'] > 1) {
+        return {
+          corrected: { pick: '3', odds: odds['3'] },
+          coldPick, stable: '3',
+          coldOdds: odds[coldPick], stableOdds: odds['3'],
+          rule: { name: '晋级信号:高压力NORMAL+rq.away<1.6→3球(走盘)', roi: '(动态)', n: 0 },
+        };
+      }
       if (odds['2'] >= P.normalTwoLo && odds['2'] < 4) {
         return {
           corrected: { pick: '2', odds: odds['2'] },
@@ -537,13 +557,14 @@ export function zjqStrategy(m, ctx) {
     }
   }
 
-  if (type === 'NORMAL' && odds['2'] >= P.normalTwoLo && odds['2'] < P.normalTwoHi) {
+  if (type === 'NORMAL' && odds['2'] >= P.normalTwoLo && odds['2'] < P.normalTwoHi
+      && (!m.rqspf?.away || m.rqspf.away >= (P.normalTwoRqAwayMin ?? 1.6))) {
     const coldPick = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
     return {
       corrected: { pick: '2', odds: odds['2'] },
       coldPick, stable: '2',
       coldOdds: odds[coldPick], stableOdds: odds['2'],
-      rule: { name: 'NORMAL+2球纠偏(主流盘)', roi: '+54%', n: 10 },
+      rule: { name: 'NORMAL+2球纠偏(主流盘,rq.away≥1.6)', roi: '+18.5%', n: 13 },
     };
   }
 

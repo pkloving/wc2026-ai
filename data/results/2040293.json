@@ -1,0 +1,49 @@
+{
+  "matchId": "2040293",
+  "code": "周四057",
+  "league": "世界杯",
+  "home": "TUN",
+  "away": "NED",
+  "kickoff": "2026-06-26 07:00",
+  "homeScore": 0,
+  "awayScore": 2,
+  "final_score": "0-2",
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "NED",
+      "player": "加克波 (Gakpo)",
+      "minute": "32",
+      "type": "goal",
+      "assist": "德容 (De Jong)"
+    },
+    {
+      "team": "NED",
+      "player": "德佩 (Depay)",
+      "minute": "78",
+      "type": "goal",
+      "assist": "西蒙斯 (Simons)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 2,
+  "spfResult": "away",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "0:2",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_hhadResult": "D",
+  "_totalGoals": "2",
+  "_scorersSource": "网络战报+直播吧（加克波32'，德佩78'）",
+  "_capturedAt": "2026-06-26T09:00:00.000Z"
+}

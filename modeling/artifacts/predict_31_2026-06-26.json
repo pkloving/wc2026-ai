@@ -1,0 +1,1334 @@
+{
+  "date": "2026-06-26",
+  "strategy": "31号策略 (F4主池 + 反方向单关 + RQSPF/ZJQ/BQC赔率纠偏)",
+  "picker": {
+    "cat1": {
+      "matches": [
+        "周四057",
+        "周四060",
+        "周四058",
+        "周四059"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.94
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.98
+            }
+          ],
+          "odds": 6.3,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.94
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.95
+            }
+          ],
+          "odds": 9.39,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "draw",
+              "label": "让平",
+              "odds": 3.93
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.98
+            }
+          ],
+          "odds": 12.76,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "draw",
+              "label": "让平",
+              "odds": 3.93
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.95
+            }
+          ],
+          "odds": 19.01,
+          "stake": 1
+        }
+      ],
+      "parlay2": [],
+      "parlay3": [
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.94
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.98
+            }
+          ],
+          "odds": 6.3,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.94
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.95
+            }
+          ],
+          "odds": 9.39,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "draw",
+              "label": "让平",
+              "odds": 3.93
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.98
+            }
+          ],
+          "odds": 12.76,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "d": "away",
+              "label": "让负",
+              "odds": 1.64
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "d": "draw",
+              "label": "让平",
+              "odds": 3.93
+            },
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.95
+            }
+          ],
+          "odds": 19.01,
+          "stake": 1
+        }
+      ],
+      "parlay4": null,
+      "legMode": "atomic",
+      "stake": 1,
+      "slimCount": 1,
+      "dualCount": 3
+    },
+    "cat2": {
+      "matches": [
+        "周四058",
+        "周四060",
+        "周四057"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "1:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "0:1",
+              "odds": 8.85
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:3",
+              "odds": 9
+            }
+          ],
+          "odds": 677.02,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "1:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "0:1",
+              "odds": 8.85
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:1",
+              "odds": 22
+            }
+          ],
+          "odds": 1654.95,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "1:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "2:2",
+              "odds": 11
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:3",
+              "odds": 9
+            }
+          ],
+          "odds": 841.5,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "1:0",
+              "odds": 8.5
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "2:2",
+              "odds": 11
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:1",
+              "odds": 22
+            }
+          ],
+          "odds": 2057,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "3:1",
+              "odds": 11
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "0:1",
+              "odds": 8.85
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:3",
+              "odds": 9
+            }
+          ],
+          "odds": 876.15,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "3:1",
+              "odds": 11
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "0:1",
+              "odds": 8.85
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:1",
+              "odds": 22
+            }
+          ],
+          "odds": 2141.7,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "3:1",
+              "odds": 11
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "2:2",
+              "odds": 11
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:3",
+              "odds": 9
+            }
+          ],
+          "odds": 1089,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周四058",
+              "match": "JPNvsSWE",
+              "score": "3:1",
+              "odds": 11
+            },
+            {
+              "code": "周四060",
+              "match": "TURvsUSA",
+              "score": "2:2",
+              "odds": 11
+            },
+            {
+              "code": "周四057",
+              "match": "TUNvsNED",
+              "score": "1:1",
+              "odds": 22
+            }
+          ],
+          "odds": 2662,
+          "stake": 1
+        }
+      ]
+    },
+    "cat3": [
+      {
+        "code": "周四058",
+        "match": "JPNvsSWE",
+        "score": "4:1",
+        "odds": 25
+      },
+      {
+        "code": "周四059",
+        "match": "PARvsAUS",
+        "score": "4:1",
+        "odds": 90
+      }
+    ],
+    "cat4": [
+      {
+        "code": "周四059",
+        "match": "PARvsAUS",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 2.7
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘)",
+          "roi": "+54%",
+          "n": 10
+        }
+      }
+    ],
+    "cat5": []
+  },
+  "rqspf_follow": [
+    {
+      "code": "周四057",
+      "mid": "2040293",
+      "match": "TUNvsNED",
+      "handicap": 2,
+      "rqspf_odds": {
+        "home": 3.55,
+        "draw": 4.2,
+        "away": 1.64
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.64,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "home",
+        "odds": 3.55,
+        "label": "让胜"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周四058",
+      "mid": "2040294",
+      "match": "JPNvsSWE",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 2.95,
+        "draw": 3.5,
+        "away": 1.98
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.98,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "home",
+        "odds": 2.95,
+        "label": "让胜"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周四059",
+      "mid": "2040295",
+      "match": "PARvsAUS",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 6.2,
+        "draw": 4.1,
+        "away": 1.38
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.38,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 4.1,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周四060",
+      "mid": "2040296",
+      "match": "TURvsUSA",
+      "handicap": 1,
+      "rqspf_odds": {
+        "home": 1.94,
+        "draw": 3.93,
+        "away": 2.78
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.94,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.93,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "主受让+1主+平双选",
+        "roi": "+11.6%",
+        "n": 6
+      }
+    }
+  ],
+  "zjq_follow": [
+    {
+      "code": "周四057",
+      "mid": "2040293",
+      "match": "TUNvsNED",
+      "handicap": 2,
+      "corrected": null,
+      "coldPick": "0",
+      "stable": "4",
+      "coldOdds": 29,
+      "stableOdds": 4.1,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周四058",
+      "mid": "2040294",
+      "match": "JPNvsSWE",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 20,
+      "stableOdds": 3.7,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周四059",
+      "mid": "2040295",
+      "match": "PARvsAUS",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 2.7
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 55,
+      "stableOdds": 2.7,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘)",
+        "roi": "+54%",
+        "n": 10
+      }
+    },
+    {
+      "code": "周四060",
+      "mid": "2040296",
+      "match": "TURvsUSA",
+      "handicap": 1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 23,
+      "stableOdds": 3.85,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    }
+  ],
+  "bqc_follow": [
+    {
+      "code": "周四057",
+      "mid": "2040293",
+      "match": "TUNvsNED",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 1.22
+        },
+        {
+          "key": "平负",
+          "odds": 3.95
+        },
+        {
+          "key": "平平",
+          "odds": 18
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周四058",
+      "mid": "2040294",
+      "match": "JPNvsSWE",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 2.47
+        },
+        {
+          "key": "平胜",
+          "odds": 4.75
+        },
+        {
+          "key": "平平",
+          "odds": 6
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周四059",
+      "mid": "2040295",
+      "match": "PARvsAUS",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "平平",
+          "odds": 3.2
+        },
+        {
+          "key": "平胜",
+          "odds": 4.3
+        },
+        {
+          "key": "胜胜",
+          "odds": 4.9
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周四060",
+      "mid": "2040296",
+      "match": "TURvsUSA",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 2.55
+        },
+        {
+          "key": "平负",
+          "odds": 4.65
+        },
+        {
+          "key": "胜胜",
+          "odds": 6.3
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    }
+  ],
+  "matches": [
+    {
+      "code": "周四057",
+      "mid": "2040293",
+      "match": "TUNvsNED",
+      "home": "TUN",
+      "away": "NED",
+      "kickoff": "2026-06-26 07:00",
+      "type": "NORMAL",
+      "handicap": 2,
+      "spf": null,
+      "rqspf": {
+        "home": 3.55,
+        "draw": 4.2,
+        "away": 1.64
+      },
+      "mainPicks": [
+        {
+          "score": "0:2",
+          "odds": 5.9
+        },
+        {
+          "score": "1:3",
+          "odds": 9
+        },
+        {
+          "score": "1:1",
+          "odds": 22
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周四058",
+      "mid": "2040294",
+      "match": "JPNvsSWE",
+      "home": "JPN",
+      "away": "SWE",
+      "kickoff": "2026-06-26 07:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.62,
+        "draw": 3.55,
+        "away": 4.35
+      },
+      "rqspf": {
+        "home": 2.95,
+        "draw": 3.5,
+        "away": 1.98
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 7.25
+        },
+        {
+          "score": "1:0",
+          "odds": 8.5
+        },
+        {
+          "score": "3:1",
+          "odds": 11
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周四059",
+      "mid": "2040295",
+      "match": "PARvsAUS",
+      "home": "PAR",
+      "away": "AUS",
+      "kickoff": "2026-06-26 10:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 2.57,
+        "draw": 2.2,
+        "away": 3.5
+      },
+      "rqspf": {
+        "home": 6.2,
+        "draw": 4.1,
+        "away": 1.38
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 3.9
+        },
+        {
+          "score": "0:0",
+          "odds": 4.7
+        },
+        {
+          "score": "1:0",
+          "odds": 6.7
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周四060",
+      "mid": "2040296",
+      "match": "TURvsUSA",
+      "home": "TUR",
+      "away": "USA",
+      "kickoff": "2026-06-26 10:00",
+      "type": "NORMAL",
+      "handicap": 1,
+      "spf": {
+        "home": 3.75,
+        "draw": 3.9,
+        "away": 1.65
+      },
+      "rqspf": {
+        "home": 1.94,
+        "draw": 3.93,
+        "away": 2.78
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 6.7
+        },
+        {
+          "score": "0:1",
+          "odds": 8.85
+        },
+        {
+          "score": "2:2",
+          "odds": 11
+        }
+      ],
+      "singleBets": []
+    }
+  ],
+  "combos": {
+    "c2": [
+      {
+        "matches": [
+          "周四057",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 23.01
+      },
+      {
+        "matches": [
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 26.13
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          }
+        ],
+        "odds": 27.73
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 28.27
+      },
+      {
+        "matches": [
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 31.49
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:0",
+            "odds": 8.5
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 33.15
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          }
+        ],
+        "odds": 34.08
+      },
+      {
+        "matches": [
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "0:1",
+            "odds": 8.85
+          }
+        ],
+        "odds": 34.52
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "1:3",
+            "odds": 9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 35.1
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 39.53
+      }
+    ],
+    "c3": [
+      {
+        "matches": [
+          "周四057",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 154.17
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 166.82
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 185.79
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 189.44
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "JPNvsSWE",
+            "score": "1:0",
+            "odds": 8.5
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          }
+        ],
+        "odds": 195.59
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四058",
+          "周四059"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          }
+        ],
+        "odds": 201.04
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "0:2",
+            "odds": 5.9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "0:1",
+            "odds": 8.85
+          }
+        ],
+        "odds": 203.64
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:0",
+            "odds": 8.5
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 222.1
+      },
+      {
+        "matches": [
+          "周四058",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "JPNvsSWE",
+            "score": "1:1",
+            "odds": 7.25
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "0:0",
+            "odds": 4.7
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 228.3
+      },
+      {
+        "matches": [
+          "周四057",
+          "周四059",
+          "周四060"
+        ],
+        "picks": [
+          {
+            "match": "TUNvsNED",
+            "score": "1:3",
+            "odds": 9
+          },
+          {
+            "match": "PARvsAUS",
+            "score": "1:1",
+            "odds": 3.9
+          },
+          {
+            "match": "TURvsUSA",
+            "score": "1:1",
+            "odds": 6.7
+          }
+        ],
+        "odds": 235.17
+      }
+    ]
+  }
+}

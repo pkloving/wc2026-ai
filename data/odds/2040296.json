@@ -7,7 +7,7 @@
     "away": "USA",
     "kickoff": "2026-06-26 10:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040296",
-    "scraped_at": "2026-06-25T09:54:14.689Z",
+    "scraped_at": "2026-06-26T01:04:57.542Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -17,13 +17,14 @@
       "HAD": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true,
+    "is_finished_odds_marked_at": "2026-06-26T15:00:00.000Z"
   },
   "odds": {
     "spf_latest": {
-      "home": 3.65,
-      "draw": 3.85,
-      "away": 1.68
+      "home": 3.75,
+      "draw": 3.9,
+      "away": 1.65
     },
     "spf_history": [],
     "handicap": 1,
@@ -90,8 +91,8 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-25T09:54:14.689Z",
-    "snapshot_time": "2026-06-25 17:02:22",
+    "fetched_at": "2026-06-26T01:04:57.542Z",
+    "snapshot_time": "2026-06-25 21:13:45",
     "has_match_result": false,
     "spf_result": null,
     "half_time_result": null

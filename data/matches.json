@@ -630,7 +630,7 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "ECU",
     "away": "GER",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040291"
   },
   {
@@ -641,7 +641,7 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "CUW",
     "away": "CIV",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040292"
   },
   {
@@ -652,8 +652,9 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "TUN",
     "away": "NED",
-    "status": "scheduled",
-    "mid": "2040293"
+    "status": "finished",
+    "mid": "2040293",
+    "final_score": "0-2"
   },
   {
     "id": "M058",
@@ -663,8 +664,9 @@
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "JPN",
     "away": "SWE",
-    "status": "scheduled",
-    "mid": "2040294"
+    "status": "finished",
+    "mid": "2040294",
+    "final_score": "2-1"
   },
   {
     "id": "M059",
@@ -674,7 +676,8 @@
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "TUR",
     "away": "USA",
-    "status": "scheduled",
+    "status": "finished",
+    "final_score": "3-2",
     "mid": "2040296"
   },
   {
@@ -685,7 +688,8 @@
     "venue": "Estadio Azteca, Mexico City",
     "home": "PAR",
     "away": "AUS",
-    "status": "scheduled",
+    "status": "finished",
+    "final_score": "0-0",
     "mid": "2040295"
   },
   {

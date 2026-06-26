@@ -1,0 +1,34 @@
+{
+  "matchId": "2040295",
+  "code": "周四059",
+  "league": "世界杯",
+  "home": "PAR",
+  "away": "AUS",
+  "kickoff": "2026-06-26 10:00",
+  "homeScore": 0,
+  "awayScore": 0,
+  "final_score": "0-0",
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "0:0",
+    "other": null
+  },
+  "zjqResult": "0",
+  "bqcResult": "平平",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "draw",
+  "_hhadResult": "H",
+  "_totalGoals": "0",
+  "_scorersSource": "直播吧6月26日讯：澳大利亚与巴拉圭90分钟闷平0-0，各拿一分与美国携手晋级32强；韩国队成为最大受害者。0:0 默契球，未找到公开报道的进球者（全场无进球）",
+  "_capturedAt": "2026-06-26T15:00:00.000Z"
+}
