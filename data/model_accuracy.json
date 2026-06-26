@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-26T10:11:05.949Z",
+  "generated_at": "2026-06-26T10:44:53.441Z",
   "sample_size": 60,
   "models": [
     {
       "name": "deepseek",
-      "dir_acc": 63.6,
-      "score_acc": 13.6,
-      "zjq_acc": 20.5,
-      "dir_hits": 28,
-      "score_hits": 6,
-      "zjq_hits": 9,
-      "total": 44
+      "dir_acc": 63.3,
+      "score_acc": 16.7,
+      "zjq_acc": 23.3,
+      "dir_hits": 38,
+      "score_hits": 10,
+      "zjq_hits": 14,
+      "total": 60
     },
     {
       "name": "claude",
@@ -65,9 +65,9 @@
       "total": 47
     },
     "majority_vote": {
-      "dir_acc": 62.8,
-      "dir_hits": 27,
-      "total": 43
+      "dir_acc": 66,
+      "dir_hits": 35,
+      "total": 53
     },
     "all_home": {
       "dir_acc": 55,
