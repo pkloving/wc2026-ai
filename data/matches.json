@@ -700,7 +700,8 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "NOR",
     "away": "FRA",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040297"
   },
   {
     "id": "M062",
@@ -710,7 +711,8 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "SEN",
     "away": "IRQ",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040298"
   },
   {
     "id": "M063",
@@ -720,7 +722,8 @@
     "venue": "BMO Field, Toronto",
     "home": "URU",
     "away": "ESP",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040300"
   },
   {
     "id": "M064",
@@ -730,7 +733,8 @@
     "venue": "BC Place, Vancouver",
     "home": "CPV",
     "away": "KSA",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040299"
   },
   {
     "id": "M065",
@@ -740,7 +744,8 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "NZL",
     "away": "BEL",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040302"
   },
   {
     "id": "M066",
@@ -750,7 +755,8 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "EGY",
     "away": "IRN",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040301"
   },
   {
     "id": "M068",
@@ -760,7 +766,8 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "CRO",
     "away": "GHA",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040303"
   },
   {
     "id": "M069",
@@ -770,7 +777,8 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "COL",
     "away": "POR",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040305"
   },
   {
     "id": "M070",
@@ -780,7 +788,8 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "COD",
     "away": "UZB",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040306"
   },
   {
     "id": "M071",
@@ -790,7 +799,8 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "JOR",
     "away": "ARG",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040308"
   },
   {
     "id": "M072",
@@ -800,7 +810,8 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "DZA",
     "away": "AUT",
-    "status": "scheduled"
+    "status": "scheduled",
+    "mid": "2040307"
   },
   {
     "id": "M073",

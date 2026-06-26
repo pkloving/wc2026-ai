@@ -25,5 +25,16 @@
   "M057": { "mid": "2040293", "code": "周四057", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4057, 突尼斯 vs 荷兰" },
   "M058": { "mid": "2040294", "code": "周四058", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4058, 日本 vs 瑞典" },
   "M059": { "mid": "2040296", "code": "周四060", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4060, 土耳其 vs 美国 (note: sporttery matchNum=4060 大于 M-id 59, 因 M059/M060 排列顺序与 sporttery 不一致)" },
-  "M060": { "mid": "2040295", "code": "周四059", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4059, 巴拉圭 vs 澳大利亚" }
+  "M060": { "mid": "2040295", "code": "周四059", "status": "verified_20260625", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=4059, 巴拉圭 vs 澳大利亚" },
+  "M061": { "mid": "2040297", "code": "周五061", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5061, 挪威 vs 法国, rqspf +1" },
+  "M062": { "mid": "2040298", "code": "周五062", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5062, 塞内加尔 vs 伊拉克, rqspf -2" },
+  "M063": { "mid": "2040300", "code": "周五064", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5064, 乌拉圭 vs 西班牙, rqspf +1 (sporttery code 周五064, M-id 63 vs sporttery 64 不一致)" },
+  "M064": { "mid": "2040299", "code": "周五063", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5063, 佛得角 vs 沙特, rqspf -1 (sporttery code 周五063, M-id 64 vs sporttery 63 不一致)" },
+  "M065": { "mid": "2040302", "code": "周五066", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5066, 新西兰 vs 比利时, rqspf +2 (sporttery code 周五066, M-id 65 vs sporttery 66 不一致)" },
+  "M066": { "mid": "2040301", "code": "周五065", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5065, 埃及 vs 伊朗, rqspf -1 (sporttery code 周五065, M-id 66 vs sporttery 65 不一致)" },
+  "M068": { "mid": "2040303", "code": "周六067", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6067, 克罗地亚 vs 加纳, rqspf -1" },
+  "M069": { "mid": "2040305", "code": "周六069", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6069, 哥伦比亚 vs 葡萄牙, rqspf +1 (sporttery code 周六069, M-id 69 vs sporttery 69 一致)" },
+  "M070": { "mid": "2040306", "code": "周六070", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6070, 刚果金 vs 乌兹别克, rqspf -1 (sporttery code 周六070, M-id 70 vs sporttery 70 一致)" },
+  "M071": { "mid": "2040308", "code": "周六072", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6072, 约旦 vs 阿根廷, rqspf +2 (sporttery code 周六072, M-id 71 vs sporttery 72 不一致)" },
+  "M072": { "mid": "2040307", "code": "周六071", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6071, 阿尔及利 vs 奥地利, rqspf +1 (sporttery code 周六071, M-id 72 vs sporttery 71 不一致)" }
 }
