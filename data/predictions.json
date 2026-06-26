@@ -2059,12 +2059,12 @@
         "note": "全场主胜 2-0（备选 3-0）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-0（葡萄牙 vs 乌兹别克斯坦，ChatGPT）"
+        "note": "全场主胜 2-0（葡萄牙 vs 乌兹别克斯坦，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2096,12 +2096,12 @@
         "note": "全场主胜 2-1"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-0（英格兰 vs 加纳，ChatGPT）"
+        "note": "全场主胜 2-0（英格兰 vs 加纳，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2133,12 +2133,12 @@
         "note": "全场客胜 0-2（备选 1-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（巴拿马 vs 克罗地亚，ChatGPT）"
+        "note": "全场客胜 1-2（巴拿马 vs 克罗地亚，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2170,12 +2170,12 @@
         "note": "全场主胜 2-0"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 1,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-1（哥伦比亚 vs 刚果(金)，ChatGPT）"
+        "note": "全场主胜 2-1（哥伦比亚 vs 刚果(金)，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2207,12 +2207,12 @@
         "note": "全场平 1-1（备选 2-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 1-0（瑞士 vs 加拿大，ChatGPT）"
+        "note": "全场主胜 1-0（瑞士 vs 加拿大，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2244,12 +2244,12 @@
         "note": "全场主胜 2-1（备选 1-0）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-0（波黑 vs 卡塔尔，ChatGPT）"
+        "note": "全场主胜 2-0（波黑 vs 卡塔尔，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2281,12 +2281,12 @@
         "note": "全场主胜 2-0"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（苏格兰 vs 巴西，ChatGPT）"
+        "note": "全场客胜 1-2（苏格兰 vs 巴西，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2318,12 +2318,12 @@
         "note": "全场客胜 1-3（备选 0-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-0（摩洛哥 vs 海地，ChatGPT）"
+        "note": "全场主胜 2-0（摩洛哥 vs 海地，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2355,12 +2355,12 @@
         "note": "全场客胜 1-2（备选 1-1）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 1,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-1（捷克 vs 墨西哥，ChatGPT）"
+        "note": "全场主胜 2-1（捷克 vs 墨西哥，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2392,12 +2392,12 @@
         "note": "全场客胜 0-2（备选 1-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（南非 vs 韩国，ChatGPT）"
+        "note": "全场客胜 1-2（南非 vs 韩国，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2429,12 +2429,12 @@
         "note": "全场客胜 1-2（备选 1-3）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（厄瓜多尔 vs 德国，ChatGPT）"
+        "note": "全场客胜 1-2（厄瓜多尔 vs 德国，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2466,12 +2466,12 @@
         "note": "全场客胜 0-2（备选 1-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 0,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 0-2（库拉索 vs 科特迪瓦，ChatGPT）"
+        "note": "全场客胜 0-2（库拉索 vs 科特迪瓦，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2503,12 +2503,12 @@
         "note": "全场客胜 0-2（备选 0-1）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 0,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 0-2（突尼斯 vs 荷兰，ChatGPT）"
+        "note": "全场客胜 0-2（突尼斯 vs 荷兰，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2540,12 +2540,12 @@
         "note": "全场主胜 2-1（备选 1-1）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 2,
         "predictedAway": 1,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 2-1（日本 vs 瑞典，ChatGPT）"
+        "note": "全场主胜 2-1（日本 vs 瑞典，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2577,12 +2577,12 @@
         "note": "全场平 1-1（备选 2-2）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（土耳其 vs 美国，ChatGPT）"
+        "note": "全场客胜 1-2（土耳其 vs 美国，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2614,12 +2614,12 @@
         "note": "全场主胜 1-0（备选 2-1）"
       },
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（巴拉圭 vs 澳大利亚，ChatGPT）"
+        "note": "全场客胜 1-2（巴拉圭 vs 澳大利亚，GPT-5 mini）"
       },
       {
         "model": "deepseek",
@@ -2635,12 +2635,12 @@
     "matchId": "M061",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 0,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 0-2（挪威 vs 法国，ChatGPT）"
+        "note": "全场客胜 0-2（挪威 vs 法国，GPT-5 mini）"
       },
       {
         "model": "Kimi",
@@ -2680,12 +2680,12 @@
     "matchId": "M062",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 0,
         "predictedWinner": "home",
         "screenshots": [],
-        "note": "全场主胜 1-0（塞内加尔 vs 伊拉克，ChatGPT）"
+        "note": "全场主胜 1-0（塞内加尔 vs 伊拉克，GPT-5 mini）"
       },
       {
         "model": "Kimi",
@@ -2725,12 +2725,12 @@
     "matchId": "M063",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（乌拉圭 vs 西班牙，ChatGPT）"
+        "note": "全场客胜 1-2（乌拉圭 vs 西班牙，GPT-5 mini）"
       },
       {
         "model": "Kimi",
@@ -2770,12 +2770,12 @@
     "matchId": "M064",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 0,
         "predictedAway": 1,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 0-1（佛得角 vs 沙特阿拉伯，ChatGPT）"
+        "note": "全场客胜 0-1（佛得角 vs 沙特阿拉伯，GPT-5 mini）"
       },
       {
         "model": "Kimi",
@@ -2815,12 +2815,12 @@
     "matchId": "M065",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 0,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 0-2（新西兰 vs 比利时，ChatGPT）"
+        "note": "全场客胜 0-2（新西兰 vs 比利时，GPT-5 mini）"
       },
       {
         "model": "Kimi",
@@ -2860,12 +2860,12 @@
     "matchId": "M066",
     "models": [
       {
-        "model": "ChatGPT",
+        "model": "GPT-5 mini",
         "predictedHome": 1,
         "predictedAway": 2,
         "predictedWinner": "away",
         "screenshots": [],
-        "note": "全场客胜 1-2（埃及 vs 伊朗，ChatGPT）"
+        "note": "全场客胜 1-2（埃及 vs 伊朗，GPT-5 mini）"
       },
       {
         "model": "Kimi",

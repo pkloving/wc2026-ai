@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T10:44:53.441Z",
+  "generated_at": "2026-06-26T10:46:54.711Z",
   "sample_size": 60,
   "models": [
     {
@@ -44,13 +44,13 @@
     },
     {
       "name": "GPT-5 mini",
-      "dir_acc": 59.1,
-      "score_acc": 11.4,
-      "zjq_acc": 27.3,
-      "dir_hits": 26,
-      "score_hits": 5,
-      "zjq_hits": 12,
-      "total": 44
+      "dir_acc": 61.7,
+      "score_acc": 13.3,
+      "zjq_acc": 30,
+      "dir_hits": 37,
+      "score_hits": 8,
+      "zjq_hits": 18,
+      "total": 60
     }
   ],
   "baselines": {
