@@ -16,7 +16,8 @@
       "TTG": true
     },
     "is_cancel": 0,
-    "is_finished_odds": true
+    "is_finished_odds": true,
+    "is_finished_odds_marked_at": "2026-06-27T18:00:00.000Z"
   },
   "odds": {
     "spf_latest": null,

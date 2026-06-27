@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-27T07:08:13.295Z",
+  "generated_at": "2026-06-27T10:39:22.999Z",
   "play": "rqspf",
-  "count": 71,
+  "count": 72,
   "rows": [
     {
       "mid": "2040162",
@@ -1456,6 +1456,28 @@
       "result": "away"
     },
     {
+      "mid": "2040304",
+      "code": "周六068",
+      "home": "PAN",
+      "away": "ENG",
+      "kickoff": "2026-06-28 05:00",
+      "handicap": 2,
+      "final_score": null,
+      "initial": {
+        "handicap": 2,
+        "home": 2.7,
+        "draw": 4.1,
+        "away": 1.94
+      },
+      "last": {
+        "handicap": 2,
+        "home": 2.7,
+        "draw": 4.1,
+        "away": 1.94
+      },
+      "result": null
+    },
+    {
       "mid": "2040303",
       "code": "周六067",
       "home": "CRO",
@@ -1465,15 +1487,15 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 2.97,
-        "draw": 3.28,
-        "away": 2.05
+        "home": 3.4,
+        "draw": 3.1,
+        "away": 1.96
       },
       "last": {
         "handicap": -1,
-        "home": 2.97,
-        "draw": 3.28,
-        "away": 2.05
+        "home": 3.4,
+        "draw": 3.1,
+        "away": 1.96
       },
       "result": null
     },
@@ -1487,15 +1509,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 1.95,
-        "draw": 3.42,
-        "away": 3.08
+        "home": 1.85,
+        "draw": 3.62,
+        "away": 3.2
       },
       "last": {
         "handicap": 1,
-        "home": 1.95,
-        "draw": 3.42,
-        "away": 3.08
+        "home": 1.85,
+        "draw": 3.62,
+        "away": 3.2
       },
       "result": null
     },
@@ -1509,15 +1531,15 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 2.82,
-        "draw": 3.3,
-        "away": 2.12
+        "home": 2.57,
+        "draw": 3.25,
+        "away": 2.31
       },
       "last": {
         "handicap": -1,
-        "home": 2.82,
-        "draw": 3.3,
-        "away": 2.12
+        "home": 2.57,
+        "draw": 3.25,
+        "away": 2.31
       },
       "result": null
     },
@@ -1531,15 +1553,15 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.45,
-        "draw": 3.87,
-        "away": 2.16
+        "home": 2.64,
+        "draw": 3.92,
+        "away": 2.02
       },
       "last": {
         "handicap": 2,
-        "home": 2.45,
-        "draw": 3.87,
-        "away": 2.16
+        "home": 2.64,
+        "draw": 3.92,
+        "away": 2.02
       },
       "result": null
     },
@@ -1553,15 +1575,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 1.31,
+        "home": 1.32,
         "draw": 4.35,
-        "away": 7.35
+        "away": 7.05
       },
       "last": {
         "handicap": 1,
-        "home": 1.31,
+        "home": 1.32,
         "draw": 4.35,
-        "away": 7.35
+        "away": 7.05
       },
       "result": null
     }

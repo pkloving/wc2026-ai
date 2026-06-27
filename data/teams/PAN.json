@@ -79,7 +79,17 @@
       "teams_behind": 0,
       "same_points_teams": 0,
       "min_points_to_qualify": 4,
-      "next_match": null
+      "next_match": {
+        "match_id": "M067",
+        "mid": "2040304",
+        "date": "2026-06-27T21:00:00Z",
+        "opponent_code": "ENG",
+        "opponent_name": "英格兰",
+        "opponent_position": 1,
+        "opponent_pts": 6,
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "importance": "must-win"
+      }
     },
     "knockout_matchup": {
       "current_position": 4,
@@ -111,5 +121,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-27T07:08:36.108Z"
+  "_updated_at": "2026-06-27T10:39:22.671Z"
 }

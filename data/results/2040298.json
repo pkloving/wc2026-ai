@@ -1,13 +1,70 @@
 {
   "matchId": "2040298",
+  "code": "周五062",
+  "league": "世界杯",
+  "home": "SEN",
+  "away": "IRQ",
+  "kickoff": "2026-06-27 03:00",
   "homeScore": 5,
   "awayScore": 0,
-  "halfTime": null,
-  "scorers": [],
+  "final_score": "5-0",
+  "halfTime": {
+    "home": 1,
+    "away": 0
+  },
+  "scorers": [
+    {
+      "team": "SEN",
+      "player": "哈比卜·迪亚拉 (Habib Diallo / Diatta)",
+      "minute": 4,
+      "type": "goal",
+      "assist": "塞克 (Seck) 头球摆渡，迪亚拉门前抢点蹭射破门"
+    },
+    {
+      "team": "SEN",
+      "player": "伊斯梅拉·萨尔 (Ismaila Sarr)",
+      "minute": 56,
+      "type": "goal",
+      "assist": "拉明·卡马拉 (Lamine Camara) 中场抢断直塞，萨尔冷静推射"
+    },
+    {
+      "team": "SEN",
+      "player": "帕普·盖伊 (Pape Matar Sarr / Pape Gueye)",
+      "minute": 58,
+      "type": "goal",
+      "assist": "萨尔 (Sarr) 助攻"
+    },
+    {
+      "team": "SEN",
+      "player": "帕普·盖伊 (Pape Matar Sarr / Pape Gueye)",
+      "minute": 71,
+      "type": "goal",
+      "assist": "凌空抽射梅开二度"
+    },
+    {
+      "team": "SEN",
+      "player": "恩迪亚耶 (Ndiaye)",
+      "minute": 82,
+      "type": "goal",
+      "assist": "远射轰入世界波"
+    }
+  ],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": -2,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "5:0",
+    "other": null
+  },
+  "zjqResult": "5",
+  "bqcResult": "胜胜",
   "_fromSporttery": true,
   "_halfTimeResult": "home",
-  "_spfResult": null,
-  "_totalGoals": "5"
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "5",
+  "_scorersSource": "直播吧/新浪体育 6-27 03:00 简报：开场第4'塞克角球摆渡，迪亚拉门前抢点蹭射破门1-0；第13'苏拉卡身后拉倒单刀马内，主裁VAR直红，伊拉克早早10人作战；半场1-0未再丢球。下半场56'卡马拉中场抢断直塞萨尔推射2-0，58'帕普·盖伊替补登场接萨尔助攻3-0，71'帕普·盖伊凌空抽射梅开二度4-0，82'恩迪亚耶远射世界波5-0。数据：塞内加尔68%控球+28射12射正12角球，伊拉克6射1射正门将法希尔7扑救。塞内加尔以小组第三跻身淘汰赛竞争，伊拉克三战全败垫底出局",
+  "_capturedAt": "2026-06-27T18:00:00.000Z"
 }

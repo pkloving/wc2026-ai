@@ -1,13 +1,42 @@
 {
   "matchId": "2040300",
+  "code": "周五064",
+  "league": "世界杯",
+  "home": "URU",
+  "away": "ESP",
+  "kickoff": "2026-06-27 08:00",
   "homeScore": 0,
   "awayScore": 1,
-  "halfTime": null,
-  "scorers": [],
+  "final_score": "0-1",
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "ESP",
+      "player": "巴埃纳 (Baena)",
+      "minute": 42,
+      "type": "goal",
+      "assist": "略伦特 (Llorente) 右路传中，巴埃纳禁区得球转身抽射，40岁门将穆斯莱拉扑救脱手（黄油手）皮球滚入球门"
+    }
+  ],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "away",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "0:1",
+    "other": null
+  },
+  "zjqResult": "1",
+  "bqcResult": "负负",
   "_fromSporttery": true,
   "_halfTimeResult": "away",
   "_spfResult": "away",
-  "_totalGoals": "1"
+  "_hhadResult": "D",
+  "_totalGoals": "1",
+  "_scorersSource": "直播吧 6-27 08:00 简报：H组末轮墨西哥瓜达拉哈拉体育场，西班牙传控豪门对乌拉圭。第42分钟略伦特右路传中，巴埃纳禁区得球转身抽射，40岁老门将穆斯莱拉扑救碰到皮球但未能扑出（黄油手失误），皮球滚入球门0-1。半场0-1，穆斯莱拉被换下。西班牙一球小胜，乌拉圭贝尔萨为溃败承担责任（坦言自己未给乌拉圭做好部署）。西班牙头名晋级，乌拉圭因净胜球劣势跌至第3（与Cape Verde同分但净胜球少）",
+  "_capturedAt": "2026-06-27T18:00:00.000Z"
 }

@@ -1,13 +1,70 @@
 {
   "matchId": "2040297",
+  "code": "周五061",
+  "league": "世界杯",
+  "home": "NOR",
+  "away": "FRA",
+  "kickoff": "2026-06-27 03:00",
   "homeScore": 1,
   "awayScore": 4,
-  "halfTime": null,
-  "scorers": [],
+  "final_score": "1-4",
+  "halfTime": {
+    "home": 1,
+    "away": 3
+  },
+  "scorers": [
+    {
+      "team": "FRA",
+      "player": "登贝莱 (Dembélé)",
+      "minute": 7,
+      "type": "goal",
+      "assist": "姆巴佩 (Mbappé) 精准斜传，登贝莱内切后大力劲射死角"
+    },
+    {
+      "team": "FRA",
+      "player": "登贝莱 (Dembélé)",
+      "minute": 20,
+      "type": "goal",
+      "assist": "姆巴佩 (Mbappé) 精妙助攻，三人包夹中冷静施射"
+    },
+    {
+      "team": "NOR",
+      "player": "阿斯加德 (Aasgaard)",
+      "minute": 21,
+      "type": "goal",
+      "assist": "禁区外贴地斩世界波"
+    },
+    {
+      "team": "FRA",
+      "player": "登贝莱 (Dembélé)",
+      "minute": 32,
+      "type": "goal",
+      "assist": "右路内切脚弓推射远角——25分钟完成帽子戏法"
+    },
+    {
+      "team": "FRA",
+      "player": "杜埃 (Doué)",
+      "minute": 90,
+      "type": "goal",
+      "assist": "巴尔科拉 (Barcola) 左路传中，年仅21岁小将头球破门"
+    }
+  ],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:4",
+    "other": null
+  },
+  "zjqResult": "5",
+  "bqcResult": "负负",
   "_fromSporttery": true,
   "_halfTimeResult": "away",
   "_spfResult": "away",
-  "_totalGoals": "5"
+  "_hhadResult": "A",
+  "_totalGoals": "5",
+  "_scorersSource": "直播吧/新浪体育 6-27 03:00 简报：登贝莱7'20'32'完成25分钟帽子戏法（姆巴佩两次助攻，世界杯史上开场后第2快+21世纪首个上半场帽子戏法），阿斯加德21'扳回一城；下半场第49'特奥禁区内犯规送点，第50'拉森主罚点球被迈尼昂侧扑扑出；第90+4'杜埃头球锁定4-1。法国三战全胜积9分头名晋级，挪威6分第2双双出线（轮换10人，哈兰德+厄德高全程替补）",
+  "_capturedAt": "2026-06-27T18:00:00.000Z"
 }

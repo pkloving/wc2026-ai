@@ -82,7 +82,17 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M067",
+        "mid": "2040304",
+        "date": "2026-06-27T21:00:00Z",
+        "opponent_code": "PAN",
+        "opponent_name": "巴拿马",
+        "opponent_position": 4,
+        "opponent_pts": 0,
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "importance": "must-win"
+      }
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -114,5 +124,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-27T07:08:36.099Z"
+  "_updated_at": "2026-06-27T10:39:22.655Z"
 }

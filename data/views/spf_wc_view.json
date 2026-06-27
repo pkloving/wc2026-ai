@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T07:08:13.294Z",
+  "generated_at": "2026-06-27T10:39:22.998Z",
   "play": "spf",
   "count": 56,
   "rows": [
@@ -1052,14 +1052,14 @@
       "handicap": -1,
       "final_score": null,
       "initial": {
-        "home": 1.59,
-        "draw": 3.07,
-        "away": 5.72
+        "home": 1.65,
+        "draw": 3.05,
+        "away": 5.11
       },
       "last": {
-        "home": 1.59,
-        "draw": 3.07,
-        "away": 5.72
+        "home": 1.65,
+        "draw": 3.05,
+        "away": 5.11
       },
       "result": null
     },
@@ -1072,14 +1072,14 @@
       "handicap": 1,
       "final_score": null,
       "initial": {
-        "home": 4.08,
-        "draw": 3.65,
-        "away": 1.64
+        "home": 3.5,
+        "draw": 3.68,
+        "away": 1.75
       },
       "last": {
-        "home": 4.08,
-        "draw": 3.65,
-        "away": 1.64
+        "home": 3.5,
+        "draw": 3.68,
+        "away": 1.75
       },
       "result": null
     },
@@ -1092,14 +1092,14 @@
       "handicap": -1,
       "final_score": null,
       "initial": {
-        "home": 1.55,
-        "draw": 3.9,
-        "away": 4.4
+        "home": 1.46,
+        "draw": 4.1,
+        "away": 5
       },
       "last": {
-        "home": 1.55,
-        "draw": 3.9,
-        "away": 4.4
+        "home": 1.46,
+        "draw": 4.1,
+        "away": 5
       },
       "result": null
     },
@@ -1112,14 +1112,14 @@
       "handicap": 1,
       "final_score": null,
       "initial": {
-        "home": 3.35,
-        "draw": 2.11,
-        "away": 2.8
+        "home": 3.8,
+        "draw": 1.98,
+        "away": 2.77
       },
       "last": {
-        "home": 3.35,
-        "draw": 2.11,
-        "away": 2.8
+        "home": 3.8,
+        "draw": 1.98,
+        "away": 2.77
       },
       "result": null
     }

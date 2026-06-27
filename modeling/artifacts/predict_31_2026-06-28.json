@@ -5,90 +5,85 @@
     "cat1": {
       "matches": [
         "周六069",
-        "周六070",
-        "周五065",
-        "周五063",
+        "周六068",
         "周六067",
-        "周五066",
-        "周六071",
-        "周五061",
-        "周五062",
         "周六072",
-        "周五064"
+        "周六071",
+        "周六070"
       ],
       "tickets": [
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
+              "odds": 1.94
             },
             {
-              "code": "周五062",
-              "match": "SENvsIRQ",
+              "code": "周六072",
+              "match": "JORvsARG",
               "d": "away",
               "label": "让负",
-              "odds": 2.27
+              "odds": 2.02
             }
           ],
-          "odds": 4.65,
+          "odds": 3.92,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
-            },
-            {
-              "code": "周五062",
-              "match": "SENvsIRQ",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
+              "odds": 1.94
             },
             {
               "code": "周六072",
               "match": "JORvsARG",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.28
+              "d": "away",
+              "label": "让负",
+              "odds": 2.02
+            },
+            {
+              "code": "周六070",
+              "match": "CODvsUZB",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.31
             }
           ],
-          "odds": 10.61,
+          "odds": 9.05,
           "stake": 10
         },
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
-            },
-            {
-              "code": "周五062",
-              "match": "SENvsIRQ",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
+              "odds": 1.94
             },
             {
               "code": "周六072",
               "match": "JORvsARG",
               "d": "away",
               "label": "让负",
-              "odds": 2.32
+              "odds": 2.02
+            },
+            {
+              "code": "周六070",
+              "match": "CODvsUZB",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.57
             }
           ],
-          "odds": 10.8,
+          "odds": 10.07,
           "stake": 2
         }
       ],
@@ -96,21 +91,21 @@
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
+              "odds": 1.94
             },
             {
-              "code": "周五062",
-              "match": "SENvsIRQ",
+              "code": "周六072",
+              "match": "JORvsARG",
               "d": "away",
               "label": "让负",
-              "odds": 2.27
+              "odds": 2.02
             }
           ],
-          "odds": 4.65,
+          "odds": 3.92,
           "stake": 1
         }
       ],
@@ -118,55 +113,55 @@
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
-            },
-            {
-              "code": "周五062",
-              "match": "SENvsIRQ",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
+              "odds": 1.94
             },
             {
               "code": "周六072",
               "match": "JORvsARG",
-              "d": "home",
-              "label": "让胜",
-              "odds": 2.28
+              "d": "away",
+              "label": "让负",
+              "odds": 2.02
+            },
+            {
+              "code": "周六070",
+              "match": "CODvsUZB",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.31
             }
           ],
-          "odds": 10.61,
+          "odds": 9.05,
           "stake": 10
         },
         {
           "legs": [
             {
-              "code": "周五066",
-              "match": "NZLvsBEL",
+              "code": "周六068",
+              "match": "PANvsENG",
               "d": "away",
               "label": "让负",
-              "odds": 2.05
-            },
-            {
-              "code": "周五062",
-              "match": "SENvsIRQ",
-              "d": "away",
-              "label": "让负",
-              "odds": 2.27
+              "odds": 1.94
             },
             {
               "code": "周六072",
               "match": "JORvsARG",
               "d": "away",
               "label": "让负",
-              "odds": 2.32
+              "odds": 2.02
+            },
+            {
+              "code": "周六070",
+              "match": "CODvsUZB",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.57
             }
           ],
-          "odds": 10.8,
+          "odds": 10.07,
           "stake": 2
         }
       ],
@@ -174,84 +169,84 @@
       "legMode": "atomic",
       "stake": 1,
       "slimCount": 3,
-      "dualCount": 8
+      "dualCount": 3
     },
     "cat2": {
       "matches": [
-        "周五061",
-        "周六070"
+        "周六069",
+        "周六068"
       ],
       "tickets": [
         {
           "legs": [
             {
-              "code": "周五061",
-              "match": "NORvsFRA",
-              "score": "0:2",
-              "odds": 9.5
-            },
-            {
-              "code": "周六070",
-              "match": "CODvsUZB",
-              "score": "1:1",
+              "code": "周六069",
+              "match": "COLvsPOR",
+              "score": "0:1",
               "odds": 7.5
-            }
-          ],
-          "odds": 71.25,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
-              "code": "周五061",
-              "match": "NORvsFRA",
-              "score": "0:2",
-              "odds": 9.5
             },
             {
-              "code": "周六070",
-              "match": "CODvsUZB",
-              "score": "3:1",
-              "odds": 12.5
-            }
-          ],
-          "odds": 118.75,
-          "stake": 1
-        },
-        {
-          "legs": [
-            {
-              "code": "周五061",
-              "match": "NORvsFRA",
+              "code": "周六068",
+              "match": "PANvsENG",
               "score": "1:3",
-              "odds": 9.5
-            },
+              "odds": 8.5
+            }
+          ],
+          "odds": 63.75,
+          "stake": 1
+        },
+        {
+          "legs": [
             {
-              "code": "周六070",
-              "match": "CODvsUZB",
-              "score": "1:1",
+              "code": "周六069",
+              "match": "COLvsPOR",
+              "score": "0:1",
               "odds": 7.5
+            },
+            {
+              "code": "周六068",
+              "match": "PANvsENG",
+              "score": "1:1",
+              "odds": 15.5
             }
           ],
-          "odds": 71.25,
+          "odds": 116.25,
           "stake": 1
         },
         {
           "legs": [
             {
-              "code": "周五061",
-              "match": "NORvsFRA",
-              "score": "1:3",
-              "odds": 9.5
+              "code": "周六069",
+              "match": "COLvsPOR",
+              "score": "2:2",
+              "odds": 12
             },
             {
-              "code": "周六070",
-              "match": "CODvsUZB",
-              "score": "3:1",
-              "odds": 12.5
+              "code": "周六068",
+              "match": "PANvsENG",
+              "score": "1:3",
+              "odds": 8.5
             }
           ],
-          "odds": 118.75,
+          "odds": 102,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六069",
+              "match": "COLvsPOR",
+              "score": "2:2",
+              "odds": 12
+            },
+            {
+              "code": "周六068",
+              "match": "PANvsENG",
+              "score": "1:1",
+              "odds": 15.5
+            }
+          ],
+          "odds": 186,
           "stake": 1
         }
       ]
@@ -261,31 +256,13 @@
         "code": "周六067",
         "match": "CROvsGHA",
         "score": "4:1",
-        "odds": 30
+        "odds": 29
       },
       {
         "code": "周六070",
         "match": "CODvsUZB",
         "score": "4:1",
         "odds": 29
-      },
-      {
-        "code": "周五062",
-        "match": "SENvsIRQ",
-        "score": "4:2",
-        "odds": 40
-      },
-      {
-        "code": "周五063",
-        "match": "CPVvsKSA",
-        "score": "4:1",
-        "odds": 60
-      },
-      {
-        "code": "周五065",
-        "match": "EGYvsIRN",
-        "score": "4:1",
-        "odds": 70
       }
     ],
     "cat4": [
@@ -296,7 +273,7 @@
           "2"
         ],
         "oddsMap": {
-          "2": 2.95
+          "2": 3.05
         },
         "rule": {
           "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
@@ -305,13 +282,13 @@
         }
       },
       {
-        "code": "周六069",
-        "match": "COLvsPOR",
+        "code": "周六070",
+        "match": "CODvsUZB",
         "picks": [
           "2"
         ],
         "oddsMap": {
-          "2": 3.2
+          "2": 3.4
         },
         "rule": {
           "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
@@ -326,22 +303,7 @@
           "2"
         ],
         "oddsMap": {
-          "2": 2.65
-        },
-        "rule": {
-          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
-          "roi": "+18.5%",
-          "n": 13
-        }
-      },
-      {
-        "code": "周五064",
-        "match": "URUvsESP",
-        "picks": [
-          "2"
-        ],
-        "oddsMap": {
-          "2": 3.3
+          "2": 2.7
         },
         "rule": {
           "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
@@ -350,25 +312,7 @@
         }
       }
     ],
-    "cat5": [
-      {
-        "code": "周五062",
-        "match": "SENvsIRQ",
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "oddsMap": {
-          "胜胜": 1.41,
-          "平平": 11.5
-        },
-        "rule": {
-          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-          "roi": "-32%",
-          "n": 4
-        }
-      }
-    ]
+    "cat5": []
   },
   "rqspf_follow": [
     {
@@ -377,18 +321,44 @@
       "match": "CROvsGHA",
       "handicap": -1,
       "rqspf_odds": {
-        "home": 2.92,
-        "draw": 3.35,
-        "away": 2.05
+        "home": 3.4,
+        "draw": 3.1,
+        "away": 1.96
       },
       "primary": {
         "d": "away",
-        "odds": 2.05,
+        "odds": 1.96,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.1,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周六068",
+      "mid": "2040304",
+      "match": "PANvsENG",
+      "handicap": 2,
+      "rqspf_odds": {
+        "home": 2.7,
+        "draw": 4.1,
+        "away": 1.94
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.94,
         "label": "让负"
       },
       "secondary": {
         "d": "home",
-        "odds": 2.92,
+        "odds": 2.7,
         "label": "让胜"
       },
       "rule": {
@@ -403,18 +373,18 @@
       "match": "COLvsPOR",
       "handicap": 1,
       "rqspf_odds": {
-        "home": 1.9,
-        "draw": 3.45,
+        "home": 1.85,
+        "draw": 3.62,
         "away": 3.2
       },
       "primary": {
         "d": "home",
-        "odds": 1.9,
+        "odds": 1.85,
         "label": "让胜"
       },
       "secondary": {
         "d": "draw",
-        "odds": 3.45,
+        "odds": 3.62,
         "label": "让平"
       },
       "rule": {
@@ -429,18 +399,18 @@
       "match": "CODvsUZB",
       "handicap": -1,
       "rqspf_odds": {
-        "home": 3.1,
-        "draw": 3.45,
-        "away": 1.94
+        "home": 2.57,
+        "draw": 3.25,
+        "away": 2.31
       },
       "primary": {
         "d": "away",
-        "odds": 1.94,
+        "odds": 2.31,
         "label": "让负"
       },
       "secondary": {
         "d": "home",
-        "odds": 3.1,
+        "odds": 2.57,
         "label": "让胜"
       },
       "rule": {
@@ -455,13 +425,13 @@
       "match": "DZAvsAUT",
       "handicap": 1,
       "rqspf_odds": {
-        "home": 1.31,
+        "home": 1.32,
         "draw": 4.35,
-        "away": 7.35
+        "away": 7.05
       },
       "primary": {
         "d": "home",
-        "odds": 1.31,
+        "odds": 1.32,
         "label": "让胜"
       },
       "secondary": {
@@ -481,174 +451,18 @@
       "match": "JORvsARG",
       "handicap": 2,
       "rqspf_odds": {
-        "home": 2.28,
-        "draw": 3.85,
-        "away": 2.32
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.28,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "away",
-        "odds": 2.32,
-        "label": "让负"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周五061",
-      "mid": "2040297",
-      "match": "NORvsFRA",
-      "handicap": 1,
-      "rqspf_odds": {
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 2.69
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.2,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "draw",
-        "odds": 3.3,
-        "label": "让平"
-      },
-      "rule": {
-        "name": "主受让+1主+平双选",
-        "roi": "+11.6%",
-        "n": 6
-      }
-    },
-    {
-      "code": "周五062",
-      "mid": "2040298",
-      "match": "SENvsIRQ",
-      "handicap": -2,
-      "rqspf_odds": {
-        "home": 2.37,
-        "draw": 3.75,
-        "away": 2.27
+        "home": 2.64,
+        "draw": 3.92,
+        "away": 2.02
       },
       "primary": {
         "d": "away",
-        "odds": 2.27,
+        "odds": 2.02,
         "label": "让负"
       },
       "secondary": {
         "d": "home",
-        "odds": 2.37,
-        "label": "让胜"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周五063",
-      "mid": "2040299",
-      "match": "CPVvsKSA",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 5.25,
-        "draw": 3.8,
-        "away": 1.48
-      },
-      "primary": {
-        "d": "away",
-        "odds": 1.48,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "draw",
-        "odds": 3.8,
-        "label": "让平"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周五064",
-      "mid": "2040300",
-      "match": "URUvsESP",
-      "handicap": 1,
-      "rqspf_odds": {
-        "home": 2.3,
-        "draw": 3.5,
-        "away": 2.45
-      },
-      "primary": {
-        "d": "home",
-        "odds": 2.3,
-        "label": "让胜"
-      },
-      "secondary": {
-        "d": "draw",
-        "odds": 3.5,
-        "label": "让平"
-      },
-      "rule": {
-        "name": "主受让+1主+平双选",
-        "roi": "+11.6%",
-        "n": 6
-      }
-    },
-    {
-      "code": "周五065",
-      "mid": "2040301",
-      "match": "EGYvsIRN",
-      "handicap": -1,
-      "rqspf_odds": {
-        "home": 5,
-        "draw": 3.7,
-        "away": 1.52
-      },
-      "primary": {
-        "d": "away",
-        "odds": 1.52,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "draw",
-        "odds": 3.7,
-        "label": "让平"
-      },
-      "rule": {
-        "name": "基线(最低赔率,主让-1)",
-        "roi": "+19.5%",
-        "n": 20
-      }
-    },
-    {
-      "code": "周五066",
-      "mid": "2040302",
-      "match": "NZLvsBEL",
-      "handicap": 2,
-      "rqspf_odds": {
-        "home": 2.58,
-        "draw": 3.95,
-        "away": 2.05
-      },
-      "primary": {
-        "d": "away",
-        "odds": 2.05,
-        "label": "让负"
-      },
-      "secondary": {
-        "d": "home",
-        "odds": 2.58,
+        "odds": 2.64,
         "label": "让胜"
       },
       "rule": {
@@ -666,16 +480,32 @@
       "handicap": -1,
       "corrected": {
         "pick": "2",
-        "odds": 2.95
+        "odds": 3.05
       },
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 40,
-      "stableOdds": 2.95,
+      "coldOdds": 38,
+      "stableOdds": 3.05,
       "rule": {
         "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
         "roi": "+18.5%",
         "n": 13
+      }
+    },
+    {
+      "code": "周六068",
+      "mid": "2040304",
+      "match": "PANvsENG",
+      "handicap": 2,
+      "corrected": null,
+      "coldPick": "0",
+      "stable": "4",
+      "coldOdds": 28,
+      "stableOdds": 4.1,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
       }
     },
     {
@@ -683,18 +513,15 @@
       "mid": "2040305",
       "match": "COLvsPOR",
       "handicap": 1,
-      "corrected": {
-        "pick": "2",
-        "odds": 3.2
-      },
+      "corrected": null,
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 32,
-      "stableOdds": 3.2,
+      "coldOdds": 22,
+      "stableOdds": 3.6,
       "rule": {
-        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
-        "roi": "+18.5%",
-        "n": 13
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
       }
     },
     {
@@ -702,15 +529,18 @@
       "mid": "2040306",
       "match": "CODvsUZB",
       "handicap": -1,
-      "corrected": null,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.4
+      },
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 27,
-      "stableOdds": 3.65,
+      "coldOdds": 32,
+      "stableOdds": 3.4,
       "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
       }
     },
     {
@@ -720,12 +550,12 @@
       "handicap": 1,
       "corrected": {
         "pick": "2",
-        "odds": 2.65
+        "odds": 2.7
       },
       "coldPick": "7+",
       "stable": "2",
-      "coldOdds": 60,
-      "stableOdds": 2.65,
+      "coldOdds": 55,
+      "stableOdds": 2.7,
       "rule": {
         "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
         "roi": "+18.5%",
@@ -740,106 +570,7 @@
       "corrected": null,
       "coldPick": "0",
       "stable": "4",
-      "coldOdds": 20,
-      "stableOdds": 4.5,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五061",
-      "mid": "2040297",
-      "match": "NORvsFRA",
-      "handicap": 1,
-      "corrected": null,
-      "coldPick": "0",
-      "stable": "2",
-      "coldOdds": 22,
-      "stableOdds": 4.5,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五062",
-      "mid": "2040298",
-      "match": "SENvsIRQ",
-      "handicap": -2,
-      "corrected": null,
-      "coldPick": "0",
-      "stable": "4",
-      "coldOdds": 24,
-      "stableOdds": 4.3,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五063",
-      "mid": "2040299",
-      "match": "CPVvsKSA",
-      "handicap": -1,
-      "corrected": null,
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 35,
-      "stableOdds": 3.05,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五064",
-      "mid": "2040300",
-      "match": "URUvsESP",
-      "handicap": 1,
-      "corrected": {
-        "pick": "2",
-        "odds": 3.3
-      },
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 35,
-      "stableOdds": 3.3,
-      "rule": {
-        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
-        "roi": "+18.5%",
-        "n": 13
-      }
-    },
-    {
-      "code": "周五065",
-      "mid": "2040301",
-      "match": "EGYvsIRN",
-      "handicap": -1,
-      "corrected": null,
-      "coldPick": "7+",
-      "stable": "2",
-      "coldOdds": 50,
-      "stableOdds": 2.8,
-      "rule": {
-        "name": "基线(让球→大/小球)",
-        "roi": "+3.1%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五066",
-      "mid": "2040302",
-      "match": "NZLvsBEL",
-      "handicap": 2,
-      "corrected": null,
-      "coldPick": "0",
-      "stable": "4",
-      "coldOdds": 30,
+      "coldOdds": 23,
       "stableOdds": 4.1,
       "rule": {
         "name": "基线(让球→大/小球)",
@@ -857,15 +588,40 @@
       "top3": [
         {
           "key": "胜胜",
-          "odds": 2.45
+          "odds": 2.7
         },
         {
           "key": "平胜",
-          "odds": 3.8
+          "odds": 3.95
         },
         {
           "key": "平平",
-          "odds": 4.5
+          "odds": 4.35
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周六068",
+      "mid": "2040304",
+      "match": "PANvsENG",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 1.28
+        },
+        {
+          "key": "平负",
+          "odds": 4.1
+        },
+        {
+          "key": "平平",
+          "odds": 13.5
         }
       ],
       "rule": {
@@ -882,15 +638,15 @@
       "top3": [
         {
           "key": "负负",
-          "odds": 2.72
+          "odds": 2.75
         },
         {
           "key": "平负",
-          "odds": 4.4
+          "odds": 4.8
         },
         {
           "key": "平平",
-          "odds": 5.2
+          "odds": 5.5
         }
       ],
       "rule": {
@@ -907,15 +663,15 @@
       "top3": [
         {
           "key": "胜胜",
-          "odds": 2.6
+          "odds": 2.25
         },
         {
           "key": "平胜",
-          "odds": 4.6
+          "odds": 4.1
         },
         {
-          "key": "负负",
-          "odds": 5.95
+          "key": "平平",
+          "odds": 6.3
         }
       ],
       "rule": {
@@ -932,15 +688,15 @@
       "top3": [
         {
           "key": "平平",
-          "odds": 2.92
+          "odds": 2.7
         },
         {
           "key": "负负",
-          "odds": 5.15
+          "odds": 5.35
         },
         {
           "key": "平负",
-          "odds": 5.2
+          "odds": 5.4
         }
       ],
       "rule": {
@@ -957,7 +713,7 @@
       "top3": [
         {
           "key": "负负",
-          "odds": 1.36
+          "odds": 1.33
         },
         {
           "key": "平负",
@@ -965,167 +721,7 @@
         },
         {
           "key": "平平",
-          "odds": 10.5
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五061",
-      "mid": "2040297",
-      "match": "NORvsFRA",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "负负",
-          "odds": 2.2
-        },
-        {
-          "key": "平负",
-          "odds": 4.4
-        },
-        {
-          "key": "平平",
-          "odds": 7.25
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五062",
-      "mid": "2040298",
-      "match": "SENvsIRQ",
-      "corrected": {
-        "picks": [
-          "胜胜",
-          "平平"
-        ],
-        "odds": {
-          "胜胜": 1.41,
-          "平平": 11.5
-        },
-        "cost": 2
-      },
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 1.41
-        },
-        {
-          "key": "平胜",
-          "odds": 4.25
-        },
-        {
-          "key": "平平",
-          "odds": 11.5
-        }
-      ],
-      "rule": {
-        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
-        "roi": "-32%",
-        "n": 4
-      }
-    },
-    {
-      "code": "周五063",
-      "mid": "2040299",
-      "match": "CPVvsKSA",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "胜胜",
-          "odds": 3.96
-        },
-        {
-          "key": "负负",
-          "odds": 4.2
-        },
-        {
-          "key": "平平",
-          "odds": 4.8
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五064",
-      "mid": "2040300",
-      "match": "URUvsESP",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "负负",
-          "odds": 2.15
-        },
-        {
-          "key": "平负",
-          "odds": 3.85
-        },
-        {
-          "key": "平平",
-          "odds": 5.5
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五065",
-      "mid": "2040301",
-      "match": "EGYvsIRN",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "平平",
-          "odds": 3.9
-        },
-        {
-          "key": "胜胜",
-          "odds": 4
-        },
-        {
-          "key": "平胜",
-          "odds": 4.65
-        }
-      ],
-      "rule": {
-        "name": "基线(TOP3最低赔率)",
-        "roi": "-10%",
-        "n": 26
-      }
-    },
-    {
-      "code": "周五066",
-      "mid": "2040302",
-      "match": "NZLvsBEL",
-      "corrected": null,
-      "top3": [
-        {
-          "key": "负负",
-          "odds": 1.33
-        },
-        {
-          "key": "平负",
-          "odds": 4.2
-        },
-        {
-          "key": "平平",
-          "odds": 12.5
+          "odds": 12
         }
       ],
       "rule": {
@@ -1146,14 +742,14 @@
       "type": "NORMAL",
       "handicap": -1,
       "spf": {
-        "home": 1.6,
+        "home": 1.65,
         "draw": 3.05,
-        "away": 5.65
+        "away": 5.11
       },
       "rqspf": {
-        "home": 2.92,
-        "draw": 3.35,
-        "away": 2.05
+        "home": 3.4,
+        "draw": 3.1,
+        "away": 1.96
       },
       "mainPicks": [
         {
@@ -1162,11 +758,42 @@
         },
         {
           "score": "1:0",
-          "odds": 5.5
+          "odds": 6.2
         },
         {
           "score": "0:0",
           "odds": 7
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周六068",
+      "mid": "2040304",
+      "match": "PANvsENG",
+      "home": "PAN",
+      "away": "ENG",
+      "kickoff": "2026-06-28 05:00",
+      "type": "NORMAL",
+      "handicap": 2,
+      "spf": null,
+      "rqspf": {
+        "home": 2.7,
+        "draw": 4.1,
+        "away": 1.94
+      },
+      "mainPicks": [
+        {
+          "score": "0:2",
+          "odds": 5.8
+        },
+        {
+          "score": "1:3",
+          "odds": 8.5
+        },
+        {
+          "score": "1:1",
+          "odds": 15.5
         }
       ],
       "singleBets": []
@@ -1181,27 +808,27 @@
       "type": "NORMAL",
       "handicap": 1,
       "spf": {
-        "home": 4.23,
-        "draw": 3.28,
-        "away": 1.7
+        "home": 3.5,
+        "draw": 3.68,
+        "away": 1.75
       },
       "rqspf": {
-        "home": 1.9,
-        "draw": 3.45,
+        "home": 1.85,
+        "draw": 3.62,
         "away": 3.2
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 5.6
+          "odds": 6.1
         },
         {
           "score": "0:1",
-          "odds": 6.5
+          "odds": 7.5
         },
         {
-          "score": "0:0",
-          "odds": 9.5
+          "score": "2:2",
+          "odds": 12
         }
       ],
       "singleBets": []
@@ -1216,27 +843,27 @@
       "type": "NORMAL",
       "handicap": -1,
       "spf": {
-        "home": 1.67,
-        "draw": 3.82,
-        "away": 3.72
+        "home": 1.46,
+        "draw": 4.1,
+        "away": 5
       },
       "rqspf": {
-        "home": 3.1,
-        "draw": 3.45,
-        "away": 1.94
+        "home": 2.57,
+        "draw": 3.25,
+        "away": 2.31
       },
       "mainPicks": [
         {
           "score": "1:0",
-          "odds": 7
+          "odds": 5.3
         },
         {
           "score": "1:1",
-          "odds": 7.5
+          "odds": 7.75
         },
         {
-          "score": "3:1",
-          "odds": 12.5
+          "score": "3:0",
+          "odds": 11
         }
       ],
       "singleBets": []
@@ -1251,27 +878,27 @@
       "type": "NORMAL",
       "handicap": 1,
       "spf": {
-        "home": 3.35,
-        "draw": 2.11,
-        "away": 2.8
+        "home": 3.8,
+        "draw": 1.98,
+        "away": 2.77
       },
       "rqspf": {
-        "home": 1.31,
+        "home": 1.32,
         "draw": 4.35,
-        "away": 7.35
+        "away": 7.05
       },
       "mainPicks": [
         {
           "score": "1:1",
-          "odds": 3.7
+          "odds": 3.5
         },
         {
           "score": "0:0",
-          "odds": 4.2
+          "odds": 4
         },
         {
           "score": "0:1",
-          "odds": 7
+          "odds": 7.25
         }
       ],
       "singleBets": []
@@ -1287,220 +914,18 @@
       "handicap": 2,
       "spf": null,
       "rqspf": {
-        "home": 2.28,
-        "draw": 3.85,
-        "away": 2.32
+        "home": 2.64,
+        "draw": 3.92,
+        "away": 2.02
       },
       "mainPicks": [
         {
           "score": "0:2",
-          "odds": 5.4
+          "odds": 5.25
         },
         {
           "score": "1:2",
-          "odds": 8.25
-        },
-        {
-          "score": "1:1",
-          "odds": 11
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五061",
-      "mid": "2040297",
-      "match": "NORvsFRA",
-      "home": "NOR",
-      "away": "FRA",
-      "kickoff": "2026-06-27 03:00",
-      "type": "NORMAL",
-      "handicap": 1,
-      "spf": {
-        "home": 4.35,
-        "draw": 4.15,
-        "away": 1.52
-      },
-      "rqspf": {
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 2.69
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 8.5
-        },
-        {
-          "score": "0:2",
           "odds": 9.5
-        },
-        {
-          "score": "1:3",
-          "odds": 9.5
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五062",
-      "mid": "2040298",
-      "match": "SENvsIRQ",
-      "home": "SEN",
-      "away": "IRQ",
-      "kickoff": "2026-06-27 03:00",
-      "type": "NORMAL",
-      "handicap": -2,
-      "spf": null,
-      "rqspf": {
-        "home": 2.37,
-        "draw": 3.75,
-        "away": 2.27
-      },
-      "mainPicks": [
-        {
-          "score": "2:0",
-          "odds": 5
-        },
-        {
-          "score": "3:1",
-          "odds": 8.25
-        },
-        {
-          "score": "1:1",
-          "odds": 13
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五063",
-      "mid": "2040299",
-      "match": "CPVvsKSA",
-      "home": "CPV",
-      "away": "KSA",
-      "kickoff": "2026-06-27 08:00",
-      "type": "NORMAL",
-      "handicap": -1,
-      "spf": {
-        "home": 2.28,
-        "draw": 3.23,
-        "away": 2.62
-      },
-      "rqspf": {
-        "home": 5.25,
-        "draw": 3.8,
-        "away": 1.48
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 5.75
-        },
-        {
-          "score": "1:0",
-          "odds": 6.8
-        },
-        {
-          "score": "0:0",
-          "odds": 10
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五064",
-      "mid": "2040300",
-      "match": "URUvsESP",
-      "home": "URU",
-      "away": "ESP",
-      "kickoff": "2026-06-27 08:00",
-      "type": "NORMAL",
-      "handicap": 1,
-      "spf": {
-        "home": 5.85,
-        "draw": 3.6,
-        "away": 1.47
-      },
-      "rqspf": {
-        "home": 2.3,
-        "draw": 3.5,
-        "away": 2.45
-      },
-      "mainPicks": [
-        {
-          "score": "0:1",
-          "odds": 6
-        },
-        {
-          "score": "1:1",
-          "odds": 7.15
-        },
-        {
-          "score": "0:0",
-          "odds": 9
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五065",
-      "mid": "2040301",
-      "match": "EGYvsIRN",
-      "home": "EGY",
-      "away": "IRN",
-      "kickoff": "2026-06-27 11:00",
-      "type": "NORMAL",
-      "handicap": -1,
-      "spf": {
-        "home": 2.2,
-        "draw": 2.5,
-        "away": 3.64
-      },
-      "rqspf": {
-        "home": 5,
-        "draw": 3.7,
-        "away": 1.52
-      },
-      "mainPicks": [
-        {
-          "score": "1:1",
-          "odds": 4.45
-        },
-        {
-          "score": "0:0",
-          "odds": 6
-        },
-        {
-          "score": "1:0",
-          "odds": 6.5
-        }
-      ],
-      "singleBets": []
-    },
-    {
-      "code": "周五066",
-      "mid": "2040302",
-      "match": "NZLvsBEL",
-      "home": "NZL",
-      "away": "BEL",
-      "kickoff": "2026-06-27 11:00",
-      "type": "NORMAL",
-      "handicap": 2,
-      "spf": null,
-      "rqspf": {
-        "home": 2.58,
-        "draw": 3.95,
-        "away": 2.05
-      },
-      "mainPicks": [
-        {
-          "score": "0:2",
-          "odds": 6
-        },
-        {
-          "score": "1:2",
-          "odds": 8.5
         },
         {
           "score": "1:1",
@@ -1515,59 +940,78 @@
       {
         "matches": [
           "周六071",
-          "周五065"
+          "周六072"
         ],
         "picks": [
           {
             "match": "DZAvsAUT",
             "score": "1:1",
-            "odds": 3.7
+            "odds": 3.5
           },
           {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
           }
         ],
-        "odds": 16.46
+        "odds": 18.38
       },
       {
         "matches": [
-          "周六071",
-          "周五062"
+          "周六070",
+          "周六071"
         ],
         "picks": [
           {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
           },
           {
-            "match": "SENvsIRQ",
-            "score": "2:0",
-            "odds": 5
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
           }
         ],
-        "odds": 18.5
+        "odds": 18.55
       },
       {
         "matches": [
-          "周六071",
-          "周五065"
+          "周六067",
+          "周六071"
         ],
         "picks": [
           {
-            "match": "DZAvsAUT",
-            "score": "0:0",
-            "odds": 4.2
+            "match": "CROvsGHA",
+            "score": "1:1",
+            "odds": 5.5
           },
           {
-            "match": "EGYvsIRN",
+            "match": "DZAvsAUT",
             "score": "1:1",
-            "odds": 4.45
+            "odds": 3.5
           }
         ],
-        "odds": 18.69
+        "odds": 19.25
+      },
+      {
+        "matches": [
+          "周六068",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "PANvsENG",
+            "score": "0:2",
+            "odds": 5.8
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 20.3
       },
       {
         "matches": [
@@ -1577,382 +1021,363 @@
         "picks": [
           {
             "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
+            "score": "0:0",
+            "odds": 4
           },
           {
             "match": "JORvsARG",
             "score": "0:2",
-            "odds": 5.4
-          }
-        ],
-        "odds": 19.98
-      },
-      {
-        "matches": [
-          "周六067",
-          "周六071"
-        ],
-        "picks": [
-          {
-            "match": "CROvsGHA",
-            "score": "1:1",
-            "odds": 5.5
-          },
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          }
-        ],
-        "odds": 20.35
-      },
-      {
-        "matches": [
-          "周六067",
-          "周六071"
-        ],
-        "picks": [
-          {
-            "match": "CROvsGHA",
-            "score": "1:0",
-            "odds": 5.5
-          },
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          }
-        ],
-        "odds": 20.35
-      },
-      {
-        "matches": [
-          "周六069",
-          "周六071"
-        ],
-        "picks": [
-          {
-            "match": "COLvsPOR",
-            "score": "1:1",
-            "odds": 5.6
-          },
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          }
-        ],
-        "odds": 20.72
-      },
-      {
-        "matches": [
-          "周六071",
-          "周五062"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "0:0",
-            "odds": 4.2
-          },
-          {
-            "match": "SENvsIRQ",
-            "score": "2:0",
-            "odds": 5
+            "odds": 5.25
           }
         ],
         "odds": 21
       },
       {
         "matches": [
-          "周六071",
-          "周五063"
+          "周六070",
+          "周六071"
         ],
         "picks": [
           {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "CPVvsKSA",
-            "score": "1:1",
-            "odds": 5.75
-          }
-        ],
-        "odds": 21.28
-      },
-      {
-        "matches": [
-          "周六071",
-          "周五064"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "URUvsESP",
-            "score": "0:1",
-            "odds": 6
-          }
-        ],
-        "odds": 22.2
-      }
-    ],
-    "c3": [
-      {
-        "matches": [
-          "周六071",
-          "周五062",
-          "周五065"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "SENvsIRQ",
-            "score": "2:0",
-            "odds": 5
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          }
-        ],
-        "odds": 82.33
-      },
-      {
-        "matches": [
-          "周六071",
-          "周六072",
-          "周五065"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "JORvsARG",
-            "score": "0:2",
-            "odds": 5.4
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          }
-        ],
-        "odds": 88.91
-      },
-      {
-        "matches": [
-          "周六067",
-          "周六071",
-          "周五065"
-        ],
-        "picks": [
-          {
-            "match": "CROvsGHA",
-            "score": "1:1",
-            "odds": 5.5
-          },
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          }
-        ],
-        "odds": 90.56
-      },
-      {
-        "matches": [
-          "周六067",
-          "周六071",
-          "周五065"
-        ],
-        "picks": [
-          {
-            "match": "CROvsGHA",
+            "match": "CODvsUZB",
             "score": "1:0",
-            "odds": 5.5
+            "odds": 5.3
           },
           {
             "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
+            "score": "0:0",
+            "odds": 4
           }
         ],
-        "odds": 90.56
+        "odds": 21.2
       },
       {
         "matches": [
           "周六069",
-          "周六071",
-          "周五065"
+          "周六071"
         ],
         "picks": [
           {
             "match": "COLvsPOR",
             "score": "1:1",
-            "odds": 5.6
+            "odds": 6.1
           },
           {
             "match": "DZAvsAUT",
             "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
+            "odds": 3.5
           }
         ],
-        "odds": 92.2
+        "odds": 21.35
       },
       {
         "matches": [
-          "周六071",
-          "周五062",
-          "周五065"
+          "周六067",
+          "周六071"
         ],
         "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:0",
+            "odds": 6.2
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 21.7
+      },
+      {
+        "matches": [
+          "周六067",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:1",
+            "odds": 5.5
+          },
           {
             "match": "DZAvsAUT",
             "score": "0:0",
-            "odds": 4.2
-          },
-          {
-            "match": "SENvsIRQ",
-            "score": "2:0",
-            "odds": 5
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
+            "odds": 4
           }
         ],
-        "odds": 93.45
+        "odds": 22
       },
       {
         "matches": [
-          "周六071",
-          "周五063",
-          "周五065"
+          "周六068",
+          "周六071"
         ],
         "picks": [
           {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "CPVvsKSA",
-            "score": "1:1",
-            "odds": 5.75
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          }
-        ],
-        "odds": 94.67
-      },
-      {
-        "matches": [
-          "周六071",
-          "周五064",
-          "周五065"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "URUvsESP",
-            "score": "0:1",
-            "odds": 6
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          }
-        ],
-        "odds": 98.79
-      },
-      {
-        "matches": [
-          "周六071",
-          "周五065",
-          "周五066"
-        ],
-        "picks": [
-          {
-            "match": "DZAvsAUT",
-            "score": "1:1",
-            "odds": 3.7
-          },
-          {
-            "match": "EGYvsIRN",
-            "score": "1:1",
-            "odds": 4.45
-          },
-          {
-            "match": "NZLvsBEL",
+            "match": "PANvsENG",
             "score": "0:2",
-            "odds": 6
+            "odds": 5.8
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "0:0",
+            "odds": 4
           }
         ],
-        "odds": 98.79
-      },
+        "odds": 23.2
+      }
+    ],
+    "c3": [
       {
         "matches": [
+          "周六070",
           "周六071",
-          "周六072",
-          "周五062"
+          "周六072"
         ],
         "picks": [
           {
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
+          },
+          {
             "match": "DZAvsAUT",
             "score": "1:1",
-            "odds": 3.7
+            "odds": 3.5
           },
           {
             "match": "JORvsARG",
             "score": "0:2",
-            "odds": 5.4
-          },
-          {
-            "match": "SENvsIRQ",
-            "score": "2:0",
-            "odds": 5
+            "odds": 5.25
           }
         ],
-        "odds": 99.9
+        "odds": 97.39
+      },
+      {
+        "matches": [
+          "周六067",
+          "周六071",
+          "周六072"
+        ],
+        "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:1",
+            "odds": 5.5
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          },
+          {
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
+          }
+        ],
+        "odds": 101.06
+      },
+      {
+        "matches": [
+          "周六067",
+          "周六070",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:1",
+            "odds": 5.5
+          },
+          {
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 102.02
+      },
+      {
+        "matches": [
+          "周六068",
+          "周六071",
+          "周六072"
+        ],
+        "picks": [
+          {
+            "match": "PANvsENG",
+            "score": "0:2",
+            "odds": 5.8
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          },
+          {
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
+          }
+        ],
+        "odds": 106.58
+      },
+      {
+        "matches": [
+          "周六068",
+          "周六070",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "PANvsENG",
+            "score": "0:2",
+            "odds": 5.8
+          },
+          {
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 107.59
+      },
+      {
+        "matches": [
+          "周六070",
+          "周六071",
+          "周六072"
+        ],
+        "picks": [
+          {
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "0:0",
+            "odds": 4
+          },
+          {
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
+          }
+        ],
+        "odds": 111.3
+      },
+      {
+        "matches": [
+          "周六067",
+          "周六068",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:1",
+            "odds": 5.5
+          },
+          {
+            "match": "PANvsENG",
+            "score": "0:2",
+            "odds": 5.8
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 111.65
+      },
+      {
+        "matches": [
+          "周六069",
+          "周六071",
+          "周六072"
+        ],
+        "picks": [
+          {
+            "match": "COLvsPOR",
+            "score": "1:1",
+            "odds": 6.1
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          },
+          {
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
+          }
+        ],
+        "odds": 112.09
+      },
+      {
+        "matches": [
+          "周六069",
+          "周六070",
+          "周六071"
+        ],
+        "picks": [
+          {
+            "match": "COLvsPOR",
+            "score": "1:1",
+            "odds": 6.1
+          },
+          {
+            "match": "CODvsUZB",
+            "score": "1:0",
+            "odds": 5.3
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          }
+        ],
+        "odds": 113.16
+      },
+      {
+        "matches": [
+          "周六067",
+          "周六071",
+          "周六072"
+        ],
+        "picks": [
+          {
+            "match": "CROvsGHA",
+            "score": "1:0",
+            "odds": 6.2
+          },
+          {
+            "match": "DZAvsAUT",
+            "score": "1:1",
+            "odds": 3.5
+          },
+          {
+            "match": "JORvsARG",
+            "score": "0:2",
+            "odds": 5.25
+          }
+        ],
+        "odds": 113.92
       }
     ]
   }

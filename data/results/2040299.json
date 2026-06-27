@@ -1,13 +1,34 @@
 {
   "matchId": "2040299",
+  "code": "周五063",
+  "league": "世界杯",
+  "home": "CPV",
+  "away": "KSA",
+  "kickoff": "2026-06-27 08:00",
   "homeScore": 0,
   "awayScore": 0,
-  "halfTime": null,
+  "final_score": "0-0",
+  "halfTime": {
+    "home": 0,
+    "away": 0
+  },
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "0:0",
+    "other": null
+  },
+  "zjqResult": "0",
+  "bqcResult": "平平",
   "_fromSporttery": true,
   "_halfTimeResult": "draw",
   "_spfResult": "draw",
-  "_totalGoals": "0"
+  "_hhadResult": "A",
+  "_totalGoals": "0",
+  "_scorersSource": "直播吧/新华社 6-27 08:00 简报：佛得角0-0闷平沙特阿拉伯，半场佛得角0射正，坦巴克提伤退。佛得角3战全平积3分以H组第2名身份历史性首次晋级32强，下场将对阵阿根廷；沙特积3分小组第3（净胜球劣势）出局。佛得角足协仅10人运营",
+  "_capturedAt": "2026-06-27T18:00:00.000Z"
 }
