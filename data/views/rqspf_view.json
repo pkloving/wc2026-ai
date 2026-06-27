@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T10:53:41.387Z",
+  "generated_at": "2026-06-27T04:03:56.916Z",
   "play": "rqspf",
   "count": 71,
   "rows": [
@@ -1330,20 +1330,20 @@
       "away": "FRA",
       "kickoff": "2026-06-27 03:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:4",
       "initial": {
         "handicap": 1,
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 2.69
+        "home": 2.23,
+        "draw": 3.19,
+        "away": 2.72
       },
       "last": {
         "handicap": 1,
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 2.69
+        "home": 2.23,
+        "draw": 3.19,
+        "away": 2.72
       },
-      "result": null
+      "result": "away"
     },
     {
       "mid": "2040298",
@@ -1352,7 +1352,7 @@
       "away": "IRQ",
       "kickoff": "2026-06-27 03:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "5:0",
       "initial": {
         "handicap": -2,
         "home": 2.37,
@@ -1365,7 +1365,7 @@
         "draw": 3.75,
         "away": 2.27
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040300",
@@ -1374,7 +1374,7 @@
       "away": "ESP",
       "kickoff": "2026-06-27 08:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:1",
       "initial": {
         "handicap": 1,
         "home": 2.3,
@@ -1387,7 +1387,7 @@
         "draw": 3.5,
         "away": 2.45
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040299",
@@ -1396,7 +1396,7 @@
       "away": "KSA",
       "kickoff": "2026-06-27 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "handicap": -1,
         "home": 5.25,
@@ -1409,7 +1409,7 @@
         "draw": 3.8,
         "away": 1.48
       },
-      "result": null
+      "result": "away"
     },
     {
       "mid": "2040302",
@@ -1421,14 +1421,14 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.58,
-        "draw": 3.95,
+        "home": 2.62,
+        "draw": 3.85,
         "away": 2.05
       },
       "last": {
         "handicap": 2,
-        "home": 2.58,
-        "draw": 3.95,
+        "home": 2.62,
+        "draw": 3.85,
         "away": 2.05
       },
       "result": null
@@ -1465,14 +1465,14 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 2.92,
-        "draw": 3.35,
+        "home": 2.97,
+        "draw": 3.28,
         "away": 2.05
       },
       "last": {
         "handicap": -1,
-        "home": 2.92,
-        "draw": 3.35,
+        "home": 2.97,
+        "draw": 3.28,
         "away": 2.05
       },
       "result": null
@@ -1487,15 +1487,15 @@
       "final_score": null,
       "initial": {
         "handicap": 1,
-        "home": 1.9,
-        "draw": 3.45,
-        "away": 3.2
+        "home": 1.95,
+        "draw": 3.42,
+        "away": 3.08
       },
       "last": {
         "handicap": 1,
-        "home": 1.9,
-        "draw": 3.45,
-        "away": 3.2
+        "home": 1.95,
+        "draw": 3.42,
+        "away": 3.08
       },
       "result": null
     },
@@ -1509,15 +1509,15 @@
       "final_score": null,
       "initial": {
         "handicap": -1,
-        "home": 3.1,
-        "draw": 3.45,
-        "away": 1.94
+        "home": 2.82,
+        "draw": 3.3,
+        "away": 2.12
       },
       "last": {
         "handicap": -1,
-        "home": 3.1,
-        "draw": 3.45,
-        "away": 1.94
+        "home": 2.82,
+        "draw": 3.3,
+        "away": 2.12
       },
       "result": null
     },
@@ -1531,15 +1531,15 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.28,
-        "draw": 3.85,
-        "away": 2.32
+        "home": 2.45,
+        "draw": 3.87,
+        "away": 2.16
       },
       "last": {
         "handicap": 2,
-        "home": 2.28,
-        "draw": 3.85,
-        "away": 2.32
+        "home": 2.45,
+        "draw": 3.87,
+        "away": 2.16
       },
       "result": null
     },

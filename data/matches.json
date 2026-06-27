@@ -700,7 +700,7 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "NOR",
     "away": "FRA",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040297"
   },
   {
@@ -711,7 +711,7 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "SEN",
     "away": "IRQ",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040298"
   },
   {
@@ -722,7 +722,7 @@
     "venue": "BMO Field, Toronto",
     "home": "URU",
     "away": "ESP",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040300"
   },
   {
@@ -733,7 +733,7 @@
     "venue": "BC Place, Vancouver",
     "home": "CPV",
     "away": "KSA",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040299"
   },
   {

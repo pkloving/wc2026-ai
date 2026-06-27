@@ -7,7 +7,7 @@
     "away": "ESP",
     "kickoff": "2026-06-27 08:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040300",
-    "scraped_at": "2026-06-26T10:51:30.647Z",
+    "scraped_at": "2026-06-27T04:03:03.591Z",
     "sale_status": "在售",
     "single_supported": {
       "HAD": true,
@@ -17,7 +17,7 @@
       "TTG": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
@@ -78,22 +78,22 @@
     },
     "bqc_latest": {
       "胜胜": 11,
-      "胜平": 17,
+      "胜平": 16,
       "胜负": 24,
       "平胜": 13,
       "平平": 5.5,
-      "平负": 3.85,
-      "负胜": 50,
-      "负平": 17,
+      "平负": 4,
+      "负胜": 45,
+      "负平": 16,
       "负负": 2.15
     }
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-26T10:51:30.647Z",
-    "snapshot_time": "2026-06-26 16:10:17",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "fetched_at": "2026-06-27T04:03:03.591Z",
+    "snapshot_time": "2026-06-26 21:07:22",
+    "has_match_result": true,
+    "spf_result": "away",
+    "half_time_result": "away"
   }
 }

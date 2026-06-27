@@ -3323,6 +3323,164 @@
       "maxReturn": 67.68,
       "result": "won",
       "note": "3 场 2×1+3×1（每场 2 选）。计算: 2x1(058×2)(059×2)→4 + 2x1(058×2)(060×2)→4 + 2x1(059×2)(060×2)→4 = 12 + 3x1(058×2)(059×2)(060×2)→8 = 20 注 × 2 元 × 1 倍 = 40 元。结算：058 JPN 2-1 SWE(1:1/2:2 全错) / 059 PAR 0-0 AUS(0:0 ✓ / 1:1 ✗) / 060 TUR 3-2 USA(1:1/0:3 全错) — 用户报 won 67.68 (ROI +69.2%)，注：以用户实际 APP 中奖金额为准"
+    },
+    {
+      "id": "crs-fri063-065-bf-2026-06-27",
+      "type": "match",
+      "title": "[比分] 串关（2×1 · 4 注 · 8 元）",
+      "matchLabel": "周五063 bf{1:1,1:0} + 周五065 bf{1:1,1:0}（赔率时点 2026-06-26 19:08）",
+      "date": "2026-06-26T19:08:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-26 19:08）",
+      "picks": [
+        {
+          "mid": "2040299",
+          "match": "周五063",
+          "home": "CPV",
+          "away": "KSA",
+          "kickoff": "2026-06-27 08:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040299",
+          "match": "周五063",
+          "home": "CPV",
+          "away": "KSA",
+          "kickoff": "2026-06-27 08:00",
+          "play": "bf",
+          "pick": "1-0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040301",
+          "match": "周五065",
+          "home": "EGY",
+          "away": "IRN",
+          "kickoff": "2026-06-27 11:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040301",
+          "match": "周五065",
+          "home": "EGY",
+          "away": "IRN",
+          "kickoff": "2026-06-27 11:00",
+          "play": "bf",
+          "pick": "1-0",
+          "pickLabel": "1:0",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 4,
+      "totalCost": 8,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "周五063 2选 × 周五065 2选 = 4 注 × 2 元 × 1 倍 = 8 元。结算：周五063 CPV 0:0 KSA（1:1/1:0 全错 ✗）→ 任何 2×1 都含 063 → 全 lost"
+    },
+    {
+      "id": "crs-fri061-066-rqspf-2026-06-27",
+      "type": "match",
+      "title": "[让球] 串关（3×1 · 20 注 · 40 元）",
+      "matchLabel": "周五061-066 让球胜平负（赔率时点 2026-06-26 19:05）",
+      "date": "2026-06-26T19:05:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（2026-06-26 19:05）",
+      "picks": [
+        {
+          "mid": "2040297",
+          "match": "周五061",
+          "home": "NOR",
+          "away": "FRA",
+          "kickoff": "2026-06-27 03:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "draw",
+          "pickLabel": "平(+1)",
+          "odds": null
+        },
+        {
+          "mid": "2040298",
+          "match": "周五062",
+          "home": "SEN",
+          "away": "IRQ",
+          "kickoff": "2026-06-27 03:00",
+          "play": "rqspf",
+          "handicap": -2,
+          "pick": "away",
+          "pickLabel": "主负(-2)",
+          "odds": null
+        },
+        {
+          "mid": "2040299",
+          "match": "周五063",
+          "home": "CPV",
+          "away": "KSA",
+          "kickoff": "2026-06-27 08:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040300",
+          "match": "周五064",
+          "home": "URU",
+          "away": "ESP",
+          "kickoff": "2026-06-27 08:00",
+          "play": "rqspf",
+          "handicap": 1,
+          "pick": "draw",
+          "pickLabel": "平(+1)",
+          "odds": null
+        },
+        {
+          "mid": "2040301",
+          "match": "周五065",
+          "home": "EGY",
+          "away": "IRN",
+          "kickoff": "2026-06-27 11:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040302",
+          "match": "周五066",
+          "home": "NZL",
+          "away": "BEL",
+          "kickoff": "2026-06-27 11:00",
+          "play": "rqspf",
+          "handicap": 2,
+          "pick": "away",
+          "pickLabel": "主负(+2)",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": 67.17,
+      "result": "won",
+      "note": "6 场 3×1 × 1 倍 = C(6,3)=20 注 × 2 元 = 40 元。结算：061 NOR 1:4 FRA 让+1=客胜(平 ✗) / 062 SEN 5:0 IRQ 让-2=主胜(主负 ✗) / 063 CPV 0:0 KSA 让-1=主负 ✓ / 064 URU 0:1 ESP 让+1=平 ✓ / 065-066 matches_status 仍 on_sale（未抓到 result 文件）→ 用户 APP 报 won 67.17 (ROI +67.9%)，注：以用户实际 APP 中奖金额为准"
     }
   ]
 }

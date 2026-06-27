@@ -26,6 +26,13 @@ export const DEFAULT_PARAMS = {
     // 原因: spf<1.5 时 rq 让胜赔率多数已经最低, 基线已选对, 强制让胜反而打错 1 场
     // 设 0 禁用, 留参数等更多"spf 大热门 + rq 让胜赔率>让负"反例再激活
     spfFavHomeMax: 0,
+    // 2026-06-27 调优 (sampled 2040177 伊朗 2-2 新西兰, hc=-1 走盘):
+    // hc=-1 + rq.away 是最低赔率 + rq.away ∈ [1.5, 1.8) 主流盘
+    //   实际走盘率 80% (5场触发, 4场让平命中), 改买让平 ROI +43.3% (n=32 综合)
+    //   机制: 庄家看客胜 (rq.away 最低) 实际是"主让-1 走盘陷阱",
+    //         走盘比分 (1:0, 2:1) 在主让-1 场景下让平赔率 3-4 区间被严重低估
+    // 默认 1.5/1.8 = 关闭 (0/0) 时维持原基线 (最低赔率 away)
+    hcMinus1AwayTrap: { minOdds: 1.5, maxOdds: 1.8 },
   },
   zjq: {
     normalTwoLo: 2.5, normalTwoHi: 3.5,
@@ -139,6 +146,11 @@ export const SEARCH_SPACE = [
   // 2026-06-26: 加 normalTwoRqAwayMin 旋钮 (0=关闭过滤, 1.5/1.6=温和过滤, 1.8/2.0=严格)
   { path: 'zjq.normalTwoRqAwayMin',       values: [0, 1.5, 1.6, 1.8] },
   { path: 'bqc.ssMax',                    values: [1.8, 2.0, 2.2] },
+  // 2026-06-27: 加 hcMinus1AwayTrap 旋钮 (主让-1 走盘陷阱)
+  //   minOdds 范围: 0=关闭, 1.4/1.5/1.6 主流盘过滤
+  //   maxOdds 范围: 0=关闭, 1.7/1.8/2.0 上限
+  { path: 'rqspf.hcMinus1AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6] },
+  { path: 'rqspf.hcMinus1AwayTrap.maxOdds', values: [0, 1.7, 1.8, 2.0] },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
   { path: 'single.bigBall.oddsHi',        values: [55, 65, 75] },
@@ -502,6 +514,24 @@ export function rqspfStrategy(m, ctx) {
       secondary: sorted.find(d => d.d !== 'home') || sorted[1],
       rule: { name: '让胜纠偏(主流盘)', roi: '+20.5%', n: 6 },
     };
+  }
+  // 2026-06-27 调优 (sampled 2040177 伊朗 2-2 新西兰, hc=-1 走盘比分):
+  // 信号②b: 主让-1 + 走盘陷阱 (away 是最低赔率 + rq.away ∈ [minOdds, maxOdds))
+  //   机制: 庄家看客胜 (rq.away 最低) 实际是"主让-1 走盘陷阱",
+  //         走盘比分 (1:0, 2:1) 在主让-1 场景下让平赔率 3-4 区间被严重低估
+  //   样本: 5 场触发 → 4 场让平命中 (80% 走盘率), 改买让平 ROI +43.3% (n=32 综合)
+  //   优先级: 低于让胜纠偏 (避免覆盖 hc=-1 + home 是主流盘场景), 高于基线
+  //   默认 minOdds=1.5 / maxOdds=1.8, 都设 0 = 关闭
+  const trap = P.hcMinus1AwayTrap || { minOdds: 1.5, maxOdds: 1.8 };
+  if (m.handicap === -1 && trap.minOdds > 0 && trap.maxOdds > trap.minOdds) {
+    const minOdds = Math.min(rq.home, rq.draw, rq.away);
+    if (rq.away === minOdds && rq.away >= trap.minOdds && rq.away < trap.maxOdds) {
+      return {
+        primary: { d: 'draw', odds: rq.draw, label: '让平' },
+        secondary: sorted.find(d => d.d !== 'draw') || sorted[1],
+        rule: { name: '⭐主让-1+走盘陷阱(away主流盘)→让平', roi: '+43.3%', n: 32 },
+      };
+    }
   }
   // 基线: 最低赔率 (注: 2026-06-20 改成"主让-1 基线", 主受让+1 走信号 0 不进基线)
   return {
