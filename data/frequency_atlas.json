@@ -1,131 +1,136 @@
 {
-  "generated_at": "2026-06-27T04:03:57.206Z",
+  "generated_at": "2026-06-27T07:08:20.193Z",
   "note": "由 scripts/build_frequency_atlas.js 从 data/views 与 data/2022wc/views 汇总",
   "y2026": {
-    "total": 64,
+    "total": 66,
     "byPlay": {
       "spf": {
         "counts": {
           "home": 27,
-          "draw": 12,
+          "draw": 13,
           "away": 12
         },
-        "total": 51
+        "total": 52
       },
       "rqspf": {
         "counts": {
           "home": 25,
           "draw": 16,
-          "away": 23
+          "away": 25
         },
-        "total": 64
+        "total": 66
       },
       "bf": {
         "top": [
           {
             "score": "1:1",
-            "count": 7,
-            "pct": 10.9
+            "count": 8,
+            "pct": 12.1
           },
           {
             "score": "2:1",
             "count": 6,
-            "pct": 9.4
+            "pct": 9.1
           },
           {
             "score": "2:0",
             "count": 5,
-            "pct": 7.8
+            "pct": 7.6
           },
           {
             "score": "1:0",
             "count": 5,
-            "pct": 7.8
+            "pct": 7.6
           },
           {
             "score": "0:0",
             "count": 5,
-            "pct": 7.8
+            "pct": 7.6
           },
           {
             "score": "0:1",
             "count": 4,
-            "pct": 6.3
+            "pct": 6.1
           },
           {
             "score": "3:1",
             "count": 4,
-            "pct": 6.3
+            "pct": 6.1
           },
           {
             "score": "2:2",
             "count": 3,
-            "pct": 4.7
+            "pct": 4.5
           },
           {
             "score": "3:0",
             "count": 3,
-            "pct": 4.7
+            "pct": 4.5
           },
           {
             "score": "0:2",
             "count": 3,
-            "pct": 4.7
+            "pct": 4.5
           },
           {
             "score": "4:1",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "5:1",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "1:4",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "4:2",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "1:3",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "0:3",
             "count": 2,
-            "pct": 3.1
+            "pct": 3
           },
           {
             "score": "0:4",
             "count": 1,
-            "pct": 1.6
+            "pct": 1.5
           },
           {
             "score": "4:0",
             "count": 1,
-            "pct": 1.6
+            "pct": 1.5
           },
           {
             "score": "1:2",
             "count": 1,
-            "pct": 1.6
+            "pct": 1.5
           },
           {
             "score": "3:2",
             "count": 1,
-            "pct": 1.6
+            "pct": 1.5
           },
           {
             "score": "5:0",
             "count": 1,
-            "pct": 1.6
+            "pct": 1.5
+          },
+          {
+            "score": "1:5",
+            "count": 1,
+            "pct": 1.5
           }
         ],
         "others": {
@@ -133,92 +138,92 @@
           "平其它": 0,
           "负其它": 0
         },
-        "total": 64
+        "total": 66
       },
       "zjq": {
         "buckets": [
           {
             "label": "0球",
             "count": 5,
-            "pct": 7.8
+            "pct": 7.6
           },
           {
             "label": "1球",
             "count": 9,
-            "pct": 14.1
+            "pct": 13.6
           },
           {
             "label": "2球",
-            "count": 15,
-            "pct": 23.4
+            "count": 16,
+            "pct": 24.2
           },
           {
             "label": "3球",
             "count": 12,
-            "pct": 18.8
+            "pct": 18.2
           },
           {
             "label": "4球",
             "count": 11,
-            "pct": 17.2
+            "pct": 16.7
           },
           {
             "label": "5+球",
-            "count": 12,
-            "pct": 18.8
+            "count": 13,
+            "pct": 19.7
           }
         ],
-        "total": 64
+        "total": 66
       },
       "bqc": {
         "buckets": [
           {
             "label": "胜胜",
             "count": 19,
-            "pct": 32.2
+            "pct": 31.1
           },
           {
             "label": "胜平",
             "count": 4,
-            "pct": 6.8
+            "pct": 6.6
           },
           {
             "label": "胜负",
             "count": 2,
-            "pct": 3.4
+            "pct": 3.3
           },
           {
             "label": "平胜",
             "count": 12,
-            "pct": 20.3
+            "pct": 19.7
           },
           {
             "label": "平平",
-            "count": 7,
-            "pct": 11.9
+            "count": 8,
+            "pct": 13.1
           },
           {
             "label": "平负",
             "count": 1,
-            "pct": 1.7
+            "pct": 1.6
           },
           {
             "label": "负胜",
             "count": 1,
-            "pct": 1.7
+            "pct": 1.6
           },
           {
             "label": "负平",
             "count": 3,
-            "pct": 5.1
+            "pct": 4.9
           },
           {
             "label": "负负",
-            "count": 10,
-            "pct": 16.9
+            "count": 11,
+            "pct": 18
           }
         ],
-        "total": 59
+        "total": 61
       }
     }
   },

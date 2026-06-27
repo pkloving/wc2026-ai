@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:03:56.915Z",
+  "generated_at": "2026-06-27T07:08:13.230Z",
   "play": "spf",
   "count": 56,
   "rows": [
@@ -1030,7 +1030,7 @@
       "away": "IRN",
       "kickoff": "2026-06-27 11:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "home": 2.15,
         "draw": 2.5,
@@ -1041,7 +1041,7 @@
         "draw": 2.5,
         "away": 3.78
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040303",

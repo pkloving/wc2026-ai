@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:03:56.919Z",
+  "generated_at": "2026-06-27T07:08:13.293Z",
   "play": "bqc",
   "count": 70,
   "rows": [
@@ -2278,7 +2278,7 @@
       "away": "BEL",
       "kickoff": "2026-06-27 11:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "1:5",
       "initial": {
         "odds": {
           "胜胜": 29,
@@ -2305,7 +2305,7 @@
           "负负": 1.33
         }
       },
-      "result": null
+      "result": "负负"
     },
     {
       "mid": "2040301",
@@ -2314,7 +2314,7 @@
       "away": "IRN",
       "kickoff": "2026-06-27 11:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "胜胜": 4,
@@ -2341,7 +2341,7 @@
           "负负": 6.5
         }
       },
-      "result": null
+      "result": "平平"
     },
     {
       "mid": "2040303",

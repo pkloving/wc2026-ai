@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T15:00:00.000Z",
+  "generated_at": "2026-06-27T15:00:00.000Z",
   "total": 104,
-  "_patch_note_20260626": "M059 (2040296 TUR vs USA) 和 M060 (2040295 PAR vs AUS) 已完赛，6-26 10:00 CST 同步标记 finished：M059 比分 3-2（土耳其胜，艾汗90+8'绝杀），M060 比分 0-0（闷平默契球）。odds/2040295.json + odds/2040296.json 同步 is_finished_odds=true。matches.json 同步 M059/M060 status→finished。",
+  "_patch_note_20260627": "M061-M066 末轮 6 场已完赛 6-27 15:00 CST 同步标记 finished：M061 NOR 1-4 FRA（法国完胜晋级头名）/ M062 SEN 5-0 IRQ（安慰赛大胜）/ M063 URU 0-1 ESP（西班牙锁头轮换小胜）/ M064 CPV 0-0 KSA（平局携手出局）/ M065 NZL 1-5 BEL（比利时大胜反超头名）/ M066 EGY 1-1 IRN（埃及第2出线伊朗第3）。6 场 results 全部落库（2040297-2040302），odds is_finished_odds 全部翻 true",
   "status_definitions": {
     "scheduled": "未开售（odds 都 null）",
     "on_sale": "已开售（有 spf 或 rqspf 任一）",
@@ -3055,7 +3055,8 @@
         "CRS": true,
         "TTG": true
       },
-      "final_score": "1:4"
+      "final_score": "1:4",
+      "result_file": "results/2040297.json"
     },
     {
       "mid": "2040298",
@@ -3081,7 +3082,8 @@
         "CRS": true,
         "TTG": true
       },
-      "final_score": "5:0"
+      "final_score": "5:0",
+      "result_file": "results/2040298.json"
     },
     {
       "mid": "2040300",
@@ -3112,7 +3114,8 @@
         "CRS": true,
         "TTG": true
       },
-      "final_score": "0:1"
+      "final_score": "0:1",
+      "result_file": "results/2040300.json"
     },
     {
       "mid": "2040299",
@@ -3143,7 +3146,8 @@
         "CRS": true,
         "TTG": true
       },
-      "final_score": "0:0"
+      "final_score": "0:0",
+      "result_file": "results/2040299.json"
     },
     {
       "mid": "2040302",
@@ -3152,7 +3156,7 @@
       "home": "NZL",
       "away": "BEL",
       "kickoff": "2026-06-27 11:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": null,
       "handicap": 2,
       "rqspf": {
@@ -3160,7 +3164,8 @@
         "draw": 3.85,
         "away": 2.05
       },
-      "is_finished_odds": false,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-27T15:00:00.000Z",
       "scraped_at": "2026-06-27T04:03:03.660Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3168,7 +3173,9 @@
         "HAFU": true,
         "CRS": true,
         "TTG": true
-      }
+      },
+      "final_score": "1:5",
+      "result_file": "results/2040302.json"
     },
     {
       "mid": "2040301",
@@ -3177,7 +3184,7 @@
       "home": "EGY",
       "away": "IRN",
       "kickoff": "2026-06-27 11:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 2.15,
         "draw": 2.5,
@@ -3189,7 +3196,8 @@
         "draw": 3.7,
         "away": 1.52
       },
-      "is_finished_odds": false,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-27T15:00:00.000Z",
       "scraped_at": "2026-06-27T04:03:03.702Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3198,7 +3206,9 @@
         "HAFU": true,
         "CRS": true,
         "TTG": true
-      }
+      },
+      "final_score": "1:1",
+      "result_file": "results/2040301.json"
     },
     {
       "mid": "2040303",

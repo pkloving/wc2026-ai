@@ -701,7 +701,8 @@
     "home": "NOR",
     "away": "FRA",
     "status": "finished",
-    "mid": "2040297"
+    "mid": "2040297",
+    "final_score": "1-4"
   },
   {
     "id": "M062",
@@ -712,7 +713,8 @@
     "home": "SEN",
     "away": "IRQ",
     "status": "finished",
-    "mid": "2040298"
+    "mid": "2040298",
+    "final_score": "5-0"
   },
   {
     "id": "M063",
@@ -723,7 +725,8 @@
     "home": "URU",
     "away": "ESP",
     "status": "finished",
-    "mid": "2040300"
+    "mid": "2040300",
+    "final_score": "0-1"
   },
   {
     "id": "M064",
@@ -734,7 +737,8 @@
     "home": "CPV",
     "away": "KSA",
     "status": "finished",
-    "mid": "2040299"
+    "mid": "2040299",
+    "final_score": "0-0"
   },
   {
     "id": "M065",
@@ -744,8 +748,9 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "NZL",
     "away": "BEL",
-    "status": "scheduled",
-    "mid": "2040302"
+    "status": "finished",
+    "mid": "2040302",
+    "final_score": "1-5"
   },
   {
     "id": "M066",
@@ -755,8 +760,9 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "EGY",
     "away": "IRN",
-    "status": "scheduled",
-    "mid": "2040301"
+    "status": "finished",
+    "mid": "2040301",
+    "final_score": "1-1"
   },
   {
     "id": "M068",

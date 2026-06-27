@@ -87,7 +87,48 @@
         "half_opp": 1,
         "result": "lose"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "low",
+      "pressure_text": "已积6分，基本锁定出线资格，只需避免大比分失利",
+      "position": 1,
+      "points": 6,
+      "played": 3,
+      "remaining_matches": 0,
+      "teams_ahead": 0,
+      "teams_behind": 2,
+      "same_points_teams": 1,
+      "min_points_to_qualify": 0,
+      "next_match": null
+    },
+    "knockout_matchup": {
+      "current_position": 1,
+      "points": 6,
+      "goal_diff": 6,
+      "remaining_matches": 0,
+      "diff_to_1st": 0,
+      "diff_to_2nd": 0,
+      "target_position": "保1争1",
+      "best_case": {
+        "best_possible_position": 1,
+        "best_possible_pts": 6,
+        "scenario": "全胜可积6分，排名已锁定"
+      },
+      "worst_case": {
+        "worst_possible_position": 1,
+        "worst_possible_pts": 6,
+        "scenario": "剩余比赛全败将停留在6分，大概率无法出线"
+      },
+      "qualification_chance": "high",
+      "knockout_potential": {
+        "would_play_description": "若以第一出线，1/8决赛大概率对阵其他组第二名或成绩较好的第三名，淘汰赛起步相对轻松",
+        "bracket_note": "小组第一通常被分在种子对位区，避开过早与其他强队相遇"
+      },
+      "strategy_notes": [
+        "排名第一且积分领先，策略上可适度轮换，保持状态即可",
+        "需警惕最后一轮\"放水\"心态，避免冷门影响士气"
+      ]
+    }
   },
-  "_updated_at": "2026-06-27T04:03:33.106Z"
+  "_updated_at": "2026-06-27T07:08:36.101Z"
 }

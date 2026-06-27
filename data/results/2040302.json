@@ -1,0 +1,77 @@
+{
+  "matchId": "2040302",
+  "code": "周五066",
+  "league": "世界杯",
+  "home": "NZL",
+  "away": "BEL",
+  "kickoff": "2026-06-27 11:00",
+  "homeScore": 1,
+  "awayScore": 5,
+  "final_score": "1-5",
+  "halfTime": {
+    "home": 0,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "BEL",
+      "player": "特罗萨德 (Trossard)",
+      "minute": "28",
+      "type": "goal",
+      "assist": "德布劳内 (De Bruyne) 角球混战"
+    },
+    {
+      "team": "BEL",
+      "player": "特罗萨德 (Trossard)",
+      "minute": "50",
+      "type": "goal",
+      "assist": "法纳肯 (Fanan) 直塞"
+    },
+    {
+      "team": "BEL",
+      "player": "德布劳内 (De Bruyne)",
+      "minute": "66",
+      "type": "goal",
+      "assist": "禁区弧顶远射直挂死角"
+    },
+    {
+      "team": "NZL",
+      "player": "伊利亚·贾斯特 (Elijah Just)",
+      "minute": "84",
+      "type": "goal",
+      "assist": "兰德尔 (Randell) 左侧角球"
+    },
+    {
+      "team": "BEL",
+      "player": "卢卡库 (Lukaku)",
+      "minute": "86",
+      "type": "goal",
+      "assist": "拉斯金 (Raskin) 边路传中"
+    },
+    {
+      "team": "BEL",
+      "player": "萨勒马克斯 (Tielemans)",
+      "minute": "90+4",
+      "type": "goal",
+      "assist": "卢卡库 (Lukaku)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 2,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:5",
+    "other": null
+  },
+  "zjqResult": "6",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_hhadResult": "A",
+  "_totalGoals": "6",
+  "_scorersSource": "直播吧6月27日讯：比利时5-1大胜新西兰，41次射门创本届赛事纪录。第28分钟德布劳内角球混战，特罗萨德抢点破门；第50分钟特罗萨德梅开二度；第66分钟德布劳内远射直挂死角；第84分钟贾斯特角球扳回一分；第86分钟卢卡库头球破门；第90+4分钟萨勒马克斯破门。比利时积5分凭借净胜球优势反超同积5分的埃及小组头名出线",
+  "_capturedAt": "2026-06-27T15:00:00.000Z"
+}

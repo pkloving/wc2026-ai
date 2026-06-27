@@ -7,12 +7,12 @@
     "unit": 2,
     "currency": "CNY",
     "wagered": 1534,
-    "won": 603.66,
-    "spent": 930.34,
-    "remaining": 69.66,
+    "won": 671.34,
+    "spent": 862.66,
+    "remaining": 137.34,
     "asOf": "2026-06-27",
-    "source": "已用用户 APP 实际数据：今天前 1486 / 536.49 / 50.49（截图 19:08 CST 前） + 今天 2 单 48 / 67.17",
-    "note": "模拟预算上限 1000 元（每倍 2 元）。以 APP 实际数据为准：今天前累计投入 1486 元、回收 536.49 元、剩 50.49 元（截图见用户 19:08 提供的 6-26 末截图）；加今天 2 单（周五063-065 比分 8 元 lost + 周五061-066 让球 40 元 won 67.17）→ 现 wagered 1534、won 603.66、spent 930.34、remaining 69.66。bets.json 中 06-26 APP 出票的 ~100 元（1486 - 1386）未录入，按用户 APP 总额走，不补明细。仅作沙盘推演用，无任何真实交易。"
+    "source": "wagered=APP 截图(1486 pre-today + 48 today) / won=bets.json 8 单 actualReturn 累计(536.49 + 67.68 + 67.17) / remaining=cap - (wagered - won)",
+    "note": "模拟预算上限 1000 元（每倍 2 元）。以 APP 实际数据 + bets.json 全 actualReturn 累计：wagered 1534 元（APP 1486 pre-today + 今天 48 = 8+40）、won 671.34 元（8 单 actualReturn 累计 536.49 + 67.68 + 67.17）、spent 862.66 元（净亏 = wagered - won）、remaining 137.34 元（cap - spent）。bets.json 中 06-26 APP 出票的 ~100 元（1486 - 1386）未录入明细，按 APP 总额走。仅作沙盘推演用，无任何真实交易。"
   },
   "bets": [
     {
@@ -3327,8 +3327,9 @@
       "combinations": 20,
       "totalCost": 40,
       "maxReturn": 67.68,
+      "actualReturn": 67.68,
       "result": "won",
-      "note": "3 场 2×1+3×1（每场 2 选）。计算: 2x1(058×2)(059×2)→4 + 2x1(058×2)(060×2)→4 + 2x1(059×2)(060×2)→4 = 12 + 3x1(058×2)(059×2)(060×2)→8 = 20 注 × 2 元 × 1 倍 = 40 元。结算：058 JPN 2-1 SWE(1:1/2:2 全错) / 059 PAR 0-0 AUS(0:0 ✓ / 1:1 ✗) / 060 TUR 3-2 USA(1:1/0:3 全错) — 用户报 won 67.68 (ROI +69.2%)，注：以用户实际 APP 中奖金额为准"
+      "note": "3 场 2×1+3×1（每场 2 选）。计算: 2x1(058×2)(059×2)→4 + 2x1(058×2)(060×2)→4 + 2x1(059×2)(060×2)→4 = 12 + 3x1(058×2)(059×2)(060×2)→8 = 20 注 × 2 元 × 1 倍 = 40 元。结算：058 JPN 2-1 SWE(1:1/2:2 全错) / 059 PAR 0-0 AUS(0:0 ✓ / 1:1 ✗) / 060 TUR 3-2 USA(1:1/0:3 全错) — 用户报 won 67.68 (ROI +69.2%)，actualReturn=67.68 同步进 budget"
     },
     {
       "id": "crs-fri063-065-bf-2026-06-27",
@@ -3485,8 +3486,9 @@
       "combinations": 20,
       "totalCost": 40,
       "maxReturn": 67.17,
+      "actualReturn": 67.17,
       "result": "won",
-      "note": "6 场 3×1 × 1 倍 = C(6,3)=20 注 × 2 元 = 40 元。结算：061 NOR 1:4 FRA 让+1=客胜(平 ✗) / 062 SEN 5:0 IRQ 让-2=主胜(主负 ✗) / 063 CPV 0:0 KSA 让-1=主负 ✓ / 064 URU 0:1 ESP 让+1=平 ✓ / 065-066 matches_status 仍 on_sale（未抓到 result 文件）→ 用户 APP 报 won 67.17 (ROI +67.9%)，注：以用户实际 APP 中奖金额为准"
+      "note": "6 场 3×1 × 1 倍 = C(6,3)=20 注 × 2 元 = 40 元。结算：061 NOR 1:4 FRA 让+1=客胜(平 ✗) / 062 SEN 5:0 IRQ 让-2=主胜(主负 ✗) / 063 CPV 0:0 KSA 让-1=主负 ✓ / 064 URU 0:1 ESP 让+1=平 ✓ / 065-066 matches_status 仍 on_sale（未抓到 result 文件）→ 用户 APP 报 won 67.17 (ROI +67.9%)，actualReturn=67.17 同步进 budget"
     }
   ]
 }

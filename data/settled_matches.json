@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:03:56.397Z",
+  "generated_at": "2026-06-27T07:08:08.883Z",
   "total_matches": 127,
   "matches": [
     {
@@ -13088,7 +13088,7 @@
       "away": "BEL",
       "kickoff": "2026-06-27 11:00",
       "handicap": 2,
-      "status": "on_sale",
+      "status": "finished",
       "rqspf": {
         "initial": {
           "handicap": 2,
@@ -13102,7 +13102,7 @@
           "draw": 3.85,
           "away": 2.05
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -13175,7 +13175,10 @@
             "01:05": 20
           }
         },
-        "result": null
+        "result": {
+          "score": "1:5",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -13202,7 +13205,7 @@
             "7+": 9.2
           }
         },
-        "result": null
+        "result": "6"
       },
       "bqc": {
         "initial": {
@@ -13231,9 +13234,19 @@
             "负负": 1.33
           }
         },
-        "result": null
+        "result": "负负"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 5,
+        "half": {
+          "home": 0,
+          "away": 1
+        },
+        "scorers_count": 6,
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
       "meta": {
         "history_points": {
           "spf": 0,
@@ -13252,7 +13265,7 @@
       "away": "IRN",
       "kickoff": "2026-06-27 11:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 2.15,
@@ -13264,7 +13277,7 @@
           "draw": 2.5,
           "away": 3.78
         },
-        "result": null
+        "result": "draw"
       },
       "rqspf": {
         "initial": {
@@ -13279,7 +13292,7 @@
           "draw": 3.7,
           "away": 1.52
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -13352,7 +13365,10 @@
             "01:05": 500
           }
         },
-        "result": null
+        "result": {
+          "score": "1:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -13379,7 +13395,7 @@
             "7+": 50
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
@@ -13408,9 +13424,19 @@
             "负负": 6.5
           }
         },
-        "result": null
+        "result": "平平"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1,
+        "half": {
+          "home": 1,
+          "away": 1
+        },
+        "scorers_count": 2,
+        "wentToPenalties": false,
+        "penaltyScore": null
+      },
       "meta": {
         "history_points": {
           "spf": 2,

@@ -1,0 +1,49 @@
+{
+  "matchId": "2040301",
+  "code": "周五065",
+  "league": "世界杯",
+  "home": "EGY",
+  "away": "IRN",
+  "kickoff": "2026-06-27 11:00",
+  "homeScore": 1,
+  "awayScore": 1,
+  "final_score": "1-1",
+  "halfTime": {
+    "home": 1,
+    "away": 1
+  },
+  "scorers": [
+    {
+      "team": "EGY",
+      "player": "萨比尔 (Sabir)",
+      "minute": "5",
+      "type": "goal",
+      "assist": "特雷泽盖 (Trezeguet)"
+    },
+    {
+      "team": "IRN",
+      "player": "雷扎扬 (Rezaeian)",
+      "minute": "14",
+      "type": "goal",
+      "assist": "穆罕默迪 (Mohammadi) 射门被扑后补射"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:1",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "胜平",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "draw",
+  "_hhadResult": "A",
+  "_totalGoals": "2",
+  "_scorersSource": "直播吧6月27日讯：第5分钟特雷泽盖边路助攻，萨比尔推射破门；塔雷米点球被扑；第14分钟穆罕默迪禁区内射门被扑，雷扎扬后点几乎零度角补射扳平；下半场90+3分钟伊朗哈利扎德进球经VAR判定越位无效。控球率：埃及61% / 伊朗39%。埃及积5分小组第2晋级，伊朗积3分小组第3",
+  "_capturedAt": "2026-06-27T15:00:00.000Z"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:03:56.918Z",
+  "generated_at": "2026-06-27T07:08:13.233Z",
   "play": "zjq",
   "count": 71,
   "rows": [
@@ -2186,7 +2186,7 @@
       "away": "BEL",
       "kickoff": "2026-06-27 11:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "1:5",
       "initial": {
         "odds": {
           "0": 34,
@@ -2211,7 +2211,7 @@
           "7+": 9.2
         }
       },
-      "result": null
+      "result": "6"
     },
     {
       "mid": "2040301",
@@ -2220,7 +2220,7 @@
       "away": "IRN",
       "kickoff": "2026-06-27 11:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "0": 6,
@@ -2245,7 +2245,7 @@
           "7+": 50
         }
       },
-      "result": null
+      "result": "2"
     },
     {
       "mid": "2040303",

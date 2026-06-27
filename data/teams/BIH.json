@@ -84,7 +84,48 @@
         "half_opp": 0,
         "result": "win"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "medium",
+      "pressure_text": "积分形势需根据剩余比赛结果判断",
+      "position": 3,
+      "points": 4,
+      "played": 3,
+      "remaining_matches": 0,
+      "teams_ahead": 1,
+      "teams_behind": 1,
+      "same_points_teams": 1,
+      "min_points_to_qualify": 0,
+      "next_match": null
+    },
+    "knockout_matchup": {
+      "current_position": 3,
+      "points": 4,
+      "goal_diff": -1,
+      "remaining_matches": 0,
+      "diff_to_1st": 3,
+      "diff_to_2nd": 0,
+      "target_position": "争前2保3",
+      "best_case": {
+        "best_possible_position": 3,
+        "best_possible_pts": 4,
+        "scenario": "全胜可积4分，排名已锁定"
+      },
+      "worst_case": {
+        "worst_possible_position": 3,
+        "worst_possible_pts": 4,
+        "scenario": "剩余比赛全败将停留在4分，大概率无法出线"
+      },
+      "qualification_chance": "medium-high",
+      "knockout_potential": {
+        "would_play_description": "若以最好的8个第三名之一出线，将对阵其他组第一，大概率是硬仗，但爆冷机会也存在",
+        "bracket_note": "第三名晋级通常需在首轮对阵强队"
+      },
+      "strategy_notes": [
+        "排名第三，处于晋级边缘，必须全力争取前2或最佳第三名资格",
+        "净胜球可能成为决定性因素，不应保守"
+      ]
+    }
   },
-  "_updated_at": "2026-06-27T04:03:33.106Z"
+  "_updated_at": "2026-06-27T07:08:36.091Z"
 }
