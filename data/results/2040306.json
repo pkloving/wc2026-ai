@@ -1,13 +1,31 @@
 {
   "matchId": "2040306",
+  "code": "周六070",
+  "league": "世界杯",
+  "home": "COD",
+  "away": "UZB",
+  "kickoff": "2026-06-28 07:30",
   "homeScore": 3,
   "awayScore": 1,
+  "final_score": "3-1",
   "halfTime": null,
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "3:1",
+    "other": null
+  },
+  "zjqResult": "4",
+  "bqcResult": "负胜",
   "_fromSporttery": true,
   "_halfTimeResult": "away",
   "_spfResult": "home",
-  "_totalGoals": "4"
+  "_hhadResult": "H",
+  "_totalGoals": "4",
+  "_enrichedAt": "2026-06-28T15:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；bqcResult 由 _halfTimeResult=away（客队半场领先）+ spfResult=home 推导"
 }

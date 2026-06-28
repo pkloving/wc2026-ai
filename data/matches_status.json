@@ -3230,6 +3230,7 @@
         "away": 1.87
       },
       "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-28T15:00:00.000Z",
       "scraped_at": "2026-06-28T04:05:53.382Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3238,6 +3239,9 @@
         "CRS": true,
         "TTG": true
       },
+      "odds_file": "odds/2040304.json",
+      "history_file": "odds_history/2040304.json",
+      "result_file": "results/2040304.json",
       "final_score": "0:2"
     },
     {
@@ -3260,6 +3264,7 @@
         "away": 1.92
       },
       "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-28T15:00:00.000Z",
       "scraped_at": "2026-06-28T04:05:53.440Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3269,6 +3274,9 @@
         "TTG": true,
         "HAD": true
       },
+      "odds_file": "odds/2040303.json",
+      "history_file": "odds_history/2040303.json",
+      "result_file": "results/2040303.json",
       "final_score": "2:1"
     },
     {
@@ -3291,6 +3299,7 @@
         "away": 3.14
       },
       "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-28T15:00:00.000Z",
       "scraped_at": "2026-06-28T04:05:53.461Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3300,6 +3309,9 @@
         "TTG": true,
         "HAD": true
       },
+      "odds_file": "odds/2040305.json",
+      "history_file": "odds_history/2040305.json",
+      "result_file": "results/2040305.json",
       "final_score": "0:0"
     },
     {
@@ -3322,6 +3334,7 @@
         "away": 2.32
       },
       "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-28T15:00:00.000Z",
       "scraped_at": "2026-06-28T04:05:53.496Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3331,6 +3344,9 @@
         "TTG": true,
         "HAD": false
       },
+      "odds_file": "odds/2040306.json",
+      "history_file": "odds_history/2040306.json",
+      "result_file": "results/2040306.json",
       "final_score": "3:1"
     },
     {

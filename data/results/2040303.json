@@ -1,13 +1,31 @@
 {
   "matchId": "2040303",
+  "code": "周六067",
+  "league": "世界杯",
+  "home": "CRO",
+  "away": "GHA",
+  "kickoff": "2026-06-28 05:00",
   "homeScore": 2,
   "awayScore": 1,
+  "final_score": "2-1",
   "halfTime": null,
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "胜胜",
   "_fromSporttery": true,
   "_halfTimeResult": "home",
   "_spfResult": "home",
-  "_totalGoals": "3"
+  "_hhadResult": "D",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-06-28T15:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；bqcResult 由 _halfTimeResult=home + spfResult=home 推导（5 玩法方向）"
 }

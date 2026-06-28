@@ -1,13 +1,31 @@
 {
   "matchId": "2040305",
+  "code": "周六069",
+  "league": "世界杯",
+  "home": "COL",
+  "away": "POR",
+  "kickoff": "2026-06-28 07:30",
   "homeScore": 0,
   "awayScore": 0,
+  "final_score": "0-0",
   "halfTime": null,
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "draw",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "0:0",
+    "other": null
+  },
+  "zjqResult": "0",
+  "bqcResult": "平平",
   "_fromSporttery": true,
   "_halfTimeResult": "draw",
   "_spfResult": "draw",
-  "_totalGoals": "0"
+  "_hhadResult": "H",
+  "_totalGoals": "0",
+  "_enrichedAt": "2026-06-28T15:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补（0:0 平局无进球者）；bqcResult 由 _halfTimeResult=draw + spfResult=draw 推导"
 }

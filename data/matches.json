@@ -773,7 +773,8 @@
     "home": "PAN",
     "away": "ENG",
     "status": "finished",
-    "mid": "2040304"
+    "mid": "2040304",
+    "final_score": "0-2"
   },
   {
     "id": "M068",
@@ -784,7 +785,8 @@
     "home": "CRO",
     "away": "GHA",
     "status": "finished",
-    "mid": "2040303"
+    "mid": "2040303",
+    "final_score": "2-1"
   },
   {
     "id": "M069",
@@ -795,7 +797,8 @@
     "home": "COL",
     "away": "POR",
     "status": "finished",
-    "mid": "2040305"
+    "mid": "2040305",
+    "final_score": "0-0"
   },
   {
     "id": "M070",
@@ -806,7 +809,8 @@
     "home": "COD",
     "away": "UZB",
     "status": "finished",
-    "mid": "2040306"
+    "mid": "2040306",
+    "final_score": "3-1"
   },
   {
     "id": "M071",

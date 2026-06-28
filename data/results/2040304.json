@@ -1,13 +1,31 @@
 {
   "matchId": "2040304",
+  "code": "周六068",
+  "league": "世界杯",
+  "home": "PAN",
+  "away": "ENG",
+  "kickoff": "2026-06-28 05:00",
   "homeScore": 0,
   "awayScore": 2,
+  "final_score": "0-2",
   "halfTime": null,
   "scorers": [],
   "wentToPenalties": false,
   "penaltyScore": null,
+  "handicap": 2,
+  "spfResult": null,
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "0:2",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "平负",
   "_fromSporttery": true,
   "_halfTimeResult": "draw",
   "_spfResult": null,
-  "_totalGoals": "2"
+  "_hhadResult": "D",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-06-28T15:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；spf 玩法该场 sporttery 未开（HAD=null），bqcResult 由 _halfTimeResult=draw + 全场 away 推导"
 }
