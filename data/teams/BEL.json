@@ -86,48 +86,7 @@
         "half_opp": 0,
         "result": "win"
       }
-    ],
-    "qualification_pressure": {
-      "pressure_level": "medium",
-      "pressure_text": "积分形势需根据剩余比赛结果判断",
-      "position": 1,
-      "points": 5,
-      "played": 3,
-      "remaining_matches": 0,
-      "teams_ahead": 0,
-      "teams_behind": 2,
-      "same_points_teams": 1,
-      "min_points_to_qualify": 0,
-      "next_match": null
-    },
-    "knockout_matchup": {
-      "current_position": 1,
-      "points": 5,
-      "goal_diff": 4,
-      "remaining_matches": 0,
-      "diff_to_1st": 0,
-      "diff_to_2nd": 0,
-      "target_position": "保1争1",
-      "best_case": {
-        "best_possible_position": 1,
-        "best_possible_pts": 5,
-        "scenario": "全胜可积5分，排名已锁定"
-      },
-      "worst_case": {
-        "worst_possible_position": 1,
-        "worst_possible_pts": 5,
-        "scenario": "剩余比赛全败将停留在5分，大概率无法出线"
-      },
-      "qualification_chance": "medium-high",
-      "knockout_potential": {
-        "would_play_description": "若以第一出线，1/8决赛大概率对阵其他组第二名或成绩较好的第三名，淘汰赛起步相对轻松",
-        "bracket_note": "小组第一通常被分在种子对位区，避开过早与其他强队相遇"
-      },
-      "strategy_notes": [
-        "暂居第一但领先优势不大，需继续全力争胜巩固头名",
-        "小组第一将在淘汰赛获得更有利的对位"
-      ]
-    }
+    ]
   },
-  "_updated_at": "2026-06-28T04:07:45.459Z"
+  "_updated_at": "2026-06-28T10:06:41.256Z"
 }

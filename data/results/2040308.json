@@ -1,0 +1,31 @@
+{
+  "matchId": "2040308",
+  "code": "周六072",
+  "league": "世界杯",
+  "home": "JOR",
+  "away": "ARG",
+  "kickoff": "2026-06-28 10:00",
+  "homeScore": 1,
+  "awayScore": 3,
+  "final_score": "1-3",
+  "halfTime": null,
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 2,
+  "spfResult": null,
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "1:3",
+    "other": null
+  },
+  "zjqResult": "4",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": null,
+  "_hhadResult": "D",
+  "_totalGoals": "4",
+  "_enrichedAt": "2026-06-28T18:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；bqcResult 由 _halfTimeResult=away + spfResult=null(ARG away=H) 推导"
+}

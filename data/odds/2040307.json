@@ -7,7 +7,7 @@
     "away": "AUT",
     "kickoff": "2026-06-28 10:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040307",
-    "scraped_at": "2026-06-28T04:06:07.669Z",
+    "scraped_at": "2026-06-28T10:02:36.573Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -17,7 +17,7 @@
       "HAD": false
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
@@ -90,10 +90,10 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-28T04:06:07.669Z",
+    "fetched_at": "2026-06-28T10:02:36.573Z",
     "snapshot_time": "2026-06-27 19:04:31",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "draw",
+    "half_time_result": "draw"
   }
 }

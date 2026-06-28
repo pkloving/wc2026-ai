@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T07:06:25.180Z",
+  "generated_at": "2026-06-28T10:06:47.184Z",
   "play": "spf",
   "count": 56,
   "rows": [
@@ -1110,7 +1110,7 @@
       "away": "AUT",
       "kickoff": "2026-06-28 10:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "3:3",
       "initial": {
         "home": 3.9,
         "draw": 1.94,
@@ -1121,7 +1121,7 @@
         "draw": 1.94,
         "away": 2.8
       },
-      "result": null
+      "result": "draw"
     }
   ]
 }

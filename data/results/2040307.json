@@ -1,0 +1,31 @@
+{
+  "matchId": "2040307",
+  "code": "周六071",
+  "league": "世界杯",
+  "home": "DZA",
+  "away": "AUT",
+  "kickoff": "2026-06-28 10:00",
+  "homeScore": 3,
+  "awayScore": 3,
+  "final_score": "3-3",
+  "halfTime": null,
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": 1,
+  "spfResult": "draw",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "3:3",
+    "other": null
+  },
+  "zjqResult": "6",
+  "bqcResult": "平平",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "draw",
+  "_hhadResult": "H",
+  "_totalGoals": "6",
+  "_enrichedAt": "2026-06-28T18:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；bqcResult 由 _halfTimeResult=draw + spfResult=draw 推导"
+}

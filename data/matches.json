@@ -820,8 +820,9 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "JOR",
     "away": "ARG",
-    "status": "scheduled",
-    "mid": "2040308"
+    "status": "finished",
+    "mid": "2040308",
+    "final_score": "1-3"
   },
   {
     "id": "M072",
@@ -831,8 +832,9 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "DZA",
     "away": "AUT",
-    "status": "scheduled",
-    "mid": "2040307"
+    "status": "finished",
+    "mid": "2040307",
+    "final_score": "3-3"
   },
   {
     "id": "M073",
