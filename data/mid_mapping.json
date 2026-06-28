@@ -32,6 +32,7 @@
   "M064": { "mid": "2040299", "code": "周五063", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5063, 佛得角 vs 沙特, rqspf -1 (sporttery code 周五063, M-id 64 vs sporttery 63 不一致)" },
   "M065": { "mid": "2040302", "code": "周五066", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5066, 新西兰 vs 比利时, rqspf +2 (sporttery code 周五066, M-id 65 vs sporttery 66 不一致)" },
   "M066": { "mid": "2040301", "code": "周五065", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=5065, 埃及 vs 伊朗, rqspf -1 (sporttery code 周五065, M-id 66 vs sporttery 65 不一致)" },
+  "M067": { "mid": "2040304", "code": "周六068", "status": "verified_20260627", "verify_source": "getFixedBonusV1.qry (Referer+UA) homeTeamAllName=巴拿马, awayTeamAllName=英格兰 (L组末轮); M-id 67 vs sporttery 68 不一致（这是 matches.json M067 之前空缺，现补）", "home": "PAN", "away": "ENG" },
   "M068": { "mid": "2040303", "code": "周六067", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6067, 克罗地亚 vs 加纳, rqspf -1" },
   "M069": { "mid": "2040305", "code": "周六069", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6069, 哥伦比亚 vs 葡萄牙, rqspf +1 (sporttery code 周六069, M-id 69 vs sporttery 69 一致)" },
   "M070": { "mid": "2040306", "code": "周六070", "status": "verified_20260626", "verify_source": "getMatchListV1.qry (Referer+UA), matchNum=6070, 刚果金 vs 乌兹别克, rqspf -1 (sporttery code 周六070, M-id 70 vs sporttery 70 一致)" },

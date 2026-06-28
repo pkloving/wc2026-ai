@@ -89,7 +89,7 @@ def standings_and_regime():
         # 指纹(全部已赛)
         sp = (m.get("spf") or {}).get("last") or (m.get("spf") or {}).get("initial")
         res = (m.get("spf") or {}).get("result")
-        if sp and res in ("home", "draw", "away"):
+        if sp and res in ("home", "draw", "away") and all(sp.get(k) for k in ("home","draw","away")):
             n += 1
             goals += h + a
             inv = {k: 1 / sp[k] for k in ("home", "draw", "away")}

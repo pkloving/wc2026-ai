@@ -765,6 +765,17 @@
     "final_score": "1-1"
   },
   {
+    "id": "M067",
+    "stage": "group",
+    "group": "L",
+    "date": "2026-06-27T21:00:00Z",
+    "venue": "MetLife Stadium, East Rutherford, NJ",
+    "home": "PAN",
+    "away": "ENG",
+    "status": "scheduled",
+    "mid": "2040304"
+  },
+  {
     "id": "M068",
     "stage": "group",
     "group": "L",
