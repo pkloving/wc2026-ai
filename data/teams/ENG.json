@@ -26,14 +26,14 @@
     "stage": "group",
     "standings": {
       "position": 1,
-      "played": 2,
-      "win": 2,
+      "played": 3,
+      "win": 3,
       "draw": 0,
       "lose": 0,
-      "gf": 6,
+      "gf": 8,
       "ga": 3,
-      "gd": 3,
-      "pts": 6
+      "gd": 5,
+      "pts": 9
     },
     "matches": [
       {
@@ -69,48 +69,53 @@
         "half_my": 1,
         "half_opp": 0,
         "result": "win"
+      },
+      {
+        "mid": "2040304",
+        "match_id": "M067",
+        "stage": "group",
+        "group": "L",
+        "date": "2026-06-27T21:00:00Z",
+        "venue": "MetLife Stadium, East Rutherford, NJ",
+        "role": "away",
+        "opponent_code": "PAN",
+        "opponent_name": "巴拿马",
+        "status": "finished",
+        "score_my": 2,
+        "score_opp": 0,
+        "result": "win"
       }
     ],
     "qualification_pressure": {
       "pressure_level": "low",
       "pressure_text": "已积6分，基本锁定出线资格，只需避免大比分失利",
       "position": 1,
-      "points": 6,
-      "played": 2,
-      "remaining_matches": 1,
+      "points": 9,
+      "played": 3,
+      "remaining_matches": 0,
       "teams_ahead": 0,
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M067",
-        "mid": "2040304",
-        "date": "2026-06-27T21:00:00Z",
-        "opponent_code": "PAN",
-        "opponent_name": "巴拿马",
-        "opponent_position": 4,
-        "opponent_pts": 0,
-        "venue": "MetLife Stadium, East Rutherford, NJ",
-        "importance": "must-win"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
-      "points": 6,
-      "goal_diff": 3,
-      "remaining_matches": 1,
+      "points": 9,
+      "goal_diff": 5,
+      "remaining_matches": 0,
       "diff_to_1st": 0,
       "diff_to_2nd": 0,
       "target_position": "保1争1",
       "best_case": {
         "best_possible_position": 1,
         "best_possible_pts": 9,
-        "scenario": "全胜可积9分，有机会争小组第一"
+        "scenario": "全胜可积9分，排名已锁定"
       },
       "worst_case": {
-        "worst_possible_position": 4,
-        "worst_possible_pts": 6,
-        "scenario": "剩余比赛全败将停留在6分，大概率无法出线"
+        "worst_possible_position": 1,
+        "worst_possible_pts": 9,
+        "scenario": "剩余比赛全败将停留在9分，大概率无法出线"
       },
       "qualification_chance": "high",
       "knockout_potential": {
@@ -119,10 +124,9 @@
       },
       "strategy_notes": [
         "排名第一且积分领先，策略上可适度轮换，保持状态即可",
-        "需警惕最后一轮\"放水\"心态，避免冷门影响士气",
-        "小组赛最后一轮，必须根据实时比分调整策略"
+        "需警惕最后一轮\"放水\"心态，避免冷门影响士气"
       ]
     }
   },
-  "_updated_at": "2026-06-27T10:39:22.655Z"
+  "_updated_at": "2026-06-28T04:07:45.467Z"
 }

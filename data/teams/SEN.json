@@ -80,6 +80,8 @@
         "status": "finished",
         "score_my": 5,
         "score_opp": 0,
+        "half_my": 1,
+        "half_opp": 0,
         "result": "win"
       }
     ],
@@ -125,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-27T10:39:22.678Z"
+  "_updated_at": "2026-06-28T04:07:45.485Z"
 }

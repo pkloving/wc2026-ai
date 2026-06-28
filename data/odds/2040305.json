@@ -7,7 +7,7 @@
     "away": "POR",
     "kickoff": "2026-06-28 07:30",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040305",
-    "scraped_at": "2026-06-27T10:39:06.088Z",
+    "scraped_at": "2026-06-28T04:05:53.461Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -17,39 +17,39 @@
       "HAD": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
-      "home": 3.5,
-      "draw": 3.68,
-      "away": 1.75
+      "home": 3.6,
+      "draw": 3.7,
+      "away": 1.72
     },
     "spf_history": [],
     "handicap": 1,
     "rqspf_latest": {
-      "home": 1.85,
-      "draw": 3.62,
-      "away": 3.2
+      "home": 1.89,
+      "draw": 3.55,
+      "away": 3.14
     },
     "rqspf_history": [],
     "bf_latest": {
       "05:00": 550,
       "平其它": 200,
       "胜其它": 125,
-      "01:00": 13.5,
+      "01:00": 15,
       "05:02": 300,
       "05:01": 450,
       "负其它": 40,
       "02:04": 40,
       "02:05": 100,
       "02:02": 12,
-      "02:03": 19,
-      "02:00": 23,
-      "02:01": 12,
+      "02:03": 18,
+      "02:00": 26,
+      "02:01": 14,
       "03:03": 38,
-      "03:01": 36,
-      "03:02": 33,
+      "03:01": 38,
+      "03:02": 35,
       "03:00": 60,
       "00:01": 7.5,
       "00:00": 13.5,
@@ -60,10 +60,10 @@
       "04:02": 100,
       "04:01": 110,
       "04:00": 180,
-      "01:02": 6.75,
+      "01:02": 6.2,
       "01:01": 6.1,
       "01:04": 26,
-      "01:03": 12.5,
+      "01:03": 11,
       "01:05": 70
     },
     "zjq_latest": {
@@ -90,10 +90,10 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-27T10:39:06.088Z",
-    "snapshot_time": "2026-06-27 13:17:35",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "fetched_at": "2026-06-28T04:05:53.461Z",
+    "snapshot_time": "2026-06-27 20:00:00",
+    "has_match_result": true,
+    "spf_result": "draw",
+    "half_time_result": "draw"
   }
 }

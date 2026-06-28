@@ -772,7 +772,7 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "PAN",
     "away": "ENG",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040304"
   },
   {
@@ -783,7 +783,7 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "CRO",
     "away": "GHA",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040303"
   },
   {
@@ -794,7 +794,7 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "COL",
     "away": "POR",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040305"
   },
   {
@@ -805,7 +805,7 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "COD",
     "away": "UZB",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040306"
   },
   {

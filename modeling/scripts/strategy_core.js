@@ -33,6 +33,17 @@ export const DEFAULT_PARAMS = {
     //         走盘比分 (1:0, 2:1) 在主让-1 场景下让平赔率 3-4 区间被严重低估
     // 默认 1.5/1.8 = 关闭 (0/0) 时维持原基线 (最低赔率 away)
     hcMinus1AwayTrap: { minOdds: 1.5, maxOdds: 1.8 },
+    // 2026-06-28 调优 (sampled 2040243 荷兰 5-1 瑞典, hc=-1, spf.home=1.54 主胜大热门):
+    // hc=-1 + spf.home<1.6 (主胜大热门) + rq.away 是最低赔率 + rq.away ∈ [1.8, 2.2) 中盘
+    //   实际让平率 0% (n=6 0场), 让胜/让负 5:5 完美对称, 改单选让胜 ROI +36.3% (n=6)
+    //   [1.8, 2.2) 子桶 ROI +41.3% (n=4), [2.2, 2.5) 子桶 ROI +26.5% (n=2)
+    //   机制: 庄家看客胜 (rq.away 最低 1.8-2.2) 但 spf 强烈看好主胜 (spf.home<1.6)
+    //         → 让平率被庄家压到 0, 让胜 vs 让负 50/50 完美对称
+    //         → 选 home 赔率 ~2.85 替代 away 赔率 ~2.0, 单注 ROI 提升 +30 pct
+    //   跟 hcMinus1AwayTrap ([1.5, 1.8) 让平) 同源机制: 都是 hc=-1+away 最低+庄家陷阱,
+    //   但本规则处理 [1.8, 2.2) 中盘 (让平率 0% 走"对称"路径) 而非 [1.5, 1.8) 走盘比分
+    // 默认 1.8/2.2 = 关闭 (0/0) 时维持原基线 (最低赔率 away)
+    spfFavHcMinus1AwayMid: { minOdds: 1.8, maxOdds: 2.2 },
   },
   zjq: {
     normalTwoLo: 2.5, normalTwoHi: 3.5,
@@ -151,6 +162,11 @@ export const SEARCH_SPACE = [
   //   maxOdds 范围: 0=关闭, 1.7/1.8/2.0 上限
   { path: 'rqspf.hcMinus1AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6] },
   { path: 'rqspf.hcMinus1AwayTrap.maxOdds', values: [0, 1.7, 1.8, 2.0] },
+  // 2026-06-28: 加 spfFavHcMinus1AwayMid 旋钮 (spf大热门主队+hc=-1+rq.away中盘→让胜)
+  //   minOdds 范围: 0=关闭, 1.7/1.8/1.9 起点
+  //   maxOdds 范围: 0=关闭, 2.1/2.2/2.5 终点 (1.8-2.2 较稳 ROI +41.3% n=4, 1.8-2.5 含 n=2 小样本 ROI +36.3%)
+  { path: 'rqspf.spfFavHcMinus1AwayMid.minOdds', values: [0, 1.7, 1.8, 1.9] },
+  { path: 'rqspf.spfFavHcMinus1AwayMid.maxOdds', values: [0, 2.1, 2.2, 2.5] },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
   { path: 'single.bigBall.oddsHi',        values: [55, 65, 75] },
@@ -530,6 +546,27 @@ export function rqspfStrategy(m, ctx) {
         primary: { d: 'draw', odds: rq.draw, label: '让平' },
         secondary: sorted.find(d => d.d !== 'draw') || sorted[1],
         rule: { name: '⭐主让-1+走盘陷阱(away主流盘)→让平', roi: '+43.3%', n: 32 },
+      };
+    }
+  }
+  // 2026-06-28 调优 (sampled 2040243 荷兰 5-1 瑞典, hc=-1, spf.home=1.54 主胜大热门):
+  // 信号②c: spf大热门主队 + hc=-1 + rq.away 中盘最低 → 单选让胜
+  //   机制: 庄家看客胜 (rq.away 最低 1.8-2.2) 但 spf 强烈看好主胜 (spf.home<1.6)
+  //         → 实际让平率 0% (n=6 0场), 让胜/让负 5:5 完美对称
+  //         → 选 home 赔率 ~2.85 替代 away 赔率 ~2.0, 单注 ROI 提升 +30 pct
+  //   样本: 4 场触发 (rq.away ∈ [1.8, 2.2) + spf.home<1.6) → 2 让胜+2 让负, 改让胜 ROI +41.3%
+  //         6 场全样本 (含 [2.2, 2.5) 2 场) → 3 让胜+3 让负, 改让胜 ROI +36.3%
+  //   优先级: 让胜纠偏 (home [1.5, 2.0)) > 走盘陷阱 ([1.5, 1.8)) > 本规则 ([1.8, 2.2)) > 基线
+  //   默认 minOdds=1.8 / maxOdds=2.2 (n=4 较稳), 都设 0 = 关闭
+  const spfFavMid = P.spfFavHcMinus1AwayMid || { minOdds: 1.8, maxOdds: 2.2 };
+  if (m.handicap === -1 && spfFavMid.minOdds > 0 && spfFavMid.maxOdds > spfFavMid.minOdds
+      && spf?.home && spf.home < 1.6) {
+    const minOdds = Math.min(rq.home, rq.draw, rq.away);
+    if (rq.away === minOdds && rq.away >= spfFavMid.minOdds && rq.away < spfFavMid.maxOdds) {
+      return {
+        primary: { d: 'home', odds: rq.home, label: '让胜' },
+        secondary: sorted.find(d => d.d !== 'home') || sorted[1],
+        rule: { name: '⭐spf大热门+hc=-1+rq.away中盘(1.8-2.2)→让胜', roi: '+41.3%', n: 4 },
       };
     }
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T10:39:22.999Z",
+  "generated_at": "2026-06-28T04:07:45.781Z",
   "play": "rqspf",
   "count": 72,
   "rows": [
@@ -1462,20 +1462,20 @@
       "away": "ENG",
       "kickoff": "2026-06-28 05:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "0:2",
       "initial": {
         "handicap": 2,
-        "home": 2.7,
+        "home": 2.85,
         "draw": 4.1,
-        "away": 1.94
+        "away": 1.87
       },
       "last": {
         "handicap": 2,
-        "home": 2.7,
+        "home": 2.85,
         "draw": 4.1,
-        "away": 1.94
+        "away": 1.87
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040303",
@@ -1484,20 +1484,20 @@
       "away": "GHA",
       "kickoff": "2026-06-28 05:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
         "handicap": -1,
-        "home": 3.4,
-        "draw": 3.1,
-        "away": 1.96
+        "home": 3.63,
+        "draw": 3,
+        "away": 1.92
       },
       "last": {
         "handicap": -1,
-        "home": 3.4,
-        "draw": 3.1,
-        "away": 1.96
+        "home": 3.63,
+        "draw": 3,
+        "away": 1.92
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040305",
@@ -1506,20 +1506,20 @@
       "away": "POR",
       "kickoff": "2026-06-28 07:30",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:0",
       "initial": {
         "handicap": 1,
-        "home": 1.85,
-        "draw": 3.62,
-        "away": 3.2
+        "home": 1.89,
+        "draw": 3.55,
+        "away": 3.14
       },
       "last": {
         "handicap": 1,
-        "home": 1.85,
-        "draw": 3.62,
-        "away": 3.2
+        "home": 1.89,
+        "draw": 3.55,
+        "away": 3.14
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040306",
@@ -1528,20 +1528,20 @@
       "away": "UZB",
       "kickoff": "2026-06-28 07:30",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "3:1",
       "initial": {
         "handicap": -1,
-        "home": 2.57,
-        "draw": 3.25,
-        "away": 2.31
+        "home": 2.64,
+        "draw": 3.13,
+        "away": 2.32
       },
       "last": {
         "handicap": -1,
-        "home": 2.57,
-        "draw": 3.25,
-        "away": 2.31
+        "home": 2.64,
+        "draw": 3.13,
+        "away": 2.32
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040308",
@@ -1553,15 +1553,15 @@
       "final_score": null,
       "initial": {
         "handicap": 2,
-        "home": 2.64,
-        "draw": 3.92,
-        "away": 2.02
+        "home": 2.7,
+        "draw": 3.9,
+        "away": 1.99
       },
       "last": {
         "handicap": 2,
-        "home": 2.64,
-        "draw": 3.92,
-        "away": 2.02
+        "home": 2.7,
+        "draw": 3.9,
+        "away": 1.99
       },
       "result": null
     },
