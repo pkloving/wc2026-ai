@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-28T10:06:47.191Z",
+  "generated_at": "2026-06-29T11:18:46.153Z",
   "play": "spf",
-  "count": 56,
+  "count": 65,
   "rows": [
     {
       "mid": "2040162",
@@ -1122,6 +1122,186 @@
         "away": 2.8
       },
       "result": "draw"
+    },
+    {
+      "mid": "2040337",
+      "code": "周一074",
+      "home": "BRA",
+      "away": "JPN",
+      "kickoff": "2026-06-30 01:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.49,
+        "draw": 3.72,
+        "away": 5.28
+      },
+      "last": {
+        "home": 1.49,
+        "draw": 3.72,
+        "away": 5.28
+      },
+      "result": null
+    },
+    {
+      "mid": "2040344",
+      "code": "周一075",
+      "home": "GER",
+      "away": "PAR",
+      "kickoff": "2026-06-30 04:30",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.22,
+        "draw": 5,
+        "away": 9.1
+      },
+      "last": {
+        "home": 1.22,
+        "draw": 5,
+        "away": 9.1
+      },
+      "result": null
+    },
+    {
+      "mid": "2040338",
+      "code": "周一076",
+      "home": "NED",
+      "away": "MAR",
+      "kickoff": "2026-06-30 09:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 2,
+        "draw": 2.98,
+        "away": 3.4
+      },
+      "last": {
+        "home": 2,
+        "draw": 2.98,
+        "away": 3.4
+      },
+      "result": null
+    },
+    {
+      "mid": "2040345",
+      "code": "周二077",
+      "home": "CIV",
+      "away": "NOR",
+      "kickoff": "2026-07-01 01:00",
+      "handicap": 1,
+      "final_score": null,
+      "initial": {
+        "home": 3.77,
+        "draw": 3.35,
+        "away": 1.77
+      },
+      "last": {
+        "home": 3.77,
+        "draw": 3.35,
+        "away": 1.77
+      },
+      "result": null
+    },
+    {
+      "mid": "2040346",
+      "code": "周二078",
+      "home": "FRA",
+      "away": "SWE",
+      "kickoff": "2026-07-01 05:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.16,
+        "draw": 5.8,
+        "away": 10.5
+      },
+      "last": {
+        "home": 1.16,
+        "draw": 5.8,
+        "away": 10.5
+      },
+      "result": null
+    },
+    {
+      "mid": "2040351",
+      "code": "周二079",
+      "home": "MEX",
+      "away": "ECU",
+      "kickoff": "2026-07-01 09:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 2,
+        "draw": 2.7,
+        "away": 3.86
+      },
+      "last": {
+        "home": 2,
+        "draw": 2.7,
+        "away": 3.86
+      },
+      "result": null
+    },
+    {
+      "mid": "2040352",
+      "code": "周三080",
+      "home": "ENG",
+      "away": "COD",
+      "kickoff": "2026-07-02 00:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.17,
+        "draw": 5.25,
+        "away": 12
+      },
+      "last": {
+        "home": 1.17,
+        "draw": 5.25,
+        "away": 12
+      },
+      "result": null
+    },
+    {
+      "mid": "2040353",
+      "code": "周三081",
+      "home": "BEL",
+      "away": "SEN",
+      "kickoff": "2026-07-02 04:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.99,
+        "draw": 3,
+        "away": 3.42
+      },
+      "last": {
+        "home": 1.99,
+        "draw": 3,
+        "away": 3.42
+      },
+      "result": null
+    },
+    {
+      "mid": "2040339",
+      "code": "周三082",
+      "home": "USA",
+      "away": "BIH",
+      "kickoff": "2026-07-02 08:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "home": 1.27,
+        "draw": 4.5,
+        "away": 8.4
+      },
+      "last": {
+        "home": 1.27,
+        "draw": 4.5,
+        "away": 8.4
+      },
+      "result": null
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "matchId": "2040344",
+  "code": "周一075",
+  "league": "世界杯",
+  "home": "GER",
+  "away": "PAR",
+  "kickoff": "2026-06-30 04:30",
+  "homeScore": 1,
+  "awayScore": 1,
+  "final_score": "1-1",
+  "halfTime": null,
+  "scorers": [],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:1",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "负平",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "draw",
+  "_hhadResult": "A",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-06-30T09:00:00.000Z",
+  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；HAFU=A:D（半场客胜+全场平）→ bqcResult=负平；HHAD=A（-1让球后客胜, 1-1时让球后0-1）"
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-28T10:06:47.192Z",
+  "generated_at": "2026-06-29T11:18:46.154Z",
   "play": "rqspf",
-  "count": 72,
+  "count": 81,
   "rows": [
     {
       "mid": "2040162",
@@ -1586,6 +1586,204 @@
         "away": 7.05
       },
       "result": "home"
+    },
+    {
+      "mid": "2040337",
+      "code": "周一074",
+      "home": "BRA",
+      "away": "JPN",
+      "kickoff": "2026-06-30 01:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 2.71,
+        "draw": 3.15,
+        "away": 2.26
+      },
+      "last": {
+        "handicap": -1,
+        "home": 2.71,
+        "draw": 3.15,
+        "away": 2.26
+      },
+      "result": null
+    },
+    {
+      "mid": "2040344",
+      "code": "周一075",
+      "home": "GER",
+      "away": "PAR",
+      "kickoff": "2026-06-30 04:30",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 3.44
+      },
+      "last": {
+        "handicap": -1,
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 3.44
+      },
+      "result": null
+    },
+    {
+      "mid": "2040338",
+      "code": "周一076",
+      "home": "NED",
+      "away": "MAR",
+      "kickoff": "2026-06-30 09:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "last": {
+        "handicap": -1,
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "result": null
+    },
+    {
+      "mid": "2040345",
+      "code": "周二077",
+      "home": "CIV",
+      "away": "NOR",
+      "kickoff": "2026-07-01 01:00",
+      "handicap": 1,
+      "final_score": null,
+      "initial": {
+        "handicap": 1,
+        "home": 1.83,
+        "draw": 3.63,
+        "away": 3.25
+      },
+      "last": {
+        "handicap": 1,
+        "home": 1.83,
+        "draw": 3.63,
+        "away": 3.25
+      },
+      "result": null
+    },
+    {
+      "mid": "2040346",
+      "code": "周二078",
+      "home": "FRA",
+      "away": "SWE",
+      "kickoff": "2026-07-01 05:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 1.6,
+        "draw": 3.95,
+        "away": 3.98
+      },
+      "last": {
+        "handicap": -1,
+        "home": 1.6,
+        "draw": 3.95,
+        "away": 3.98
+      },
+      "result": null
+    },
+    {
+      "mid": "2040351",
+      "code": "周二079",
+      "home": "MEX",
+      "away": "ECU",
+      "kickoff": "2026-07-01 09:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "last": {
+        "handicap": -1,
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "result": null
+    },
+    {
+      "mid": "2040352",
+      "code": "周三080",
+      "home": "ENG",
+      "away": "COD",
+      "kickoff": "2026-07-02 00:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 1.71,
+        "draw": 3.5,
+        "away": 3.86
+      },
+      "last": {
+        "handicap": -1,
+        "home": 1.71,
+        "draw": 3.5,
+        "away": 3.86
+      },
+      "result": null
+    },
+    {
+      "mid": "2040353",
+      "code": "周三081",
+      "home": "BEL",
+      "away": "SEN",
+      "kickoff": "2026-07-02 04:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 4.15,
+        "draw": 3.6,
+        "away": 1.64
+      },
+      "last": {
+        "handicap": -1,
+        "home": 4.15,
+        "draw": 3.6,
+        "away": 1.64
+      },
+      "result": null
+    },
+    {
+      "mid": "2040339",
+      "code": "周三082",
+      "home": "USA",
+      "away": "BIH",
+      "kickoff": "2026-07-02 08:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.08
+      },
+      "last": {
+        "handicap": -1,
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.08
+      },
+      "result": null
     }
   ]
 }

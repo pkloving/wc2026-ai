@@ -1,0 +1,104 @@
+{
+  "basic": {
+    "mid": "2040344",
+    "code": "周一075",
+    "league": "世界杯",
+    "home": "GER",
+    "away": "PAR",
+    "kickoff": "2026-06-30 04:30",
+    "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040344",
+    "scraped_at": "2026-06-30T01:04:00.000Z",
+    "sale_status": "在售",
+    "single_supported": {
+      "HHAD": false,
+      "HAFU": true,
+      "CRS": true,
+      "TTG": true,
+      "HAD": true
+    },
+    "is_cancel": 0,
+    "is_finished_odds": true
+  },
+  "odds": {
+    "spf_latest": {
+      "home": 1.22,
+      "draw": 5,
+      "away": 9.1
+    },
+    "spf_history": [],
+    "handicap": -1,
+    "rqspf_latest": {
+      "home": 1.69,
+      "draw": 4.05,
+      "away": 3.44
+    },
+    "rqspf_history": [],
+    "bf_latest": {
+      "05:00": 30,
+      "平其它": 300,
+      "胜其它": 24,
+      "01:00": 7.2,
+      "05:02": 60,
+      "05:01": 35,
+      "负其它": 350,
+      "02:04": 350,
+      "02:05": 800,
+      "02:02": 24,
+      "02:03": 90,
+      "02:00": 5.5,
+      "02:01": 7.25,
+      "03:03": 80,
+      "03:01": 7,
+      "03:02": 28,
+      "03:00": 6.8,
+      "00:01": 25,
+      "00:00": 16,
+      "00:03": 200,
+      "00:02": 70,
+      "00:05": 800,
+      "00:04": 500,
+      "04:02": 40,
+      "04:01": 14.5,
+      "04:00": 15,
+      "01:02": 30,
+      "01:01": 10,
+      "01:04": 350,
+      "01:03": 150,
+      "01:05": 800
+    },
+    "zjq_latest": {
+      "0": 16,
+      "1": 6.1,
+      "2": 4,
+      "3": 3.45,
+      "4": 4.3,
+      "5": 7.65,
+      "6": 13,
+      "7+": 21
+    },
+    "bqc_latest": {
+      "胜胜": 1.63,
+      "胜平": 20,
+      "胜负": 57,
+      "平胜": 4.1,
+      "平平": 8.1,
+      "平负": 21,
+      "负胜": 21,
+      "负平": 20,
+      "负负": 16.5
+    }
+  },
+  "source": {
+    "api": "getFixedBonusV1.qry",
+    "fetched_at": "2026-06-30T01:04:00.000Z",
+    "snapshot_time": "2026-06-29 21:45:36",
+    "has_match_result": true,
+    "spf_result": "draw",
+    "rqspf_result": "away",
+    "rqspf_goal_line": "-1",
+    "crs_result": "1:1",
+    "ttg_result": "2",
+    "hafu_result": "A:D",
+    "half_time_result": "away"
+  }
+}

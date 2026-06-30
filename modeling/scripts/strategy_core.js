@@ -438,17 +438,15 @@ export function f4Strategy(m, ctx) {
 //   与回测里 shouldSlimRq + shouldOverrideRq 的合并版等价: 命中任一即视为单选
 //   注: E/F 在 isRqSlim 里只触发单选标记, 不覆盖 primary 方向 (保持预测和回测口径一致)
 //
-// 2026-06-20 新增 G 规则 (主受让+1 强制 DUAL, 覆盖 A/F):
-//   数据: 7 场主受让+1 全部被 5 OR 命中为 SLIM (A 2 场 + F 5 场)
-//        实际让平率 33.3% (vs 主让-1 的 15%, 全 +1 的 19.2%) = 庄家陷阱
-//   后果: 基线 (最低赔率, away) 在 hc=+1 ROI -7.7% (n=6, 命中 3, 平均赔率 1.85)
-//        改双选 (主+平) ROI +11.6% (n=6, 命中 5, 覆盖率 83.3%)
-//   决定: hc=+1 一律 DUAL, 由 rqspfStrategy 输出 [home, draw] 双腿
-//        isRqSlim 里提前 return false 压住 A/F, 避免 F 把客热门场次错配成单选
+// 2026-06-20 G 规则 (主受让+1 强制 DUAL) → 2026-06-29 回滚 (过拟合):
+//   6-20 n=6 时 ROI +11.6% → n=19 时 ROI -20.3% (-31.9 pct 退化)
+//   同期基线(最低赔率) n=19 ROI +12.5%, 主+平双选严重过拟合
+//   6-27 log 已预警, 今日执行回滚
+//   改: G 规则从 force DUAL → force SLIM (单选), 让 hc=+1 走基线最低赔率
 // ==================================================================
 export function isRqSlim(m, primary) {
   if (!m || !primary) return false;
-  if (m.handicap === 1) return false;                          // G (2026-06-20): 主受让+1 强制 DUAL
+  if (m.handicap === 1) return true;                           // G (2026-06-29 回滚): 主受让+1 force SLIM (单选基线)
   if (primary.d === 'home') return true;                       // A: 主选=让胜
   if (m.spf?.home && m.spf.home < 1.3) return true;            // B: spf 大热门
 // C 规则(2026-06-20 关闭): spf.home∈[1.5,2.0) 触发 slim
@@ -459,7 +457,7 @@ export function isRqSlim(m, primary) {
 //   if (m.spf?.home && m.spf.home >= 1.5 && m.spf.home < 2.0) return true;  // C 已关闭
   if (Math.abs(m.handicap ?? 0) === 2) return true;            // D: 大让球
   if (m.handicap === -1 && m.spf?.home && m.spf.home < 1.5) return true;  // E: 强让
-  if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) return true;    // F: 反向强让 (被 G 覆盖, 仅作 fallback 注释保留)
+  if (m.handicap === 1 && m.spf?.away && m.spf.away < 1.5) return true;    // F: 反向强让 (G 6-29 回滚后变 fallback, spf<1.5 时单选 away)
   return false;
 }
 
@@ -477,18 +475,12 @@ export function rqspfStrategy(m, ctx) {
     { d: 'away', odds: rq.away, label: '让负' },
   ];
   const sorted = dirs.slice().sort((a, b) => a.odds - b.odds);
-  // 信号 0 (2026-06-20 新增): 主受让+1 → 主+平双选
-  // 2026 数据: 7 场主受让+1 全部被 5 OR 命中为 SLIM (A 2 + F 5)
-  //   基线 (最低赔率, 几乎都是 away) ROI -7.7% (n=6, 命中 3, 平均赔率 1.85)
-  //   改主+平双选 ROI +11.6% (n=6, 命中 5 = 3 让胜 + 2 让平, 覆盖率 83.3%)
-  // 让平率 33.3% (vs 全 +1 的 19.2%) 是结构性陷阱, 双选 [home, draw] 是最优信号
-  if (m.handicap === 1) {
-    return {
-      primary: { d: 'home', odds: rq.home, label: '让胜' },
-      secondary: { d: 'draw', odds: rq.draw, label: '让平' },
-      rule: { name: '主受让+1主+平双选', roi: '+11.6%', n: 6 },
-    };
-  }
+  // 2026-06-29 调优 (sampled 2040168 海地 0-1 苏格兰, hc=+1 主受让, actual 让负 away):
+  //   6-20 加的"hc=+1 主+平双选"规则在 n=6 时 ROI +11.6%, n=19 时 ROI -20.3% (-31.9 pct 退化)
+  //   同期基线(最低赔率) n=19 ROI +12.5%, 主+平双选严重过拟合
+  //   6-27 log 已预警"hc=+1 主+平双选过拟合回滚"留待下轮, 今日执行回滚
+  //   修复: 删除信号 0 (让 hc=+1 自然落到基线最低赔率), isRqSlim G 改 force SLIM (单选)
+  //  (信号 0 已删除, hc=+1 走基线)
   // 信号① (2026-06-21 新增: 晋级信号融合 — 优先级最高)
   // 主队 high/medium-high 压力 + 让胜赔率 1.3-2.4 → 倾向让胜
   // 例: 荷兰vs瑞典(荷兰需抢分) / 德国vs科特迪瓦(德国需巩固头名)

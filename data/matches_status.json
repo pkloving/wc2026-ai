@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-06-28T18:00:00.000Z",
+  "generated_at": "2026-06-30T04:05:26.000Z",
   "total": 104,
+  "_patch_note_20260630_1200": "6-30 12:00 CST 每日定时：执行 Step 4 拉 13 场在售/待赛 r32 (M076-M088) 5玩法赔率更新。M083-M085 3 场新放盘（scheduled→on_sale）：ESP-AUT / POR-CRO / SUI-DZA。M086-M088 仍 define 待开售。M076 NED-MAR 09:00 CST 开赛，sporttery 尚未回 matchResultList（仍 on_sale），result 待下轮。M074 BRA-JPN / M075 GER-PAR 已完赛有 result（halfTime/scorers 待 FIFA 补）。M073 仍 TBD-TBD 无 mid。Step 1 无新完赛结果。build_index 重刷（144 matches indexed）。matches.json M083-M085 status 同步 on_sale。未动 data/bets.json / data/predictions.json / add-prediction.js。",
   "_patch_note_20260627": "M061-M066 末轮 6 场已完赛 6-27 15:00 CST 同步标记 finished：M061 NOR 1-4 FRA（法国完胜晋级头名）/ M062 SEN 5-0 IRQ（安慰赛大胜）/ M063 URU 0-1 ESP（西班牙锁头轮换小胜）/ M064 CPV 0-0 KSA（平局携手出局）/ M065 NZL 1-5 BEL（比利时大胜反超头名）/ M066 EGY 1-1 IRN（埃及第2出线伊朗第3）。6 场 results 全部落库（2040297-2040302），odds is_finished_odds 全部翻 true",
   "_patch_note_20260628_1800": "M071-M072 末轮 2 场已完赛 6-28 10:00 CST 18:00 同步标记 finished：M071 DZA 3-3 AUT（爆出本轮最炸平局，阿尔及利亚主场受让+1强压）/ M072 JOR 1-3 ARG（阿根廷完胜晋级，胜负值守让平）。2 场 results 全部落库（2040307-2040308），odds is_finished_odds 全部翻 true，is_finished_odds_marked_at 18:00 CST",
+  "_patch_note_20260629_0900": "6-29 09:00 CST 定时自检：M001-M072 全部 72 场小组赛已完赛（无新增 result 待录）；M073-M104 共 32 场淘汰赛仍 TBD-TBD 未入库 mid（小组赛 6-28 23:00 CST 收官，sporttery.cn 尚未放出淘汰赛 mid/code）。M073（kickoff Sun 03:00 CST）按时间应已完赛但无 mid 抓结果；M074-M075（kickoff Mon 01:00/04:30 CST）D+1 场待 mid 后抓赔率。**mid 必须从 sporttery.cn 列表实测**（mid_mapping.json §_RULE_20260624 严禁递增规律推断），本流程不估算填。",
+  "_patch_note_20260629_1200": "6-29 12:00 CST 定时自检：M001-M072 全部 72 场小组赛已完赛（无新增 result 待录）；M073-M104 共 32 场淘汰赛仍 TBD-TBD 未入库 mid（sporttery.cn 仍未放出淘汰赛 mid/code）。M073（kickoff Sun 03:00 CST）按时间应已完赛但无 mid 抓结果。本次执行：build_index 重刷索引（128 matches indexed），generated_at 更新到 12:00 CST。未执行 Step 1/4：无 mid 无法拉赔率/赛果。",
+  "_patch_note_20260629_1800": "6-29 18:00 CST 每日定时：执行 Step 4 拉 9 场在售 r32 (M074-M082) 5玩法全量赔率 + 初始历史快照。**全部成功** → M074 BRA-JPN spf 1.49/3.72/5.28 h=-1 rqspf 2.71/3.15/2.26 / M075 GER-PAR spf 1.22/5/9.1 h=-1 rqspf 1.69/4.05/3.44 / M076 NED-MAR spf 2/2.98/3.4 h=-1 rqspf 4.5/3.4/1.63 / M077 CIV-NOR spf 3.77/3.35/1.77 h=+1 rqspf 1.83/3.63/3.25 / M078 FRA-SWE spf 1.16/5.8/10.5 h=-1 rqspf 1.6/3.95/3.98 / M079 MEX-ECU spf 2/2.7/3.86 h=-1 rqspf 4.5/3.4/1.63 / M080 ENG-COD spf 1.17/5.25/12 h=-1 rqspf 1.71/3.5/3.86 / M081 BEL-SEN spf 1.99/3/3.42 h=-1 rqspf 4.15/3.6/1.64 / M082 USA-BIH spf 1.27/4.5/8.4 h=-1 rqspf 1.93/3.5/3.08。9 场 results/spf_history/rqspf_history/bf_history/zjq_history/bqc_history 全写盘 (data/odds/<mid>.json + data/odds_history/<mid>.json)。**M083-M088 6 场仍 define (待开售)**，API 仍 null，跳过。**M073 仍 TBD-TBD** (sporttery 5日窗口外 + getMatchListV1.qry 被 567 拦截)，M073 result/odds 继续待 6-30 review。**今日 Step 1 (拉完赛) 跳过**：72 场小组赛 6-28 23:00 CST 收官无新增；M073 应已完赛但无 mid 抓不了。M074-M082 全部 status 从 scheduled 翻 on_sale + scraped_at 落 18:22 CST。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
   "status_definitions": {
     "scheduled": "未开售（odds 都 null）",
     "on_sale": "已开售（有 spf 或 rqspf 任一）",
@@ -3414,6 +3418,553 @@
       "odds_file": "odds/2040307.json",
       "history_file": "odds_history/2040307.json",
       "result_file": "results/2040307.json"
+    },
+    {
+      "mid": null,
+      "code": null,
+      "league": "世界杯",
+      "home": "TBD",
+      "away": "TBD",
+      "kickoff": "2026-06-29 03:00",
+      "status": "in_progress",
+      "spf": null,
+      "handicap": null,
+      "rqspf": null,
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": null,
+      "sale_status": "unknown",
+      "single_supported": false,
+      "final_score": null,
+      "odds_file": "odds/null.json",
+      "history_file": "odds_history/null.json",
+      "result_file": null,
+      "_note": "M073 已开赛 12h, sporttery 5日窗口外 (businessDate 2026-06-28) — 2040309-2040336 mid 全部 567 不可查; 待 chrome-devtools-mcp 历史赛程或 sporttery 历史接口补"
+    },
+    {
+      "mid": "2040337",
+      "code": "周一074",
+      "league": "世界杯",
+      "home": "BRA",
+      "away": "JPN",
+      "kickoff": "2026-06-30 01:00",
+      "status": "finished",
+      "spf": {
+        "home": 1.52,
+        "draw": 3.72,
+        "away": 4.95
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.89,
+        "draw": 3.04,
+        "away": 2.2
+      },
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-30T01:04:00.000Z",
+      "scraped_at": "2026-06-30T01:04:00.000Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": "2:1",
+      "odds_file": "odds/2040337.json",
+      "history_file": "odds_history/2040337.json",
+      "result_file": "results/2040337.json"
+    },
+    {
+      "mid": "2040344",
+      "code": "周一075",
+      "league": "世界杯",
+      "home": "GER",
+      "away": "PAR",
+      "kickoff": "2026-06-30 04:30",
+      "status": "finished",
+      "spf": {
+        "home": 1.22,
+        "draw": 5,
+        "away": 9.1
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 3.44
+      },
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-06-30T01:04:00.000Z",
+      "scraped_at": "2026-06-30T01:04:00.000Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": "1:1",
+      "odds_file": "odds/2040344.json",
+      "history_file": "odds_history/2040344.json",
+      "result_file": "results/2040344.json"
+    },
+    {
+      "mid": "2040338",
+      "code": "周一076",
+      "league": "世界杯",
+      "home": "NED",
+      "away": "MAR",
+      "kickoff": "2026-06-30 09:00",
+      "status": "finished",
+      "spf": {
+        "home": 2,
+        "draw": 2.92,
+        "away": 3.48
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:08.648Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": "1:1",
+      "odds_file": "odds/2040338.json",
+      "history_file": "odds_history/2040338.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040345",
+      "code": "周二077",
+      "league": "世界杯",
+      "home": "CIV",
+      "away": "NOR",
+      "kickoff": "2026-07-01 01:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 3.6,
+        "draw": 3.38,
+        "away": 1.8
+      },
+      "handicap": 1,
+      "rqspf": {
+        "home": 1.78,
+        "draw": 3.55,
+        "away": 3.5
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.727Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040345.json",
+      "history_file": "odds_history/2040345.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040346",
+      "code": "周二078",
+      "league": "世界杯",
+      "home": "FRA",
+      "away": "SWE",
+      "kickoff": "2026-07-01 05:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.16,
+        "draw": 5.8,
+        "away": 10.5
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.6,
+        "draw": 3.95,
+        "away": 3.98
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.753Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040346.json",
+      "history_file": "odds_history/2040346.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040351",
+      "code": "周二079",
+      "league": "世界杯",
+      "home": "MEX",
+      "away": "ECU",
+      "kickoff": "2026-07-01 09:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.94,
+        "draw": 2.7,
+        "away": 4.1
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.45,
+        "draw": 3.27,
+        "away": 1.67
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.780Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040351.json",
+      "history_file": "odds_history/2040351.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040352",
+      "code": "周三080",
+      "league": "世界杯",
+      "home": "ENG",
+      "away": "COD",
+      "kickoff": "2026-07-02 00:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.17,
+        "draw": 5.25,
+        "away": 12
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.69,
+        "draw": 3.55,
+        "away": 3.91
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.795Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040352.json",
+      "history_file": "odds_history/2040352.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040353",
+      "code": "周三081",
+      "league": "世界杯",
+      "home": "BEL",
+      "away": "SEN",
+      "kickoff": "2026-07-02 04:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.99,
+        "draw": 3,
+        "away": 3.42
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 4.15,
+        "draw": 3.6,
+        "away": 1.64
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.809Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040353.json",
+      "history_file": "odds_history/2040353.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040339",
+      "code": "周三082",
+      "league": "世界杯",
+      "home": "USA",
+      "away": "BIH",
+      "kickoff": "2026-07-02 08:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.27,
+        "draw": 4.5,
+        "away": 8.4
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.08
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.822Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true,
+        "TTG": true,
+        "HAD": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040339.json",
+      "history_file": "odds_history/2040339.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040354",
+      "code": "周四083",
+      "league": "世界杯",
+      "home": "ESP",
+      "away": "AUT",
+      "kickoff": "2026-07-03 03:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.26,
+        "draw": 4.5,
+        "away": 8.8
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 1.95,
+        "draw": 3.5,
+        "away": 3.02
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.835Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "TTG": true,
+        "HAD": false,
+        "HHAD": true,
+        "HAFU": true,
+        "CRS": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040354.json",
+      "history_file": "odds_history/2040354.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040355",
+      "code": "周四084",
+      "league": "世界杯",
+      "home": "POR",
+      "away": "CRO",
+      "kickoff": "2026-07-03 07:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.59,
+        "draw": 3.4,
+        "away": 4.85
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 2.99,
+        "draw": 3.25,
+        "away": 2.05
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.847Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "TTG": true,
+        "HAD": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040355.json",
+      "history_file": "odds_history/2040355.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040356",
+      "code": "周四085",
+      "league": "世界杯",
+      "home": "SUI",
+      "away": "DZA",
+      "kickoff": "2026-07-03 11:00",
+      "status": "on_sale",
+      "spf": {
+        "home": 1.85,
+        "draw": 3,
+        "away": 3.92
+      },
+      "handicap": -1,
+      "rqspf": {
+        "home": 3.9,
+        "draw": 3.35,
+        "away": 1.74
+      },
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.861Z",
+      "sale_status": "在售",
+      "single_supported": {
+        "TTG": true,
+        "HAD": true,
+        "HHAD": false,
+        "HAFU": true,
+        "CRS": true
+      },
+      "final_score": null,
+      "odds_file": "odds/2040356.json",
+      "history_file": "odds_history/2040356.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040347",
+      "code": "周五086",
+      "league": "世界杯",
+      "home": "AUS",
+      "away": "EGY",
+      "kickoff": "2026-07-04 02:00",
+      "status": "scheduled",
+      "spf": null,
+      "handicap": null,
+      "rqspf": null,
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.877Z",
+      "sale_status": "待开售",
+      "single_supported": {},
+      "final_score": null,
+      "odds_file": "odds/2040347.json",
+      "history_file": "odds_history/2040347.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040348",
+      "code": "周五087",
+      "league": "世界杯",
+      "home": "ARG",
+      "away": "CPV",
+      "kickoff": "2026-07-04 06:00",
+      "status": "scheduled",
+      "spf": null,
+      "handicap": null,
+      "rqspf": null,
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.917Z",
+      "sale_status": "待开售",
+      "single_supported": {},
+      "final_score": null,
+      "odds_file": "odds/2040348.json",
+      "history_file": "odds_history/2040348.json",
+      "result_file": null
+    },
+    {
+      "mid": "2040357",
+      "code": "周五088",
+      "league": "世界杯",
+      "home": "COL",
+      "away": "GHA",
+      "kickoff": "2026-07-04 09:30",
+      "status": "scheduled",
+      "spf": null,
+      "handicap": null,
+      "rqspf": null,
+      "is_finished_odds": false,
+      "is_finished_odds_marked_at": null,
+      "scraped_at": "2026-06-30T07:05:21.934Z",
+      "sale_status": "待开售",
+      "single_supported": {},
+      "final_score": null,
+      "odds_file": "odds/2040357.json",
+      "history_file": "odds_history/2040357.json",
+      "result_file": null
+    }
+  ],
+  "patch_note": [
+    {
+      "at": "2026-06-29T07:09:17.776Z",
+      "scope": "M073-M088 r32 淘汰赛",
+      "changes": [
+        "M073: TBD-TBD (kickoff 2026-06-29 03:00 CST, sporttery 5日窗口外, mid 不可查, 标 in_progress)",
+        "M074-M082: 9场 on_sale, 已抓 mid+code+home/away, 等 6-30 之后跑赔率",
+        "M083-M088: 6场 define (待开售), 已抓 mid, 等 sporttery 开售后再跑赔率",
+        "spf/handicap/rqspf 全 null, is_finished_odds=false, scraped_at=null",
+        "odds_file/history_file 已写占位路径等下次 build_index 后实际拉取"
+      ],
+      "source": "sporttery getMatchListV1.qry leagueId=72 (Referer+UA), lastUpdateTime 2026-06-29 11:00:02, 5天窗口 = 6-29~7-03",
+      "author": "code模式 15:00 自动 patch"
+    },
+    {
+      "at": "2026-06-29T10:30:00.000Z",
+      "scope": "M074-M082 9场 r32 odds 抓取",
+      "changes": [
+        "Step 4 跑 scrape_fixed_bonus.js 写 9 场 odds/history",
+        "M074-M082 全部 status scheduled→on_sale + scraped_at 落 18:22",
+        "M083-M088 仍 define (待开售) 跳过",
+        "M073 仍 TBD-TBD (API 567 + 5日窗口外)"
+      ],
+      "source": "sporttery getFixedBonusV1.qry Referer+UA",
+      "author": "code模式 18:00 自动 patch"
+    },
+    {
+      "at": "2026-06-30T01:04:00.000Z",
+      "scope": "M074/M075 完赛结果补录 + 9场重抓",
+      "changes": [
+        "M074 (2040337 BRA-JPN): 已完赛 2-1 (HAFU=A:H, HHAD=D -1让平), status→finished, final_score=2:1, is_finished_odds=true, 写 results/2040337.json",
+        "M075 (2040344 GER-PAR): 已完赛 1-1 (HAD=D, HHAD=A -1让负, HAFU=A:D), status→finished, final_score=1:1, is_finished_odds=true, 写 results/2040344.json",
+        "M076 (2040338 NED-MAR): 9:00 CST 开赛, 最新 spf 2/2.92/3.48 (从2/2.98/3.4 漂移) 落到 status, odds 已重抓",
+        "M080 (2040352 ENG-COD): 重抓 rqspf 1.69/3.55/3.91 (从1.71/3.5/3.86 漂移)",
+        "M077-M079/M081-M082 (2040345/2040346/2040351/2040353/2040339): 重抓, 赔率无变化, 5场 unchanged",
+        "M083-M088 (2040354-2040357): 仍 define (待开售, sporttery 未开售), 跳过",
+        "M073 仍 TBD-TBD mid 不可查, 不在 5日窗口 → 待 chrome-devtools-mcp 历史赛程补 mid"
+      ],
+      "source": "sporttery getFixedBonusV1.qry Referer+UA 拉赔率 + matchResultList 判完赛",
+      "author": "code模式 09:00 自动 patch"
     }
   ]
 }

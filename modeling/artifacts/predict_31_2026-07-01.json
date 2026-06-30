@@ -1,0 +1,3214 @@
+{
+  "date": "2026-07-01",
+  "strategy": "31号策略 (F4主池 + 反方向单关 + RQSPF/ZJQ/BQC赔率纠偏)",
+  "picker": {
+    "cat1": {
+      "matches": [
+        "周三080",
+        "周一075",
+        "周二077",
+        "周二078",
+        "周三082",
+        "周三081",
+        "周二079",
+        "周一076",
+        "周一074"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            }
+          ],
+          "odds": 2.89,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            }
+          ],
+          "odds": 3.13,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.74,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.3,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            }
+          ],
+          "odds": 3.09,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.7,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.26,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.93,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.53,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.09,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.53,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.07,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.18,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.46,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.99,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.11,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.37,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.62,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.98,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.98,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.83,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.48,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.41,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.94,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.38,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.33,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.84,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.93,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 9.57,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.37,
+          "stake": 2
+        }
+      ],
+      "parlay2": [
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            }
+          ],
+          "odds": 2.89,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            }
+          ],
+          "odds": 3.13,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.74,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.3,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            }
+          ],
+          "odds": 3.09,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.7,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.26,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            }
+          ],
+          "odds": 2.93,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.53,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            }
+          ],
+          "odds": 3.09,
+          "stake": 1
+        }
+      ],
+      "parlay3": [
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.53,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.07,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.18,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.46,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.99,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.11,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.37,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.62,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 7.98,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.26
+            }
+          ],
+          "odds": 6.98,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.83,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.48,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.41,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周三080",
+              "match": "ENGvsCOD",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.71
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.94,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.38,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.33,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周一075",
+              "match": "GERvsPAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.69
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.84,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 7.93,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二077",
+              "match": "CIVvsNOR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.83
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 9.57,
+          "stake": 2
+        },
+        {
+          "legs": [
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.6
+            },
+            {
+              "code": "周三082",
+              "match": "USAvsBIH",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.93
+            },
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.71
+            }
+          ],
+          "odds": 8.37,
+          "stake": 2
+        }
+      ],
+      "parlay4": null,
+      "legMode": "atomic",
+      "stake": 1,
+      "slimCount": 6,
+      "dualCount": 3
+    },
+    "cat2": {
+      "matches": [
+        "周一074",
+        "周二078"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "score": "1:1",
+              "odds": 7.5
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "score": "3:1",
+              "odds": 8
+            }
+          ],
+          "odds": 60,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "score": "1:1",
+              "odds": 7.5
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "score": "1:1",
+              "odds": 9.5
+            }
+          ],
+          "odds": 71.25,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "score": "3:1",
+              "odds": 8.75
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "score": "3:1",
+              "odds": 8
+            }
+          ],
+          "odds": 70,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周一074",
+              "match": "BRAvsJPN",
+              "score": "3:1",
+              "odds": 8.75
+            },
+            {
+              "code": "周二078",
+              "match": "FRAvsSWE",
+              "score": "1:1",
+              "odds": 9.5
+            }
+          ],
+          "odds": 83.13,
+          "stake": 1
+        }
+      ]
+    },
+    "cat3": [
+      {
+        "code": "周二078",
+        "match": "FRAvsSWE",
+        "score": "4:2",
+        "odds": 32
+      },
+      {
+        "code": "周二079",
+        "match": "MEXvsECU",
+        "score": "4:1",
+        "odds": 70
+      },
+      {
+        "code": "周三080",
+        "match": "ENGvsCOD",
+        "score": "4:1",
+        "odds": 20
+      },
+      {
+        "code": "周三081",
+        "match": "BELvsSEN",
+        "score": "4:1",
+        "odds": 45
+      },
+      {
+        "code": "周三082",
+        "match": "USAvsBIH",
+        "score": "4:1",
+        "odds": 21
+      },
+      {
+        "code": "周一074",
+        "match": "BRAvsJPN",
+        "score": "4:1",
+        "odds": 28
+      },
+      {
+        "code": "周一075",
+        "match": "GERvsPAR",
+        "score": "4:2",
+        "odds": 40
+      },
+      {
+        "code": "周一076",
+        "match": "NEDvsMAR",
+        "score": "4:1",
+        "odds": 50
+      }
+    ],
+    "cat4": [
+      {
+        "code": "周二077",
+        "match": "CIVvsNOR",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3.45
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      },
+      {
+        "code": "周二079",
+        "match": "MEXvsECU",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      },
+      {
+        "code": "周三081",
+        "match": "BELvsSEN",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3.2
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      },
+      {
+        "code": "周一074",
+        "match": "BRAvsJPN",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3.45
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      },
+      {
+        "code": "周一076",
+        "match": "NEDvsMAR",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 3.1
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      }
+    ],
+    "cat5": [
+      {
+        "code": "周二078",
+        "match": "FRAvsSWE",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.6,
+          "平平": 9
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      },
+      {
+        "code": "周三080",
+        "match": "ENGvsCOD",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.57,
+          "平平": 7.5
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      },
+      {
+        "code": "周三082",
+        "match": "USAvsBIH",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.85,
+          "平平": 6.5
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      },
+      {
+        "code": "周一075",
+        "match": "GERvsPAR",
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "oddsMap": {
+          "胜胜": 1.59,
+          "平平": 8.1
+        },
+        "rule": {
+          "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+          "roi": "-32%",
+          "n": 4
+        }
+      }
+    ]
+  },
+  "rqspf_follow": [
+    {
+      "code": "周二077",
+      "mid": "2040345",
+      "match": "CIVvsNOR",
+      "handicap": 1,
+      "rqspf_odds": {
+        "home": 1.83,
+        "draw": 3.63,
+        "away": 3.25
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.83,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 3.25,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周二078",
+      "mid": "2040346",
+      "match": "FRAvsSWE",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 1.6,
+        "draw": 3.95,
+        "away": 3.98
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.6,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.95,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周二079",
+      "mid": "2040351",
+      "match": "MEXvsECU",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.63,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.4,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周三080",
+      "mid": "2040352",
+      "match": "ENGvsCOD",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 1.71,
+        "draw": 3.5,
+        "away": 3.86
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.71,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.5,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周三081",
+      "mid": "2040353",
+      "match": "BELvsSEN",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 4.15,
+        "draw": 3.6,
+        "away": 1.64
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.64,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.6,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周三082",
+      "mid": "2040339",
+      "match": "USAvsBIH",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.08
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.93,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 3.08,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周一074",
+      "mid": "2040337",
+      "match": "BRAvsJPN",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 2.71,
+        "draw": 3.15,
+        "away": 2.26
+      },
+      "primary": {
+        "d": "away",
+        "odds": 2.26,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "home",
+        "odds": 2.71,
+        "label": "让胜"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周一075",
+      "mid": "2040344",
+      "match": "GERvsPAR",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 3.44
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.69,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 3.44,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    },
+    {
+      "code": "周一076",
+      "mid": "2040338",
+      "match": "NEDvsMAR",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "primary": {
+        "d": "away",
+        "odds": 1.63,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.4,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    }
+  ],
+  "zjq_follow": [
+    {
+      "code": "周二077",
+      "mid": "2040345",
+      "match": "CIVvsNOR",
+      "handicap": 1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.45
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 24,
+      "stableOdds": 3.45,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    },
+    {
+      "code": "周二078",
+      "mid": "2040346",
+      "match": "FRAvsSWE",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "0",
+      "stable": "2",
+      "coldOdds": 21,
+      "stableOdds": 4.3,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周二079",
+      "mid": "2040351",
+      "match": "MEXvsECU",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 50,
+      "stableOdds": 3,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    },
+    {
+      "code": "周三080",
+      "mid": "2040352",
+      "match": "ENGvsCOD",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 28,
+      "stableOdds": 3.5,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周三081",
+      "mid": "2040353",
+      "match": "BELvsSEN",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.2
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 40,
+      "stableOdds": 3.2,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    },
+    {
+      "code": "周三082",
+      "mid": "2040339",
+      "match": "USAvsBIH",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 25,
+      "stableOdds": 3.6,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周一074",
+      "mid": "2040337",
+      "match": "BRAvsJPN",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.45
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 25,
+      "stableOdds": 3.45,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    },
+    {
+      "code": "周一075",
+      "mid": "2040344",
+      "match": "GERvsPAR",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 20,
+      "stableOdds": 3.9,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周一076",
+      "mid": "2040338",
+      "match": "NEDvsMAR",
+      "handicap": -1,
+      "corrected": {
+        "pick": "2",
+        "odds": 3.1
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 33,
+      "stableOdds": 3.1,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    }
+  ],
+  "bqc_follow": [
+    {
+      "code": "周二077",
+      "mid": "2040345",
+      "match": "CIVvsNOR",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 2.85
+        },
+        {
+          "key": "平负",
+          "odds": 4.8
+        },
+        {
+          "key": "平平",
+          "odds": 5.7
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周二078",
+      "mid": "2040346",
+      "match": "FRAvsSWE",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.6,
+          "平平": 9
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.6
+        },
+        {
+          "key": "平胜",
+          "odds": 4.05
+        },
+        {
+          "key": "平平",
+          "odds": 9
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周二079",
+      "mid": "2040351",
+      "match": "MEXvsECU",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 3.25
+        },
+        {
+          "key": "平平",
+          "odds": 4
+        },
+        {
+          "key": "平胜",
+          "odds": 4.4
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周三080",
+      "mid": "2040352",
+      "match": "ENGvsCOD",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.57,
+          "平平": 7.5
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.57
+        },
+        {
+          "key": "平胜",
+          "odds": 3.55
+        },
+        {
+          "key": "平平",
+          "odds": 7.5
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周三081",
+      "mid": "2040353",
+      "match": "BELvsSEN",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 3.25
+        },
+        {
+          "key": "平胜",
+          "odds": 4.75
+        },
+        {
+          "key": "平平",
+          "odds": 4.9
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周三082",
+      "mid": "2040339",
+      "match": "USAvsBIH",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.85,
+          "平平": 6.5
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.85
+        },
+        {
+          "key": "平胜",
+          "odds": 3.75
+        },
+        {
+          "key": "平平",
+          "odds": 6.5
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周一074",
+      "mid": "2040337",
+      "match": "BRAvsJPN",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 2.5
+        },
+        {
+          "key": "平胜",
+          "odds": 4.1
+        },
+        {
+          "key": "平平",
+          "odds": 5.6
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周一075",
+      "mid": "2040344",
+      "match": "GERvsPAR",
+      "corrected": {
+        "picks": [
+          "胜胜",
+          "平平"
+        ],
+        "odds": {
+          "胜胜": 1.59,
+          "平平": 8.1
+        },
+        "cost": 2
+      },
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 1.59
+        },
+        {
+          "key": "平胜",
+          "odds": 4.1
+        },
+        {
+          "key": "平平",
+          "odds": 8.1
+        }
+      ],
+      "rule": {
+        "name": "NORMAL+胜胜纠偏(胜胜+平平)",
+        "roi": "-32%",
+        "n": 4
+      }
+    },
+    {
+      "code": "周一076",
+      "mid": "2040338",
+      "match": "NEDvsMAR",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 3.3
+        },
+        {
+          "key": "平胜",
+          "odds": 4.8
+        },
+        {
+          "key": "平平",
+          "odds": 5
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    }
+  ],
+  "matches": [
+    {
+      "code": "周二077",
+      "mid": "2040345",
+      "match": "CIVvsNOR",
+      "home": "CIV",
+      "away": "NOR",
+      "kickoff": "2026-07-01 01:00",
+      "type": "NORMAL",
+      "handicap": 1,
+      "spf": {
+        "home": 3.77,
+        "draw": 3.35,
+        "away": 1.77
+      },
+      "rqspf": {
+        "home": 1.83,
+        "draw": 3.63,
+        "away": 3.25
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 6.4
+        },
+        {
+          "score": "0:1",
+          "odds": 7.25
+        },
+        {
+          "score": "1:3",
+          "odds": 12
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周二078",
+      "mid": "2040346",
+      "match": "FRAvsSWE",
+      "home": "FRA",
+      "away": "SWE",
+      "kickoff": "2026-07-01 05:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.16,
+        "draw": 5.8,
+        "away": 10.5
+      },
+      "rqspf": {
+        "home": 1.6,
+        "draw": 3.95,
+        "away": 3.98
+      },
+      "mainPicks": [
+        {
+          "score": "2:0",
+          "odds": 7
+        },
+        {
+          "score": "3:1",
+          "odds": 8
+        },
+        {
+          "score": "1:1",
+          "odds": 9.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周二079",
+      "mid": "2040351",
+      "match": "MEXvsECU",
+      "home": "MEX",
+      "away": "ECU",
+      "kickoff": "2026-07-01 09:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 2,
+        "draw": 2.7,
+        "away": 3.86
+      },
+      "rqspf": {
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "mainPicks": [
+        {
+          "score": "1:0",
+          "odds": 5
+        },
+        {
+          "score": "1:1",
+          "odds": 5.1
+        },
+        {
+          "score": "0:0",
+          "odds": 6
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周三080",
+      "mid": "2040352",
+      "match": "ENGvsCOD",
+      "home": "ENG",
+      "away": "COD",
+      "kickoff": "2026-07-02 00:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.17,
+        "draw": 5.25,
+        "away": 12
+      },
+      "rqspf": {
+        "home": 1.71,
+        "draw": 3.5,
+        "away": 3.86
+      },
+      "mainPicks": [
+        {
+          "score": "2:0",
+          "odds": 4.7
+        },
+        {
+          "score": "1:1",
+          "odds": 9.5
+        },
+        {
+          "score": "3:1",
+          "odds": 10.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周三081",
+      "mid": "2040353",
+      "match": "BELvsSEN",
+      "home": "BEL",
+      "away": "SEN",
+      "kickoff": "2026-07-02 04:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.99,
+        "draw": 3,
+        "away": 3.42
+      },
+      "rqspf": {
+        "home": 4.15,
+        "draw": 3.6,
+        "away": 1.64
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 5.4
+        },
+        {
+          "score": "1:0",
+          "odds": 6.5
+        },
+        {
+          "score": "0:0",
+          "odds": 8.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周三082",
+      "mid": "2040339",
+      "match": "USAvsBIH",
+      "home": "USA",
+      "away": "BIH",
+      "kickoff": "2026-07-02 08:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.27,
+        "draw": 4.5,
+        "away": 8.4
+      },
+      "rqspf": {
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.08
+      },
+      "mainPicks": [
+        {
+          "score": "2:0",
+          "odds": 5.8
+        },
+        {
+          "score": "1:1",
+          "odds": 8
+        },
+        {
+          "score": "3:0",
+          "odds": 8
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周一074",
+      "mid": "2040337",
+      "match": "BRAvsJPN",
+      "home": "BRA",
+      "away": "JPN",
+      "kickoff": "2026-06-30 01:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.49,
+        "draw": 3.72,
+        "away": 5.28
+      },
+      "rqspf": {
+        "home": 2.71,
+        "draw": 3.15,
+        "away": 2.26
+      },
+      "mainPicks": [
+        {
+          "score": "1:0",
+          "odds": 7.25
+        },
+        {
+          "score": "1:1",
+          "odds": 7.5
+        },
+        {
+          "score": "3:1",
+          "odds": 8.75
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周一075",
+      "mid": "2040344",
+      "match": "GERvsPAR",
+      "home": "GER",
+      "away": "PAR",
+      "kickoff": "2026-06-30 04:30",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.22,
+        "draw": 5,
+        "away": 9.1
+      },
+      "rqspf": {
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 3.44
+      },
+      "mainPicks": [
+        {
+          "score": "2:0",
+          "odds": 5.5
+        },
+        {
+          "score": "1:1",
+          "odds": 10
+        },
+        {
+          "score": "4:0",
+          "odds": 15
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周一076",
+      "mid": "2040338",
+      "match": "NEDvsMAR",
+      "home": "NED",
+      "away": "MAR",
+      "kickoff": "2026-06-30 09:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 2,
+        "draw": 2.98,
+        "away": 3.4
+      },
+      "rqspf": {
+        "home": 4.5,
+        "draw": 3.4,
+        "away": 1.63
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 5.25
+        },
+        {
+          "score": "1:0",
+          "odds": 7.5
+        },
+        {
+          "score": "0:0",
+          "odds": 9
+        }
+      ],
+      "singleBets": []
+    }
+  ],
+  "combos": {
+    "c2": [
+      {
+        "matches": [
+          "周二079",
+          "周三080"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          }
+        ],
+        "odds": 23.5
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          }
+        ],
+        "odds": 23.97
+      },
+      {
+        "matches": [
+          "周三080",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 24.68
+      },
+      {
+        "matches": [
+          "周三080",
+          "周三081"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "BELvsSEN",
+            "score": "1:1",
+            "odds": 5.4
+          }
+        ],
+        "odds": 25.38
+      },
+      {
+        "matches": [
+          "周三080",
+          "周一075"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "GERvsPAR",
+            "score": "2:0",
+            "odds": 5.5
+          }
+        ],
+        "odds": 25.85
+      },
+      {
+        "matches": [
+          "周二079",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 26.25
+      },
+      {
+        "matches": [
+          "周二079",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 26.77
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三081"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "BELvsSEN",
+            "score": "1:1",
+            "odds": 5.4
+          }
+        ],
+        "odds": 27
+      },
+      {
+        "matches": [
+          "周三080",
+          "周三082"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "USAvsBIH",
+            "score": "2:0",
+            "odds": 5.8
+          }
+        ],
+        "odds": 27.26
+      },
+      {
+        "matches": [
+          "周二079",
+          "周一075"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "GERvsPAR",
+            "score": "2:0",
+            "odds": 5.5
+          }
+        ],
+        "odds": 27.5
+      }
+    ],
+    "c3": [
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 123.38
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 125.84
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周三081"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "BELvsSEN",
+            "score": "1:1",
+            "odds": 5.4
+          }
+        ],
+        "odds": 126.9
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周一075"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "GERvsPAR",
+            "score": "2:0",
+            "odds": 5.5
+          }
+        ],
+        "odds": 129.25
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周三081"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "BELvsSEN",
+            "score": "1:1",
+            "odds": 5.4
+          }
+        ],
+        "odds": 129.44
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周一075"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "GERvsPAR",
+            "score": "2:0",
+            "odds": 5.5
+          }
+        ],
+        "odds": 131.83
+      },
+      {
+        "matches": [
+          "周三080",
+          "周三081",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "BELvsSEN",
+            "score": "1:1",
+            "odds": 5.4
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 133.25
+      },
+      {
+        "matches": [
+          "周三080",
+          "周一075",
+          "周一076"
+        ],
+        "picks": [
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "GERvsPAR",
+            "score": "2:0",
+            "odds": 5.5
+          },
+          {
+            "match": "NEDvsMAR",
+            "score": "1:1",
+            "odds": 5.25
+          }
+        ],
+        "odds": 135.71
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周三082"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:0",
+            "odds": 5
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "USAvsBIH",
+            "score": "2:0",
+            "odds": 5.8
+          }
+        ],
+        "odds": 136.3
+      },
+      {
+        "matches": [
+          "周二079",
+          "周三080",
+          "周三082"
+        ],
+        "picks": [
+          {
+            "match": "MEXvsECU",
+            "score": "1:1",
+            "odds": 5.1
+          },
+          {
+            "match": "ENGvsCOD",
+            "score": "2:0",
+            "odds": 4.7
+          },
+          {
+            "match": "USAvsBIH",
+            "score": "2:0",
+            "odds": 5.8
+          }
+        ],
+        "odds": 139.03
+      }
+    ]
+  }
+}

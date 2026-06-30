@@ -844,7 +844,8 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "TBD",
     "away": "TBD",
-    "status": "scheduled"
+    "status": "in_progress",
+    "_note": "已开赛 24h+ (6-29 03:00 CST), sporttery 5日窗口外 (businessDate 2026-06-28) 暂未抓到 mid; 需 chrome-devtools-mcp 历史赛程 或 sporttery 历史接口补 mid 配对"
   },
   {
     "id": "M074",
@@ -852,9 +853,13 @@
     "group": null,
     "date": "2026-06-29T17:00:00Z",
     "venue": "Arrowhead Stadium, Kansas City, MO",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "BRA",
+    "away": "JPN",
+    "status": "finished",
+    "mid": "2040337",
+    "kickoff": "2026-06-30 01:00",
+    "code": "周一074",
+    "final_score": "2-1"
   },
   {
     "id": "M075",
@@ -862,9 +867,13 @@
     "group": null,
     "date": "2026-06-29T20:30:00Z",
     "venue": "Gillette Stadium, Foxborough, MA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "GER",
+    "away": "PAR",
+    "status": "finished",
+    "mid": "2040344",
+    "kickoff": "2026-06-30 04:30",
+    "code": "周一075",
+    "final_score": "1-1"
   },
   {
     "id": "M076",
@@ -872,9 +881,13 @@
     "group": null,
     "date": "2026-06-30T01:00:00Z",
     "venue": "Estadio Azteca, Mexico City",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "NED",
+    "away": "MAR",
+    "status": "finished",
+    "mid": "2040338",
+    "kickoff": "2026-06-30 09:00",
+    "code": "周一076",
+    "final_score": "1-1"
   },
   {
     "id": "M077",
@@ -882,9 +895,12 @@
     "group": null,
     "date": "2026-06-30T17:00:00Z",
     "venue": "Estadio Akron, Guadalajara",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "CIV",
+    "away": "NOR",
+    "status": "scheduled",
+    "mid": "2040345",
+    "kickoff": "2026-07-01 01:00",
+    "code": "周二077"
   },
   {
     "id": "M078",
@@ -892,9 +908,12 @@
     "group": null,
     "date": "2026-06-30T21:00:00Z",
     "venue": "Estadio BBVA, Monterrey",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "FRA",
+    "away": "SWE",
+    "status": "scheduled",
+    "mid": "2040346",
+    "kickoff": "2026-07-01 05:00",
+    "code": "周二078"
   },
   {
     "id": "M079",
@@ -902,9 +921,12 @@
     "group": null,
     "date": "2026-07-01T01:00:00Z",
     "venue": "BMO Field, Toronto",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "MEX",
+    "away": "ECU",
+    "status": "scheduled",
+    "mid": "2040351",
+    "kickoff": "2026-07-01 09:00",
+    "code": "周二079"
   },
   {
     "id": "M080",
@@ -912,9 +934,12 @@
     "group": null,
     "date": "2026-07-01T16:00:00Z",
     "venue": "BC Place, Vancouver",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ENG",
+    "away": "COD",
+    "status": "scheduled",
+    "mid": "2040352",
+    "kickoff": "2026-07-02 00:00",
+    "code": "周三080"
   },
   {
     "id": "M081",
@@ -922,9 +947,12 @@
     "group": null,
     "date": "2026-07-01T20:00:00Z",
     "venue": "MetLife Stadium, East Rutherford, NJ",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "BEL",
+    "away": "SEN",
+    "status": "scheduled",
+    "mid": "2040353",
+    "kickoff": "2026-07-02 04:00",
+    "code": "周三081"
   },
   {
     "id": "M082",
@@ -932,9 +960,12 @@
     "group": null,
     "date": "2026-07-02T00:00:00Z",
     "venue": "SoFi Stadium, Los Angeles, CA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "USA",
+    "away": "BIH",
+    "status": "scheduled",
+    "mid": "2040339",
+    "kickoff": "2026-07-02 08:00",
+    "code": "周三082"
   },
   {
     "id": "M083",
@@ -942,9 +973,12 @@
     "group": null,
     "date": "2026-07-02T19:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ESP",
+    "away": "AUT",
+    "status": "on_sale",
+    "mid": "2040354",
+    "kickoff": "2026-07-03 03:00",
+    "code": "周四083"
   },
   {
     "id": "M084",
@@ -952,9 +986,12 @@
     "group": null,
     "date": "2026-07-02T23:00:00Z",
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "POR",
+    "away": "CRO",
+    "status": "on_sale",
+    "mid": "2040355",
+    "kickoff": "2026-07-03 07:00",
+    "code": "周四084"
   },
   {
     "id": "M085",
@@ -962,9 +999,12 @@
     "group": null,
     "date": "2026-07-03T03:00:00Z",
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "SUI",
+    "away": "DZA",
+    "status": "on_sale",
+    "mid": "2040356",
+    "kickoff": "2026-07-03 11:00",
+    "code": "周四085"
   },
   {
     "id": "M086",
@@ -972,9 +1012,12 @@
     "group": null,
     "date": "2026-07-03T18:00:00Z",
     "venue": "NRG Stadium, Houston, TX",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "AUS",
+    "away": "EGY",
+    "status": "scheduled",
+    "mid": "2040347",
+    "kickoff": "2026-07-04 02:00",
+    "code": "周五086"
   },
   {
     "id": "M087",
@@ -982,9 +1025,12 @@
     "group": null,
     "date": "2026-07-03T22:00:00Z",
     "venue": "Lincoln Financial Field, Philadelphia, PA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ARG",
+    "away": "CPV",
+    "status": "scheduled",
+    "mid": "2040348",
+    "kickoff": "2026-07-04 06:00",
+    "code": "周五087"
   },
   {
     "id": "M088",
@@ -992,9 +1038,12 @@
     "group": null,
     "date": "2026-07-04T01:30:00Z",
     "venue": "Lumen Field, Seattle, WA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "COL",
+    "away": "GHA",
+    "status": "scheduled",
+    "mid": "2040357",
+    "kickoff": "2026-07-04 09:30",
+    "code": "周五088"
   },
   {
     "id": "M089",

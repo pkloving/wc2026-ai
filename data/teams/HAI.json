@@ -84,7 +84,48 @@
         "half_opp": 1,
         "result": "lose"
       }
-    ]
+    ],
+    "qualification_pressure": {
+      "pressure_level": "medium",
+      "pressure_text": "积分形势需根据剩余比赛结果判断",
+      "position": 4,
+      "points": 0,
+      "played": 3,
+      "remaining_matches": 0,
+      "teams_ahead": 3,
+      "teams_behind": 0,
+      "same_points_teams": 0,
+      "min_points_to_qualify": 0,
+      "next_match": null
+    },
+    "knockout_matchup": {
+      "current_position": 4,
+      "points": 0,
+      "goal_diff": -6,
+      "remaining_matches": 0,
+      "diff_to_1st": 7,
+      "diff_to_2nd": 7,
+      "target_position": "全力争前2",
+      "best_case": {
+        "best_possible_position": 4,
+        "best_possible_pts": 0,
+        "scenario": "全胜可积0分，排名已锁定"
+      },
+      "worst_case": {
+        "worst_possible_position": 4,
+        "worst_possible_pts": 0,
+        "scenario": "剩余比赛全败将停留在0分，大概率无法出线"
+      },
+      "qualification_chance": "low",
+      "knockout_potential": {
+        "would_play_description": "若以第二出线，1/8决赛可能对阵其他小组第一或成绩较好的第三名，很可能遭遇强敌",
+        "bracket_note": "第二出线的淘汰赛对手通常更强，需做好硬仗准备"
+      },
+      "strategy_notes": [
+        "排名暂时靠后，剩余比赛必须改变策略全力进攻",
+        "可能需要大比分取胜才能靠净胜球竞争出线"
+      ]
+    }
   },
-  "_updated_at": "2026-06-28T10:06:41.256Z"
+  "_updated_at": "2026-06-29T11:18:45.798Z"
 }
