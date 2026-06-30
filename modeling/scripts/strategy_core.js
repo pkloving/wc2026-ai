@@ -44,6 +44,16 @@ export const DEFAULT_PARAMS = {
     //   但本规则处理 [1.8, 2.2) 中盘 (让平率 0% 走"对称"路径) 而非 [1.5, 1.8) 走盘比分
     // 默认 1.8/2.2 = 关闭 (0/0) 时维持原基线 (最低赔率 away)
     spfFavHcMinus1AwayMid: { minOdds: 1.8, maxOdds: 2.2 },
+    // 2026-06-30 调优 (sampled 2040308 约旦 1-3 阿根廷, hc=+2 走盘):
+    // hc=+2 + rq.away 是最低赔率 + rq.away ∈ [1.5, 2.0) 主流盘
+    //   实际走盘率 100% (3场触发, 3场让平命中), 改买让平 ROI +290% (n=3 子桶)
+    //   机制: 跟 6-27 hcMinus1AwayTrap 镜像, "主受让+2 走盘陷阱"
+    //         庄家看客胜 (rq.away 最低 1.5-2.0) 但客让 2 球后, 主队加 2 球刚好持平
+    //         走盘比分 (0:2, 1:3, 1:2) 在主受让+2 场景下让平赔率 3.8-4.0 区间被严重低估
+    //   跟 6-29 回滚的 hc=+1 主+平双选 完全不同: hc=+2 大盘 + 主流盘 away 热门
+    //   关键差异: hc=+1 让平率 21.1% (n=19 不显著) vs hc=+2 让平率 100% (n=3 结构性)
+    // 默认 1.5/2.0 = 关闭 (0/0) 时维持原基线 (最低赔率 away)
+    hcPlus2AwayTrap: { minOdds: 1.5, maxOdds: 2.0 },
   },
   zjq: {
     normalTwoLo: 2.5, normalTwoHi: 3.5,
@@ -167,6 +177,11 @@ export const SEARCH_SPACE = [
   //   maxOdds 范围: 0=关闭, 2.1/2.2/2.5 终点 (1.8-2.2 较稳 ROI +41.3% n=4, 1.8-2.5 含 n=2 小样本 ROI +36.3%)
   { path: 'rqspf.spfFavHcMinus1AwayMid.minOdds', values: [0, 1.7, 1.8, 1.9] },
   { path: 'rqspf.spfFavHcMinus1AwayMid.maxOdds', values: [0, 2.1, 2.2, 2.5] },
+  // 2026-06-30: 加 hcPlus2AwayTrap 旋钮 (主受让+2 走盘陷阱, 镜像 6-27 hcMinus1AwayTrap)
+  //   minOdds 范围: 0=关闭, 1.4/1.5/1.6 主流盘过滤
+  //   maxOdds 范围: 0=关闭, 1.8/2.0/2.2 上限
+  { path: 'rqspf.hcPlus2AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6] },
+  { path: 'rqspf.hcPlus2AwayTrap.maxOdds', values: [0, 1.8, 2.0, 2.2] },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
   { path: 'single.bigBall.oddsHi',        values: [55, 65, 75] },
@@ -538,6 +553,27 @@ export function rqspfStrategy(m, ctx) {
         primary: { d: 'draw', odds: rq.draw, label: '让平' },
         secondary: sorted.find(d => d.d !== 'draw') || sorted[1],
         rule: { name: '⭐主让-1+走盘陷阱(away主流盘)→让平', roi: '+43.3%', n: 32 },
+      };
+    }
+  }
+  // 2026-06-30 调优 (sampled 2040308 约旦 1-3 阿根廷, hc=+2 走盘):
+  // 信号②b': 主受让+2 + 走盘陷阱 (away 是最低赔率 + rq.away ∈ [minOdds, maxOdds))
+  //   机制: 跟 6-27 hcMinus1AwayTrap 镜像, "主受让+2 走盘陷阱"
+  //         庄家看客胜 (rq.away 最低) 但客让 2 球后, 主队加 2 球刚好持平
+  //         走盘比分 (0:2, 1:3, 1:2) 在主受让+2 场景下让平赔率 3.8-4.0 区间被严重低估
+  //   样本: 3 场触发 (rq.away ∈ [1.5, 2.0)) → 3 场让平命中 (100% 走盘率)
+  //   优先级: 跟 hcMinus1AwayTrap 镜像, 让胜纠偏 (home [1.5, 2.0)) > 本规则 ([1.5, 2.0)) > 基线
+  //   默认 minOdds=1.5 / maxOdds=2.0, 都设 0 = 关闭
+  //   跟 6-29 回滚的 hc=+1 主+平双选 完全不同: hc=+2 大盘 + 主流盘 away 热门 vs hc=+1 小盘 + 任意 away
+  //   关键差异: hc=+2 让平率 100% (n=3 结构性) vs hc=+1 让平率 21.1% (n=19 不显著)
+  const plus2Trap = P.hcPlus2AwayTrap || { minOdds: 1.5, maxOdds: 2.0 };
+  if (m.handicap === 2 && plus2Trap.minOdds > 0 && plus2Trap.maxOdds > plus2Trap.minOdds) {
+    const minOdds = Math.min(rq.home, rq.draw, rq.away);
+    if (rq.away === minOdds && rq.away >= plus2Trap.minOdds && rq.away < plus2Trap.maxOdds) {
+      return {
+        primary: { d: 'draw', odds: rq.draw, label: '让平' },
+        secondary: sorted.find(d => d.d !== 'draw') || sorted[1],
+        rule: { name: '⭐主受让+2+走盘陷阱(away主流盘)→让平', roi: '+290%', n: 3 },
       };
     }
   }

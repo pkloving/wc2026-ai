@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T07:06:43.222Z",
+  "generated_at": "2026-06-30T10:07:18.809Z",
   "total": 144,
   "by_status": {
     "scheduled": [
@@ -3902,7 +3902,7 @@
           "away": 1.63
         },
         "is_finished_odds": true,
-        "is_finished_odds_marked_at": null,
+        "is_finished_odds_marked_at": "2026-06-30T10:00:00.000Z",
         "scraped_at": "2026-06-30T07:05:08.648Z",
         "sale_status": "在售",
         "single_supported": {
@@ -3912,10 +3912,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": "1:1",
+        "final_score": "1-1",
         "odds_file": "odds/2040338.json",
         "history_file": "odds_history/2040338.json",
-        "result_file": null
+        "result_file": "results/2040338.json"
       }
     ],
     "cancelled": [],
@@ -7440,7 +7440,7 @@
           "away": 1.63
         },
         "is_finished_odds": true,
-        "is_finished_odds_marked_at": null,
+        "is_finished_odds_marked_at": "2026-06-30T10:00:00.000Z",
         "scraped_at": "2026-06-30T07:05:08.648Z",
         "sale_status": "在售",
         "single_supported": {
@@ -7450,10 +7450,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": "1:1",
+        "final_score": "1-1",
         "odds_file": "odds/2040338.json",
         "history_file": "odds_history/2040338.json",
-        "result_file": null
+        "result_file": "results/2040338.json"
       },
       {
         "mid": "2040345",
@@ -11422,7 +11422,7 @@
           "away": 1.63
         },
         "is_finished_odds": true,
-        "is_finished_odds_marked_at": null,
+        "is_finished_odds_marked_at": "2026-06-30T10:00:00.000Z",
         "scraped_at": "2026-06-30T07:05:08.648Z",
         "sale_status": "在售",
         "single_supported": {
@@ -11432,10 +11432,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": "1:1",
+        "final_score": "1-1",
         "odds_file": "odds/2040338.json",
         "history_file": "odds_history/2040338.json",
-        "result_file": null
+        "result_file": "results/2040338.json"
       }
     ],
     "2026-07-01": [

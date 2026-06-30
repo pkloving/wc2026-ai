@@ -7,7 +7,7 @@
     "away": "CPV",
     "kickoff": "2026-07-04 06:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040348",
-    "scraped_at": "2026-06-30T04:05:26.631Z",
+    "scraped_at": "2026-06-30T07:05:21.917Z",
     "sale_status": "待开售",
     "single_supported": {},
     "is_cancel": 0,
@@ -25,7 +25,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-30T04:05:26.631Z",
+    "fetched_at": "2026-06-30T07:05:21.917Z",
     "snapshot_time": null,
     "has_match_result": false,
     "spf_result": null,

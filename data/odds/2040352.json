@@ -7,7 +7,7 @@
     "away": "COD",
     "kickoff": "2026-07-02 00:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040352",
-    "scraped_at": "2026-06-30T04:05:26.452Z",
+    "scraped_at": "2026-06-30T07:05:21.795Z",
     "sale_status": "在售",
     "single_supported": {
       "HHAD": false,
@@ -90,7 +90,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-30T04:05:26.452Z",
+    "fetched_at": "2026-06-30T07:05:21.795Z",
     "snapshot_time": "2026-06-29 09:15:40",
     "has_match_result": false,
     "spf_result": null,
