@@ -6,13 +6,14 @@
     "cap": 1000,
     "unit": 2,
     "currency": "CNY",
-    "wagered": 1534,
-    "won": 671.34,
-    "spent": 862.66,
-    "remaining": 137.34,
-    "asOf": "2026-06-27",
-    "source": "wagered=APP 截图(1486 pre-today + 48 today) / won=bets.json 8 单 actualReturn 累计(536.49 + 67.68 + 67.17) / remaining=cap - (wagered - won)",
-    "note": "模拟预算上限 1000 元（每倍 2 元）。以 APP 实际数据 + bets.json 全 actualReturn 累计：wagered 1534 元（APP 1486 pre-today + 今天 48 = 8+40）、won 671.34 元（8 单 actualReturn 累计 536.49 + 67.68 + 67.17）、spent 862.66 元（净亏 = wagered - won）、remaining 137.34 元（cap - spent）。bets.json 中 06-26 APP 出票的 ~100 元（1486 - 1386）未录入明细，按 APP 总额走。仅作沙盘推演用，无任何真实交易。"
+    "wagered": 1694,
+    "won": 1017.12,
+    "spent": 676.88,
+    "remaining": 323.12,
+    "asOf": "2026-07-02",
+    "source": "wagered=APP 截图(1628 pre-today + 48 已结 + 18 长串待结) / won=bets.json 累计 (761.57 + 255.55) / spent= wagered - won / remaining=cap - spent",
+    "note": "模拟预算上限 1000 元（每注 2 元）。bets.json 累计：wagered 1694 元（pre 1628 + 48 已结 + 18 待结）、won 1017.12 元（+95.24 让球+160.31 比分 = 255.55）、spent 676.88 元、remaining 323.12 元。仅作沙盘推演用，无任何真实交易。",
+    "pendingWagered": 18
   },
   "bets": [
     {
@@ -3489,6 +3490,450 @@
       "actualReturn": 67.17,
       "result": "won",
       "note": "6 场 3×1 × 1 倍 = C(6,3)=20 注 × 2 元 = 40 元。结算：061 NOR 1:4 FRA 让+1=客胜(平 ✗) / 062 SEN 5:0 IRQ 让-2=主胜(主负 ✗) / 063 CPV 0:0 KSA 让-1=主负 ✓ / 064 URU 0:1 ESP 让+1=平 ✓ / 065-066 matches_status 仍 on_sale（未抓到 result 文件）→ 用户 APP 报 won 67.17 (ROI +67.9%)，actualReturn=67.17 同步进 budget"
+    },
+    {
+      "_id": "TICKET_20260628_SAT_067to072_MIX",
+      "_note": "截图1: 1张27注×2元=54元, 过关 3x1+5x1+6x1 (胜平负+让球混合)",
+      "league": "世界杯",
+      "kickoff": "2026-06-28",
+      "wagerType": "胜平负+让球混合",
+      "parlayTypes": [
+        "3串1",
+        "5串1",
+        "6串1"
+      ],
+      "notesCount": 27,
+      "stakePerNote": 2,
+      "totalStake": 54,
+      "picks": [
+        {
+          "code": "周六067",
+          "mid": "2040303",
+          "home": "克罗地亚",
+          "away": "加纳",
+          "wagerType": "胜平负",
+          "pick": "主胜",
+          "handicap": 0,
+          "odds": 1.85,
+          "result": "win"
+        },
+        {
+          "code": "周六068",
+          "mid": "2040304",
+          "home": "巴拿马",
+          "away": "英格兰",
+          "wagerType": "让球胜平负",
+          "pick": "+2平",
+          "handicap": 2,
+          "odds": 1.95,
+          "result": "win"
+        },
+        {
+          "code": "周六069",
+          "mid": "2040305",
+          "home": "哥伦比亚",
+          "away": "葡萄牙",
+          "wagerType": "胜平负",
+          "pick": "主负",
+          "handicap": 0,
+          "odds": 3.25,
+          "result": "loss"
+        },
+        {
+          "code": "周六070",
+          "mid": "2040306",
+          "home": "刚果(金)",
+          "away": "乌兹别克",
+          "wagerType": "胜平负",
+          "pick": "主胜",
+          "handicap": 0,
+          "odds": 1.55,
+          "result": "win"
+        },
+        {
+          "code": "周六071",
+          "mid": "2040307",
+          "home": "阿尔及利",
+          "away": "奥地利",
+          "wagerType": "胜平负",
+          "pick": "平",
+          "handicap": 0,
+          "odds": 4.5,
+          "result": "win"
+        },
+        {
+          "code": "周六072",
+          "mid": "2040308",
+          "home": "约旦",
+          "away": "阿根廷",
+          "wagerType": "让球胜平负",
+          "pick": "+2主胜",
+          "handicap": 2,
+          "odds": 1.8,
+          "result": "loss"
+        }
+      ],
+      "winningParlays": [
+        "3串1: 067+068+070 → 1.85×1.95×1.55 = 5.59倍 → $11.18",
+        "3串1: 067+068+071 → 1.85×1.95×4.50 = 16.24倍 → $32.48",
+        "3串1: 067+070+071 → 1.85×1.55×4.50 = 12.91倍 → $25.81",
+        "3串1: 068+070+071 → 1.95×1.55×4.50 = 13.60倍 → $27.20"
+      ],
+      "losingParlays": [
+        "3串1: 16 场含 069 或 072 → 全输",
+        "5串1: 6 场含 069 或 072 → 全输",
+        "6串1: 1 场含 069 输 → 输"
+      ],
+      "totalPayout": 77.83,
+      "netPayout": 23.83,
+      "result": "win",
+      "createdAt": "2026-06-28T11:48:48.000Z",
+      "_screenshotTakenAt": "2026-07-01T19:15:00+08:00"
+    },
+    {
+      "_id": "TICKET_20260628_SAT_067_068_070_071_072_BF",
+      "_note": "截图2: 2张20注×2元=40元, 过关 单关+2x1+4x1 (比分)",
+      "league": "世界杯",
+      "kickoff": "2026-06-28",
+      "wagerType": "比分",
+      "parlayTypes": [
+        "单关",
+        "2串1",
+        "4串1"
+      ],
+      "notesCount": 20,
+      "stakePerNote": 2,
+      "totalStake": 40,
+      "picks": [
+        {
+          "code": "周六067",
+          "mid": "2040303",
+          "home": "克罗地亚",
+          "away": "加纳",
+          "wagerType": "比分",
+          "pick": "2:1",
+          "odds": 6.2,
+          "result": "win",
+          "_actual": "2:1"
+        },
+        {
+          "code": "周六068",
+          "mid": "2040304",
+          "home": "巴拿马",
+          "away": "英格兰",
+          "wagerType": "比分",
+          "pick": "1:3",
+          "odds": 12,
+          "result": "loss",
+          "_actual": "0:2"
+        },
+        {
+          "code": "周六070",
+          "mid": "2040306",
+          "home": "刚果(金)",
+          "away": "乌兹别克",
+          "wagerType": "比分",
+          "pick": "1:0",
+          "odds": 7.5,
+          "result": "loss",
+          "_actual": "3:1"
+        },
+        {
+          "code": "周六071",
+          "mid": "2040307",
+          "home": "阿尔及利",
+          "away": "奥地利",
+          "wagerType": "比分",
+          "pick": "1:1",
+          "odds": 5.5,
+          "result": "loss",
+          "_actual": "3:3"
+        },
+        {
+          "code": "周六072",
+          "mid": "2040308",
+          "home": "约旦",
+          "away": "阿根廷",
+          "wagerType": "比分",
+          "pick": "1:2",
+          "odds": 9,
+          "result": "loss",
+          "_actual": "1:3"
+        }
+      ],
+      "winningParlays": [
+        "单关: 067 2:1 → 6.2倍 × $2 = $12.40"
+      ],
+      "losingParlays": [
+        "单关: 068/070/071/072 → 4 场输",
+        "2串1: 10 场含任一输 → 全输",
+        "4串1: 5 场含任一输 → 全输"
+      ],
+      "totalPayout": 12.4,
+      "netPayout": -27.6,
+      "result": "win",
+      "createdAt": "2026-06-28T11:48:48.000Z",
+      "_screenshotTakenAt": "2026-07-01T19:28:00+08:00"
+    },
+    {
+      "_id": "TICKET_20260701_WED_080_081_082_RQSPF_3X1_X4",
+      "_note": "截图1: 1张1注×倍数4×2元=8元, 过关 3x1 (让球胜平负, -1)",
+      "league": "世界杯",
+      "kickoff": "2026-07-02",
+      "wagerType": "让球胜平负",
+      "parlayTypes": [
+        "3串1"
+      ],
+      "multiplier": 4,
+      "notesCount": 1,
+      "stakePerNote": 2,
+      "totalStake": 8,
+      "picks": [
+        {
+          "code": "周三080",
+          "mid": "2040352",
+          "home": "英格兰",
+          "away": "刚果(金)",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)平",
+          "handicap": -1,
+          "odds": 3.8,
+          "result": "win",
+          "_actual": "2-1"
+        },
+        {
+          "code": "周三081",
+          "mid": "2040353",
+          "home": "比利时",
+          "away": "塞内加尔",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)主负",
+          "handicap": -1,
+          "odds": 1.65,
+          "result": "win",
+          "_actual": "2-2"
+        },
+        {
+          "code": "周三082",
+          "mid": "2040339",
+          "home": "美国",
+          "away": "波黑",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)主胜",
+          "handicap": -1,
+          "odds": 1.77,
+          "result": "win",
+          "_actual": "2-0"
+        }
+      ],
+      "parlayOdds": 11.098,
+      "theoreticalPayout": 88.78,
+      "actualPayout": 95.24,
+      "actualNote": "user 报 255.55 总和, 按理论 88.78/238.28 比例分摊",
+      "netPayout": 87.24,
+      "result": "win",
+      "createdAt": "2026-07-01T19:15:00+08:00",
+      "_screenshotTakenAt": "2026-07-01T19:15:00+08:00"
+    },
+    {
+      "_id": "TICKET_20260701_WED_080_081_082_BF_2X1_3X1",
+      "_note": "截图2: 1张20注×2元=40元, 过关 2x1+3x1 (比分, 每场2个候选)",
+      "league": "世界杯",
+      "kickoff": "2026-07-02",
+      "wagerType": "比分",
+      "parlayTypes": [
+        "2串1",
+        "3串1"
+      ],
+      "multiplier": 1,
+      "notesCount": 20,
+      "stakePerNote": 2,
+      "totalStake": 40,
+      "picks": [
+        {
+          "code": "周三080",
+          "mid": "2040352",
+          "home": "英格兰",
+          "away": "刚果(金)",
+          "wagerType": "比分",
+          "picks": [
+            {
+              "score": "1:0",
+              "odds": 5.8
+            },
+            {
+              "score": "2:1",
+              "odds": 6.5
+            }
+          ],
+          "_actual": "2:1"
+        },
+        {
+          "code": "周三081",
+          "mid": "2040353",
+          "home": "比利时",
+          "away": "塞内加尔",
+          "wagerType": "比分",
+          "picks": [
+            {
+              "score": "1:1",
+              "odds": 4.7
+            },
+            {
+              "score": "2:2",
+              "odds": 11.5
+            }
+          ],
+          "_actual": "2:2"
+        },
+        {
+          "code": "周三082",
+          "mid": "2040339",
+          "home": "美国",
+          "away": "波黑",
+          "wagerType": "比分",
+          "picks": [
+            {
+              "score": "2:1",
+              "odds": 5.3
+            },
+            {
+              "score": "3:1",
+              "odds": 6.7
+            }
+          ],
+          "_actual": "2:0"
+        }
+      ],
+      "winningParlays": [
+        "2串1: 周三080 2:1 × 周三081 2:2 → 6.5×11.5 = 74.75× → $149.50"
+      ],
+      "losingParlays": [
+        "2串1: 080+081 其它 3 场 (1:0×1:1=27.26, 1:0×2:2=66.7, 2:1×1:1=30.55)",
+        "2串1: 080+082 (4 场) 全输 — 082 实际 2:0 不在候选",
+        "2串1: 081+082 (4 场) 全输",
+        "3串1: 8 场 (2³) 全输 — 082 实际 2:0 不在候选"
+      ],
+      "theoreticalPayout": 149.5,
+      "actualPayout": 160.31,
+      "actualNote": "user 报 255.55 总和, 按理论 149.50/238.28 比例分摊 (差 17.27 元, 推测赔率截取时点略高)",
+      "netPayout": 120.31,
+      "result": "win",
+      "createdAt": "2026-07-01T19:29:00+08:00",
+      "_screenshotTakenAt": "2026-07-01T19:28:00+08:00"
+    },
+    {
+      "_id": "TICKET_20260701_LONG_080to087_RQSPF_SPF_7X1_8X1_PENDING",
+      "_note": "截图3: 长串 待结算, 7x1+8x1 至少 8 场 (周三080-周五087, 截图截断)",
+      "league": "世界杯",
+      "kickoff": "2026-07-02",
+      "wagerType": "胜平负+让球混合",
+      "parlayTypes": [
+        "7串1",
+        "8串1"
+      ],
+      "multiplier": 1,
+      "notesCount": 9,
+      "_notesCountCalc": "8 场: C(8,7)=8 + C(8,8)=1 = 9 注; 9 场: 36+9=45 注 — 需用户确认",
+      "stakePerNote": 2,
+      "_totalStake": 18,
+      "_totalStakeIf9": 90,
+      "picks": [
+        {
+          "code": "周三080",
+          "mid": "2040352",
+          "home": "英格兰",
+          "away": "刚果(金)",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)平",
+          "handicap": -1,
+          "result": "win",
+          "_actual": "2-1"
+        },
+        {
+          "code": "周三081",
+          "mid": "2040353",
+          "home": "比利时",
+          "away": "塞内加尔",
+          "wagerType": "胜平负",
+          "pick": "平",
+          "handicap": 0,
+          "result": "loss",
+          "_actual": "2-2 主胜 spf=home"
+        },
+        {
+          "code": "周三082",
+          "mid": "2040339",
+          "home": "美国",
+          "away": "波黑",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)主胜",
+          "handicap": -1,
+          "result": "win",
+          "_actual": "2-0"
+        },
+        {
+          "code": "周四083",
+          "mid": "2040354",
+          "home": "西班牙",
+          "away": "奥地利",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)主负",
+          "handicap": -1,
+          "result": "pending",
+          "_kickoff": "2026-07-03 03:00"
+        },
+        {
+          "code": "周四084",
+          "mid": "2040355",
+          "home": "葡萄牙",
+          "away": "克罗地亚",
+          "wagerType": "让球胜平负",
+          "pick": "(-1)主负",
+          "handicap": -1,
+          "result": "pending",
+          "_kickoff": "2026-07-03 07:00"
+        },
+        {
+          "code": "周四085",
+          "mid": "2040356",
+          "home": "瑞士",
+          "away": "阿尔及利亚",
+          "wagerType": "胜平负",
+          "pick": "主胜",
+          "handicap": 0,
+          "result": "pending",
+          "_kickoff": "2026-07-03 11:00"
+        },
+        {
+          "code": "周五086",
+          "mid": "2040347",
+          "home": "澳大利亚",
+          "away": "埃及",
+          "wagerType": "让球胜平负",
+          "pick": "(+1)主胜",
+          "handicap": 1,
+          "result": "pending",
+          "_kickoff": "2026-07-04 02:00"
+        },
+        {
+          "code": "周五087",
+          "mid": "2040348",
+          "home": "阿根廷",
+          "away": "佛得角",
+          "wagerType": "让球胜平负",
+          "pick": "(-2)主胜",
+          "handicap": -2,
+          "result": "pending",
+          "_kickoff": "2026-07-04 06:00"
+        }
+      ],
+      "_pendingPicks": [
+        "可能还有 周五088 (哥伦比亚 vs 加纳, 2026-07-04 09:30) — 需用户确认"
+      ],
+      "result": "pending",
+      "createdAt": "2026-07-01T19:46:00+08:00",
+      "_screenshotTakenAt": "2026-07-01T19:46:00+08:00"
     }
   ]
 }
