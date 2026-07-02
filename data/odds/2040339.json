@@ -17,7 +17,8 @@
       "HAD": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true,
+    "is_finished_odds_marked_at": "2026-07-02T04:00:00.000Z"
   },
   "odds": {
     "spf_latest": {

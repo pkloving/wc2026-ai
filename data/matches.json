@@ -963,13 +963,14 @@
     "stage": "r32",
     "group": null,
     "date": "2026-07-02T00:00:00Z",
-    "venue": "SoFi Stadium, Los Angeles, CA",
+    "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "USA",
     "away": "BIH",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040339",
     "kickoff": "2026-07-02 08:00",
-    "code": "周三082"
+    "code": "周三082",
+    "final_score": "2-0"
   },
   {
     "id": "M083",

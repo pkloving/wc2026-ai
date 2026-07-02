@@ -1,0 +1,39 @@
+{
+  "matchId": "2040339",
+  "code": "周三082",
+  "league": "世界杯",
+  "home": "USA",
+  "away": "BIH",
+  "kickoff": "2026-07-02 08:00",
+  "venue": "Levi's Stadium, Santa Clara, CA",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 0,
+  "final_score": "2-0",
+  "halfTime": "1-0",
+  "scorers": [
+    { "team": "USA", "player": "弗拉林·巴洛贡 (Folarin Balogun)", "minute": "45'", "type": "goal" },
+    { "team": "USA", "player": "马利克·蒂尔曼 (Malik Tillman)", "minute": "82'", "type": "goal", "detail": "任意球" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "2:0",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "胜胜",
+  "_fromSporttery": false,
+  "_source": "WebSearch 央广网 + 新浪体育 + 球迷屋 + 今日头条 多源验证",
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-02T04:00:00.000Z",
+  "_note": "常规时间 USA 2-0 BIH 完赛，巴洛贡 45' 推射破门 → 蒂尔曼 82' 任意球破门，十人美国（巴洛贡 64' 直红）晋级 16 强；HAFU=H:H（半场主胜 + 全场主胜）→ bqcResult=胜胜；HHAD=H（margin +2 + handicap -1 = +1 让胜）；halfTime 1-0 / scorers 2 条已从 央广网 + 新浪体育 + 球迷屋 + 今日头条 WebSearch 多源验证；下轮美国 vs 比利时"
+}

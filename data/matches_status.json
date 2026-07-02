@@ -3732,7 +3732,7 @@
       "home": "USA",
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.22,
         "draw": 4.91,
@@ -3744,10 +3744,10 @@
         "draw": 3.75,
         "away": 3.36
       },
-      "is_finished_odds": false,
-      "is_finished_odds_marked_at": null,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-07-02T04:00:00.000Z",
       "scraped_at": "2026-07-02T01:07:49.433Z",
-      "sale_status": "在售",
+      "sale_status": "已完赛",
       "single_supported": {
         "HHAD": false,
         "HAFU": true,
@@ -3755,10 +3755,10 @@
         "TTG": true,
         "HAD": true
       },
-      "final_score": null,
+      "final_score": "2-0",
       "odds_file": "odds/2040339.json",
       "history_file": "odds_history/2040339.json",
-      "result_file": null
+      "result_file": "results/2040339.json"
     },
     {
       "mid": "2040354",
