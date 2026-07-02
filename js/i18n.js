@@ -327,6 +327,7 @@ const ZH = {
   'match.predAwayWin': '客胜',
   'match.predDraw': '平局',
   'match.penaltyScore': '点球 {h}-{a}',
+  'match.extraTime': '加时 {score}',
 
   // 关于
   'about.kicker': 'About',
@@ -718,6 +719,7 @@ const EN = {
   'match.predAwayWin': 'Away win',
   'match.predDraw': 'Draw',
   'match.penaltyScore': 'Pens {h}-{a}',
+  'match.extraTime': 'ET {score}',
 
   'about.kicker': 'About',
   'about.title': 'About this site',

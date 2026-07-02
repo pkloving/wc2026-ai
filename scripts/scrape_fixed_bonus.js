@@ -241,11 +241,11 @@ function parseMatchResultList(apiData) {
 
 // 用 sporttery 赛果写/更新 data/results/<mid>.json
 // 幂等：已有完整 halfTime+scorers → 保留（这是手动维护的数据）
-function writeResultFromApi(mid, result) {
+function writeResultFromApi(mid, result, { dryRun = false } = {}) {
   if (!result || result.homeScore === null || result.awayScore === null) {
     return { updated: false, reason: 'no_score' };
   }
-  if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
+  if (!dryRun && !fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
   const resultFile = path.join(RESULTS_DIR, `${mid}.json`);
 
   let existing = null;
@@ -259,8 +259,8 @@ function writeResultFromApi(mid, result) {
     if (existing.homeScore !== result.homeScore || existing.awayScore !== result.awayScore) {
       existing.homeScore = result.homeScore;
       existing.awayScore = result.awayScore;
-      fs.writeFileSync(resultFile, JSON.stringify(existing, null, 2), 'utf8');
-      return { updated: true, score: `${result.homeScore}:${result.awayScore}`, mode: 'sync_score' };
+      if (!dryRun) fs.writeFileSync(resultFile, JSON.stringify(existing, null, 2), 'utf8');
+      return { updated: true, score: `${result.homeScore}:${result.awayScore}`, mode: 'sync_score', dryRun };
     }
     return { updated: false, reason: 'manual_data_exists' };
   }
@@ -279,8 +279,8 @@ function writeResultFromApi(mid, result) {
     _totalGoals: result.totalGoals,
   };
 
-  fs.writeFileSync(resultFile, JSON.stringify(entry, null, 2), 'utf8');
-  return { updated: true, score: `${result.homeScore}:${result.awayScore}`, mode: 'new' };
+  if (!dryRun) fs.writeFileSync(resultFile, JSON.stringify(entry, null, 2), 'utf8');
+  return { updated: true, score: `${result.homeScore}:${result.awayScore}`, mode: 'new', dryRun };
 }
 
 async function fetchMatch(mid) {
@@ -453,9 +453,17 @@ async function main() {
 
   const statusDoc = JSON.parse(fs.readFileSync(STATUS_PATH, 'utf8'));
   const wcMatches = statusDoc.matches.filter(m => m.league === '世界杯');
-  const MATCHES = wcMatches.map(m => m.mid);
+  // === Bug fix 2026-07-01: 过滤掉 2022 卡塔尔世界杯的脏 mid (2022001-2022064) ===
+  // 2026 世界杯的 sporttery mid 全部是 2040xxx 开头，2022 卡塔尔是 2022xxx 开头
+  // 不剔的话，R-014 跳过分支会打印一堆"result 缺失"警告（卡塔尔那 48 场我们根本不关心）
+  const wcMatches2026 = wcMatches.filter(m => typeof m.mid === 'string' && m.mid.startsWith('2040'));
+  const skipped2022 = wcMatches.length - wcMatches2026.length;
+  if (skipped2022 > 0) {
+    console.log(`[sanity] 过滤掉 ${skipped2022} 场 2022 卡塔尔世界杯脏 mid（mid 不以 2040 开头）`);
+  }
+  const MATCHES = wcMatches2026.map(m => m.mid);
   const MAIN_LIST = {};
-  for (const m of wcMatches) {
+  for (const m of wcMatches2026) {
     MAIN_LIST[m.mid] = {
       code: m.code, home: m.home, away: m.away,
       kickoff: m.kickoff, league: m.league, status: m.status,
@@ -465,8 +473,6 @@ async function main() {
     };
   }
   const statusByMid = new Map(statusDoc.matches.map((m) => [m.mid, m]));
-
-  console.log(`Scraping ${MATCHES.length} matches...`);
 
   // 跳过 is_finished_odds=true 的 mid
   const finishedOddsMids = new Set();
@@ -490,8 +496,25 @@ async function main() {
     finished_odds: 0, result_written: 0, result_skipped: 0
   };
 
+  // === Bug fix 2026-07-01: DRY_RUN 必须真的不写盘 ===
+  // 之前主循环没检查 DRY_RUN，导致 dry-run 模式下也会写 odds/odds_history/results/matches_status
+  // → 后续 real run 看到 is_finished_odds=true 就永久跳过 result 写入
+  const WRITABLE = !DRY_RUN;
+
+  console.log(`Scraping ${MATCHES.length} matches...`);
+
   for (const mid of MATCHES) {
     if (finishedOddsMids.has(mid)) {
+      // === Bug fix 2026-07-01: R-014 跳过时检查 result 文件是否齐全 ===
+      // 之前 is_finished_odds=true 一刀切跳过整个 mid，result 文件缺失就永远补不上
+      if (WRITABLE) {
+        const resFile = path.join(RESULTS_DIR, `${mid}.json`);
+        if (!fs.existsSync(resFile)) {
+          console.warn(`  ⚠️  ${mid}: is_finished_odds=true 但 data/results/${mid}.json 缺失；odds 文件里没缓存 matchResultList，无法自动补，需手工补（走 .trae/skills/fetch-extra-time-penalty/SKILL.md）`);
+        } else {
+          console.warn(`  ✓ ${mid}: result file OK`);
+        }
+      }
       stats.finished_odds += 1;
       continue;
     }
@@ -569,7 +592,9 @@ async function main() {
         half_time_result: parsedResult?.halfTimeResult || null,
       }
     };
-    fs.writeFileSync(path.join(ODDS_DIR, `${mid}.json`), JSON.stringify(fullData, null, 2), 'utf8');
+    if (WRITABLE) {
+      fs.writeFileSync(path.join(ODDS_DIR, `${mid}.json`), JSON.stringify(fullData, null, 2), 'utf8');
+    }
 
     // 写入 odds_history/<mid>.json
     const histFile = path.join(HIST_DIR, `${mid}.json`);
@@ -592,7 +617,7 @@ async function main() {
     if (bf && Object.keys(bf).length > 0) { const entry = { time: now, odds: bf }; if (pushOrKeepLatest(hist.bf_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true; }
     if (zjqs && Object.keys(zjqs).length > 0) { const entry = { time: now, odds: zjqs }; if (pushOrKeepLatest(hist.zjq_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true; }
     if (bqc && Object.keys(bqc).length > 0) { const entry = { time: now, odds: bqc }; if (pushOrKeepLatest(hist.bqc_history, entry, (a, b) => sameDict(a.odds, b.odds))) anyAppended = true; }
-    fs.writeFileSync(histFile, JSON.stringify(hist, null, 2), 'utf8');
+    if (WRITABLE) fs.writeFileSync(histFile, JSON.stringify(hist, null, 2), 'utf8');
     if (anyAppended) stats.appended += 1; else stats.unchanged += 1;
 
     // 更新 matches_status.json
@@ -621,9 +646,9 @@ async function main() {
     console.log(`  ${histTag}${finishedTag} ${mid} (${list.code}): spf=${spfStr} h=${odds.handicap}${resultLog}`);
   }
 
-  fs.writeFileSync(STATUS_PATH, JSON.stringify(statusDoc, null, 2), 'utf8');
+  if (WRITABLE) fs.writeFileSync(STATUS_PATH, JSON.stringify(statusDoc, null, 2), 'utf8');
   console.log(`\nUpdated matches_status.json`);
-  console.log(`Done.  appended=${stats.appended}  unchanged=${stats.unchanged}  finished_odds=${stats.finished_odds}  scheduled=${stats.scheduled}  error=${stats.error}  result_written=${stats.result_written}  result_skipped=${stats.result_skipped}`);
+  console.log(`Done.  appended=${stats.appended}  unchanged=${stats.unchanged}  finished_odds=${stats.finished_odds}  scheduled=${stats.scheduled}  error=${stats.error}  result_written=${stats.result_written}  result_skipped=${stats.result_skipped}${WRITABLE ? '' : '  [DRY RUN]'}`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

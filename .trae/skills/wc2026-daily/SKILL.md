@@ -194,6 +194,22 @@ node scripts/build_teams_data.js
   4. **每个 mid 最多拉 2 次**：完赛前 last update + 完赛后定格
 - **兜底**：即便 status 字段被改回（如手动重置），`odds/<mid>.json` 的 `is_finished_odds=true` 仍会跳过该 mid
 
+**R-014 跳过分支的踩坑（2026-07-01 修复）**：
+
+1. **result 缺失检测**：`is_finished_odds=true` 跳过时，先 `fs.existsSync(data/results/<mid>.json)`
+   - 缺失：打 `⚠️ ${mid}: ...缺失` 警告，**不写盘**（odds 文件里没缓存 matchResultList，sporttery 5日窗口外补不回来，需手工补 → 走 `.trae/skills/fetch-extra-time-penalty/SKILL.md`）
+   - 存在：打 `✓ ${mid}: result file OK`
+2. **2022 卡塔尔脏 mid 过滤**：`data/matches_status.json` 里有 49 个 2022 卡塔尔世界杯的脏数据（mid 2022001-2022064，code 2022-A1~2022-H6 + 1 no-mid），league 字段都是"世界杯"
+   - 不剔的话，R-014 跳过分支会打印一堆"result 缺失"警告（48 场卡塔尔我们根本不关心，污染日志）
+   - 修复：MATCHES 数组构造时 `filter(m => typeof m.mid === 'string' && m.mid.startsWith('2040'))`
+   - 2026 世界杯的 sporttery mid 全部是 2040xxx 开头（卡塔尔是 2022xxx）
+3. **M077 (CIV vs NOR) 案例**：2026-07-01 完赛 1:2（哈兰德 86' 绝杀），kickoff 2026-07-01 01:00
+   - 5日窗口外（API 当日 6:34 才拉），`odds/2040345.json` 已写但 `matchResultList` 没缓存
+   - 走 `fetch-extra-time-penalty` skill 手工补 result 文件 → `data/results/2040345.json`（scorers 3 条 + halfTime + rqspfResult=draw + actualWinner=away + wentToPenalties=false）
+4. **DRY_RUN 误写盘**：之前主循环没检查 `DRY_RUN`，导致 `--dry-run` 也会写 odds/odds_history/results/matches_status
+   - 后果：dry-run 看到 `matchResultList` → 写真 result → 下次 real run 看到 `is_finished_odds=true` → 永远跳过 result 写入
+   - 修复：加 `const WRITABLE = !DRY_RUN`，wrap 所有 `fs.writeFileSync` + `writeResultFromApi` 调用
+
 **两条抓取路径，按场景二选一**：
 
 - **API 批量抓**（首选，也是 Step 1 的完赛结果数据源）：`node scripts/scrape_fixed_bonus.js`

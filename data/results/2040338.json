@@ -1,13 +1,35 @@
 {
   "matchId": "2040338",
+  "code": "周一076",
+  "league": "世界杯",
+  "home": "NED",
+  "away": "MAR",
+  "kickoff": "2026-06-30 09:00",
+  "venue": "Estadio Azteca, Mexico City",
+  "stage": "r32",
   "homeScore": 1,
   "awayScore": 1,
+  "final_score": "1-1",
   "halfTime": null,
   "scorers": [],
-  "wentToPenalties": false,
-  "penaltyScore": null,
+  "wentToPenalties": true,
+  "penaltyScore": { "home": 2, "away": 3 },
+  "extraTime": "1-1",
+  "actualWinner": "away",
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "1:1",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "负平",
   "_fromSporttery": true,
   "_halfTimeResult": "draw",
   "_spfResult": "draw",
-  "_totalGoals": "2"
+  "_hhadResult": "D",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-01T00:00:00.000Z",
+  "_note": "加时 1-1、点球 2-3（MAR 胜，橙衣军团悲情出局）；halfTime/scorers 待 FIFA/直播吧 补；HAFU=A:D（半场客胜+全场平）→ bqcResult=负平；HHAD=D（-1让球后打平）"
 }

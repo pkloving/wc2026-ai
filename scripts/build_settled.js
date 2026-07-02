@@ -15,8 +15,14 @@ for (const m of statusDoc.matches) {
 
   // Get result file
   let result = null;
-  const resultFile = path.join(DATA_DIR, 'results', `${mid}.json`);
-  if (fs.existsSync(resultFile)) {
+  // mid 可能为 null（淘汰赛场次 mid 抓不到），fallback 到 matchId / code 文件名
+  const candidateNames = [mid, m.matchId, m.code, m.id].filter(Boolean).map((n) => String(n).replace(/[^A-Za-z0-9_\-]/g, ''));
+  let resultFile = null;
+  for (const name of candidateNames) {
+    const p = path.join(DATA_DIR, 'results', `${name}.json`);
+    if (fs.existsSync(p)) { resultFile = p; break; }
+  }
+  if (resultFile) {
     try {
       const r = JSON.parse(fs.readFileSync(resultFile, 'utf8'));
       result = {
@@ -26,6 +32,8 @@ for (const m of statusDoc.matches) {
         scorers_count: (r.scorers || []).length,
         wentToPenalties: r.wentToPenalties || false,
         penaltyScore: r.penaltyScore || null,
+        extraTime: r.extraTime || null,
+        actualWinner: r.actualWinner || null,
       };
     } catch (e) { /* ignore */ }
   }

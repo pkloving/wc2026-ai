@@ -1,0 +1,67 @@
+{
+  "matchId": "2040353",
+  "code": "周三081",
+  "league": "世界杯",
+  "home": "BEL",
+  "away": "SEN",
+  "kickoff": "2026-07-02 04:00",
+  "venue": "MetLife Stadium, East Rutherford, NJ",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 2,
+  "final_score": "3-2",
+  "halfTime": "0-1",
+  "scorers": [
+    {
+      "team": "SEN",
+      "player": "迪亚拉 (Diallo)",
+      "minute": "25'",
+      "type": "goal"
+    },
+    {
+      "team": "SEN",
+      "player": "伊斯梅拉·萨尔 (Ismaïla Sarr)",
+      "minute": "67'",
+      "type": "goal"
+    },
+    {
+      "team": "BEL",
+      "player": "卢卡库 (Romelu Lukaku)",
+      "minute": "85'",
+      "type": "goal"
+    },
+    {
+      "team": "BEL",
+      "player": "尤里·蒂莱曼斯 (Youri Tielemans)",
+      "minute": "90+5'",
+      "type": "goal"
+    },
+    {
+      "team": "BEL",
+      "player": "尤里·蒂莱曼斯 (Youri Tielemans)",
+      "minute": "125'",
+      "type": "goal",
+      "detail": "12码点球"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": "3-2",
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "3:2",
+    "other": null
+  },
+  "zjqResult": "5",
+  "bqcResult": "负胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "home",
+  "_hhadResult": "D",
+  "_totalGoals": "5",
+  "_enrichedAt": "2026-07-02T09:00:00.000Z",
+  "_note": "常规时间 BEL 2-2 SEN 战平，加时赛 3-2 比利时绝杀晋级 16 强；迪亚拉 25' 补射破门 → 萨尔 67' 单刀扩大 → 卢卡库 85' 抢点扳回 → 蒂莱曼斯 90+5' 头球绝平 → 蒂莱曼斯 125' 12码点球压哨绝杀（让二追三史诗级翻盘，欧洲红魔命硬晋级）；HAFU=A:H（半场客胜 + 全场主胜）→ bqcResult=负胜；HHAD=D（margin +1 + handicap -1 = 0 让平）；halfTime 0-1 / scorers 5 条已从 CCTV + 网易 + 头条 + 直播吧 WebSearch 验证补齐（125' 点球由 网易 L0QLG6FS0552NUIR 战报 + 央视网确认）"
+}

@@ -838,14 +838,18 @@
   },
   {
     "id": "M073",
+    "mid": null,
     "stage": "r32",
     "group": null,
     "date": "2026-06-28T19:00:00Z",
     "venue": "Levi's Stadium, Santa Clara, CA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "in_progress",
-    "_note": "已开赛 24h+ (6-29 03:00 CST), sporttery 5日窗口外 (businessDate 2026-06-28) 暂未抓到 mid; 需 chrome-devtools-mcp 历史赛程 或 sporttery 历史接口补 mid 配对"
+    "home": "RSA",
+    "away": "CAN",
+    "status": "finished",
+    "code": "周一073",
+    "kickoff": "2026-06-29 03:00",
+    "final_score": "0-1",
+    "_note": "sporttery 5日窗口外 + mid null (2040256 实际是 M046 ENG vs GHA 的 mid)；result 用 m.id='M073' 兜底查 data/results/M073.json"
   },
   {
     "id": "M074",
@@ -897,7 +901,7 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "CIV",
     "away": "NOR",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040345",
     "kickoff": "2026-07-01 01:00",
     "code": "周二077"
@@ -910,7 +914,7 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "FRA",
     "away": "SWE",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040346",
     "kickoff": "2026-07-01 05:00",
     "code": "周二078"
@@ -923,7 +927,7 @@
     "venue": "BMO Field, Toronto",
     "home": "MEX",
     "away": "ECU",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040351",
     "kickoff": "2026-07-01 09:00",
     "code": "周二079"
@@ -1051,9 +1055,11 @@
     "group": null,
     "date": "2026-07-04T17:00:00Z",
     "venue": "Levi's Stadium, Santa Clara, CA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "CAN",
+    "away": "MAR",
+    "status": "scheduled",
+    "code": "周六089",
+    "kickoff": "2026-07-05 01:00"
   },
   {
     "id": "M090",

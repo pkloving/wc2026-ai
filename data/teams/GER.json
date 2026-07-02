@@ -99,17 +99,7 @@
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M075",
-        "mid": "2040344",
-        "date": "2026-06-29T20:30:00Z",
-        "opponent_code": "PAR",
-        "opponent_name": "巴拉圭",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Gillette Stadium, Foxborough, MA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -140,5 +130,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-29T11:18:45.796Z"
+  "_updated_at": "2026-07-01T10:58:53.092Z"
 }

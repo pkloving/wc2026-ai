@@ -1,0 +1,38 @@
+{
+  "matchId": "2040351",
+  "code": "周二079",
+  "league": "世界杯",
+  "home": "MEX",
+  "away": "ECU",
+  "kickoff": "2026-07-01 09:00",
+  "venue": "Estadio Azteca, Mexico City",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 0,
+  "final_score": "2-0",
+  "halfTime": "2-0",
+  "scorers": [
+    { "team": "MEX", "player": "基尼奥内斯 (Germán Quiñones)", "minute": "22'", "type": "goal" },
+    { "team": "MEX", "player": "劳尔·希门尼斯 (Raúl Jiménez)", "minute": "31'", "type": "goal" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "2:0",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "胜胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-01T15:00:00.000Z",
+  "_note": "常规时间 MEX 2-0 ECU 完赛，基尼奥内斯 22' 长途奔袭破门 → 31' 助攻希门尼斯扩大比分，MEX 半场即 2-0 锁定胜局，等 40 年再拿淘汰赛胜利；HAFU=H:H（半场主胜 + 全场主胜）→ bqcResult=胜胜；HHAD=H（margin +2 + handicap -1 = +1 让胜）；halfTime 2-0 / scorers 2 条已从 直播吧 + 头条 WebSearch 验证补齐"
+}

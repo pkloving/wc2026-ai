@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T11:18:45.495Z",
-  "total_matches": 143,
+  "generated_at": "2026-07-01T10:58:52.989Z",
+  "total_matches": 144,
   "matches": [
     {
       "mid": "2040145",
@@ -348,7 +348,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -538,7 +540,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -728,7 +732,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -918,7 +924,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -1095,7 +1103,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -1285,7 +1295,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -1475,7 +1487,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -1665,7 +1679,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -1813,7 +1829,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2003,7 +2021,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2193,7 +2213,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2383,7 +2405,9 @@
         },
         "scorers_count": 6,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2560,7 +2584,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2750,7 +2776,9 @@
         },
         "scorers_count": 1,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -2940,7 +2968,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -3130,7 +3160,9 @@
         },
         "scorers_count": 4,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -3320,7 +3352,9 @@
         },
         "scorers_count": 4,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -3497,7 +3531,9 @@
         },
         "scorers_count": 5,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -3687,7 +3723,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -3877,7 +3915,9 @@
         },
         "scorers_count": 4,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -4067,7 +4107,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -4257,7 +4299,9 @@
         },
         "scorers_count": 6,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -4447,7 +4491,9 @@
         },
         "scorers_count": 1,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -4637,7 +4683,9 @@
         },
         "scorers_count": 4,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -5787,7 +5835,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -5977,7 +6027,9 @@
         },
         "scorers_count": 5,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -6167,7 +6219,9 @@
         },
         "scorers_count": 6,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -6357,7 +6411,9 @@
         },
         "scorers_count": 1,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -6547,7 +6603,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -6737,7 +6795,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -6914,7 +6974,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -7104,7 +7166,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -7294,7 +7358,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -7484,7 +7550,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -7661,7 +7729,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -7851,7 +7921,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8028,7 +8100,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8218,7 +8292,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8408,7 +8484,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8598,7 +8676,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8788,7 +8868,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -8965,7 +9047,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -9155,7 +9239,9 @@
         },
         "scorers_count": 1,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -9345,7 +9431,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -9522,7 +9610,9 @@
         },
         "scorers_count": 4,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -9699,7 +9789,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -9889,7 +9981,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -10079,7 +10173,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -10269,7 +10365,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -10459,7 +10557,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -10649,7 +10749,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -10839,7 +10941,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11029,7 +11133,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11219,7 +11325,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11409,7 +11517,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11586,7 +11696,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11763,7 +11875,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -11953,7 +12067,9 @@
         },
         "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -12143,7 +12259,9 @@
         },
         "scorers_count": 5,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -12333,7 +12451,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -12523,7 +12643,9 @@
         },
         "scorers_count": 5,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -12700,7 +12822,9 @@
         },
         "scorers_count": 5,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -12890,7 +13014,9 @@
         },
         "scorers_count": 1,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13080,7 +13206,9 @@
         },
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13257,7 +13385,9 @@
         },
         "scorers_count": 6,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13447,7 +13577,9 @@
         },
         "scorers_count": 2,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13621,7 +13753,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13808,7 +13942,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -13995,7 +14131,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -14182,7 +14320,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -14356,7 +14496,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -14543,7 +14685,9 @@
         "half": null,
         "scorers_count": 0,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
       },
       "meta": {
         "history_points": {
@@ -14556,6 +14700,29 @@
       }
     },
     {
+      "mid": null,
+      "code": "周一073",
+      "league": "世界杯",
+      "home": "RSA",
+      "away": "CAN",
+      "kickoff": "2026-06-29 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": {
+        "home": 0,
+        "away": 1,
+        "half": null,
+        "scorers_count": 1,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
+      "meta": {
+        "history_points": null
+      }
+    },
+    {
       "mid": "2040337",
       "code": "周一074",
       "league": "世界杯",
@@ -14563,64 +14730,64 @@
       "away": "JPN",
       "kickoff": "2026-06-30 01:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
-          "home": 1.49,
+          "home": 1.52,
           "draw": 3.72,
-          "away": 5.28
+          "away": 4.95
         },
         "last": {
-          "home": 1.49,
+          "home": 1.52,
           "draw": 3.72,
-          "away": 5.28
+          "away": 4.95
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
           "handicap": -1,
-          "home": 2.71,
-          "draw": 3.15,
-          "away": 2.26
+          "home": 2.89,
+          "draw": 3.04,
+          "away": 2.2
         },
         "last": {
           "handicap": -1,
-          "home": 2.71,
-          "draw": 3.15,
-          "away": 2.26
+          "home": 2.89,
+          "draw": 3.04,
+          "away": 2.2
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
           "odds": {
             "05:00": 90,
             "平其它": 175,
-            "胜其它": 50,
+            "胜其它": 60,
             "01:00": 7.25,
             "05:02": 90,
             "05:01": 80,
             "负其它": 175,
-            "02:04": 150,
+            "02:04": 125,
             "02:05": 400,
             "02:02": 12,
-            "02:03": 38,
+            "02:03": 32,
             "02:00": 7.85,
-            "02:01": 6,
+            "02:01": 5.8,
             "03:03": 40,
-            "03:01": 8.75,
+            "03:01": 8.55,
             "03:02": 15,
-            "03:00": 15,
+            "03:00": 18,
             "00:01": 15,
             "00:00": 11,
             "00:03": 115,
             "00:02": 33,
             "00:05": 500,
             "00:04": 300,
-            "04:02": 42,
+            "04:02": 35,
             "04:01": 28,
-            "04:00": 31,
+            "04:00": 37,
             "01:02": 16,
             "01:01": 7.5,
             "01:04": 175,
@@ -14632,30 +14799,30 @@
           "odds": {
             "05:00": 90,
             "平其它": 175,
-            "胜其它": 50,
+            "胜其它": 60,
             "01:00": 7.25,
             "05:02": 90,
             "05:01": 80,
             "负其它": 175,
-            "02:04": 150,
+            "02:04": 125,
             "02:05": 400,
             "02:02": 12,
-            "02:03": 38,
+            "02:03": 32,
             "02:00": 7.85,
-            "02:01": 6,
+            "02:01": 5.8,
             "03:03": 40,
-            "03:01": 8.75,
+            "03:01": 8.55,
             "03:02": 15,
-            "03:00": 15,
+            "03:00": 18,
             "00:01": 15,
             "00:00": 11,
             "00:03": 115,
             "00:02": 33,
             "00:05": 500,
             "00:04": 300,
-            "04:02": 42,
+            "04:02": 35,
             "04:01": 28,
-            "04:00": 31,
+            "04:00": 37,
             "01:02": 16,
             "01:01": 7.5,
             "01:04": 175,
@@ -14663,17 +14830,20 @@
             "01:05": 400
           }
         },
-        "result": null
+        "result": {
+          "score": "2:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
             "0": 11,
-            "1": 4.9,
-            "2": 3.45,
-            "3": 3.75,
-            "4": 5.05,
-            "5": 9.5,
+            "1": 5,
+            "2": 3.55,
+            "3": 3.7,
+            "4": 4.95,
+            "5": 9,
             "6": 17,
             "7+": 25
           }
@@ -14681,54 +14851,63 @@
         "last": {
           "odds": {
             "0": 11,
-            "1": 4.9,
-            "2": 3.45,
-            "3": 3.75,
-            "4": 5.05,
-            "5": 9.5,
+            "1": 5,
+            "2": 3.55,
+            "3": 3.7,
+            "4": 4.95,
+            "5": 9,
             "6": 17,
             "7+": 25
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
           "odds": {
             "胜胜": 2.5,
-            "胜平": 14.5,
+            "胜平": 13.5,
             "胜负": 29,
             "平胜": 4.1,
-            "平平": 5.6,
-            "平负": 10.5,
+            "平平": 5.7,
+            "平负": 11,
             "负胜": 19,
-            "负平": 14.5,
-            "负负": 9
+            "负平": 13.5,
+            "负负": 9.15
           }
         },
         "last": {
           "odds": {
             "胜胜": 2.5,
-            "胜平": 14.5,
+            "胜平": 13.5,
             "胜负": 29,
             "平胜": 4.1,
-            "平平": 5.6,
-            "平负": 10.5,
+            "平平": 5.7,
+            "平负": 11,
             "负胜": 19,
-            "负平": 14.5,
-            "负负": 9
+            "负平": 13.5,
+            "负负": 9.15
           }
         },
         "result": null
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 1,
+        "half": null,
+        "scorers_count": 0,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": null
+      },
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -14740,7 +14919,7 @@
       "away": "PAR",
       "kickoff": "2026-06-30 04:30",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.22,
@@ -14752,7 +14931,7 @@
           "draw": 5,
           "away": 9.1
         },
-        "result": null
+        "result": "draw"
       },
       "rqspf": {
         "initial": {
@@ -14767,7 +14946,7 @@
           "draw": 4.05,
           "away": 3.44
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -14777,20 +14956,20 @@
             "胜其它": 24,
             "01:00": 7.2,
             "05:02": 60,
-            "05:01": 40,
+            "05:01": 35,
             "负其它": 350,
             "02:04": 350,
             "02:05": 800,
-            "02:02": 23,
+            "02:02": 24,
             "02:03": 90,
             "02:00": 5.5,
             "02:01": 7.25,
-            "03:03": 70,
-            "03:01": 7.25,
-            "03:02": 25,
-            "03:00": 7,
+            "03:03": 80,
+            "03:01": 7,
+            "03:02": 28,
+            "03:00": 6.8,
             "00:01": 25,
-            "00:00": 15,
+            "00:00": 16,
             "00:03": 200,
             "00:02": 70,
             "00:05": 800,
@@ -14812,20 +14991,20 @@
             "胜其它": 24,
             "01:00": 7.2,
             "05:02": 60,
-            "05:01": 40,
+            "05:01": 35,
             "负其它": 350,
             "02:04": 350,
             "02:05": 800,
-            "02:02": 23,
+            "02:02": 24,
             "02:03": 90,
             "02:00": 5.5,
             "02:01": 7.25,
-            "03:03": 70,
-            "03:01": 7.25,
-            "03:02": 25,
-            "03:00": 7,
+            "03:03": 80,
+            "03:01": 7,
+            "03:02": 28,
+            "03:00": 6.8,
             "00:01": 25,
-            "00:00": 15,
+            "00:00": 16,
             "00:03": 200,
             "00:02": 70,
             "00:05": 800,
@@ -14840,72 +15019,87 @@
             "01:05": 800
           }
         },
-        "result": null
+        "result": {
+          "score": "1:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
-            "0": 15,
+            "0": 16,
             "1": 6.1,
-            "2": 3.9,
-            "3": 3.5,
-            "4": 4.45,
-            "5": 7.75,
+            "2": 4,
+            "3": 3.45,
+            "4": 4.3,
+            "5": 7.65,
             "6": 13,
-            "7+": 20
+            "7+": 21
           }
         },
         "last": {
           "odds": {
-            "0": 15,
+            "0": 16,
             "1": 6.1,
-            "2": 3.9,
-            "3": 3.5,
-            "4": 4.45,
-            "5": 7.75,
+            "2": 4,
+            "3": 3.45,
+            "4": 4.3,
+            "5": 7.65,
             "6": 13,
-            "7+": 20
+            "7+": 21
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 1.59,
-            "胜平": 21,
+            "胜胜": 1.63,
+            "胜平": 20,
             "胜负": 57,
             "平胜": 4.1,
             "平平": 8.1,
-            "平负": 22,
+            "平负": 21,
             "负胜": 21,
-            "负平": 21,
-            "负负": 19
+            "负平": 20,
+            "负负": 16.5
           }
         },
         "last": {
           "odds": {
-            "胜胜": 1.59,
-            "胜平": 21,
+            "胜胜": 1.63,
+            "胜平": 20,
             "胜负": 57,
             "平胜": 4.1,
             "平平": 8.1,
-            "平负": 22,
+            "平负": 21,
             "负胜": 21,
-            "负平": 21,
-            "负负": 19
+            "负平": 20,
+            "负负": 16.5
           }
         },
         "result": null
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1,
+        "half": null,
+        "scorers_count": 0,
+        "wentToPenalties": true,
+        "penaltyScore": {
+          "home": 4,
+          "away": 5
+        },
+        "extraTime": "1-1",
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
           "spf": 1,
           "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -14917,19 +15111,19 @@
       "away": "MAR",
       "kickoff": "2026-06-30 09:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 2,
-          "draw": 2.98,
-          "away": 3.4
+          "draw": 2.92,
+          "away": 3.48
         },
         "last": {
           "home": 2,
-          "draw": 2.98,
-          "away": 3.4
+          "draw": 2.92,
+          "away": 3.48
         },
-        "result": null
+        "result": "draw"
       },
       "rqspf": {
         "initial": {
@@ -14944,7 +15138,7 @@
           "draw": 3.4,
           "away": 1.63
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -14952,24 +15146,24 @@
             "05:00": 160,
             "平其它": 250,
             "胜其它": 90,
-            "01:00": 7.5,
+            "01:00": 7.8,
             "05:02": 150,
             "05:01": 125,
             "负其它": 250,
             "02:04": 150,
             "02:05": 500,
-            "02:02": 10,
-            "02:03": 45,
-            "02:00": 10,
+            "02:02": 9.5,
+            "02:03": 40,
+            "02:00": 11,
             "02:01": 5.5,
-            "03:03": 42,
+            "03:03": 36,
             "03:01": 14,
             "03:02": 23,
             "03:00": 21,
             "00:01": 10.5,
             "00:00": 9,
             "00:03": 55,
-            "00:02": 22,
+            "00:02": 21,
             "00:05": 500,
             "00:04": 200,
             "04:02": 60,
@@ -14987,24 +15181,24 @@
             "05:00": 160,
             "平其它": 250,
             "胜其它": 90,
-            "01:00": 7.5,
+            "01:00": 7.8,
             "05:02": 150,
             "05:01": 125,
             "负其它": 250,
             "02:04": 150,
             "02:05": 500,
-            "02:02": 10,
-            "02:03": 45,
-            "02:00": 10,
+            "02:02": 9.5,
+            "02:03": 40,
+            "02:00": 11,
             "02:01": 5.5,
-            "03:03": 42,
+            "03:03": 36,
             "03:01": 14,
             "03:02": 23,
             "03:00": 21,
             "00:01": 10.5,
             "00:00": 9,
             "00:03": 55,
-            "00:02": 22,
+            "00:02": 21,
             "00:05": 500,
             "00:04": 200,
             "04:02": 60,
@@ -15017,43 +15211,46 @@
             "01:05": 500
           }
         },
-        "result": null
+        "result": {
+          "score": "1:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
             "0": 9,
             "1": 4.7,
-            "2": 3.1,
-            "3": 3.7,
+            "2": 3.2,
+            "3": 3.8,
             "4": 5.7,
-            "5": 11.5,
-            "6": 22,
-            "7+": 33
+            "5": 10.5,
+            "6": 20,
+            "7+": 29
           }
         },
         "last": {
           "odds": {
             "0": 9,
             "1": 4.7,
-            "2": 3.1,
-            "3": 3.7,
+            "2": 3.2,
+            "3": 3.8,
             "4": 5.7,
-            "5": 11.5,
-            "6": 22,
-            "7+": 33
+            "5": 10.5,
+            "6": 20,
+            "7+": 29
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 3.3,
+            "胜胜": 3.7,
             "胜平": 12.5,
             "胜负": 26,
             "平胜": 4.8,
-            "平平": 5,
+            "平平": 4.3,
             "平负": 7.5,
             "负胜": 19,
             "负平": 12.5,
@@ -15062,11 +15259,11 @@
         },
         "last": {
           "odds": {
-            "胜胜": 3.3,
+            "胜胜": 3.7,
             "胜平": 12.5,
             "胜负": 26,
             "平胜": 4.8,
-            "平平": 5,
+            "平平": 4.3,
             "平负": 7.5,
             "负胜": 19,
             "负平": 12.5,
@@ -15075,14 +15272,26 @@
         },
         "result": null
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1,
+        "half": null,
+        "scorers_count": 0,
+        "wentToPenalties": true,
+        "penaltyScore": {
+          "home": 2,
+          "away": 3
+        },
+        "extraTime": "1-1",
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
-          "spf": 1,
+          "spf": 2,
           "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15094,172 +15303,184 @@
       "away": "NOR",
       "kickoff": "2026-07-01 01:00",
       "handicap": 1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
-          "home": 3.77,
-          "draw": 3.35,
-          "away": 1.77
+          "home": 3.6,
+          "draw": 3.38,
+          "away": 1.8
         },
         "last": {
-          "home": 3.77,
-          "draw": 3.35,
-          "away": 1.77
+          "home": 3.6,
+          "draw": 3.38,
+          "away": 1.8
         },
-        "result": null
+        "result": "away"
       },
       "rqspf": {
         "initial": {
           "handicap": 1,
-          "home": 1.83,
-          "draw": 3.63,
-          "away": 3.25
+          "home": 1.78,
+          "draw": 3.45,
+          "away": 3.6
         },
         "last": {
           "handicap": 1,
-          "home": 1.83,
-          "draw": 3.63,
-          "away": 3.25
+          "home": 1.78,
+          "draw": 3.45,
+          "away": 3.6
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
           "odds": {
             "05:00": 500,
-            "平其它": 250,
+            "平其它": 200,
             "胜其它": 170,
-            "01:00": 12,
+            "01:00": 13,
             "05:02": 350,
             "05:01": 500,
-            "负其它": 60,
-            "02:04": 50,
-            "02:05": 125,
-            "02:02": 12.5,
-            "02:03": 21,
-            "02:00": 20,
-            "02:01": 11.5,
-            "03:03": 45,
-            "03:01": 31,
+            "负其它": 70,
+            "02:04": 40,
+            "02:05": 90,
+            "02:02": 11,
+            "02:03": 17,
+            "02:00": 22,
+            "02:01": 13,
+            "03:03": 38,
+            "03:01": 32,
             "03:02": 37,
             "03:00": 60,
-            "00:01": 7.25,
-            "00:00": 12,
-            "00:03": 16.5,
-            "00:02": 8.5,
-            "00:05": 100,
-            "00:04": 38,
-            "04:02": 135,
+            "00:01": 8.35,
+            "00:00": 13,
+            "00:03": 20,
+            "00:02": 10.5,
+            "00:05": 130,
+            "00:04": 55,
+            "04:02": 125,
             "04:01": 110,
             "04:00": 175,
-            "01:02": 6.25,
+            "01:02": 5,
             "01:01": 6.4,
-            "01:04": 30,
-            "01:03": 12,
+            "01:04": 35,
+            "01:03": 9.5,
             "01:05": 95
           }
         },
         "last": {
           "odds": {
             "05:00": 500,
-            "平其它": 250,
+            "平其它": 200,
             "胜其它": 170,
-            "01:00": 12,
+            "01:00": 13,
             "05:02": 350,
             "05:01": 500,
-            "负其它": 60,
-            "02:04": 50,
-            "02:05": 125,
-            "02:02": 12.5,
-            "02:03": 21,
-            "02:00": 20,
-            "02:01": 11.5,
-            "03:03": 45,
-            "03:01": 31,
+            "负其它": 70,
+            "02:04": 40,
+            "02:05": 90,
+            "02:02": 11,
+            "02:03": 17,
+            "02:00": 22,
+            "02:01": 13,
+            "03:03": 38,
+            "03:01": 32,
             "03:02": 37,
             "03:00": 60,
-            "00:01": 7.25,
-            "00:00": 12,
-            "00:03": 16.5,
-            "00:02": 8.5,
-            "00:05": 100,
-            "00:04": 38,
-            "04:02": 135,
+            "00:01": 8.35,
+            "00:00": 13,
+            "00:03": 20,
+            "00:02": 10.5,
+            "00:05": 130,
+            "00:04": 55,
+            "04:02": 125,
             "04:01": 110,
             "04:00": 175,
-            "01:02": 6.25,
+            "01:02": 5,
             "01:01": 6.4,
-            "01:04": 30,
-            "01:03": 12,
+            "01:04": 35,
+            "01:03": 9.5,
             "01:05": 95
           }
         },
-        "result": null
+        "result": {
+          "score": "1:2",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
-            "0": 12,
-            "1": 5.25,
-            "2": 3.45,
-            "3": 3.5,
-            "4": 5,
-            "5": 9.8,
+            "0": 13,
+            "1": 5.4,
+            "2": 3.6,
+            "3": 3.3,
+            "4": 4.85,
+            "5": 9.75,
             "6": 16.5,
             "7+": 24
           }
         },
         "last": {
           "odds": {
-            "0": 12,
-            "1": 5.25,
-            "2": 3.45,
-            "3": 3.5,
-            "4": 5,
-            "5": 9.8,
+            "0": 13,
+            "1": 5.4,
+            "2": 3.6,
+            "3": 3.3,
+            "4": 4.85,
+            "5": 9.75,
             "6": 16.5,
             "7+": 24
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 6,
-            "胜平": 14,
-            "胜负": 23,
-            "平胜": 7.5,
-            "平平": 5.7,
+            "胜胜": 6.2,
+            "胜平": 13,
+            "胜负": 17,
+            "平胜": 8.05,
+            "平平": 5.85,
             "平负": 4.8,
-            "负胜": 30,
-            "负平": 14,
-            "负负": 2.85
+            "负胜": 23,
+            "负平": 13,
+            "负负": 3
           }
         },
         "last": {
           "odds": {
-            "胜胜": 6,
-            "胜平": 14,
-            "胜负": 23,
-            "平胜": 7.5,
-            "平平": 5.7,
+            "胜胜": 6.2,
+            "胜平": 13,
+            "胜负": 17,
+            "平胜": 8.05,
+            "平平": 5.85,
             "平负": 4.8,
-            "负胜": 30,
-            "负平": 14,
-            "负负": 2.85
+            "负胜": 23,
+            "负平": 13,
+            "负负": 3
           }
         },
-        "result": null
+        "result": "平负"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 2,
+        "half": "0-1",
+        "scorers_count": 3,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15271,7 +15492,7 @@
       "away": "SWE",
       "kickoff": "2026-07-01 05:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.16,
@@ -15283,7 +15504,7 @@
           "draw": 5.8,
           "away": 10.5
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -15298,145 +15519,157 @@
           "draw": 3.95,
           "away": 3.98
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
           "odds": {
-            "05:00": 30,
-            "平其它": 400,
-            "胜其它": 18,
-            "01:00": 8,
-            "05:02": 60,
-            "05:01": 30,
-            "负其它": 200,
+            "05:00": 34,
+            "平其它": 300,
+            "胜其它": 20,
+            "01:00": 9.5,
+            "05:02": 45,
+            "05:01": 29,
+            "负其它": 300,
             "02:04": 300,
             "02:05": 500,
-            "02:02": 15.5,
-            "02:03": 55,
-            "02:00": 7,
-            "02:01": 7,
+            "02:02": 18.5,
+            "02:03": 80,
+            "02:00": 5.8,
+            "02:01": 6.9,
             "03:03": 60,
-            "03:01": 8,
-            "03:02": 20,
-            "03:00": 8,
-            "00:01": 28,
-            "00:00": 21,
-            "00:03": 150,
-            "00:02": 70,
+            "03:01": 6.25,
+            "03:02": 21.5,
+            "03:00": 7,
+            "00:01": 35,
+            "00:00": 27,
+            "00:03": 200,
+            "00:02": 85,
             "00:05": 800,
-            "00:04": 500,
-            "04:02": 32,
-            "04:01": 14,
-            "04:00": 14,
-            "01:02": 25,
-            "01:01": 9.5,
+            "00:04": 600,
+            "04:02": 25,
+            "04:01": 13,
+            "04:00": 15,
+            "01:02": 32,
+            "01:01": 11,
             "01:04": 300,
-            "01:03": 70,
+            "01:03": 100,
             "01:05": 500
           }
         },
         "last": {
           "odds": {
-            "05:00": 30,
-            "平其它": 400,
-            "胜其它": 18,
-            "01:00": 8,
-            "05:02": 60,
-            "05:01": 30,
-            "负其它": 200,
+            "05:00": 34,
+            "平其它": 300,
+            "胜其它": 20,
+            "01:00": 9.5,
+            "05:02": 45,
+            "05:01": 29,
+            "负其它": 300,
             "02:04": 300,
             "02:05": 500,
-            "02:02": 15.5,
-            "02:03": 55,
-            "02:00": 7,
-            "02:01": 7,
+            "02:02": 18.5,
+            "02:03": 80,
+            "02:00": 5.8,
+            "02:01": 6.9,
             "03:03": 60,
-            "03:01": 8,
-            "03:02": 20,
-            "03:00": 8,
-            "00:01": 28,
-            "00:00": 21,
-            "00:03": 150,
-            "00:02": 70,
+            "03:01": 6.25,
+            "03:02": 21.5,
+            "03:00": 7,
+            "00:01": 35,
+            "00:00": 27,
+            "00:03": 200,
+            "00:02": 85,
             "00:05": 800,
-            "00:04": 500,
-            "04:02": 32,
-            "04:01": 14,
-            "04:00": 14,
-            "01:02": 25,
-            "01:01": 9.5,
+            "00:04": 600,
+            "04:02": 25,
+            "04:01": 13,
+            "04:00": 15,
+            "01:02": 32,
+            "01:01": 11,
             "01:04": 300,
-            "01:03": 70,
+            "01:03": 100,
             "01:05": 500
           }
         },
-        "result": null
+        "result": {
+          "score": "3:0",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
-            "0": 21,
-            "1": 7,
-            "2": 4.3,
-            "3": 3.55,
-            "4": 4.25,
-            "5": 6.8,
+            "0": 27,
+            "1": 7.9,
+            "2": 4.75,
+            "3": 3.5,
+            "4": 3.8,
+            "5": 6.3,
             "6": 10.5,
-            "7+": 14
+            "7+": 13
           }
         },
         "last": {
           "odds": {
-            "0": 21,
-            "1": 7,
-            "2": 4.3,
-            "3": 3.55,
-            "4": 4.25,
-            "5": 6.8,
+            "0": 27,
+            "1": 7.9,
+            "2": 4.75,
+            "3": 3.5,
+            "4": 3.8,
+            "5": 6.3,
             "6": 10.5,
-            "7+": 14
+            "7+": 13
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 1.6,
+            "胜胜": 1.5,
             "胜平": 21,
-            "胜负": 50,
-            "平胜": 4.05,
-            "平平": 9,
-            "平负": 20,
-            "负胜": 24,
+            "胜负": 57,
+            "平胜": 4.25,
+            "平平": 11,
+            "平负": 23,
+            "负胜": 20,
             "负平": 21,
-            "负负": 16
+            "负负": 18
           }
         },
         "last": {
           "odds": {
-            "胜胜": 1.6,
+            "胜胜": 1.5,
             "胜平": 21,
-            "胜负": 50,
-            "平胜": 4.05,
-            "平平": 9,
-            "平负": 20,
-            "负胜": 24,
+            "胜负": 57,
+            "平胜": 4.25,
+            "平平": 11,
+            "平负": 23,
+            "负胜": 20,
             "负平": 21,
-            "负负": 16
+            "负负": 18
           }
         },
-        "result": null
+        "result": "平胜"
       },
-      "result": null,
+      "result": {
+        "home": 3,
+        "away": 0,
+        "half": "1-0",
+        "scorers_count": 3,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
           "spf": 1,
           "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15448,116 +15681,119 @@
       "away": "ECU",
       "kickoff": "2026-07-01 09:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
-          "home": 2,
-          "draw": 2.7,
-          "away": 3.86
+          "home": 2.02,
+          "draw": 2.6,
+          "away": 4
         },
         "last": {
-          "home": 2,
-          "draw": 2.7,
-          "away": 3.86
+          "home": 2.02,
+          "draw": 2.6,
+          "away": 4
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
           "handicap": -1,
-          "home": 4.5,
-          "draw": 3.4,
-          "away": 1.63
+          "home": 5.15,
+          "draw": 3.15,
+          "away": 1.62
         },
         "last": {
           "handicap": -1,
-          "home": 4.5,
-          "draw": 3.4,
-          "away": 1.63
+          "home": 5.15,
+          "draw": 3.15,
+          "away": 1.62
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
           "odds": {
-            "05:00": 200,
-            "平其它": 800,
+            "05:00": 225,
+            "平其它": 400,
             "胜其它": 200,
             "01:00": 5,
-            "05:02": 400,
-            "05:01": 250,
-            "负其它": 450,
-            "02:04": 350,
+            "05:02": 250,
+            "05:01": 200,
+            "负其它": 350,
+            "02:04": 300,
             "02:05": 800,
-            "02:02": 18,
+            "02:02": 17,
             "02:03": 70,
-            "02:00": 7.5,
-            "02:01": 7.7,
-            "03:03": 120,
-            "03:01": 20,
-            "03:02": 45,
-            "03:00": 18,
-            "00:01": 7.5,
+            "02:00": 9,
+            "02:01": 6.25,
+            "03:03": 70,
+            "03:01": 22,
+            "03:02": 40,
+            "03:00": 23,
+            "00:01": 8.4,
             "00:00": 6,
-            "00:03": 60,
-            "00:02": 18,
+            "00:03": 85,
+            "00:02": 20,
             "00:05": 700,
             "00:04": 300,
-            "04:02": 150,
-            "04:01": 70,
-            "04:00": 60,
-            "01:02": 13,
-            "01:01": 5.1,
+            "04:02": 100,
+            "04:01": 85,
+            "04:00": 85,
+            "01:02": 15.5,
+            "01:01": 4.25,
             "01:04": 200,
-            "01:03": 45,
+            "01:03": 65,
             "01:05": 700
           }
         },
         "last": {
           "odds": {
-            "05:00": 200,
-            "平其它": 800,
+            "05:00": 225,
+            "平其它": 400,
             "胜其它": 200,
             "01:00": 5,
-            "05:02": 400,
-            "05:01": 250,
-            "负其它": 450,
-            "02:04": 350,
+            "05:02": 250,
+            "05:01": 200,
+            "负其它": 350,
+            "02:04": 300,
             "02:05": 800,
-            "02:02": 18,
+            "02:02": 17,
             "02:03": 70,
-            "02:00": 7.5,
-            "02:01": 7.7,
-            "03:03": 120,
-            "03:01": 20,
-            "03:02": 45,
-            "03:00": 18,
-            "00:01": 7.5,
+            "02:00": 9,
+            "02:01": 6.25,
+            "03:03": 70,
+            "03:01": 22,
+            "03:02": 40,
+            "03:00": 23,
+            "00:01": 8.4,
             "00:00": 6,
-            "00:03": 60,
-            "00:02": 18,
+            "00:03": 85,
+            "00:02": 20,
             "00:05": 700,
             "00:04": 300,
-            "04:02": 150,
-            "04:01": 70,
-            "04:00": 60,
-            "01:02": 13,
-            "01:01": 5.1,
+            "04:02": 100,
+            "04:01": 85,
+            "04:00": 85,
+            "01:02": 15.5,
+            "01:01": 4.25,
             "01:04": 200,
-            "01:03": 45,
+            "01:03": 65,
             "01:05": 700
           }
         },
-        "result": null
+        "result": {
+          "score": "2:0",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
           "odds": {
             "0": 6,
             "1": 3.3,
-            "2": 3,
-            "3": 4.25,
-            "4": 8.5,
+            "2": 2.9,
+            "3": 4.4,
+            "4": 8.75,
             "5": 20,
             "6": 35,
             "7+": 50
@@ -15567,53 +15803,62 @@
           "odds": {
             "0": 6,
             "1": 3.3,
-            "2": 3,
-            "3": 4.25,
-            "4": 8.5,
+            "2": 2.9,
+            "3": 4.4,
+            "4": 8.75,
             "5": 20,
             "6": 35,
             "7+": 50
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 3.25,
-            "胜平": 16,
-            "胜负": 42,
-            "平胜": 4.4,
-            "平平": 4,
-            "平负": 7.5,
-            "负胜": 30,
-            "负平": 16,
-            "负负": 6.5
+            "胜胜": 3.85,
+            "胜平": 14,
+            "胜负": 34,
+            "平胜": 4.25,
+            "平平": 3.5,
+            "平负": 8.3,
+            "负胜": 23,
+            "负平": 14,
+            "负负": 7.25
           }
         },
         "last": {
           "odds": {
-            "胜胜": 3.25,
-            "胜平": 16,
-            "胜负": 42,
-            "平胜": 4.4,
-            "平平": 4,
-            "平负": 7.5,
-            "负胜": 30,
-            "负平": 16,
-            "负负": 6.5
+            "胜胜": 3.85,
+            "胜平": 14,
+            "胜负": 34,
+            "平胜": 4.25,
+            "平平": 3.5,
+            "平负": 8.3,
+            "负胜": 23,
+            "负平": 14,
+            "负负": 7.25
           }
         },
-        "result": null
+        "result": "平胜"
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 0,
+        "half": "2-0",
+        "scorers_count": 2,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15629,12 +15874,12 @@
       "spf": {
         "initial": {
           "home": 1.17,
-          "draw": 5.25,
+          "draw": 5.22,
           "away": 12
         },
         "last": {
           "home": 1.17,
-          "draw": 5.25,
+          "draw": 5.22,
           "away": 12
         },
         "result": null
@@ -15642,86 +15887,86 @@
       "rqspf": {
         "initial": {
           "handicap": -1,
-          "home": 1.71,
-          "draw": 3.5,
-          "away": 3.86
+          "home": 1.64,
+          "draw": 3.8,
+          "away": 3.9
         },
         "last": {
           "handicap": -1,
-          "home": 1.71,
-          "draw": 3.5,
-          "away": 3.86
+          "home": 1.64,
+          "draw": 3.8,
+          "away": 3.9
         },
         "result": null
       },
       "bf": {
         "initial": {
           "odds": {
-            "05:00": 24,
-            "平其它": 900,
+            "05:00": 25,
+            "平其它": 650,
             "胜其它": 25,
-            "01:00": 5.3,
-            "05:02": 150,
-            "05:01": 50,
+            "01:00": 5.5,
+            "05:02": 125,
+            "05:01": 45,
             "负其它": 700,
             "02:04": 700,
             "02:05": 1000,
-            "02:02": 28,
-            "02:03": 175,
-            "02:00": 4.7,
-            "02:01": 7.75,
-            "03:03": 200,
-            "03:01": 10.5,
+            "02:02": 30,
+            "02:03": 200,
+            "02:00": 4.5,
+            "02:01": 7.5,
+            "03:03": 125,
+            "03:01": 9.5,
             "03:02": 40,
-            "03:00": 6.25,
-            "00:01": 22,
+            "03:00": 6,
+            "00:01": 28,
             "00:00": 12,
-            "00:03": 350,
-            "00:02": 90,
+            "00:03": 400,
+            "00:02": 100,
             "00:05": 1000,
             "00:04": 1000,
-            "04:02": 75,
+            "04:02": 65,
             "04:01": 20,
-            "04:00": 11,
-            "01:02": 37,
-            "01:01": 9.5,
+            "04:00": 11.5,
+            "01:02": 48,
+            "01:01": 10,
             "01:04": 700,
-            "01:03": 200,
+            "01:03": 250,
             "01:05": 1000
           }
         },
         "last": {
           "odds": {
-            "05:00": 24,
-            "平其它": 900,
+            "05:00": 25,
+            "平其它": 650,
             "胜其它": 25,
-            "01:00": 5.3,
-            "05:02": 150,
-            "05:01": 50,
+            "01:00": 5.5,
+            "05:02": 125,
+            "05:01": 45,
             "负其它": 700,
             "02:04": 700,
             "02:05": 1000,
-            "02:02": 28,
-            "02:03": 175,
-            "02:00": 4.7,
-            "02:01": 7.75,
-            "03:03": 200,
-            "03:01": 10.5,
+            "02:02": 30,
+            "02:03": 200,
+            "02:00": 4.5,
+            "02:01": 7.5,
+            "03:03": 125,
+            "03:01": 9.5,
             "03:02": 40,
-            "03:00": 6.25,
-            "00:01": 22,
+            "03:00": 6,
+            "00:01": 28,
             "00:00": 12,
-            "00:03": 350,
-            "00:02": 90,
+            "00:03": 400,
+            "00:02": 100,
             "00:05": 1000,
             "00:04": 1000,
-            "04:02": 75,
+            "04:02": 65,
             "04:01": 20,
-            "04:00": 11,
-            "01:02": 37,
-            "01:01": 9.5,
+            "04:00": 11.5,
+            "01:02": 48,
+            "01:01": 10,
             "01:04": 700,
-            "01:03": 200,
+            "01:03": 250,
             "01:05": 1000
           }
         },
@@ -15731,11 +15976,11 @@
         "initial": {
           "odds": {
             "0": 12,
-            "1": 4.75,
+            "1": 4.8,
             "2": 3.5,
             "3": 3.5,
-            "4": 5.2,
-            "5": 9.5,
+            "4": 5.1,
+            "5": 9.6,
             "6": 18,
             "7+": 28
           }
@@ -15743,11 +15988,11 @@
         "last": {
           "odds": {
             "0": 12,
-            "1": 4.75,
+            "1": 4.8,
             "2": 3.5,
             "3": 3.5,
-            "4": 5.2,
-            "5": 9.5,
+            "4": 5.1,
+            "5": 9.6,
             "6": 18,
             "7+": 28
           }
@@ -15758,26 +16003,26 @@
         "initial": {
           "odds": {
             "胜胜": 1.57,
-            "胜平": 27,
-            "胜负": 100,
-            "平胜": 3.55,
+            "胜平": 26,
+            "胜负": 90,
+            "平胜": 3.65,
             "平平": 7.5,
             "平负": 25,
-            "负胜": 30,
-            "负平": 27,
+            "负胜": 28,
+            "负平": 26,
             "负负": 22
           }
         },
         "last": {
           "odds": {
             "胜胜": 1.57,
-            "胜平": 27,
-            "胜负": 100,
-            "平胜": 3.55,
+            "胜平": 26,
+            "胜负": 90,
+            "平胜": 3.65,
             "平平": 7.5,
             "平负": 25,
-            "负胜": 30,
-            "负平": 27,
+            "负胜": 28,
+            "负平": 26,
             "负负": 22
           }
         },
@@ -15786,11 +16031,11 @@
       "result": null,
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15805,101 +16050,101 @@
       "status": "on_sale",
       "spf": {
         "initial": {
-          "home": 1.99,
-          "draw": 3,
-          "away": 3.42
+          "home": 1.95,
+          "draw": 2.98,
+          "away": 3.56
         },
         "last": {
-          "home": 1.99,
-          "draw": 3,
-          "away": 3.42
+          "home": 1.95,
+          "draw": 2.98,
+          "away": 3.56
         },
         "result": null
       },
       "rqspf": {
         "initial": {
           "handicap": -1,
-          "home": 4.15,
-          "draw": 3.6,
-          "away": 1.64
+          "home": 4.18,
+          "draw": 3.43,
+          "away": 1.67
         },
         "last": {
           "handicap": -1,
-          "home": 4.15,
-          "draw": 3.6,
-          "away": 1.64
+          "home": 4.18,
+          "draw": 3.43,
+          "away": 1.67
         },
         "result": null
       },
       "bf": {
         "initial": {
           "odds": {
-            "05:00": 150,
-            "平其它": 500,
-            "胜其它": 100,
-            "01:00": 6.5,
-            "05:02": 250,
-            "05:01": 120,
-            "负其它": 200,
-            "02:04": 175,
-            "02:05": 500,
-            "02:02": 13,
-            "02:03": 45,
-            "02:00": 9,
-            "02:01": 6.75,
-            "03:03": 70,
+            "05:00": 155,
+            "平其它": 300,
+            "胜其它": 80,
+            "01:00": 7.5,
+            "05:02": 200,
+            "05:01": 125,
+            "负其它": 130,
+            "02:04": 100,
+            "02:05": 400,
+            "02:02": 12.5,
+            "02:03": 35,
+            "02:00": 9.7,
+            "02:01": 5.8,
+            "03:03": 50,
             "03:01": 16,
-            "03:02": 29,
-            "03:00": 19,
-            "00:01": 9,
-            "00:00": 8.5,
+            "03:02": 25,
+            "03:00": 21,
+            "00:01": 11,
+            "00:00": 10.5,
             "00:03": 50,
-            "00:02": 17,
+            "00:02": 18,
             "00:05": 500,
             "00:04": 175,
-            "04:02": 80,
+            "04:02": 70,
             "04:01": 45,
-            "04:00": 55,
-            "01:02": 11,
-            "01:01": 5.4,
-            "01:04": 100,
-            "01:03": 30,
-            "01:05": 500
+            "04:00": 60,
+            "01:02": 9.75,
+            "01:01": 5,
+            "01:04": 125,
+            "01:03": 32,
+            "01:05": 400
           }
         },
         "last": {
           "odds": {
-            "05:00": 150,
-            "平其它": 500,
-            "胜其它": 100,
-            "01:00": 6.5,
-            "05:02": 250,
-            "05:01": 120,
-            "负其它": 200,
-            "02:04": 175,
-            "02:05": 500,
-            "02:02": 13,
-            "02:03": 45,
-            "02:00": 9,
-            "02:01": 6.75,
-            "03:03": 70,
+            "05:00": 155,
+            "平其它": 300,
+            "胜其它": 80,
+            "01:00": 7.5,
+            "05:02": 200,
+            "05:01": 125,
+            "负其它": 130,
+            "02:04": 100,
+            "02:05": 400,
+            "02:02": 12.5,
+            "02:03": 35,
+            "02:00": 9.7,
+            "02:01": 5.8,
+            "03:03": 50,
             "03:01": 16,
-            "03:02": 29,
-            "03:00": 19,
-            "00:01": 9,
-            "00:00": 8.5,
+            "03:02": 25,
+            "03:00": 21,
+            "00:01": 11,
+            "00:00": 10.5,
             "00:03": 50,
-            "00:02": 17,
+            "00:02": 18,
             "00:05": 500,
             "00:04": 175,
-            "04:02": 80,
+            "04:02": 70,
             "04:01": 45,
-            "04:00": 55,
-            "01:02": 11,
-            "01:01": 5.4,
-            "01:04": 100,
-            "01:03": 30,
-            "01:05": 500
+            "04:00": 60,
+            "01:02": 9.75,
+            "01:01": 5,
+            "01:04": 125,
+            "01:03": 32,
+            "01:05": 400
           }
         },
         "result": null
@@ -15907,26 +16152,26 @@
       "zjq": {
         "initial": {
           "odds": {
-            "0": 8.5,
-            "1": 4,
-            "2": 3.2,
-            "3": 3.75,
-            "4": 6.2,
-            "5": 12.5,
-            "6": 24,
-            "7+": 40
+            "0": 10.5,
+            "1": 4.85,
+            "2": 3.1,
+            "3": 3.6,
+            "4": 5.6,
+            "5": 10.5,
+            "6": 21,
+            "7+": 32
           }
         },
         "last": {
           "odds": {
-            "0": 8.5,
-            "1": 4,
-            "2": 3.2,
-            "3": 3.75,
-            "4": 6.2,
-            "5": 12.5,
-            "6": 24,
-            "7+": 40
+            "0": 10.5,
+            "1": 4.85,
+            "2": 3.1,
+            "3": 3.6,
+            "4": 5.6,
+            "5": 10.5,
+            "6": 21,
+            "7+": 32
           }
         },
         "result": null
@@ -15935,27 +16180,27 @@
         "initial": {
           "odds": {
             "胜胜": 3.25,
-            "胜平": 14,
-            "胜负": 32,
+            "胜平": 13.5,
+            "胜负": 29,
             "平胜": 4.75,
-            "平平": 4.9,
+            "平平": 5,
             "平负": 7,
-            "负胜": 26,
-            "负平": 14,
-            "负负": 5.7
+            "负胜": 23,
+            "负平": 13.5,
+            "负负": 6
           }
         },
         "last": {
           "odds": {
             "胜胜": 3.25,
-            "胜平": 14,
-            "胜负": 32,
+            "胜平": 13.5,
+            "胜负": 29,
             "平胜": 4.75,
-            "平平": 4.9,
+            "平平": 5,
             "平负": 7,
-            "负胜": 26,
-            "负平": 14,
-            "负负": 5.7
+            "负胜": 23,
+            "负平": 13.5,
+            "负负": 6
           }
         },
         "result": null
@@ -15963,11 +16208,11 @@
       "result": null,
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -15982,100 +16227,277 @@
       "status": "on_sale",
       "spf": {
         "initial": {
-          "home": 1.27,
-          "draw": 4.5,
-          "away": 8.4
+          "home": 1.22,
+          "draw": 4.91,
+          "away": 9.4
         },
         "last": {
-          "home": 1.27,
-          "draw": 4.5,
-          "away": 8.4
+          "home": 1.22,
+          "draw": 4.91,
+          "away": 9.4
         },
         "result": null
       },
       "rqspf": {
         "initial": {
           "handicap": -1,
-          "home": 1.93,
-          "draw": 3.5,
-          "away": 3.08
+          "home": 1.77,
+          "draw": 3.75,
+          "away": 3.36
         },
         "last": {
           "handicap": -1,
-          "home": 1.93,
-          "draw": 3.5,
-          "away": 3.08
+          "home": 1.77,
+          "draw": 3.75,
+          "away": 3.36
         },
         "result": null
       },
       "bf": {
         "initial": {
           "odds": {
-            "05:00": 40,
-            "平其它": 600,
-            "胜其它": 32,
-            "01:00": 6,
-            "05:02": 120,
-            "05:01": 45,
+            "05:00": 45,
+            "平其它": 400,
+            "胜其它": 33,
+            "01:00": 6.8,
+            "05:02": 100,
+            "05:01": 50,
             "负其它": 450,
-            "02:04": 350,
+            "02:04": 400,
             "02:05": 1000,
-            "02:02": 18,
-            "02:03": 75,
-            "02:00": 5.8,
-            "02:01": 6.75,
-            "03:03": 80,
-            "03:01": 10,
-            "03:02": 27,
+            "02:02": 18.5,
+            "02:03": 90,
+            "02:00": 4.9,
+            "02:01": 6,
+            "03:03": 70,
+            "03:01": 8.25,
+            "03:02": 28,
             "03:00": 8,
-            "00:01": 17,
-            "00:00": 13,
-            "00:03": 175,
-            "00:02": 50,
+            "00:01": 21,
+            "00:00": 15,
+            "00:03": 200,
+            "00:02": 60,
             "00:05": 1000,
             "00:04": 600,
             "04:02": 50,
-            "04:01": 21,
-            "04:00": 16,
-            "01:02": 20,
-            "01:01": 8,
-            "01:04": 400,
-            "01:03": 90,
+            "04:01": 20,
+            "04:00": 16.5,
+            "01:02": 25,
+            "01:01": 8.5,
+            "01:04": 450,
+            "01:03": 110,
             "01:05": 1000
           }
         },
         "last": {
           "odds": {
-            "05:00": 40,
-            "平其它": 600,
-            "胜其它": 32,
-            "01:00": 6,
-            "05:02": 120,
-            "05:01": 45,
+            "05:00": 45,
+            "平其它": 400,
+            "胜其它": 33,
+            "01:00": 6.8,
+            "05:02": 100,
+            "05:01": 50,
             "负其它": 450,
-            "02:04": 350,
+            "02:04": 400,
             "02:05": 1000,
-            "02:02": 18,
-            "02:03": 75,
-            "02:00": 5.8,
-            "02:01": 6.75,
-            "03:03": 80,
-            "03:01": 10,
-            "03:02": 27,
+            "02:02": 18.5,
+            "02:03": 90,
+            "02:00": 4.9,
+            "02:01": 6,
+            "03:03": 70,
+            "03:01": 8.25,
+            "03:02": 28,
             "03:00": 8,
-            "00:01": 17,
-            "00:00": 13,
-            "00:03": 175,
-            "00:02": 50,
+            "00:01": 21,
+            "00:00": 15,
+            "00:03": 200,
+            "00:02": 60,
             "00:05": 1000,
             "00:04": 600,
             "04:02": 50,
-            "04:01": 21,
-            "04:00": 16,
-            "01:02": 20,
-            "01:01": 8,
-            "01:04": 400,
-            "01:03": 90,
+            "04:01": 20,
+            "04:00": 16.5,
+            "01:02": 25,
+            "01:01": 8.5,
+            "01:04": 450,
+            "01:03": 110,
+            "01:05": 1000
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 15,
+            "1": 5.75,
+            "2": 3.75,
+            "3": 3.35,
+            "4": 4.7,
+            "5": 8.4,
+            "6": 14,
+            "7+": 22
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 15,
+            "1": 5.75,
+            "2": 3.75,
+            "3": 3.35,
+            "4": 4.7,
+            "5": 8.4,
+            "6": 14,
+            "7+": 22
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 1.8,
+            "胜平": 19,
+            "胜负": 60,
+            "平胜": 3.85,
+            "平平": 7,
+            "平负": 17,
+            "负胜": 23,
+            "负平": 19,
+            "负负": 14
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 1.8,
+            "胜平": 19,
+            "胜负": 60,
+            "平胜": 3.85,
+            "平平": 7,
+            "平负": 17,
+            "负胜": 23,
+            "负平": 19,
+            "负负": 14
+          }
+        },
+        "result": null
+      },
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
+        }
+      }
+    },
+    {
+      "mid": "2040354",
+      "code": "周四083",
+      "league": "世界杯",
+      "home": "ESP",
+      "away": "AUT",
+      "kickoff": "2026-07-03 03:00",
+      "handicap": -1,
+      "status": "on_sale",
+      "spf": {
+        "initial": {
+          "home": 1.23,
+          "draw": 4.75,
+          "away": 9.4
+        },
+        "last": {
+          "home": 1.23,
+          "draw": 4.75,
+          "away": 9.4
+        },
+        "result": null
+      },
+      "rqspf": {
+        "initial": {
+          "handicap": -1,
+          "home": 1.85,
+          "draw": 3.55,
+          "away": 3.25
+        },
+        "last": {
+          "handicap": -1,
+          "home": 1.85,
+          "draw": 3.55,
+          "away": 3.25
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 35,
+            "平其它": 400,
+            "胜其它": 30,
+            "01:00": 6.25,
+            "05:02": 100,
+            "05:01": 45,
+            "负其它": 500,
+            "02:04": 500,
+            "02:05": 1000,
+            "02:02": 22,
+            "02:03": 90,
+            "02:00": 5.1,
+            "02:01": 7,
+            "03:03": 90,
+            "03:01": 9.5,
+            "03:02": 29,
+            "03:00": 7,
+            "00:01": 20,
+            "00:00": 13,
+            "00:03": 250,
+            "00:02": 60,
+            "00:05": 1000,
+            "00:04": 700,
+            "04:02": 45,
+            "04:01": 18,
+            "04:00": 13.5,
+            "01:02": 29,
+            "01:01": 9,
+            "01:04": 500,
+            "01:03": 125,
+            "01:05": 1000
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 35,
+            "平其它": 400,
+            "胜其它": 30,
+            "01:00": 6.25,
+            "05:02": 100,
+            "05:01": 45,
+            "负其它": 500,
+            "02:04": 500,
+            "02:05": 1000,
+            "02:02": 22,
+            "02:03": 90,
+            "02:00": 5.1,
+            "02:01": 7,
+            "03:03": 90,
+            "03:01": 9.5,
+            "03:02": 29,
+            "03:00": 7,
+            "00:01": 20,
+            "00:00": 13,
+            "00:03": 250,
+            "00:02": 60,
+            "00:05": 1000,
+            "00:04": 700,
+            "04:02": 45,
+            "04:01": 18,
+            "04:00": 13.5,
+            "01:02": 29,
+            "01:01": 9,
+            "01:04": 500,
+            "01:03": 125,
             "01:05": 1000
           }
         },
@@ -16085,25 +16507,25 @@
         "initial": {
           "odds": {
             "0": 13,
-            "1": 5,
+            "1": 5.2,
             "2": 3.6,
             "3": 3.45,
             "4": 5.1,
-            "5": 9,
+            "5": 8.5,
             "6": 16,
-            "7+": 25
+            "7+": 24
           }
         },
         "last": {
           "odds": {
             "0": 13,
-            "1": 5,
+            "1": 5.2,
             "2": 3.6,
             "3": 3.45,
             "4": 5.1,
-            "5": 9,
+            "5": 8.5,
             "6": 16,
-            "7+": 25
+            "7+": 24
           }
         },
         "result": null
@@ -16111,28 +16533,559 @@
       "bqc": {
         "initial": {
           "odds": {
-            "胜胜": 1.85,
-            "胜平": 20,
+            "胜胜": 1.7,
+            "胜平": 21,
             "胜负": 60,
             "平胜": 3.75,
-            "平平": 6.5,
-            "平负": 16,
+            "平平": 7.2,
+            "平负": 20,
             "负胜": 27,
-            "负平": 20,
-            "负负": 13
+            "负平": 21,
+            "负负": 16.5
           }
         },
         "last": {
           "odds": {
-            "胜胜": 1.85,
-            "胜平": 20,
+            "胜胜": 1.7,
+            "胜平": 21,
             "胜负": 60,
             "平胜": 3.75,
-            "平平": 6.5,
-            "平负": 16,
+            "平平": 7.2,
+            "平负": 20,
             "负胜": 27,
-            "负平": 20,
-            "负负": 13
+            "负平": 21,
+            "负负": 16.5
+          }
+        },
+        "result": null
+      },
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 1,
+          "bqc": 2
+        }
+      }
+    },
+    {
+      "mid": "2040355",
+      "code": "周四084",
+      "league": "世界杯",
+      "home": "POR",
+      "away": "CRO",
+      "kickoff": "2026-07-03 07:00",
+      "handicap": -1,
+      "status": "on_sale",
+      "spf": {
+        "initial": {
+          "home": 1.59,
+          "draw": 3.4,
+          "away": 4.85
+        },
+        "last": {
+          "home": 1.59,
+          "draw": 3.4,
+          "away": 4.85
+        },
+        "result": null
+      },
+      "rqspf": {
+        "initial": {
+          "handicap": -1,
+          "home": 3.06,
+          "draw": 3.18,
+          "away": 2.05
+        },
+        "last": {
+          "handicap": -1,
+          "home": 3.06,
+          "draw": 3.18,
+          "away": 2.05
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 80,
+            "平其它": 400,
+            "胜其它": 65,
+            "01:00": 6.5,
+            "05:02": 150,
+            "05:01": 80,
+            "负其它": 200,
+            "02:04": 200,
+            "02:05": 500,
+            "02:02": 14,
+            "02:03": 50,
+            "02:00": 7,
+            "02:01": 6,
+            "03:03": 70,
+            "03:01": 11,
+            "03:02": 20,
+            "03:00": 12,
+            "00:01": 12,
+            "00:00": 11,
+            "00:03": 80,
+            "00:02": 26,
+            "00:05": 600,
+            "00:04": 300,
+            "04:02": 65,
+            "04:01": 28,
+            "04:00": 30,
+            "01:02": 15,
+            "01:01": 7,
+            "01:04": 150,
+            "01:03": 45,
+            "01:05": 500
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 80,
+            "平其它": 400,
+            "胜其它": 65,
+            "01:00": 6.5,
+            "05:02": 150,
+            "05:01": 80,
+            "负其它": 200,
+            "02:04": 200,
+            "02:05": 500,
+            "02:02": 14,
+            "02:03": 50,
+            "02:00": 7,
+            "02:01": 6,
+            "03:03": 70,
+            "03:01": 11,
+            "03:02": 20,
+            "03:00": 12,
+            "00:01": 12,
+            "00:00": 11,
+            "00:03": 80,
+            "00:02": 26,
+            "00:05": 600,
+            "00:04": 300,
+            "04:02": 65,
+            "04:01": 28,
+            "04:00": 30,
+            "01:02": 15,
+            "01:01": 7,
+            "01:04": 150,
+            "01:03": 45,
+            "01:05": 500
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 11,
+            "1": 4.7,
+            "2": 3.5,
+            "3": 3.5,
+            "4": 5.4,
+            "5": 10,
+            "6": 18,
+            "7+": 26
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 11,
+            "1": 4.7,
+            "2": 3.5,
+            "3": 3.5,
+            "4": 5.4,
+            "5": 10,
+            "6": 18,
+            "7+": 26
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 2.35,
+            "胜平": 16,
+            "胜负": 35,
+            "平胜": 4.2,
+            "平平": 5.6,
+            "平负": 10.5,
+            "负胜": 22,
+            "负平": 16,
+            "负负": 8.5
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 2.35,
+            "胜平": 16,
+            "胜负": 35,
+            "平胜": 4.2,
+            "平平": 5.6,
+            "平负": 10.5,
+            "负胜": 22,
+            "负平": 16,
+            "负负": 8.5
+          }
+        },
+        "result": null
+      },
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 1,
+          "rqspf": 2,
+          "bf": 1,
+          "zjq": 1,
+          "bqc": 1
+        }
+      }
+    },
+    {
+      "mid": "2040356",
+      "code": "周四085",
+      "league": "世界杯",
+      "home": "SUI",
+      "away": "DZA",
+      "kickoff": "2026-07-03 11:00",
+      "handicap": -1,
+      "status": "on_sale",
+      "spf": {
+        "initial": {
+          "home": 1.8,
+          "draw": 3.05,
+          "away": 4.06
+        },
+        "last": {
+          "home": 1.8,
+          "draw": 3.05,
+          "away": 4.06
+        },
+        "result": null
+      },
+      "rqspf": {
+        "initial": {
+          "handicap": -1,
+          "home": 3.73,
+          "draw": 3.3,
+          "away": 1.79
+        },
+        "last": {
+          "handicap": -1,
+          "home": 3.73,
+          "draw": 3.3,
+          "away": 1.79
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 150,
+            "平其它": 500,
+            "胜其它": 120,
+            "01:00": 6,
+            "05:02": 250,
+            "05:01": 120,
+            "负其它": 300,
+            "02:04": 200,
+            "02:05": 500,
+            "02:02": 15,
+            "02:03": 40,
+            "02:00": 7.5,
+            "02:01": 7,
+            "03:03": 70,
+            "03:01": 15,
+            "03:02": 30,
+            "03:00": 16,
+            "00:01": 10,
+            "00:00": 8.5,
+            "00:03": 60,
+            "00:02": 20,
+            "00:05": 700,
+            "00:04": 250,
+            "04:02": 80,
+            "04:01": 40,
+            "04:00": 45,
+            "01:02": 12,
+            "01:01": 5.2,
+            "01:04": 150,
+            "01:03": 40,
+            "01:05": 600
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 150,
+            "平其它": 500,
+            "胜其它": 120,
+            "01:00": 6,
+            "05:02": 250,
+            "05:01": 120,
+            "负其它": 300,
+            "02:04": 200,
+            "02:05": 500,
+            "02:02": 15,
+            "02:03": 40,
+            "02:00": 7.5,
+            "02:01": 7,
+            "03:03": 70,
+            "03:01": 15,
+            "03:02": 30,
+            "03:00": 16,
+            "00:01": 10,
+            "00:00": 8.5,
+            "00:03": 60,
+            "00:02": 20,
+            "00:05": 700,
+            "00:04": 250,
+            "04:02": 80,
+            "04:01": 40,
+            "04:00": 45,
+            "01:02": 12,
+            "01:01": 5.2,
+            "01:04": 150,
+            "01:03": 40,
+            "01:05": 600
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 8.5,
+            "1": 4.2,
+            "2": 3,
+            "3": 3.75,
+            "4": 6.2,
+            "5": 14,
+            "6": 25,
+            "7+": 40
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 8.5,
+            "1": 4.2,
+            "2": 3,
+            "3": 3.75,
+            "4": 6.2,
+            "5": 14,
+            "6": 25,
+            "7+": 40
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 2.9,
+            "胜平": 14,
+            "胜负": 30,
+            "平胜": 4.6,
+            "平平": 4.75,
+            "平负": 8.5,
+            "负胜": 25,
+            "负平": 14,
+            "负负": 6.75
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 2.9,
+            "胜平": 14,
+            "胜负": 30,
+            "平胜": 4.6,
+            "平平": 4.75,
+            "平负": 8.5,
+            "负胜": 25,
+            "负平": 14,
+            "负负": 6.75
+          }
+        },
+        "result": null
+      },
+      "result": null,
+      "meta": {
+        "history_points": {
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 1,
+          "zjq": 1,
+          "bqc": 1
+        }
+      }
+    },
+    {
+      "mid": "2040347",
+      "code": "周五086",
+      "league": "世界杯",
+      "home": "AUS",
+      "away": "EGY",
+      "kickoff": "2026-07-04 02:00",
+      "handicap": 1,
+      "status": "on_sale",
+      "spf": {
+        "initial": {
+          "home": 3.15,
+          "draw": 2.6,
+          "away": 2.34
+        },
+        "last": {
+          "home": 3.15,
+          "draw": 2.6,
+          "away": 2.34
+        },
+        "result": null
+      },
+      "rqspf": {
+        "initial": {
+          "handicap": 1,
+          "home": 1.45,
+          "draw": 3.65,
+          "away": 6.05
+        },
+        "last": {
+          "handicap": 1,
+          "home": 1.45,
+          "draw": 3.65,
+          "away": 6.05
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 600,
+            "平其它": 600,
+            "胜其它": 350,
+            "01:00": 6.75,
+            "05:02": 700,
+            "05:01": 500,
+            "负其它": 250,
+            "02:04": 175,
+            "02:05": 500,
+            "02:02": 17,
+            "02:03": 50,
+            "02:00": 14,
+            "02:01": 10,
+            "03:03": 125,
+            "03:01": 33,
+            "03:02": 60,
+            "03:00": 45,
+            "00:01": 5.7,
+            "00:00": 6,
+            "00:03": 25,
+            "00:02": 9.5,
+            "00:05": 350,
+            "00:04": 75,
+            "04:02": 300,
+            "04:01": 150,
+            "04:00": 175,
+            "01:02": 8,
+            "01:01": 4.75,
+            "01:04": 90,
+            "01:03": 23,
+            "01:05": 350
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 600,
+            "平其它": 600,
+            "胜其它": 350,
+            "01:00": 6.75,
+            "05:02": 700,
+            "05:01": 500,
+            "负其它": 250,
+            "02:04": 175,
+            "02:05": 500,
+            "02:02": 17,
+            "02:03": 50,
+            "02:00": 14,
+            "02:01": 10,
+            "03:03": 125,
+            "03:01": 33,
+            "03:02": 60,
+            "03:00": 45,
+            "00:01": 5.7,
+            "00:00": 6,
+            "00:03": 25,
+            "00:02": 9.5,
+            "00:05": 350,
+            "00:04": 75,
+            "04:02": 300,
+            "04:01": 150,
+            "04:00": 175,
+            "01:02": 8,
+            "01:01": 4.75,
+            "01:04": 90,
+            "01:03": 23,
+            "01:05": 350
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 6,
+            "1": 3.35,
+            "2": 2.9,
+            "3": 4.2,
+            "4": 8.5,
+            "5": 22,
+            "6": 38,
+            "7+": 60
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 6,
+            "1": 3.35,
+            "2": 2.9,
+            "3": 4.2,
+            "4": 8.5,
+            "5": 22,
+            "6": 38,
+            "7+": 60
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 5.5,
+            "胜平": 14,
+            "胜负": 25,
+            "平胜": 6.5,
+            "平平": 3.8,
+            "平负": 5.2,
+            "负胜": 27,
+            "负平": 14,
+            "负负": 4.1
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 5.5,
+            "胜平": 14,
+            "胜负": 25,
+            "平胜": 6.5,
+            "平平": 3.8,
+            "平负": 5.2,
+            "负胜": 27,
+            "负平": 14,
+            "负负": 4.1
           }
         },
         "result": null
@@ -16149,102 +17102,166 @@
       }
     },
     {
-      "mid": "2040354",
-      "code": "周四083",
-      "league": "世界杯",
-      "home": "ESP",
-      "away": "AUT",
-      "kickoff": "2026-07-03 03:00",
-      "handicap": null,
-      "status": "scheduled",
-      "result": null,
-      "meta": {
-        "history_points": {
-          "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
-        }
-      }
-    },
-    {
-      "mid": "2040355",
-      "code": "周四084",
-      "league": "世界杯",
-      "home": "POR",
-      "away": "CRO",
-      "kickoff": "2026-07-03 07:00",
-      "handicap": null,
-      "status": "scheduled",
-      "result": null,
-      "meta": {
-        "history_points": {
-          "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
-        }
-      }
-    },
-    {
-      "mid": "2040356",
-      "code": "周四085",
-      "league": "世界杯",
-      "home": "SUI",
-      "away": "DZA",
-      "kickoff": "2026-07-03 11:00",
-      "handicap": null,
-      "status": "scheduled",
-      "result": null,
-      "meta": {
-        "history_points": {
-          "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
-        }
-      }
-    },
-    {
-      "mid": "2040347",
-      "code": "周五086",
-      "league": "世界杯",
-      "home": "AUS",
-      "away": "EGY",
-      "kickoff": "2026-07-04 02:00",
-      "handicap": null,
-      "status": "scheduled",
-      "result": null,
-      "meta": {
-        "history_points": {
-          "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
-        }
-      }
-    },
-    {
       "mid": "2040348",
       "code": "周五087",
       "league": "世界杯",
       "home": "ARG",
       "away": "CPV",
       "kickoff": "2026-07-04 06:00",
-      "handicap": null,
-      "status": "scheduled",
+      "handicap": -2,
+      "status": "on_sale",
+      "rqspf": {
+        "initial": {
+          "handicap": -2,
+          "home": 2.11,
+          "draw": 3.82,
+          "away": 2.54
+        },
+        "last": {
+          "handicap": -2,
+          "home": 2.11,
+          "draw": 3.82,
+          "away": 2.54
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 13,
+            "平其它": 800,
+            "胜其它": 11,
+            "01:00": 6.5,
+            "05:02": 150,
+            "05:01": 30,
+            "负其它": 800,
+            "02:04": 800,
+            "02:05": 1000,
+            "02:02": 45,
+            "02:03": 300,
+            "02:00": 4.75,
+            "02:01": 9.5,
+            "03:03": 300,
+            "03:01": 11,
+            "03:02": 60,
+            "03:00": 5,
+            "00:01": 45,
+            "00:00": 19,
+            "00:03": 600,
+            "00:02": 175,
+            "00:05": 1000,
+            "00:04": 1000,
+            "04:02": 75,
+            "04:01": 17,
+            "04:00": 7.25,
+            "01:02": 70,
+            "01:01": 13,
+            "01:04": 800,
+            "01:03": 400,
+            "01:05": 1000
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 13,
+            "平其它": 800,
+            "胜其它": 11,
+            "01:00": 6.5,
+            "05:02": 150,
+            "05:01": 30,
+            "负其它": 800,
+            "02:04": 800,
+            "02:05": 1000,
+            "02:02": 45,
+            "02:03": 300,
+            "02:00": 4.75,
+            "02:01": 9.5,
+            "03:03": 300,
+            "03:01": 11,
+            "03:02": 60,
+            "03:00": 5,
+            "00:01": 45,
+            "00:00": 19,
+            "00:03": 600,
+            "00:02": 175,
+            "00:05": 1000,
+            "00:04": 1000,
+            "04:02": 75,
+            "04:01": 17,
+            "04:00": 7.25,
+            "01:02": 70,
+            "01:01": 13,
+            "01:04": 800,
+            "01:03": 400,
+            "01:05": 1000
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 19,
+            "1": 6.2,
+            "2": 4,
+            "3": 3.4,
+            "4": 4.4,
+            "5": 7.25,
+            "6": 13.5,
+            "7+": 17.5
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 19,
+            "1": 6.2,
+            "2": 4,
+            "3": 3.4,
+            "4": 4.4,
+            "5": 7.25,
+            "6": 13.5,
+            "7+": 17.5
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 1.32,
+            "胜平": 32,
+            "胜负": 120,
+            "平胜": 3.75,
+            "平平": 12,
+            "平负": 48,
+            "负胜": 30,
+            "负平": 32,
+            "负负": 45
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 1.32,
+            "胜平": 32,
+            "胜负": 120,
+            "平胜": 3.75,
+            "平平": 12,
+            "平负": 48,
+            "负胜": 30,
+            "负平": 32,
+            "负负": 45
+          }
+        },
+        "result": null
+      },
       "result": null,
       "meta": {
         "history_points": {
           "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
+          "rqspf": 1,
+          "bf": 1,
+          "zjq": 1,
+          "bqc": 1
         }
       }
     },
@@ -16255,16 +17272,173 @@
       "home": "COL",
       "away": "GHA",
       "kickoff": "2026-07-04 09:30",
-      "handicap": null,
-      "status": "scheduled",
+      "handicap": -1,
+      "status": "on_sale",
+      "spf": {
+        "initial": {
+          "home": 1.32,
+          "draw": 4,
+          "away": 8.2
+        },
+        "last": {
+          "home": 1.32,
+          "draw": 4,
+          "away": 8.2
+        },
+        "result": null
+      },
+      "rqspf": {
+        "initial": {
+          "handicap": -1,
+          "home": 2.23,
+          "draw": 3.15,
+          "away": 2.75
+        },
+        "last": {
+          "handicap": -1,
+          "home": 2.23,
+          "draw": 3.15,
+          "away": 2.75
+        },
+        "result": null
+      },
+      "bf": {
+        "initial": {
+          "odds": {
+            "05:00": 40,
+            "平其它": 800,
+            "胜其它": 50,
+            "01:00": 5,
+            "05:02": 200,
+            "05:01": 75,
+            "负其它": 700,
+            "02:04": 600,
+            "02:05": 900,
+            "02:02": 24,
+            "02:03": 120,
+            "02:00": 5,
+            "02:01": 7,
+            "03:03": 175,
+            "03:01": 12,
+            "03:02": 40,
+            "03:00": 7.5,
+            "00:01": 16,
+            "00:00": 9.5,
+            "00:03": 200,
+            "00:02": 55,
+            "00:05": 1000,
+            "00:04": 700,
+            "04:02": 90,
+            "04:01": 27,
+            "04:00": 15,
+            "01:02": 23,
+            "01:01": 7.25,
+            "01:04": 500,
+            "01:03": 125,
+            "01:05": 900
+          }
+        },
+        "last": {
+          "odds": {
+            "05:00": 40,
+            "平其它": 800,
+            "胜其它": 50,
+            "01:00": 5,
+            "05:02": 200,
+            "05:01": 75,
+            "负其它": 700,
+            "02:04": 600,
+            "02:05": 900,
+            "02:02": 24,
+            "02:03": 120,
+            "02:00": 5,
+            "02:01": 7,
+            "03:03": 175,
+            "03:01": 12,
+            "03:02": 40,
+            "03:00": 7.5,
+            "00:01": 16,
+            "00:00": 9.5,
+            "00:03": 200,
+            "00:02": 55,
+            "00:05": 1000,
+            "00:04": 700,
+            "04:02": 90,
+            "04:01": 27,
+            "04:00": 15,
+            "01:02": 23,
+            "01:01": 7.25,
+            "01:04": 500,
+            "01:03": 125,
+            "01:05": 900
+          }
+        },
+        "result": null
+      },
+      "zjq": {
+        "initial": {
+          "odds": {
+            "0": 9.5,
+            "1": 4.05,
+            "2": 3.15,
+            "3": 3.6,
+            "4": 6.2,
+            "5": 13,
+            "6": 23,
+            "7+": 40
+          }
+        },
+        "last": {
+          "odds": {
+            "0": 9.5,
+            "1": 4.05,
+            "2": 3.15,
+            "3": 3.6,
+            "4": 6.2,
+            "5": 13,
+            "6": 23,
+            "7+": 40
+          }
+        },
+        "result": null
+      },
+      "bqc": {
+        "initial": {
+          "odds": {
+            "胜胜": 1.9,
+            "胜平": 21,
+            "胜负": 65,
+            "平胜": 3.5,
+            "平平": 5.7,
+            "平负": 17,
+            "负胜": 30,
+            "负平": 21,
+            "负负": 15.5
+          }
+        },
+        "last": {
+          "odds": {
+            "胜胜": 1.9,
+            "胜平": 21,
+            "胜负": 65,
+            "平胜": 3.5,
+            "平平": 5.7,
+            "平负": 17,
+            "负胜": 30,
+            "负平": 21,
+            "负负": 15.5
+          }
+        },
+        "result": null
+      },
       "result": null,
       "meta": {
         "history_points": {
-          "spf": 0,
-          "rqspf": 0,
-          "bf": 0,
-          "zjq": 0,
-          "bqc": 0
+          "spf": 1,
+          "rqspf": 1,
+          "bf": 1,
+          "zjq": 1,
+          "bqc": 1
         }
       }
     }

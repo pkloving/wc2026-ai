@@ -5,13 +5,17 @@
   "home": "GER",
   "away": "PAR",
   "kickoff": "2026-06-30 04:30",
+  "venue": "Gillette Stadium, Foxborough, MA",
+  "stage": "r32",
   "homeScore": 1,
   "awayScore": 1,
   "final_score": "1-1",
   "halfTime": null,
   "scorers": [],
-  "wentToPenalties": false,
-  "penaltyScore": null,
+  "wentToPenalties": true,
+  "penaltyScore": { "home": 4, "away": 5 },
+  "extraTime": "1-1",
+  "actualWinner": "away",
   "handicap": -1,
   "spfResult": "draw",
   "rqspfResult": "away",
@@ -26,6 +30,6 @@
   "_spfResult": "draw",
   "_hhadResult": "A",
   "_totalGoals": "2",
-  "_enrichedAt": "2026-06-30T09:00:00.000Z",
-  "_note": "halfTime/scorers 待 FIFA/直播吧 人工补；HAFU=A:D（半场客胜+全场平）→ bqcResult=负平；HHAD=A（-1让球后客胜, 1-1时让球后0-1）"
+  "_enrichedAt": "2026-07-01T00:00:00.000Z",
+  "_note": "加时 1-1、点球 4-5（PAR 胜，德国队史首次淘汰赛输点球，哈弗茨/沃尔特马德/塔 罚失）；halfTime/scorers 待 FIFA/直播吧 补；HAFU=A:D（半场客胜+全场平）→ bqcResult=负平；HHAD=A（-1让球后客胜）"
 }

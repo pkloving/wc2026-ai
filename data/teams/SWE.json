@@ -96,17 +96,7 @@
       "teams_behind": 1,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M078",
-        "mid": "2040346",
-        "date": "2026-06-30T21:00:00Z",
-        "opponent_code": "FRA",
-        "opponent_name": "法国",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Estadio BBVA, Monterrey",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 3,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-29T11:18:45.818Z"
+  "_updated_at": "2026-07-01T10:58:53.113Z"
 }

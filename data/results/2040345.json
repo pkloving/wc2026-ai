@@ -1,0 +1,39 @@
+{
+  "matchId": "2040345",
+  "code": "周二077",
+  "league": "世界杯",
+  "home": "CIV",
+  "away": "NOR",
+  "kickoff": "2026-07-01 01:00",
+  "venue": "AT&T Stadium, Dallas, TX",
+  "stage": "r32",
+  "homeScore": 1,
+  "awayScore": 2,
+  "final_score": "1-2",
+  "halfTime": "0-1",
+  "scorers": [
+    { "team": "NOR", "player": "努萨 (Antonio Nusa)", "minute": "39'", "type": "goal" },
+    { "team": "CIV", "player": "阿马德·迪亚洛 (Amad Diallo)", "minute": "74'", "type": "goal" },
+    { "team": "NOR", "player": "哈兰德 (Erling Haaland)", "minute": "86'", "type": "goal" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "away",
+  "handicap": 1,
+  "spfResult": "away",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "1:2",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "负负",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "away",
+  "_hhadResult": "D",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-01T15:00:00.000Z",
+  "_note": "常规时间 NOR 2-1 CIV 完赛，努萨 39' 兜射破门 → 迪亚洛 74' 一条龙扳平 → 哈兰德 86' 绝杀，NOR 时隔 28 年重返 16 强；HAFU=A:A（半场客胜 + 全场客胜）→ bqcResult=负负；HHAD=D（margin -1 + handicap +1 = 0 让平）；halfTime 0-1 / scorers 3 条已从 直播吧 + 头条 WebSearch 验证补齐"
+}

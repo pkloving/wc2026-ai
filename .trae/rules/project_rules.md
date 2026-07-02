@@ -37,6 +37,17 @@
 - `history_file` ('odds_history/<mid>.json')
 - 完赛时还要有 `final_score` + `result_file`
 
+## data/results/<mid>.json 完赛结果 schema（2026-07-01 扩展）
+
+- 基础：`matchId / homeScore / awayScore / halfTime / scorers[] / wentToPenalties / penaltyScore`
+- **新增（淘汰赛支持）**：
+  - `extraTime` (str|null) — 加时后比分（如 `"1-1"` / `"2-1"`）
+  - `actualWinner` ("home" | "away" | null) — 实际晋级方（90min 平 → ET 决 → PSO 决 都用这个）
+  - `penaltyScore` 用 `{home, away}` 对象（**不要**用字符串），例：`{"home": 2, "away": 3}`
+- 文件名兜底顺序：`<mid>.json` → `<matchId>.json`（如 `M073.json`，sporttery mid 抓不到时用 m.id 当 matchId）
+- **加时/点球数据来源**：sporttery API **不返回** ET/PSO，必须走 `WebSearch` 或 `chrome-devtools-mcp` 补，详见 `.trae/skills/fetch-extra-time-penalty/SKILL.md`
+- `match.js` / `schedule.js` 渲染：主比分 → 加时比分（灰色小字）→ 点球比分（金色加粗）
+
 ## betting 三原则
 
 1. 模拟单（`data/bets.json`）是用户手动录入的，**不要自动写入**

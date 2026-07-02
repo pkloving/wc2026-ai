@@ -98,17 +98,7 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M079",
-        "mid": "2040351",
-        "date": "2026-07-01T01:00:00Z",
-        "opponent_code": "ECU",
-        "opponent_name": "厄瓜多尔",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "BMO Field, Toronto",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -139,5 +129,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-29T11:18:45.806Z"
+  "_updated_at": "2026-07-01T10:58:53.101Z"
 }

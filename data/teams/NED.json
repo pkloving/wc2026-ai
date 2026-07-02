@@ -111,17 +111,7 @@
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M076",
-        "mid": "2040338",
-        "date": "2026-06-30T01:00:00Z",
-        "opponent_code": "MAR",
-        "opponent_name": "摩洛哥",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Estadio Azteca, Mexico City",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -152,5 +142,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-29T11:18:45.807Z"
+  "_updated_at": "2026-07-01T10:58:53.102Z"
 }

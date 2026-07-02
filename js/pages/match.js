@@ -64,6 +64,7 @@ boot(async () => {
         <div class="text-center">
           ${r
             ? `<div class="text-5xl sm:text-6xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>
+               ${r.extraTime ? `<div class="text-xs text-slate-500 mt-1">${escapeHtml(t('match.extraTime', { score: r.extraTime }))}</div>` : ''}
                <div class="text-xs text-slate-400 mt-1">${r.wentToPenalties ? escapeHtml(t('match.penaltyScore', { h: r.penaltyScore.home, a: r.penaltyScore.away })) : escapeHtml(t('common.finished'))}</div>`
             : `<div class="text-3xl sm:text-4xl font-black text-slate-300">${escapeHtml(t('common.vs'))}</div>
                <div class="text-xs text-slate-400 mt-1">${escapeHtml(t('common.pending'))}</div>`}

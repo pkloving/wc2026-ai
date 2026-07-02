@@ -1,5 +1,5 @@
 import { getMatches, getResults, getTeams, getResultForMatch } from '../data.js';
-import { fmtDate, stageLabel, teamChip, teamDisplayName } from '../util.js';
+import { fmtDate, stageLabel, teamChip, teamDisplayName, escapeHtml } from '../util.js';
 import { t, formatMonthDayCN, formatWeekdayCN } from '../i18n.js';
 import { boot } from '../page-boot.js';
 
@@ -9,6 +9,13 @@ boot(async () => {
   const resultFor = (m) => getResultForMatch(m, results);
 
   const state = { stage: '', group: '', status: '', team: '' };
+
+  // 兜底：result 缺失 + m.final_score="h-a" 也能渲染出比分（用于 mid 抓不到/5日窗口外的场次）
+  function parseFinalScore(s) {
+    if (!s) return null;
+    const m = String(s).match(/^(\d+)\s*[-:]\s*(\d+)/);
+    return m ? { homeScore: Number(m[1]), awayScore: Number(m[2]) } : null;
+  }
 
   function applyFilters() {
     return matches.filter((m) => {
@@ -62,9 +69,21 @@ boot(async () => {
           : `<span class="badge badge-gold">${stageLabel(m.stage)}</span>`;
         const statusBadge = r
           ? `<span class="badge badge-pitch">${t('schedule.status.finishedShort')}</span>`
-          : `<span class="badge badge-slate">${t('schedule.status.scheduledShort')}</span>`;
-        const score = r
-          ? `<div class="text-2xl font-black tabular-nums">${r.homeScore} - ${r.awayScore}</div>`
+          : (m.status === 'finished'
+              ? `<span class="badge badge-pitch">${t('schedule.status.finishedShort')}</span>`
+              : `<span class="badge badge-slate">${t('schedule.status.scheduledShort')}</span>`);
+        // 比分：r 优先；r 缺失但 m.status=finished 且 m.final_score 存在 → 兜底
+        const fallback = (m.status === 'finished' && !r) ? parseFinalScore(m.final_score) : null;
+        const hs = r ? r.homeScore : (fallback ? fallback.homeScore : null);
+        const as = r ? r.awayScore : (fallback ? fallback.awayScore : null);
+        const et = r?.extraTime || null;
+        const ps = r?.wentToPenalties && r.penaltyScore
+          ? `${r.penaltyScore.home ?? r.penaltyScore.split?.('-')?.[0]}-${r.penaltyScore.away ?? r.penaltyScore.split?.('-')?.[1]}`
+          : null;
+        const score = (hs !== null && as !== null)
+          ? `<div class="text-2xl font-black tabular-nums">${hs} - ${as}</div>
+             ${et ? `<div class="text-[10px] sm:text-xs text-slate-500 mt-0.5">${escapeHtml(t('match.extraTime', { score: et }))}</div>` : ''}
+             ${ps ? `<div class="text-[10px] sm:text-xs text-amber-600 font-semibold mt-0.5">${escapeHtml(t('match.penaltyScore', { h: ps.split('-')[0], a: ps.split('-')[1] }))}</div>` : ''}`
           : `<div class="text-slate-400 text-sm">${t('common.pending')}</div>`;
         return `
           <a href="/match.html?id=${m.id}" class="card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:-translate-y-0.5 transition-transform block">

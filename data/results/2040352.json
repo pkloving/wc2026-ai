@@ -1,0 +1,39 @@
+{
+  "matchId": "2040352",
+  "code": "周三080",
+  "league": "世界杯",
+  "home": "ENG",
+  "away": "COD",
+  "kickoff": "2026-07-02 00:00",
+  "venue": "BC Place, Vancouver",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 1,
+  "final_score": "2-1",
+  "halfTime": "0-1",
+  "scorers": [
+    { "team": "COD", "player": "西蓬加 (Sipongo)", "minute": "7'", "type": "goal" },
+    { "team": "ENG", "player": "哈里·凯恩 (Harry Kane)", "minute": "75'", "type": "goal" },
+    { "team": "ENG", "player": "哈里·凯恩 (Harry Kane)", "minute": "85'", "type": "goal" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "负胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "away",
+  "_spfResult": "home",
+  "_hhadResult": "D",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-02T09:00:00.000Z",
+  "_note": "常规时间 ENG 2-1 COD 完赛，西蓬加 7' 破门 → 凯恩 75' 85' 梅开二度 (11分钟双响绝境翻盘)，三狮军团 2-1 力克刚果金晋级 16 强；HAFU=A:H（半场客胜 + 全场主胜）→ bqcResult=负胜；HHAD=D（margin +1 + handicap -1 = 0 让平）；halfTime 0-1 / scorers 3 条已从 央视 + 头条 + 直播吧 WebSearch 验证补齐（凯恩 85' 由 CCTV 官方战报确认）；⚠️ 场地可能与 matches.json 不一致（WebSearch 显示亚特兰大 Mercedes-Benz Stadium，matches.json 记为 BC Place Vancouver）"
+}

@@ -7,7 +7,7 @@
     "away": "CRO",
     "kickoff": "2026-07-03 07:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040355",
-    "scraped_at": "2026-06-30T07:05:21.847Z",
+    "scraped_at": "2026-07-01T07:13:38.430Z",
     "sale_status": "在售",
     "single_supported": {
       "TTG": true,
@@ -28,8 +28,8 @@
     "spf_history": [],
     "handicap": -1,
     "rqspf_latest": {
-      "home": 2.99,
-      "draw": 3.25,
+      "home": 3.06,
+      "draw": 3.18,
       "away": 2.05
     },
     "rqspf_history": [],
@@ -90,7 +90,7 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-06-30T07:05:21.847Z",
+    "fetched_at": "2026-07-01T07:13:38.430Z",
     "snapshot_time": "2026-06-30 10:02:01",
     "has_match_result": false,
     "spf_result": null,

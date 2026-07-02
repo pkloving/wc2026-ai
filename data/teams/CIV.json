@@ -96,17 +96,7 @@
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M077",
-        "mid": "2040345",
-        "date": "2026-06-30T17:00:00Z",
-        "opponent_code": "NOR",
-        "opponent_name": "挪威",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Estadio Akron, Guadalajara",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-06-29T11:18:45.780Z"
+  "_updated_at": "2026-07-01T10:58:53.076Z"
 }

@@ -1,0 +1,39 @@
+{
+  "matchId": "2040346",
+  "code": "周二078",
+  "league": "世界杯",
+  "home": "FRA",
+  "away": "SWE",
+  "kickoff": "2026-07-01 05:00",
+  "venue": "MetLife Stadium, East Rutherford, NJ",
+  "stage": "r32",
+  "homeScore": 3,
+  "awayScore": 0,
+  "final_score": "3-0",
+  "halfTime": "1-0",
+  "scorers": [
+    { "team": "FRA", "player": "姆巴佩 (Kylian Mbappé)", "minute": "45'", "type": "goal" },
+    { "team": "FRA", "player": "巴尔科拉 (Bradley Barcola)", "minute": "53'", "type": "goal" },
+    { "team": "FRA", "player": "姆巴佩 (Kylian Mbappé)", "minute": "74'", "type": "goal" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "3:0",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "胜胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-01T15:00:00.000Z",
+  "_note": "常规时间 FRA 3-0 SWE 完赛，姆巴佩 45' 破门（半场 1-0）→ 巴尔科拉 53' 扩大 → 姆巴佩 74' 梅开二度，FRA 强势晋级 16 强；姆巴佩本届 6 球追平梅西；HAFU=H:H（半场主胜 + 全场主胜）→ bqcResult=胜胜；HHAD=H（margin +3 + handicap -1 = +2 让胜）；halfTime 1-0 / scorers 3 条已从 直播吧 + 头条 WebSearch 验证补齐"
+}

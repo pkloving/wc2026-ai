@@ -1,0 +1,33 @@
+{
+  "matchId": "M073",
+  "code": "周一073",
+  "league": "世界杯",
+  "home": "RSA",
+  "away": "CAN",
+  "kickoff": "2026-06-29 03:00",
+  "venue": "Levi's Stadium, Santa Clara, CA",
+  "stage": "r32",
+  "homeScore": 0,
+  "awayScore": 1,
+  "final_score": "0-1",
+  "halfTime": null,
+  "scorers": [
+    {
+      "team": "CAN",
+      "player": "EUSTÁQUIO (欧斯塔基奥)",
+      "minute": "90+2'",
+      "type": "goal"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "away",
+  "_spfResult": "away",
+  "_hhadResult": null,
+  "_halfTimeResult": "draw",
+  "_totalGoals": "1",
+  "_fromSporttery": false,
+  "_source": "WebSearch 验证：北京时间 6/29 加拿大 1-0 南非，欧斯塔基奥 90+2' 补时绝杀，CAN 队史首入 16 强；sporttery 5日窗口外 + mid 未抓到，写 m.id='M073' 兜底",
+  "_enrichedAt": "2026-07-01T00:00:00.000Z"
+}
