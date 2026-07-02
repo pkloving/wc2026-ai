@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.636Z",
+  "generated_at": "2026-07-02T10:03:06.250Z",
   "play": "rqspf",
   "count": 87,
   "rows": [
@@ -1770,7 +1770,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "handicap": -1,
         "home": 1.77,
@@ -1783,7 +1783,7 @@
         "draw": 3.75,
         "away": 3.36
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040354",

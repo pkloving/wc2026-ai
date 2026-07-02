@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.637Z",
+  "generated_at": "2026-07-02T10:03:06.251Z",
   "play": "bf",
   "count": 87,
   "rows": [
@@ -6650,7 +6650,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "05:00": 45,
@@ -6721,7 +6721,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "2:0",
+        "other": null
+      }
     },
     {
       "mid": "2040354",

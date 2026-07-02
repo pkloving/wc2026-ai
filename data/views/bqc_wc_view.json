@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.643Z",
+  "generated_at": "2026-07-02T10:03:06.451Z",
   "play": "bqc",
   "count": 86,
   "rows": [
@@ -2854,7 +2854,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "胜胜": 1.7,
@@ -2881,7 +2881,7 @@
           "负负": 15
         }
       },
-      "result": null
+      "result": "平胜"
     },
     {
       "mid": "2040354",

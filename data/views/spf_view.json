@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.635Z",
+  "generated_at": "2026-07-02T10:03:06.249Z",
   "play": "spf",
   "count": 70,
   "rows": [
@@ -1290,7 +1290,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "home": 1.22,
         "draw": 4.91,
@@ -1301,7 +1301,7 @@
         "draw": 4.91,
         "away": 9.4
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040354",

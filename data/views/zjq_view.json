@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.638Z",
+  "generated_at": "2026-07-02T10:03:06.253Z",
   "play": "zjq",
   "count": 87,
   "rows": [
@@ -2730,7 +2730,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
         "odds": {
           "0": 16,
@@ -2755,7 +2755,7 @@
           "7+": 23.5
         }
       },
-      "result": null
+      "result": "2"
     },
     {
       "mid": "2040354",
