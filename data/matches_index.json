@@ -1,79 +1,9 @@
 {
-  "generated_at": "2026-07-01T10:55:47.918Z",
+  "generated_at": "2026-07-02T01:08:23.902Z",
   "total": 144,
   "by_status": {
     "scheduled": [],
     "on_sale": [
-      {
-        "mid": "2040352",
-        "code": "周三080",
-        "league": "世界杯",
-        "home": "ENG",
-        "away": "COD",
-        "kickoff": "2026-07-02 00:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.17,
-          "draw": 5.22,
-          "away": 12
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 1.64,
-          "draw": 3.8,
-          "away": 3.9
-        },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.342Z",
-        "sale_status": "在售",
-        "single_supported": {
-          "HHAD": false,
-          "HAFU": true,
-          "CRS": true,
-          "TTG": true,
-          "HAD": true
-        },
-        "final_score": null,
-        "odds_file": "odds/2040352.json",
-        "history_file": "odds_history/2040352.json",
-        "result_file": null
-      },
-      {
-        "mid": "2040353",
-        "code": "周三081",
-        "league": "世界杯",
-        "home": "BEL",
-        "away": "SEN",
-        "kickoff": "2026-07-02 04:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.95,
-          "draw": 2.98,
-          "away": 3.56
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 4.18,
-          "draw": 3.43,
-          "away": 1.67
-        },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.364Z",
-        "sale_status": "在售",
-        "single_supported": {
-          "HHAD": false,
-          "HAFU": true,
-          "CRS": true,
-          "TTG": true,
-          "HAD": true
-        },
-        "final_score": null,
-        "odds_file": "odds/2040353.json",
-        "history_file": "odds_history/2040353.json",
-        "result_file": null
-      },
       {
         "mid": "2040339",
         "code": "周三082",
@@ -95,7 +25,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.386Z",
+        "scraped_at": "2026-07-02T01:07:49.433Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -130,7 +60,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.407Z",
+        "scraped_at": "2026-07-02T01:07:49.456Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -159,13 +89,13 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.06,
-          "draw": 3.18,
+          "home": 3.11,
+          "draw": 3.12,
           "away": 2.05
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.430Z",
+        "scraped_at": "2026-07-02T01:07:49.473Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -200,7 +130,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.448Z",
+        "scraped_at": "2026-07-02T01:07:49.492Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -235,7 +165,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.468Z",
+        "scraped_at": "2026-07-02T01:07:49.516Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -260,13 +190,13 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.11,
-          "draw": 3.82,
-          "away": 2.54
+          "home": 2.2,
+          "draw": 3.75,
+          "away": 2.45
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.487Z",
+        "scraped_at": "2026-07-02T01:07:49.555Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": true,
@@ -300,7 +230,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.504Z",
+        "scraped_at": "2026-07-02T01:07:49.575Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -3952,6 +3882,76 @@
         "odds_file": "odds/2040351.json",
         "history_file": "odds_history/2040351.json",
         "result_file": "results/2040351.json"
+      },
+      {
+        "mid": "2040352",
+        "code": "周三080",
+        "league": "世界杯",
+        "home": "ENG",
+        "away": "COD",
+        "kickoff": "2026-07-02 00:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.17,
+          "draw": 5.13,
+          "away": 12.5
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 1.64,
+          "draw": 3.8,
+          "away": 3.9
+        },
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.397Z",
+        "sale_status": "在售",
+        "single_supported": {
+          "HHAD": false,
+          "HAFU": true,
+          "CRS": true,
+          "TTG": true,
+          "HAD": true
+        },
+        "final_score": "2:1",
+        "odds_file": "odds/2040352.json",
+        "history_file": "odds_history/2040352.json",
+        "result_file": "results/2040352.json"
+      },
+      {
+        "mid": "2040353",
+        "code": "周三081",
+        "league": "世界杯",
+        "home": "BEL",
+        "away": "SEN",
+        "kickoff": "2026-07-02 04:00",
+        "status": "finished",
+        "spf": {
+          "home": 1.97,
+          "draw": 2.98,
+          "away": 3.49
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 4.31,
+          "draw": 3.43,
+          "away": 1.65
+        },
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.418Z",
+        "sale_status": "在售",
+        "single_supported": {
+          "HHAD": false,
+          "HAFU": true,
+          "CRS": true,
+          "TTG": true,
+          "HAD": true
+        },
+        "final_score": "2:2",
+        "odds_file": "odds/2040353.json",
+        "history_file": "odds_history/2040353.json",
+        "result_file": "results/2040353.json"
       }
     ],
     "cancelled": [],
@@ -7604,11 +7604,11 @@
         "home": "ENG",
         "away": "COD",
         "kickoff": "2026-07-02 00:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 1.17,
-          "draw": 5.22,
-          "away": 12
+          "draw": 5.13,
+          "away": 12.5
         },
         "handicap": -1,
         "rqspf": {
@@ -7616,9 +7616,9 @@
           "draw": 3.8,
           "away": 3.9
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.342Z",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.397Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -7627,10 +7627,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "2:1",
         "odds_file": "odds/2040352.json",
         "history_file": "odds_history/2040352.json",
-        "result_file": null
+        "result_file": "results/2040352.json"
       },
       {
         "mid": "2040353",
@@ -7639,21 +7639,21 @@
         "home": "BEL",
         "away": "SEN",
         "kickoff": "2026-07-02 04:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.95,
+          "home": 1.97,
           "draw": 2.98,
-          "away": 3.56
+          "away": 3.49
         },
         "handicap": -1,
         "rqspf": {
-          "home": 4.18,
+          "home": 4.31,
           "draw": 3.43,
-          "away": 1.67
+          "away": 1.65
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.364Z",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.418Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -7662,10 +7662,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "2:2",
         "odds_file": "odds/2040353.json",
         "history_file": "odds_history/2040353.json",
-        "result_file": null
+        "result_file": "results/2040353.json"
       },
       {
         "mid": "2040339",
@@ -7688,7 +7688,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.386Z",
+        "scraped_at": "2026-07-02T01:07:49.433Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -7723,7 +7723,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.407Z",
+        "scraped_at": "2026-07-02T01:07:49.456Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -7752,13 +7752,13 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.06,
-          "draw": 3.18,
+          "home": 3.11,
+          "draw": 3.12,
           "away": 2.05
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.430Z",
+        "scraped_at": "2026-07-02T01:07:49.473Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -7793,7 +7793,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.448Z",
+        "scraped_at": "2026-07-02T01:07:49.492Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -7828,7 +7828,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.468Z",
+        "scraped_at": "2026-07-02T01:07:49.516Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -7853,13 +7853,13 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.11,
-          "draw": 3.82,
-          "away": 2.54
+          "home": 2.2,
+          "draw": 3.75,
+          "away": 2.45
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.487Z",
+        "scraped_at": "2026-07-02T01:07:49.555Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": true,
@@ -7893,7 +7893,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.504Z",
+        "scraped_at": "2026-07-02T01:07:49.575Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -11628,11 +11628,11 @@
         "home": "ENG",
         "away": "COD",
         "kickoff": "2026-07-02 00:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 1.17,
-          "draw": 5.22,
-          "away": 12
+          "draw": 5.13,
+          "away": 12.5
         },
         "handicap": -1,
         "rqspf": {
@@ -11640,9 +11640,9 @@
           "draw": 3.8,
           "away": 3.9
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.342Z",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.397Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -11651,10 +11651,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "2:1",
         "odds_file": "odds/2040352.json",
         "history_file": "odds_history/2040352.json",
-        "result_file": null
+        "result_file": "results/2040352.json"
       },
       {
         "mid": "2040353",
@@ -11663,21 +11663,21 @@
         "home": "BEL",
         "away": "SEN",
         "kickoff": "2026-07-02 04:00",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
-          "home": 1.95,
+          "home": 1.97,
           "draw": 2.98,
-          "away": 3.56
+          "away": 3.49
         },
         "handicap": -1,
         "rqspf": {
-          "home": 4.18,
+          "home": 4.31,
           "draw": 3.43,
-          "away": 1.67
+          "away": 1.65
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.364Z",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-02T09:00:00.000Z",
+        "scraped_at": "2026-07-02T01:07:49.418Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -11686,10 +11686,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "2:2",
         "odds_file": "odds/2040353.json",
         "history_file": "odds_history/2040353.json",
-        "result_file": null
+        "result_file": "results/2040353.json"
       },
       {
         "mid": "2040339",
@@ -11712,7 +11712,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.386Z",
+        "scraped_at": "2026-07-02T01:07:49.433Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -11749,7 +11749,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.407Z",
+        "scraped_at": "2026-07-02T01:07:49.456Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -11778,13 +11778,13 @@
         },
         "handicap": -1,
         "rqspf": {
-          "home": 3.06,
-          "draw": 3.18,
+          "home": 3.11,
+          "draw": 3.12,
           "away": 2.05
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.430Z",
+        "scraped_at": "2026-07-02T01:07:49.473Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -11819,7 +11819,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.448Z",
+        "scraped_at": "2026-07-02T01:07:49.492Z",
         "sale_status": "在售",
         "single_supported": {
           "TTG": true,
@@ -11856,7 +11856,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.468Z",
+        "scraped_at": "2026-07-02T01:07:49.516Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,
@@ -11881,13 +11881,13 @@
         "spf": null,
         "handicap": -2,
         "rqspf": {
-          "home": 2.11,
-          "draw": 3.82,
-          "away": 2.54
+          "home": 2.2,
+          "draw": 3.75,
+          "away": 2.45
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.487Z",
+        "scraped_at": "2026-07-02T01:07:49.555Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": true,
@@ -11921,7 +11921,7 @@
         },
         "is_finished_odds": false,
         "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-01T07:13:38.504Z",
+        "scraped_at": "2026-07-02T01:07:49.575Z",
         "sale_status": "在售",
         "single_supported": {
           "HHAD": false,

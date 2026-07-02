@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T10:58:53.260Z",
+  "generated_at": "2026-07-02T01:08:23.640Z",
   "play": "spf",
   "count": 70,
   "rows": [
@@ -1250,18 +1250,18 @@
       "away": "COD",
       "kickoff": "2026-07-02 00:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
         "home": 1.17,
-        "draw": 5.22,
-        "away": 12
+        "draw": 5.13,
+        "away": 12.5
       },
       "last": {
         "home": 1.17,
-        "draw": 5.22,
-        "away": 12
+        "draw": 5.13,
+        "away": 12.5
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040353",
@@ -1270,18 +1270,18 @@
       "away": "SEN",
       "kickoff": "2026-07-02 04:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:2",
       "initial": {
-        "home": 1.95,
+        "home": 1.97,
         "draw": 2.98,
-        "away": 3.56
+        "away": 3.49
       },
       "last": {
-        "home": 1.95,
+        "home": 1.97,
         "draw": 2.98,
-        "away": 3.56
+        "away": 3.49
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040339",
