@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-07-01T04:00:00.000Z",
+  "generated_at": "2026-07-02T07:00:00.000Z",
+  "_patch_note_20260702_1500": "7-2 15:00 CST 每日定时（code 模式，shell 恢复）：M080/M081 在 data/matches.json 仍残留 status=scheduled（09:00 提交只改了 matches_status.json，漏了 matches.json），本轮补齐：M080 (2040352) status scheduled→finished + final_score='2-1' + result_file='results/2040352.json'（ENG 2-1 COD 90min 完赛）/ M081 (2040353) status scheduled→finished + final_score='2-2' + result_file='results/2040353.json'（BEL 2-2 SEN 90min + ET 3-2，按 R-007 竞猜主比分用 90min '2-2'）。Step 1 无新完赛补录（M080/M081/M082 三场 r32 今日 00/04/08 完赛，result 文件 + matches_status.json 均已落库，09:00/12:00 提交已覆盖）。Step 4 跳过：M083-M088 6 场未开赛已 7-2 01:07 抓过赔率，距 15:00 仅 ~14h 无显著漂移。跑 build_index.js 刷索引（matches_index.json generated_at 翻 7-2 15:04 CST，138 finished + 6 on_sale = 144 total 不变）。本次同时把 33_fit_strategy.js + strategy_core.js 里 rqspf.hcMinus1AwayTrap / spfFavHcMinus1AwayMid / hcPlus2AwayTrap 共 6 个旋钮标 frozen=true（6-29/6-30 反复 fit 验证 n=3-6 子桶过拟合，33_fit 不应再调这 6 个旋钮，留 DEFAULT_PARAMS 当前值；等数据量明显增长时手动解冻）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
   "total": 104,
   "_patch_note_20260701_1500": "7-1 15:00 CST 每日定时（code 模式）：补 M077/M078/M079 三场 r32 完赛结果（90min 常规，未进加时点球）。M077 (2040345) CIV 1-2 NOR：努萨 39' / 迪亚洛 74' / 哈兰德 86' 绝杀，halfTime 0-1 / scorers 3 条 / rqspf=D（margin -1 + handicap +1 = 0 让平）/ bqc=负负，写 results/2040345.json + result_file 同步。M078 (2040346) FRA 3-0 SWE：姆巴佩 45'/74' 梅二 + 巴尔科拉 53'，halfTime 1-0 / scorers 3 条 / rqspf=H（margin +3 + handicap -1 = +2 让胜）/ bqc=胜胜，result_file 同步 + 补全 result 字段（halfTime/scorers/final_score 等）。M079 (2040351) MEX 2-0 ECU：基尼奥内斯 22' + 希门尼斯 31'（基尼奥内斯传射），halfTime 2-0 / scorers 2 条 / rqspf=H（margin +2 + handicap -1 = +1 让胜）/ bqc=胜胜，result_file 同步 + 补全。3 场 odds 文件已 is_finished_odds=true（早起 06:34/06:44 抓赔率时已翻），不再重抓。Step 4 跳过：D+1/D+2/D+3 9 场 r32/r16（2040339/2040347/2040348/2040352/2040353/2040354/2040355/2040356/2040357）已 06:34/07:08 抓过赔率，距 15:00 仅 ~8h 无显著漂移，且 no shell 跑 scrape_fixed_bonus.js。matches_index.json 需手动重写（build_index.js 需 shell，no shell 时直接 rewrite）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
   "_patch_note_20260701_0900": "7-1 09:00 CST 每日定时（code 模式，不走沙箱脚本）：执行 Step 6 刷索引 build_index.js（matches_index.json generated_at 更新到 7-1 09:00 CST，144 matches indexed：finished 131, on_sale 9, scheduled 3）。Step 1/4 跳过：code 模式无 live API 通道（getFixedBonusV1.qry 567 拦截 + sporttery 5日窗口外 + 头条搜索可拿方向但比分互相打架无法核验），M077 CIV-NOR（01:00 kickoff 应已完赛）和 M078 FRA-SWE（05:00 kickoff 应已完赛）按时间应已完赛但本轮**不写假结果**（halfTime/scorers 必填且 sportsgame 双源打架无核验源），等下个沙箱 mode 走 scrape_fixed_bonus.js 拿权威 matchResultList 落 results/<mid>.json。M079 MEX-ECU 09:00 才开赛，result 待赛后。M073 TBD-TBD 仍跳。M074-M076 已有 results 但 halfTime=null/scorers=[] 已知 gap 待 FIFA/直播吧 人工补，本轮不动。Step 4 不重抓：15:00 review 已抓过 13 场 r32 在售赔率，9:00 距 15:00 仅 ~18h 且无 live API 写盘通道。M086-M088 仍 define 待开售无 odds 是预期状态。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
@@ -4006,6 +4007,19 @@
       ],
       "source": "sporttery getFixedBonusV1.qry Referer+UA 拉赔率 + matchResultList 判完赛",
       "author": "code模式 09:00 自动 patch"
+    },
+    {
+      "at": "2026-07-02T07:00:00.000Z",
+      "scope": "M080/M081 在 data/matches.json 残留 status=scheduled 修复 + 索引刷 + 6 旋钮 frozen",
+      "changes": [
+        "M080 (2040352 ENG-COD): matches.json status scheduled→finished + final_score='2-1' + result_file='results/2040352.json'（09:00 提交只动了 matches_status.json，漏了 matches.json）",
+        "M081 (2040353 BEL-SEN): matches.json status scheduled→finished + final_score='2-2' + result_file='results/2040353.json'（90min 2-2 + ET 3-2, R-007 竞猜主比分用 90min '2-2'）",
+        "matches_index.json: 跑 build_index.js 刷索引 (generated_at 7-2 15:04 CST, 138 finished + 6 on_sale = 144 total 不变)",
+        "33_fit_strategy.js + strategy_core.js: rqspf.hcMinus1AwayTrap/spfFavHcMinus1AwayMid/hcPlus2AwayTrap 共 6 个旋钮标 frozen=true (6-29/6-30 反复 fit 验证 n=3-6 子桶过拟合保护)",
+        "Step 1/4/5/6 全部跳过: M077-M082 完赛已 7-1/7-2 提交覆盖; M083-M088 未开赛已 7-2 01:07 抓过赔率, 距 15:00 仅 ~14h 无显著漂移; modeling/推荐 由沙箱 mode 走"
+      ],
+      "source": "code模式 15:00 自动 patch (Edit/Write 直落盘, shell 已恢复可跑 build_index.js)",
+      "author": "code模式 15:00 自动 patch"
     }
   ]
 }

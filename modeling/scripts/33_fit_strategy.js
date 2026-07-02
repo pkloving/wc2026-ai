@@ -176,6 +176,13 @@ const changes = [];
 for (let pass = 1; pass <= MAX_PASSES; pass++) {
   let improvedThisPass = false;
   for (const knob of SEARCH_SPACE) {
+    // 2026-07-02 调优: 跳过 frozen=true 旋钮 (6-29/6-30 n=3-6 子桶过拟合保护)
+    //   这些旋钮的 effective n 太小, 33_fit 反复接受后又被关掉, frozen 防止再次循环
+    //   留 DEFAULT_PARAMS 当前值, 等数据量明显增长时手动解冻
+    if (knob.frozen) {
+      console.log(`  [pass${pass}] SKIP ${knob.path} (frozen=true, 6-29/6-30 n≤6 子桶过拟合保护)`);
+      continue;
+    }
     const cur = getPath(params, knob.path);
     let bestV = cur, bestKnobObj = bestObj;
     for (const v of knob.values) {

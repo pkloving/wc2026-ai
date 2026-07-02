@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:08:23.367Z",
+  "generated_at": "2026-07-02T07:07:11.707Z",
   "total_matches": 144,
   "matches": [
     {
@@ -16248,7 +16248,7 @@
       "away": "BIH",
       "kickoff": "2026-07-02 08:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.22,
@@ -16260,7 +16260,7 @@
           "draw": 4.91,
           "away": 9.4
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -16275,7 +16275,7 @@
           "draw": 3.75,
           "away": 3.36
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
@@ -16348,7 +16348,10 @@
             "01:05": 1000
           }
         },
-        "result": null
+        "result": {
+          "score": "2:0",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -16375,7 +16378,7 @@
             "7+": 23.5
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
@@ -16404,9 +16407,18 @@
             "负负": 15
           }
         },
-        "result": null
+        "result": "平胜"
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 0,
+        "half": "1-0",
+        "scorers_count": 2,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
           "spf": 2,

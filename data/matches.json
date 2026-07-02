@@ -904,7 +904,9 @@
     "status": "finished",
     "mid": "2040345",
     "kickoff": "2026-07-01 01:00",
-    "code": "周二077"
+    "code": "周二077",
+    "final_score": "1-2",
+    "result_file": "results/2040345.json"
   },
   {
     "id": "M078",
@@ -917,7 +919,9 @@
     "status": "finished",
     "mid": "2040346",
     "kickoff": "2026-07-01 05:00",
-    "code": "周二078"
+    "code": "周二078",
+    "final_score": "3-0",
+    "result_file": "results/2040346.json"
   },
   {
     "id": "M079",
@@ -930,7 +934,9 @@
     "status": "finished",
     "mid": "2040351",
     "kickoff": "2026-07-01 09:00",
-    "code": "周二079"
+    "code": "周二079",
+    "final_score": "2-0",
+    "result_file": "results/2040351.json"
   },
   {
     "id": "M080",
@@ -940,10 +946,12 @@
     "venue": "BC Place, Vancouver",
     "home": "ENG",
     "away": "COD",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040352",
     "kickoff": "2026-07-02 00:00",
-    "code": "周三080"
+    "code": "周三080",
+    "final_score": "2-1",
+    "result_file": "results/2040352.json"
   },
   {
     "id": "M081",
@@ -953,10 +961,12 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "BEL",
     "away": "SEN",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040353",
     "kickoff": "2026-07-02 04:00",
-    "code": "周三081"
+    "code": "周三081",
+    "final_score": "2-2",
+    "result_file": "results/2040353.json"
   },
   {
     "id": "M082",
@@ -970,7 +980,8 @@
     "mid": "2040339",
     "kickoff": "2026-07-02 08:00",
     "code": "周三082",
-    "final_score": "2-0"
+    "final_score": "2-0",
+    "result_file": "results/2040339.json"
   },
   {
     "id": "M083",

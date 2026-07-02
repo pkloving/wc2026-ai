@@ -170,18 +170,22 @@ export const SEARCH_SPACE = [
   // 2026-06-27: 加 hcMinus1AwayTrap 旋钮 (主让-1 走盘陷阱)
   //   minOdds 范围: 0=关闭, 1.4/1.5/1.6 主流盘过滤
   //   maxOdds 范围: 0=关闭, 1.7/1.8/2.0 上限
-  { path: 'rqspf.hcMinus1AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6] },
-  { path: 'rqspf.hcMinus1AwayTrap.maxOdds', values: [0, 1.7, 1.8, 2.0] },
+  // 2026-07-02 调优 (sampled 2040258 COL 2-0 COD, hc=-1, 4/5 命中): frozen=true
+  //   6-29/6-30 反复验证 n=3-5 子桶过拟合, 33_fit 不应 fit 这两个旋钮
+  { path: 'rqspf.hcMinus1AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6], frozen: true },
+  { path: 'rqspf.hcMinus1AwayTrap.maxOdds', values: [0, 1.7, 1.8, 2.0], frozen: true },
   // 2026-06-28: 加 spfFavHcMinus1AwayMid 旋钮 (spf大热门主队+hc=-1+rq.away中盘→让胜)
   //   minOdds 范围: 0=关闭, 1.7/1.8/1.9 起点
   //   maxOdds 范围: 0=关闭, 2.1/2.2/2.5 终点 (1.8-2.2 较稳 ROI +41.3% n=4, 1.8-2.5 含 n=2 小样本 ROI +36.3%)
-  { path: 'rqspf.spfFavHcMinus1AwayMid.minOdds', values: [0, 1.7, 1.8, 1.9] },
-  { path: 'rqspf.spfFavHcMinus1AwayMid.maxOdds', values: [0, 2.1, 2.2, 2.5] },
+  // 2026-07-02 调优: 同样 frozen=true (n=4-6 子桶, 6-29 log 验证 33_fit 倾向关掉)
+  { path: 'rqspf.spfFavHcMinus1AwayMid.minOdds', values: [0, 1.7, 1.8, 1.9], frozen: true },
+  { path: 'rqspf.spfFavHcMinus1AwayMid.maxOdds', values: [0, 2.1, 2.2, 2.5], frozen: true },
   // 2026-06-30: 加 hcPlus2AwayTrap 旋钮 (主受让+2 走盘陷阱, 镜像 6-27 hcMinus1AwayTrap)
   //   minOdds 范围: 0=关闭, 1.4/1.5/1.6 主流盘过滤
   //   maxOdds 范围: 0=关闭, 1.8/2.0/2.2 上限
-  { path: 'rqspf.hcPlus2AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6] },
-  { path: 'rqspf.hcPlus2AwayTrap.maxOdds', values: [0, 1.8, 2.0, 2.2] },
+  // 2026-07-02 调优: 同样 frozen=true (n=3 子桶, overfit 风险最高)
+  { path: 'rqspf.hcPlus2AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6], frozen: true },
+  { path: 'rqspf.hcPlus2AwayTrap.maxOdds', values: [0, 1.8, 2.0, 2.2], frozen: true },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
   { path: 'single.bigBall.oddsHi',        values: [55, 65, 75] },
