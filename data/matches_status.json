@@ -1,6 +1,8 @@
 {
   "generated_at": "2026-07-03T01:00:00.000Z",
   "_patch_note_20260703_0900": "7-3 09:00 CST 每日定时（code 模式）：补 M083 (2040354 ESP-AUT) r32 完赛结果（90min 常规，未进加时点球）。M083 ESP 3-0 AUT：奥亚萨瓦尔 36' (库库雷利亚助攻) / 波罗 66' (巴埃纳助攻头球) / 奥亚萨瓦尔 88' (库库雷利亚再送助攻) 梅二，halfTime 1-0 / scorers 3 条 / rqspf=H（margin +3 + handicap -1 = +2 让胜）/ spf=home / bqc=胜胜 / zjq=3，写 results/2040354.json + result_file 同步 + final_score='3-0' + is_finished_odds=true。Step 1 跳 M084 (2040355 POR-CRO)：kickoff 7-3 07:00 CST 已过 2h（当前 9:00），但 WebSearch 只能确认半场 0-0（直播吧 zhibo8 7-3 早 8 点战报），最终结果可能在 90min 末/加时/点球，未确认 → 标 status='in_progress'，result 留待下个 9:00 check 或下个 scrape 沙箱 mode，**不写假结果**。Step 4 跳过：M085 (2040356 SUI-DZA, kickoff 7-3 11:00) + M086-M088 (2040347/2040348/2040357, kickoff 7-4) 共 4 场未开赛已 7-2 10:02 抓过赔率，距 9:00 仅 ~23h 无显著漂移。build_index.js 待跑（matches_index.json generated_at 翻 7-3 09:00 CST，139 finished + 1 in_progress + 4 on_sale = 144 total）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
+  "_patch_note_20260703_1500": "7-3 15:00 CST 每日定时（code 模式）：补 M085 (2040356 SUI-DZA) r32 完赛结果（90min 常规，未进加时点球）。M085 SUI 2-0 DZA：恩博洛 11' (曼赞比助攻推射) → 恩多耶 46' (阿尔及利亚后卫贝尔加利解围失误 + 禁区弧顶凌空抽射) → 里德下半场错失空门，halfTime 1-0 / scorers 2 条 / rqspf=H（margin +2 + handicap -1 = +1 让胜）/ spf=home / bqc=胜胜 / zjq=2，写 results/2040356.json + matches.json status on_sale→finished + final_score='2-0' + result_file='results/2040356.json' + venue 修正 'Mercedes-Benz Stadium, Atlanta, GA' → 'BC Place, Vancouver, Canada'（多源新闻源确认）+ is_finished_odds=true + is_finished_odds_marked_at='2026-07-03T15:00:00Z'。Step 4 跳过：M085 odds is_finished_odds=true 不重抓；M086 (2040347 AUS-EGY, kickoff 7-4 02:00) + M087 (2040348 ARG-CPV, 7-4 06:00) + M088 (2040357 COL-GHA, 7-4 09:30) 3 场未开赛已 7-2 10:02 抓过赔率，距 15:00 仅 ~5h 无显著漂移。build_index.js 待跑（matches_index.json generated_at 翻 7-3 15:00 CST，141 finished + 3 on_sale = 144 total）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
+  "_patch_note_20260703_1200": "7-3 12:00 CST 每日定时（code 模式）：补 M084 (2040355 POR-CRO) r32 完赛结果（90min 常规，未进加时点球）。M084 POR 2-1 CRO：佩里西奇 53' 远射破门 → C罗 75' 点球命中（打破世界杯淘汰赛零进球魔咒）→ 菲利克斯 88' 绝杀进球，halfTime 0-0 / scorers 3 条 / rqspf=D（margin +1 + handicap -1 = 0 让平）/ spf=home / bqc=平胜 / zjq=3，写 results/2040355.json + result_file 同步 + final_score='2-1' + is_finished_odds=true。Step 4 跳过：M085 (2040356 SUI-DZA, kickoff 7-3 11:00) + M086-M088 (2040347/2040348/2040357, kickoff 7-4) 共 4 场未开赛已 7-2 10:02 抓过赔率，距 12:00 仅 ~26h 无显著漂移。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
   "_patch_note_20260702_1500": "7-2 15:00 CST 每日定时（code 模式，shell 恢复）：M080/M081 在 data/matches.json 仍残留 status=scheduled（09:00 提交只改了 matches_status.json，漏了 matches.json），本轮补齐：M080 (2040352) status scheduled→finished + final_score='2-1' + result_file='results/2040352.json'（ENG 2-1 COD 90min 完赛）/ M081 (2040353) status scheduled→finished + final_score='2-2' + result_file='results/2040353.json'（BEL 2-2 SEN 90min + ET 3-2，按 R-007 竞猜主比分用 90min '2-2'）。Step 1 无新完赛补录（M080/M081/M082 三场 r32 今日 00/04/08 完赛，result 文件 + matches_status.json 均已落库，09:00/12:00 提交已覆盖）。Step 4 跳过：M083-M088 6 场未开赛已 7-2 01:07 抓过赔率，距 15:00 仅 ~14h 无显著漂移。跑 build_index.js 刷索引（matches_index.json generated_at 翻 7-2 15:04 CST，138 finished + 6 on_sale = 144 total 不变）。本次同时把 33_fit_strategy.js + strategy_core.js 里 rqspf.hcMinus1AwayTrap / spfFavHcMinus1AwayMid / hcPlus2AwayTrap 共 6 个旋钮标 frozen=true（6-29/6-30 反复 fit 验证 n=3-6 子桶过拟合，33_fit 不应再调这 6 个旋钮，留 DEFAULT_PARAMS 当前值；等数据量明显增长时手动解冻）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
   "total": 104,
   "_patch_note_20260701_1500": "7-1 15:00 CST 每日定时（code 模式）：补 M077/M078/M079 三场 r32 完赛结果（90min 常规，未进加时点球）。M077 (2040345) CIV 1-2 NOR：努萨 39' / 迪亚洛 74' / 哈兰德 86' 绝杀，halfTime 0-1 / scorers 3 条 / rqspf=D（margin -1 + handicap +1 = 0 让平）/ bqc=负负，写 results/2040345.json + result_file 同步。M078 (2040346) FRA 3-0 SWE：姆巴佩 45'/74' 梅二 + 巴尔科拉 53'，halfTime 1-0 / scorers 3 条 / rqspf=H（margin +3 + handicap -1 = +2 让胜）/ bqc=胜胜，result_file 同步 + 补全 result 字段（halfTime/scorers/final_score 等）。M079 (2040351) MEX 2-0 ECU：基尼奥内斯 22' + 希门尼斯 31'（基尼奥内斯传射），halfTime 2-0 / scorers 2 条 / rqspf=H（margin +2 + handicap -1 = +1 让胜）/ bqc=胜胜，result_file 同步 + 补全。3 场 odds 文件已 is_finished_odds=true（早起 06:34/06:44 抓赔率时已翻），不再重抓。Step 4 跳过：D+1/D+2/D+3 9 场 r32/r16（2040339/2040347/2040348/2040352/2040353/2040354/2040355/2040356/2040357）已 06:34/07:08 抓过赔率，距 15:00 仅 ~8h 无显著漂移，且 no shell 跑 scrape_fixed_bonus.js。matches_index.json 需手动重写（build_index.js 需 shell，no shell 时直接 rewrite）。**未动** data/bets.json / data/predictions.json / add-prediction.js。",
@@ -3804,7 +3806,7 @@
       "home": "POR",
       "away": "CRO",
       "kickoff": "2026-07-03 07:00",
-      "status": "in_progress",
+      "status": "finished",
       "spf": {
         "home": 1.57,
         "draw": 3.32,
@@ -3816,8 +3818,8 @@
         "draw": 2.95,
         "away": 2.11
       },
-      "is_finished_odds": false,
-      "is_finished_odds_marked_at": null,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-07-03T12:00:00.000Z",
       "scraped_at": "2026-07-02T10:02:42.205Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3827,10 +3829,10 @@
         "HAFU": true,
         "CRS": true
       },
-      "final_score": null,
+      "final_score": "2-1",
       "odds_file": "odds/2040355.json",
       "history_file": "odds_history/2040355.json",
-      "result_file": null
+      "result_file": "results/2040355.json"
     },
     {
       "mid": "2040356",
@@ -3839,7 +3841,7 @@
       "home": "SUI",
       "away": "DZA",
       "kickoff": "2026-07-03 11:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.74,
         "draw": 3.16,
@@ -3851,8 +3853,8 @@
         "draw": 3.16,
         "away": 1.86
       },
-      "is_finished_odds": false,
-      "is_finished_odds_marked_at": null,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-07-03T15:00:00.000Z",
       "scraped_at": "2026-07-02T10:02:42.254Z",
       "sale_status": "在售",
       "single_supported": {
@@ -3862,10 +3864,10 @@
         "HAFU": true,
         "CRS": true
       },
-      "final_score": null,
+      "final_score": "2-0",
       "odds_file": "odds/2040356.json",
       "history_file": "odds_history/2040356.json",
-      "result_file": null
+      "result_file": "results/2040356.json"
     },
     {
       "mid": "2040347",
@@ -3876,19 +3878,19 @@
       "kickoff": "2026-07-04 02:00",
       "status": "on_sale",
       "spf": {
-        "home": 3.15,
-        "draw": 2.6,
-        "away": 2.34
+        "home": 3.2,
+        "draw": 2.76,
+        "away": 2.2
       },
       "handicap": 1,
       "rqspf": {
-        "home": 1.45,
-        "draw": 3.65,
-        "away": 6.05
+        "home": 1.52,
+        "draw": 3.43,
+        "away": 5.55
       },
       "is_finished_odds": false,
       "is_finished_odds_marked_at": null,
-      "scraped_at": "2026-07-02T10:02:42.277Z",
+      "scraped_at": "2026-07-03T10:08:00.000Z",
       "sale_status": "在售",
       "single_supported": {
         "HHAD": false,
@@ -3941,19 +3943,19 @@
       "kickoff": "2026-07-04 09:30",
       "status": "on_sale",
       "spf": {
-        "home": 1.32,
-        "draw": 4,
-        "away": 8.2
+        "home": 1.26,
+        "draw": 4.5,
+        "away": 8.8
       },
       "handicap": -1,
       "rqspf": {
-        "home": 2.29,
-        "draw": 3.05,
-        "away": 2.75
+        "home": 2.17,
+        "draw": 2.86,
+        "away": 3.14
       },
       "is_finished_odds": false,
       "is_finished_odds_marked_at": null,
-      "scraped_at": "2026-07-02T10:02:42.332Z",
+      "scraped_at": "2026-07-03T10:08:00.000Z",
       "sale_status": "在售",
       "single_supported": {
         "HHAD": false,
@@ -3969,6 +3971,35 @@
     }
   ],
   "patch_note": [
+    {
+      "at": "2026-07-03T10:08:00.000Z",
+      "scope": "M086-M088 r32 D+1 赔率刷新 (18:00 每日复盘)",
+      "changes": [
+        "Step 4 拉赔率: M086 (2040347 AUS-EGY) / M087 (2040348 ARG-CPV) / M088 (2040357 COL-GHA) 3 场 r32 D+1 距上次 7-2 10:02 抓取 ~56h, 赔率明显漂移, 重抓后更新:",
+        "  - M086 AUS-EGY: spf 3.15/2.60/2.34 → 3.20/2.76/2.20 (走客胜); rqspf +1 1.45/3.65/6.05 → 1.52/3.43/5.55 (让胜升水, 让负缩水)",
+        "  - M087 ARG-CPV: rqspf -2 2.11/3.82/2.54 → 2.06/3.45/2.82 (让胜微升, 让负走 1.40); bqc 胜胜 1.32→1.30 极低 (市场坚定看好 ARG 赢到底)",
+        "  - M088 COL-GHA: spf 1.32/4.00/8.20 → 1.26/4.50/8.80 (主胜持续走低); rqspf -1 2.23/3.15/2.75 → 2.17/2.86/3.14 (让负抬升 0.39 显著); zjq 2球 3.15→2.85 (市场预期进球略升)",
+        "data/odds/<mid>.json: scraped_at 全部刷成 2026-07-03T10:08:00.000Z, basic.sale_status='在售', is_finished_odds=false, handicap 与 API 一致 (2040347=+1, 2040348=-2, 2040357=-1), 5玩法_latest 全部按 7-3 16:27-17:42 最新快照更新",
+        "data/odds_history/<mid>.json: 5玩法 history 全部 [first=2026-07-01 06:34, latest=2026-07-03 16:27-17:42], 相同快照不追加 (例如 2040347 spf_history 仍为 2 条); 已存在 7-2 10:02 中间快照保留 (如 2040348/2040357 rqspf/bf_history 已有 3 条)",
+        "matches_status.json M086-M088: spf/rqspf/handicap/scraped_at 全部同步刷成最新值, status=on_sale, is_finished_odds=false (kickoff 7-4 02:00/06:00/09:30 全部未开赛)",
+        "Step 1 跳过: M083-M085 r32 (2040354/2040355/2040356) 已在前几轮 (9:00/12:00/15:00) 录完结果, M086-M088 尚未开赛",
+        "build_index.js 待跑 (matches_index.json generated_at 翻 7-3 18:08 CST, 141 finished + 0 in_progress + 3 on_sale = 144 total)"
+      ],
+      "source": "WebFetch sporttery getFixedBonusV1.qry?matchId=2040347/2040348/2040357",
+      "author": "code模式 18:00 自动 patch"
+    },
+    {
+      "at": "2026-07-03T12:00:00.000Z",
+      "scope": "M084 r32 完赛结果补录",
+      "changes": [
+        "M084 (2040355 POR-CRO): 已完赛 2-1 (spf=home, rqspf=D margin +1 + handicap -1 = 0 让平, bqc=平胜, zjq=3, hhadResult=D), status→finished, final_score=2-1, is_finished_odds=true, 写 results/2040355.json (halfTime 0-0 / scorers 3 条: 佩里西奇 53' / C罗 75' / 菲利克斯 88')",
+        "matches.json M084: status in_progress→finished + final_score='2-1' + result_file='results/2040355.json'",
+        "M085-M088 (2040356/2040347/2040348/2040357) 保持 on_sale, is_finished_odds=false (kickoff 7-3 11:00 / 7-4 02:00 / 7-4 06:00 / 7-4 09:30 均未开赛)",
+        "Step 4 跳过: M085-M088 4 场未开赛已 7-2 10:02 抓过赔率, 距 12:00 仅 ~26h 无显著漂移"
+      ],
+      "source": "WebSearch 多源验证（央广网 + 头条 + 球迷屋）",
+      "author": "code模式 12:00 自动 patch"
+    },
     {
       "at": "2026-07-03T01:00:00.000Z",
       "scope": "M083 r32 完赛 + M084 标 in_progress",

@@ -1006,23 +1006,27 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "POR",
     "away": "CRO",
-    "status": "in_progress",
+    "status": "finished",
     "mid": "2040355",
     "kickoff": "2026-07-03 07:00",
-    "code": "周四084"
+    "code": "周四084",
+    "final_score": "2-1",
+    "result_file": "results/2040355.json"
   },
   {
     "id": "M085",
     "stage": "r32",
     "group": null,
     "date": "2026-07-03T03:00:00Z",
-    "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+    "venue": "BC Place, Vancouver, Canada",
     "home": "SUI",
     "away": "DZA",
-    "status": "on_sale",
+    "status": "finished",
     "mid": "2040356",
     "kickoff": "2026-07-03 11:00",
-    "code": "周四085"
+    "code": "周四085",
+    "final_score": "2-0",
+    "result_file": "results/2040356.json"
   },
   {
     "id": "M086",

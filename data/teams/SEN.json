@@ -96,17 +96,7 @@
       "teams_behind": 1,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M081",
-        "mid": "2040353",
-        "date": "2026-07-01T20:00:00Z",
-        "opponent_code": "BEL",
-        "opponent_name": "比利时",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "MetLife Stadium, East Rutherford, NJ",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 3,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-01T10:58:53.111Z"
+  "_updated_at": "2026-07-02T10:42:46.901Z"
 }

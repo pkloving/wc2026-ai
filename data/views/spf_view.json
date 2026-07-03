@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T10:03:06.249Z",
+  "generated_at": "2026-07-03T10:57:17.265Z",
   "play": "spf",
   "count": 70,
   "rows": [
@@ -1310,18 +1310,18 @@
       "away": "AUT",
       "kickoff": "2026-07-03 03:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "3:0",
       "initial": {
-        "home": 1.23,
-        "draw": 4.75,
-        "away": 9.4
+        "home": 1.19,
+        "draw": 5.15,
+        "away": 10.5
       },
       "last": {
-        "home": 1.23,
-        "draw": 4.75,
-        "away": 9.4
+        "home": 1.19,
+        "draw": 5.15,
+        "away": 10.5
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040355",
@@ -1330,18 +1330,18 @@
       "away": "CRO",
       "kickoff": "2026-07-03 07:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:1",
       "initial": {
-        "home": 1.59,
-        "draw": 3.4,
-        "away": 4.85
+        "home": 1.57,
+        "draw": 3.32,
+        "away": 5.22
       },
       "last": {
-        "home": 1.59,
-        "draw": 3.4,
-        "away": 4.85
+        "home": 1.57,
+        "draw": 3.32,
+        "away": 5.22
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040356",
@@ -1350,18 +1350,18 @@
       "away": "DZA",
       "kickoff": "2026-07-03 11:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "2:0",
       "initial": {
-        "home": 1.8,
-        "draw": 3.05,
-        "away": 4.06
+        "home": 1.74,
+        "draw": 3.16,
+        "away": 4.2
       },
       "last": {
-        "home": 1.8,
-        "draw": 3.05,
-        "away": 4.06
+        "home": 1.74,
+        "draw": 3.16,
+        "away": 4.2
       },
-      "result": null
+      "result": "home"
     },
     {
       "mid": "2040347",
@@ -1372,14 +1372,14 @@
       "handicap": 1,
       "final_score": null,
       "initial": {
-        "home": 3.15,
-        "draw": 2.6,
-        "away": 2.34
+        "home": 3.2,
+        "draw": 2.76,
+        "away": 2.2
       },
       "last": {
-        "home": 3.15,
-        "draw": 2.6,
-        "away": 2.34
+        "home": 3.2,
+        "draw": 2.76,
+        "away": 2.2
       },
       "result": null
     },
@@ -1392,14 +1392,14 @@
       "handicap": -1,
       "final_score": null,
       "initial": {
-        "home": 1.32,
-        "draw": 4,
-        "away": 8.2
+        "home": 1.26,
+        "draw": 4.5,
+        "away": 8.8
       },
       "last": {
-        "home": 1.32,
-        "draw": 4,
-        "away": 8.2
+        "home": 1.26,
+        "draw": 4.5,
+        "away": 8.8
       },
       "result": null
     }

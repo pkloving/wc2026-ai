@@ -94,17 +94,7 @@
       "teams_behind": 1,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M080",
-        "mid": "2040352",
-        "date": "2026-07-01T16:00:00Z",
-        "opponent_code": "ENG",
-        "opponent_name": "英格兰",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "BC Place, Vancouver",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 3,
@@ -135,5 +125,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-01T10:58:53.077Z"
+  "_updated_at": "2026-07-02T10:42:46.626Z"
 }

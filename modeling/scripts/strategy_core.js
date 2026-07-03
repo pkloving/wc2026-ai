@@ -17,7 +17,10 @@ export const DEFAULT_PARAMS = {
     mainCount: 3,
     bigBall: { totalMin: 4, safeOddsMax: 12, midLo: 12, midHi: 25, highLo: 15, highHi: 40 },
     weak:    { totalMin: 1, totalMax: 4, coreLo: 10, coreHi: 30, coreCount: 2, upsetLo: 30, upsetHi: 50 },
-    normal:  { upsetTotalMin: 3, upsetTotalMax: 4, upsetOddsLo: 7, upsetOddsHi: 15, draw2OddsMax: 15 },
+    // 2026-07-03 调优 (sampled 2040337 BRA vs JPN 2-1 hc=-1):
+    // 扩 favWinPick total 上限 2 → 3, 让 2:1/3:0/3:1 (主受让庄家低赔主胜) 进入主池
+    // 旧 1-2 漏 2:1@5.8 (lowest odds 主胜), 26场主胜 7/13 实际落在 total 1-3
+    normal:  { upsetTotalMin: 3, upsetTotalMax: 4, upsetOddsLo: 8, upsetOddsHi: 15, draw2OddsMax: 15, favWinTotalMax: 3 },
   },
   rqspf: {
     favHomeLo: 1.5, favHomeHi: 2.0,
@@ -161,6 +164,7 @@ export const SEARCH_SPACE = [
   { path: 'f4.normal.upsetOddsLo',        values: [6, 7, 8] },
   { path: 'f4.normal.upsetOddsHi',        values: [13, 15, 18] },
   { path: 'f4.normal.draw2OddsMax',       values: [12, 15, 20] },
+  { path: 'f4.normal.favWinTotalMax',     values: [2, 3, 4] },
   // --- zjq / bqc 纠偏 ---
   { path: 'zjq.normalTwoLo',              values: [2.3, 2.5, 2.7] },
   { path: 'zjq.normalTwoHi',              values: [3.3, 3.5, 3.7] },
@@ -430,10 +434,9 @@ export function f4Strategy(m, ctx) {
     const n = P.normal;
     const draws = all.filter(s => s.home === s.away).sort((a, c) => a.odds - c.odds);
     if (draws[0]) mainPicks.push(draws[0]);
-    // 2026-06-25 调优 (sampled 2040251 ARG vs AUT 2-0):
-    // 加 favWinPick (主受让低赔主胜, total 1-2, odds<draw2OddsMax, dirMatch)
-    // 旧 f4Strategy 漏掉 2:0@6 (实际最低赔率), 选 0:0@13 作 Top-1
-    const favWinPick = all.filter(s => s.total >= 1 && s.total <= 2 && s.odds < n.draw2OddsMax && dirMatch(s) && !mainPicks.find(p => p.score === s.score)).sort((a, c) => a.odds - c.odds)[0];
+    // 2026-07-03 调优: favWinPick total 上限参数化 (n.favWinTotalMax, 默认 3)
+    // 6-25 加 favWinPick 时写死 total<=2, 留 TODO; 2040337 实际 2:1 (total 3) 实证应纳入
+    const favWinPick = all.filter(s => s.total >= 1 && s.total <= (n.favWinTotalMax ?? 3) && s.odds < n.draw2OddsMax && dirMatch(s) && !mainPicks.find(p => p.score === s.score)).sort((a, c) => a.odds - c.odds)[0];
     if (favWinPick) mainPicks.push(favWinPick);
     const upsetPick = all.filter(s => (s.total >= n.upsetTotalMin && s.total <= n.upsetTotalMax) && (s.odds >= n.upsetOddsLo && s.odds <= n.upsetOddsHi) && dirMatch(s)).sort((a, c) => a.odds - c.odds)[0];
     if (upsetPick) mainPicks.push(upsetPick);

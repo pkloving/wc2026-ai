@@ -1,0 +1,51 @@
+{
+  "matchId": "2040356",
+  "code": "周四085",
+  "league": "世界杯",
+  "home": "SUI",
+  "away": "DZA",
+  "kickoff": "2026-07-03 11:00",
+  "venue": "BC Place, Vancouver, Canada",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 0,
+  "final_score": "2-0",
+  "halfTime": "1-0",
+  "scorers": [
+    {
+      "team": "SUI",
+      "player": "恩博洛 (Breel Embolo)",
+      "minute": "11'",
+      "type": "goal",
+      "detail": "曼赞比右路杀入禁区横传，恩博洛跟进推射破门"
+    },
+    {
+      "team": "SUI",
+      "player": "恩多耶 (Dan Ndoye)",
+      "minute": "46'",
+      "type": "goal",
+      "detail": "下半场刚开场，阿尔及利亚后卫贝尔加利解围没踢远，恩多耶禁区弧顶凌空抽射擦着门将指尖钻进死角"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "2:0",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "胜胜",
+  "_fromSporttery": false,
+  "_source": "WebSearch 多源验证（搜狐 1045273009 + 网易 L0TQCJHF0549BAP0 + 球迷屋 stat-110194795207 + 7m.com.cn 730599 + 头条 7658167001013174818）",
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-03T15:00:00.000Z",
+  "_note": "常规时间 SUI 2-0 DZA 完赛，恩博洛 11' 曼赞比助攻推射先开纪录 → 恩多耶 46' 凌空抽射扩大比分（阿尔及利亚后卫贝尔加利解围失误送礼）→ 里德下半场错失空门，瑞士 90min 内零封阿尔及利亚晋级 16 强，时隔 16 年再次闯入 16 强；HAFU=H:H（半场主胜 + 全场主胜）→ bqcResult=胜胜；HHAD=H（margin +2 + handicap -1 = +1 让胜）；halfTime 1-0 / scorers 2 条已从 搜狐 + 网易 + 球迷屋 + 7m + 头条 WebSearch 多源验证；下轮瑞士 vs 哥伦比亚（M088 COL-GHA 胜者）；瑞士全场控球率 50% 但 11' 闪击 + 46' 锁定胜局把握机会能力碾压阿尔及利亚"
+}

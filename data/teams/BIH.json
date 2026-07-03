@@ -96,17 +96,7 @@
       "teams_behind": 1,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M082",
-        "mid": "2040339",
-        "date": "2026-07-02T00:00:00Z",
-        "opponent_code": "USA",
-        "opponent_name": "美国",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "SoFi Stadium, Los Angeles, CA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 3,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-01T10:58:53.074Z"
+  "_updated_at": "2026-07-02T10:42:46.617Z"
 }

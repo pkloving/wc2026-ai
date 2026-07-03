@@ -1,0 +1,58 @@
+{
+  "matchId": "2040355",
+  "code": "周四084",
+  "league": "世界杯",
+  "home": "POR",
+  "away": "CRO",
+  "kickoff": "2026-07-03 07:00",
+  "venue": "AT&T Stadium, Arlington, TX",
+  "stage": "r32",
+  "homeScore": 2,
+  "awayScore": 1,
+  "final_score": "2-1",
+  "halfTime": "0-0",
+  "scorers": [
+    {
+      "team": "CRO",
+      "player": "佩里西奇 (Ivan Perisic)",
+      "minute": "53'",
+      "type": "goal",
+      "detail": "远射破门"
+    },
+    {
+      "team": "POR",
+      "player": "C罗 (Cristiano Ronaldo)",
+      "minute": "75'",
+      "type": "goal",
+      "detail": "点球命中"
+    },
+    {
+      "team": "POR",
+      "player": "菲利克斯 (Joao Felix)",
+      "minute": "88'",
+      "type": "goal",
+      "detail": "绝杀进球"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平胜",
+  "_fromSporttery": false,
+  "_source": "WebSearch 多源验证（央广网 + 头条 + 球迷屋）",
+  "_halfTimeResult": "draw",
+  "_spfResult": "home",
+  "_hhadResult": "D",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-03T12:00:00.000Z",
+  "_note": "常规时间 POR 2-1 CRO 完赛，佩里西奇 53' 远射破门 → C罗 75' 点球命中（打破世界杯淘汰赛零进球魔咒）→ 菲利克斯 88' 绝杀进球，葡萄牙挺进 16 强；HAFU=D:H（半场平 + 全场主胜）→ bqcResult=平胜；HHAD=D（margin +1 + handicap -1 = 0 让平）；halfTime 0-0 / scorers 3 条已从央广网 + 头条 + 球迷屋 WebSearch 多源验证；下轮葡萄牙 vs 西班牙"
+}
