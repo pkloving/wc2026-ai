@@ -991,10 +991,12 @@
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "ESP",
     "away": "AUT",
-    "status": "on_sale",
+    "status": "finished",
     "mid": "2040354",
     "kickoff": "2026-07-03 03:00",
-    "code": "周四083"
+    "code": "周四083",
+    "final_score": "3-0",
+    "result_file": "results/2040354.json"
   },
   {
     "id": "M084",
@@ -1004,7 +1006,7 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "POR",
     "away": "CRO",
-    "status": "on_sale",
+    "status": "in_progress",
     "mid": "2040355",
     "kickoff": "2026-07-03 07:00",
     "code": "周四084"

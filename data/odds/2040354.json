@@ -17,7 +17,8 @@
       "CRS": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true,
+    "is_finished_odds_marked_at": "2026-07-03T01:00:00.000Z"
   },
   "odds": {
     "spf_latest": {
@@ -92,8 +93,10 @@
     "api": "getFixedBonusV1.qry",
     "fetched_at": "2026-07-02T10:02:42.173Z",
     "snapshot_time": "2026-07-02 11:38:13",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "home",
+    "half_time_result": "home",
+    "_enriched_at": "2026-07-03T01:00:00.000Z",
+    "_result_source": "WebSearch 多源 (163.com 网易体育 L0SUD951 + 凤凰网 8uS6sH0Mx2s + 头条 7658042486916416034 + 懂球帝 5991814) — ESP 3-0 AUT (半 1-0), spf=home, rqspf=H (margin +3 + handicap -1 = +2 让胜), hhad=H, bqc=胜胜, zjq=3"
   }
 }

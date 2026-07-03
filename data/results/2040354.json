@@ -1,0 +1,58 @@
+{
+  "matchId": "2040354",
+  "code": "周四083",
+  "league": "世界杯",
+  "home": "ESP",
+  "away": "AUT",
+  "kickoff": "2026-07-03 03:00",
+  "venue": "LA Memorial Coliseum, Los Angeles, CA",
+  "stage": "r32",
+  "homeScore": 3,
+  "awayScore": 0,
+  "final_score": "3-0",
+  "halfTime": "1-0",
+  "scorers": [
+    {
+      "team": "ESP",
+      "player": "奥亚萨瓦尔 (Mikel Oyarzabal)",
+      "minute": "36'",
+      "type": "goal",
+      "detail": "库库雷利亚左路助攻"
+    },
+    {
+      "team": "ESP",
+      "player": "波罗 (Pedro Porro)",
+      "minute": "66'",
+      "type": "goal",
+      "detail": "巴埃纳下底传中，波罗头球破门（国家队首球）"
+    },
+    {
+      "team": "ESP",
+      "player": "奥亚萨瓦尔 (Mikel Oyarzabal)",
+      "minute": "88'",
+      "type": "goal",
+      "detail": "托雷斯分球 + 库库雷利亚左路再送助攻"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "3:0",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "胜胜",
+  "_fromSporttery": false,
+  "_source": "WebSearch 多源验证（163.com 网易体育 L0SUD951 + 凤凰网 8uS6sH0Mx2s + 头条 7658042486916416034 + 懂球帝 5991814）",
+  "_halfTimeResult": "home",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-03T09:00:00.000Z",
+  "_note": "常规时间 ESP 3-0 AUT 完赛，奥亚萨瓦尔 36' 库库雷利亚助攻破门 → 波罗 66' 巴埃纳传中头球破门（国家队首球）→ 奥亚萨瓦尔 88' 库库雷利亚再送助攻梅开二度，西班牙零封奥地利挺进 16 强，4 战 0 失球（斗牛士军团时隔 16 年淘汰赛再赢球）；HAFU=H:H（半场主胜 + 全场主胜）→ bqcResult=胜胜；HHAD=H（margin +3 + handicap -1 = +2 让胜）；halfTime 1-0 / scorers 3 条已从 网易 + 凤凰网 + 懂球帝 WebSearch 多源验证；下轮西班牙 vs 葡萄牙/克罗地亚胜者；全场西班牙 64% 控球率 + 23 脚射门碾压，奥地利 0 射正"
+}
