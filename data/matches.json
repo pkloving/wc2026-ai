@@ -1085,9 +1085,10 @@
     "group": null,
     "date": "2026-07-04T21:00:00Z",
     "venue": "Arrowhead Stadium, Kansas City, MO",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "PAR",
+    "away": "FRA",
+    "status": "scheduled",
+    "kickoff": "2026-07-05 05:00"
   },
   {
     "id": "M091",
@@ -1095,9 +1096,10 @@
     "group": null,
     "date": "2026-07-05T20:00:00Z",
     "venue": "Gillette Stadium, Foxborough, MA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "BRA",
+    "away": "NOR",
+    "status": "scheduled",
+    "kickoff": "2026-07-06 04:00"
   },
   {
     "id": "M092",
@@ -1105,9 +1107,10 @@
     "group": null,
     "date": "2026-07-06T00:00:00Z",
     "venue": "Estadio Azteca, Mexico City",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "MEX",
+    "away": "ENG",
+    "status": "scheduled",
+    "kickoff": "2026-07-06 08:00"
   },
   {
     "id": "M093",
@@ -1115,9 +1118,10 @@
     "group": null,
     "date": "2026-07-06T19:00:00Z",
     "venue": "Estadio Akron, Guadalajara",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "POR",
+    "away": "ESP",
+    "status": "scheduled",
+    "kickoff": "2026-07-07 03:00"
   },
   {
     "id": "M094",
@@ -1125,9 +1129,10 @@
     "group": null,
     "date": "2026-07-07T00:00:00Z",
     "venue": "Estadio BBVA, Monterrey",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "USA",
+    "away": "BEL",
+    "status": "scheduled",
+    "kickoff": "2026-07-07 08:00"
   },
   {
     "id": "M095",
