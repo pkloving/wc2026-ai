@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T11:18:21.430Z",
+  "generated_at": "2026-07-04T07:03:21.656Z",
   "play": "spf",
   "count": 70,
   "rows": [
@@ -1370,7 +1370,7 @@
       "away": "EGY",
       "kickoff": "2026-07-04 02:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "home": 3.2,
         "draw": 2.76,
@@ -1381,7 +1381,7 @@
         "draw": 2.76,
         "away": 2.2
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040357",
@@ -1390,7 +1390,7 @@
       "away": "GHA",
       "kickoff": "2026-07-04 09:30",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "home": 1.26,
         "draw": 4.5,
@@ -1401,7 +1401,7 @@
         "draw": 4.5,
         "away": 8.8
       },
-      "result": null
+      "result": "home"
     }
   ]
 }

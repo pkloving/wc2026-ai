@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T11:18:20.612Z",
+  "generated_at": "2026-07-04T07:03:11.433Z",
   "total_matches": 144,
   "matches": [
     {
@@ -17004,7 +17004,7 @@
       "away": "EGY",
       "kickoff": "2026-07-04 02:00",
       "handicap": 1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 3.2,
@@ -17016,7 +17016,7 @@
           "draw": 2.76,
           "away": 2.2
         },
-        "result": null
+        "result": "draw"
       },
       "rqspf": {
         "initial": {
@@ -17031,7 +17031,7 @@
           "draw": 3.43,
           "away": 5.55
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
@@ -17104,7 +17104,10 @@
             "01:05": 350
           }
         },
-        "result": null
+        "result": {
+          "score": "1:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -17131,7 +17134,7 @@
             "7+": 65
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
@@ -17160,9 +17163,21 @@
             "负负": 4
           }
         },
-        "result": null
+        "result": "平平"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1,
+        "half": "0-1",
+        "scorers_count": 2,
+        "wentToPenalties": true,
+        "penaltyScore": {
+          "home": 3,
+          "away": 5
+        },
+        "extraTime": "1-1",
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
           "spf": 2,
@@ -17181,7 +17196,7 @@
       "away": "CPV",
       "kickoff": "2026-07-04 06:00",
       "handicap": -2,
-      "status": "on_sale",
+      "status": "finished",
       "rqspf": {
         "initial": {
           "handicap": -2,
@@ -17195,7 +17210,7 @@
           "draw": 3.45,
           "away": 2.82
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -17268,7 +17283,10 @@
             "01:05": 1000
           }
         },
-        "result": null
+        "result": {
+          "score": "1:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -17295,7 +17313,7 @@
             "7+": 19
           }
         },
-        "result": null
+        "result": "2"
       },
       "bqc": {
         "initial": {
@@ -17324,9 +17342,18 @@
             "负负": 50
           }
         },
-        "result": null
+        "result": "平平"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1,
+        "half": "0-1",
+        "scorers_count": 5,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": "3-2",
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
           "spf": 0,
@@ -17345,7 +17372,7 @@
       "away": "GHA",
       "kickoff": "2026-07-04 09:30",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.26,
@@ -17357,7 +17384,7 @@
           "draw": 4.5,
           "away": 8.8
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -17372,7 +17399,7 @@
           "draw": 2.86,
           "away": 3.14
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
@@ -17445,7 +17472,10 @@
             "01:05": 900
           }
         },
-        "result": null
+        "result": {
+          "score": "1:0",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -17472,7 +17502,7 @@
             "7+": 40
           }
         },
-        "result": null
+        "result": "1"
       },
       "bqc": {
         "initial": {
@@ -17501,9 +17531,18 @@
             "负负": 17
           }
         },
-        "result": null
+        "result": "平胜"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 0,
+        "half": "1-0",
+        "scorers_count": 1,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
           "spf": 2,

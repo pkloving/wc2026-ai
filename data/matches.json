@@ -1066,10 +1066,12 @@
     "venue": "Lumen Field, Seattle, WA",
     "home": "COL",
     "away": "GHA",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040357",
     "kickoff": "2026-07-04 09:30",
-    "code": "周五088"
+    "code": "周五088",
+    "final_score": "1-0",
+    "result_file": "results/2040357.json"
   },
   {
     "id": "M089",

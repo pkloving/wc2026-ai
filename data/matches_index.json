@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T01:05:17.112Z",
+  "generated_at": "2026-07-04T07:03:21.450Z",
   "total": 149,
   "by_status": {
     "scheduled": [
@@ -114,43 +114,7 @@
         "result_file": null
       }
     ],
-    "on_sale": [
-      {
-        "mid": "2040357",
-        "code": "周五088",
-        "league": "世界杯",
-        "home": "COL",
-        "away": "GHA",
-        "kickoff": "2026-07-04 09:30",
-        "status": "on_sale",
-        "spf": {
-          "home": 1.26,
-          "draw": 4.5,
-          "away": 8.8
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 2.17,
-          "draw": 2.86,
-          "away": 3.14
-        },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
-        "scraped_at": "2026-07-03T10:08:00.000Z",
-        "sale_status": "在售",
-        "single_supported": {
-          "HHAD": false,
-          "HAFU": true,
-          "CRS": true,
-          "TTG": true,
-          "HAD": true
-        },
-        "final_score": null,
-        "odds_file": "odds/2040357.json",
-        "history_file": "odds_history/2040357.json",
-        "result_file": null
-      }
-    ],
+    "on_sale": [],
     "in_progress": [],
     "finished": [
       {
@@ -4063,6 +4027,41 @@
         "odds_file": "odds/2040348.json",
         "history_file": "odds_history/2040348.json",
         "result_file": "results/2040348.json"
+      },
+      {
+        "mid": "2040357",
+        "code": "周五088",
+        "league": "世界杯",
+        "home": "COL",
+        "away": "GHA",
+        "kickoff": "2026-07-04 09:30",
+        "status": "finished",
+        "spf": {
+          "home": 1.26,
+          "draw": 4.5,
+          "away": 8.8
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 2.17,
+          "draw": 2.86,
+          "away": 3.14
+        },
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-04T12:00:00+08:00",
+        "scraped_at": "2026-07-03T10:08:00.000Z",
+        "sale_status": "在售",
+        "single_supported": {
+          "HHAD": false,
+          "HAFU": true,
+          "CRS": true,
+          "TTG": true,
+          "HAD": true
+        },
+        "final_score": "1-0",
+        "odds_file": "odds/2040357.json",
+        "history_file": "odds_history/2040357.json",
+        "result_file": "results/2040357.json"
       }
     ],
     "cancelled": [],
@@ -7990,7 +7989,7 @@
         "home": "COL",
         "away": "GHA",
         "kickoff": "2026-07-04 09:30",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 1.26,
           "draw": 4.5,
@@ -8002,8 +8001,8 @@
           "draw": 2.86,
           "away": 3.14
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-04T12:00:00+08:00",
         "scraped_at": "2026-07-03T10:08:00.000Z",
         "sale_status": "在售",
         "single_supported": {
@@ -8013,10 +8012,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "1-0",
         "odds_file": "odds/2040357.json",
         "history_file": "odds_history/2040357.json",
-        "result_file": null
+        "result_file": "results/2040357.json"
       },
       {
         "mid": null,
@@ -12128,7 +12127,7 @@
         "home": "COL",
         "away": "GHA",
         "kickoff": "2026-07-04 09:30",
-        "status": "on_sale",
+        "status": "finished",
         "spf": {
           "home": 1.26,
           "draw": 4.5,
@@ -12140,8 +12139,8 @@
           "draw": 2.86,
           "away": 3.14
         },
-        "is_finished_odds": false,
-        "is_finished_odds_marked_at": null,
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-04T12:00:00+08:00",
         "scraped_at": "2026-07-03T10:08:00.000Z",
         "sale_status": "在售",
         "single_supported": {
@@ -12151,10 +12150,10 @@
           "TTG": true,
           "HAD": true
         },
-        "final_score": null,
+        "final_score": "1-0",
         "odds_file": "odds/2040357.json",
         "history_file": "odds_history/2040357.json",
-        "result_file": null
+        "result_file": "results/2040357.json"
       }
     ],
     "2026-07-05": [

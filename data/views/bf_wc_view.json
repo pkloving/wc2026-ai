@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T11:18:21.431Z",
+  "generated_at": "2026-07-04T07:03:21.658Z",
   "play": "bf",
   "count": 87,
   "rows": [
@@ -6982,7 +6982,7 @@
       "away": "EGY",
       "kickoff": "2026-07-04 02:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "胜其它": 350,
@@ -7053,7 +7053,10 @@
           "01:05": 350
         }
       },
-      "result": null
+      "result": {
+        "score": "1:1",
+        "other": null
+      }
     },
     {
       "mid": "2040348",
@@ -7062,7 +7065,7 @@
       "away": "CPV",
       "kickoff": "2026-07-04 06:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "胜其它": 15,
@@ -7133,7 +7136,10 @@
           "01:05": 1000
         }
       },
-      "result": null
+      "result": {
+        "score": "1:1",
+        "other": null
+      }
     },
     {
       "mid": "2040357",
@@ -7142,7 +7148,7 @@
       "away": "GHA",
       "kickoff": "2026-07-04 09:30",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "odds": {
           "胜其它": 55,
@@ -7213,7 +7219,10 @@
           "01:05": 900
         }
       },
-      "result": null
+      "result": {
+        "score": "1:0",
+        "other": null
+      }
     }
   ]
 }

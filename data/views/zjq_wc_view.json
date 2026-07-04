@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T11:18:21.433Z",
+  "generated_at": "2026-07-04T07:03:21.659Z",
   "play": "zjq",
   "count": 87,
   "rows": [
@@ -2866,7 +2866,7 @@
       "away": "EGY",
       "kickoff": "2026-07-04 02:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "0": 6.25,
@@ -2891,7 +2891,7 @@
           "7+": 65
         }
       },
-      "result": null
+      "result": "2"
     },
     {
       "mid": "2040348",
@@ -2900,7 +2900,7 @@
       "away": "CPV",
       "kickoff": "2026-07-04 06:00",
       "handicap": -2,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "0": 18,
@@ -2925,7 +2925,7 @@
           "7+": 19
         }
       },
-      "result": null
+      "result": "2"
     },
     {
       "mid": "2040357",
@@ -2934,7 +2934,7 @@
       "away": "GHA",
       "kickoff": "2026-07-04 09:30",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:0",
       "initial": {
         "odds": {
           "0": 11,
@@ -2959,7 +2959,7 @@
           "7+": 40
         }
       },
-      "result": null
+      "result": "1"
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "matchId": "2040357",
+  "mid": "2040357",
+  "code": "周五088",
+  "league": "世界杯",
+  "stage": "r32",
+  "home": "哥伦比亚",
+  "away": "加纳",
+  "kickoff": "2026-07-04 09:30",
+  "handicap": -1,
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": "1-0",
+  "final_score": "1-0",
+  "scorers": [
+    {
+      "minute": "45'",
+      "team": "home",
+      "player": "阿里亚斯 (Arias)",
+      "type": "进球",
+      "score_after": "1-0"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "home",
+  "spf_result": "home",
+  "rqspf_result": "draw",
+  "zjq_result": "1",
+  "bqc_result": "胜胜",
+  "bf_result": { "score": "1:0", "other": null },
+  "data_source": "toutiao+qiumiwu",
+  "recorded_at": "2026-07-04T12:00:00+08:00",
+  "notes": "哥伦比亚1-0小胜加纳，阿里亚斯半场前进球奠定胜局。90分钟内分出胜负，无需加时。"
+}
