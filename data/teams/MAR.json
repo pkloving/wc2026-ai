@@ -100,7 +100,7 @@
       "min_points_to_qualify": 0,
       "next_match": {
         "match_id": "M089",
-        "mid": null,
+        "mid": "2040359",
         "date": "2026-07-04T17:00:00Z",
         "opponent_code": "CAN",
         "opponent_name": "加拿大",
@@ -139,5 +139,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.045Z"
+  "_updated_at": "2026-07-04T10:31:26.054Z"
 }

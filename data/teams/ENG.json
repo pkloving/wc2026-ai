@@ -97,7 +97,17 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M092",
+        "mid": "2040394",
+        "date": "2026-07-06T00:00:00Z",
+        "opponent_code": "MEX",
+        "opponent_name": "墨西哥",
+        "opponent_position": "?",
+        "opponent_pts": "?",
+        "venue": "Estadio Azteca, Mexico City",
+        "importance": "general"
+      }
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -128,5 +138,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.009Z"
+  "_updated_at": "2026-07-04T10:31:26.044Z"
 }

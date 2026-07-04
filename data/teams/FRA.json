@@ -110,7 +110,17 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M090",
+        "mid": "2040373",
+        "date": "2026-07-04T21:00:00Z",
+        "opponent_code": "PAR",
+        "opponent_name": "巴拉圭",
+        "opponent_position": "?",
+        "opponent_pts": "?",
+        "venue": "Arrowhead Stadium, Kansas City, MO",
+        "importance": "general"
+      }
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -141,5 +151,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.035Z"
+  "_updated_at": "2026-07-04T10:31:26.046Z"
 }

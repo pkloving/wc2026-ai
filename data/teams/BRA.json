@@ -99,7 +99,17 @@
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M091",
+        "mid": "2040374",
+        "date": "2026-07-05T20:00:00Z",
+        "opponent_code": "NOR",
+        "opponent_name": "挪威",
+        "opponent_position": "?",
+        "opponent_pts": "?",
+        "venue": "Gillette Stadium, Foxborough, MA",
+        "importance": "general"
+      }
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -130,5 +140,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:20.961Z"
+  "_updated_at": "2026-07-04T10:31:26.031Z"
 }

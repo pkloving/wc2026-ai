@@ -98,7 +98,17 @@
       "teams_behind": 2,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M091",
+        "mid": "2040374",
+        "date": "2026-07-05T20:00:00Z",
+        "opponent_code": "BRA",
+        "opponent_name": "巴西",
+        "opponent_position": "?",
+        "opponent_pts": "?",
+        "venue": "Gillette Stadium, Foxborough, MA",
+        "importance": "general"
+      }
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -129,5 +139,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.049Z"
+  "_updated_at": "2026-07-04T10:31:26.057Z"
 }

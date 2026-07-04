@@ -96,17 +96,7 @@
       "teams_behind": 2,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M087",
-        "mid": "2040348",
-        "date": "2026-07-03T22:00:00Z",
-        "opponent_code": "ARG",
-        "opponent_name": "阿根廷",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Lincoln Financial Field, Philadelphia, PA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:20.981Z"
+  "_updated_at": "2026-07-04T10:31:26.035Z"
 }

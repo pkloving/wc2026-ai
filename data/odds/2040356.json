@@ -7,7 +7,7 @@
     "away": "DZA",
     "kickoff": "2026-07-03 11:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040356",
-    "scraped_at": "2026-07-02T10:02:42.254Z",
+    "scraped_at": "2026-07-04T10:28:56.014Z",
     "sale_status": "在售",
     "single_supported": {
       "TTG": true,
@@ -17,7 +17,7 @@
       "CRS": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
@@ -28,8 +28,8 @@
     "spf_history": [],
     "handicap": -1,
     "rqspf_latest": {
-      "home": 3.63,
-      "draw": 3.16,
+      "home": 3.75,
+      "draw": 3.08,
       "away": 1.86
     },
     "rqspf_history": [],
@@ -50,14 +50,14 @@
       "03:03": 45,
       "03:01": 15,
       "03:02": 28,
-      "03:00": 19,
+      "03:00": 20,
       "00:01": 11,
       "00:00": 9,
       "00:03": 70,
       "00:02": 24,
       "00:05": 700,
       "00:04": 250,
-      "04:02": 75,
+      "04:02": 65,
       "04:01": 42,
       "04:00": 50,
       "01:02": 15,
@@ -70,19 +70,19 @@
       "0": 9,
       "1": 4.5,
       "2": 3,
-      "3": 3.6,
-      "4": 6.2,
-      "5": 13,
-      "6": 23,
+      "3": 3.45,
+      "4": 6.5,
+      "5": 13.5,
+      "6": 24,
       "7+": 35
     },
     "bqc_latest": {
-      "胜胜": 2.98,
+      "胜胜": 3.15,
       "胜平": 13,
       "胜负": 25,
-      "平胜": 4.45,
-      "平平": 4.65,
-      "平负": 9.5,
+      "平胜": 4.15,
+      "平平": 4.5,
+      "平负": 10,
       "负胜": 20,
       "负平": 13,
       "负负": 7.75
@@ -90,10 +90,10 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-07-02T10:02:42.254Z",
+    "fetched_at": "2026-07-04T10:28:56.014Z",
     "snapshot_time": "2026-07-02 16:45:04",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "home",
+    "half_time_result": "home"
   }
 }

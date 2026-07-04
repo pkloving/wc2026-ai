@@ -94,17 +94,7 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M088",
-        "mid": "2040357",
-        "date": "2026-07-04T01:30:00Z",
-        "opponent_code": "GHA",
-        "opponent_name": "加纳",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Lumen Field, Seattle, WA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -135,5 +125,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:20.980Z"
+  "_updated_at": "2026-07-04T10:31:26.034Z"
 }

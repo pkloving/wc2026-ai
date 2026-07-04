@@ -1,0 +1,1158 @@
+{
+  "date": "2026-07-05",
+  "strategy": "31号策略 (F4主池 + 反方向单关 + RQSPF/ZJQ/BQC赔率纠偏)",
+  "picker": {
+    "cat1": {
+      "matches": [
+        "周日092",
+        "周日091",
+        "周六089",
+        "周六090"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            }
+          ],
+          "odds": 3.38,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            },
+            {
+              "code": "周六090",
+              "match": "PARvsFRA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.35
+            }
+          ],
+          "odds": 7.93,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            },
+            {
+              "code": "周六090",
+              "match": "PARvsFRA",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.48
+            }
+          ],
+          "odds": 8.37,
+          "stake": 2
+        }
+      ],
+      "parlay2": [
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            }
+          ],
+          "odds": 3.38,
+          "stake": 1
+        }
+      ],
+      "parlay3": [
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            },
+            {
+              "code": "周六090",
+              "match": "PARvsFRA",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.35
+            }
+          ],
+          "odds": 7.93,
+          "stake": 10
+        },
+        {
+          "legs": [
+            {
+              "code": "周日092",
+              "match": "MEXvsENG",
+              "d": "home",
+              "label": "让胜",
+              "odds": 1.57
+            },
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "d": "home",
+              "label": "让胜",
+              "odds": 2.15
+            },
+            {
+              "code": "周六090",
+              "match": "PARvsFRA",
+              "d": "away",
+              "label": "让负",
+              "odds": 2.48
+            }
+          ],
+          "odds": 8.37,
+          "stake": 2
+        }
+      ],
+      "parlay4": null,
+      "legMode": "atomic",
+      "stake": 1,
+      "slimCount": 3,
+      "dualCount": 1
+    },
+    "cat2": {
+      "matches": [
+        "周六089",
+        "周日091"
+      ],
+      "tickets": [
+        {
+          "legs": [
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "score": "1:1",
+              "odds": 5.8
+            },
+            {
+              "code": "周日091",
+              "match": "BRAvsNOR",
+              "score": "1:1",
+              "odds": 6.3
+            }
+          ],
+          "odds": 36.54,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "score": "1:1",
+              "odds": 5.8
+            },
+            {
+              "code": "周日091",
+              "match": "BRAvsNOR",
+              "score": "3:1",
+              "odds": 9.5
+            }
+          ],
+          "odds": 55.1,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "score": "0:0",
+              "odds": 9.5
+            },
+            {
+              "code": "周日091",
+              "match": "BRAvsNOR",
+              "score": "1:1",
+              "odds": 6.3
+            }
+          ],
+          "odds": 59.85,
+          "stake": 1
+        },
+        {
+          "legs": [
+            {
+              "code": "周六089",
+              "match": "CANvsMAR",
+              "score": "0:0",
+              "odds": 9.5
+            },
+            {
+              "code": "周日091",
+              "match": "BRAvsNOR",
+              "score": "3:1",
+              "odds": 9.5
+            }
+          ],
+          "odds": 90.25,
+          "stake": 1
+        }
+      ]
+    },
+    "cat3": [
+      {
+        "code": "周日091",
+        "match": "BRAvsNOR",
+        "score": "4:1",
+        "odds": 30
+      }
+    ],
+    "cat4": [
+      {
+        "code": "周六089",
+        "match": "CANvsMAR",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 2.9
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      },
+      {
+        "code": "周日092",
+        "match": "MEXvsENG",
+        "picks": [
+          "2"
+        ],
+        "oddsMap": {
+          "2": 2.9
+        },
+        "rule": {
+          "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+          "roi": "+18.5%",
+          "n": 13
+        }
+      }
+    ],
+    "cat5": []
+  },
+  "rqspf_follow": [
+    {
+      "code": "周六089",
+      "mid": "2040359",
+      "match": "CANvsMAR",
+      "handicap": 1,
+      "rqspf_odds": {
+        "home": 2.15,
+        "draw": 2.82,
+        "away": 3.23
+      },
+      "primary": {
+        "d": "home",
+        "odds": 2.15,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 2.82,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周六090",
+      "mid": "2040373",
+      "match": "PARvsFRA",
+      "handicap": 2,
+      "rqspf_odds": {
+        "home": 2.35,
+        "draw": 3.33,
+        "away": 2.48
+      },
+      "primary": {
+        "d": "home",
+        "odds": 2.35,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "away",
+        "odds": 2.48,
+        "label": "让负"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周日091",
+      "mid": "2040374",
+      "match": "BRAvsNOR",
+      "handicap": -1,
+      "rqspf_odds": {
+        "home": 3.05,
+        "draw": 3.16,
+        "away": 2.06
+      },
+      "primary": {
+        "d": "away",
+        "odds": 2.06,
+        "label": "让负"
+      },
+      "secondary": {
+        "d": "home",
+        "odds": 3.05,
+        "label": "让胜"
+      },
+      "rule": {
+        "name": "基线(最低赔率,主让-1)",
+        "roi": "+19.5%",
+        "n": 20
+      }
+    },
+    {
+      "code": "周日092",
+      "mid": "2040394",
+      "match": "MEXvsENG",
+      "handicap": 1,
+      "rqspf_odds": {
+        "home": 1.57,
+        "draw": 3.45,
+        "away": 4.95
+      },
+      "primary": {
+        "d": "home",
+        "odds": 1.57,
+        "label": "让胜"
+      },
+      "secondary": {
+        "d": "draw",
+        "odds": 3.45,
+        "label": "让平"
+      },
+      "rule": {
+        "name": "让胜纠偏(主流盘)",
+        "roi": "+20.5%",
+        "n": 6
+      }
+    }
+  ],
+  "zjq_follow": [
+    {
+      "code": "周六089",
+      "mid": "2040359",
+      "match": "CANvsMAR",
+      "handicap": 1,
+      "corrected": {
+        "pick": "2",
+        "odds": 2.9
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 38,
+      "stableOdds": 2.9,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    },
+    {
+      "code": "周六090",
+      "mid": "2040373",
+      "match": "PARvsFRA",
+      "handicap": 2,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "4",
+      "coldOdds": 21,
+      "stableOdds": 4.2,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周日091",
+      "mid": "2040374",
+      "match": "BRAvsNOR",
+      "handicap": -1,
+      "corrected": null,
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 24,
+      "stableOdds": 3.7,
+      "rule": {
+        "name": "基线(让球→大/小球)",
+        "roi": "+3.1%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周日092",
+      "mid": "2040394",
+      "match": "MEXvsENG",
+      "handicap": 1,
+      "corrected": {
+        "pick": "2",
+        "odds": 2.9
+      },
+      "coldPick": "7+",
+      "stable": "2",
+      "coldOdds": 50,
+      "stableOdds": 2.9,
+      "rule": {
+        "name": "NORMAL+2球纠偏(主流盘,rq.away≥1.6)",
+        "roi": "+18.5%",
+        "n": 13
+      }
+    }
+  ],
+  "bqc_follow": [
+    {
+      "code": "周六089",
+      "mid": "2040359",
+      "match": "CANvsMAR",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 2.65
+        },
+        {
+          "key": "平负",
+          "odds": 4.15
+        },
+        {
+          "key": "平平",
+          "odds": 5.16
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周六090",
+      "mid": "2040373",
+      "match": "PARvsFRA",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 1.42
+        },
+        {
+          "key": "平负",
+          "odds": 3.95
+        },
+        {
+          "key": "平平",
+          "odds": 11
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周日091",
+      "mid": "2040374",
+      "match": "BRAvsNOR",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "胜胜",
+          "odds": 2.67
+        },
+        {
+          "key": "平胜",
+          "odds": 4.45
+        },
+        {
+          "key": "平平",
+          "odds": 6.35
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    },
+    {
+      "code": "周日092",
+      "mid": "2040394",
+      "match": "MEXvsENG",
+      "corrected": null,
+      "top3": [
+        {
+          "key": "负负",
+          "odds": 3.75
+        },
+        {
+          "key": "平平",
+          "odds": 4.3
+        },
+        {
+          "key": "平负",
+          "odds": 5.2
+        }
+      ],
+      "rule": {
+        "name": "基线(TOP3最低赔率)",
+        "roi": "-10%",
+        "n": 26
+      }
+    }
+  ],
+  "matches": [
+    {
+      "code": "周六089",
+      "mid": "2040359",
+      "match": "CANvsMAR",
+      "home": "CAN",
+      "away": "MAR",
+      "kickoff": "2026-07-05 01:00",
+      "type": "NORMAL",
+      "handicap": 1,
+      "spf": {
+        "home": 5.4,
+        "draw": 3.45,
+        "away": 1.53
+      },
+      "rqspf": {
+        "home": 2.15,
+        "draw": 2.82,
+        "away": 3.23
+      },
+      "mainPicks": [
+        {
+          "score": "1:2",
+          "odds": 5
+        },
+        {
+          "score": "1:1",
+          "odds": 5.8
+        },
+        {
+          "score": "0:0",
+          "odds": 9.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周六090",
+      "mid": "2040373",
+      "match": "PARvsFRA",
+      "home": "PAR",
+      "away": "FRA",
+      "kickoff": "2026-07-05 05:00",
+      "type": "NORMAL",
+      "handicap": 2,
+      "spf": null,
+      "rqspf": {
+        "home": 2.35,
+        "draw": 3.33,
+        "away": 2.48
+      },
+      "mainPicks": [
+        {
+          "score": "0:2",
+          "odds": 4.65
+        },
+        {
+          "score": "0:4",
+          "odds": 10
+        },
+        {
+          "score": "1:1",
+          "odds": 14
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周日091",
+      "mid": "2040374",
+      "match": "BRAvsNOR",
+      "home": "BRA",
+      "away": "NOR",
+      "kickoff": "2026-07-06 04:00",
+      "type": "NORMAL",
+      "handicap": -1,
+      "spf": {
+        "home": 1.6,
+        "draw": 3.55,
+        "away": 4.5
+      },
+      "rqspf": {
+        "home": 3.05,
+        "draw": 3.16,
+        "away": 2.06
+      },
+      "mainPicks": [
+        {
+          "score": "2:1",
+          "odds": 5
+        },
+        {
+          "score": "1:1",
+          "odds": 6.3
+        },
+        {
+          "score": "3:1",
+          "odds": 9.5
+        }
+      ],
+      "singleBets": []
+    },
+    {
+      "code": "周日092",
+      "mid": "2040394",
+      "match": "MEXvsENG",
+      "home": "MEX",
+      "away": "ENG",
+      "kickoff": "2026-07-06 08:00",
+      "type": "NORMAL",
+      "handicap": 1,
+      "spf": {
+        "home": 3.3,
+        "draw": 2.95,
+        "away": 2.05
+      },
+      "rqspf": {
+        "home": 1.57,
+        "draw": 3.45,
+        "away": 4.95
+      },
+      "mainPicks": [
+        {
+          "score": "1:1",
+          "odds": 5
+        },
+        {
+          "score": "1:2",
+          "odds": 6
+        },
+        {
+          "score": "0:0",
+          "odds": 7.5
+        }
+      ],
+      "singleBets": []
+    }
+  ],
+  "combos": {
+    "c2": [
+      {
+        "matches": [
+          "周六089",
+          "周六090"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          }
+        ],
+        "odds": 23.25
+      },
+      {
+        "matches": [
+          "周六090",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          }
+        ],
+        "odds": 23.25
+      },
+      {
+        "matches": [
+          "周六090",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 23.25
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          }
+        ],
+        "odds": 25
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 25
+      },
+      {
+        "matches": [
+          "周日091",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 25
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          }
+        ],
+        "odds": 26.97
+      },
+      {
+        "matches": [
+          "周六090",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 27.9
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          }
+        ],
+        "odds": 29
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 29
+      }
+    ],
+    "c3": [
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          }
+        ],
+        "odds": 116.25
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 116.25
+      },
+      {
+        "matches": [
+          "周六090",
+          "周日091",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 116.25
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日091",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 125
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          }
+        ],
+        "odds": 134.85
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 134.85
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 139.5
+      },
+      {
+        "matches": [
+          "周六090",
+          "周日091",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:2",
+            "odds": 6
+          }
+        ],
+        "odds": 139.5
+      },
+      {
+        "matches": [
+          "周六089",
+          "周日091",
+          "周日092"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:1",
+            "odds": 5.8
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "2:1",
+            "odds": 5
+          },
+          {
+            "match": "MEXvsENG",
+            "score": "1:1",
+            "odds": 5
+          }
+        ],
+        "odds": 145
+      },
+      {
+        "matches": [
+          "周六089",
+          "周六090",
+          "周日091"
+        ],
+        "picks": [
+          {
+            "match": "CANvsMAR",
+            "score": "1:2",
+            "odds": 5
+          },
+          {
+            "match": "PARvsFRA",
+            "score": "0:2",
+            "odds": 4.65
+          },
+          {
+            "match": "BRAvsNOR",
+            "score": "1:1",
+            "odds": 6.3
+          }
+        ],
+        "odds": 146.47
+      }
+    ]
+  }
+}

@@ -111,7 +111,17 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": null
+      "next_match": {
+        "match_id": "M093",
+        "mid": null,
+        "date": "2026-07-06T19:00:00Z",
+        "opponent_code": "POR",
+        "opponent_name": "葡萄牙",
+        "opponent_position": "?",
+        "opponent_pts": "?",
+        "venue": "Estadio Akron, Guadalajara",
+        "importance": "general"
+      }
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -142,5 +152,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.010Z"
+  "_updated_at": "2026-07-04T10:31:26.045Z"
 }

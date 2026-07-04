@@ -98,17 +98,7 @@
       "teams_behind": 2,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M086",
-        "mid": "2040347",
-        "date": "2026-07-03T18:00:00Z",
-        "opponent_code": "AUS",
-        "opponent_name": "澳大利亚",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "NRG Stadium, Houston, TX",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -139,5 +129,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-03T11:18:21.008Z"
+  "_updated_at": "2026-07-04T10:31:26.043Z"
 }

@@ -1083,7 +1083,8 @@
     "away": "MAR",
     "status": "scheduled",
     "code": "周六089",
-    "kickoff": "2026-07-05 01:00"
+    "kickoff": "2026-07-05 01:00",
+    "mid": "2040359"
   },
   {
     "id": "M090",
@@ -1094,7 +1095,9 @@
     "home": "PAR",
     "away": "FRA",
     "status": "scheduled",
-    "kickoff": "2026-07-05 05:00"
+    "code": "周六090",
+    "kickoff": "2026-07-05 05:00",
+    "mid": "2040373"
   },
   {
     "id": "M091",
@@ -1105,7 +1108,9 @@
     "home": "BRA",
     "away": "NOR",
     "status": "scheduled",
-    "kickoff": "2026-07-06 04:00"
+    "code": "周日091",
+    "kickoff": "2026-07-06 04:00",
+    "mid": "2040374"
   },
   {
     "id": "M092",
@@ -1116,7 +1121,9 @@
     "home": "MEX",
     "away": "ENG",
     "status": "scheduled",
-    "kickoff": "2026-07-06 08:00"
+    "code": "周日092",
+    "kickoff": "2026-07-06 08:00",
+    "mid": "2040394"
   },
   {
     "id": "M093",
