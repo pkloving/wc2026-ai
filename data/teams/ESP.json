@@ -111,17 +111,7 @@
       "teams_behind": 3,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M083",
-        "mid": "2040354",
-        "date": "2026-07-02T19:00:00Z",
-        "opponent_code": "AUT",
-        "opponent_name": "奥地利",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "AT&T Stadium, Arlington, TX",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 1,
@@ -152,5 +142,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-02T10:42:46.741Z"
+  "_updated_at": "2026-07-03T11:18:21.010Z"
 }

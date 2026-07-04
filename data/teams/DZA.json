@@ -96,17 +96,7 @@
       "teams_behind": 1,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M085",
-        "mid": "2040356",
-        "date": "2026-07-03T03:00:00Z",
-        "opponent_code": "SUI",
-        "opponent_name": "瑞士",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Mercedes-Benz Stadium, Atlanta, GA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 3,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-02T10:42:46.717Z"
+  "_updated_at": "2026-07-03T11:18:21.000Z"
 }

@@ -3869,7 +3869,7 @@
           "pick": "draw",
           "pickLabel": "平",
           "handicap": 0,
-          "result": "lost"
+          "result": "won"
         },
         {
           "mid": "2040339",
@@ -3893,7 +3893,7 @@
           "pick": "away",
           "pickLabel": "(-1)主负",
           "handicap": -1,
-          "result": "pending"
+          "result": "lost"
         },
         {
           "mid": "2040355",
@@ -3905,7 +3905,7 @@
           "pick": "away",
           "pickLabel": "(-1)主负",
           "handicap": -1,
-          "result": "pending"
+          "result": "lost"
         },
         {
           "mid": "2040356",
@@ -3917,7 +3917,7 @@
           "pick": "home",
           "pickLabel": "主胜",
           "handicap": 0,
-          "result": "pending"
+          "result": "won"
         },
         {
           "mid": "2040347",
@@ -3948,8 +3948,340 @@
       "combinations": 9,
       "totalCost": 18,
       "maxReturn": null,
-      "result": "pending",
-      "note": "长串待结算. 081 已可判输 (spf 平 vs 实际 2-2 主胜). 7x1/8x1 全部含 081 → 整体必输. 等 7/3-7/4 完赛再补全 result."
+      "result": "lost",
+      "note": "长串结算 lost. 080 ENG 2-1 COD (rqspf 让-1 平 → 1-1 平 ✓ won) / 081 BEL 2-2 SEN (spf 平 → 2-2 平 ✓ won) / 082 USA 2-0 BIH (rqspf 让-1 主胜 → 1-0 主胜 ✓ won) / 083 ESP 3-0 AUT (rqspf 让-1 主负 → 2-0 主胜 ✗ lost) / 084 POR 2-1 CRO (rqspf 让-1 主负 → 1-1 平 ✗ lost) / 085 SUI 2-0 DZA (spf 主胜 → 2-0 主胜 ✓ won) / 086-087 未完赛. 080-085 共 6 场: 4 won + 2 lost (083,084). 083+084 必含 → 7x1 需 7 中(至多 4+086+087=6 中) / 8x1 需 8 中(至多 6 中) → 7x1/8x1 整体必输 lost. 投入 18 元 (9 注 × 2 元 × 1 倍 = 18 元), ROI -100%."
+    },
+    {
+      "id": "crs-thu083-084-085-zjq-2026-07-03",
+      "type": "match",
+      "title": "[总进球数] 串关（2×1 + 3×1 · 20 注 · 40 元 · won 21.12）",
+      "matchLabel": "周四083-085 总进球数（赔率时点 2026-07-02 18:58）",
+      "date": "2026-07-02T18:58:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1",
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（用户 7/2 18:58 提供）",
+      "picks": [
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "zjq",
+          "pick": "2",
+          "pickLabel": "2 球",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "zjq",
+          "pick": "4",
+          "pickLabel": "4 球",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "zjq",
+          "pick": "3",
+          "pickLabel": "3 球",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": 21.12,
+      "actualReturn": 21.12,
+      "result": "won",
+      "note": "3 场 × 2 选 = 2x1 (3 对 × 4 = 12) + 3x1 (1 × 8 = 8) = 20 注 × 2 元 × 1 倍 = 40 元。结算：083 ESP 3-0 AUT 总 3 球（选 2 ✗ / 选 3 ✓）/ 084 POR 2-1 CRO 总 3 球（选 3 ✓ / 选 2 ✗）/ 085 SUI 2-0 DZA 总 2 球（选 4 ✗ / 选 3 ✗）。3x1 8 注全 lost。2x1 12 注中只有 1 注命中：(083=3球 + 084=3球) → 实际返奖 21.12 元 (ROI -47.2%)。用户报 won 21.12。"
+    },
+    {
+      "id": "crs-thu083-084-085-rqspf-2026-07-03",
+      "type": "match",
+      "title": "[让球+胜平负] 串关（3×1 · 1 注 · 5 倍 · 10 元）",
+      "matchLabel": "周四083-085 让球+胜平负（赔率时点 2026-07-02 19:57）",
+      "date": "2026-07-02T19:57:00",
+      "stakeMultiplier": 5,
+      "parlayType": [
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（用户 7/2 19:57 提供）",
+      "picks": [
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "draw",
+          "pickLabel": "平(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "rqspf",
+          "handicap": -1,
+          "pick": "away",
+          "pickLabel": "主负(-1)",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "spf",
+          "pick": "home",
+          "pickLabel": "主胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 1,
+      "totalCost": 10,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "3×1 × 5 倍 = 1 注 × 2 元 × 5 倍 = 10 元。结算：083 ESP 3-0 AUT 让-1=主胜 (平 ✗) / 084 POR 2-1 CRO 让-1=主胜 (主负 ✗) / 085 SUI 2-0 DZA 主胜 (主胜 ✓) — 3x1 必全中，1 错全错 → lost (ROI -100%)"
+    },
+    {
+      "id": "crs-thu083-084-085-bf-2026-07-03",
+      "type": "match",
+      "title": "[比分] 串关（2×1 + 3×1 · 20 注 · 40 元）",
+      "matchLabel": "周四083-085 比分（赔率时点 2026-07-02 19:04）",
+      "date": "2026-07-02T19:04:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1",
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（用户 7/2 19:04 提供）",
+      "picks": [
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "bf",
+          "pick": "1-0",
+          "pickLabel": "1:0",
+          "odds": null
+        },
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "bf",
+          "pick": "2-0",
+          "pickLabel": "2:0",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "bf",
+          "pick": "2-1",
+          "pickLabel": "2:1",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "bf",
+          "pick": "1-1",
+          "pickLabel": "1:1",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "bf",
+          "pick": "3-1",
+          "pickLabel": "3:1",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "bf",
+          "pick": "2-1",
+          "pickLabel": "2:1",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 20,
+      "totalCost": 40,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "3 场 × 2 选 = 2x1 (12) + 3x1 (8) = 20 注 × 2 元 × 1 倍 = 40 元。结算：083 ESP 3-0 AUT (1:0 ✗ / 2:0 ✗) / 084 POR 2-1 CRO (2:1 ✓ / 1:1 ✗) / 085 SUI 2-0 DZA (3:1 ✗ / 2:1 ✗)。3x1 8 注全 lost。2x1 12 注中只有 (084=2:1) 单场命中，2 串都凑不齐 → 全 lost (ROI -100%)"
+    },
+    {
+      "id": "crs-thu083-084-085-bqc-2026-07-03",
+      "type": "match",
+      "title": "[半全场] 串关（2×1 + 3×1 · 24 注 · 48 元）",
+      "matchLabel": "周四083-085 半全场（赔率时点 2026-07-02 19:41）",
+      "date": "2026-07-02T19:41:00",
+      "stakeMultiplier": 1,
+      "parlayType": [
+        "2x1",
+        "3x1"
+      ],
+      "isActual": true,
+      "source": "竞彩 APP 截图（用户 7/2 19:41 提供）",
+      "picks": [
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "bqc",
+          "pick": "draw-away",
+          "pickLabel": "平负",
+          "odds": null
+        },
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "bqc",
+          "pick": "home-draw",
+          "pickLabel": "胜平",
+          "odds": null
+        },
+        {
+          "mid": "2040354",
+          "match": "周四083",
+          "home": "ESP",
+          "away": "AUT",
+          "kickoff": "2026-07-03 03:00",
+          "play": "bqc",
+          "pick": "away-draw",
+          "pickLabel": "负平",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "bqc",
+          "pick": "draw-away",
+          "pickLabel": "平负",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "bqc",
+          "pick": "away-draw",
+          "pickLabel": "负平",
+          "odds": null
+        },
+        {
+          "mid": "2040355",
+          "match": "周四084",
+          "home": "POR",
+          "away": "CRO",
+          "kickoff": "2026-07-03 07:00",
+          "play": "bqc",
+          "pick": "home-draw",
+          "pickLabel": "胜平",
+          "odds": null
+        },
+        {
+          "mid": "2040356",
+          "match": "周四085",
+          "home": "SUI",
+          "away": "DZA",
+          "kickoff": "2026-07-03 11:00",
+          "play": "bqc",
+          "pick": "home-home",
+          "pickLabel": "胜胜",
+          "odds": null
+        }
+      ],
+      "unitCost": 2,
+      "combinations": 24,
+      "totalCost": 48,
+      "maxReturn": null,
+      "result": "lost",
+      "note": "083 三选 + 084 三选 + 085 单选 = 2x1 (9+3+3=15) + 3x1 (3×3×1=9) = 24 注 × 2 元 × 1 倍 = 48 元。结算：083 ESP 1-0/3-0 → 胜胜 (平负 ✗ / 胜平 ✗ / 负平 ✗) / 084 POR ?-?/2-1 → 待查 / 085 SUI ?-?/2-0 → 待查。3 选 083 全错 → 3x1 9 注全 lost；2x1 中 (083×084) 9 注 / (083×085) 3 注 / (084×085) 3 注 → (083×085) 和 (083×084) 必含 083 错 → 全 lost (ROI -100%)"
     }
   ]
 }

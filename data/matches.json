@@ -1036,10 +1036,12 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "AUS",
     "away": "EGY",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040347",
     "kickoff": "2026-07-04 02:00",
-    "code": "周五086"
+    "code": "周五086",
+    "final_score": "1-1",
+    "result_file": "results/2040347.json"
   },
   {
     "id": "M087",
@@ -1049,10 +1051,12 @@
     "venue": "Lincoln Financial Field, Philadelphia, PA",
     "home": "ARG",
     "away": "CPV",
-    "status": "scheduled",
+    "status": "finished",
     "mid": "2040348",
     "kickoff": "2026-07-04 06:00",
-    "code": "周五087"
+    "code": "周五087",
+    "final_score": "1-1",
+    "result_file": "results/2040348.json"
   },
   {
     "id": "M088",

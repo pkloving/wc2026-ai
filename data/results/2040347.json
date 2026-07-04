@@ -1,0 +1,43 @@
+{
+  "matchId": "2040347",
+  "mid": "2040347",
+  "code": "周五086",
+  "league": "世界杯",
+  "stage": "r32",
+  "home": "澳大利亚",
+  "away": "埃及",
+  "kickoff": "2026-07-04 02:00",
+  "handicap": 1,
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": "0-1",
+  "final_score": "1-1",
+  "scorers": [
+    {
+      "minute": "13'",
+      "team": "away",
+      "player": "阿舒尔 (Ashour)",
+      "type": "头球",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "55'",
+      "team": "home",
+      "player": "穆罕默德·哈尼 (Mohamed Hany)",
+      "type": "乌龙球",
+      "score_after": "1-1"
+    }
+  ],
+  "extraTime": "1-1",
+  "wentToPenalties": true,
+  "penaltyScore": { "home": 3, "away": 5 },
+  "actualWinner": "away",
+  "spf_result": "draw",
+  "rqspf_result": "draw",
+  "zjq_result": "2",
+  "bqc_result": "负平",
+  "bf_result": { "score": "1:1", "other": null },
+  "data_source": "souhu+sohu+toutiao+直播吧",
+  "recorded_at": "2026-07-04T09:00:00+08:00",
+  "notes": "90分钟1-1，加时0-0，点球大战 EGY 5-3 AUS 晋级。半时埃及1-0领先。下半场55分钟澳大利亚通过对方乌龙球扳平。"
+}

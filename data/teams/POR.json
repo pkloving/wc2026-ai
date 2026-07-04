@@ -96,17 +96,7 @@
       "teams_behind": 2,
       "same_points_teams": 0,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M084",
-        "mid": "2040355",
-        "date": "2026-07-02T23:00:00Z",
-        "opponent_code": "CRO",
-        "opponent_name": "克罗地亚",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Hard Rock Stadium, Miami Gardens, FL",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -137,5 +127,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-02T10:42:46.873Z"
+  "_updated_at": "2026-07-03T11:18:21.067Z"
 }

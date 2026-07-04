@@ -1,0 +1,69 @@
+{
+  "matchId": "2040348",
+  "mid": "2040348",
+  "code": "周五087",
+  "league": "世界杯",
+  "stage": "r32",
+  "home": "阿根廷",
+  "away": "佛得角",
+  "kickoff": "2026-07-04 06:00",
+  "handicap": -2,
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": "0-1",
+  "final_score": "1-1",
+  "scorers": [
+    {
+      "minute": "28'",
+      "team": "home",
+      "player": "梅西 (Messi)",
+      "type": "左脚低射",
+      "assist": "利桑德罗·马丁内斯过顶长传",
+      "score_after": "1-0"
+    },
+    {
+      "minute": "59'",
+      "team": "away",
+      "player": "杜阿尔特 (Duarte)",
+      "type": "半转身抽射",
+      "assist": "瑞安·门德斯直塞",
+      "score_after": "1-1"
+    },
+    {
+      "minute": "103'",
+      "team": "home",
+      "player": "利桑德罗·马丁内斯 (L. Martinez)",
+      "type": "禁区外远射",
+      "score_after": "2-1",
+      "phase": "extra_time"
+    },
+    {
+      "minute": "106'",
+      "team": "away",
+      "player": "卡布拉尔 (Cabral)",
+      "type": "弧线球世界波",
+      "score_after": "2-2",
+      "phase": "extra_time"
+    },
+    {
+      "minute": "111'",
+      "team": "home",
+      "player": "博尔热斯 (Borges) 乌龙 / 罗梅罗 (Romero) 头球",
+      "type": "乌龙球（角球进攻）",
+      "score_after": "3-2",
+      "phase": "extra_time"
+    }
+  ],
+  "extraTime": "3-2",
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "home",
+  "spf_result": "draw",
+  "rqspf_result": "away",
+  "zjq_result": "2",
+  "bqc_result": "胜平",
+  "bf_result": { "score": "1:1", "other": null },
+  "data_source": "souhu+thepaper+toutiao",
+  "recorded_at": "2026-07-04T09:00:00+08:00",
+  "notes": "90分钟1-1，加时双方再各入一球，加时第111分钟罗梅罗头球造成博尔热斯乌龙，阿根廷3-2险胜晋级8强。半时阿根廷1-0领先。下半场59分钟佛得角杜阿尔特扳平。竞彩比分以90分钟为准。"
+}
