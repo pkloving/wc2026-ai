@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T10:32:50.458Z",
+  "generated_at": "2026-07-05T07:02:53.646Z",
   "play": "zjq",
   "count": 91,
   "rows": [
@@ -2964,11 +2964,11 @@
     {
       "mid": "2040359",
       "code": "周六089",
-      "home": "CAN",
-      "away": "MAR",
+      "home": "加拿大",
+      "away": "摩洛哥",
       "kickoff": "2026-07-05 01:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "0:3",
       "initial": {
         "odds": {
           "0": 9.5,
@@ -2993,16 +2993,16 @@
           "7+": 38
         }
       },
-      "result": null
+      "result": "3"
     },
     {
       "mid": "2040373",
       "code": "周六090",
-      "home": "PAR",
-      "away": "FRA",
+      "home": "巴拉圭",
+      "away": "法国",
       "kickoff": "2026-07-05 05:00",
       "handicap": 2,
-      "final_score": null,
+      "final_score": "0:1",
       "initial": {
         "odds": {
           "0": 17,
@@ -3027,13 +3027,13 @@
           "7+": 21
         }
       },
-      "result": null
+      "result": "1"
     },
     {
       "mid": "2040374",
       "code": "周日091",
-      "home": "BRA",
-      "away": "NOR",
+      "home": "巴西",
+      "away": "挪威",
       "kickoff": "2026-07-06 04:00",
       "handicap": -1,
       "final_score": null,
@@ -3066,8 +3066,8 @@
     {
       "mid": "2040394",
       "code": "周日092",
-      "home": "MEX",
-      "away": "ENG",
+      "home": "墨西哥",
+      "away": "英格兰",
       "kickoff": "2026-07-06 08:00",
       "handicap": 1,
       "final_score": null,

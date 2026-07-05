@@ -1081,10 +1081,12 @@
     "venue": "Levi's Stadium, Santa Clara, CA",
     "home": "CAN",
     "away": "MAR",
-    "status": "scheduled",
+    "status": "finished",
     "code": "周六089",
     "kickoff": "2026-07-05 01:00",
-    "mid": "2040359"
+    "mid": "2040359",
+    "final_score": "0-3",
+    "result_file": "results/2040359.json"
   },
   {
     "id": "M090",
@@ -1094,10 +1096,12 @@
     "venue": "Arrowhead Stadium, Kansas City, MO",
     "home": "PAR",
     "away": "FRA",
-    "status": "scheduled",
+    "status": "finished",
     "code": "周六090",
     "kickoff": "2026-07-05 05:00",
-    "mid": "2040373"
+    "mid": "2040373",
+    "final_score": "0-1",
+    "result_file": "results/2040373.json"
   },
   {
     "id": "M091",
@@ -1107,7 +1111,7 @@
     "venue": "Gillette Stadium, Foxborough, MA",
     "home": "BRA",
     "away": "NOR",
-    "status": "scheduled",
+    "status": "on_sale",
     "code": "周日091",
     "kickoff": "2026-07-06 04:00",
     "mid": "2040374"
@@ -1120,7 +1124,7 @@
     "venue": "Estadio Azteca, Mexico City",
     "home": "MEX",
     "away": "ENG",
-    "status": "scheduled",
+    "status": "on_sale",
     "code": "周日092",
     "kickoff": "2026-07-06 08:00",
     "mid": "2040394"

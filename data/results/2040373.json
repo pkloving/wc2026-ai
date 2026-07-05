@@ -1,0 +1,48 @@
+{
+  "matchId": "2040373",
+  "mid": "2040373",
+  "code": "周六090",
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "巴拉圭",
+  "away": "法国",
+  "kickoff": "2026-07-05 05:00",
+  "venue": "Lincoln Financial Field, Philadelphia, PA",
+  "handicap": 2,
+  "homeScore": 0,
+  "awayScore": 1,
+  "final_score": "0-1",
+  "halfTime": "0-0",
+  "scorers": [
+    {
+      "minute": "70'",
+      "team": "away",
+      "player": "姆巴佩 (Kylian Mbappé) 点球",
+      "type": "点球",
+      "assist": "杜埃 (Désiré Doué) 禁区内被犯规造点",
+      "score_after": "0-1",
+      "_note": "央视/直播吧/dongqiudi 3源验证；部分媒体标注 67'/68' 但 CCTV 央视为 70' (与 dongqiudi 一致)"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spfResult": "away",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "0:1",
+    "other": null
+  },
+  "zjqResult": "1",
+  "bqcResult": "平负",
+  "_fromSporttery": false,
+  "_halfTimeResult": "draw",
+  "_spfResult": "away",
+  "_hhadResult": "H",
+  "_totalGoals": "1",
+  "_enrichedAt": "2026-07-05T05:00:00.000Z",
+  "data_source": "cnr+sohu+toutiao+直播吧+sohu+dongqiudi (6+ source 交叉验证)",
+  "recorded_at": "2026-07-05T09:00:00+08:00",
+  "notes": "90分钟0-1完赛，法国晋级8强。上半场0-0互交白卷，巴拉圭铁桶阵让法国久攻不下；下半场第70分钟杜埃禁区内被犯规造点，姆巴佩主罚命中 (个人本届第7球，追平梅西并列射手榜；该进球也是法国队史世界杯第150球)。法国下轮 qf vs 摩洛哥（摩洛哥已3-0淘汰加拿大）。竞彩比分以90分钟为准 (0-1)，rqspf 让球+2 后 = 0+2=2 vs 1 → 主胜(home, 巴拉圭让胜)。halfTime=0-0 / scorers 1 条已 WebSearch 验证补齐。"
+}

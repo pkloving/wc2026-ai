@@ -98,17 +98,7 @@
       "teams_behind": 1,
       "same_points_teams": 1,
       "min_points_to_qualify": 0,
-      "next_match": {
-        "match_id": "M089",
-        "mid": "2040359",
-        "date": "2026-07-04T17:00:00Z",
-        "opponent_code": "MAR",
-        "opponent_name": "摩洛哥",
-        "opponent_position": "?",
-        "opponent_pts": "?",
-        "venue": "Levi's Stadium, Santa Clara, CA",
-        "importance": "general"
-      }
+      "next_match": null
     },
     "knockout_matchup": {
       "current_position": 2,
@@ -139,5 +129,5 @@
       ]
     }
   },
-  "_updated_at": "2026-07-04T10:31:26.032Z"
+  "_updated_at": "2026-07-05T01:43:34.558Z"
 }

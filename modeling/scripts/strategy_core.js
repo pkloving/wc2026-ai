@@ -159,6 +159,12 @@ export const SEARCH_SPACE = [
   { path: 'f4.bigBall.safeOddsMax',       values: [10, 12, 15] },
   { path: 'f4.bigBall.midLo',             values: [10, 12, 15] },
   { path: 'f4.bigBall.midHi',             values: [22, 25, 30] },
+  // 2026-07-05 调优 (sampled 2040292 CUW 0-2 CIV hc=+2 WEAK):
+  //   WEAK bf 主池 14 场 3/42 hit ROI -94.6% (结构性), core+upset 长赔彩票几乎不中
+  //   只 filler (最低赔率) 3/14 ≈ 21% 命中. 加 coreCount 旋钮让 33_fit 考虑
+  //   coreCount=0 跳过 core (只保留 upset+filler), coreCount=1 缩到 1 场
+  //   留 default=2 维持现状, 33_fit 自由选择
+  { path: 'f4.weak.coreCount',             values: [0, 1, 2] },
   { path: 'f4.weak.coreLo',               values: [8, 10, 12] },
   { path: 'f4.weak.coreHi',               values: [25, 30, 35] },
   { path: 'f4.normal.upsetOddsLo',        values: [6, 7, 8] },
@@ -251,7 +257,13 @@ export function createTeamCtx(PROJECT_ROOT) {
     } catch (e) { /* ignore */ }
   }
   for (const [alias, code] of Object.entries(variants)) if (tierOfCode[code]) nameToTier[alias] = tierOfCode[code];
-  const codeOf = (teamName) => (teamName ? (codeByName[teamName] || nameToTier[teamName] ? null : null) : null);
+  const codeOf = (teamName) => {
+    if (!teamName) return null;
+    if (codeByName[teamName]) return codeByName[teamName];          // 标准中文名 (加拿大/摩洛哥/...)
+    if (variants && variants[teamName]) return variants[teamName];   // 中文别名 (沙特/乌兹别克/...)
+    if (tierOfCode[teamName]) return teamName;                      // 英文 code (CAN/PAR/...)
+    return null;
+  };
   const getTeamTier = (team) => {
     const code = codeOf(team);
     if (code) return tierOfCode[code] || 'unknown';

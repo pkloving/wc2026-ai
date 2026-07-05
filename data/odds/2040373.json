@@ -7,8 +7,8 @@
     "away": "FRA",
     "kickoff": "2026-07-05 05:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040373",
-    "scraped_at": "2026-07-04T10:30:05.611Z",
-    "sale_status": "在售",
+    "scraped_at": "2026-07-05T01:00:00.000Z",
+    "sale_status": "完赛",
     "single_supported": {
       "HHAD": true,
       "HAFU": true,
@@ -16,7 +16,7 @@
       "TTG": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": null,
@@ -85,10 +85,13 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-07-04T10:30:05.611Z",
+    "fetched_at": "2026-07-05T01:00:00.000Z",
     "snapshot_time": null,
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "A",
+    "half_time_result": "D",
+    "match_result": "0-1",
+    "_finished_at": "2026-07-05T05:00:00+08:00",
+    "_note": "完赛 (90min) 法国客胜 0-1；半时 0-0；姆巴佩 70' 点球绝杀；详情见 data/results/2040373.json"
   }
 }

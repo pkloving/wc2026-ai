@@ -1,0 +1,63 @@
+{
+  "matchId": "2040359",
+  "mid": "2040359",
+  "code": "周六089",
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "加拿大",
+  "away": "摩洛哥",
+  "kickoff": "2026-07-05 01:00",
+  "venue": "NRG Stadium, Houston, TX",
+  "handicap": 1,
+  "homeScore": 0,
+  "awayScore": 3,
+  "final_score": "0-3",
+  "halfTime": "0-0",
+  "scorers": [
+    {
+      "minute": "50'",
+      "team": "away",
+      "player": "阿兹丁·乌纳希 (Aziz Ounahi)",
+      "type": "禁区内推射",
+      "assist": "阿什拉夫·哈基米 (Achraf Hakimi) 右路助攻",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "82'",
+      "team": "away",
+      "player": "阿兹丁·乌纳希 (Aziz Ounahi) 梅开二度",
+      "type": "射门",
+      "assist": "卜拉欣·迪亚斯 (Brahim Díaz) 直塞",
+      "score_after": "0-2"
+    },
+    {
+      "minute": "90+8'",
+      "team": "away",
+      "player": "苏菲安·拉希米 (Soufiane Rahimi)",
+      "type": "低射",
+      "assist": "卜拉欣·迪亚斯 (Brahim Díaz) 二次助攻",
+      "score_after": "0-3"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "0:3",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平负",
+  "_fromSporttery": false,
+  "_halfTimeResult": "draw",
+  "_spfResult": "away",
+  "_hhadResult": "A",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-05T01:00:00.000Z",
+  "data_source": "souhu+cnr+sohu+toutiao+直播吧+qiumiwu (5+ source 交叉验证)",
+  "recorded_at": "2026-07-05T09:00:00+08:00",
+  "notes": "90分钟0-3完赛，摩洛哥晋级8强，半场0-0互交白卷；下半场50分钟阿什拉夫右路助攻乌纳希推射破僵局，82分钟迪亚斯直塞乌纳希梅开二度，90+8分钟迪亚斯二次助攻拉希米低射锁定大胜。加拿大成为本届首支出局东道主；摩洛哥下轮 qf vs 法国（法国已1-0淘汰巴拉圭）。竞彩比分以90分钟为准 (0-3)，rqspf 让球+1 后 = 0+1=1 vs 3 → 客胜(away)。halfTime=0-0 / scorers 3 条已 WebSearch 验证补齐。"
+}

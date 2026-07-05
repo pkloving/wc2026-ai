@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T10:32:46.521Z",
+  "generated_at": "2026-07-05T07:02:53.702Z",
   "total_matches": 148,
   "matches": [
     {
@@ -17557,11 +17557,11 @@
       "mid": "2040359",
       "code": "周六089",
       "league": "世界杯",
-      "home": "CAN",
-      "away": "MAR",
+      "home": "加拿大",
+      "away": "摩洛哥",
       "kickoff": "2026-07-05 01:00",
       "handicap": 1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 5.4,
@@ -17573,7 +17573,7 @@
           "draw": 3.45,
           "away": 1.53
         },
-        "result": null
+        "result": "away"
       },
       "rqspf": {
         "initial": {
@@ -17588,7 +17588,7 @@
           "draw": 2.82,
           "away": 3.23
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -17661,7 +17661,10 @@
             "01:05": 125
           }
         },
-        "result": null
+        "result": {
+          "score": "0:3",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -17688,7 +17691,7 @@
             "7+": 38
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
@@ -17717,16 +17720,25 @@
             "负负": 2.65
           }
         },
-        "result": null
+        "result": "平负"
       },
-      "result": null,
+      "result": {
+        "home": 0,
+        "away": 3,
+        "half": "0-0",
+        "scorers_count": 3,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 2,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -17734,11 +17746,11 @@
       "mid": "2040373",
       "code": "周六090",
       "league": "世界杯",
-      "home": "PAR",
-      "away": "FRA",
+      "home": "巴拉圭",
+      "away": "法国",
       "kickoff": "2026-07-05 05:00",
       "handicap": 2,
-      "status": "on_sale",
+      "status": "finished",
       "rqspf": {
         "initial": {
           "handicap": 2,
@@ -17752,7 +17764,7 @@
           "draw": 3.33,
           "away": 2.48
         },
-        "result": null
+        "result": "home"
       },
       "bf": {
         "initial": {
@@ -17825,7 +17837,10 @@
             "01:05": 38
           }
         },
-        "result": null
+        "result": {
+          "score": "0:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -17852,7 +17867,7 @@
             "7+": 21
           }
         },
-        "result": null
+        "result": "1"
       },
       "bqc": {
         "initial": {
@@ -17881,16 +17896,25 @@
             "负负": 1.42
           }
         },
-        "result": null
+        "result": "平负"
       },
-      "result": null,
+      "result": {
+        "home": 0,
+        "away": 1,
+        "half": "0-0",
+        "scorers_count": 1,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
-          "spf": 0,
-          "rqspf": 1,
-          "bf": 1,
-          "zjq": 1,
-          "bqc": 1
+          "spf": 1,
+          "rqspf": 2,
+          "bf": 2,
+          "zjq": 2,
+          "bqc": 2
         }
       }
     },
@@ -17898,8 +17922,8 @@
       "mid": "2040374",
       "code": "周日091",
       "league": "世界杯",
-      "home": "BRA",
-      "away": "NOR",
+      "home": "巴西",
+      "away": "挪威",
       "kickoff": "2026-07-06 04:00",
       "handicap": -1,
       "status": "on_sale",
@@ -17937,29 +17961,29 @@
             "05:00": 100,
             "平其它": 250,
             "胜其它": 60,
-            "01:00": 8,
+            "01:00": 8.5,
             "05:02": 150,
             "05:01": 90,
             "负其它": 150,
             "02:04": 150,
             "02:05": 500,
-            "02:02": 10,
+            "02:02": 9,
             "02:03": 38,
-            "02:00": 10,
+            "02:00": 9,
             "02:01": 5,
             "03:03": 40,
             "03:01": 9.5,
             "03:02": 16.5,
-            "03:00": 16,
-            "00:01": 14.5,
+            "03:00": 18,
+            "00:01": 15,
             "00:00": 14,
-            "00:03": 65,
+            "00:03": 70,
             "00:02": 29,
             "00:05": 600,
             "00:04": 250,
             "04:02": 55,
-            "04:01": 30,
-            "04:00": 40,
+            "04:01": 34,
+            "04:00": 42,
             "01:02": 13.5,
             "01:01": 6.3,
             "01:04": 120,
@@ -17972,29 +17996,29 @@
             "05:00": 100,
             "平其它": 250,
             "胜其它": 60,
-            "01:00": 8,
+            "01:00": 8.5,
             "05:02": 150,
             "05:01": 90,
             "负其它": 150,
             "02:04": 150,
             "02:05": 500,
-            "02:02": 10,
+            "02:02": 9,
             "02:03": 38,
-            "02:00": 10,
+            "02:00": 9,
             "02:01": 5,
             "03:03": 40,
             "03:01": 9.5,
             "03:02": 16.5,
-            "03:00": 16,
-            "00:01": 14.5,
+            "03:00": 18,
+            "00:01": 15,
             "00:00": 14,
-            "00:03": 65,
+            "00:03": 70,
             "00:02": 29,
             "00:05": 600,
             "00:04": 250,
             "04:02": 55,
-            "04:01": 30,
-            "04:00": 40,
+            "04:01": 34,
+            "04:00": 42,
             "01:02": 13.5,
             "01:01": 6.3,
             "01:04": 120,
@@ -18065,7 +18089,7 @@
         "history_points": {
           "spf": 1,
           "rqspf": 1,
-          "bf": 1,
+          "bf": 2,
           "zjq": 1,
           "bqc": 1
         }
@@ -18075,36 +18099,36 @@
       "mid": "2040394",
       "code": "周日092",
       "league": "世界杯",
-      "home": "MEX",
-      "away": "ENG",
+      "home": "墨西哥",
+      "away": "英格兰",
       "kickoff": "2026-07-06 08:00",
       "handicap": 1,
       "status": "on_sale",
       "spf": {
         "initial": {
-          "home": 3.3,
-          "draw": 2.95,
-          "away": 2.05
+          "home": 3.25,
+          "draw": 3.04,
+          "away": 2.03
         },
         "last": {
-          "home": 3.3,
-          "draw": 2.95,
-          "away": 2.05
+          "home": 3.25,
+          "draw": 3.04,
+          "away": 2.03
         },
         "result": null
       },
       "rqspf": {
         "initial": {
           "handicap": 1,
-          "home": 1.57,
-          "draw": 3.45,
-          "away": 4.95
+          "home": 1.59,
+          "draw": 3.37,
+          "away": 4.9
         },
         "last": {
           "handicap": 1,
-          "home": 1.57,
-          "draw": 3.45,
-          "away": 4.95
+          "home": 1.59,
+          "draw": 3.37,
+          "away": 4.9
         },
         "result": null
       },
@@ -18240,8 +18264,8 @@
       "result": null,
       "meta": {
         "history_points": {
-          "spf": 1,
-          "rqspf": 1,
+          "spf": 2,
+          "rqspf": 2,
           "bf": 1,
           "zjq": 1,
           "bqc": 1
