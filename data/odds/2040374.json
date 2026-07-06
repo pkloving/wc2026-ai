@@ -92,8 +92,8 @@
     "api": "getFixedBonusV1.qry",
     "fetched_at": "2026-07-05T01:04:31.050Z",
     "snapshot_time": "2026-07-04 13:48:58",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "away",
+    "half_time_result": "draw"
   }
 }

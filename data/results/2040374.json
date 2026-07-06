@@ -1,0 +1,53 @@
+{
+  "matchId": "M091",
+  "mid": "2040374",
+  "code": "周日091",
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "巴西",
+  "away": "挪威",
+  "kickoff": "2026-07-06 04:00",
+  "venue": "Gillette Stadium, Foxborough, MA",
+  "handicap": -1,
+  "homeScore": 1,
+  "awayScore": 2,
+  "halfTime": "0-0",
+  "final_score": "1-2",
+  "scorers": [
+    {
+      "minute": "80'",
+      "team": "away",
+      "player": "埃尔林·哈兰德 (Erling Haaland)",
+      "type": "头球",
+      "assist": "安德烈亚斯·谢尔德鲁普 (Andreas Schjelderup) 右路传中",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "90'",
+      "team": "away",
+      "player": "埃尔林·哈兰德 (Erling Haaland) 梅开二度",
+      "type": "射门",
+      "assist": "安德烈亚斯·谢尔德鲁普 (Andreas Schjelderup) 直塞",
+      "score_after": "0-2"
+    },
+    {
+      "minute": "90+10'",
+      "team": "home",
+      "player": "内马尔 (Neymar)",
+      "type": "点球",
+      "score_after": "1-2"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spf_result": "away",
+  "rqspf_result": "away",
+  "zjq_result": "3",
+  "bqc_result": "平负",
+  "bf_result": { "score": "1:2", "other": null },
+  "data_source": "球迷屋+直播吧+网易+头条 (5+ source 交叉验证)",
+  "recorded_at": "2026-07-06T09:00:00+08:00",
+  "notes": "90分钟1-2完赛，挪威爆冷晋级8强，半场0-0互交白卷。80分钟谢尔德鲁普右路传中助攻哈兰德头球破僵局，90分钟谢尔德鲁普直塞哈兰德梅开二度，90+10分钟内马尔点球扳回一球但已无力回天。巴西本届止步16强，挪威队史首次闯入世界杯八强。竞彩比分以90分钟为准 (1-2)，rqspf 让球-1 后 = -1+(-1)=-2 vs 0 → 客胜(away)。halfTime=0-0 / scorers 3 条已 WebSearch 验证补齐。"
+}
