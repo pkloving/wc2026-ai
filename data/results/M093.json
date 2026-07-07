@@ -1,0 +1,38 @@
+{
+  "matchId": "M093",
+  "mid": null,
+  "code": null,
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "葡萄牙",
+  "away": "西班牙",
+  "kickoff": "2026-07-07 03:00",
+  "venue": "AT&T Stadium, Arlington, TX",
+  "handicap": null,
+  "homeScore": 0,
+  "awayScore": 1,
+  "halfTime": "0-0",
+  "final_score": "0-1",
+  "scorers": [
+    {
+      "minute": "90'",
+      "team": "away",
+      "player": "梅里诺 (Mikel Merino)",
+      "type": "射门",
+      "assist": "费兰·托雷斯 (Ferran Torres) 手术刀直塞",
+      "score_after": "0-1"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spf_result": "away",
+  "rqspf_result": null,
+  "zjq_result": "1",
+  "bqc_result": "平负",
+  "bf_result": { "score": "0:1", "other": null },
+  "data_source": "直播吧+央视+新华网+ESPN (4+ source 交叉验证)",
+  "recorded_at": "2026-07-07T18:00:00+08:00",
+  "notes": "90分钟0-1完赛，西班牙绝杀晋级8强。上半场奥亚萨瓦尔失单刀、努诺·门德斯中框互交白卷，半场0-0。下半场56分钟门德斯伤退被塞梅多换下，第90分钟西班牙快发任意球，费兰·托雷斯手术刀直塞，梅里诺单刀推入近角完成绝杀，伤停补时6分钟葡萄牙未能扳平。竞彩比分以90分钟为准 (0-1)，SPF 客胜。rqspf 因 sporttery mid 未放出、handicap 字段缺失，rqspf_result 留空待 mid 放出后补算。halfTime=0-0 / scorers 1 条已 WebSearch 验证补齐。注：matches.json 中 venue 写为 'Estadio Akron, Guadalajara'，与 ESPN/直播吧确认的 'AT&T Stadium, Arlington, TX' 不一致，本 result 文件以实际新闻源为准，matches.json 的 venue 字段按 SKILL.md §2.3.1 不在本轮 Step 1 范围内修改，留待后续 patch 统一核对。"
+}

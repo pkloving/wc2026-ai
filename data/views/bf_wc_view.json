@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T07:02:53.649Z",
+  "generated_at": "2026-07-07T10:43:17.621Z",
   "play": "bf",
   "count": 91,
   "rows": [
@@ -7397,7 +7397,7 @@
       "away": "挪威",
       "kickoff": "2026-07-06 04:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:2",
       "initial": {
         "odds": {
           "05:00": 100,
@@ -7468,7 +7468,10 @@
           "01:05": 500
         }
       },
-      "result": null
+      "result": {
+        "score": "1:2",
+        "other": null
+      }
     },
     {
       "mid": "2040394",
@@ -7477,7 +7480,7 @@
       "away": "英格兰",
       "kickoff": "2026-07-06 08:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "2:3",
       "initial": {
         "odds": {
           "05:00": 600,
@@ -7548,7 +7551,10 @@
           "01:05": 300
         }
       },
-      "result": null
+      "result": {
+        "score": "2:3",
+        "other": null
+      }
     }
   ]
 }

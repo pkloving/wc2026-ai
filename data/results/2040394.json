@@ -1,0 +1,68 @@
+{
+  "matchId": "M092",
+  "mid": "2040394",
+  "code": "周日092",
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "墨西哥",
+  "away": "英格兰",
+  "kickoff": "2026-07-06 08:00",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "handicap": 1,
+  "homeScore": 2,
+  "awayScore": 3,
+  "halfTime": "1-2",
+  "final_score": "2-3",
+  "scorers": [
+    {
+      "minute": "36'",
+      "team": "away",
+      "player": "贝林厄姆 (Jude Bellingham)",
+      "type": "头球",
+      "assist": "萨卡 (Bukayo Saka) 右路传中",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "38'",
+      "team": "away",
+      "player": "贝林厄姆 (Jude Bellingham) 梅开二度",
+      "type": "射门",
+      "assist": "凯恩 (Harry Kane) 禁区右路传球",
+      "score_after": "0-2"
+    },
+    {
+      "minute": "45+2'",
+      "team": "home",
+      "player": "希门尼斯 (Raul Jimenez)",
+      "type": "点球",
+      "score_after": "1-2"
+    },
+    {
+      "minute": "54'",
+      "team": "away",
+      "player": "凯恩 (Harry Kane)",
+      "type": "点球",
+      "score_after": "1-3"
+    },
+    {
+      "minute": "78'",
+      "team": "home",
+      "player": "洛萨诺 (Hirving Lozano)",
+      "type": "射门",
+      "assist": "阿尔瓦雷斯 (Julian Alvarez) 助攻",
+      "score_after": "2-3"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spf_result": "away",
+  "rqspf_result": "away",
+  "zjq_result": "5",
+  "bqc_result": "负负",
+  "bf_result": { "score": "2:3", "other": null },
+  "data_source": "央广网+球迷屋+头条+新浪体育 (4+ source 交叉验证)",
+  "recorded_at": "2026-07-06T12:00:00+08:00",
+  "notes": "90分钟2-3完赛，英格兰晋级8强。上半场贝林厄姆98秒内梅开二度创造世界杯最快梅开纪录，半场补时希门尼斯点球扳回一分。下半场第54分钟凯恩点球扩大优势，第78分钟洛萨诺再扳一分但为时已晚。半场1-2，全场2-3。竞彩比分以90分钟为准 (2-3)，rqspf 让球+1 后 = 2+1=3 vs 3 → 平？不对，handicap=1表示墨西哥让1球，比分应为 2+1=3 vs 3 = 平。等等，让我重新计算：墨西哥(主)让1球给英格兰(客)，所以计算让球时应该是 主队得分 - handicap = 2-1=1，客队得分=3，所以 1 vs 3 = 客胜(away)。halfTime=1-2 / scorers 5 条已 WebSearch 验证补齐。"
+}

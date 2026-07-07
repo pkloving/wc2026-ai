@@ -156,6 +156,13 @@ export const SEARCH_SPACE = [
   { path: 'rqspf.favHomeLo',              values: [1.4, 1.5, 1.6, 1.7] },
   { path: 'rqspf.favHomeHi',              values: [1.9, 2.0, 2.1, 2.2] },
   // --- 3 比分 ROI (f4 主池) ---
+  // 2026-07-06 调优 (sampled 2040374 BRA 1-2 NOR, hc=-1, type=BIG_BALL, 7-6 04:00):
+  //   实际 1:2 (away 客胜 3 球) BIG_BALL 主池 totalMin=4 全不覆盖 (home>=away + total>=4)
+  //   实际 1:2@13.5 也没进 singleBets [25, 65] 范围, 走 0:2@29 / 2:3@38 反方向 0/2 中
+  //   7-4 19:00 log 留 TODO: "f4.bigBall totalMin 写死 4, 实际 3 球靠 filler 救不优雅"
+  //   加 totalMin 旋钮 [2, 3, 4], frozen=false 让 33_fit 7-6 review 数据驱动选
+  //   default=4 保留, 31 行为不变
+  { path: 'f4.bigBall.totalMin',          values: [2, 3, 4] },
   { path: 'f4.bigBall.safeOddsMax',       values: [10, 12, 15] },
   { path: 'f4.bigBall.midLo',             values: [10, 12, 15] },
   { path: 'f4.bigBall.midHi',             values: [22, 25, 30] },

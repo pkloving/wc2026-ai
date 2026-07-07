@@ -1126,10 +1126,12 @@
       "venue": "Estadio Azteca, Mexico City",
       "home": "MEX",
       "away": "ENG",
-      "status": "in_progress",
+      "status": "finished",
       "code": "周日092",
       "kickoff": "2026-07-06 08:00",
-      "mid": "2040394"
+      "mid": "2040394",
+      "final_score": "2-3",
+      "result_file": "results/2040394.json"
     },
   {
     "id": "M093",
@@ -1139,8 +1141,10 @@
     "venue": "Estadio Akron, Guadalajara",
     "home": "POR",
     "away": "ESP",
-    "status": "scheduled",
-    "kickoff": "2026-07-07 03:00"
+    "status": "finished",
+    "kickoff": "2026-07-07 03:00",
+    "final_score": "0-1",
+    "result_file": "results/M093.json"
   },
   {
     "id": "M094",
@@ -1150,8 +1154,10 @@
     "venue": "Estadio BBVA, Monterrey",
     "home": "USA",
     "away": "BEL",
-    "status": "scheduled",
-    "kickoff": "2026-07-07 08:00"
+    "status": "finished",
+    "kickoff": "2026-07-07 08:00",
+    "final_score": "1-4",
+    "result_file": "results/M094.json"
   },
   {
     "id": "M095",
@@ -1159,8 +1165,8 @@
     "group": null,
     "date": "2026-07-07T16:00:00Z",
     "venue": "BMO Field, Toronto",
-    "home": "TBD",
-    "away": "TBD",
+    "home": "ARG",
+    "away": "EGY",
     "status": "scheduled"
   },
   {
@@ -1169,8 +1175,8 @@
     "group": null,
     "date": "2026-07-07T20:00:00Z",
     "venue": "BC Place, Vancouver",
-    "home": "TBD",
-    "away": "TBD",
+    "home": "SUI",
+    "away": "COL",
     "status": "scheduled"
   },
   {

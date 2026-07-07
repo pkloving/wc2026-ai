@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-05T07:02:53.702Z",
-  "total_matches": 148,
+  "generated_at": "2026-07-07T10:43:13.145Z",
+  "total_matches": 150,
   "matches": [
     {
       "mid": "2040145",
@@ -17926,7 +17926,7 @@
       "away": "挪威",
       "kickoff": "2026-07-06 04:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.6,
@@ -17938,7 +17938,7 @@
           "draw": 3.55,
           "away": 4.5
         },
-        "result": null
+        "result": "away"
       },
       "rqspf": {
         "initial": {
@@ -17953,7 +17953,7 @@
           "draw": 3.16,
           "away": 2.06
         },
-        "result": null
+        "result": "away"
       },
       "bf": {
         "initial": {
@@ -18026,7 +18026,10 @@
             "01:05": 500
           }
         },
-        "result": null
+        "result": {
+          "score": "1:2",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -18053,7 +18056,7 @@
             "7+": 24
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
@@ -18082,9 +18085,18 @@
             "负负": 7.25
           }
         },
-        "result": null
+        "result": "平负"
       },
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 2,
+        "half": "0-0",
+        "scorers_count": 3,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
           "spf": 1,
@@ -18103,7 +18115,7 @@
       "away": "英格兰",
       "kickoff": "2026-07-06 08:00",
       "handicap": 1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 3.25,
@@ -18115,7 +18127,7 @@
           "draw": 3.04,
           "away": 2.03
         },
-        "result": null
+        "result": "away"
       },
       "rqspf": {
         "initial": {
@@ -18130,7 +18142,7 @@
           "draw": 3.37,
           "away": 4.9
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
@@ -18203,7 +18215,10 @@
             "01:05": 300
           }
         },
-        "result": null
+        "result": {
+          "score": "2:3",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -18230,7 +18245,7 @@
             "7+": 50
           }
         },
-        "result": null
+        "result": "5"
       },
       "bqc": {
         "initial": {
@@ -18259,9 +18274,18 @@
             "负负": 3.75
           }
         },
-        "result": null
+        "result": "平负"
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 3,
+        "half": "1-2",
+        "scorers_count": 5,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
       "meta": {
         "history_points": {
           "spf": 2,
@@ -18270,6 +18294,52 @@
           "zjq": 1,
           "bqc": 1
         }
+      }
+    },
+    {
+      "mid": null,
+      "code": null,
+      "league": "世界杯",
+      "home": "葡萄牙",
+      "away": "西班牙",
+      "kickoff": "2026-07-07 03:00",
+      "handicap": null,
+      "status": "finished",
+      "result": {
+        "home": 0,
+        "away": 1,
+        "half": "0-0",
+        "scorers_count": 1,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
+      "meta": {
+        "history_points": null
+      }
+    },
+    {
+      "mid": null,
+      "code": null,
+      "league": "世界杯",
+      "home": "美国",
+      "away": "比利时",
+      "kickoff": "2026-07-07 08:00",
+      "handicap": null,
+      "status": "finished",
+      "result": {
+        "home": 1,
+        "away": 4,
+        "half": "1-2",
+        "scorers_count": 5,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
+      },
+      "meta": {
+        "history_points": null
       }
     }
   ]
