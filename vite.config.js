@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 const pages = [
   'index', 'schedule', 'standings', 'results',
   'predictions', 'stats', 'teams', 'about', 'bets',
@@ -10,7 +12,7 @@ const pages = [
 export default defineConfig({
   root: '.',
   publicDir: 'public',
-  plugins: [],
+  plugins: [cloudflare()],
   server: {
     port: 5173,
     open: false,
