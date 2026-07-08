@@ -25,6 +25,16 @@
   .nav-link-active {
     @apply bg-gold/20 text-gold;
   }
+  /* 导航下拉 (更多) — 2026-07-08 加 */
+  .nav-dropdown { @apply relative; }
+  .nav-dropdown-btn { @apply inline-flex items-center gap-1; }
+  .nav-dropdown-menu {
+    @apply absolute top-full left-0 mt-1 min-w-[140px] bg-ink border border-white/10 rounded-md shadow-lg z-50 py-1;
+  }
+  .nav-dropdown-item {
+    @apply block px-4 py-2 text-sm text-slate-200 hover:text-white hover:bg-ink/60 no-underline whitespace-nowrap;
+  }
+  .nav-dropdown-item.is-active { @apply bg-gold/20 text-gold; }
   .card {
     @apply bg-white rounded-2xl shadow-card hover:shadow-cardHover transition-shadow duration-200;
   }

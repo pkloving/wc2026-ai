@@ -82,9 +82,7 @@
   ],
   "rewrites": [
     { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/schedule", "destination": "/schedule.html" },
-    { "source": "/standings", "destination": "/standings.html" },
-    { "source": "/results", "destination": "/results.html" },
+    { "source": "/matches", "destination": "/matches.html" },
     { "source": "/predictions", "destination": "/predictions.html" },
     { "source": "/stats", "destination": "/stats.html" },
     { "source": "/teams", "destination": "/teams.html" },
@@ -92,8 +90,19 @@
     { "source": "/bets", "destination": "/bets.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/simulate", "destination": "/simulate.html" },
-    { "source": "/backtest", "destination": "/backtest.html" },
+    { "source": "/lab", "destination": "/lab.html" },
+    { "source": "/frequency", "destination": "/frequency.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/match", "destination": "/match.html" }
+  ],
+  "redirects": [
+    { "source": "/schedule", "destination": "/matches.html#schedule", "permanent": true },
+    { "source": "/schedule.html", "destination": "/matches.html#schedule", "permanent": true },
+    { "source": "/standings", "destination": "/matches.html#standings", "permanent": true },
+    { "source": "/standings.html", "destination": "/matches.html#standings", "permanent": true },
+    { "source": "/results", "destination": "/matches.html#results", "permanent": true },
+    { "source": "/results.html", "destination": "/matches.html#results", "permanent": true },
+    { "source": "/backtest", "destination": "/lab.html", "permanent": true },
+    { "source": "/backtest.html", "destination": "/lab.html", "permanent": true }
   ]
 }

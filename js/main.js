@@ -53,14 +53,18 @@ mountBeian({
 
     await auth.checkSession();
     renderAuthBtn();
-    chatMod.mountChatbot({ auth });
+    const chat = chatMod.mountChatbot({ auth });
+    // 暴露给页面级脚本（lab 等用 auth.withCredits / chat.open）
+    window.WC = window.WC || {};
+    window.WC.auth = auth;
+    window.WC.chat = chat;
   } catch (e) {
     console.error('chatbot mount failed', e);
   }
 })();
 
 // 6) 暴露到 window 以便页面级脚本调用
-window.WC = { mountHeader, mountFooter, mountBeian, t, applyI18n };
+window.WC = Object.assign(window.WC || {}, { mountHeader, mountFooter, mountBeian, t, applyI18n });
 
 // 7) 监听 locale 变化（不重新加载的情况下，刷新动态内容）
 //    现在 setLocale 默认 reload=true，所以这里只作为扩展入口。

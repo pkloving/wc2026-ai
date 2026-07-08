@@ -158,6 +158,32 @@ export async function handleRoute(req, res) {
           return jsonError(res, 400, 'last user message is empty');
         }
 
+        // 模式分支：回测实验室解读（5 credits 代替 message，跳过联网，附回测解读 system）
+        if (mode === 'backtest') {
+          // 扣 5 替 1
+          await spendCredits(email, COSTS.backtest);
+          spent += COSTS.backtest;
+          // 跳过联网（user 已自带 cfg 上下文）
+          const BACKTEST_SYSTEM = [
+            WC_SYSTEM_PROMPT,
+            '【回测实验室模式】用户的最后一条消息包含一段回测策略 + 双届 ROI/命中/回撤摘要 + 徽章（样本过小/2026样本内/两届方向翻转）。',
+            '你的任务：',
+            '1. 解释「样本过小」徽章对结论可信度的影响（n<10 视为提示而非铁律）。',
+            '2. 解释「2026 样本内」—— 该届数据在策略迭代时已可见，可能存在 overfit；请主动指出 2022 vs 2026 ROI 方向是否翻转。',
+            '3. 解释「退水基线」—— 三门（all-outcomes）ROI ≈ -13.9% 是市场抽水基线，策略必须战胜它。',
+            '4. 给结构化解读：哪个玩法 / 方向 / 场景最弱？哪类有微弱正 EV 但样本不够？',
+            '【红线】不给投注建议；不暗示「跟单」；承认 2022+2026 两次样本不能推断 2030。',
+            '【格式】3-6 段，每段一个观点；末尾用 1 行「样本提示」总结 n 限制。',
+          ].join('\n');
+          // 注入当前北京时间 + 即将开赛列表
+          const { now, matches: upcoming } = upcomingMatches(6);
+          const timeContext = upcoming.length
+            ? `【当前北京时间】${now}\n【接下来即将开赛（按开赛时间升序）】\n${upcoming.map((m) => `• ${m.code} ${m.home} vs ${m.away} ${m.kickoff}`).join('\n')}`
+            : `【当前北京时间】${now}\n（当前没有即将开赛的比赛）`;
+          const system = [BACKTEST_SYSTEM, timeContext].join('\n\n');
+          return streamResponse({ res, email, spent, system, messages, meta: { mode: 'backtest' } });
+        }
+
         await spendCredits(email, COSTS.message);
         spent += COSTS.message;
         const [emb] = await embedTexts([lastUser.content]);
@@ -260,6 +286,35 @@ export async function handleRoute(req, res) {
       await spendCredits(email, 1);
       const results = await bochaSearch(query, count);
       return res.status(200).json({ query, results, cost: 1 });
+    }
+
+    // 回测实验室：导出 CSV 票池明细（扣 1 credit 便利费；明细本就在客户端）
+    // 入参: {} （rows 由前端本地生成，不经网络）
+    if (route === 'lab/export') {
+      if (req.method !== 'POST') return jsonError(res, 405, 'Method not allowed');
+      let email = null;
+      let spent = 0;
+      try {
+        const { email: e } = await requireUser(req);
+        email = e;
+        await applyRateLimit(req, email);
+        await spendCredits(email, COSTS.export);
+        spent += COSTS.export;
+        res.setHeader('X-Credits-Spent', String(spent));
+        return res.status(200).json({
+          ok: true,
+          mode: 'export',
+          cost: COSTS.export,
+          credits_remaining: await getCredits(email),
+        });
+      } catch (err) {
+        console.error('[api/lab/export]', err);
+        if (email && spent > 0) {
+          await grantCredits(email, spent, 'refund:lab-export-error').catch(() => {});
+        }
+        if (!res.headersSent) return jsonError(res, err.statusCode || 500, err.message);
+        return res.end();
+      }
     }
 
     if (route === 'health') {

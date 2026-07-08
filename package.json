@@ -15,6 +15,8 @@
     "modeling:predict": "node modeling/scripts/31_tight_anti_value.js --predict",
     "modeling:all": "node modeling/scripts/33_fit_strategy.js && node modeling/scripts/31_tight_anti_value.js --predict",
     "embeddings:build": "node scripts/build_embeddings.js",
+    "build:lab": "node scripts/build_backtest_dataset.js && node scripts/verify_lab_engine.js",
+    "daily:lab": "node scripts/build_settled.js --incremental && node scripts/build_views.js && node scripts/build_backtest_dataset.js && node scripts/verify_lab_engine.js",
     "chat:dev": "vercel dev"
   },
   "devDependencies": {

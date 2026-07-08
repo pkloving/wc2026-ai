@@ -13,10 +13,11 @@
 
 ## 主要页面
 
-- [回测研究：博彩直觉的真伪](https://www.wc2026-ai.top/backtest.html)：站点旗舰研究页，用真实回测逐条论证 / 证伪常见博彩直觉（让球能否盈利、信热门还是押冷门、串关、冷门择时等）。
+- [回测实验室](https://www.wc2026-ai.top/lab.html)：自助回测工具，6 个预设卡 + 自由配置（玩法 / 方向 / 结构 / 串关），2022 + 2026 两届并排 ROI + 净值曲线。**核心回测本地纯前端跑，免费、免登录**；AI 解读 5 credits/次；CSV 明细导出 1 credit/次。已合并原「回测研究」页的全部论证能力。
+- [频率图谱](https://www.wc2026-ai.top/frequency.html)：5 类玩法的真实赛果频率分布，2026 在赛 + 2022 全程并排对照。
 - [AI 模型准确率统计](https://www.wc2026-ai.top/stats.html)：5 个大模型的比分 / 胜负命中率榜，随赛事滚动更新。
 - [AI 预测记录](https://www.wc2026-ai.top/predictions.html)：每场赛前各模型预测的逐场存档。
-- [赛程](https://www.wc2026-ai.top/schedule.html) / [积分榜](https://www.wc2026-ai.top/standings.html) / [赛果](https://www.wc2026-ai.top/results.html)：104 场比赛的赛事数据。
+- [赛程 · 积分 · 比分](https://www.wc2026-ai.top/matches.html)：单页三视图（赛程表 / 积分榜 / 完赛比分）切换，URL hash 直达。
 - [关于与方法](https://www.wc2026-ai.top/about.html)：实验设计、命中判定规则、免责声明。
 
 ## 重要声明

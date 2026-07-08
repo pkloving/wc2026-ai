@@ -589,4 +589,10 @@ export function mountChatbot({ auth } = {}) {
   renderHeader();
   renderHistory();
   setupAutoOpen();
+
+  // 暴露 handle 给页面级脚本（如 lab.js 让 AI 帮忙解释一条策略）
+  return {
+    open: (opts) => openPanel(opts || { focus: true }),
+    send: (text) => send(text),
+  };
 }

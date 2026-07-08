@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n-attr="title:meta.lab.title">回测实验室 · WC 2026 · 用真金白银验证</title>
+  <meta name="description" data-i18n-attr="content:meta.lab.description" content="用 2022 + 2026 真赔率 + 真赛果跑回测，6 个预设卡 + 自由配置（玩法/方向/结构/串关），告诉你每条策略的 ROI 和最大回撤。" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <meta property="og:image" content="https://www.wc2026-ai.top/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://www.wc2026-ai.top/og-cover.png" />
+  <link rel="canonical" href="https://www.wc2026-ai.top/lab.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D4AF37'/%3E%3C/svg%3E" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="WC 2026 · AI 预测与回测研究" />
+  <meta property="og:title" content="回测实验室 · 用 2022 + 2026 真赔率重放" />
+  <meta property="og:description" content="6 个预设 + 自由配置：每条策略两届并排 ROI/最大回撤，30 秒看出它是否过拟合。" />
+  <meta property="og:url" content="https://www.wc2026-ai.top/lab.html" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- WebApplication JSON-LD (offers free for core backtest) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "回测实验室 · Backtest Lab",
+    "url": "https://www.wc2026-ai.top/lab.html",
+    "description": "用 2022 + 2026 真赔率 + 真赛果跑回测，6 个预设 + 自由配置：每条策略两届并排 ROI / 最大回撤。",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "Any (browser)",
+    "browserRequirements": "现代浏览器 (Chrome 90+ / Firefox 88+ / Safari 14+)",
+    "inLanguage": ["zh-CN", "en-US"],
+    "offers": [
+      { "@type": "Offer", "name": "交互回测", "price": "0", "priceCurrency": "CNY", "description": "本地纯前端，免费、免登录" },
+      { "@type": "Offer", "name": "AI 解读", "price": "5", "priceCurrency": "CREDITS" },
+      { "@type": "Offer", "name": "明细 CSV 导出", "price": "1", "priceCurrency": "CREDITS" }
+    ],
+    "creator": { "@type": "Organization", "name": "WC 2026 AI" }
+  }
+  </script>
+
+  <style>
+    /* ---------- 页面级 dark 主题 ---------- */
+    html, body { background: #0B1F3A; color: #E8E8E8; }
+    body { font-family: 'JetBrains Mono', 'Noto Sans SC', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .lab-page { max-width: 1400px; margin: 0 auto; padding: 24px 16px 64px; }
+
+    /* Masthead */
+    .lab-masthead {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding-bottom: 20px; border-bottom: 1px solid #1F3A5F; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+    }
+    .lab-masthead-title { font-size: 26px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; }
+    .lab-masthead-sub { font-size: 11px; font-weight: 300; color: #A0A8B8; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+    .lab-masthead-meta { font-size: 11px; color: #A0A8B8; text-align: right; line-height: 1.8; }
+    .lab-highlight { color: #D4AF37; font-weight: 600; }
+
+    /* Preset grid */
+    .lab-preset-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 24px 0;
+    }
+    @media (max-width: 1100px) { .lab-preset-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 700px)  { .lab-preset-grid { grid-template-columns: 1fr; } }
+    .lab-preset {
+      background: #11264A; border: 1px solid #1F3A5F; border-radius: 8px; padding: 16px;
+      cursor: pointer; transition: all 0.15s;
+    }
+    .lab-preset:hover { border-color: #D4AF37; background: #15355F; }
+    .lab-preset.active { border-color: #D4AF37; box-shadow: 0 0 0 1px #D4AF37; }
+    .lab-preset-id { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D4AF37; }
+    .lab-preset-title { font-size: 15px; font-weight: 700; color: #E8E8E8; margin: 4px 0 4px; }
+    .lab-preset-sub { font-size: 11px; color: #A0A8B8; line-height: 1.5; }
+
+    /* Workbench */
+    .lab-workbench {
+      display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 16px; margin-top: 20px;
+    }
+    @media (max-width: 900px) { .lab-workbench { grid-template-columns: 1fr; } }
+    .lab-controls {
+      background: #11264A; border: 1px solid #1F3A5F; border-radius: 8px; padding: 16px;
+    }
+    .lab-ctrl-group { margin-bottom: 14px; }
+    .lab-ctrl-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #A0A8B8; margin-bottom: 6px; }
+    .lab-ctrl-select, .lab-ctrl-input {
+      width: 100%; padding: 6px 8px; background: #0B1F3A; color: #E8E8E8; border: 1px solid #1F3A5F;
+      border-radius: 4px; font-size: 12px; font-family: inherit;
+    }
+    .lab-ctrl-select:focus, .lab-ctrl-input:focus { outline: none; border-color: #D4AF37; }
+    .lab-checkbox-row { display: flex; flex-wrap: wrap; gap: 4px; }
+    .lab-chip {
+      font-size: 11px; padding: 4px 8px; background: #0B1F3A; border: 1px solid #1F3A5F;
+      border-radius: 12px; cursor: pointer; user-select: none; color: #A0A8B8;
+    }
+    .lab-chip.active { background: #D4AF37; color: #0B1F3A; border-color: #D4AF37; font-weight: 600; }
+    .lab-run-btn {
+      width: 100%; padding: 10px; background: #D4AF37; color: #0B1F3A; border: none;
+      border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 13px; letter-spacing: 1px;
+      text-transform: uppercase; margin-top: 8px;
+    }
+    .lab-run-btn:hover { background: #E8C158; }
+    .lab-run-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Result panel */
+    .lab-result {
+      background: #11264A; border: 1px solid #1F3A5F; border-radius: 8px; padding: 16px;
+      min-width: 0;        /* 关键: 允许 grid 子项收缩至比内容宽度更小 */
+      overflow-x: auto;     /* 兜底: 极端内容 (如 8 列 4 场) 横向滚动而非撑破 */
+    }
+    .lab-result-empty { text-align: center; color: #A0A8B8; padding: 32px 16px; font-size: 12px; }
+    .lab-roi-table { width: 100%; border-collapse: collapse; font-size: 12px; table-layout: auto; }
+    .lab-roi-table th, .lab-roi-table td { padding: 6px 8px; text-align: right; border-bottom: 1px solid #1F3A5F; word-break: break-word; }
+    .lab-roi-table th:first-child, .lab-roi-table td:first-child { text-align: left; }
+    .lab-roi-table th { font-size: 10px; color: #A0A8B8; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+    .lab-roi-pos { color: #06D6A0; font-weight: 600; }
+    .lab-roi-neg { color: #E63946; font-weight: 600; }
+
+    .lab-charts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 16px; }
+    .lab-charts > div { min-width: 0; }   /* 关键: 让 SVG 容器可收缩, 不撑破 grid */
+    .lab-charts svg { max-width: 100%; height: auto; display: block; }
+    @media (max-width: 700px) { .lab-charts { grid-template-columns: minmax(0, 1fr); } }
+
+    /* Honest brake block */
+    .lab-honest {
+      margin-top: 28px; padding: 16px 20px;
+      background: #11264A; border: 1px solid #D4AF37; border-radius: 8px;
+      border-left: 4px solid #D4AF37;
+    }
+    .lab-honest-title { font-size: 13px; font-weight: 700; color: #D4AF37; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .lab-honest-list { font-size: 12px; line-height: 1.9; color: #E8E8E8; }
+    .lab-honest-list li { margin-bottom: 4px; }
+    .lab-honest-list strong { color: #D4AF37; }
+
+    /* Badges */
+    .lab-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-right: 4px;
+    }
+    .lab-badge.warn { background: #E63946; color: #fff; }
+    .lab-badge.critical { background: #E63946; color: #fff; border: 1px solid #fff; }
+    .lab-badge.info { background: #1F3A5F; color: #D4AF37; }
+
+    /* Action bar (AI 解读 / CSV 导出) */
+    .lab-action-bar {
+      margin-top: 16px; display: flex; gap: 10px; justify-content: flex-end; align-items: center;
+      font-size: 12px; flex-wrap: wrap;
+    }
+    .lab-action {
+      display: inline-block; padding: 8px 14px; border-radius: 4px; cursor: pointer;
+      text-decoration: none; font-weight: 600; letter-spacing: 0.5px; font-size: 12px;
+      background: transparent; color: #D4AF37; border: 1px solid #D4AF37;
+    }
+    .lab-action:hover { background: #D4AF37; color: #0B1F3A; }
+    .lab-action.primary { background: #D4AF37; color: #0B1F3A; }
+    .lab-action.primary:hover { background: #E8C158; }
+    .lab-action-hint { color: #A0A8B8; font-size: 11px; }
+
+    /* AI result panel */
+    .lab-ai-result {
+      margin-top: 12px; padding: 14px 16px;
+      background: #0B1F3A; border: 1px solid #1F3A5F; border-radius: 6px;
+      font-size: 12px; line-height: 1.7; color: #E8E8E8;
+      display: none;
+    }
+    .lab-ai-result.active { display: block; }
+    .lab-ai-loading { color: #D4AF37; }
+    .lab-ai-error { color: #E63946; }
+    .lab-ai-content { white-space: pre-wrap; }
+    .lab-ai-cursor { display: inline-block; width: 6px; height: 14px; background: #D4AF37; animation: lab-blink 0.8s infinite; vertical-align: text-bottom; }
+    @keyframes lab-blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
+
+    .lab-dropped-warn {
+      margin-top: 8px; padding: 6px 10px; font-size: 11px;
+      background: #3F2A18; border-left: 3px solid #D4AF37; color: #D4AF37; border-radius: 3px;
+    }
+    .lab-preset-chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+    .lab-preset-yr { font-size: 9px; color: #A0A8B8; letter-spacing: 1px; margin-right: 2px; }
+    .lab-chip-roi {
+      display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 6px;
+      border-radius: 3px; font-family: 'JetBrains Mono', monospace;
+    }
+    .lab-chip-roi.pos { background: #064E3B; color: #6EE7B7; }
+    .lab-chip-roi.neg { background: #4A1212; color: #FCA5A5; }
+    .lab-chip-roi.empty { background: #1F3A5F; color: #A0A8B8; }
+    .lab-chip-roi em { font-style: normal; opacity: 0.7; font-size: 9px; }
+
+    /* Sample badge */
+    .lab-sample-warn { color: #E63946; font-size: 10px; }
+
+    /* Footer */
+    .lab-footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #1F3A5F; display: flex; justify-content: space-between; font-size: 10px; color: #A0A8B8; letter-spacing: 1px; flex-wrap: wrap; gap: 8px; }
+
+  </style>
+
+  <!-- Vercel Web Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="app-header"></div>
+  <main class="flex-1">
+    <div class="lab-page">
+
+      <!-- Masthead -->
+      <div class="lab-masthead">
+        <div>
+          <div class="lab-masthead-title" data-i18n="lab.masthead.title">BACKTEST LAB</div>
+          <div class="lab-masthead-sub" data-i18n="lab.masthead.sub">2022 + 2026 真赔率重放 · 每注 1 元 · 90 分钟口径结算</div>
+        </div>
+        <div class="lab-masthead-meta">
+          <span data-i18n="lab.masthead.source">数据来源：竞彩网 sporttery.cn</span><br>
+          <span data-i18n="lab.masthead.updLabel">数据集生成：</span><span id="upd-at">—</span><br>
+          <span class="lab-highlight" data-i18n="lab.masthead.note">不是预测，是历史重放</span>
+        </div>
+      </div>
+
+      <!-- Page body (核心回测免费, 免登录) -->
+      <div id="lab-body">
+
+        <!-- Preset grid -->
+        <div class="lab-preset-grid" id="lab-presets"></div>
+
+        <!-- Workbench -->
+        <div class="lab-workbench">
+          <div class="lab-controls">
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.play">玩法</div>
+              <select class="lab-ctrl-select" id="cfg-play">
+                <option value="spf">胜平负 (spf)</option>
+                <option value="rqspf">让球胜平负 (rqspf)</option>
+                <option value="zjq">总进球 (zjq)</option>
+                <option value="bqc">半全场 (bqc)</option>
+              </select>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.pick">方向</div>
+              <select class="lab-ctrl-select" id="cfg-pick"></select>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.stage">阶段</div>
+              <select class="lab-ctrl-select" id="cfg-stage">
+                <option value="all" data-i18n="lab.opt.all">全部</option>
+                <option value="group" data-i18n="lab.opt.group">小组</option>
+                <option value="ko" data-i18n="lab.opt.ko">淘汰</option>
+              </select>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.rounds">小组轮次 (R1/R2/R3)</div>
+              <div class="lab-checkbox-row" id="cfg-rounds">
+                <span class="lab-chip" data-val="1">R1</span>
+                <span class="lab-chip" data-val="2">R2</span>
+                <span class="lab-chip" data-val="3">R3</span>
+              </div>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.spread">让球赔差 ≥</div>
+              <select class="lab-ctrl-select" id="cfg-spread">
+                <option value="0">0 (无过滤)</option>
+                <option value="1.0">1.0</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+                <option value="3.0">3.0</option>
+              </select>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.scenario">小组情景 (R2/R3)</div>
+              <select class="lab-ctrl-select" id="cfg-scenario">
+                <option value="" data-i18n="lab.opt.scenario.all">全部情景</option>
+                <option value="rest_vs_out" data-i18n="lab.opt.scenario.rest_vs_out">养生局 (出 vs 出)</option>
+                <option value="rest_vs_mid" data-i18n="lab.opt.scenario.rest_vs_mid">养生 vs 中游</option>
+                <option value="same_pts_battle" data-i18n="lab.opt.scenario.same_pts_battle">同分搏出线</option>
+                <option value="win_vs_loss" data-i18n="lab.opt.scenario.win_vs_loss">赢 vs 输</option>
+                <option value="both_lost_r2" data-i18n="lab.opt.scenario.both_lost_r2">双败 R2</option>
+                <option value="other_r2" data-i18n="lab.opt.scenario.other_r2">其它 R2</option>
+                <option value="other_r3" data-i18n="lab.opt.scenario.other_r3">其它 R3</option>
+              </select>
+            </div>
+            <div class="lab-ctrl-group">
+              <div class="lab-ctrl-label" data-i18n="lab.ctrl.struct">结构</div>
+              <select class="lab-ctrl-select" id="cfg-struct">
+                <option value="single" data-i18n="lab.opt.single">单关</option>
+                <option value="parlay2" data-i18n="lab.opt.parlay2">2 串 1</option>
+                <option value="parlay3" data-i18n="lab.opt.parlay3">3 串 1</option>
+                <option value="cover" data-i18n="lab.opt.cover">覆盖 (双选)</option>
+              </select>
+            </div>
+            <button class="lab-run-btn" id="cfg-run" data-i18n="lab.ctrl.run">▶ 跑回测（免费）</button>
+          </div>
+
+          <div class="lab-result" id="lab-result">
+            <div class="lab-result-empty" data-i18n="lab.result.empty">选个预设卡或调好配置，点「跑回测」</div>
+          </div>
+        </div>
+
+        <!-- Honest brake block -->
+        <div class="lab-honest">
+          <div class="lab-honest-title" data-i18n="lab.honest.title">诚实刹车 · 4 条必须知道</div>
+          <ul class="lab-honest-list">
+            <li><strong data-i18n="lab.honest.l1.t">历史不代表未来：</strong><span data-i18n="lab.honest.l1.v">2022 强 + 2026 强 = 两次样本，不代表 2030 仍如此。市场规模、伤停、状态、天气都不在数据里。</span></li>
+            <li><strong data-i18n="lab.honest.l2.t">赔率含水：</strong><span data-i18n="lab.honest.l2.v">竞彩网平均 8-12% 抽水（"退水"），单关想长期正 ROI 必须战胜这条基线。投三门也只输不赢。</span></li>
+            <li><strong data-i18n="lab.honest.l3.t">样本量警示：</strong><span data-i18n="lab.honest.l3.v">小组赛 R3 全 WC 共 ~16 场，过滤后会 &lt; 5 场。n &lt; 10 的结论请当提示而非铁律。</span></li>
+            <li><strong data-i18n="lab.honest.l4.t">90 分钟口径：</strong><span data-i18n="lab.honest.l4.v">加时 / 点球不算入胜平负 / 让球 / 进球；比分只算常规时间。</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="lab-footer">
+        <div>WC2026-AI · Backtest Lab</div>
+        <div data-i18n="lab.footer.note">不构成投注建议 · 90 分钟口径结算 · 1 注 = 1 元</div>
+      </div>
+
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/pages/lab.js"></script>
+</body>
+</html>

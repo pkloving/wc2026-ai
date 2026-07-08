@@ -2,20 +2,32 @@
 // ---------------------------------------------------------------
 // 共享布局：Header / Footer / 备案号 注入（i18n-aware）
 // ---------------------------------------------------------------
+// 2026-07-08 导航精简 (plan-backtest-lab 第三轮):
+//   旧: 12 项 [Home/Schedule/Standings/Results/Predictions/Stats/Frequency/Backtest/Lab/Teams/About/Contact]
+//   新: 6 项 + 1 个「更多」下拉 [Home/Matches/Predictions/Stats/Lab/Teams/More▼]
+//   - Schedule/Standings/Results 合并为 Matches (单页 + segmented control 切 3 view)
+//   - Backtest 并入 Lab (Lab 已包含完整回测能力)
+//   - About/Contact/Frequency 折叠进「更多」下拉
+// ---------------------------------------------------------------
 import { t, getLocale, setLocale, LOCALES } from './i18n.js';
 
 const NAV_ITEMS = [
   { href: '/', labelKey: 'nav.home', key: 'index' },
-  { href: '/schedule.html', labelKey: 'nav.schedule', key: 'schedule' },
-  { href: '/standings.html', labelKey: 'nav.standings', key: 'standings' },
-  { href: '/results.html', labelKey: 'nav.results', key: 'results' },
+  { href: '/matches.html', labelKey: 'nav.matches', key: 'matches' },
   { href: '/predictions.html', labelKey: 'nav.predictions', key: 'predictions' },
   { href: '/stats.html', labelKey: 'nav.stats', key: 'stats' },
-  { href: '/frequency.html', labelKey: 'nav.frequency', key: 'frequency' },
-  { href: '/backtest.html', labelKey: 'nav.backtest', key: 'backtest' },
+  { href: '/lab.html', labelKey: 'nav.lab', key: 'lab' },
   { href: '/teams.html', labelKey: 'nav.teams', key: 'teams' },
-  { href: '/about.html', labelKey: 'nav.about', key: 'about' },
-  { href: '/contact.html', labelKey: 'nav.contact', key: 'contact' },
+  {
+    key: 'more',
+    labelKey: 'nav.more',
+    isDropdown: true,
+    children: [
+      { href: '/about.html', labelKey: 'nav.about', key: 'about' },
+      { href: '/contact.html', labelKey: 'nav.contact', key: 'contact' },
+      { href: '/frequency.html', labelKey: 'nav.frequency', key: 'frequency' },
+    ],
+  },
 ];
 
 function langSwitcherHtml() {
@@ -75,10 +87,31 @@ function bindLangSwitcher(root) {
 export function mountHeader(activeKey = '') {
   const el = document.getElementById('app-header');
   if (!el) return;
-  const navHtml = NAV_ITEMS.map((it) => {
-    const isActive = it.key === activeKey;
+
+  // 判断下拉是否包含当前 active key (用于下拉头部高亮)
+  const isMoreActive = (it) => it.isDropdown && it.children?.some((c) => c.key === activeKey);
+
+  const renderItem = (it) => {
+    const isActive = it.key === activeKey || isMoreActive(it);
+    if (it.isDropdown) {
+      const childHtml = it.children.map((c) => {
+        const childActive = c.key === activeKey;
+        return `<a href="${c.href}" class="nav-dropdown-item ${childActive ? 'is-active' : ''}">${t(c.labelKey)}</a>`;
+      }).join('');
+      return `
+        <div class="nav-dropdown" data-nav-dropdown>
+          <button type="button" class="nav-link nav-dropdown-btn ${isActive ? 'nav-link-active' : ''}" aria-haspopup="true" aria-expanded="false">
+            ${t(it.labelKey)}
+            <svg class="w-3 h-3 opacity-70" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">${childHtml}</div>
+        </div>
+      `;
+    }
     return `<a href="${it.href}" class="nav-link ${isActive ? 'nav-link-active' : ''}">${t(it.labelKey)}</a>`;
-  }).join('');
+  };
+
+  const navHtml = NAV_ITEMS.map(renderItem).join('');
 
   el.innerHTML = `
     <header class="sticky top-0 z-30 bg-ink/95 backdrop-blur text-white border-b border-white/10">
@@ -100,6 +133,31 @@ export function mountHeader(activeKey = '') {
     </header>
   `;
   bindLangSwitcher(el);
+  bindNavDropdowns(el);
+}
+
+function bindNavDropdowns(root) {
+  root.querySelectorAll('[data-nav-dropdown]').forEach((wrap) => {
+    if (wrap.dataset.bound === '1') return;
+    wrap.dataset.bound = '1';
+    const btn = wrap.querySelector('.nav-dropdown-btn');
+    const menu = wrap.querySelector('.nav-dropdown-menu');
+    btn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = !menu.classList.contains('hidden');
+      // 关闭其它下拉
+      root.querySelectorAll('.nav-dropdown-menu').forEach((m) => m.classList.add('hidden'));
+      root.querySelectorAll('.nav-dropdown-btn').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+      if (!open) {
+        menu.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+  document.addEventListener('click', () => {
+    root.querySelectorAll('.nav-dropdown-menu').forEach((m) => m.classList.add('hidden'));
+    root.querySelectorAll('.nav-dropdown-btn').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+  });
 }
 
 export function mountFooter() {
@@ -121,12 +179,14 @@ export function mountFooter() {
         <div>
           <div class="font-semibold text-white mb-3">${t('footer.quickLinks')}</div>
           <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-gold" href="/schedule.html">${t('nav.schedule')}</a></li>
-            <li><a class="hover:text-gold" href="/standings.html">${t('nav.standings')}</a></li>
+            <li><a class="hover:text-gold" href="/matches.html">${t('nav.matches')}</a></li>
             <li><a class="hover:text-gold" href="/predictions.html">${t('nav.predictions')}</a></li>
             <li><a class="hover:text-gold" href="/stats.html">${t('nav.stats')}</a></li>
-            <li><a class="hover:text-gold" href="/backtest.html">${t('nav.backtest')}</a></li>
+            <li><a class="hover:text-gold" href="/lab.html">${t('nav.lab')}</a></li>
+            <li><a class="hover:text-gold" href="/teams.html">${t('nav.teams')}</a></li>
             <li><a class="hover:text-gold" href="/pricing.html">${t('nav.pricing')}</a></li>
+            <li><a class="hover:text-gold" href="/frequency.html">${t('nav.frequency')}</a></li>
+            <li><a class="hover:text-gold" href="/about.html">${t('nav.about')}</a></li>
             <li><a class="hover:text-gold" href="/contact.html">${t('nav.contact')}</a></li>
           </ul>
         </div>
@@ -189,7 +249,12 @@ export function getActiveKeyFromPath() {
   const p = window.location.pathname.replace(/\/+$/, '') || '/';
   if (p === '/' || p.endsWith('/index.html')) return 'index';
   for (const it of NAV_ITEMS) {
-    if (p.endsWith(it.href)) return it.key;
+    if (it.href && p.endsWith(it.href)) return it.key;
+    if (it.isDropdown) {
+      for (const c of it.children || []) {
+        if (c.href && p.endsWith(c.href)) return c.key;
+      }
+    }
   }
   return '';
 }
