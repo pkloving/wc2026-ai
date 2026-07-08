@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T10:43:13.145Z",
-  "total_matches": 150,
+  "generated_at": "2026-07-08T10:02:29.244Z",
+  "total_matches": 152,
   "matches": [
     {
       "mid": "2040145",
@@ -18337,6 +18337,55 @@
         "penaltyScore": null,
         "extraTime": null,
         "actualWinner": "away"
+      },
+      "meta": {
+        "history_points": null
+      }
+    },
+    {
+      "mid": null,
+      "code": null,
+      "league": "世界杯",
+      "home": "阿根廷",
+      "away": "埃及",
+      "kickoff": "2026-07-08 00:00",
+      "handicap": null,
+      "status": "finished",
+      "result": {
+        "home": 3,
+        "away": 2,
+        "half": "0-1",
+        "scorers_count": 5,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
+      "meta": {
+        "history_points": null
+      }
+    },
+    {
+      "mid": null,
+      "code": null,
+      "league": "世界杯",
+      "home": "瑞士",
+      "away": "哥伦比亚",
+      "kickoff": "2026-07-08 04:00",
+      "handicap": null,
+      "status": "finished",
+      "result": {
+        "home": 0,
+        "away": 0,
+        "half": "0-0",
+        "scorers_count": 0,
+        "wentToPenalties": true,
+        "penaltyScore": {
+          "home": 4,
+          "away": 3
+        },
+        "extraTime": "0-0",
+        "actualWinner": "home"
       },
       "meta": {
         "history_points": null
