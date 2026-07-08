@@ -327,10 +327,74 @@ export function mountAuth({ onLogin, onLogout, onCreditsChange } = {}) {
 
   return {
     show: showLogin,
+    showLogin,
     showRedeem,
     showAccount,
+    openAuth: showLogin,
     logout,
     checkSession,
     getUser: () => currentUser,
+    isAuthed: () => Boolean(currentUser),
+    /** 扣 credits 统一入口（与 api/router.js COSTS 同步）
+     *  kind: 'backtest' | 'export' | 'message'
+     *  { silent: true } = 失败不弹窗（用于内部自动扣费）
+     *  返回 { ok, balance, mode } 或 throw
+     */
+    async withCredits(kind = 'message', { silent = false } = {}) {
+      if (!currentUser) {
+        if (!silent) showLogin();
+        throw new Error('not signed in');
+      }
+      // 后端用 /api/chat?mode=backtest 扣 5 / /api/lab/export 扣 1
+      // 简化：所有扣费都走 /api/chat (kind→mode 映射)
+      const mode = kind === 'backtest' ? 'backtest' : (kind === 'export' ? 'export' : 'chat');
+      try {
+        if (mode === 'export') {
+          // 纯扣费端点；CSV 由前端本地生成，不经网络
+          const r = await fetch('/api/lab/export', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({}),
+          });
+          if (!r.ok) {
+            const err = await r.json().catch(() => ({}));
+            if (r.status === 402) {
+              if (!silent) alert('积分不足，请先兑换 license key。');
+              throw new Error('insufficient credits');
+            }
+            throw new Error(err?.error || 'http ' + r.status);
+          }
+          const j = await r.json();
+          if (typeof j.credits_remaining === 'number') {
+            currentUser = { ...currentUser, credits: j.credits_remaining, used: (currentUser.used || 0) + (j.cost || 0) };
+            onCreditsChange?.(currentUser);
+          }
+          return { ok: true, balance: j.credits_remaining, mode };
+        }
+        // backtest / message 都走 /api/chat
+        const r = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: '__' + mode }], mode }),
+        });
+        if (!r.ok) {
+          const err = await r.json().catch(() => ({}));
+          if (r.status === 402) {
+            if (!silent) alert('积分不足，请先兑换 license key。');
+            throw new Error('insufficient credits');
+          }
+          throw new Error(err?.error || 'http ' + r.status);
+        }
+        const j = await r.json();
+        if (typeof j.credits_remaining === 'number') {
+          currentUser = { ...currentUser, credits: j.credits_remaining, used: (currentUser.used || 0) + (j.cost || 0) };
+          onCreditsChange?.(currentUser);
+        }
+        return { ok: true, balance: j.credits_remaining, mode };
+      } catch (e) {
+        console.warn('[auth.withCredits]', kind, e.message);
+        throw e;
+      }
+    },
   };
 }

@@ -4286,5 +4286,599 @@
         "prompt": "请预测 加拿大 vs 摩洛哥 的全场比分与半场结果"
       }
     ]
+  },
+  {
+    "matchId": "M090",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场平/负 — 法国顶级碾压巴拉圭弱队，让1球仍能客胜",
+        "prompt": "请预测 巴拉圭 vs 法国 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-3），半场胜 — 客队反客为主",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴拉圭 vs 法国 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-2），半场平/负",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴拉圭 vs 法国 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（巴拉圭 vs 法国，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴拉圭 vs 法国 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（巴拉圭 vs 法国，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴拉圭 vs 法国 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M091",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场平/胜 — 巴西顶级对挪威二流，整体实力压制，主场优势放大",
+        "prompt": "请预测 巴西 vs 挪威 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场负 — 主队把握机会更强",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴西 vs 挪威 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 3-0），半场胜/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴西 vs 挪威 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（巴西 vs 挪威，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴西 vs 挪威 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（巴西 vs 挪威，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 巴西 vs 挪威 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M092",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 2-2），半场平/负 — 墨西哥二流主场对英格兰二流，英格兰大赛经验更稳",
+        "prompt": "请预测 墨西哥 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-2），半场平 — 客队整体实力占优",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 墨西哥 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-1），半场胜/平",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 墨西哥 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（墨西哥 vs 英格兰，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 墨西哥 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 2,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 2-2（墨西哥 vs 英格兰，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 墨西哥 vs 英格兰 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M093",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 1-1），半场平/负 — 葡萄牙二流主场对西班牙二流，西班牙整体配合略胜",
+        "prompt": "请预测 葡萄牙 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 1-0），半场胜 — 主场气势压制",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 葡萄牙 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 0-2），半场胜/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 葡萄牙 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（葡萄牙 vs 西班牙，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 葡萄牙 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（葡萄牙 vs 西班牙，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 葡萄牙 vs 西班牙 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M094",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 2-2），半场平/负 — 美国二流主场对比利时二流，比利时把握机会更强",
+        "prompt": "请预测 美国 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 3-0），半场负 — 主场气势压制",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 美国 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 2-2），半场平/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 美国 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 3,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-3（美国 vs 比利时，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 美国 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（美国 vs 比利时，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 美国 vs 比利时 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M095",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场胜 — 阿根廷顶级碾压埃及二流，整体实力压制",
+        "prompt": "请预测 阿根廷 vs 埃及 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场负 — 主队把握机会更强",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 埃及 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场平/负",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 埃及 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（阿根廷 vs 埃及，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 埃及 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（阿根廷 vs 埃及，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 埃及 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M096",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 2-1），半场平 — 瑞士与哥伦比亚二流势均力敌，平局合理",
+        "prompt": "请预测 瑞士 vs 哥伦比亚 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 2,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 2-2（备选 2-3），半场平 — 双方势均力敌",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 瑞士 vs 哥伦比亚 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场胜/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 瑞士 vs 哥伦比亚 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（瑞士 vs 哥伦比亚，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 瑞士 vs 哥伦比亚 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（瑞士 vs 哥伦比亚，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 瑞士 vs 哥伦比亚 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M097",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 3-0），半场胜 — 法国顶级碾压摩洛哥二流，1/8 决赛经验更足",
+        "prompt": "请预测 法国 vs 摩洛哥 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场胜 — 主队把握机会更强",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 法国 vs 摩洛哥 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平/负",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 法国 vs 摩洛哥 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（法国 vs 摩洛哥，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 法国 vs 摩洛哥 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（法国 vs 摩洛哥，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 法国 vs 摩洛哥 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M098",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 2-0），半场平/胜 — 西班牙与比利时二流对决，西班牙控球占优",
+        "prompt": "请预测 西班牙 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 0,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 0-0（备选 0-0），半场负 — 双方互有攻守",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 西班牙 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 1-0），半场平/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 西班牙 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 0,
+        "predictedAway": 0,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 0-0（西班牙 vs 比利时，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 西班牙 vs 比利时 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 0,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 0-0（西班牙 vs 比利时，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 西班牙 vs 比利时 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M099",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（备选 1-1），半场平/负 — 挪威二流主场对英格兰二流，英格兰把握机会更强",
+        "prompt": "请预测 挪威 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 1-0（备选 1-0），半场胜 — 主队整体占优",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 挪威 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 0,
+        "predictedAway": 0,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 0-0（备选 0-0），半场平/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 挪威 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（挪威 vs 英格兰，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 挪威 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 1,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-1（挪威 vs 英格兰，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 挪威 vs 英格兰 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M100",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（备选 4-0），半场胜 — 阿根廷顶级碾压瑞士二流，1/8 决赛整体实力压制",
+        "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场平 — 主场气势压制",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-0（备选 2-0），半场胜/胜",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 4,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 4-0（阿根廷 vs 瑞士，DeepSeek）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 3,
+        "predictedAway": 0,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 3-0（阿根廷 vs 瑞士，GPT-5 mini）",
+        "source": "fill_predictions_r16_20260708",
+        "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
+      }
+    ]
   }
 ]

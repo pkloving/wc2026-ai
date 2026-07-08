@@ -256,9 +256,14 @@ git commit -m "M089-M096 r16 已确认对阵（FIFA 官方 2026-07-XX）"
 1. `node scripts/build_index.js` 刷新 `data/matches_index.json`
 2. `node scripts/build_settled.js`（增量：`--incremental`）刷新 `data/settled_matches.json`，被 modeling 消费
 3. `node scripts/build_views.js` 刷新 `data/views/` 与 `data/2022wc/views/` 5 玩法视图（modeling 喂数据 + 频率图谱页消费）
-4. **`node scripts/build_frequency_atlas.js` 刷新 `data/frequency_atlas.json`** — 喂 `frequency.html` 展示页
-5. 看 `js/pages/stats.js` 的 dashboard（AI 模型准确率榜）— 自动从 `predictions.json` + `results/*.json` 算
-6. 复盘：哪些 AI 命中 / 哪些未中，新发现写进 `records/reflections.md`
+4. **`npm run daily:lab`** — 刷新 `data/lab_dataset.json` 并跑 `verify_lab_engine.js` 验证 6 预设方向/量级（喂 `/lab.html` 回测实验室 + 3 跟投函数）。内部 = `build_settled --incremental && build_views && build_backtest_dataset && verify_lab_engine`，与 step 2/3 重复跑是幂等无害；想完全避免重复可改用 `npm run build:lab`（只跑后两步）
+5. **`node scripts/build_frequency_atlas.js` 刷新 `data/frequency_atlas.json`** — 喂 `frequency.html` 展示页
+6. **刷 `public/sitemap.xml` 的 `<lastmod>`** — 全部 URL 的 lastmod 改成今天（YYYY-MM-DD），告诉 Google 站点今天有更新：
+   ```bash
+   node -e "const fs=require('fs');const p='public/sitemap.xml';const t=new Date().toISOString().slice(0,10);let x=fs.readFileSync(p,'utf8');x=x.replace(/<lastmod>[^<]+<\/lastmod>/g,'<lastmod>'+t+'</lastmod>');fs.writeFileSync(p,x);console.log('[sitemap] all lastmod →',t);"
+   ```
+7. 看 `js/pages/stats.js` 的 dashboard（AI 模型准确率榜）— 自动从 `predictions.json` + `results/*.json` 算
+8. 复盘：哪些 AI 命中 / 哪些未中，新发现写进 `records/reflections.md`
 
 > 本步骤**不修改** `data/bets.json`，**不调用** `add-prediction.js`
 >
