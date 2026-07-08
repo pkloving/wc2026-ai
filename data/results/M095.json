@@ -1,0 +1,70 @@
+{
+  "matchId": "M095",
+  "mid": null,
+  "code": null,
+  "league": "世界杯",
+  "stage": "r16",
+  "home": "阿根廷",
+  "away": "埃及",
+  "kickoff": "2026-07-08 00:00",
+  "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+  "handicap": null,
+  "homeScore": 3,
+  "awayScore": 2,
+  "halfTime": "0-1",
+  "final_score": "3-2",
+  "scorers": [
+    {
+      "minute": "15'",
+      "team": "away",
+      "player": "易卜拉欣 (Mostafa Mohamed Ibrahim)",
+      "type": "头球",
+      "assist": "阿提亚 (Ahmed Hany Attia) 传中",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "67'",
+      "team": "away",
+      "player": "齐库 (Mostafa Ziko)",
+      "type": "包抄捅射",
+      "assist": "萨拉赫 (Mohamed Salah) 策动 + 哈桑 (Trézéguet Hassan) 下底横传",
+      "score_after": "0-2"
+    },
+    {
+      "minute": "79'",
+      "team": "home",
+      "player": "罗梅罗 (Cristian Romero) 甩头攻门",
+      "type": "头球",
+      "assist": "梅西 (Lionel Messi) 右路弧线传中",
+      "score_after": "1-2"
+    },
+    {
+      "minute": "84'",
+      "team": "home",
+      "player": "梅西 (Lionel Messi) 势大力沉爆射",
+      "type": "远射",
+      "assist": "阿尔瓦雷斯 (Julián Álvarez) 配合",
+      "score_after": "2-2"
+    },
+    {
+      "minute": "90+2'",
+      "team": "home",
+      "player": "恩佐·费尔南德斯 (Enzo Fernández) 中路抢点头球",
+      "type": "头球",
+      "assist": "劳塔罗 (Lautaro Martínez) 边路传中",
+      "score_after": "3-2"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "home",
+  "spf_result": "home",
+  "rqspf_result": null,
+  "zjq_result": "5",
+  "bqc_result": "负胜",
+  "bf_result": { "score": "3:2", "other": null },
+  "data_source": "直播吧+央视频+新华网+ESPN+CNN+头条 (6+ source 交叉验证)",
+  "recorded_at": "2026-07-08T09:00:00+08:00",
+  "notes": "90分钟3-2完赛，阿根廷史诗级逆转晋级8强。卫冕冠军上半场15分钟被易卜拉欣头球破门0-1落后，梅西失点+任意球中柱；下半场67分钟齐库包抄破门阿根廷0-2陷入绝境；78分钟开始14分钟连扳3球：79分钟梅西右路弧线助攻罗梅罗甩头破门1-2，84分钟梅西远射爆射扳平2-2，90+2分钟劳塔罗边路传中恩佐抢点头球绝杀3-2。竞彩比分以90分钟为准 (3-2)，SPF 主胜，ZJQ 5球，BQC 负胜。halfTime=0-1 / scorers 5 条已 WebSearch 验证补齐。rqspf 因 sporttery mid 未放出、handicap 字段缺失，rqspf_result 留空待 mid 放出后补算。下轮 qf 7-12 09:00 CST vs 瑞士 (M100, Arrowhead Stadium Kansas City)。"
+}

@@ -1164,10 +1164,13 @@
     "stage": "r16",
     "group": null,
     "date": "2026-07-07T16:00:00Z",
-    "venue": "BMO Field, Toronto",
+    "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "ARG",
     "away": "EGY",
-    "status": "scheduled"
+    "status": "finished",
+    "kickoff": "2026-07-08 00:00",
+    "final_score": "3-2",
+    "result_file": "results/M095.json"
   },
   {
     "id": "M096",
@@ -1177,7 +1180,10 @@
     "venue": "BC Place, Vancouver",
     "home": "SUI",
     "away": "COL",
-    "status": "scheduled"
+    "status": "finished",
+    "kickoff": "2026-07-08 04:00",
+    "final_score": "0-0",
+    "result_file": "results/M096.json"
   },
   {
     "id": "M097",
@@ -1185,9 +1191,10 @@
     "group": null,
     "date": "2026-07-09T20:00:00Z",
     "venue": "MetLife Stadium, East Rutherford, NJ",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "FRA",
+    "away": "MAR",
+    "status": "scheduled",
+    "kickoff": "2026-07-10 04:00"
   },
   {
     "id": "M098",
@@ -1195,9 +1202,10 @@
     "group": null,
     "date": "2026-07-10T19:00:00Z",
     "venue": "SoFi Stadium, Los Angeles, CA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ESP",
+    "away": "BEL",
+    "status": "scheduled",
+    "kickoff": "2026-07-11 03:00"
   },
   {
     "id": "M099",
@@ -1205,9 +1213,10 @@
     "group": null,
     "date": "2026-07-11T21:00:00Z",
     "venue": "AT&T Stadium, Arlington, TX",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "NOR",
+    "away": "ENG",
+    "status": "scheduled",
+    "kickoff": "2026-07-12 05:00"
   },
   {
     "id": "M100",
@@ -1215,9 +1224,10 @@
     "group": null,
     "date": "2026-07-12T01:00:00Z",
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ARG",
+    "away": "SUI",
+    "status": "scheduled",
+    "kickoff": "2026-07-12 09:00"
   },
   {
     "id": "M101",
