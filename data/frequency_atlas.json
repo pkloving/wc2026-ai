@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:02:35.101Z",
+  "generated_at": "2026-07-10T01:05:47.511Z",
   "note": "由 scripts/build_frequency_atlas.js 从 data/views 与 data/2022wc/views 汇总",
   "y2026": {
     "total": 91,

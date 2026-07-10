@@ -1,0 +1,38 @@
+{
+  "matchId": "2040451",
+  "code": "周四097",
+  "league": "世界杯",
+  "home": "法国",
+  "away": "摩洛哥",
+  "kickoff": "2026-07-10 04:00",
+  "venue": "MetLife Stadium, East Rutherford, NJ",
+  "stage": "qf",
+  "homeScore": 2,
+  "awayScore": 0,
+  "final_score": "2-0",
+  "halfTime": "0-0",
+  "scorers": [
+    { "team": "FRA", "player": "姆巴佩 (Kylian Mbappé)", "minute": "60'", "type": "goal", "assist": "杜埃 (Désiré Doué)" },
+    { "team": "FRA", "player": "登贝莱 (Ousmane Dembélé)", "minute": "66'", "type": "goal", "assist": "姆巴佩 (Kylian Mbappé)" }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "2:0",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "平胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "home",
+  "_hhadResult": "H",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-10T09:00:00.000Z",
+  "_note": "常规时间 FRA 2-0 MAR 完赛，半场 0-0：上半场姆巴佩造点+失点+布努屡救险，下半场第 60 分钟姆巴佩右脚兜射破门（杜埃助攻）1-0，第 66 分钟登贝莱长驱直入贴地斩（姆巴佩助攻）2-0 锁定胜局。HAFU=D:H（半场平+全场主胜）→ bqcResult=平胜；HHAD=H（margin +2 + handicap -1 = +1 让胜）；TTG=2（2 球）；halfTime 0-0 / scorers 2 条已从 直播吧 + 央视网 + 球迷屋 3 源 WebSearch 验证补齐（姆巴佩 60' / 登贝莱 66'）。FRA 晋级 4 强，是本届首支 4 强球队"
+}

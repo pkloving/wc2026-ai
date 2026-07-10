@@ -1233,8 +1233,11 @@
     "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "FRA",
     "away": "MAR",
-    "status": "scheduled",
-    "kickoff": "2026-07-10 04:00"
+    "status": "finished",
+    "code": "周四097",
+    "kickoff": "2026-07-10 04:00",
+    "final_score": "2-0",
+    "result_file": "results/2040451.json"
   },
   {
     "id": "M098",
@@ -1245,7 +1248,8 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "ESP",
     "away": "BEL",
-    "status": "scheduled",
+    "status": "on_sale",
+    "code": "周五098",
     "kickoff": "2026-07-11 03:00"
   },
   {
