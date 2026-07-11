@@ -4268,7 +4268,7 @@
       "home": "西班牙",
       "away": "比利时",
       "kickoff": "2026-07-11 03:00",
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "home": 1.46,
         "draw": 3.8,
@@ -4280,8 +4280,8 @@
         "draw": 3.2,
         "away": 2.33
       },
-      "is_finished_odds": false,
-      "is_finished_odds_marked_at": null,
+      "is_finished_odds": true,
+      "is_finished_odds_marked_at": "2026-07-11T09:00:00+08:00",
       "scraped_at": "2026-07-10T01:02:58.701Z",
       "sale_status": "在售",
       "single_supported": {
@@ -4291,10 +4291,13 @@
         "TTG": true,
         "HAD": true
       },
-      "final_score": null,
+      "final_score": "2-1",
       "odds_file": "odds/2040466.json",
       "history_file": "odds_history/2040466.json",
-      "result_file": null
+      "result_file": "results/2040466.json",
+      "spf_result": "home",
+      "rqspf_result": "draw",
+      "half_time_result": "draw"
     },
     {
       "mid": "2040459",

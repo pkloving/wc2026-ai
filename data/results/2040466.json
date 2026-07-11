@@ -1,0 +1,57 @@
+{
+  "matchId": "2040466",
+  "code": "周五098",
+  "league": "世界杯",
+  "home": "西班牙",
+  "away": "比利时",
+  "kickoff": "2026-07-11 03:00",
+  "venue": "SoFi Stadium, Los Angeles, CA",
+  "stage": "qf",
+  "homeScore": 2,
+  "awayScore": 1,
+  "final_score": "2-1",
+  "halfTime": "1-1",
+  "scorers": [
+    {
+      "team": "ESP",
+      "player": "法比安·鲁伊斯 (Fabián Ruiz)",
+      "minute": "30'",
+      "type": "goal",
+      "assist": "奥尔莫 (Dani Olmo) 推射被扑出后补射"
+    },
+    {
+      "team": "BEL",
+      "player": "德凯特拉雷 (Charles De Ketelaere)",
+      "minute": "41'",
+      "type": "goal",
+      "assist": "头球"
+    },
+    {
+      "team": "ESP",
+      "player": "梅里诺 (Mikel Merino)",
+      "minute": "88'",
+      "type": "goal",
+      "assist": "跟进补射绝杀"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "home",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "2:1",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平胜",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "home",
+  "_hhadResult": "D",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-11T09:00:00+08:00",
+  "_note": "常规时间 ESP 2-1 BEL 完赛，半场 1-1：第30分钟奥尔莫推射被扑出后法比安·鲁伊斯补射 1-0；第41分钟德凯特拉雷头球扳平 1-1；上半场补时阶段库尔图瓦神扑，下半场第61分钟尼科·威廉斯错失单刀；第88分钟梅里诺跟进补射绝杀 2-1，西班牙时隔16年再入世界杯4强，半决赛 vs 法国 (7-15 09:00 CST)。halfTime 1-1 / scorers 3 条已从 央视体育 + 头条 + 球迷屋 3 源 WebSearch 验证补齐。HHAD=D（margin +1 + handicap -1 = 0 让平）；TTG=3（3 球）；HAFU=D:H（半场平+全场主胜）→ bqcResult=平胜。数据源: 央视体育(toutiao 7661036537731236388) / 球迷屋 / 实况足球 / ESPN / 头条 4 源交叉验证"
+}
