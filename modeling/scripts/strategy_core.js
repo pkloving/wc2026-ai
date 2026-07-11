@@ -66,6 +66,17 @@ export const DEFAULT_PARAMS = {
     // 默认 1.6 关闭 rq.away<1.6 的 2 球纠偏, 走 baseline 让球→大/小球
     normalTwoRqAwayMin: 1.6,
     baselineBigHandicapAbs: 2,
+    // 2026-07-11 调优 (sampled 2040163 韩国 2-1 捷克 hc=-1 走盘, audit 12 场):
+    // hc<=-1 + rq.away 是最低赔率 + rq.away<maxRqAway 场景 (强客胜大热门)
+    //   实际: 0 球 2/12=16.7% / 1 球 3/12=25% / 2 球 3/12=25% / 3 球 2/12=16.7% / 4 球 2/12=16.7%
+    //   baseline 推 2 球 3/12 命中, ROI -25.8% (n=12)
+    //   推 0 球 2/12 命中, ROI +22.5% (n=12), 平均 0 球赔率 9-10
+    //   gap: 0 球 ROI 较 baseline 2 球 +48.3pct
+    // 机制: hc<=-1 (主让 1+ 球) + 庄家看客胜 (rq.away 最低) → 实际常走盘/小比分
+    //       走盘比分 (1-0, 2-1) 总进球 1-3 球, 0 球 (客队不进球) 也常见
+    // 默认 0 关闭 (维持 baseline 2 球), 33_fit 扫 1 + maxRqAway 1.5/1.6/1.8/2.0 验证
+    // ⚠️ n=12 仍小样本 (6-29 log 警告 n<10), 留 33_fit 验证, 失败回滚 minRqAway=0 关闭
+    hcMinus1StrongAway: { enabled: 0, maxRqAway: 1.8 },
   },
   bqc: {
     ssMax: 2.0,
@@ -687,6 +698,27 @@ export function zjqStrategy(m, ctx) {
       coldOdds: odds[coldPick], stableOdds: odds['2'],
       rule: { name: 'NORMAL+2球纠偏(主流盘,rq.away≥1.6)', roi: '+18.5%', n: 13 },
     };
+  }
+
+  // 2026-07-11 调优 (sampled 2040163 韩国 2-1 捷克 hc=-1 走盘, audit 12 场):
+  // hc<=-1 + rq.away 是最低赔率 + rq.away<maxRqAway (强客胜大热门) → 推 0 球
+  // 实际分布 0/1/2/3/4 球各 17-25%, 但 0 球 ROI 最高 (+22.5% n=12)
+  // baseline 2 球 ROI -25.8% n=12 → 0 球较 baseline +48.3pct
+  // 优先级: 在 NORMAL 2 球纠偏之后 (避免覆盖主流盘 2 球), 在 baseline 之前
+  // 默认 enabled=0 关闭 (走 baseline), 33_fit 扫 enabled 0/1 × maxRqAway 1.5/1.6/1.8/2.0
+  if (type === 'NORMAL' && (m.handicap ?? 0) <= -1
+      && m.rqspf && m.rqspf.away != null
+      && m.rqspf.away <= m.rqspf.home && m.rqspf.away <= m.rqspf.draw) {
+    const sa = P.hcMinus1StrongAway || { enabled: 0, maxRqAway: 1.8 };
+    if (sa.enabled > 0 && sa.maxRqAway > 0 && m.rqspf.away < sa.maxRqAway && odds['0'] > 1) {
+      const coldPick = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
+      return {
+        corrected: { pick: '0', odds: odds['0'] },
+        coldPick, stable: '0',
+        coldOdds: odds[coldPick], stableOdds: odds['0'],
+        rule: { name: 'hc<=-1+强客胜大热门(rq.away最低<maxRqAway)→0球', roi: '+22.5%', n: 12 },
+      };
+    }
   }
 
   if (type === 'BIG_BALL') {

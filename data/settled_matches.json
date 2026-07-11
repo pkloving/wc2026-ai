@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T01:05:36.275Z",
+  "generated_at": "2026-07-11T04:04:13.729Z",
   "total_matches": 156,
   "matches": [
     {
@@ -18588,7 +18588,7 @@
       "away": "比利时",
       "kickoff": "2026-07-11 03:00",
       "handicap": -1,
-      "status": "on_sale",
+      "status": "finished",
       "spf": {
         "initial": {
           "home": 1.46,
@@ -18600,7 +18600,7 @@
           "draw": 3.8,
           "away": 5.5
         },
-        "result": null
+        "result": "home"
       },
       "rqspf": {
         "initial": {
@@ -18615,7 +18615,7 @@
           "draw": 3.2,
           "away": 2.33
         },
-        "result": null
+        "result": "draw"
       },
       "bf": {
         "initial": {
@@ -18688,7 +18688,10 @@
             "01:05": 500
           }
         },
-        "result": null
+        "result": {
+          "score": "2:1",
+          "other": null
+        }
       },
       "zjq": {
         "initial": {
@@ -18715,7 +18718,7 @@
             "7+": 24
           }
         },
-        "result": null
+        "result": "3"
       },
       "bqc": {
         "initial": {
@@ -18744,9 +18747,18 @@
             "负负": 9.25
           }
         },
-        "result": null
+        "result": "平胜"
       },
-      "result": null,
+      "result": {
+        "home": 2,
+        "away": 1,
+        "half": "1-1",
+        "scorers_count": 3,
+        "wentToPenalties": false,
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "home"
+      },
       "meta": {
         "history_points": {
           "spf": 2,

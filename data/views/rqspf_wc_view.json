@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-10T01:05:35.323Z",
+  "generated_at": "2026-07-11T04:04:23.600Z",
   "play": "rqspf",
-  "count": 91,
+  "count": 95,
   "rows": [
     {
       "mid": "2040162",
@@ -2004,6 +2004,94 @@
         "away": 4.9
       },
       "result": "draw"
+    },
+    {
+      "mid": "2040451",
+      "code": "周四097",
+      "home": "法国",
+      "away": "摩洛哥",
+      "kickoff": "2026-07-10 04:00",
+      "handicap": -1,
+      "final_score": "2:0",
+      "initial": {
+        "handicap": -1,
+        "home": 2.58,
+        "draw": 3.05,
+        "away": 2.42
+      },
+      "last": {
+        "handicap": -1,
+        "home": 2.58,
+        "draw": 3.05,
+        "away": 2.42
+      },
+      "result": "home"
+    },
+    {
+      "mid": "2040466",
+      "code": "周五098",
+      "home": "西班牙",
+      "away": "比利时",
+      "kickoff": "2026-07-11 03:00",
+      "handicap": -1,
+      "final_score": "2:1",
+      "initial": {
+        "handicap": -1,
+        "home": 2.58,
+        "draw": 3.2,
+        "away": 2.33
+      },
+      "last": {
+        "handicap": -1,
+        "home": 2.58,
+        "draw": 3.2,
+        "away": 2.33
+      },
+      "result": "draw"
+    },
+    {
+      "mid": "2040459",
+      "code": "周六099",
+      "home": "挪威",
+      "away": "英格兰",
+      "kickoff": "2026-07-12 05:00",
+      "handicap": 1,
+      "final_score": null,
+      "initial": {
+        "handicap": 1,
+        "home": 1.88,
+        "draw": 3.4,
+        "away": 3.3
+      },
+      "last": {
+        "handicap": 1,
+        "home": 1.88,
+        "draw": 3.4,
+        "away": 3.3
+      },
+      "result": null
+    },
+    {
+      "mid": "2040467",
+      "code": "周六100",
+      "home": "阿根廷",
+      "away": "瑞士",
+      "kickoff": "2026-07-12 09:00",
+      "handicap": -1,
+      "final_score": null,
+      "initial": {
+        "handicap": -1,
+        "home": 3,
+        "draw": 3.1,
+        "away": 2.11
+      },
+      "last": {
+        "handicap": -1,
+        "home": 3,
+        "draw": 3.1,
+        "away": 2.11
+      },
+      "result": null
     }
   ]
 }

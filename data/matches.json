@@ -1248,9 +1248,11 @@
     "venue": "SoFi Stadium, Los Angeles, CA",
     "home": "ESP",
     "away": "BEL",
-    "status": "on_sale",
+    "status": "finished",
     "code": "周五098",
-    "kickoff": "2026-07-11 03:00"
+    "kickoff": "2026-07-11 03:00",
+    "final_score": "2-1",
+    "result_file": "results/2040466.json"
   },
   {
     "id": "M099",
@@ -1261,7 +1263,8 @@
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "NOR",
     "away": "ENG",
-    "status": "scheduled",
+    "status": "on_sale",
+    "code": "周六099",
     "kickoff": "2026-07-12 05:00"
   },
   {
@@ -1273,7 +1276,8 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "ARG",
     "away": "SUI",
-    "status": "scheduled",
+    "status": "on_sale",
+    "code": "周六100",
     "kickoff": "2026-07-12 09:00"
   },
   {
