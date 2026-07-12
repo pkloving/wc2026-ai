@@ -17,7 +17,7 @@
       "HAD": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
@@ -90,10 +90,11 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-07-10T01:02:58.764Z",
-    "snapshot_time": "2026-07-09 16:22:49",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "fetched_at": "2026-07-12T04:00:00.000Z",
+    "snapshot_time": "2026-07-12 04:00:00",
+    "has_match_result": true,
+    "spf_result": "draw",
+    "half_time_result": "home",
+    "_note": "M100 完赛补录 2026-07-12 12:00 CST round - ARG 3-1 SUI (90min 1-1 + ET 3-1)"
   }
 }

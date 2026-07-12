@@ -17,7 +17,7 @@
       "HAD": true
     },
     "is_cancel": 0,
-    "is_finished_odds": false
+    "is_finished_odds": true
   },
   "odds": {
     "spf_latest": {
@@ -90,10 +90,12 @@
   },
   "source": {
     "api": "getFixedBonusV1.qry",
-    "fetched_at": "2026-07-10T01:02:58.748Z",
+    "fetched_at": "2026-07-12T01:00:00.000Z",
     "snapshot_time": "2026-07-09 19:41:51",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "D",
+    "half_time_result": "D",
+    "_enrichedAt": "2026-07-12T09:00:00+08:00",
+    "_note": "2026-07-12 09:00 CST daily 补 M099 完赛定格：常规 1-1 / 加时 1-2 (ENG 95' Bellingham 绝杀) / 90min 竞彩 5 玩法 SPF=D / HHAD=D (让 +1 让平) / CRS=1:1 / TTG=2 / HAFU=D:D 平平。R-014 完赛赔率永久标 is_finished_odds=true 不重抓"
   }
 }

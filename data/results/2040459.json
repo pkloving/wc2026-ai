@@ -1,0 +1,50 @@
+{
+  "matchId": "2040459",
+  "code": "周六099",
+  "league": "世界杯",
+  "home": "挪威",
+  "away": "英格兰",
+  "kickoff": "2026-07-12 05:00",
+  "venue": "AT&T Stadium, Arlington, TX",
+  "stage": "qf",
+  "homeScore": 1,
+  "awayScore": 1,
+  "final_score": "1-1",
+  "halfTime": "1-1",
+  "scorers": [
+    {
+      "team": "NOR",
+      "player": "谢尔德鲁普 (Antonio Nusa)",
+      "minute": "36'",
+      "type": "goal",
+      "assist": "禁区外左脚世界波首开记录"
+    },
+    {
+      "team": "ENG",
+      "player": "贝林厄姆 (Jude Bellingham)",
+      "minute": "45+'",
+      "type": "goal",
+      "assist": "前插禁区内推射扳平"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": "1-2",
+  "actualWinner": "away",
+  "handicap": 1,
+  "spfResult": "draw",
+  "rqspfResult": "draw",
+  "bfResult": {
+    "score": "1:1",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "平平",
+  "_fromSporttery": true,
+  "_halfTimeResult": "draw",
+  "_spfResult": "D",
+  "_hhadResult": "D",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-12T09:00:00+08:00",
+  "_note": "常规时间 1-1 平进入加时，加时 95' 贝林厄姆补射破门 1-2 绝杀晋级，120 分钟战罢英格兰 2-1 淘汰挪威晋级 4 强，半决赛 vs 阿根廷 (M101/M102 sf)。**竞彩 5 玩法按 90min 1-1 计算**（R-004 #1 加时/点球不算入竞彩比分）：SPF=D 平（1.5-2.0 主流盘）/ HHAD=D 让 +1 让平（margin 0 + handicap +1 = +1 让平）/ CRS=1:1 / TTG=2 / HAFU=D:D 平平。halfTime 1-1 / scorers 2 条已从 央视体育 + 球迷屋 + 头条 3 源 WebSearch 验证补齐（36' 谢尔德鲁普世界波 / 45+ 半场补时贝林厄姆推射扳平 / 90' 黑格姆补射破门因哈兰德犯规在先被吹 / 95' 加时罗杰斯外围冷箭被扑出，贝林厄姆跟进补射破门 1-2 / 120min 战罢 ENG 晋级）。本场是 2026 世界杯 1/4 决赛第 3 场。数据源: 央视体育(toutiao 7661421504109838863) / 球迷屋(qiumiwu 1973990956180 录像回放) / 头条 7661356724405748278 (半场战报) / 头条 7661410000795648564 (90分钟战报) / 头条 7661399052176687643 (加时战报) 4 源交叉验证"
+}

@@ -1,0 +1,58 @@
+{
+  "matchId": "M100",
+  "mid": "2040467",
+  "home": "阿根廷",
+  "away": "瑞士",
+  "homeScore": 1,
+  "awayScore": 1,
+  "halfTime": "1-0",
+  "scorers": [
+    {
+      "team": "home",
+      "player": "麦卡利斯特",
+      "minute": 10,
+      "assist": "梅西",
+      "type": "normal"
+    },
+    {
+      "team": "away",
+      "player": "恩多耶",
+      "minute": 68,
+      "assist": null,
+      "type": "normal"
+    },
+    {
+      "team": "home",
+      "player": "阿尔瓦雷斯",
+      "minute": 112,
+      "assist": "何塞·洛佩斯",
+      "type": "normal"
+    },
+    {
+      "team": "home",
+      "player": "劳塔罗·马丁内斯",
+      "minute": 121,
+      "assist": null,
+      "type": "normal"
+    }
+  ],
+  "extraTime": "3-1",
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "home",
+  "handicap": -1,
+  "spfResult": "draw",
+  "rqspfResult": "home",
+  "bfResult": {
+    "score": "1:1",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "胜平",
+  "_enrichedAt": "2026-07-12T04:00:00.000Z",
+  "_sources": [
+    "球迷屋: https://m.qiumiwu.com/news/1974072108896",
+    "直播吧: http://m.toutiao.com/group/7661482921803301427/",
+    "头条: http://m.toutiao.com/group/7661483355066483236/"
+  ]
+}

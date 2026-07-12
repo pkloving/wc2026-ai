@@ -1,5 +1,9 @@
 {
   "mid": "2040459",
+  "_is_finished_odds": true,
+  "_finished_at": "2026-07-12T01:00:00.000Z",
+  "_enrichedAt": "2026-07-12T09:00:00+08:00",
+  "_note": "2026-07-12 09:00 CST daily 补 M099 完赛定格标记。90min 1-1 → 加时 1-2 (ENG 95' Bellingham 绝杀) 晋级 4 强。R-014 完赛赔率永久跳过不再追加新快照，5 玩法各 1 条 first snapshot 即定格（赛前 48h 开盘至完赛 0 漂移）。竞彩 5 玩法按 90min 1-1 计算：SPF=D / HHAD=D 让 +1 让平 / CRS=1:1 / TTG=2 / HAFU=D:D 平平",
   "spf_history": [
     {
       "time": "2026-07-10T01:02:58.749Z",

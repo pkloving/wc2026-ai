@@ -1263,9 +1263,11 @@
     "venue": "AT&T Stadium, Arlington, TX",
     "home": "NOR",
     "away": "ENG",
-    "status": "on_sale",
+    "status": "finished",
     "code": "周六099",
-    "kickoff": "2026-07-12 05:00"
+    "kickoff": "2026-07-12 05:00",
+    "final_score": "1-1",
+    "result_file": "results/2040459.json"
   },
   {
     "id": "M100",
