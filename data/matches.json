@@ -1278,9 +1278,11 @@
     "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "ARG",
     "away": "SUI",
-    "status": "on_sale",
+    "status": "finished",
     "code": "周六100",
-    "kickoff": "2026-07-12 09:00"
+    "kickoff": "2026-07-12 09:00",
+    "final_score": "1-1",
+    "result_file": "results/2040467.json"
   },
   {
     "id": "M101",
@@ -1288,9 +1290,10 @@
     "group": null,
     "date": "2026-07-14T19:00:00Z",
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "FRA",
+    "away": "ESP",
+    "status": "scheduled",
+    "kickoff": "2026-07-15 03:00"
   },
   {
     "id": "M102",
@@ -1298,9 +1301,10 @@
     "group": null,
     "date": "2026-07-15T19:00:00Z",
     "venue": "NRG Stadium, Houston, TX",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ENG",
+    "away": "ARG",
+    "status": "scheduled",
+    "kickoff": "2026-07-16 03:00"
   },
   {
     "id": "M103",

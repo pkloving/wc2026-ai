@@ -1,8 +1,39 @@
 {
-  "generated_at": "2026-07-12T04:07:43.798Z",
-  "total": 156,
+  "generated_at": "2026-07-12T07:05:36.574Z",
+  "total": 158,
   "by_status": {
-    "scheduled": [],
+    "scheduled": [
+      {
+        "mid": null,
+        "matchId": "M101",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "西班牙",
+        "kickoff": "2026-07-15 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
+      },
+      {
+        "mid": null,
+        "matchId": "M102",
+        "code": null,
+        "league": "世界杯",
+        "home": "英格兰",
+        "away": "阿根廷",
+        "kickoff": "2026-07-16 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
+      }
+    ],
     "on_sale": [],
     "in_progress": [],
     "finished": [
@@ -8725,6 +8756,36 @@
         "odds_file": "odds/2040467.json",
         "history_file": "odds_history/2040467.json",
         "result_file": "results/2040467.json"
+      },
+      {
+        "mid": null,
+        "matchId": "M101",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "西班牙",
+        "kickoff": "2026-07-15 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
+      },
+      {
+        "mid": null,
+        "matchId": "M102",
+        "code": null,
+        "league": "世界杯",
+        "home": "英格兰",
+        "away": "阿根廷",
+        "kickoff": "2026-07-16 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
       }
     ]
   },
@@ -13177,6 +13238,40 @@
         "odds_file": "odds/2040467.json",
         "history_file": "odds_history/2040467.json",
         "result_file": "results/2040467.json"
+      }
+    ],
+    "2026-07-15": [
+      {
+        "mid": null,
+        "matchId": "M101",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "西班牙",
+        "kickoff": "2026-07-15 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
+      }
+    ],
+    "2026-07-16": [
+      {
+        "mid": null,
+        "matchId": "M102",
+        "code": null,
+        "league": "世界杯",
+        "home": "英格兰",
+        "away": "阿根廷",
+        "kickoff": "2026-07-16 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json"
       }
     ]
   }
