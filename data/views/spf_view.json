@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T04:04:23.580Z",
+  "generated_at": "2026-07-12T10:02:40.934Z",
   "play": "spf",
   "count": 77,
   "rows": [
@@ -1510,7 +1510,7 @@
       "away": "英格兰",
       "kickoff": "2026-07-12 05:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "home": 3.81,
         "draw": 3.5,
@@ -1521,7 +1521,7 @@
         "draw": 3.5,
         "away": 1.72
       },
-      "result": null
+      "result": "draw"
     },
     {
       "mid": "2040467",
@@ -1530,7 +1530,7 @@
       "away": "瑞士",
       "kickoff": "2026-07-12 09:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "home": 1.56,
         "draw": 3.3,
@@ -1541,7 +1541,7 @@
         "draw": 3.3,
         "away": 5.4
       },
-      "result": null
+      "result": "draw"
     }
   ]
 }

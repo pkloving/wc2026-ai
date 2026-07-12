@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T04:04:23.603Z",
+  "generated_at": "2026-07-12T10:02:40.950Z",
   "play": "bqc",
   "count": 94,
   "rows": [
@@ -3322,7 +3322,7 @@
       "away": "英格兰",
       "kickoff": "2026-07-12 05:00",
       "handicap": 1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "胜胜": 6.8,
@@ -3349,7 +3349,7 @@
           "负负": 2.65
         }
       },
-      "result": null
+      "result": "平平"
     },
     {
       "mid": "2040467",
@@ -3358,7 +3358,7 @@
       "away": "瑞士",
       "kickoff": "2026-07-12 09:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:1",
       "initial": {
         "odds": {
           "胜胜": 2.42,
@@ -3385,7 +3385,7 @@
           "负负": 9.5
         }
       },
-      "result": null
+      "result": "平平"
     }
   ]
 }
