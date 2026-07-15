@@ -1,5 +1,9 @@
 {
   "mid": "2040507",
+  "_is_finished_odds": true,
+  "_finished_at": "2026-07-15T01:00:00.000Z",
+  "_enrichedAt": "2026-07-15T09:00:00+08:00",
+  "_note": "7-15 09:00 CST round 翻 _is_finished_odds=true (M101 FRA 0-2 ESP 90min 完赛定格); 赛前 1 天 (7-14 09:00 / 18:00) 抓 2 快照 (first + latest), 完赛赔率不再重抓 (R-014 永久跳过)",
   "spf_history": [
     {
       "time": "2026-07-14T01:00:00.000Z",

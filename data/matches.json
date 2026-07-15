@@ -1294,8 +1294,10 @@
     "venue": "Mercedes-Benz Stadium, Atlanta, GA",
     "home": "FRA",
     "away": "ESP",
-    "status": "scheduled",
-    "kickoff": "2026-07-15 03:00"
+    "status": "finished",
+    "kickoff": "2026-07-15 03:00",
+    "final_score": "0-2",
+    "result_file": "results/2040507.json"
   },
   {
     "id": "M102",

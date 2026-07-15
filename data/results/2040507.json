@@ -1,0 +1,57 @@
+{
+  "matchId": "2040507",
+  "code": "周二101",
+  "league": "世界杯",
+  "home": "法国",
+  "away": "西班牙",
+  "kickoff": "2026-07-15 03:00",
+  "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+  "stage": "sf",
+  "homeScore": 0,
+  "awayScore": 2,
+  "final_score": "0-2",
+  "halfTime": "0-1",
+  "scorers": [
+    {
+      "team": "ESP",
+      "player": "奥亚萨瓦尔 (Mikel Oyarzabal)",
+      "minute": "22'",
+      "type": "penalty",
+      "assist": "亚马尔 (Lamine Yamal) 造点"
+    },
+    {
+      "team": "ESP",
+      "player": "佩德罗·波罗 (Pedro Porro)",
+      "minute": "58'",
+      "type": "goal",
+      "assist": "奥尔莫 (Dani Olmo)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "away",
+  "handicap": -1,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "0:2",
+    "other": null
+  },
+  "zjqResult": "2",
+  "bqcResult": "负负",
+  "_fromSporttery": false,
+  "_halfTimeResult": "away",
+  "_spfResult": "A",
+  "_hhadResult": "A",
+  "_totalGoals": "2",
+  "_enrichedAt": "2026-07-15T05:00:00+08:00",
+  "_sources": [
+    "球迷屋: https://m.qiumiwu.com/news/1975116750765",
+    "央广网: http://news.cnr.cn/sq/20260715/t20260715_527710568.shtml",
+    "头条: http://m.toutiao.com/group/7662522398956175912/",
+    "头条: http://m.toutiao.com/group/7662547986060214784/",
+    "搜狐: https://m.sohu.com/a/1050389602_461392/"
+  ],
+  "_note": "2026 世界杯半决赛首场：北京时间 7-15 03:00 CST 开赛，**90 分钟常规无 ET 无 PSO**，**西班牙 2-0 完胜法国**。上半场第 22 分钟迪涅解围不慎踢到亚马尔身上送点球，奥亚萨瓦尔主罚命中 0-1；下半场第 58 分钟奥尔莫助攻佩德罗·波罗单刀破门 0-2 锁定胜局；法国虽多次换人（拉比奥/巴尔科拉/奥利塞下，科内/杜埃/谢尔基/特奥上）+ 姆巴佩第 86 分钟染黄仍无力回天。西班牙延续近 3 次大赛半决赛全胜法国纪录，**晋级 2026 世界杯决赛**（待 7-16 03:00 M102 ENG vs ARG 胜者进决赛 M104 7-20 03:00 CST @ Lumen Field Seattle WA）；法国将与 M102 负者争夺季军（M103 7-19 05:00 CST @ Lincoln Financial Field Philadelphia PA）。**竞彩 5 玩法按 90min 0-2 计算**（R-004 #1 加时/点球不算入竞彩比分）：SPF=A 客胜（赔率 2.05-2.95 主流盘）/ HHAD=A 让 -1 让负（margin -2 + handicap -1 = -3 < -1，让胜 4.50 大冷让负 1.58 主流盘）/ CRS=0:2（赔率 11 主流盘）/ TTG=2（赔率 3.5 主流盘）/ HAFU=A:A 负负（半场 0-1 客胜 + 全场 0-2 客胜 → 负负，赔率 5.5 主流盘）。halfTime 0-1 / scorers 2 条已从 球迷屋 + 央广网 + 头条 4 源 WebSearch 验证补齐。SPA 控球率 51% / FRA 49%，射正 2:3 西班牙少但效率高；西班牙本届 7 战 6 胜 1 平不败晋级决赛。sporttery API 5日窗口内但 matchResultList 返回空（实际可能尚未刷新），本轮走 WebSearch 手工补录路径"
+}
