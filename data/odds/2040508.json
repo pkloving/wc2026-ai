@@ -8,7 +8,7 @@
     "kickoff": "2026-07-16 03:00",
     "url": "https://www.sporttery.cn/jc/zqdz/index.html?showType=2&mid=2040508",
     "scraped_at": "2026-07-15T10:04:45.592Z",
-    "sale_status": "在售",
+    "sale_status": "已停售",
     "single_supported": {
       "HHAD": false,
       "HAFU": true,
@@ -92,8 +92,8 @@
     "api": "getFixedBonusV1.qry",
     "fetched_at": "2026-07-15T10:04:45.593Z",
     "snapshot_time": "2026-07-15 13:13:07",
-    "has_match_result": false,
-    "spf_result": null,
-    "half_time_result": null
+    "has_match_result": true,
+    "spf_result": "A",
+    "half_time_result": "D"
   }
 }

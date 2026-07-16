@@ -1309,8 +1309,10 @@
     "venue": "NRG Stadium, Houston, TX",
     "home": "ENG",
     "away": "ARG",
-    "status": "scheduled",
-    "kickoff": "2026-07-16 03:00"
+    "status": "finished",
+    "kickoff": "2026-07-16 03:00",
+    "final_score": "1-2",
+    "result_file": "results/2040508.json"
   },
   {
     "id": "M103",

@@ -1,5 +1,9 @@
 {
   "mid": "2040508",
+  "_is_finished_odds": true,
+  "_finished_at": "2026-07-16T12:00:00.000Z",
+  "_enrichedAt": "2026-07-16T12:00:00+08:00",
+  "_note": "2026-07-16 12:00 CST daily round: M102 ENG 1-2 ARG 完赛结果补录，halfTime 0-0，scorers 3条，无ET无PSO，spf=away/rqspf=away/bf=1:2/zjq=3/bqc=平负",
   "spf_history": [
     {
       "time": "2026-07-14T01:00:00.000Z",

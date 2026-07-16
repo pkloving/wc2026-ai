@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T01:06:05.783Z",
+  "generated_at": "2026-07-16T07:05:39.500Z",
   "play": "spf",
   "count": 79,
   "rows": [
@@ -1570,18 +1570,18 @@
       "away": "阿根廷",
       "kickoff": "2026-07-16 03:00",
       "handicap": -1,
-      "final_score": null,
+      "final_score": "1:2",
       "initial": {
-        "home": 2.38,
-        "draw": 2.7,
-        "away": 2.95
+        "home": 2.36,
+        "draw": 2.8,
+        "away": 2.87
       },
       "last": {
-        "home": 2.38,
-        "draw": 2.7,
-        "away": 2.95
+        "home": 2.36,
+        "draw": 2.8,
+        "away": 2.87
       },
-      "result": null
+      "result": "away"
     }
   ]
 }
