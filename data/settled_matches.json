@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:06:18.126Z",
+  "generated_at": "2026-07-16T10:14:39.646Z",
   "total_matches": 158,
   "matches": [
     {
@@ -19503,15 +19503,17 @@
             "负负": 5.25
           }
         },
-        "result": null
+        "result": "平负"
       },
       "result": {
         "home": 1,
         "away": 2,
-        "half": null,
-        "scorers_count": 0,
+        "half": "0-0",
+        "scorers_count": 3,
         "wentToPenalties": false,
-        "penaltyScore": null
+        "penaltyScore": null,
+        "extraTime": null,
+        "actualWinner": "away"
       },
       "meta": {
         "history_points": {

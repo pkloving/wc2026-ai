@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:05:39.609Z",
+  "generated_at": "2026-07-16T10:14:09.064Z",
   "play": "bqc",
   "count": 96,
   "rows": [
@@ -3457,7 +3457,7 @@
           "负负": 5.25
         }
       },
-      "result": "平负"
+      "result": null
     }
   ]
 }

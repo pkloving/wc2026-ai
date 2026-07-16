@@ -1,2 +1,66 @@
 {
-  "matchId": "
+  "matchId": "2040508",
+  "code": "周三102",
+  "league": "世界杯",
+  "home": "英格兰",
+  "away": "阿根廷",
+  "kickoff": "2026-07-16 03:00",
+  "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+  "stage": "sf",
+  "homeScore": 1,
+  "awayScore": 2,
+  "final_score": "1-2",
+  "halfTime": "0-0",
+  "scorers": [
+    {
+      "team": "ENG",
+      "player": "安东尼·戈登 (Anthony Gordon)",
+      "minute": "55'",
+      "type": "goal",
+      "assist": "摩根·罗杰斯 (Morgan Rogers)"
+    },
+    {
+      "team": "ARG",
+      "player": "恩佐·费尔南德斯 (Enzo Fernández)",
+      "minute": "85'",
+      "type": "goal",
+      "assist": "梅西 (Lionel Messi)"
+    },
+    {
+      "team": "ARG",
+      "player": "劳塔罗·马丁内斯 (Lautaro Martínez)",
+      "minute": "90+3'",
+      "type": "goal",
+      "assist": "梅西 (Lionel Messi)"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "away",
+  "handicap": -1,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:2",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平负",
+  "_fromSporttery": false,
+  "_halfTimeResult": "draw",
+  "_spfResult": "A",
+  "_hhadResult": "A",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-16T12:00:00+08:00",
+  "_reconstructedAt": "2026-07-16T18:00:00+08:00",
+  "_reconstructionNote": "1800 round 重写: 12:00 round + 15:00 round 落库后本文件曾出现 16 字节截断 (BOM+partial JSON only), 现按 matches_status.json 5 玩法结果 + matches.json final_score + WebSearch 3 源验证重写",
+  "_sources": [
+    "直播吧 头条: http://m.toutiao.com/group/7662863567904883215/",
+    "球迷屋: https://m.qiumiwu.com/news/1975561913365",
+    "头条复盘: http://m.toutiao.com/group/7662927796414530089/",
+    "头条 奇速英语: http://m.toutiao.com/group/7662894428360639030/",
+    "163 体育: https://www.163.com/dy/article/L1VL6AO60530SFP3.html"
+  ],
+  "_note": "2026 世界杯半决赛次场: 北京时间 7-16 03:00 CST 开赛, 90 分钟常规无 ET 无 PSO, 阿根廷 2-1 绝杀英格兰晋级决赛。上半场对抗激烈 2 人染黄无进球 0-0; 下半场第 55 分钟罗杰斯助攻戈登打破僵局 1-0; 第 85 分钟梅西直塞助攻恩佐扳平 1-1; 补时第 90+3 分钟梅西再次助攻劳塔罗单刀绝杀 1-2 锁定胜局。阿根廷连续 2 届进决赛 (上届 2022 卡塔尔夺冠), 将 7-20 03:00 CST @ Lumen Field Seattle WA 决赛对阵西班牙。竞彩 5 玩法按 90min 1-2 计算 (R-004 #1 加时/点球不算入竞彩比分): SPF=A 客胜 (赔率 2.36/2.8/2.87 主流盘) / HHAD=A 让 -1 让负 (margin 1-2=-1 + handicap -1 = -2 < -1, 让胜 5.65 大冷让负 1.45 主流盘) / CRS=1:2 (赔率 8.8 主流盘) / TTG=3 (赔率 3.7 主流盘) / HAFU=D:A 平负 (半场 0-0 + 全场 1-2 → 平负 6.75 主流盘)。halfTime 0-0 / scorers 3 条已从 直播吧 + 球迷屋 + 头条复盘 3 源 WebSearch 验证补齐。ENG 控球率 36% / ARG 64% 压倒性优势, 射正 2:5 进攻效率反差大; ARG 替补席有劳塔罗+阿尔马达+帕雷德斯+麦卡利斯特未首发终场前祭出 2 个换人致胜。sporttery API 5日窗口内但 matchResultList 可能尚未刷新, 本轮按 12:00 round 已落库数据 + WebSearch 多源验证重写。"
+}
