@@ -1,0 +1,67 @@
+{
+  "matchId": "2040508",
+  "code": "周三102",
+  "league": "世界杯",
+  "home": "英格兰",
+  "away": "阿根廷",
+  "kickoff": "2026-07-16 03:00",
+  "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+  "stage": "sf",
+  "homeScore": 1,
+  "awayScore": 2,
+  "final_score": "1-2",
+  "halfTime": "0-0",
+  "scorers": [
+    {
+      "team": "home",
+      "player": "安东尼·戈登 (Anthony Gordon)",
+      "minute": "55'",
+      "type": "射门",
+      "assist": "罗杰斯 (Morgan Rogers) 右路传中",
+      "score_after": "1-0"
+    },
+    {
+      "team": "away",
+      "player": "恩佐·费尔南德斯 (Enzo Fernández)",
+      "minute": "86'",
+      "type": "远射",
+      "assist": "梅西 (Lionel Messi) 直塞",
+      "score_after": "1-1"
+    },
+    {
+      "team": "away",
+      "player": "劳塔罗·马丁内斯 (Lautaro Martínez)",
+      "minute": "90+2'",
+      "type": "头球",
+      "assist": "梅西 (Lionel Messi) 角球 / 传中",
+      "score_after": "1-2"
+    }
+  ],
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "extraTime": null,
+  "actualWinner": "away",
+  "handicap": -1,
+  "spfResult": "away",
+  "rqspfResult": "away",
+  "bfResult": {
+    "score": "1:2",
+    "other": null
+  },
+  "zjqResult": "3",
+  "bqcResult": "平负",
+  "_fromSporttery": false,
+  "_halfTimeResult": "draw",
+  "_spfResult": "A",
+  "_hhadResult": "A",
+  "_totalGoals": "3",
+  "_enrichedAt": "2026-07-16T09:05:00+08:00",
+  "_sources": [
+    "球迷屋: https://m.qiumiwu.com/news/1975561913365",
+    "头条(再进决赛): http://m.toutiao.com/group/7662845362066997796/",
+    "头条(完整战报): http://m.toutiao.com/group/7662884885572469250/",
+    "头条(连续两届进决赛): http://m.toutiao.com/group/7662863567904883215/",
+    "央广网(2比1战胜): http://m.toutiao.com/group/7662866233833816614/"
+  ],
+  "_note": "2026 世界杯半决赛次场：北京时间 7-16 03:00 CST 开赛，**90 分钟常规无 ET 无 PSO**，**阿根廷 2-1 逆转绝杀英格兰**晋级决赛。比赛场地：**亚特兰大梅赛德斯-奔驰体育场 (Mercedes-Benz Stadium, Atlanta, GA)**（matches.json 旧 venue 字段误写为 'NRG Stadium, Houston, TX'，已以实际新闻源为准订正为 Atlanta）。上半场双方对抗激烈但均无射正（半场 0-0，埃利奥特·安德森和利桑德罗染黄）；下半场 55 分钟英格兰罗杰斯右路传中助攻戈登后点包抄推射 1-0 领先；阿根廷长时间高压围攻后，86 分钟梅西直塞助攻恩佐·费尔南德斯禁区前沿远射世界波 1-1 扳平；补时第 90+2 分钟梅西角球/传中助攻劳塔罗·马丁内斯头球绝杀 1-2。**竞彩 5 玩法按 90min 1-2 计算**（R-004 #1 加时/点球不算入竞彩比分）：SPF=A 客胜（赔率 2.87 主流盘）/ HHAD=A 让 -1 让负（margin -1 + handicap -1 = -2 < -1，让胜 5.65 大冷让负 1.45 主流盘）/ CRS=1:2（赔率 24 主流盘）/ TTG=3（赔率 3.7 主流盘）/ HAFU=D:A 平负（半场 0-0 平 + 全场 1-2 客胜 → 平负，赔率 6.75 主流盘）。全场数据：阿根廷控球率 63% / 15 射 5 正 vs 英格兰控球率 37% / 5 射 2 正。halfTime 0-0 / scorers 3 条已从 球迷屋 + 央广网 + 头条 5 源 WebSearch 验证补齐。**晋级后续**：阿根廷晋级 2026 世界杯决赛（M104，7-20 03:00 CST @ MetLife Stadium East Rutherford NJ vs 西班牙）；英格兰将与法国争夺季军（M103，7-19 05:00 CST @ Lincoln Financial Field Philadelphia PA）。sporttery API 5日窗口内但 matchResultList 返回空（实际可能尚未刷新），本轮走 WebSearch 手工补录路径。matchResultList 为空时本文件 _fromSporttery=false，完整 5 玩法赛果已通过 WebSearch 5+ 源交叉验证手填。"
+}

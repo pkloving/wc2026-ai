@@ -1318,9 +1318,10 @@
     "group": null,
     "date": "2026-07-18T21:00:00Z",
     "venue": "Lincoln Financial Field, Philadelphia, PA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "FRA",
+    "away": "ENG",
+    "status": "scheduled",
+    "kickoff": "2026-07-19 05:00"
   },
   {
     "id": "M104",
@@ -1328,8 +1329,9 @@
     "group": null,
     "date": "2026-07-19T19:00:00Z",
     "venue": "Lumen Field, Seattle, WA",
-    "home": "TBD",
-    "away": "TBD",
-    "status": "scheduled"
+    "home": "ESP",
+    "away": "ARG",
+    "status": "scheduled",
+    "kickoff": "2026-07-20 03:00"
   }
 ]

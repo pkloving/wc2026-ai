@@ -1,43 +1,42 @@
 {
-  "generated_at": "2026-07-15T10:06:25.356Z",
-  "total": 158,
+  "generated_at": "2026-07-16T01:05:56.684Z",
+  "total": 160,
   "by_status": {
-    "scheduled": [],
-    "on_sale": [
+    "scheduled": [
       {
-        "mid": "2040508",
-        "matchId": "M102",
-        "code": "周三102",
+        "mid": null,
+        "matchId": "M103",
+        "code": null,
         "league": "世界杯",
-        "home": "英格兰",
+        "home": "法国",
+        "away": "英格兰",
+        "kickoff": "2026-07-19 05:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
+        "is_finished_odds": false
+      },
+      {
+        "mid": null,
+        "matchId": "M104",
+        "code": null,
+        "league": "世界杯",
+        "home": "西班牙",
         "away": "阿根廷",
-        "kickoff": "2026-07-16 03:00",
-        "status": "on_sale",
-        "spf": {
-          "home": 2.36,
-          "draw": 2.8,
-          "away": 2.87
-        },
-        "handicap": -1,
-        "rqspf": {
-          "home": 5.65,
-          "draw": 3.8,
-          "away": 1.45
-        },
-        "odds_file": "odds/2040508.json",
-        "history_file": "odds_history/2040508.json",
-        "scraped_at": "2026-07-15T10:04:45.592Z",
-        "sale_status": "在售",
-        "single_supported": {
-          "HHAD": false,
-          "HAFU": true,
-          "CRS": true,
-          "TTG": true,
-          "HAD": true
-        },
+        "kickoff": "2026-07-20 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
         "is_finished_odds": false
       }
     ],
+    "on_sale": [],
     "in_progress": [],
     "finished": [
       {
@@ -4434,6 +4433,41 @@
         "rqspf_result": "away",
         "half_time_result": "away",
         "result_file": "results/2040507.json"
+      },
+      {
+        "mid": "2040508",
+        "matchId": "M102",
+        "code": "周三102",
+        "league": "世界杯",
+        "home": "英格兰",
+        "away": "阿根廷",
+        "kickoff": "2026-07-16 03:00",
+        "status": "finished",
+        "final_score": "1-2",
+        "result_file": "results/2040508.json",
+        "spf": {
+          "home": 2.36,
+          "draw": 2.8,
+          "away": 2.87
+        },
+        "handicap": -1,
+        "rqspf": {
+          "home": 5.65,
+          "draw": 3.8,
+          "away": 1.45
+        },
+        "odds_file": "odds/2040508.json",
+        "history_file": "odds_history/2040508.json",
+        "scraped_at": "2026-07-15T10:04:45.592Z",
+        "sale_status": "在售",
+        "single_supported": {
+          "HHAD": false,
+          "HAFU": true,
+          "CRS": true,
+          "TTG": true,
+          "HAD": true
+        },
+        "is_finished_odds": true
       }
     ],
     "cancelled": [],
@@ -8846,7 +8880,9 @@
         "home": "英格兰",
         "away": "阿根廷",
         "kickoff": "2026-07-16 03:00",
-        "status": "on_sale",
+        "status": "finished",
+        "final_score": "1-2",
+        "result_file": "results/2040508.json",
         "spf": {
           "home": 2.36,
           "draw": 2.8,
@@ -8869,6 +8905,38 @@
           "TTG": true,
           "HAD": true
         },
+        "is_finished_odds": true
+      },
+      {
+        "mid": null,
+        "matchId": "M103",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "英格兰",
+        "kickoff": "2026-07-19 05:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
+        "is_finished_odds": false
+      },
+      {
+        "mid": null,
+        "matchId": "M104",
+        "code": null,
+        "league": "世界杯",
+        "home": "西班牙",
+        "away": "阿根廷",
+        "kickoff": "2026-07-20 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
         "is_finished_odds": false
       }
     ]
@@ -13374,7 +13442,9 @@
         "home": "英格兰",
         "away": "阿根廷",
         "kickoff": "2026-07-16 03:00",
-        "status": "on_sale",
+        "status": "finished",
+        "final_score": "1-2",
+        "result_file": "results/2040508.json",
         "spf": {
           "home": 2.36,
           "draw": 2.8,
@@ -13397,6 +13467,42 @@
           "TTG": true,
           "HAD": true
         },
+        "is_finished_odds": true
+      }
+    ],
+    "2026-07-19": [
+      {
+        "mid": null,
+        "matchId": "M103",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "英格兰",
+        "kickoff": "2026-07-19 05:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
+        "is_finished_odds": false
+      }
+    ],
+    "2026-07-20": [
+      {
+        "mid": null,
+        "matchId": "M104",
+        "code": null,
+        "league": "世界杯",
+        "home": "西班牙",
+        "away": "阿根廷",
+        "kickoff": "2026-07-20 03:00",
+        "status": "scheduled",
+        "spf": null,
+        "handicap": null,
+        "rqspf": null,
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
         "is_finished_odds": false
       }
     ]
