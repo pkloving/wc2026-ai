@@ -4880,5 +4880,225 @@
         "prompt": "请预测 阿根廷 vs 瑞士 的全场比分与半场结果"
       }
     ]
+  },
+  {
+    "matchId": "M101",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 1-2），半场平/负 — 法国主场让1球但西班牙整体配合更优，半场胶着下半场客队反击致胜，赛后复盘",
+        "prompt": "请预测 法国 vs 西班牙 的全场比分与半场结果",
+        "source": "fill_predictions_sf_20260715"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（备选 0-2），半场平 — 客队效率更高",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-2），半场平/负",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 1,
+        "predictedAway": 3,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-3（法国 vs 西班牙，DeepSeek）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 西班牙 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（法国 vs 西班牙，GPT-5 mini）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 西班牙 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M102",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 2-2），半场平/负 — 英格兰主场让1球但阿根廷顶级锋线把握机会更强，赔率 rqspf 客胜 1.44 极端看好客队让球方向",
+        "prompt": "请预测 英格兰 vs 阿根廷 的全场比分与半场结果",
+        "source": "fill_predictions_sf_20260715"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-2），半场平 — 客队整体实力占优",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 英格兰 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 2-1），半场胜/平",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 英格兰 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 2,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 2-2（英格兰 vs 阿根廷，DeepSeek）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 英格兰 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 0-2（英格兰 vs 阿根廷，GPT-5 mini）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 英格兰 vs 阿根廷 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M103",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 2-3），半场平/负 — 季军赛双方防线松懈，英格兰反击效率更高",
+        "prompt": "请预测 法国 vs 英格兰 的全场比分与半场结果",
+        "source": "fill_predictions_third_20260720"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 2,
+        "predictedAway": 3,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 2-3（备选 1-3），半场平/负 — 英格兰攻击线更锐利",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 3-1），半场主胜/平 — 姆巴佩金靴战动力强",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 2,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 2-2（法国 vs 英格兰，DeepSeek）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 英格兰 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 1,
+        "predictedAway": 3,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-3（法国 vs 英格兰，GPT-5 mini）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 法国 vs 英格兰 的全场比分与半场结果"
+      }
+    ]
+  },
+  {
+    "matchId": "M104",
+    "models": [
+      {
+        "model": "MiniMax",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（备选 1-0），半场平/胜 — 西班牙本届 6 胜 1 平不败，控球+反击双优",
+        "prompt": "请预测 西班牙 vs 阿根廷 的全场比分与半场结果",
+        "source": "fill_predictions_final_20260720"
+      },
+      {
+        "model": "claude",
+        "predictedHome": 1,
+        "predictedAway": 1,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 1-1（备选 1-0），半场平 — 决赛双方防守谨慎，加时分胜负",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 西班牙 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "Kimi",
+        "predictedHome": 1,
+        "predictedAway": 2,
+        "predictedWinner": "away",
+        "screenshots": [],
+        "note": "全场客胜 1-2（备选 1-2），半场平/负 — 梅西谢幕战 + 阿根廷顶级锋线把握力",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 西班牙 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "deepseek",
+        "predictedHome": 2,
+        "predictedAway": 1,
+        "predictedWinner": "home",
+        "screenshots": [],
+        "note": "全场主胜 2-1（西班牙 vs 阿根廷，DeepSeek）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 西班牙 vs 阿根廷 的全场比分与半场结果"
+      },
+      {
+        "model": "GPT-5 mini",
+        "predictedHome": 0,
+        "predictedAway": 0,
+        "predictedWinner": "draw",
+        "screenshots": [],
+        "note": "全场平 0-0（西班牙 vs 阿根廷，GPT-5 mini）",
+        "source": "fill_missing_predictions",
+        "prompt": "请预测 西班牙 vs 阿根廷 的全场比分与半场结果"
+      }
+    ]
   }
 ]
