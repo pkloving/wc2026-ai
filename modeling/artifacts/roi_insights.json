@@ -1,0 +1,1934 @@
+{
+  "generated_at": "2026-07-20T01:48:53.677Z",
+  "sample_size": 160,
+  "scope": "all",
+  "note": "",
+  "spf": {
+    "<1.5": {
+      "n": 25,
+      "home": 20,
+      "draw": 5,
+      "away": 0,
+      "null_result": 0,
+      "home_rate": 80,
+      "draw_rate": 20,
+      "away_rate": 0
+    },
+    "1.5-2.5": {
+      "n": 29,
+      "home": 15,
+      "draw": 10,
+      "away": 4,
+      "null_result": 0,
+      "home_rate": 51.7,
+      "draw_rate": 34.5,
+      "away_rate": 13.8
+    },
+    "2.5-5": {
+      "n": 12,
+      "home": 3,
+      "draw": 5,
+      "away": 4,
+      "null_result": 0,
+      "home_rate": 25,
+      "draw_rate": 41.7,
+      "away_rate": 33.3
+    },
+    "5+": {
+      "n": 13,
+      "home": 2,
+      "draw": 1,
+      "away": 10,
+      "null_result": 0,
+      "home_rate": 15.4,
+      "draw_rate": 7.7,
+      "away_rate": 76.9
+    }
+  },
+  "bf": {
+    "rules": [
+      {
+        "rule": "每场1个最低赔率",
+        "n": 97,
+        "hit": 17,
+        "hit_rate": 17.5,
+        "cost": 97,
+        "return": 88,
+        "roi": -9.3,
+        "avg_odds_hit": 5.18,
+        "small": ""
+      },
+      {
+        "rule": "每场3个最低赔率",
+        "n": 97,
+        "hit": 40,
+        "hit_rate": 41.2,
+        "cost": 291,
+        "return": 237.15,
+        "roi": -18.5,
+        "avg_odds_hit": 5.93,
+        "small": ""
+      },
+      {
+        "rule": "每场1个最高赔率",
+        "n": 97,
+        "hit": 0,
+        "hit_rate": 0,
+        "cost": 97,
+        "return": 0,
+        "roi": -100,
+        "avg_odds_hit": null,
+        "small": ""
+      },
+      {
+        "rule": "每场3个最高赔率",
+        "n": 97,
+        "hit": 0,
+        "hit_rate": 0,
+        "cost": 291,
+        "return": 0,
+        "roi": -100,
+        "avg_odds_hit": null,
+        "small": ""
+      },
+      {
+        "rule": "跟盘方向1个最低赔率",
+        "n": 97,
+        "hit": 17,
+        "hit_rate": 17.5,
+        "cost": 97,
+        "return": 88,
+        "roi": -9.3,
+        "avg_odds_hit": 5.18,
+        "small": ""
+      },
+      {
+        "rule": "跟盘方向3个最低赔率",
+        "n": 97,
+        "hit": 40,
+        "hit_rate": 41.2,
+        "cost": 291,
+        "return": 237.15,
+        "roi": -18.5,
+        "avg_odds_hit": 5.93,
+        "small": ""
+      },
+      {
+        "rule": "反方向1个最高赔率(25-65)",
+        "n": 93,
+        "hit": 1,
+        "hit_rate": 1.1,
+        "cost": 93,
+        "return": 32,
+        "roi": -65.6,
+        "avg_odds_hit": 32,
+        "small": ""
+      },
+      {
+        "rule": "反方向2个高赔率(25-65)",
+        "n": 93,
+        "hit": 2,
+        "hit_rate": 2.2,
+        "cost": 168,
+        "return": 64,
+        "roi": -61.9,
+        "avg_odds_hit": 32,
+        "small": ""
+      }
+    ],
+    "total_distribution": {
+      "0-1": {
+        "n": 17,
+        "actual_in": 17,
+        "rate": 100,
+        "small": ""
+      },
+      "2-3": {
+        "n": 51,
+        "actual_in": 51,
+        "rate": 100,
+        "small": ""
+      },
+      "4-5": {
+        "n": 21,
+        "actual_in": 21,
+        "rate": 100,
+        "small": ""
+      },
+      "6+": {
+        "n": 8,
+        "actual_in": 8,
+        "rate": 100,
+        "small": ""
+      }
+    }
+  },
+  "rqspf": {
+    "rules": [
+      {
+        "rule": "每场选最低赔率方向",
+        "n": 97,
+        "hit": 49,
+        "hit_rate": 50.5,
+        "cost": 97,
+        "return": 92.94,
+        "roi": -4.2,
+        "small": ""
+      },
+      {
+        "rule": "每场选最高赔率方向",
+        "n": 97,
+        "hit": 22,
+        "hit_rate": 22.7,
+        "cost": 97,
+        "return": 82.36,
+        "roi": -15.1,
+        "small": ""
+      },
+      {
+        "rule": "spf区间→rq方向(spf<1.5主/2.5+客/1.5-2.5平)",
+        "n": 79,
+        "hit": 33,
+        "hit_rate": 41.8,
+        "cost": 79,
+        "return": 83.35,
+        "roi": 5.5,
+        "small": ""
+      },
+      {
+        "rule": "每场选最低+次低两门",
+        "n": 97,
+        "hit": 75,
+        "hit_rate": 77.3,
+        "cost": 194,
+        "return": 172.95,
+        "roi": -10.9,
+        "small": ""
+      },
+      {
+        "rule": "跟handicap方向",
+        "n": 97,
+        "hit": 35,
+        "hit_rate": 36.1,
+        "cost": 97,
+        "return": 84.49,
+        "roi": -12.9,
+        "small": ""
+      },
+      {
+        "rule": "handicap>=2时让胜+让负两门",
+        "n": 97,
+        "hit": 42,
+        "hit_rate": 43.3,
+        "cost": 117,
+        "return": 103.64,
+        "roi": -11.4,
+        "small": ""
+      },
+      {
+        "rule": "漂移跟随: initial→last赔率下降最多方向",
+        "n": 97,
+        "hit": 37,
+        "hit_rate": 38.1,
+        "cost": 97,
+        "return": 84.99,
+        "roi": -12.4,
+        "small": ""
+      },
+      {
+        "rule": "固定买让胜(home) [n=97 主胜率38.1%]",
+        "n": 97,
+        "hit": 37,
+        "hit_rate": 38.1,
+        "cost": 97,
+        "return": 84.99,
+        "roi": -12.4,
+        "small": ""
+      },
+      {
+        "rule": "固定买让平(draw) [n=97 平率26.8%]",
+        "n": 97,
+        "hit": 26,
+        "hit_rate": 26.8,
+        "cost": 97,
+        "return": 93.17,
+        "roi": -3.9,
+        "small": ""
+      },
+      {
+        "rule": "固定买让负(away) [n=97 客率35.1%]",
+        "n": 97,
+        "hit": 34,
+        "hit_rate": 35.1,
+        "cost": 97,
+        "return": 77.15,
+        "roi": -20.5,
+        "small": ""
+      },
+      {
+        "rule": "固定买让胜+让平(主或平)",
+        "n": 97,
+        "hit": 63,
+        "hit_rate": 64.9,
+        "cost": 194,
+        "return": 178.16,
+        "roi": -8.2,
+        "small": ""
+      },
+      {
+        "rule": "固定买让胜+让负(主或客, 避开平)",
+        "n": 97,
+        "hit": 71,
+        "hit_rate": 73.2,
+        "cost": 194,
+        "return": 162.14,
+        "roi": -16.4,
+        "small": ""
+      },
+      {
+        "rule": "固定买让平+让负(平或客)",
+        "n": 97,
+        "hit": 60,
+        "hit_rate": 61.9,
+        "cost": 194,
+        "return": 170.32,
+        "roi": -12.2,
+        "small": ""
+      },
+      {
+        "rule": "固定买三门(保底)",
+        "n": 97,
+        "hit": 97,
+        "hit_rate": 100,
+        "cost": 291,
+        "return": 255.31,
+        "roi": -12.3,
+        "small": ""
+      },
+      {
+        "rule": "让胜纠偏: 初赔<1.5 (必买盘) 才买",
+        "n": 4,
+        "hit": 3,
+        "hit_rate": 75,
+        "cost": 4,
+        "return": 4.25,
+        "roi": 6.3,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "让胜纠偏: 初赔<1.8 (低赔率安全盘)",
+        "n": 17,
+        "hit": 11,
+        "hit_rate": 64.7,
+        "cost": 17,
+        "return": 17.65,
+        "roi": 3.8,
+        "small": ""
+      },
+      {
+        "rule": "让胜纠偏: 初赔1.5-2.0 (主流盘)",
+        "n": 19,
+        "hit": 12,
+        "hit_rate": 63.2,
+        "cost": 19,
+        "return": 20.97,
+        "roi": 10.4,
+        "small": ""
+      },
+      {
+        "rule": "让胜纠偏: 初赔>=2.0 (冷门盘跳过)",
+        "n": 74,
+        "hit": 22,
+        "hit_rate": 29.7,
+        "cost": 74,
+        "return": 59.77,
+        "roi": -19.2,
+        "small": ""
+      },
+      {
+        "rule": "让胜纠偏: 降赔看好 (last<initial*0.95)",
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "让胜纠偏: 升赔看衰 (last>initial*1.05) 跳过",
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "让胜纠偏: 降赔+低赔 (<1.8 且 降) 双重",
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "让平纠偏: 初赔>=3.0 才有赚头",
+        "n": 90,
+        "hit": 24,
+        "hit_rate": 26.7,
+        "cost": 90,
+        "return": 87.36,
+        "roi": -2.9,
+        "small": ""
+      },
+      {
+        "rule": "让平纠偏: 初赔>=3.5",
+        "n": 50,
+        "hit": 16,
+        "hit_rate": 32,
+        "cost": 50,
+        "return": 61.55,
+        "roi": 23.1,
+        "small": ""
+      },
+      {
+        "rule": "让平纠偏: 初赔>=4.0",
+        "n": 13,
+        "hit": 5,
+        "hit_rate": 38.5,
+        "cost": 13,
+        "return": 20.6,
+        "roi": 58.5,
+        "small": ""
+      },
+      {
+        "rule": "让平纠偏: 升赔看好 (last>initial)",
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "让胜+让平 纠偏: 组合min赔率<2.0",
+        "n": 23,
+        "hit": 18,
+        "hit_rate": 78.3,
+        "cost": 46,
+        "return": 35.84,
+        "roi": -22.1,
+        "small": ""
+      },
+      {
+        "rule": "让胜+让平 纠偏: 组合min赔率>=2.0",
+        "n": 74,
+        "hit": 45,
+        "hit_rate": 60.8,
+        "cost": 148,
+        "return": 142.32,
+        "roi": -3.8,
+        "small": ""
+      },
+      {
+        "rule": "让胜+让平 纠偏: 组合max赔率<3.0 (低赔不买)",
+        "n": 5,
+        "hit": 3,
+        "hit_rate": 60,
+        "cost": 10,
+        "return": 7.56,
+        "roi": -24.4,
+        "small": ""
+      },
+      {
+        "rule": "让胜+让平 纠偏: 组合max赔率>=3.5",
+        "n": 61,
+        "hit": 39,
+        "hit_rate": 63.9,
+        "cost": 122,
+        "return": 114.55,
+        "roi": -6.1,
+        "small": ""
+      },
+      {
+        "rule": "让胜+让负 纠偏: 组合min<2.5",
+        "n": 97,
+        "hit": 71,
+        "hit_rate": 73.2,
+        "cost": 194,
+        "return": 162.14,
+        "roi": -16.4,
+        "small": ""
+      },
+      {
+        "rule": "让胜+让负 纠偏: 升赔方向 (last更高=市场不看好该组合)",
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "small": "⚠️样本<5"
+      }
+    ],
+    "freq": {
+      "home": 37,
+      "draw": 26,
+      "away": 34,
+      "total": 97
+    },
+    "freqRate": {
+      "home": 38.1,
+      "draw": 26.8,
+      "away": 35.1
+    }
+  },
+  "zjq": {
+    "rules": [
+      {
+        "rule": "每场1个最低赔率总进球",
+        "n": 97,
+        "hit": 27,
+        "hit_rate": 27.8,
+        "cost": 97,
+        "return": 87,
+        "roi": -10.3,
+        "avg_odds_hit": 3.22,
+        "small": ""
+      },
+      {
+        "rule": "每场2个最低赔率总进球",
+        "n": 97,
+        "hit": 51,
+        "hit_rate": 52.6,
+        "cost": 194,
+        "return": 175.7,
+        "roi": -9.4,
+        "avg_odds_hit": 3.45,
+        "small": ""
+      },
+      {
+        "rule": "每场3个最低赔率总进球",
+        "n": 97,
+        "hit": 67,
+        "hit_rate": 69.1,
+        "cost": 291,
+        "return": 249,
+        "roi": -14.4,
+        "avg_odds_hit": 3.72,
+        "small": ""
+      },
+      {
+        "rule": "每场1个最高赔率总进球",
+        "n": 97,
+        "hit": 2,
+        "hit_rate": 2.1,
+        "cost": 97,
+        "return": 64,
+        "roi": -34,
+        "avg_odds_hit": 32,
+        "small": ""
+      },
+      {
+        "rule": "最低赔率→落在2-3区间? (含次低)",
+        "n": 97,
+        "hit": 51,
+        "hit_rate": 52.6,
+        "cost": 194,
+        "return": 175.7,
+        "roi": -9.4,
+        "avg_odds_hit": 3.45,
+        "small": ""
+      },
+      {
+        "rule": "强队让球→总进球多(>3)",
+        "n": 97,
+        "hit": 25,
+        "hit_rate": 25.8,
+        "cost": 97,
+        "return": 83.8,
+        "roi": -13.6,
+        "avg_odds_hit": 3.35,
+        "small": ""
+      },
+      {
+        "rule": "固定买0球 [频率6.2%]",
+        "keys": [
+          "0"
+        ],
+        "n": 97,
+        "hit": 6,
+        "hit_rate": 6.2,
+        "cost": 97,
+        "return": 105.2,
+        "roi": 8.5,
+        "avg_odds_hit": 17.53,
+        "small": ""
+      },
+      {
+        "rule": "固定买1球 [频率11.3%]",
+        "keys": [
+          "1"
+        ],
+        "n": 97,
+        "hit": 11,
+        "hit_rate": 11.3,
+        "cost": 97,
+        "return": 51.5,
+        "roi": -46.9,
+        "avg_odds_hit": 4.68,
+        "small": ""
+      },
+      {
+        "rule": "固定买2球 [频率28.9%]",
+        "keys": [
+          "2"
+        ],
+        "n": 97,
+        "hit": 28,
+        "hit_rate": 28.9,
+        "cost": 97,
+        "return": 97.4,
+        "roi": 0.4,
+        "avg_odds_hit": 3.48,
+        "small": ""
+      },
+      {
+        "rule": "固定买3球 [频率23.7%]",
+        "keys": [
+          "3"
+        ],
+        "n": 97,
+        "hit": 23,
+        "hit_rate": 23.7,
+        "cost": 97,
+        "return": 81.25,
+        "roi": -16.2,
+        "avg_odds_hit": 3.53,
+        "small": ""
+      },
+      {
+        "rule": "固定买4球 [频率14.4%]",
+        "keys": [
+          "4"
+        ],
+        "n": 97,
+        "hit": 14,
+        "hit_rate": 14.4,
+        "cost": 97,
+        "return": 75.45,
+        "roi": -22.2,
+        "avg_odds_hit": 5.39,
+        "small": ""
+      },
+      {
+        "rule": "固定买5球 [频率7.2%]",
+        "keys": [
+          "5"
+        ],
+        "n": 97,
+        "hit": 7,
+        "hit_rate": 7.2,
+        "cost": 97,
+        "return": 73.4,
+        "roi": -24.3,
+        "avg_odds_hit": 10.49,
+        "small": ""
+      },
+      {
+        "rule": "固定买6球 [频率7.2%]",
+        "keys": [
+          "6"
+        ],
+        "n": 97,
+        "hit": 7,
+        "hit_rate": 7.2,
+        "cost": 97,
+        "return": 131.8,
+        "roi": 35.9,
+        "avg_odds_hit": 18.83,
+        "small": ""
+      },
+      {
+        "rule": "固定买7+球 [频率1%]",
+        "keys": [
+          "7+"
+        ],
+        "n": 97,
+        "hit": 1,
+        "hit_rate": 1,
+        "cost": 97,
+        "return": 4.85,
+        "roi": -95,
+        "avg_odds_hit": 4.85,
+        "small": ""
+      },
+      {
+        "rule": "固定买0+1(超小球)",
+        "keys": [
+          "0",
+          "1"
+        ],
+        "n": 97,
+        "hit": 17,
+        "hit_rate": 17.5,
+        "cost": 194,
+        "return": 156.7,
+        "roi": -19.2,
+        "avg_odds_hit": 9.22,
+        "small": ""
+      },
+      {
+        "rule": "固定买1+2(最常见小球)",
+        "keys": [
+          "1",
+          "2"
+        ],
+        "n": 97,
+        "hit": 39,
+        "hit_rate": 40.2,
+        "cost": 194,
+        "return": 148.9,
+        "roi": -23.2,
+        "avg_odds_hit": 3.82,
+        "small": ""
+      },
+      {
+        "rule": "固定买0+1+2(保守小球)",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 97,
+        "hit": 45,
+        "hit_rate": 46.4,
+        "cost": 291,
+        "return": 254.1,
+        "roi": -12.7,
+        "avg_odds_hit": 5.65,
+        "small": ""
+      },
+      {
+        "rule": "固定买2+3(中等)",
+        "keys": [
+          "2",
+          "3"
+        ],
+        "n": 97,
+        "hit": 51,
+        "hit_rate": 52.6,
+        "cost": 194,
+        "return": 178.65,
+        "roi": -7.9,
+        "avg_odds_hit": 3.5,
+        "small": ""
+      },
+      {
+        "rule": "固定买1+2+3(中低球)",
+        "keys": [
+          "1",
+          "2",
+          "3"
+        ],
+        "n": 97,
+        "hit": 62,
+        "hit_rate": 63.9,
+        "cost": 291,
+        "return": 230.15,
+        "roi": -20.9,
+        "avg_odds_hit": 3.71,
+        "small": ""
+      },
+      {
+        "rule": "固定买2+3+4(中球)",
+        "keys": [
+          "2",
+          "3",
+          "4"
+        ],
+        "n": 97,
+        "hit": 65,
+        "hit_rate": 67,
+        "cost": 291,
+        "return": 254.1,
+        "roi": -12.7,
+        "avg_odds_hit": 3.91,
+        "small": ""
+      },
+      {
+        "rule": "固定买4+5(大球)",
+        "keys": [
+          "4",
+          "5"
+        ],
+        "n": 97,
+        "hit": 21,
+        "hit_rate": 21.6,
+        "cost": 194,
+        "return": 148.85,
+        "roi": -23.3,
+        "avg_odds_hit": 7.09,
+        "small": ""
+      },
+      {
+        "rule": "固定买4+5+6+7+(全大球)",
+        "keys": [
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 97,
+        "hit": 29,
+        "hit_rate": 29.9,
+        "cost": 388,
+        "return": 285.5,
+        "roi": -26.4,
+        "avg_odds_hit": 9.84,
+        "small": ""
+      },
+      {
+        "rule": "固定买3+4+5+6+7+(大球宽松)",
+        "keys": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 97,
+        "hit": 52,
+        "hit_rate": 53.6,
+        "cost": 485,
+        "return": 366.75,
+        "roi": -24.4,
+        "avg_odds_hit": 7.05,
+        "small": ""
+      },
+      {
+        "rule": "固定买0+1+2+3+4(全小球)",
+        "keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "n": 97,
+        "hit": 82,
+        "hit_rate": 84.5,
+        "cost": 485,
+        "return": 410.8,
+        "roi": -15.3,
+        "avg_odds_hit": 5.01,
+        "small": ""
+      },
+      {
+        "rule": "0+1+2 纠偏: 组合min赔率<1.5 (太冷门 跳过)",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "0+1+2 纠偏: 组合min赔率>=1.8 (主流盘)",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 97,
+        "hit": 45,
+        "hit_rate": 46.4,
+        "cost": 291,
+        "return": 254.1,
+        "roi": -12.7,
+        "avg_odds_hit": 5.65,
+        "small": ""
+      },
+      {
+        "rule": "0+1+2 纠偏: 2球初赔<3.0 (低赔=高信心)",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 13,
+        "hit": 9,
+        "hit_rate": 69.2,
+        "cost": 39,
+        "return": 37.05,
+        "roi": -5,
+        "avg_odds_hit": 4.12,
+        "small": ""
+      },
+      {
+        "rule": "0+1+2 纠偏: 2球初赔>=3.0 (冷门) 跳过",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 84,
+        "hit": 36,
+        "hit_rate": 42.9,
+        "cost": 252,
+        "return": 217.05,
+        "roi": -13.9,
+        "avg_odds_hit": 6.03,
+        "small": ""
+      },
+      {
+        "rule": "2球纠偏: 初赔<2.5 (信心盘)",
+        "keys": [
+          "2"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "2球纠偏: 初赔2.5-3.5 (主流盘)",
+        "keys": [
+          "2"
+        ],
+        "n": 48,
+        "hit": 15,
+        "hit_rate": 31.3,
+        "cost": 48,
+        "return": 45.9,
+        "roi": -4.4,
+        "avg_odds_hit": 3.06,
+        "small": ""
+      },
+      {
+        "rule": "2球纠偏: 初赔>=3.5 (冷门盘) 跳过",
+        "keys": [
+          "2"
+        ],
+        "n": 49,
+        "hit": 13,
+        "hit_rate": 26.5,
+        "cost": 49,
+        "return": 51.5,
+        "roi": 5.1,
+        "avg_odds_hit": 3.96,
+        "small": ""
+      },
+      {
+        "rule": "2球纠偏: 降赔看好 (last<initial)",
+        "keys": [
+          "2"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "4+5+6+7+ 纠偏: 4球赔率<3.0 (市场看好大球)",
+        "keys": [
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "4+5+6+7+ 纠偏: 4球赔率>=4.0 (市场看衰大球)",
+        "keys": [
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 89,
+        "hit": 26,
+        "hit_rate": 29.2,
+        "cost": 356,
+        "return": 267.9,
+        "roi": -24.7,
+        "avg_odds_hit": 10.3,
+        "small": ""
+      },
+      {
+        "rule": "4+5+6+7+ 纠偏: 7+球赔率>=15 (冷门信号)",
+        "keys": [
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 83,
+        "hit": 22,
+        "hit_rate": 26.5,
+        "cost": 332,
+        "return": 243.5,
+        "roi": -26.7,
+        "avg_odds_hit": 11.07,
+        "small": ""
+      },
+      {
+        "rule": "0+1+2 纠偏: |让球|<=1 才买 (势均力敌)",
+        "keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "n": 77,
+        "hit": 36,
+        "hit_rate": 46.8,
+        "cost": 231,
+        "return": 157.8,
+        "roi": -31.7,
+        "avg_odds_hit": 4.38,
+        "small": ""
+      },
+      {
+        "rule": "4+5+6+7+ 纠偏: |让球|>=2 才买 (强队压制)",
+        "keys": [
+          "4",
+          "5",
+          "6",
+          "7+"
+        ],
+        "n": 20,
+        "hit": 8,
+        "hit_rate": 40,
+        "cost": 80,
+        "return": 51.8,
+        "roi": -35.3,
+        "avg_odds_hit": 6.47,
+        "small": ""
+      }
+    ],
+    "freq": {
+      "0": 6,
+      "1": 11,
+      "2": 28,
+      "3": 23,
+      "4": 14,
+      "5": 7,
+      "6": 7,
+      "7+": 1
+    },
+    "freqRate": {
+      "0": 6.2,
+      "1": 11.3,
+      "2": 28.9,
+      "3": 23.7,
+      "4": 14.4,
+      "5": 7.2,
+      "6": 7.2,
+      "7+": 1
+    },
+    "total": 97,
+    "splits": [
+      {
+        "rule": "2球 [2.5, 3.5) 按分类",
+        "by_type": {
+          "NORMAL": {
+            "n": 37,
+            "hit": 13,
+            "hit_rate": 35.1,
+            "cost": 37,
+            "return": 39.5,
+            "roi": 6.8,
+            "small": ""
+          },
+          "BIG_BALL": {
+            "n": 5,
+            "hit": 0,
+            "hit_rate": 0,
+            "cost": 5,
+            "return": 0,
+            "roi": -100,
+            "small": ""
+          },
+          "WEAK_MATCH": {
+            "n": 6,
+            "hit": 2,
+            "hit_rate": 33.3,
+            "cost": 6,
+            "return": 6.4,
+            "roi": 6.7,
+            "small": ""
+          }
+        }
+      },
+      {
+        "rule": "4+5+6+7+ [无过滤] 按分类",
+        "by_type": {
+          "NORMAL": {
+            "n": 71,
+            "hit": 22,
+            "hit_rate": 31,
+            "cost": 284,
+            "return": 234.8,
+            "roi": -17.3,
+            "small": ""
+          },
+          "BIG_BALL": {
+            "n": 18,
+            "hit": 6,
+            "hit_rate": 33.3,
+            "cost": 72,
+            "return": 43.7,
+            "roi": -39.3,
+            "small": ""
+          },
+          "WEAK_MATCH": {
+            "n": 8,
+            "hit": 1,
+            "hit_rate": 12.5,
+            "cost": 32,
+            "return": 7,
+            "roi": -78.1,
+            "small": ""
+          }
+        }
+      },
+      {
+        "rule": "0+1+2 [无过滤] 按分类",
+        "by_type": {
+          "NORMAL": {
+            "n": 71,
+            "hit": 32,
+            "hit_rate": 45.1,
+            "cost": 213,
+            "return": 144.3,
+            "roi": -32.3,
+            "small": ""
+          },
+          "BIG_BALL": {
+            "n": 18,
+            "hit": 6,
+            "hit_rate": 33.3,
+            "cost": 54,
+            "return": 63.7,
+            "roi": 18,
+            "small": ""
+          },
+          "WEAK_MATCH": {
+            "n": 8,
+            "hit": 7,
+            "hit_rate": 87.5,
+            "cost": 24,
+            "return": 46.1,
+            "roi": 92.1,
+            "small": ""
+          }
+        }
+      }
+    ]
+  },
+  "bqc": {
+    "rules": [
+      {
+        "rule": "每场1个最低赔率半全场",
+        "n": 87,
+        "hit": 34,
+        "hit_rate": 39.1,
+        "cost": 87,
+        "return": 67.89,
+        "roi": -22,
+        "avg_odds_hit": 2,
+        "small": ""
+      },
+      {
+        "rule": "每场2个最低赔率半全场",
+        "n": 87,
+        "hit": 52,
+        "hit_rate": 59.8,
+        "cost": 174,
+        "return": 141.09,
+        "roi": -18.9,
+        "avg_odds_hit": 2.71,
+        "small": ""
+      },
+      {
+        "rule": "跟盘方向半全场(胜胜/负负/平平)",
+        "n": 87,
+        "hit": 31,
+        "hit_rate": 35.6,
+        "cost": 87,
+        "return": 56.99,
+        "roi": -34.5,
+        "avg_odds_hit": 1.84,
+        "small": ""
+      },
+      {
+        "rule": "handicap>=2→胜胜或负负(看赔率低者)",
+        "n": 17,
+        "hit": 10,
+        "hit_rate": 58.8,
+        "cost": 17,
+        "return": 13.24,
+        "roi": -22.1,
+        "avg_odds_hit": 1.32,
+        "small": ""
+      },
+      {
+        "rule": "每场3个最低赔率半全场",
+        "n": 87,
+        "hit": 68,
+        "hit_rate": 78.2,
+        "cost": 261,
+        "return": 255.19,
+        "roi": -2.2,
+        "avg_odds_hit": 3.75,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜胜 [频率23%]",
+        "keys": [
+          "胜胜"
+        ],
+        "n": 87,
+        "hit": 20,
+        "hit_rate": 23,
+        "cost": 87,
+        "return": 45.4,
+        "roi": -47.8,
+        "avg_odds_hit": 2.27,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜平 [频率4.6%]",
+        "keys": [
+          "胜平"
+        ],
+        "n": 87,
+        "hit": 4,
+        "hit_rate": 4.6,
+        "cost": 87,
+        "return": 69.5,
+        "roi": -20.1,
+        "avg_odds_hit": 17.38,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜负 [频率2.3%]",
+        "keys": [
+          "胜负"
+        ],
+        "n": 87,
+        "hit": 2,
+        "hit_rate": 2.3,
+        "cost": 87,
+        "return": 49,
+        "roi": -43.7,
+        "avg_odds_hit": 24.5,
+        "small": ""
+      },
+      {
+        "rule": "固定买平胜 [频率25.3%]",
+        "keys": [
+          "平胜"
+        ],
+        "n": 87,
+        "hit": 22,
+        "hit_rate": 25.3,
+        "cost": 87,
+        "return": 112.7,
+        "roi": 29.5,
+        "avg_odds_hit": 5.12,
+        "small": ""
+      },
+      {
+        "rule": "固定买平平 [频率16.1%]",
+        "keys": [
+          "平平"
+        ],
+        "n": 87,
+        "hit": 14,
+        "hit_rate": 16.1,
+        "cost": 87,
+        "return": 100.65,
+        "roi": 15.7,
+        "avg_odds_hit": 7.19,
+        "small": ""
+      },
+      {
+        "rule": "固定买平负 [频率9.2%]",
+        "keys": [
+          "平负"
+        ],
+        "n": 87,
+        "hit": 8,
+        "hit_rate": 9.2,
+        "cost": 87,
+        "return": 46.4,
+        "roi": -46.7,
+        "avg_odds_hit": 5.8,
+        "small": ""
+      },
+      {
+        "rule": "固定买负胜 [频率1.1%]",
+        "keys": [
+          "负胜"
+        ],
+        "n": 87,
+        "hit": 1,
+        "hit_rate": 1.1,
+        "cost": 87,
+        "return": 30,
+        "roi": -65.5,
+        "avg_odds_hit": 30,
+        "small": ""
+      },
+      {
+        "rule": "固定买负平 [频率3.4%]",
+        "keys": [
+          "负平"
+        ],
+        "n": 87,
+        "hit": 3,
+        "hit_rate": 3.4,
+        "cost": 87,
+        "return": 60.5,
+        "roi": -30.5,
+        "avg_odds_hit": 20.17,
+        "small": ""
+      },
+      {
+        "rule": "固定买负负 [频率14.9%]",
+        "keys": [
+          "负负"
+        ],
+        "n": 87,
+        "hit": 13,
+        "hit_rate": 14.9,
+        "cost": 87,
+        "return": 28.09,
+        "roi": -67.7,
+        "avg_odds_hit": 2.16,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜胜+平平(主+平二选一)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 87,
+        "hit": 34,
+        "hit_rate": 39.1,
+        "cost": 174,
+        "return": 146.05,
+        "roi": -16.1,
+        "avg_odds_hit": 4.3,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜胜+平平+负负(跟盘向三选一)",
+        "keys": [
+          "胜胜",
+          "平平",
+          "负负"
+        ],
+        "n": 87,
+        "hit": 47,
+        "hit_rate": 54,
+        "cost": 261,
+        "return": 174.14,
+        "roi": -33.3,
+        "avg_odds_hit": 3.71,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜胜+胜平+平胜+平平(主/平主导4选)",
+        "keys": [
+          "胜胜",
+          "胜平",
+          "平胜",
+          "平平"
+        ],
+        "n": 87,
+        "hit": 60,
+        "hit_rate": 69,
+        "cost": 348,
+        "return": 328.25,
+        "roi": -5.7,
+        "avg_odds_hit": 5.47,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜胜+胜负(主队半场赢后任意)",
+        "keys": [
+          "胜胜",
+          "胜负"
+        ],
+        "n": 87,
+        "hit": 22,
+        "hit_rate": 25.3,
+        "cost": 174,
+        "return": 94.4,
+        "roi": -45.7,
+        "avg_odds_hit": 4.29,
+        "small": ""
+      },
+      {
+        "rule": "固定买负胜+负平+负负(客队半场输后任意)",
+        "keys": [
+          "负胜",
+          "负平",
+          "负负"
+        ],
+        "n": 87,
+        "hit": 17,
+        "hit_rate": 19.5,
+        "cost": 261,
+        "return": 118.59,
+        "roi": -54.6,
+        "avg_odds_hit": 6.98,
+        "small": ""
+      },
+      {
+        "rule": "固定买平胜+平平+平负(半场平后任意)",
+        "keys": [
+          "平胜",
+          "平平",
+          "平负"
+        ],
+        "n": 87,
+        "hit": 44,
+        "hit_rate": 50.6,
+        "cost": 261,
+        "return": 259.75,
+        "roi": -0.5,
+        "avg_odds_hit": 5.9,
+        "small": ""
+      },
+      {
+        "rule": "固定买胜平+平平(半场赢后平+半场平后平)",
+        "keys": [
+          "胜平",
+          "平平"
+        ],
+        "n": 87,
+        "hit": 18,
+        "hit_rate": 20.7,
+        "cost": 174,
+        "return": 170.15,
+        "roi": -2.2,
+        "avg_odds_hit": 9.45,
+        "small": ""
+      },
+      {
+        "rule": "固定买平平+平负(半场平后客胜)",
+        "keys": [
+          "平平",
+          "平负"
+        ],
+        "n": 87,
+        "hit": 22,
+        "hit_rate": 25.3,
+        "cost": 174,
+        "return": 147.05,
+        "roi": -15.5,
+        "avg_odds_hit": 6.68,
+        "small": ""
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 组合avg赔率<2.5 (低赔率场 跳过)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 组合avg赔率2.5-4.0 (主流盘)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 16,
+        "hit": 5,
+        "hit_rate": 31.3,
+        "cost": 32,
+        "return": 18.7,
+        "roi": -41.6,
+        "avg_odds_hit": 3.74,
+        "small": ""
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 组合avg赔率>=4.0 (冷门盘)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 71,
+        "hit": 29,
+        "hit_rate": 40.8,
+        "cost": 142,
+        "return": 127.35,
+        "roi": -10.3,
+        "avg_odds_hit": 4.39,
+        "small": ""
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 胜胜赔率<2.0 (市场看好主队赢到底)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 27,
+        "hit": 19,
+        "hit_rate": 70.4,
+        "cost": 54,
+        "return": 80.78,
+        "roi": 49.6,
+        "avg_odds_hit": 4.25,
+        "small": ""
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 平平赔率>=3.5 (市场看衰全平)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 86,
+        "hit": 33,
+        "hit_rate": 38.4,
+        "cost": 172,
+        "return": 142.85,
+        "roi": -16.9,
+        "avg_odds_hit": 4.33,
+        "small": ""
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 胜胜降赔 (last<initial*0.95)",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "胜胜+平平 纠偏: 升赔方向 (last都升) 跳过",
+        "keys": [
+          "胜胜",
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "胜胜+胜平+平胜+平平 纠偏: 组合avg赔率<2.0",
+        "keys": [
+          "胜胜",
+          "胜平",
+          "平胜",
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "胜胜+胜平+平胜+平平 纠偏: 组合avg赔率2.0-3.0",
+        "keys": [
+          "胜胜",
+          "胜平",
+          "平胜",
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "胜胜+胜平+平胜+平平 纠偏: 组合avg赔率>=3.0",
+        "keys": [
+          "胜胜",
+          "胜平",
+          "平胜",
+          "平平"
+        ],
+        "n": 87,
+        "hit": 60,
+        "hit_rate": 69,
+        "cost": 348,
+        "return": 328.25,
+        "roi": -5.7,
+        "avg_odds_hit": 5.47,
+        "small": ""
+      },
+      {
+        "rule": "胜胜纠偏: 初赔<1.5 (必买盘) 才买",
+        "keys": [
+          "胜胜"
+        ],
+        "n": 10,
+        "hit": 6,
+        "hit_rate": 60,
+        "cost": 10,
+        "return": 7.89,
+        "roi": -21.1,
+        "avg_odds_hit": 1.31,
+        "small": ""
+      },
+      {
+        "rule": "胜胜纠偏: 初赔1.5-2.5 (主流盘)",
+        "keys": [
+          "胜胜"
+        ],
+        "n": 25,
+        "hit": 10,
+        "hit_rate": 40,
+        "cost": 25,
+        "return": 19.12,
+        "roi": -23.5,
+        "avg_odds_hit": 1.91,
+        "small": ""
+      },
+      {
+        "rule": "胜胜纠偏: 降赔看好 (last<initial*0.95)",
+        "keys": [
+          "胜胜"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "平平纠偏: 初赔>=4.0 (市场看衰全平=有赚头)",
+        "keys": [
+          "平平"
+        ],
+        "n": 83,
+        "hit": 12,
+        "hit_rate": 14.5,
+        "cost": 83,
+        "return": 93.75,
+        "roi": 13,
+        "avg_odds_hit": 7.81,
+        "small": ""
+      },
+      {
+        "rule": "平平纠偏: 初赔>=5.0",
+        "keys": [
+          "平平"
+        ],
+        "n": 69,
+        "hit": 9,
+        "hit_rate": 13,
+        "cost": 69,
+        "return": 80.15,
+        "roi": 16.2,
+        "avg_odds_hit": 8.91,
+        "small": ""
+      },
+      {
+        "rule": "平平纠偏: 升赔看好 (last>initial)",
+        "keys": [
+          "平平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      },
+      {
+        "rule": "负平纠偏: 初赔>=8 (大冷门盘)",
+        "keys": [
+          "负平"
+        ],
+        "n": 87,
+        "hit": 3,
+        "hit_rate": 3.4,
+        "cost": 87,
+        "return": 60.5,
+        "roi": -30.5,
+        "avg_odds_hit": 20.17,
+        "small": ""
+      },
+      {
+        "rule": "负平纠偏: 初赔<5 (热门盘 跳过)",
+        "keys": [
+          "负平"
+        ],
+        "n": 0,
+        "hit": 0,
+        "hit_rate": null,
+        "cost": 0,
+        "return": 0,
+        "roi": null,
+        "avg_odds_hit": null,
+        "small": "⚠️样本<5"
+      }
+    ],
+    "freq": {
+      "胜胜": 20,
+      "胜平": 4,
+      "胜负": 2,
+      "平胜": 22,
+      "平平": 14,
+      "平负": 8,
+      "负胜": 1,
+      "负平": 3,
+      "负负": 13
+    },
+    "freqRate": {
+      "胜胜": 23,
+      "胜平": 4.6,
+      "胜负": 2.3,
+      "平胜": 25.3,
+      "平平": 16.1,
+      "平负": 9.2,
+      "负胜": 1.1,
+      "负平": 3.4,
+      "负负": 14.9
+    },
+    "total": 87,
+    "splits": [
+      {
+        "rule": "胜胜+平平 [胜胜<2.0] 按分类",
+        "by_type": {
+          "NORMAL": {
+            "n": 18,
+            "hit": 10,
+            "hit_rate": 55.6,
+            "cost": 36,
+            "return": 33.73,
+            "roi": -6.3,
+            "small": ""
+          },
+          "BIG_BALL": {
+            "n": 8,
+            "hit": 8,
+            "hit_rate": 100,
+            "cost": 16,
+            "return": 34.05,
+            "roi": 112.8,
+            "small": ""
+          },
+          "WEAK_MATCH": {
+            "n": 1,
+            "hit": 1,
+            "hit_rate": 100,
+            "cost": 2,
+            "return": 13,
+            "roi": 550,
+            "small": "⚠️样本<5"
+          }
+        }
+      }
+    ]
+  },
+  "single_bet": [
+    {
+      "rule": "单关: 反方向1个25-65",
+      "n": 93,
+      "hit": 1,
+      "hit_rate": 1.1,
+      "cost": 93,
+      "return": 32,
+      "roi": -65.6,
+      "avg_odds_hit": 32,
+      "small": ""
+    },
+    {
+      "rule": "单关: 反方向2个25-65",
+      "n": 93,
+      "hit": 2,
+      "hit_rate": 2.2,
+      "cost": 168,
+      "return": 64,
+      "roi": -61.9,
+      "avg_odds_hit": 32,
+      "small": ""
+    },
+    {
+      "rule": "单关: 任意1个25-50",
+      "n": 93,
+      "hit": 1,
+      "hit_rate": 1.1,
+      "cost": 93,
+      "return": 32,
+      "roi": -65.6,
+      "avg_odds_hit": 32,
+      "small": ""
+    },
+    {
+      "rule": "单关: 任意2个25-50",
+      "n": 93,
+      "hit": 2,
+      "hit_rate": 2.2,
+      "cost": 158,
+      "return": 59,
+      "roi": -62.7,
+      "avg_odds_hit": 29.5,
+      "small": ""
+    }
+  ],
+  "drift": {
+    "home_drop": {
+      "n": 0,
+      "hit": 0,
+      "sum_odds": 0,
+      "home_rate": null,
+      "roi": null,
+      "small": "⚠️样本<5"
+    },
+    "home_rise": {
+      "n": 0,
+      "hit": 0,
+      "sum_odds": 0,
+      "home_rate": null,
+      "roi": null,
+      "small": "⚠️样本<5"
+    },
+    "home_flat": {
+      "n": 79,
+      "hit": 40,
+      "sum_odds": 75.27999999999999,
+      "home_rate": 50.6,
+      "roi": -4.7,
+      "small": ""
+    }
+  },
+  "handicap": {
+    "平手": {
+      "n": 0,
+      "home": 0,
+      "draw": 0,
+      "away": 0,
+      "home_rate": null,
+      "draw_rate": null,
+      "away_rate": null,
+      "small": ""
+    },
+    "让1球": {
+      "n": 77,
+      "home": 31,
+      "draw": 19,
+      "away": 27,
+      "home_rate": 40.3,
+      "draw_rate": 24.7,
+      "away_rate": 35.1,
+      "small": ""
+    },
+    "让2球": {
+      "n": 18,
+      "home": 5,
+      "draw": 6,
+      "away": 7,
+      "home_rate": 27.8,
+      "draw_rate": 33.3,
+      "away_rate": 38.9,
+      "small": ""
+    },
+    "让3球+": {
+      "n": 2,
+      "home": 1,
+      "draw": 1,
+      "away": 0,
+      "home_rate": 50,
+      "draw_rate": 50,
+      "away_rate": 0,
+      "small": "⚠️样本<5"
+    }
+  },
+  "top_advices": [
+    "spf 主胜赔率<1.5: 主胜命中20/25=80% (平20% 客0%)",
+    "spf 主胜赔率1.5-2.5: 主胜命中15/29=51.7% (平34.5% 客13.8%)",
+    "spf 主胜赔率2.5-5: 主胜命中3/12=25% (平41.7% 客33.3%)",
+    "spf 主胜赔率5+: 主胜命中2/13=15.4% (平7.7% 客76.9%)",
+    "bf 规则「每场1个最低赔率」: 命中17/97=17.5%, ROI=-9.3% ",
+    "bf 规则「跟盘方向1个最低赔率」: 命中17/97=17.5%, ROI=-9.3% ",
+    "bf 规则「每场3个最低赔率」: 命中40/97=41.2%, ROI=-18.5% ",
+    "实际总进球落在0-1: 17/17=100% ",
+    "实际总进球落在2-3: 51/51=100% ",
+    "实际总进球落在4-5: 21/21=100% ",
+    "实际总进球落在6+: 8/8=100% ",
+    "rqspf「让平纠偏: 初赔>=4.0」: 命中5/13=38.5%, ROI=58.5% ",
+    "rqspf「让平纠偏: 初赔>=3.5」: 命中16/50=32%, ROI=23.1% ",
+    "rqspf「让胜纠偏: 初赔1.5-2.0 (主流盘)」: 命中12/19=63.2%, ROI=10.4% ",
+    "zjq「固定买6球 [频率7.2%]」: 命中7/97=7.2%, ROI=35.9% ",
+    "zjq「固定买0球 [频率6.2%]」: 命中6/97=6.2%, ROI=8.5% ",
+    "zjq「2球纠偏: 初赔>=3.5 (冷门盘) 跳过」: 命中13/49=26.5%, ROI=5.1% ",
+    "bqc「胜胜+平平 纠偏: 胜胜赔率<2.0 (市场看好主队赢到底)」: 命中19/27=70.4%, ROI=49.6% ",
+    "bqc「固定买平胜 [频率25.3%]」: 命中22/87=25.3%, ROI=29.5% ",
+    "bqc「平平纠偏: 初赔>=5.0」: 命中9/69=13%, ROI=16.2% ",
+    "单关「单关: 反方向2个25-65」: 命中2/93=2.2%, ROI=-61.9% ",
+    "单关「单关: 任意2个25-50」: 命中2/93=2.2%, ROI=-62.7% ",
+    "单关「单关: 反方向1个25-65」: 命中1/93=1.1%, ROI=-65.6% ",
+    "spf home_flat: 主胜命中40/79=50.6%, ROI=-4.7% ",
+    "让球让1球: 主40.3% 平24.7% 客35.1% (n=77) ",
+    "让球让2球: 主27.8% 平33.3% 客38.9% (n=18) "
+  ]
+}

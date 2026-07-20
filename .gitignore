@@ -14,9 +14,15 @@ data/temp/
 
 .vercel
 
+# Python build cache
+__pycache__/
+*.pyc
+*.pyo
+
 # modeling artifacts: 只进 predict_*.json + chat_predict_*.json
 # 其它（backtest_*/model/insights）现场跑就行，不进 git
 modeling/artifacts/*
 !modeling/artifacts/predict_*.json
 !modeling/artifacts/chat_predict_*.json
 !modeling/artifacts/.gitkeep
+!modeling/artifacts/roi_insights.json
