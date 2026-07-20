@@ -16,7 +16,15 @@ export const DEFAULT_PARAMS = {
   f4: {
     mainCount: 3,
     bigBall: { totalMin: 4, safeOddsMax: 12, midLo: 12, midHi: 25, highLo: 15, highHi: 40 },
-    weak:    { totalMin: 1, totalMax: 4, coreLo: 10, coreHi: 30, coreCount: 2, upsetLo: 30, upsetHi: 50 },
+    // 2026-07-12 调优 (sampled 2040235 捷克 1-1 南非 hc=-1, type=WEAK_MATCH):
+    //   WEAK 主池 7-5 log 实证 14 场 3/42 hit ROI -94.6%, 实际比分 0:1/1:1/1:0/2:0 偏"低赔共识"
+    //   旧 corePicks 按 odds DESC 排序 + take 2 → 永远取 [5, 30] 区间高 odds (0:2=28 / 3:2=27)
+    //   实际 1:1@6.3 永远不在 (1:1 odds=6.3 在 [5,30] 区间但 DESC 取不到, 只能 ASC 取)
+    //   加 sortDir 旋钮 ['asc','desc'], 默认 'desc' 保留 31 行为不变, 33_fit 验证 asc 是否更优
+    //   asc 时: corePicks 取 [5, 30] 区间低 odds first (2:1/2:0/1:1/1:0), upsetPick 仍 odds in (30, 50]
+    //   注: asc 跟 7-5 加的 coreCount 旋钮 (frozen=false) 组合, 33_fit 自由 fit
+    //   默认 coreLo=10 跟 6-24 log 之前一致 (实际生效值由 strategy_params.json 覆盖为 5)
+    weak:    { totalMin: 1, totalMax: 4, coreLo: 10, coreHi: 30, coreCount: 2, upsetLo: 30, upsetHi: 50, sortDir: 'desc' },
     // 2026-07-03 调优 (sampled 2040337 BRA vs JPN 2-1 hc=-1):
     // 扩 favWinPick total 上限 2 → 3, 让 2:1/3:0/3:1 (主受让庄家低赔主胜) 进入主池
     // 旧 1-2 漏 2:1@5.8 (lowest odds 主胜), 26场主胜 7/13 实际落在 total 1-3
@@ -24,6 +32,17 @@ export const DEFAULT_PARAMS = {
   },
   rqspf: {
     favHomeLo: 1.5, favHomeHi: 2.0,
+    // 2026-07-13 调优 (sampled 2040290 CZEvsMEX hc=+1, 抽样后 audit 4 场样本):
+    //   6-21 加的"晋级信号"主队→让胜 + 客队→让负规则在 n=4 实际表现:
+    //     主队: 1/4 = 25% 命中 (3 误: 2040249 乌拉圭vs佛得角 hc=-1, 2040290 CZE 0-3 MEX, 2040300 URU 0-1 ESP)
+    //     客队: 0/1 = 0% 命中 (2040176 沙特 2-1 乌拉圭 hc=+1)
+    //   3 个误中 2 个对手 low pressure (MEX/ESP 已 9 分出线) → "对手已轮换"假设错
+    //   综合 ROI: (1 * 2.35 + 0 * 0) - 5 = -2.65 → -53% ROI
+    //   跟 6-29 G 规则 (主+平双选) 同样是 n=3-6 抽样 overfit 后扩 n=19 大幅退化
+    //   默认 0 = 关闭, 33_fit 验证 frozen=true 锁住 (避免 7 月数据自动激活)
+    //   跟 6-30 hcPlus2AwayTrap 同样 frozen=true 保护 (n=3 子桶 overfit 风险最高)
+    //   注: 跟 zjq.qualSignalEnabled (同期 6-21 加) 是同源 overfit, 一起关
+    qualSignalEnabled: 0,
     // 暂未启用: spf 大热门主队 (spf.home < spfFavHomeMax) → 跟让胜
     // 2026 数据: 8 场样本, 加规则后命中率 6/8=75% (vs 基线 7/8=87.5%), 净亏
     // 原因: spf<1.5 时 rq 让胜赔率多数已经最低, 基线已选对, 强制让胜反而打错 1 场
@@ -60,6 +79,15 @@ export const DEFAULT_PARAMS = {
   },
   zjq: {
     normalTwoLo: 2.5, normalTwoHi: 3.5,
+    // 2026-07-13 调优 (sampled 2040290 CZEvsMEX hc=+1, 抽样后 audit 10 场样本):
+    //   6-21 加的"晋级信号→高压力NORMAL→2球"在 n=10 实际表现:
+    //     3/10 = 30% 命中 (7 误: 2040177 IRN 4 球, 2040237 CAN 6 球, 2040249 URU 4 球,
+    //                       2040250 NZL 4 球, 2040286 BIH 4 球, 2040290 CZE 3 球, 2040300 URU 1 球)
+    //   多数 miss 在 3-4 球 (总进球分布倾向), 跟 2 球主流盘赔率 (3.1) 期望不符
+    //   综合 ROI: (3 * 3.27 avg) - 10 = -0.19 → -1.9% ROI (略负)
+    //   跟 rqspf.qualSignalEnabled 是同源 overfit (6-21 一同加), 一起关
+    //   默认 0 = 关闭, frozen=true 锁住 (避免 7 月数据自动激活)
+    qualSignalEnabled: 0,
     // 2026-06-26 调优 (sampled 2040285 瑞士 2-1 加拿大 hc=-1 走盘):
     // 2 球纠偏在 rq.away<1.6 (让负热门) 场景下 0/2 命中 (n=2 ROI -100%)
     // 排除后剩余 n=13 ROI +18.5%, 命中率从 33.3% → 38.5%
@@ -146,6 +174,14 @@ export const DEFAULT_PARAMS = {
     cat3: {
       oddsThreshold: 25,           // 主池里任何一个比分 >= 此阈值即出单关
       maxPerMatch: 1,              // 每场最多出几个 (命中就 1 个, 此值实际为是否多挑)
+      // 2026-07-16 调优 (sampled 2040346 FRA 3-0 SWE hc=-1):
+      //   NORMAL+hc<0 扩展规则 (4-1/4-0/5-1/4-2 in [20, 100]) 在 spf.home<1.3 强主队子桶
+      //   0/10 命中 ROI -100% (抽样 2040346 出 4:2@25 实际 3:0 错)
+      //   非强主队子桶 3/30 命中 ROI +406.7% (高赔爆冷赚)
+      //   机制: 强主队 (spf 大热门) 实际比分集中在 2-0/3-0/3-1 (low-mid odds), 4-1/4-0/5-1/4-2
+      //         (high odds) 实际罕见, 不出 cat3 扩展避免噪声
+      //   加 normalHcMinusExtended.spfMax=1.3 (>=1.3 才触发), 跟 7-6 改的 4 场样本 spf.home>=1.5 一致
+      normalHcMinusExtended: { enabled: 1, spfMax: 1.3 },
     },
     // 类别4: 单关 zjq —— 仅在"zjq策略给出纠偏推荐 (corrected 存在)"时出单关
     cat4: {
@@ -185,6 +221,13 @@ export const SEARCH_SPACE = [
   { path: 'f4.weak.coreCount',             values: [0, 1, 2] },
   { path: 'f4.weak.coreLo',               values: [8, 10, 12] },
   { path: 'f4.weak.coreHi',               values: [25, 30, 35] },
+  // 2026-07-12 调优 (sampled 2040235 捷克 1-1 南非, WEAK):
+  //   7-5 加 coreCount 后 WEAK 主池仍 3/14 hit, 实际比分偏"低赔共识" (0:1/1:1/1:0/2:0)
+  //   加 sortDir 旋钮让 33_fit 验证 asc 是否显著优于 desc
+  //   asc: corePicks 取 [coreLo, coreHi] 区间低 odds first, upsetPick 不变
+  //   desc (旧): 取高 odds first, 7-5 log 实证 -94.6% ROI
+  //   default='desc' 保留 31 行为, 33_fit 自由 fit
+  { path: 'f4.weak.sortDir',              values: ['asc', 'desc'] },
   { path: 'f4.normal.upsetOddsLo',        values: [6, 7, 8] },
   { path: 'f4.normal.upsetOddsHi',        values: [13, 15, 18] },
   { path: 'f4.normal.draw2OddsMax',       values: [12, 15, 20] },
@@ -194,6 +237,11 @@ export const SEARCH_SPACE = [
   { path: 'zjq.normalTwoHi',              values: [3.3, 3.5, 3.7] },
   // 2026-06-26: 加 normalTwoRqAwayMin 旋钮 (0=关闭过滤, 1.5/1.6=温和过滤, 1.8/2.0=严格)
   { path: 'zjq.normalTwoRqAwayMin',       values: [0, 1.5, 1.6, 1.8] },
+  // 2026-07-13 调优 (sampled 2040290 CZEvsMEX hc=+1, audit n=10):
+  //   加 zjq.qualSignalEnabled 旋钮 (高压力NORMAL→2球 晋级信号)
+  //   audit: 3/10=30% 命中 (ROI -1.9%), 多数 miss 3-4 球 → 默认 0 关闭
+  //   跟 rqspf.qualSignalEnabled 同源 6-21 一同加, 一起关 + frozen=true 锁住
+  { path: 'zjq.qualSignalEnabled',         values: [0, 1], frozen: true },
   { path: 'bqc.ssMax',                    values: [1.8, 2.0, 2.2] },
   // 2026-06-27: 加 hcMinus1AwayTrap 旋钮 (主让-1 走盘陷阱)
   //   minOdds 范围: 0=关闭, 1.4/1.5/1.6 主流盘过滤
@@ -214,6 +262,11 @@ export const SEARCH_SPACE = [
   // 2026-07-02 调优: 同样 frozen=true (n=3 子桶, overfit 风险最高)
   { path: 'rqspf.hcPlus2AwayTrap.minOdds', values: [0, 1.4, 1.5, 1.6], frozen: true },
   { path: 'rqspf.hcPlus2AwayTrap.maxOdds', values: [0, 1.8, 2.0, 2.2], frozen: true },
+  // 2026-07-13 调优 (sampled 2040290 CZEvsMEX hc=+1, audit n=4 主队 / n=1 客队):
+  //   加 rqspf.qualSignalEnabled 旋钮 (主队高压力→让胜 + 客队高压力→让负 晋级信号)
+  //   audit: 主队 1/4=25% 命中 (ROI -53%), 客队 0/1=0% 命中 → 默认 0 关闭
+  //   跟 6-29 G 规则 + 6-30 hcPlus2AwayTrap 同样 frozen=true (n<5 子桶 overfit 风险)
+  { path: 'rqspf.qualSignalEnabled',         values: [0, 1], frozen: true },
   // --- 单关 (类别3 间接影响: 单关数量越少, ROI 越靠真信号) ---
   { path: 'single.bigBall.oddsLo',        values: [20, 25, 30] },
   { path: 'single.bigBall.oddsHi',        values: [55, 65, 75] },
@@ -228,6 +281,13 @@ export const SEARCH_SPACE = [
   { path: 'picker.cat2.pickMode',         values: ['low2', 'outer2', 'mid+low', 'high2'] },
   { path: 'picker.cat2.topN',             values: [2, 3] },
   { path: 'picker.cat3.oddsThreshold',    values: [20, 25, 35, 50] },
+  // 2026-07-16 调优 (sampled 2040346 FRA 3-0 SWE hc=-1):
+  //   cat3 NORMAL+hc<0 扩展规则 强主队子桶 0/10 中 ROI -100% (实际比分集中 2-0/3-0/3-1)
+  //   非强主队子桶 3/30 中 ROI +406.7% (高赔爆冷赚)
+  //   加 normalHcMinusExtended.spfMax 旋钮, 让 33_fit 验证最优阈值
+  //   范围: 1.0=几乎不限制 (几乎所有 hc<0 主队都触发), 1.3=过滤强主队 (本日实证), 1.5=严格 (仅 1.5+ 触发)
+  { path: 'picker.cat3.normalHcMinusExtended.spfMax', values: [1.0, 1.3, 1.5, 2.0] },
+  { path: 'picker.cat3.normalHcMinusExtended.enabled', values: [0, 1] },
 ];
 
 // 深拷贝 + 按路径读写
@@ -452,7 +512,13 @@ export function f4Strategy(m, ctx) {
     mainPicks = mainPicks.slice(0, P.mainCount);
   } else if (type === 'WEAK_MATCH') {
     const w = P.weak;
-    const mainPool = all.filter(s => s.total >= w.totalMin && s.total <= w.totalMax).sort((a, c) => c.odds - a.odds);
+    // 2026-07-12 调优 (sampled 2040235 捷克 1-1 南非 hc=-1):
+    //   WEAK 主池 sortDir 旋钮, 默认 'desc' 保留 31 行为
+    //   asc 模式: corePicks 取 [coreLo, coreHi] 区间低 odds first (低赔共识)
+    //   desc 模式 (旧): 取高 odds first (中赔爆冷), 7-5 log 实证 14 场 3/42 hit ROI -94.6%
+    //   33_fit 验证 asc 是否显著优于 desc
+    const sortAsc = w.sortDir === 'asc';
+    const mainPool = all.filter(s => s.total >= w.totalMin && s.total <= w.totalMax).sort((a, c) => sortAsc ? a.odds - c.odds : c.odds - a.odds);
     const corePicks = mainPool.filter(s => s.odds >= w.coreLo && s.odds <= w.coreHi).slice(0, w.coreCount);
     const upsetPick = mainPool.filter(s => s.odds > w.upsetLo && s.odds <= w.upsetHi)[0];
     mainPicks = corePicks.concat(upsetPick ? [upsetPick] : []);
@@ -536,8 +602,9 @@ export function rqspfStrategy(m, ctx) {
   // 信号① (2026-06-21 新增: 晋级信号融合 — 优先级最高)
   // 主队 high/medium-high 压力 + 让胜赔率 1.3-2.4 → 倾向让胜
   // 例: 荷兰vs瑞典(荷兰需抢分) / 德国vs科特迪瓦(德国需巩固头名)
+  // 2026-07-13 调优 (sampled 2040290): n=4 实际命中 1/4 = 25% (ROI -53%) → 默认关闭
   const triggerLevels = ['high', 'very-high', 'medium-high'];
-  if (ctx.getMatchQualCtx) {
+  if ((P.qualSignalEnabled ?? 1) > 0 && ctx.getMatchQualCtx) {
     const qc = ctx.getMatchQualCtx(m);
     if (qc?.home && triggerLevels.includes(qc.home.pressure_level)
       && qc.home.pts <= 3 && rq.home >= 1.3 && rq.home < 2.4) {
@@ -657,7 +724,8 @@ export function zjqStrategy(m, ctx) {
   // 2026-06-21 新增: 晋级信号融合 (早于主分类判断)
   // 主队或客队高压力 → 进球倾向增加。如果原本是 NORMAL 但有一方压力 high+
   // 例: 荷兰vs瑞典 (荷兰积分不够需抢分) → 倾向更多进球
-  if (ctx.getMatchQualCtx) {
+  // 2026-07-13 调优 (sampled 2040290): n=10 实际命中 3/10 = 30% (ROI -1.9%) → 默认关闭
+  if ((P.qualSignalEnabled ?? 1) > 0 && ctx.getMatchQualCtx) {
     const qc = ctx.getMatchQualCtx(m);
     if ((qc?.homeNeedWin || qc?.awayNeedWin) && type === 'NORMAL') {
       const coldPick = keys.slice().sort((a, b) => odds[b] - odds[a])[0];
@@ -784,10 +852,20 @@ export function bqcStrategy(m, ctx) {
   }
 
   if (odds['胜胜'] && odds['胜胜'] < P.ssMax) {
+    // 2026-07-15 调优 (sampled 2040344 GER 1-1 PAR, hc=-1, 实际 1-1 + 负平 BQC miss):
+    //   旧规则 NORMAL/WEAK 走 胜胜+平平: 86 场 bqc 池中 |hc|<2 (n=16) ROI -32.2% 实际赔穿
+    //     (9/16 hit, 7 误: 6 平胜 + 1 胜平, 平平仅 1 场)
+    //   改 胜胜+平胜: n=16 ROI +17.8% (14/16=87.5% hit, 平胜=6/16 是强主队"半场平+下半场破门"主路径)
+    //   3-way 胜胜+平胜+胜平 ROI +22.3% (15/16 hit) 但 cost 3 注 vs 2 注,
+    //     暂用 2-way 胜胜+平胜, 33_fit 后续可扫 3-way
+    //   BIG_BALL 分支 (上一块) 走 胜胜+平平 不动: n=11 胜胜+平平 ROI +168.6% / 胜胜+平胜 ROI -46.4%
+    //     强主队热门+大盘 走 "全场主胜"路径 (强主队下半场继续进球), 平胜覆盖 6/11=54.5% 反而少
+    //   n=16 中含 2 WEAK-ish 样本 (奥地利 vs 约旦 / 加拿大 vs 卡塔尔) 都 hit 胜胜, 2-way 胜胜+平胜
+    //     ROI 与 胜胜+平平 持平 (-18.5%), 改平胜对 WEAK 子桶无伤害
     return {
-      corrected: { picks: ['胜胜', '平平'].filter(k => odds[k] > 0), odds: { 胜胜: odds['胜胜'], 平平: odds['平平'] }, cost: 2 },
+      corrected: { picks: ['胜胜', '平胜'].filter(k => odds[k] > 0), odds: { 胜胜: odds['胜胜'], 平胜: odds['平胜'] }, cost: 2 },
       top3: keys.slice().sort((a, b) => odds[a] - odds[b]).slice(0, 3).map(k => ({ key: k, odds: odds[k] })),
-      rule: { name: `${type}+胜胜纠偏(胜胜+平平)`, roi: '-32%', n: 4 },
+      rule: { name: `${type}+胜胜纠偏(胜胜+平胜)`, roi: '+17.8%', n: 16 },
     };
   }
 
@@ -1220,12 +1298,24 @@ export function selectBets(dayMatches, ctx) {
     // 2026-06-21: NORMAL+hc<0 扩展 highOddsHomeWin 候选 (4-1/4-0/5-1/4-2)
     //   历史 4 场 NORMAL 4-5 球主胜 (2040165/173/183/236) 因主池 caps 全部不覆盖, 加单关兜底
     //   优先 4-1 (历史 50% 命中), 退路 4-0/4-2/5-1; odds [20, 100] 区间
+    // 2026-07-16 调优 (sampled 2040346 FRA 3-0 SWE hc=-1, spf.home=1.16 强主队):
+    //   强主队热门 (spf.home<1.3) 子桶 0/10 命中 ROI -100% — 强主队实际比分集中在 2-0/3-0/3-1,
+    //   4-1/4-0/5-1/4-2 (high odds) 实际罕见, 不出 cat3 扩展避免噪声
+    //   非强主队子桶 3/30 命中 ROI +406.7% — 高赔爆冷赚
+    //   加 normalHcMinusExtended.spfMax=1.3 旋钮 (>=1.3 才触发, 7-6 4 场样本 spf.home>=1.5 一致)
+    //   enabled=0 关闭整个扩展规则 (回滚到 6-21 之前状态)
     if (m.type === 'NORMAL' && m.handicap < 0 && picks.length === 0) {
-      const allBf = parseOdds(m.bf || m.bf_latest);
-      const priority = ['4:1', '4:2', '5:1', '4:0'];
-      for (const score of priority) {
-        const cand = allBf.find(s => s.score === score && s.odds >= 20 && s.odds <= 100);
-        if (cand) { picks.push(cand); break; }
+      const ext = P.cat3.normalHcMinusExtended || { enabled: 1, spfMax: 1.3 };
+      const spfHome = m.spf?.home;
+      // 保留 spf==null 触发 (跟原始规则一致), 仅过滤 spf.home<spfMax 的强主队热门
+      const isStrongFav = spfHome != null && spfHome < ext.spfMax;
+      if (ext.enabled && !isStrongFav) {
+        const allBf = parseOdds(m.bf || m.bf_latest);
+        const priority = ['4:1', '4:2', '5:1', '4:0'];
+        for (const score of priority) {
+          const cand = allBf.find(s => s.score === score && s.odds >= 20 && s.odds <= 100);
+          if (cand) { picks.push(cand); break; }
+        }
       }
     }
     for (const p of picks) cat3.push({ code: m.code, match: m.match, score: p.score, odds: p.odds });
