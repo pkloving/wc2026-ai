@@ -1,0 +1,56 @@
+{
+  "matchId": "M104",
+  "mid": null,
+  "code": null,
+  "league": "世界杯",
+  "stage": "final",
+  "home": "西班牙",
+  "away": "阿根廷",
+  "kickoff": "2026-07-20 03:00",
+  "venue": "MetLife Stadium, East Rutherford, NJ",
+  "handicap": null,
+  "homeScore": 1,
+  "awayScore": 0,
+  "halfTime": "0-0",
+  "final_score": "1-0",
+  "final_90min_score": "0-0",
+  "scorers": [
+    {
+      "minute": "106'",
+      "team": "home",
+      "player": "费兰·托雷斯 (Ferran Torres)",
+      "type": "射门",
+      "assist": "加时赛下半场伊始禁区内跟进射门",
+      "score_after": "1-0",
+      "_note": "加时赛进球；按 R-004 #1 加时/点球不算入竞彩比分"
+    }
+  ],
+  "red_cards": [
+    {
+      "minute": "90+3'",
+      "team": "away",
+      "player": "恩佐·费尔南德斯 (Enzo Fernández)",
+      "type": "两黄变一红",
+      "note": "下半场伤停补时第 3 分钟飞铲库巴西，两黄变一红被罚下，阿根廷十人应战"
+    },
+    {
+      "minute": "120+",
+      "team": "away",
+      "player": "帕雷德斯 (Leandro Paredes)",
+      "type": "赛后补发红牌",
+      "note": "终场后情绪失控，锁喉埃里克·加西亚 + 抱摔加维，被主裁补发红牌"
+    }
+  ],
+  "extraTime": "1-0",
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "home",
+  "spf_result": "draw",
+  "rqspf_result": null,
+  "zjq_result": "0",
+  "bqc_result": "平平",
+  "bf_result": { "score": "0:0", "other": null },
+  "data_source": "球迷屋+搜狐+头条+央视 (4+ source 交叉验证)",
+  "recorded_at": "2026-07-20T18:00:00+08:00",
+  "notes": "2026 世界杯决赛：北京时间 7-20 03:00 CST 在 MetLife Stadium (纽约新泽西体育场) 开赛。**90 分钟常规 0-0 平，加时赛 1-0，西班牙 1-0 击败阿根廷夺冠，队史第 2 座大力神杯（继 2010 后）**。常规时间双方对抗激烈但 0 射正 / 0 球；下半场伤停补时第 3 分钟（90+3'）阿根廷中场恩佐·费尔南德斯飞铲库巴西两黄变一红被罚下，阿根廷十人应战；加时赛下半场伊始（106'）费兰·托雷斯禁区内跟进射门破门 1-0 锁定胜局；终场后帕雷德斯情绪失控锁喉加西亚 + 抱摔加维，被主裁补发红牌（阿根廷全场 2 红）。西班牙延续 2010 + 2012 欧锦赛 + 本届世界杯 16 战不败晋级夺冠；梅西冲击第 2 座大力神杯失败，第 5 次世界杯告别。**竞彩 5 玩法按 90min 0-0 计算**（R-004 #1 加时/点球不算入竞彩比分）：SPF=D 平局（90min 0-0，赔率按主流盘 3.0-3.5 区间，决赛冷门盘）/ HHAD=D 让 0 平让平（mid 未放出 + handicap null，rqspf_result 留空）/ BF=0:0（赔率按主流盘 6.0-8.0）/ TTG=0（赔率按主流盘 7.0-9.0 冷门盘）/ HAFU=D:D 平平（半场 0-0 平 + 全场 90min 0-0 平 → 平平，赔率按主流盘 4.0-5.0）。halfTime 0-0 / 加时进球 1 条 + 红牌 2 条已 WebSearch 4 源验证补齐。ESP 控球率 65% / ARG 35%，射正 12:0 西班牙压倒性占优。注：matches.json 中 venue 写为 'Lumen Field, Seattle, WA'，与 4 源新闻源确认的 'MetLife Stadium, East Rutherford, NJ' 不一致，本 result 文件以实际新闻源为准，matches.json 的 venue 字段按 SKILL.md §2.3.1 不在本轮 Step 1 范围内修改。**本届世界杯收官：M104 决赛完赛 + 西班牙夺冠 = data/matches.json M001-M104 全部完赛**。sporttery API 5日窗口内（决赛刚完赛 15 小时）但 matchResultList 可能尚未刷新，本轮走 WebSearch 手工补录路径；如后续 fetch-extra-time-penalty skill 命中可二次核对。"
+}

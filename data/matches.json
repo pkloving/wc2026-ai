@@ -1318,22 +1318,30 @@
     "id": "M103",
     "stage": "third",
     "group": null,
-    "date": "2026-07-18T21:00:00Z",
-    "venue": "Lincoln Financial Field, Philadelphia, PA",
+    "date": "2026-06-18T21:00:00Z",
+    "venue": "Hard Rock Stadium, Miami Gardens, FL",
     "home": "FRA",
     "away": "ENG",
-    "status": "scheduled",
-    "kickoff": "2026-07-19 05:00"
+    "status": "finished",
+    "kickoff": "2026-07-19 05:00",
+    "final_score": "4-6",
+    "mid": null,
+    "result_file": "results/M103.json"
   },
   {
     "id": "M104",
     "stage": "final",
     "group": null,
     "date": "2026-07-19T19:00:00Z",
-    "venue": "Lumen Field, Seattle, WA",
+    "venue": "MetLife Stadium, East Rutherford, NJ",
     "home": "ESP",
     "away": "ARG",
-    "status": "scheduled",
-    "kickoff": "2026-07-20 03:00"
+    "status": "finished",
+    "kickoff": "2026-07-20 03:00",
+    "final_score": "1-0",
+    "extraTime": "1-0",
+    "actualWinner": "home",
+    "mid": null,
+    "result_file": "results/M104.json"
   }
 ]

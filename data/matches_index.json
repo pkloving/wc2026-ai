@@ -1,41 +1,8 @@
 {
-  "generated_at": "2026-07-16T10:15:22.162Z",
+  "generated_at": "2026-07-20T01:42:09.976Z",
   "total": 160,
   "by_status": {
-    "scheduled": [
-      {
-        "mid": null,
-        "matchId": "M103",
-        "code": null,
-        "league": "世界杯",
-        "home": "法国",
-        "away": "英格兰",
-        "kickoff": "2026-07-19 05:00",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "odds_file": null,
-        "history_file": "odds_history/null.json",
-        "is_finished_odds": false
-      },
-      {
-        "mid": null,
-        "matchId": "M104",
-        "code": null,
-        "league": "世界杯",
-        "home": "西班牙",
-        "away": "阿根廷",
-        "kickoff": "2026-07-20 03:00",
-        "status": "scheduled",
-        "spf": null,
-        "handicap": null,
-        "rqspf": null,
-        "odds_file": null,
-        "history_file": "odds_history/null.json",
-        "is_finished_odds": false
-      }
-    ],
+    "scheduled": [],
     "on_sale": [],
     "in_progress": [],
     "finished": [
@@ -4472,6 +4439,63 @@
         "rqspf_result": "away",
         "half_time_result": "draw",
         "is_finished_odds_marked_at": "2026-07-16T12:00:00.000Z"
+      },
+      {
+        "mid": null,
+        "matchId": "M103",
+        "code": null,
+        "league": "世界杯",
+        "home": "法国",
+        "away": "英格兰",
+        "kickoff": "2026-07-19 05:00",
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
+        "handicap": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "4-6",
+        "spf_result": "away"
+      },
+      {
+        "mid": null,
+        "matchId": "M104",
+        "code": null,
+        "league": "世界杯",
+        "home": "西班牙",
+        "away": "阿根廷",
+        "kickoff": "2026-07-20 03:00",
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
+        "handicap": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
+        "odds_file": null,
+        "history_file": "odds_history/null.json",
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "1-0",
+        "actualWinner": "home",
+        "extraTime": "1-0",
+        "wentToPenalties": false,
+        "penaltyScore": null
       }
     ],
     "cancelled": [],
@@ -8923,13 +8947,24 @@
         "home": "法国",
         "away": "英格兰",
         "kickoff": "2026-07-19 05:00",
-        "status": "scheduled",
-        "spf": null,
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "handicap": null,
-        "rqspf": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "odds_file": null,
         "history_file": "odds_history/null.json",
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "4-6",
+        "spf_result": "away"
       },
       {
         "mid": null,
@@ -8939,13 +8974,27 @@
         "home": "西班牙",
         "away": "阿根廷",
         "kickoff": "2026-07-20 03:00",
-        "status": "scheduled",
-        "spf": null,
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "handicap": null,
-        "rqspf": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "odds_file": null,
         "history_file": "odds_history/null.json",
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "1-0",
+        "actualWinner": "home",
+        "extraTime": "1-0",
+        "wentToPenalties": false,
+        "penaltyScore": null
       }
     ]
   },
@@ -13491,13 +13540,24 @@
         "home": "法国",
         "away": "英格兰",
         "kickoff": "2026-07-19 05:00",
-        "status": "scheduled",
-        "spf": null,
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "handicap": null,
-        "rqspf": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "odds_file": null,
         "history_file": "odds_history/null.json",
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "4-6",
+        "spf_result": "away"
       }
     ],
     "2026-07-20": [
@@ -13509,13 +13569,27 @@
         "home": "西班牙",
         "away": "阿根廷",
         "kickoff": "2026-07-20 03:00",
-        "status": "scheduled",
-        "spf": null,
+        "status": "finished",
+        "spf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "handicap": null,
-        "rqspf": null,
+        "rqspf": {
+          "home": null,
+          "draw": null,
+          "away": null
+        },
         "odds_file": null,
         "history_file": "odds_history/null.json",
-        "is_finished_odds": false
+        "is_finished_odds": true,
+        "is_finished_odds_marked_at": "2026-07-20T01:42:05.576Z",
+        "final_score": "1-0",
+        "actualWinner": "home",
+        "extraTime": "1-0",
+        "wentToPenalties": false,
+        "penaltyScore": null
       }
     ]
   }

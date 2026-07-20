@@ -1,0 +1,110 @@
+{
+  "matchId": "M103",
+  "mid": null,
+  "code": null,
+  "league": "世界杯",
+  "stage": "third",
+  "home": "法国",
+  "away": "英格兰",
+  "kickoff": "2026-07-19 05:00",
+  "venue": "Hard Rock Stadium, Miami Gardens, FL",
+  "handicap": null,
+  "homeScore": 4,
+  "awayScore": 6,
+  "halfTime": "0-4",
+  "final_score": "4-6",
+  "scorers": [
+    {
+      "minute": "3'",
+      "team": "away",
+      "player": "德克兰·赖斯 (Declan Rice)",
+      "type": "射门",
+      "assist": "拉什福德左路推进传中后拉库雷瓦头球解围不远，禁区弧顶无人盯防",
+      "score_after": "0-1"
+    },
+    {
+      "minute": "18'",
+      "team": "away",
+      "player": "孔萨 (Ezri Konsa)",
+      "type": "头球",
+      "assist": "赖斯角球助攻",
+      "score_after": "0-2"
+    },
+    {
+      "minute": "37'",
+      "team": "away",
+      "player": "布卡约·萨卡 (Bukayo Saka)",
+      "type": "射门",
+      "assist": "拉什福德单刀被扑后补射助攻",
+      "score_after": "0-3"
+    },
+    {
+      "minute": "45+1'",
+      "team": "away",
+      "player": "布卡约·萨卡 (Bukayo Saka) 梅开二度",
+      "type": "低射",
+      "assist": "肋部持球推进",
+      "score_after": "0-4"
+    },
+    {
+      "minute": "48'",
+      "team": "home",
+      "player": "基利安·姆巴佩 (Kylian Mbappé)",
+      "type": "射门",
+      "assist": "下半场开局反击",
+      "score_after": "1-4"
+    },
+    {
+      "minute": "54'",
+      "team": "home",
+      "player": "布拉德利·巴尔科拉 (Bradley Barcola)",
+      "type": "射门",
+      "assist": "姆巴佩助攻",
+      "score_after": "2-4"
+    },
+    {
+      "minute": "66'",
+      "team": "home",
+      "player": "基利安·姆巴佩 (Kylian Mbappé) 梅开二度",
+      "type": "低射",
+      "assist": "本届世界杯第10球，金靴奖",
+      "score_after": "3-4"
+    },
+    {
+      "minute": "87'",
+      "team": "away",
+      "player": "布卡约·萨卡 (Bukayo Saka) 帽子戏法",
+      "type": "点球",
+      "assist": "斯彭斯禁区内被铲倒获点",
+      "score_after": "3-5"
+    },
+    {
+      "minute": "90+6'",
+      "team": "home",
+      "player": "奥斯曼·登贝莱 (Ousmane Dembélé)",
+      "type": "兜射远角",
+      "assist": "乌帕梅卡诺后场长传",
+      "score_after": "4-5"
+    },
+    {
+      "minute": "90+8'",
+      "team": "away",
+      "player": "裘德·贝林厄姆 (Jude Bellingham)",
+      "type": "射门",
+      "assist": "补时绝杀",
+      "score_after": "4-6"
+    }
+  ],
+  "extraTime": null,
+  "wentToPenalties": false,
+  "penaltyScore": null,
+  "actualWinner": "away",
+  "spf_result": "away",
+  "rqspf_result": null,
+  "zjq_result": "7+",
+  "bqc_result": "负负",
+  "bf_result": { "score": null, "other": "负其它" },
+  "data_source": "球迷屋+搜狐+网易+头条 (4+ source 交叉验证)",
+  "recorded_at": "2026-07-20T18:00:00+08:00",
+  "notes": "90分钟常规无 ET 无 PSO 完赛，英格兰 6-4 法国斩获季军，10 球大战打破 1958 年法国 6-3 西德 9 球季军战纪录，成世界杯季军赛史上单场进球最多比赛。上半场第 3 分钟赖斯中场抢断一条龙世界波破僵 0-1，第 18 分钟赖斯角球助攻孔萨头球 0-2，第 37 分钟拉什福德单刀被扑助攻萨卡破门 0-3，上半场伤停补时第 1 分钟萨卡低射梅开二度 0-4，半场 0-4 创法国队史首次世界杯半场丢 4 球 + 世界杯季军赛史上最大半场分差纪录；下半场第 48 分钟姆巴佩扳回 1-4（本届第 9 球），第 54 分钟姆巴佩助攻巴尔科拉 2-4，第 66 分钟姆巴佩低射双响 3-4（本届第 10 球，金靴），第 87 分钟萨卡点球完成帽子戏法 3-5，90+6 分钟登贝莱兜射远角 4-5，90+8 分钟贝林厄姆补时绝杀 4-6 锁定胜局。竞彩按 90min 4-6 计算（R-004 #1 加时不算入竞彩，季军赛无加时直接完赛）：SPF=A 客胜（赔率按主胜推算约 2.5-3.0 大冷盘）/ BF 4:6 不在常规 0:0-5:5 范围 → 走「负其它」/ ZJQ 10 球 → 7+ / BQC 负负（半场 0-4 客胜 + 全场 4-6 客胜）/ HHAD 因 sporttery mid 未放出 + handicap 字段缺失，rqspf_result 留空。halfTime 0-4 / scorers 10 条已 WebSearch 4 源验证补齐。注：matches.json 中 venue 写为 'Lincoln Financial Field, Philadelphia, PA'，与 4 源新闻源确认的 'Hard Rock Stadium, Miami Gardens, FL' 不一致，本 result 文件以实际新闻源为准，matches.json 的 venue 字段按 SKILL.md §2.3.1 不在本轮 Step 1 范围内修改。姆巴佩本届 8 球 + 决赛前 2 球 = 10 球超梅西成本届金靴；萨卡成为 1966 赫斯特之后英格兰首位世界杯帽子戏法球员。"
+}

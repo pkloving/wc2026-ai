@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T10:15:22.120Z",
+  "generated_at": "2026-07-20T01:42:26.263Z",
   "note": "由 scripts/build_frequency_atlas.js 从 data/views 与 data/2022wc/views 汇总",
   "y2026": {
     "total": 97,
@@ -190,12 +190,12 @@
           {
             "label": "胜胜",
             "count": 20,
-            "pct": 23.3
+            "pct": 23
           },
           {
             "label": "胜平",
             "count": 4,
-            "pct": 4.7
+            "pct": 4.6
           },
           {
             "label": "胜负",
@@ -205,35 +205,35 @@
           {
             "label": "平胜",
             "count": 22,
-            "pct": 25.6
+            "pct": 25.3
           },
           {
             "label": "平平",
             "count": 14,
-            "pct": 16.3
+            "pct": 16.1
           },
           {
             "label": "平负",
-            "count": 7,
-            "pct": 8.1
+            "count": 8,
+            "pct": 9.2
           },
           {
             "label": "负胜",
             "count": 1,
-            "pct": 1.2
+            "pct": 1.1
           },
           {
             "label": "负平",
             "count": 3,
-            "pct": 3.5
+            "pct": 3.4
           },
           {
             "label": "负负",
             "count": 13,
-            "pct": 15.1
+            "pct": 14.9
           }
         ],
-        "total": 86
+        "total": 87
       }
     }
   },
